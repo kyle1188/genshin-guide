@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神攻略 · 提瓦特旅人指南 | 角色培养 · 深渊配队 · 探索解谜</title>
+<meta name="description" content="最详细的 Genshin Impact 原神攻略站 — 全角色培养推荐、深渊12层配队、圣遗物刷取路线、隐藏任务攻略。每日更新，助你成为最强旅行者。">
+<meta name="keywords" content="原神攻略, Genshin Impact, 角色培养, 深渊配队, 圣遗物, 材料刷取, 隐藏成就">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>⚡</text></svg>">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --bg-elevated: #111118;
+    --bg-card: #1a1a25;
+    --text: #e8e6e3;
+    --text-dim: #8b8a92;
+    --accent: #ffbd59;
+    --accent2: #f5c842;
+    --accent3: #4dd4ac;
+    --border: rgba(255,255,255,0.06);
+    --border-hover: rgba(255,255,255,0.12);
+    --glass: rgba(255,255,255,0.03);
+    --glass-hover: rgba(255,255,255,0.06);
+    --radius: 12px;
+    --radius-lg: 20px;
+    --shadow: 0 4px 24px rgba(0,0,0,0.4);
+  }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+    background: var(--bg);
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
+
+  /* ── Navigation ── */
+  .nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 16px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.35s cubic-bezier(0.25,0.1,0.25,1);
+  }
+  .nav.scrolled {
+    background: rgba(10,10,15,0.85);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 40px;
+  }
+  .nav-logo {
+    display: flex; align-items: center; gap: 10px;
+    font-weight: 700; font-size: 1.1rem;
+    color: #fff; text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+  .nav-logo span { color: var(--accent); font-size: 1.3rem; }
+  .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+  .nav-links a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.25s;
+    position: relative;
+  }
+  .nav-links a:hover { color: #fff; }
+  .nav-links a::after {
+    content: '';
+    position: absolute; bottom: -4px; left: 0;
+    width: 0; height: 1.5px;
+    background: var(--accent);
+    transition: width 0.3s ease;
+  }
+  .nav-links a:hover::after { width: 100%; }
+  .btn-nav {
+    padding: 8px 20px;
+    border-radius: 20px;
+    background: var(--accent);
+    color: #0a0a0f !important;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.25s;
+  }
+  .btn-nav:hover { transform: translateY(-1px); box-shadow: 0 4px 16px rgba(255,189,89,0.25); }
+  .btn-nav::after { display: none !important; }
+  .menu-toggle {
+    display: none;
+    background: none; border: none;
+    color: #fff; font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 60px 100px;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse at 70% 30%, rgba(245,200,66,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse at 30% 60%, rgba(255,189,89,0.06) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(77,212,172,0.05) 0%, transparent 40%),
+      var(--bg);
+    z-index: 0;
+  }
+  .hero-grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+  }
+  .hero-content {
+    position: relative; z-index: 2;
+    max-width: 720px;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,189,89,0.2);
+    background: rgba(255,189,89,0.06);
+    font-size: 0.8rem; color: var(--accent);
+    margin-bottom: 24px;
+    animation: fadeUp 0.8s 0.2s cubic-bezier(0.25,0.1,0.25,1) both;
+  }
+  .hero-badge::before { content: '●'; font-size: 0.5rem; animation: pulse 2s infinite; }
+  .hero h1 {
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    font-weight: 800; line-height: 1.15;
+    letter-spacing: -0.02em;
+    animation: fadeUp 0.8s 0.3s cubic-bezier(0.25,0.1,0.25,1) both;
+    background: linear-gradient(135deg, #fff 0%, #ffbd59 50%, #f5c842 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .hero p {
+    font-size: 1.15rem; color: var(--text-dim);
+    margin-top: 16px; line-height: 1.7; max-width: 540px;
+    animation: fadeUp 0.8s 0.4s cubic-bezier(0.25,0.1,0.25,1) both;
+  }
+  .hero-actions {
+    display: flex; gap: 16px; margin-top: 32px;
+    animation: fadeUp 0.8s 0.5s cubic-bezier(0.25,0.1,0.25,1) both;
+  }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 28px;
+    border-radius: 24px;
+    font-weight: 600; font-size: 0.95rem;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.25s;
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: #0a0a0f;
+    box-shadow: 0 4px 20px rgba(255,189,89,0.2);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(255,189,89,0.3); }
+  .btn-outline {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+  .btn-outline:hover { border-color: rgba(255,255,255,0.4); background: var(--glass); }
+  .hero-stats {
+    display: flex; gap: 48px; margin-top: 48px;
+    animation: fadeUp 0.8s 0.6s cubic-bezier(0.25,0.1,0.25,1) both;
+  }
+  .hero-stat { text-align: left; }
+  .hero-stat-num { font-size: 1.8rem; font-weight: 800; color: #fff; }
+  .hero-stat-label { font-size: 0.75rem; color: var(--text-dim); margin-top: 2px; letter-spacing: 0.04em; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse {
+    0%,100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  /* ── Sections ── */
+  .section {
+    padding: 100px 60px;
+    position: relative;
+  }
+  .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .section-tag {
+    font-size: 0.75rem; letter-spacing: 0.15em;
+    color: var(--accent); text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    font-weight: 800; letter-spacing: -0.02em;
+    margin-bottom: 12px;
+  }
+  .section-sub {
+    color: var(--text-dim); font-size: 1rem;
+  }
+
+  /* ── Guide Grid ── */
+  .guide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .guide-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    transition: all 0.35s cubic-bezier(0.25,0.1,0.25,1);
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  .guide-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2), var(--accent3));
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+  }
+  .guide-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow);
+  }
+  .guide-card:hover::before { transform: scaleX(1); }
+  .guide-card-icon {
+    width: 48px; height: 48px;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+  }
+  .guide-card-icon.char { background: rgba(255,189,89,0.12); }
+  .guide-card-icon.team { background: rgba(245,200,66,0.12); }
+  .guide-card-icon.explore { background: rgba(77,212,172,0.12); }
+  .guide-card-icon.farm { background: rgba(200,120,255,0.12); }
+  .guide-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; }
+  .guide-card p { font-size: 0.875rem; color: var(--text-dim); line-height: 1.6; }
+  .guide-card-meta {
+    display: flex; gap: 16px; margin-top: 16px;
+    font-size: 0.75rem; color: var(--text-dim);
+  }
+  .guide-card-tag {
+    display: inline-flex; padding: 3px 10px;
+    border-radius: 8px; font-size: 0.7rem;
+    font-weight: 600;
+    background: rgba(255,189,89,0.1);
+    color: var(--accent);
+  }
+
+  /* ── Character Spotlight ── */
+  .spotlight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 48px;
+    overflow: hidden;
+  }
+  .spotlight-img {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, rgba(255,189,89,0.15), rgba(245,200,66,0.1));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 6rem;
+  }
+  .spotlight-info h3 { font-size: 1.6rem; font-weight: 800; margin-bottom: 8px; }
+  .spotlight-info .tagline { color: var(--accent); font-size: 0.85rem; margin-bottom: 16px; }
+  .spotlight-info p { color: var(--text-dim); line-height: 1.8; margin-bottom: 20px; }
+  .stat-row { display: flex; gap: 20px; flex-wrap: wrap; }
+  .stat-item {
+    padding: 12px 20px;
+    border-radius: var(--radius);
+    background: var(--glass);
+    border: 1px solid var(--border);
+    text-align: center;
+  }
+  .stat-item .val { font-weight: 800; font-size: 1.2rem; }
+  .stat-item .lbl { font-size: 0.7rem; color: var(--text-dim); }
+
+  /* ── Search ── */
+  .search-wrap {
+    max-width: 600px; margin: 0 auto 50px;
+    position: relative;
+  }
+  .search-input {
+    width: 100%;
+    padding: 16px 48px 16px 20px;
+    border-radius: 28px;
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s;
+  }
+  .search-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(255,189,89,0.1);
+  }
+  .search-input::placeholder { color: var(--text-dim); }
+  .search-icon {
+    position: absolute; right: 16px; top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem; color: var(--text-dim);
+  }
+
+  /* ── CTA ── */
+  .cta {
+    text-align: center;
+    padding: 80px 60px;
+    background:
+      radial-gradient(ellipse at 50% 50%, rgba(245,200,66,0.08) 0%, transparent 70%),
+      var(--bg-elevated);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .cta h2 {
+    font-size: clamp(1.6rem, 3vw, 2rem);
+    font-weight: 800; margin-bottom: 12px;
+  }
+  .cta p { color: var(--text-dim); margin-bottom: 28px; }
+  .cta-form {
+    display: flex; gap: 12px;
+    max-width: 460px; margin: 0 auto;
+  }
+  .cta-form input {
+    flex: 1;
+    padding: 14px 20px;
+    border-radius: 24px;
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+    color: #fff;
+    font-size: 0.95rem;
+    outline: none;
+  }
+  .cta-form input:focus { border-color: var(--accent); }
+
+  /* ── Footer ── */
+  .footer {
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .footer-brand h4 {
+    font-size: 1.1rem; font-weight: 700; margin-bottom: 8px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .footer-brand p { font-size: 0.85rem; color: var(--text-dim); }
+  .footer-col h5 {
+    font-size: 0.8rem; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--text-dim);
+    margin-bottom: 16px;
+  }
+  .footer-col a {
+    display: block; color: rgba(255,255,255,0.5);
+    text-decoration: none; font-size: 0.85rem;
+    padding: 4px 0;
+    transition: color 0.2s;
+  }
+  .footer-col a:hover { color: #fff; }
+  .footer-bottom {
+    text-align: center;
+    padding: 24px 60px;
+    border-top: 1px solid var(--border);
+    font-size: 0.75rem; color: var(--text-dim);
+  }
+
+  /* ── Fade reveal ── */
+  .reveal {
+    opacity: 0; transform: translateY(40px);
+    transition: opacity 0.7s cubic-bezier(0.25,0.1,0.25,1),
+                transform 0.7s cubic-bezier(0.25,0.1,0.25,1);
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ── Mobile ── */
+  @media (max-width: 768px) {
+    .nav { padding: 14px 20px; }
+    .nav.scrolled { padding: 10px 20px; }
+    .nav-links { display: none; }
+    .nav-links.open {
+      display: flex; flex-direction: column;
+      position: absolute; top: 100%; left: 0; right: 0;
+      background: rgba(10,10,15,0.95);
+      backdrop-filter: blur(20px);
+      padding: 20px;
+      gap: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .menu-toggle { display: block; }
+    .hero { padding: 100px 24px 80px; min-height: auto; }
+    .hero-stats { gap: 24px; flex-wrap: wrap; }
+    .hero-actions { flex-direction: column; }
+    .section { padding: 60px 20px; }
+    .guide-grid { grid-template-columns: 1fr; }
+    .spotlight { grid-template-columns: 1fr; gap: 32px; padding: 28px; }
+    .footer { grid-template-columns: 1fr 1fr; gap: 32px; padding: 40px 24px; }
+    .cta-form { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+  <a href="#" class="nav-logo"><span>⚡</span>提瓦特旅人指南</a>
+  <button class="menu-toggle" id="menuToggle" aria-label="菜单">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#characters">角色攻略</a></li>
+    <li><a href="#teams">深渊配队</a></li>
+    <li><a href="#explore">探索解谜</a></li>
+    <li><a href="#farm">材料刷取</a></li>
+    <li><a href="#subscribe" class="btn-nav">订阅更新</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">🆕 5.7版本攻略已更新</div>
+    <h1>提瓦特旅人指南</h1>
+    <p>最硬核的原神攻略站 — 从萌新到大佬，从蒙德到至冬。<br>角色培养、深渊配队、隐藏成就、材料速刷，一网打尽。</p>
+    <div class="hero-actions">
+      <a href="#characters" class="btn btn-primary">⚔️ 开始看攻略</a>
+      <a href="#subscribe" class="btn btn-outline">📬 免费订阅</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">128+</div>
+        <div class="hero-stat-label">攻略文章</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">47</div>
+        <div class="hero-stat-label">角色培养方案</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">每日</div>
+        <div class="hero-stat-label">持续更新</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Characters Section -->
+<section class="section" id="characters">
+  <div class="section-header reveal">
+    <p class="section-tag">Character Builds</p>
+    <h2 class="section-title">角色培养攻略</h2>
+    <p class="section-sub">全角色武器/圣遗物推荐、天赋优先级、命座分析</p>
+  </div>
+
+  <div class="guide-grid">
+    <!-- Card 1 -->
+    <a href="#" class="guide-card reveal">
+      <div class="guide-card-icon char">🔥</div>
+      <h3>火神 · 玛薇卡 — 全方位培养指南</h3>
+      <p>纳塔火神到底怎么养？武器排名、圣遗物选择、最优配队，一篇讲透。</p>
+      <div class="guide-card-meta">
+        <span class="guide-card-tag">热门</span>
+        <span>更新于 6月10日</span>
+        <span>12 min 阅读</span>
+      </div>
+    </a>
+    <!-- Card 2 -->
+    <a href="#" class="guide-card reveal">
+      <div class="guide-card-icon char">❄️</div>
+      <h3>茜特菈莉 — 冰系新神？深度实测</h3>
+      <p>5.7版本新五星冰辅到底值不值得抽？实战数据告诉你答案。</p>
+      <div class="guide-card-meta">
+        <span class="guide-card-tag">新角色</span>
+        <span>更新于 6月9日</span>
+        <span>8 min 阅读</span>
+      </div>
+    </a>
+    <!-- Card 3 -->
+    <a href="articles/furina.html" class="guide-card reveal">
+      <div class="guide-card-icon char">💧</div>
+      <h3>芙宁娜 · 从零到满命完全攻略</h3>
+      <p>水神全方位解析：输出/辅助双形态、武器面板计算、圣遗物主词条最优解。</p>
+      <div class="guide-card-meta">
+        <span class="guide-card-tag">必看</span>
+        <span>更新于 6月7日</span>
+        <span>15 min 阅读</span>
+      </div>
+    </a>
+    <!-- Card 4 -->
+    <a href="#" class="guide-card reveal">
+      <div class="guide-card-icon char">🌿</div>
+      <h3>纳西妲 · 草神永不过时</h3>
+      <p>种门圣女全面培养指南 — 超激化、绽放、燃烧，三流派全覆盖。</p>
+      <div class="guide-card-meta">
+        <span class="guide-card-tag">经典</span>
+        <span>更新于 6月5日</span>
+        <span>10 min 阅读</span>
+      </div>
+    </a>
+    <!-- Card 5 -->
+    <a href="articles/raiden.html" class="guide-card reveal">
+      <div class="guide-card-icon char">⚡</div>
+      <h3>雷电将军 · 雷国配队核心</h3>
+      <p>从零命到六命，充能沙还是攻击沙？最佳圣遗物搭配与武器选择详解。</p>
+      <div class="guide-card-meta">
+        <span class="guide-card-tag">热门</span>
+        <span>更新于 6月3日</span>
+        <span>11 min 阅读</span>
+      </div>
+    </a>
+    <!-- Card 6 -->
+    <a href="#" class="guide-card reveal">
+      <div class="guide-card-icon char">🛡️</div>
+      <h3>钟离 · 最强盾辅终极培养</h3>
+      <p>5万血量不是梦！千岩/磐岩/逆飞三流派对比，武器推荐数据实测。</p>
+      <div class="guide-card-meta">
+        <span class="guide-card-tag">经典</span>
+        <span>更新于 6月1日</span>
+        <span>9 min 阅读</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- Team Building Spotlight -->
+<section class="section" id="teams">
+  <div class="section-header reveal">
+    <p class="section-tag">Spiral Abyss</p>
+    <h2 class="section-title">深渊配队推荐</h2>
+    <p class="section-sub">12层满星配队方案，各版本最优解</p>
+  </div>
+
+  <div class="spotlight reveal">
+    <div class="spotlight-img">🌊🔥</div>
+    <div class="spotlight-info">
+      <h3>蒸发蒸发！玛薇卡蒸发队</h3>
+      <p class="tagline"><a href="articles/abyss.html" style="color:var(--accent);text-decoration:none;">5.7版本深渊12层 T0 配队 → 查看全部</a></p>
+      <p>玛薇卡主C + 芙宁娜挂水 + 希诺宁减抗 + 班尼特增伤。核心思路：芙宁娜EQ挂水覆盖全程，玛薇卡Q蒸发核爆50万+。12-3上半轻松40秒通关。</p>
+      <div class="stat-row">
+        <div class="stat-item"><div class="val">SS</div><div class="lbl">强度评级</div></div>
+        <div class="stat-item"><div class="val">50万+</div><div class="lbl">蒸发核爆</div></div>
+        <div class="stat-item"><div class="val">40s</div><div class="lbl">12-3上半</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="guide-grid" style="margin-top: 32px;">
+    <a href="articles/abyss.html" class="guide-card reveal">
+      <div class="guide-card-icon team">🌿</div>
+      <h3>超激化队 — 刻晴/赛诺双核</h3>
+      <p>纳西妲+万叶经典组合，双C切换输出</p>
+      <span class="guide-card-tag">S+ 评级</span>
+    </a>
+    <a href="articles/abyss.html" class="guide-card reveal">
+      <div class="guide-card-icon team">❄️</div>
+      <h3>永冻队 — 神里绫华新时代</h3>
+      <p>茜特菈莉入队，永冻队迎来第二春</p>
+      <span class="guide-card-tag">S 评级</span>
+    </a>
+    <a href="articles/abyss.html" class="guide-card reveal">
+      <div class="guide-card-icon team">⚡</div>
+      <h3>雷国队 — 万年常青树</h3>
+      <p>雷神+香菱+行秋+班尼特，经典永不过时</p>
+      <span class="guide-card-tag">S 评级</span>
+    </a>
+  </div>
+</section>
+
+<!-- Explore / Puzzles -->
+<section class="section" id="explore">
+  <div class="section-header reveal">
+    <p class="section-tag">Exploration</p>
+    <h2 class="section-title">探索解谜攻略</h2>
+    <p class="section-sub">隐藏任务、神瞳收集、秘境解谜，告别卡关</p>
+  </div>
+
+  <div class="guide-grid">
+    <a href="#" class="guide-card reveal">
+      <div class="guide-card-icon explore">🗺️</div>
+      <h3>纳塔全神瞳收集路线（127个）</h3>
+      <p>5.7版本全127个火神瞳位置，附实时地图标注与飞行路线规划。</p>
+      <div class="guide-card-meta">
+        <span class="guide-card-tag">最高浏览</span>
+        <span>15 min 阅读</span>
+      </div>
+    </a>
+    <a href="#" class="guide-card reveal">
+      <div class="guide-card-icon explore">🔮</div>
+      <h3>纳塔隐藏任务全收录</h3>
+      <p>17个隐藏世界任务 + 42个隐藏成就，附触发条件和完整流程。</p>
+      <div class="guide-card-meta">
+        <span class="guide-card-tag">独家</span>
+        <span>20 min 阅读</span>
+      </div>
+    </a>
+    <a href="#" class="guide-card reveal">
+      <div class="guide-card-icon explore">🏛️</div>
+      <h3>枫丹水下遗迹完全解谜</h3>
+      <p>安眠处、海沫村全机关破解，水下战斗技巧详解。</p>
+      <div class="guide-card-meta">
+        <span class="guide-card-tag">经典</span>
+        <span>12 min 阅读</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- Farm -->
+<section class="section" id="farm">
+  <div class="section-header reveal">
+    <p class="section-tag">Farming Routes</p>
+    <h2 class="section-title">材料刷取路线</h2>
+    <p class="section-sub">每日体力规划 + 突破材料最优路线</p>
+  </div>
+
+  <div class="guide-grid">
+    <a href="#" class="guide-card reveal">
+      <div class="guide-card-icon farm">💎</div>
+      <h3>每日体力最优分配方案</h3>
+      <p>180树脂怎么用最划算？经验书/摩拉/圣遗物/武器材料优先级排序。</p>
+      <span class="guide-card-tag">必看</span>
+    </a>
+    <a href="#" class="guide-card reveal">
+      <div class="guide-card-icon farm">🌸</div>
+      <h3>全角色突破材料速刷路线</h3>
+      <p>琉璃袋、劫波莲、月莲…所有采集物最高效路线图。</p>
+      <span class="guide-card-tag">工具</span>
+    </a>
+    <a href="#" class="guide-card reveal">
+      <div class="guide-card-icon farm">⚔️</div>
+      <h3>圣遗物狗粮车路线</h3>
+      <p>每天12分钟跑满100个圣遗物狗粮，经验最大化计算。</p>
+      <span class="guide-card-tag">效率</span>
+    </a>
+  </div>
+</section>
+
+<!-- CTA / Subscribe -->
+<section class="cta" id="subscribe">
+  <h2 class="reveal">📬 订阅原神攻略更新</h2>
+  <p class="reveal">新版本攻略、新角色测评、深渊配队，第一时间推送给你</p>
+  <form class="cta-form reveal" id="subscribeForm">
+    <input type="email" placeholder="输入你的邮箱地址" required>
+    <button type="submit" class="btn btn-primary">免费订阅</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<div class="footer">
+  <div class="footer-brand">
+    <h4>⚡ 提瓦特旅人指南</h4>
+    <p>最硬核的原神攻略站。<br>始于2026年，坚持每日更新。</p>
+  </div>
+  <div class="footer-col">
+    <h5>攻略分类</h5>
+    <a href="#characters">角色培养</a>
+    <a href="#teams">深渊配队</a>
+    <a href="#explore">探索解谜</a>
+    <a href="#farm">材料刷取</a>
+  </div>
+  <div class="footer-col">
+    <h5>关于我们</h5>
+    <a href="#">关于本站</a>
+    <a href="#">合作联系</a>
+    <a href="#">广告投放</a>
+  </div>
+  <div class="footer-col">
+    <h5>关注我们</h5>
+    <a href="#">B站</a>
+    <a href="#">小红书</a>
+    <a href="#">微信公众号</a>
+  </div>
+</div>
+<div class="footer-bottom">
+  © 2026 提瓦特旅人指南 · 本站为粉丝自制攻略站，非米哈游官方内容 · Genshin Impact © HoYoverse
+</div>
+
+<script>
+  // ── Navigation scroll effect ──
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // ── Mobile menu toggle ──
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    menuToggle.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
+  });
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuToggle.textContent = '☰';
+    });
+  });
+
+  // ── Intersection Observer for reveal animations ──
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  // ── Subscribe form ──
+  document.getElementById('subscribeForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const email = this.querySelector('input').value;
+    if (email) {
+      this.querySelector('button').textContent = '✅ 订阅成功！';
+      this.querySelector('button').style.background = '#4dd4ac';
+      setTimeout(() => {
+        this.querySelector('button').textContent = '免费订阅';
+        this.querySelector('button').style.background = '';
+        this.reset();
+      }, 3000);
+    }
+  });
+
+  // ── Smooth scroll polyfill for older browsers ──
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+</body>
+</html>

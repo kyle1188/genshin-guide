@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>芙宁娜完全攻略 — 武器/圣遗物/配队 · 提瓦特旅人指南</title>
+<meta name="description" content="原神芙宁娜全方位培养攻略：静水流涌之辉领衔武器排名、剧团4件套最优解、双形态切换手法、C2命座分析。从零命到满命，水神大人带你打通深渊。">
+<style>
+  :root {
+    --bg: #0a0a0f; --bg-card: #1a1a25; --text: #e8e6e3; --text-dim: #8b8a92;
+    --accent: #ffbd59; --accent2: #f5c842; --accent3: #4dc4ff; --border: rgba(255,255,255,0.06);
+    --radius: 12px; --radius-lg: 20px;
+  }
+  *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: -apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased;
+  }
+  ::-webkit-scrollbar { width:5px; } ::-webkit-scrollbar-track { background:var(--bg); }
+  ::-webkit-scrollbar-thumb { background:rgba(255,255,255,0.1); border-radius:4px; }
+
+  .nav { position:fixed; top:0; left:0; right:0; z-index:100; padding:14px 40px; display:flex; align-items:center; justify-content:space-between; background:rgba(10,10,15,0.85); backdrop-filter:blur(24px) saturate(180%); border-bottom:1px solid var(--border); }
+  .nav a { color:rgba(255,255,255,0.7); text-decoration:none; font-size:0.85rem; transition:color 0.25s; }
+  .nav a:hover { color:#fff; }
+  .nav-logo { font-weight:700; font-size:1rem; color:#fff !important; display:flex; align-items:center; gap:8px; }
+
+  .container { max-width:860px; margin:0 auto; padding:100px 24px 80px; }
+
+  .breadcrumb { font-size:0.8rem; color:var(--text-dim); margin-bottom:20px; }
+  .breadcrumb a { color:var(--accent); text-decoration:none; }
+  .breadcrumb a:hover { text-decoration:underline; }
+
+  .article-header { margin-bottom:40px; }
+  .tags { display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap; }
+  .tag { padding:4px 12px; border-radius:12px; font-size:0.72rem; font-weight:600; }
+  .tag.hot { background:rgba(255,189,89,0.12); color:var(--accent); }
+  .tag.new { background:rgba(77,212,172,0.12); color:#4dd4ac; }
+  .tag.core { background:rgba(77,196,255,0.12); color:var(--accent3); }
+  h1 { font-size:2.4rem; font-weight:800; line-height:1.2; margin-bottom:12px; letter-spacing:-0.02em; }
+  .meta { font-size:0.85rem; color:var(--text-dim); display:flex; gap:24px; flex-wrap:wrap; }
+
+  .toc { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:24px 28px; margin-bottom:40px; }
+  .toc h4 { font-size:0.85rem; color:var(--accent); margin-bottom:12px; text-transform:uppercase; letter-spacing:0.08em; }
+  .toc ol { padding-left:20px; color:var(--text-dim); font-size:0.9rem; line-height:2; }
+  .toc ol a { color:var(--text); text-decoration:none; transition:color 0.2s; }
+  .toc ol a:hover { color:var(--accent); }
+
+  section { margin-bottom:48px; }
+  h2 { font-size:1.5rem; font-weight:700; margin-bottom:20px; padding-bottom:10px; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:10px; }
+  h2 .icon { font-size:1.4rem; }
+  h3 { font-size:1.15rem; font-weight:700; margin:24px 0 12px; }
+
+  p { color:var(--text-dim); margin-bottom:12px; }
+  p strong { color:var(--text); }
+
+  .card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:24px; margin-bottom:20px; }
+  .card h4 { font-size:1rem; margin-bottom:8px; color:var(--accent2); }
+
+  table { width:100%; border-collapse:collapse; margin:16px 0; font-size:0.88rem; }
+  thead th { background:rgba(255,189,89,0.08); color:var(--accent); padding:10px 14px; text-align:left; font-weight:600; border-bottom:2px solid var(--border); font-size:0.8rem; letter-spacing:0.04em; }
+  tbody td { padding:10px 14px; border-bottom:1px solid var(--border); color:var(--text-dim); }
+  tbody tr:hover td { background:rgba(255,255,255,0.02); }
+  .tier-s { color:#ffbd59; font-weight:800; }
+  .tier-a { color:#4dd4ac; font-weight:700; }
+  .tier-b { color:#8b8a92; font-weight:600; }
+
+  .highlight { background:rgba(255,189,89,0.06); border-left:3px solid var(--accent); padding:16px 20px; border-radius:0 var(--radius) var(--radius) 0; margin:16px 0; }
+  .highlight p { margin:0; font-size:0.9rem; }
+  .highlight strong { color:var(--accent); }
+
+  .mode-switch { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:16px 0; }
+  .mode-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:20px; text-align:center; }
+  .mode-card .m-name { font-weight:700; font-size:1.1rem; margin-bottom:6px; }
+  .mode-card .m-sub { font-size:0.8rem; color:var(--text-dim); }
+
+  .team-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px; margin:16px 0; }
+  .team-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:20px; }
+  .team-card .t-name { font-weight:700; margin-bottom:6px; }
+  .team-card .t-chars { font-size:0.85rem; color:var(--accent3); margin-bottom:6px; }
+  .team-card .t-desc { font-size:0.8rem; color:var(--text-dim); }
+
+  .cta { text-align:center; padding:40px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); margin:40px 0; }
+  .cta p { margin-bottom:16px; }
+  .btn { display:inline-flex; align-items:center; gap:8px; padding:12px 28px; border-radius:24px; font-weight:600; font-size:0.95rem; text-decoration:none; border:none; cursor:pointer; transition:all 0.25s; background:var(--accent); color:#0a0a0f; }
+  .btn:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(255,189,89,0.25); }
+
+  .footer { text-align:center; padding:32px 24px; border-top:1px solid var(--border); font-size:0.8rem; color:var(--text-dim); margin-top:40px; }
+  .footer a { color:var(--accent); text-decoration:none; }
+
+  @media (max-width:768px) {
+    .nav { padding:12px 20px; }
+    h1 { font-size:1.7rem; }
+    .container { padding:80px 16px 60px; }
+    .mode-switch { grid-template-columns:1fr; }
+    table { font-size:0.78rem; }
+    thead th, tbody td { padding:8px 10px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">⚡ 提瓦特旅人指南</a>
+  <a href="../index.html">← 返回首页</a>
+</nav>
+
+<div class="container">
+
+  <div class="breadcrumb">
+    <a href="../index.html">首页</a> &nbsp;›&nbsp; <a href="../index.html#characters">角色攻略</a> &nbsp;›&nbsp; 芙宁娜
+  </div>
+
+  <header class="article-header">
+    <div class="tags">
+      <span class="tag hot">必看</span>
+      <span class="tag core">水神</span>
+      <span class="tag new">5.7版本适用</span>
+    </div>
+    <h1>💧 芙宁娜 · 从零到满命完全攻略</h1>
+    <div class="meta">
+      <span>🕐 更新于 2026年6月11日</span>
+      <span>📖 约 14 分钟阅读</span>
+      <span>👁️ 浏览 52,000+</span>
+    </div>
+  </header>
+
+  <!-- 目录 -->
+  <nav class="toc">
+    <h4>📋 本文目录</h4>
+    <ol>
+      <li><a href="#overview">角色定位 · 双形态机制详解</a></li>
+      <li><a href="#weapon">武器选择 · 6档排名</a></li>
+      <li><a href="#artifact">圣遗物搭配 · 主词条与充能阈值</a></li>
+      <li><a href="#constellation">命座分析 · C2/C6 关键节点</a></li>
+      <li><a href="#teams">配队方案 · 5大主流体系</a></li>
+      <li><a href="#faq">常见问题 FAQ</a></li>
+    </ol>
+  </nav>
+
+  <!-- 角色定位 -->
+  <section id="overview">
+    <h2><span class="icon">💧</span> 角色定位 · 双形态机制详解</h2>
+    <p>芙宁娜 — 五星水元素单手剑角色，定位为<strong>增伤辅助 + 副C输出</strong>。核心机制是「荒/芒」双始基力形态切换：<strong>荒形态（黑芙）</strong>召唤三只海鲜自动攻击并消耗全队HP叠增伤；<strong>芒形态（白芙）</strong>召唤一个治疗歌者持续回血。</p>
+
+    <div class="highlight">
+      <p><strong>一句话总结：</strong>芙宁娜是全游戏最通用的增伤辅助——给任何队伍带上她就能获得 50%~75% 的全队增伤（0命），同时她自身拥有不俗的副C输出（E技能自动脱手）。代价是持续烧血，需要带治疗角色搭配。</p>
+    </div>
+
+    <div class="mode-switch">
+      <div class="mode-card">
+        <div class="m-name">🌑 荒形态（黑芙）</div>
+        <div class="m-sub">召唤三只海鲜 · 自动攻击 · 烧团队HP · 叠增伤层数</div>
+      </div>
+      <div class="mode-card">
+        <div class="m-name">🌕 芒形态（白芙）</div>
+        <div class="m-sub">召唤歌者 · 持续治疗 · 不叠增伤 · 大世界跑图专用</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h4>🔑 核心天赋优先级</h4>
+      <p><strong>元素战技 (E) ≥ 元素爆发 (Q) &gt;&gt; 普通攻击 (A)</strong></p>
+      <p>E是自动输出+叠层手段，Q是最终增伤兑现。普攻不点（C6以前完全没用）。</p>
+    </div>
+
+    <div class="card">
+      <h4>📊 叠层机制</h4>
+      <p>芙宁娜开启大招后进入「万众狂欢」状态，持续18秒。期间队友血量每波动1%（增或减），叠加1层「气氛值」。<strong>0命上限300层 = 75%全队增伤</strong>。C1初始就有150层，更快叠满。CD 15秒，可实现近乎全覆盖。</p>
+    </div>
+  </section>
+
+  <!-- 武器 -->
+  <section id="weapon">
+    <h2><span class="icon">🗡️</span> 武器选择 · 6档排名</h2>
+    <p>芙宁娜的武器需求：<strong>暴伤/暴率 &gt; 充能 &gt; HP%</strong>。4万+血量是基础门槛，充能需求约180-200%（双水队可降至160%）。</p>
+
+    <table>
+      <thead>
+        <tr><th>档位</th><th>武器</th><th>基础攻击</th><th>副属性</th><th>核心优势</th><th>获取</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tier-s">SS</td>
+          <td><strong>静水流涌之辉</strong></td>
+          <td>542</td>
+          <td>暴伤 88.2%</td>
+          <td>专武。HP波动触发元素战技增伤+生命提升，完美契合</td>
+          <td>限定祈愿</td>
+        </tr>
+        <tr>
+          <td class="tier-s">S</td>
+          <td><strong>磐岩结绿</strong></td>
+          <td>542</td>
+          <td>暴击率 44.1%</td>
+          <td>高暴率面板，被动+20%HP，毕业面板轻松达成</td>
+          <td>限定祈愿</td>
+        </tr>
+        <tr>
+          <td class="tier-a">A</td>
+          <td><strong>腐殖之剑</strong></td>
+          <td>510</td>
+          <td>充能 45.9%</td>
+          <td>活动免费R5！充能+E增伤32%、E暴率12%</td>
+          <td>活动(绝版)</td>
+        </tr>
+        <tr>
+          <td class="tier-a">A</td>
+          <td><strong>灰河渡手 (F2P首选)</strong></td>
+          <td>510</td>
+          <td>充能 45.9%</td>
+          <td>免费满精！充能+E暴率8%，钓鱼兑换</td>
+          <td>钓鱼兑换</td>
+        </tr>
+        <tr>
+          <td class="tier-b">B</td>
+          <td><strong>狼牙</strong></td>
+          <td>510</td>
+          <td>暴击率 27.6%</td>
+          <td>暴率面板，E+Q暴率叠加</td>
+          <td>纪行</td>
+        </tr>
+        <tr>
+          <td class="tier-b">B</td>
+          <td><strong>西风剑</strong></td>
+          <td>454</td>
+          <td>充能 61.3%</td>
+          <td>纯充能工具，打幽境危战开局0能量场景最优</td>
+          <td>常驻</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight">
+      <p><strong>💡 没有五星武器？</strong>去枫丹钓鱼协会兑换<strong>灰河渡手</strong>，免费R5，充能+增伤双覆盖。有腐殖之剑的老玩家直接用腐殖即可。</p>
+    </div>
+  </section>
+
+  <!-- 圣遗物 -->
+  <section id="artifact">
+    <h2><span class="icon">💎</span> 圣遗物搭配 · 主词条与充能阈值</h2>
+
+    <h3>首选套装：黄金剧团 ×4</h3>
+    <p><strong>2件套：</strong>元素战技伤害 +20%<br><strong>4件套：</strong>元素战技伤害+25%；处于后台时额外+25%（总计+70%战技伤害）</p>
+    <p>芙宁娜的E技能海鲜自动攻击占她输出的90%以上。剧团4让她在后台也能打出可观伤害。唯一指定毕业套装。</p>
+
+    <div class="card">
+      <h4>🎯 主词条选择</h4>
+      <table>
+        <thead><tr><th>部位</th><th>最优主词条</th><th>替代方案</th></tr></thead>
+        <tbody>
+          <tr><td>时之沙</td><td><strong>生命值% / 充能效率</strong></td><td>充能不够(低于180%)优先充能沙</td></tr>
+          <tr><td>空之杯</td><td><strong>生命值%</strong></td><td>水伤杯差距小于3%</td></tr>
+          <tr><td>理之冠</td><td><strong>暴击率 / 暴击伤害</strong></td><td>暴击率优先保证1:2配比</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h4>📏 面板目标</h4>
+      <p><strong>HP 38,000+ | 暴击率 65%+ | 暴伤 140%+ | 充能 180%+ (单水)</strong></p>
+      <p>双水队伍充能可降至160%。副词条：暴击/暴伤 &gt; HP% &gt; 充能 &gt; 攻击力%（几乎没用）。</p>
+    </div>
+  </section>
+
+  <!-- 命座 -->
+  <section id="constellation">
+    <h2><span class="icon">⭐</span> 命座分析 · C2/C6 关键节点</h2>
+    <table>
+      <thead><tr><th>命座</th><th>效果</th><th>提升幅度</th><th>推荐度</th></tr></thead>
+      <tbody>
+        <tr><td>C1</td><td>开大初始获得150层气氛值，上限提升至400层</td><td>≈12%</td><td>⭐⭐⭐</td></tr>
+        <tr><td><strong>C2</strong></td><td><strong>气氛值获取速率×200%，超过上限每层+HP</strong></td><td><strong>≈40% 🔥</strong></td><td>⭐⭐⭐⭐⭐</td></tr>
+        <tr><td>C3</td><td>元素爆发等级+3（100%增伤上限）</td><td>≈20%</td><td>⭐⭐⭐</td></tr>
+        <tr><td>C4</td><td>E技能命中回复能量</td><td>充能优化</td><td>⭐⭐</td></tr>
+        <tr><td>C5</td><td>元素战技等级+3</td><td>≈10%</td><td>⭐⭐</td></tr>
+        <tr><td><strong>C6</strong></td><td><strong>释放E后获得水附魔+普攻额外生命倍率</strong></td><td><strong>质变 🔥</strong></td><td>⭐⭐⭐⭐⭐</td></tr>
+      </tbody>
+    </table>
+    <div class="highlight">
+      <p><strong>🚨 C2 是核心命座：</strong>叠层速度翻倍意味着几乎瞬间叠满400层→100%增伤，同时溢出层数转化为HP，既增伤又提高生存。C6解锁主C玩法。<strong>推荐目标：C0够用 → C2质变 → C6主C</strong>。</p>
+    </div>
+  </section>
+
+  <!-- 配队 -->
+  <section id="teams">
+    <h2><span class="icon">🤝</span> 配队方案 · 5大主流体系</h2>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="t-name">🌊 那芙万白</div>
+        <div class="t-chars">那维莱特 + 芙宁娜 + 万叶 + 白术</div>
+        <div class="t-desc">枫丹双雄。那维莱特重击自烧自回触发芙宁娜叠层，白术群奶保障生存。深渊12层乱杀级别的T0阵容。</div>
+      </div>
+      <div class="team-card">
+        <div class="t-name">🌊 胡芙夜钟</div>
+        <div class="t-chars">胡桃 + 芙宁娜 + 夜兰 + 钟离</div>
+        <div class="t-desc">双水共鸣+双增伤。胡桃半血状态下芙宁娜提供75%增伤，夜兰+胡桃蒸发体系爆炸输出。</div>
+      </div>
+      <div class="team-card">
+        <div class="t-name">🌊 芙心万夜</div>
+        <div class="t-chars">芙宁娜(C6) + 心海 + 万叶 + 夜兰</div>
+        <div class="t-desc">纯水队。C6芙宁娜站场普攻主C，心海提供永续治疗，万叶减抗聚怪，夜兰增伤副C。</div>
+      </div>
+      <div class="team-card">
+        <div class="t-name">🌊 赛芙纳白</div>
+        <div class="t-chars">赛诺 + 芙宁娜 + 纳西妲 + 白术</div>
+        <div class="t-desc">超激绽体系。赛诺站场打超激化+种子超绽放，芙宁娜增伤全覆盖，纳西妲挂草。</div>
+      </div>
+      <div class="team-card">
+        <div class="t-name">🌊 娜芙班香</div>
+        <div class="t-chars">娜维娅 + 芙宁娜 + 班尼特 + 香菱</div>
+        <div class="t-desc">双火双水蒸发。班尼特奶抵消芙宁娜烧血，娜维娅E弹片岩伤+蒸发，爆发恐怖。</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h4>🎮 标准输出手法（那芙万白）</h4>
+      <p>芙宁娜E(黑芙)Q → 万叶EQ减抗 → 白术EQ群奶 → <strong>那维莱特EQ重击循环×3</strong></p>
+      <p style="margin-top:8px">核心思路：芙宁娜先手EQ叠层→万叶减抗增伤→白术瞬间群奶把气氛值冲上去→那维莱特吃满75%增伤开始蓄力重击。</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2><span class="icon">❓</span> 常见问题 FAQ</h2>
+    <div class="card">
+      <h4>生命沙还是充能沙？</h4>
+      <p>面板充能低于180%（单水队）时<strong>选充能沙</strong>。双水队或副词条充能足够时换生命沙，增伤收益更高。</p>
+    </div>
+    <div class="card">
+      <h4>剧团4还是千岩4？</h4>
+      <p><strong>首选剧团4。</strong>千岩4仅用于纯辅助定位（如给赛诺队），损失自身输出不值得。</p>
+    </div>
+    <div class="card">
+      <h4>0命要抽吗？</h4>
+      <p><strong>绝对要抽。</strong>0命芙宁娜已经是最通用的增伤辅助，能塞进90%的队伍。深渊/幽境危战/大世界通吃。</p>
+    </div>
+  </section>
+
+  <div class="cta">
+    <p style="font-size:1.1rem; font-weight:600;">📬 觉得有用？订阅获取更多角色攻略</p>
+    <p style="color:var(--text-dim)">新角色测评、深渊配队、武器对比，第一时间推送</p>
+    <a href="../index.html#subscribe" class="btn">📩 免费订阅更新</a>
+  </div>
+
+</div>
+
+<div class="footer">
+  © 2026 提瓦特旅人指南 · <a href="../index.html">返回首页</a> · Genshin Impact © HoYoverse
+</div>
+
+</body>
+</html>

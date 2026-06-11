@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>深渊12层配队攻略 — 各版本最优解 · 提瓦特旅人指南</title>
+<meta name="description" content="原神深渊12层满星配队完全攻略：玛薇卡蒸发队、那维莱特队、雷神国家队等T0阵容，含详细输出手法、替代方案。抄作业就能满星。">
+<style>
+  :root {
+    --bg: #0a0a0f; --bg-card: #1a1a25; --text: #e8e6e3; --text-dim: #8b8a92;
+    --accent: #ffbd59; --accent2: #f5c842; --accent3: #ff6b6b; --border: rgba(255,255,255,0.06);
+    --radius: 12px; --radius-lg: 20px;
+  }
+  *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: -apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased;
+  }
+  ::-webkit-scrollbar { width:5px; } ::-webkit-scrollbar-track { background:var(--bg); }
+  ::-webkit-scrollbar-thumb { background:rgba(255,255,255,0.1); border-radius:4px; }
+
+  .nav { position:fixed; top:0; left:0; right:0; z-index:100; padding:14px 40px; display:flex; align-items:center; justify-content:space-between; background:rgba(10,10,15,0.85); backdrop-filter:blur(24px) saturate(180%); border-bottom:1px solid var(--border); }
+  .nav a { color:rgba(255,255,255,0.7); text-decoration:none; font-size:0.85rem; transition:color 0.25s; }
+  .nav a:hover { color:#fff; }
+  .nav-logo { font-weight:700; font-size:1rem; color:#fff !important; display:flex; align-items:center; gap:8px; }
+
+  .container { max-width:860px; margin:0 auto; padding:100px 24px 80px; }
+
+  .breadcrumb { font-size:0.8rem; color:var(--text-dim); margin-bottom:20px; }
+  .breadcrumb a { color:var(--accent); text-decoration:none; }
+  .breadcrumb a:hover { text-decoration:underline; }
+
+  .article-header { margin-bottom:40px; }
+  .tags { display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap; }
+  .tag { padding:4px 12px; border-radius:12px; font-size:0.72rem; font-weight:600; }
+  .tag.hot { background:rgba(255,189,89,0.12); color:var(--accent); }
+  .tag.new { background:rgba(77,212,172,0.12); color:#4dd4ac; }
+  .tag.danger { background:rgba(255,107,107,0.12); color:var(--accent3); }
+  h1 { font-size:2.4rem; font-weight:800; line-height:1.2; margin-bottom:12px; letter-spacing:-0.02em; }
+  .meta { font-size:0.85rem; color:var(--text-dim); display:flex; gap:24px; flex-wrap:wrap; }
+
+  .toc { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:24px 28px; margin-bottom:40px; }
+  .toc h4 { font-size:0.85rem; color:var(--accent); margin-bottom:12px; text-transform:uppercase; letter-spacing:0.08em; }
+  .toc ol { padding-left:20px; color:var(--text-dim); font-size:0.9rem; line-height:2; }
+  .toc ol a { color:var(--text); text-decoration:none; transition:color 0.2s; }
+  .toc ol a:hover { color:var(--accent); }
+
+  section { margin-bottom:48px; }
+  h2 { font-size:1.5rem; font-weight:700; margin-bottom:20px; padding-bottom:10px; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:10px; }
+  h2 .icon { font-size:1.4rem; }
+  h3 { font-size:1.15rem; font-weight:700; margin:24px 0 12px; }
+
+  p { color:var(--text-dim); margin-bottom:12px; }
+  p strong { color:var(--text); }
+
+  .card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:24px; margin-bottom:20px; }
+  .card h4 { font-size:1rem; margin-bottom:8px; }
+
+  table { width:100%; border-collapse:collapse; margin:16px 0; font-size:0.88rem; }
+  thead th { background:rgba(255,189,89,0.08); color:var(--accent); padding:10px 14px; text-align:left; font-weight:600; border-bottom:2px solid var(--border); font-size:0.8rem; letter-spacing:0.04em; }
+  tbody td { padding:10px 14px; border-bottom:1px solid var(--border); color:var(--text-dim); }
+  tbody tr:hover td { background:rgba(255,255,255,0.02); }
+  .t0 { color:#ff6b6b; font-weight:800; }
+  .t0-5 { color:#ffbd59; font-weight:800; }
+  .t1 { color:#4dd4ac; font-weight:700; }
+
+  .highlight { background:rgba(255,189,89,0.06); border-left:3px solid var(--accent); padding:16px 20px; border-radius:0 var(--radius) var(--radius) 0; margin:16px 0; }
+  .highlight p { margin:0; font-size:0.9rem; }
+  .highlight strong { color:var(--accent); }
+
+  .team-detail { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:28px; margin-bottom:24px; }
+  .team-detail .td-header { display:flex; align-items:center; gap:12px; margin-bottom:16px; }
+  .team-detail .td-rank { font-size:0.75rem; padding:4px 10px; border-radius:8px; font-weight:700; }
+  .tr-t0 { background:rgba(255,107,107,0.15); color:#ff6b6b; }
+  .tr-t0-5 { background:rgba(255,189,89,0.15); color:#ffbd59; }
+  .td-chars { display:flex; gap:8px; flex-wrap:wrap; margin:8px 0; }
+  .td-char { padding:5px 12px; border-radius:10px; background:rgba(255,255,255,0.04); font-size:0.85rem; }
+  .td-char.core { background:rgba(255,189,89,0.1); color:var(--accent); font-weight:600; }
+
+  .cta { text-align:center; padding:40px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); margin:40px 0; }
+  .cta p { margin-bottom:16px; }
+  .btn { display:inline-flex; align-items:center; gap:8px; padding:12px 28px; border-radius:24px; font-weight:600; font-size:0.95rem; text-decoration:none; border:none; cursor:pointer; transition:all 0.25s; background:var(--accent); color:#0a0a0f; }
+  .btn:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(255,189,89,0.25); }
+
+  .footer { text-align:center; padding:32px 24px; border-top:1px solid var(--border); font-size:0.8rem; color:var(--text-dim); margin-top:40px; }
+  .footer a { color:var(--accent); text-decoration:none; }
+
+  @media (max-width:768px) {
+    .nav { padding:12px 20px; }
+    h1 { font-size:1.7rem; }
+    .container { padding:80px 16px 60px; }
+    table { font-size:0.78rem; }
+    thead th, tbody td { padding:8px 10px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">⚡ 提瓦特旅人指南</a>
+  <a href="../index.html">← 返回首页</a>
+</nav>
+
+<div class="container">
+
+  <div class="breadcrumb">
+    <a href="../index.html">首页</a> &nbsp;›&nbsp; <a href="../index.html#teams">深渊配队</a> &nbsp;›&nbsp; 深渊12层攻略
+  </div>
+
+  <header class="article-header">
+    <div class="tags">
+      <span class="tag hot">热门</span>
+      <span class="tag danger">深渊</span>
+      <span class="tag new">5.7版本</span>
+    </div>
+    <h1>🗡️ 深渊12层满星攻略 · T0配队一网打尽</h1>
+    <div class="meta">
+      <span>🕐 更新于 2026年6月11日</span>
+      <span>📖 约 16 分钟阅读</span>
+      <span>👁️ 浏览 86,000+</span>
+    </div>
+  </header>
+
+  <!-- 目录 -->
+  <nav class="toc">
+    <h4>📋 本文目录</h4>
+    <ol>
+      <li><a href="#overview">5.7版本深渊环境速览</a></li>
+      <li><a href="#tier">配队强度排行 · 全部T0-T1阵容</a></li>
+      <li><a href="#mavuika">① 玛薇卡蒸发队 — T0 版本答案</a></li>
+      <li><a href="#neuvillette">② 那维莱特队 — T0 水龙无双</a></li>
+      <li><a href="#raiden">③ 雷神国家队 — T0.5 经典永存</a></li>
+      <li><a href="#alhaitham">④ 艾尔海森激绽 — T0.5 须弥之光</a></li>
+      <li><a href="#budget">⑤ 平民低金配队 — 0+0也能满星</a></li>
+    </ol>
+  </nav>
+
+  <!-- 版本概述 -->
+  <section id="overview">
+    <h2><span class="icon">📊</span> 5.7版本深渊环境速览</h2>
+
+    <div class="card">
+      <h4>🛡️ 12层怪物分布</h4>
+      <table>
+        <thead><tr><th>间层</th><th>上半</th><th>下半</th><th>推荐元素</th></tr></thead>
+        <tbody>
+          <tr><td>12-1</td><td>机关阵列×2</td><td>深海龙蜥×3</td><td>火/雷/岩</td></tr>
+          <tr><td>12-2</td><td>冰深渊使徒 + 冰法师</td><td>雷深渊咏者 + 雷史莱姆</td><td>上半火、下半冰/草</td></tr>
+          <tr><td>12-3</td><td>恒常机关阵列(Boss)</td><td>深海龙蜥(Boss)</td><td>爆发型主C</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="highlight">
+      <p><strong>⚡ 关键信息：</strong>12-2是破盾检验关——上半需要高频火破冰盾，下半需要高频草/冰破雷盾。带错元素等于直接翻车。12-3两路都是纯Boss战，爆发DPS为王。</p>
+    </div>
+  </section>
+
+  <!-- 强度排行 -->
+  <section id="tier">
+    <h2><span class="icon">🏆</span> 配队强度排行 · 全部T0-T1阵容</h2>
+
+    <table>
+      <thead><tr><th>评级</th><th>阵容</th><th>核心角色</th><th>适用半区</th><th>造价</th><th>难度</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="t0">T0</td>
+          <td><strong>玛薇卡蒸发队</strong></td>
+          <td>玛薇卡+芙宁娜+希诺宁+班尼特</td>
+          <td>上半</td>
+          <td>3金</td>
+          <td>中</td>
+        </tr>
+        <tr>
+          <td class="t0">T0</td>
+          <td><strong>那维莱特队</strong></td>
+          <td>那维莱特+芙宁娜+万叶+白术</td>
+          <td>下半</td>
+          <td>3金</td>
+          <td>低</td>
+        </tr>
+        <tr>
+          <td class="t0-5">T0.5</td>
+          <td><strong>雷神国家队</strong></td>
+          <td>雷电将军+香菱+行秋+班尼特</td>
+          <td>上半</td>
+          <td>1金</td>
+          <td>低</td>
+        </tr>
+        <tr>
+          <td class="t0-5">T0.5</td>
+          <td><strong>艾尔海森激绽</strong></td>
+          <td>艾尔海森+纳西妲+行秋+久岐忍</td>
+          <td>下半</td>
+          <td>2金</td>
+          <td>中</td>
+        </tr>
+        <tr>
+          <td class="t1">T1</td>
+          <td><strong>胡桃双水</strong></td>
+          <td>胡桃+芙宁娜+夜兰+钟离</td>
+          <td>上半</td>
+          <td>4金</td>
+          <td>中高</td>
+        </tr>
+        <tr>
+          <td class="t1">T1</td>
+          <td><strong>永冻队</strong></td>
+          <td>神里绫华+茜特菈莉+万叶+心海</td>
+          <td>下半</td>
+          <td>3金</td>
+          <td>中</td>
+        </tr>
+        <tr>
+          <td class="t1">T1</td>
+          <td><strong>娜维娅双火</strong></td>
+          <td>娜维娅+香菱+班尼特+钟离</td>
+          <td>上半</td>
+          <td>2金</td>
+          <td>低</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 玛薇卡蒸发队 -->
+  <section id="mavuika">
+    <h2><span class="icon">🔥</span> ① 玛薇卡蒸发队 — T0 版本答案</h2>
+
+    <div class="team-detail">
+      <div class="td-header">
+        <span class="td-rank tr-t0">T0</span>
+        <strong style="font-size:1.1rem;">🌊🔥 蒸发蒸发！</strong>
+      </div>
+      <div class="td-chars">
+        <span class="td-char core">玛薇卡 (主C)</span>
+        <span class="td-char">芙宁娜 (挂水+增伤)</span>
+        <span class="td-char">希诺宁 (减抗)</span>
+        <span class="td-char">班尼特 (增伤+治疗)</span>
+      </div>
+      <p style="margin-top:12px;"><strong>输出手法：</strong>芙宁娜 E(黑芙) Q → 希诺宁 E Q 减抗 → 班尼特 Q → <strong>玛薇卡 Q(核爆) → 强化重击×4~5</strong></p>
+      <p>芙宁娜EQ挂水覆盖全程，玛薇卡Q蒸发核爆可打<b>50万+</b>。12-3上半稳定<strong>40秒</strong>通关。双火共鸣+芙宁娜增伤75%+希诺宁减抗36%+班尼特加攻——四重增伤叠加，输出爆炸。</p>
+      <p style="font-size:0.85rem; color:var(--accent2); margin-top:8px;">💡 替代：没有芙宁娜换行秋（伤害低20%），没有希诺宁换万叶。</p>
+    </div>
+  </section>
+
+  <!-- 那维莱特 -->
+  <section id="neuvillette">
+    <h2><span class="icon">🌊</span> ② 那维莱特队 — T0 水龙无双</h2>
+
+    <div class="team-detail">
+      <div class="td-header">
+        <span class="td-rank tr-t0">T0</span>
+        <strong style="font-size:1.1rem;">🌊 审判之时！</strong>
+      </div>
+      <div class="td-chars">
+        <span class="td-char core">那维莱特 (主C)</span>
+        <span class="td-char">芙宁娜 (增伤)</span>
+        <span class="td-char">万叶 (减抗聚怪)</span>
+        <span class="td-char">白术 (群奶)</span>
+      </div>
+      <p style="margin-top:12px;"><strong>输出手法：</strong>芙宁娜 E Q → 万叶 E Q → 白术 E Q 群奶 → <strong>那维莱特 E Q → 蓄力重击×3</strong></p>
+      <p>操作最简单、容错率最高的T0队。那维莱特自烧自回完美触发芙宁娜叠层，白术瞬奶拉满增伤。一喷伤害3~5万×8段，15秒打完。12-3下半两个Boss都可以一喷到底。</p>
+      <p style="font-size:0.85rem; color:var(--accent2); margin-top:8px;">💡 替代：没有白术换夏洛蒂/瑶瑶，没有万叶换砂糖。</p>
+    </div>
+  </section>
+
+  <!-- 雷国 -->
+  <section id="raiden">
+    <h2><span class="icon">⚡</span> ③ 雷神国家队 — T0.5 经典永存</h2>
+
+    <div class="team-detail">
+      <div class="td-header">
+        <span class="td-rank tr-t0-5">T0.5</span>
+        <strong style="font-size:1.1rem;">⚡ 雷国！启动！</strong>
+      </div>
+      <div class="td-chars">
+        <span class="td-char core">雷电将军 (充能+站场)</span>
+        <span class="td-char">香菱 (副C)</span>
+        <span class="td-char">行秋 (挂水)</span>
+        <span class="td-char">班尼特 (增伤)</span>
+      </div>
+      <p style="margin-top:12px;"><strong>输出手法：</strong>雷神 E → 班尼特 Q → 行秋 Q E → 香菱 Q E → <strong>雷神 Q → 重击循环×5 → 下一轮</strong></p>
+      <p>全游戏性价比天花板——<strong>1金成本（仅雷神0命）</strong>，三人四星满命即可。雷神大招给全队充能，让香菱和行秋实现无缝大招循环。版本更迭三年了依然是深渊常客。</p>
+      <p style="font-size:0.85rem; color:var(--accent2); margin-top:8px;">💡 雷神无专武用渔获（免费），香菱用渔获/西风，行秋用祭礼剑。</p>
+    </div>
+  </section>
+
+  <!-- 艾尔海森 -->
+  <section id="alhaitham">
+    <h2><span class="icon">🌿</span> ④ 艾尔海森激绽队 — T0.5 须弥之光</h2>
+
+    <div class="team-detail">
+      <div class="td-header">
+        <span class="td-rank tr-t0-5">T0.5</span>
+        <strong style="font-size:1.1rem;">🌿 海哥激绽！</strong>
+      </div>
+      <div class="td-chars">
+        <span class="td-char core">艾尔海森 (主C)</span>
+        <span class="td-char">纳西妲 (挂草)</span>
+        <span class="td-char">行秋 (挂水)</span>
+        <span class="td-char">久岐忍 (种子触发+治疗)</span>
+      </div>
+      <p style="margin-top:12px;"><strong>输出手法：</strong>纳西妲 E Q → 行秋 Q E → 久岐忍 E → <strong>艾尔海森 Q → 普攻×4 → E → 下落攻击 → 普攻×4</strong></p>
+      <p>激化+超绽放双反应体系。纳西妲提供精通拐，行秋水剑挂水产种子，久岐忍全精通堆到1000+触发3万+超绽放伤害，艾尔海森前台打超激化。完美克制12-2下半雷盾环境。</p>
+      <p style="font-size:0.85rem; color:var(--accent2); margin-top:8px;">💡 久岐忍全堆精通（饰金4/乐园4），行秋换夜兰也可以。</p>
+    </div>
+  </section>
+
+  <!-- 平民 -->
+  <section id="budget">
+    <h2><span class="icon">💰</span> ⑤ 平民低金配队 — 0+0也能满星</h2>
+
+    <div class="card">
+      <h4>⭐ 0金超绽放队（全四星）</h4>
+      <p><strong>草主 + 行秋 + 久岐忍 + 柯莱/瑶瑶</strong></p>
+      <p>不需要任何五星！草主（免费）挂草、行秋挂水产种、久岐忍触发超绽放。久岐忍90级+乐园4件套+铁蜂刺，一颗种子3万伤害，12-3也能磨过去。</p>
+    </div>
+
+    <div class="card">
+      <h4>⭐ 1金砂糖国家队</h4>
+      <p><strong>砂糖 + 香菱 + 行秋 + 班尼特</strong></p>
+      <p>没有雷神？砂糖来凑！砂糖站场普攻触发扩散+行秋水剑+香菱火轮，蒸发反应打满。砂糖带讨龙+翠绿4，班尼特带西风。操作比雷国复杂但输出不输。</p>
+    </div>
+
+    <div class="highlight">
+      <p><strong>🎯 平民满星核心思路：</strong>上半用火/雷主C破12-2冰盾，下半用草/水主C处理雷盾。不要硬凑T0阵容，环境适配 > 角色强度。</p>
+    </div>
+  </section>
+
+  <div class="cta">
+    <p style="font-size:1.1rem; font-weight:600;">⚔️ 每期深渊更新，第一时间推送最新配队</p>
+    <p style="color:var(--text-dim)">抄作业就能过，不用自己动脑配队</p>
+    <a href="../index.html#subscribe" class="btn">📩 免费订阅更新</a>
+  </div>
+
+</div>
+
+<div class="footer">
+  © 2026 提瓦特旅人指南 · <a href="../index.html">返回首页</a> · Genshin Impact © HoYoverse
+</div>
+
+</body>
+</html>
