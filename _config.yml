@@ -1,6 +1,9 @@
 title: 提瓦特旅人指南
 description: 原神5.7版本全方位攻略站
-theme: jekyll-theme-minima
-exclude:
-  - articles/
-  - assets/
+theme: null
+include:
+  - sitemap.xml
+  - robots.txt
+keep_files:
+  - sitemap.xml
+  - robots.txt
