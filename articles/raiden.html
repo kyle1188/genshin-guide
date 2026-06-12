@@ -117,6 +117,13 @@
     thead th, tbody td { padding:8px 10px; }
     .nav-right { gap:8px; }
   }
+
+  .toc-sidebar { position:fixed; right:16px; top:50%; transform:translateY(-50%); z-index:90; display:flex; flex-direction:column; gap:6px; }
+  .toc-link { display:block; padding:6px 14px; border-radius:8px; font-size:0.75rem; color:var(--text-dim); text-decoration:none; border-left:2px solid transparent; transition:all 0.25s; background:rgba(10,10,15,0.7); }
+  .toc-link:hover,.toc-link.active { color:var(--accent); border-left-color:var(--accent); background:rgba(255,189,89,0.08); }
+  .back-to-top { position:fixed; bottom:24px; right:24px; width:40px; height:40px; border-radius:50%; background:var(--accent); color:#0a0a0f; border:none; cursor:pointer; font-size:1.2rem; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity 0.3s; z-index:99; }
+  .back-to-top.visible { opacity:1; pointer-events:auto; }
+  @media (max-width:768px) { .toc-sidebar { display:none; } .back-to-top { bottom:16px; right:16px; } }
 </style>
 </head>
 <body>
@@ -133,6 +140,13 @@
 </nav>
 
 <div class="container">
+
+<aside class="toc-sidebar">
+  <a href="#weapon" class="toc-link"><span class="zh-only">武器圣遗物</span><span class="en-only">Weapons &amp; Artifacts</span></a>
+  <a href="#teams" class="toc-link"><span class="zh-only">配队方案</span><span class="en-only">Team Comps</span></a>
+  <a href="#faq" class="toc-link"><span class="zh-only">常见问题</span><span class="en-only">FAQ</span></a>
+</aside>
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
   <div class="breadcrumb">
     <a href="../index.html"><span class="zh-only">首页</span><span class="en-only">Home</span></a> › <a href="../index.html#characters"><span class="zh-only">角色攻略</span><span class="en-only">Character Builds</span></a> › <span class="zh-only">雷电将军</span><span class="en-only">Raiden Shogun</span>
@@ -348,6 +362,24 @@
   }
   langOptions.forEach(opt => opt.addEventListener('click', () => setLang(opt.dataset.lang)));
   setLang(localStorage.getItem('genshinLang') || ((navigator.language||navigator.userLanguage||'').startsWith('zh')?'zh':'en'));
+
+  // Back to top
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('visible', window.scrollY > 400);
+  });
+  backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // TOC active section
+  const tocLinks = document.querySelectorAll('.toc-link');
+  const sections = [...tocLinks].map(l => document.querySelector(l.getAttribute('href')));
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => {
+      if (sec && sec.getBoundingClientRect().top < 200) current = sec.id;
+    });
+    tocLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + current));
+  });
 </script>
 </body>
 </html>

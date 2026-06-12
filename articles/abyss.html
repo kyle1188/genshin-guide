@@ -107,12 +107,18 @@
   .footer { text-align:center; padding:32px 24px; border-top:1px solid var(--border); font-size:0.8rem; color:var(--text-dim); margin-top:40px; }
   .footer a { color:var(--accent); text-decoration:none; }
 
+  .toc-sidebar { position:fixed; right:16px; top:50%; transform:translateY(-50%); z-index:90; display:flex; flex-direction:column; gap:4px; }
+  .toc-link { display:block; padding:5px 12px; border-radius:8px; font-size:0.72rem; color:var(--text-dim); text-decoration:none; border-left:2px solid transparent; transition:all 0.25s; background:rgba(10,10,15,0.7); }
+  .toc-link:hover,.toc-link.active { color:var(--accent); border-left-color:var(--accent); background:rgba(255,189,89,0.08); }
+  .back-to-top { position:fixed; bottom:24px; right:24px; width:40px; height:40px; border-radius:50%; background:var(--accent); color:#0a0a0f; border:none; cursor:pointer; font-size:1.2rem; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity 0.3s; z-index:99; }
+  .back-to-top.visible { opacity:1; pointer-events:auto; }
   @media (max-width:768px) {
     .nav { padding:12px 20px; }
     h1 { font-size:1.7rem; }
     .container { padding:80px 16px 60px; }
     table { font-size:0.78rem; }
     thead th, tbody td { padding:8px 10px; }
+    .toc-sidebar { display:none; } .back-to-top { bottom:16px; right:16px; }
   }
 </style>
 </head>
@@ -130,6 +136,16 @@
 </nav>
 
 <div class="container">
+
+<aside class="toc-sidebar">
+  <a href="#overview" class="toc-link"><span class="zh-only">版本总览</span><span class="en-only">Overview</span></a>
+  <a href="#tier" class="toc-link"><span class="zh-only">强度排行</span><span class="en-only">Tier List</span></a>
+  <a href="#mavuika" class="toc-link"><span class="zh-only">玛薇卡蒸发</span><span class="en-only">Mavuika Vape</span></a>
+  <a href="#neuvillette" class="toc-link"><span class="zh-only">那维莱特</span><span class="en-only">Neuvillette</span></a>
+  <a href="#raiden" class="toc-link"><span class="zh-only">雷国队</span><span class="en-only">Rational</span></a>
+  <a href="#budget" class="toc-link"><span class="zh-only">平民方案</span><span class="en-only">Budget Comps</span></a>
+</aside>
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
   <div class="breadcrumb">
     <a href="../index.html"><span class="zh-only">首页</span><span class="en-only">Home</span></a> &nbsp;›&nbsp; <a href="../index.html#teams"><span class="zh-only">深渊配队</span><span class="en-only">Abyss Team Comps</span></a> &nbsp;›&nbsp; <span class="zh-only">深渊12层攻略</span><span class="en-only">Floor 12 Guide</span>
@@ -455,6 +471,24 @@
   });
   setActive(saved==='en'?'en':'zh');
 })();
+
+  // Back to top
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('visible', window.scrollY > 400);
+  });
+  backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // TOC active section
+  const tocLinks = document.querySelectorAll('.toc-link');
+  const sections = [...tocLinks].map(l => document.querySelector(l.getAttribute('href')));
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => {
+      if (sec && sec.getBoundingClientRect().top < 200) current = sec.id;
+    });
+    tocLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + current));
+  });
 </script>
 
 </body>
