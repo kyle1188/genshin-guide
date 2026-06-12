@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>雷电将军完全攻略 — 武器/圣遗物/配队 · 提瓦特旅人指南</title>
-<meta name="description" content="原神雷电将军全方位培养攻略：薙草之稻光领衔武器排名、绝缘4件套最优解、雷国配队核心打法、C2命座质变解析。从零命到满命，一篇学会。">
-<meta property="og:title" content="雷电将军完全攻略 — 武器/圣遗物/配队 · 提瓦特旅人指南">
-<meta property="og:description" content="薙草之稻光领衔武器排名、绝缘4件套最优解、雷国配队核心打法、C2命座质变解析。从零命到满命，一篇学会。">
+<title>雷电将军完全攻略 — 武器/圣遗物/配队 | Raiden Shogun Build Guide · Teyvat Traveler</title>
+<meta name="description" content="原神雷电将军全方位培养攻略：薙草之稻光领衔武器排名、绝缘4件套最优解、雷国配队核心打法、C2命座质变解析。Complete Raiden Shogun guide: weapon ranking, Emblem set optimization, Rational team combos, C2 powerspike analysis.">
+<meta property="og:title" content="雷电将军完全攻略 | Raiden Shogun Guide · Teyvat Traveler">
+<meta property="og:description" content="薙草之稻光武器排名、绝缘4最优解、雷国配队核心打法、C2质变解析。Weapon ranking, Emblem builds, Rational team & C2 analysis.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://kyle1188.github.io/genshin-guide/articles/raiden.html">
 <meta name="robots" content="index, follow, max-snippet:-1">
@@ -27,10 +27,26 @@
   ::-webkit-scrollbar { width:5px; } ::-webkit-scrollbar-track { background:var(--bg); }
   ::-webkit-scrollbar-thumb { background:rgba(255,255,255,0.1); border-radius:4px; }
 
+  /* Language Toggle */
+  .lang-toggle { display:inline-flex; align-items:center; gap:0; border:1px solid rgba(255,255,255,0.2); border-radius:20px; overflow:hidden; font-size:0.75rem; cursor:pointer; }
+  .lang-option { padding:4px 12px; color:rgba(255,255,255,0.5); transition:all 0.25s; font-weight:500; user-select:none; }
+  .lang-option.active { background:var(--accent); color:#0a0a0f; font-weight:700; }
+  body:not(.lang-en) .en-only { display:none !important; }
+  body:not(.lang-en) .zh-only { display:inline; }
+  body.lang-en .zh-only { display:none !important; }
+  body.lang-en .en-only { display:inline; }
+  .zh-block, .en-block { display:none; }
+  body:not(.lang-en) .zh-block { display:block; }
+  body.lang-en .en-block { display:block; }
+  .zh-inline, .en-inline { display:none; }
+  body:not(.lang-en) .zh-inline { display:inline; }
+  body.lang-en .en-inline { display:inline; }
+
   .nav { position:fixed; top:0; left:0; right:0; z-index:100; padding:14px 40px; display:flex; align-items:center; justify-content:space-between; background:rgba(10,10,15,0.85); backdrop-filter:blur(24px) saturate(180%); border-bottom:1px solid var(--border); }
   .nav a { color:rgba(255,255,255,0.7); text-decoration:none; font-size:0.85rem; transition:color 0.25s; }
   .nav a:hover { color:#fff; }
   .nav-logo { font-weight:700; font-size:1rem; color:#fff !important; display:flex; align-items:center; gap:8px; }
+  .nav-right { display:flex; align-items:center; gap:14px; }
 
   .container { max-width:860px; margin:0 auto; padding:100px 24px 80px; }
 
@@ -96,240 +112,239 @@
     .container { padding:80px 16px 60px; }
     table { font-size:0.78rem; }
     thead th, tbody td { padding:8px 10px; }
+    .nav-right { gap:8px; }
   }
 </style>
 </head>
 <body>
 
 <nav class="nav">
-  <a href="../index.html" class="nav-logo">⚡ 提瓦特旅人指南</a>
-  <a href="../index.html">← 返回首页</a>
+  <a href="../index.html" class="nav-logo">⚡ <span class="zh-only">提瓦特旅人指南</span><span class="en-only">Teyvat Traveler's Guide</span></a>
+  <div class="nav-right">
+    <div class="lang-toggle" id="langToggle">
+      <span class="lang-option active" data-lang="zh">中文</span>
+      <span class="lang-option" data-lang="en">EN</span>
+    </div>
+    <a href="../index.html">← <span class="zh-only">返回首页</span><span class="en-only">Home</span></a>
+  </div>
 </nav>
 
 <div class="container">
 
   <div class="breadcrumb">
-    <a href="../index.html">首页</a> &nbsp;›&nbsp; <a href="../index.html#characters">角色攻略</a> &nbsp;›&nbsp; 雷电将军
+    <a href="../index.html"><span class="zh-only">首页</span><span class="en-only">Home</span></a> › <a href="../index.html#characters"><span class="zh-only">角色攻略</span><span class="en-only">Character Builds</span></a> › <span class="zh-only">雷电将军</span><span class="en-only">Raiden Shogun</span>
   </div>
 
   <header class="article-header">
     <div class="tags">
-      <span class="tag hot">热门</span>
-      <span class="tag core">雷国核心</span>
-      <span class="tag new">5.7版本适用</span>
+      <span class="tag hot"><span class="zh-only">热门</span><span class="en-only">Hot</span></span>
+      <span class="tag core"><span class="zh-only">雷国核心</span><span class="en-only">National Core</span></span>
+      <span class="tag new"><span class="zh-only">5.7版本适用</span><span class="en-only">v5.7 Valid</span></span>
     </div>
-    <h1>⚡ 雷电将军 · 完全攻略手册</h1>
+    <h1>⚡ <span class="zh-only">雷电将军 · 完全攻略手册</span><span class="en-only">Raiden Shogun · Complete Guide</span></h1>
     <div class="meta">
-      <span>🕐 更新于 2026年6月11日</span>
-      <span>📖 约 12 分钟阅读</span>
-      <span>👁️ 浏览 38,000+</span>
+      <span><span class="zh-only">更新于 2026年6月11日</span><span class="en-only">Updated Jun 11, 2026</span></span>
+      <span><span class="zh-only">约 12 分钟阅读</span><span class="en-only">~12 min read</span></span>
+      <span>👁️ 38,000+</span>
     </div>
   </header>
 
-  <!-- 目录 -->
   <nav class="toc">
-    <h4>📋 本文目录</h4>
+    <h4>📋 <span class="zh-only">本文目录</span><span class="en-only">Table of Contents</span></h4>
     <ol>
-      <li><a href="#overview">角色定位与核心机制</a></li>
-      <li><a href="#weapon">武器选择 · 5档排名</a></li>
-      <li><a href="#artifact">圣遗物搭配 · 主词条最优解</a></li>
-      <li><a href="#constellation">命座分析 · C2 质变详解</a></li>
-      <li><a href="#teams">配队方案 · 3大主流体系</a></li>
-      <li><a href="#faq">常见问题 FAQ</a></li>
+      <li><a href="#overview"><span class="zh-only">角色定位与核心机制</span><span class="en-only">Role & Core Mechanics</span></a></li>
+      <li><a href="#weapon"><span class="zh-only">武器选择 · 5档排名</span><span class="en-only">Weapon Ranking (5 Tiers)</span></a></li>
+      <li><a href="#artifact"><span class="zh-only">圣遗物搭配 · 主词条最优解</span><span class="en-only">Artifacts & Main Stats</span></a></li>
+      <li><a href="#constellation"><span class="zh-only">命座分析 · C2 质变详解</span><span class="en-only">Constellations · C2 Analysis</span></a></li>
+      <li><a href="#teams"><span class="zh-only">配队方案 · 3大主流体系</span><span class="en-only">Team Comps · 3 Main Archetypes</span></a></li>
+      <li><a href="#faq"><span class="zh-only">常见问题 FAQ</span><span class="en-only">FAQ</span></a></li>
     </ol>
   </nav>
 
-  <!-- 角色定位 -->
   <section id="overview">
-    <h2><span class="icon">⚡</span> 角色定位与核心机制</h2>
-    <p>雷电将军 — 五星雷元素长柄武器角色，定位为<strong>充能辅助+爆发型副C/主C</strong>。她的核心机制围绕「诸愿百眼之轮」展开——队友释放元素爆发可为雷神叠加愿力层数，层数越高，雷神开启「梦想一心」状态后的伤害倍率越高。</p>
+    <h2><span class="icon">⚡</span> <span class="zh-only">角色定位与核心机制</span><span class="en-only">Role & Core Mechanics</span></h2>
+    <p class="zh-block">雷电将军 — 五星雷元素长柄武器角色，定位为<strong>充能辅助+爆发型副C/主C</strong>。她的核心机制围绕「诸愿百眼之轮」展开——队友释放元素爆发可为雷神叠加愿力层数，层数越高，雷神开启「梦想一心」状态后的伤害倍率越高。</p>
+    <p class="en-block">Raiden Shogun — 5★ Electro Polearm character. Role: <strong>Energy battery + Burst DPS/Sub-DPS</strong>. Her core mechanic revolves around the Chakra Desiderata: allies casting Elemental Bursts stack Resolve stacks, and the more stacks, the higher Raiden's damage multiplier during her Musou Isshin state.</p>
 
     <div class="highlight">
-      <p><strong>一句话总结：</strong>雷电将军同时解决了队伍的充能循环和爆发输出两个问题。她能给全队充能、能给全队增伤（元素爆发伤害），自己还能打出 20~50 万+ 的大招核爆。</p>
+      <p class="zh-block"><strong>一句话总结：</strong>雷电将军同时解决了队伍的充能循环和爆发输出两个问题。她能给全队充能、能给全队增伤（元素爆发伤害），自己还能打出 20~50 万+ 的大招核爆。</p>
+      <p class="en-block"><strong>TL;DR:</strong> Raiden solves both energy generation and burst damage problems simultaneously. She recharges the entire team, buffs their Burst DMG, and can deal 200K-500K+ burst nukes herself.</p>
     </div>
 
     <div class="card">
-      <h4>🔑 核心天赋优先级</h4>
-      <p><strong>元素爆发 (Q) &gt; 元素战技 (E) &gt; 普通攻击 (A)</strong></p>
-      <p>大招是雷神的一切。E技能提供全队元素爆发增伤（基于能量消耗），持续时间25秒，覆盖率高。普攻在非梦想一心状态下基本不用点。</p>
+      <h4 class="zh-only">🔑 核心天赋优先级</h4>
+      <h4 class="en-only">🔑 Talent Priority</h4>
+      <p><strong><span class="zh-only">元素爆发 (Q) &gt; 元素战技 (E) &gt; 普通攻击 (A)</span><span class="en-only">Elemental Burst (Q) > Elemental Skill (E) > Normal Attack (A)</span></strong></p>
+      <p class="zh-only">大招是雷神的一切。E技能提供全队元素爆发增伤（基于能量消耗），持续时间25秒，覆盖率高。普攻在非梦想一心状态下基本不用点。</p>
+      <p class="en-only">Her Burst is everything. Elemental Skill provides team-wide Burst DMG bonus (based on energy cost) with 25s duration — essentially permanent uptime. Normal Attack talents can be ignored outside Musou Isshin.</p>
     </div>
 
     <div class="card">
-      <h4>📊 90级基础面板</h4>
+      <h4 class="zh-only">📊 90级基础面板</h4>
+      <h4 class="en-only">📊 Lv.90 Base Stats</h4>
       <table>
-        <thead><tr><th>属性</th><th>数值</th><th>属性</th><th>数值</th></tr></thead>
+        <thead><tr><th class="zh-only">属性</th><th class="en-only">Stat</th><th class="zh-only">数值</th><th class="en-only">Value</th><th class="zh-only">属性</th><th class="en-only">Stat</th><th class="zh-only">数值</th><th class="en-only">Value</th></tr></thead>
         <tbody>
-          <tr><td>基础攻击力</td><td>337</td><td>基础防御力</td><td>789</td></tr>
-          <tr><td>基础生命值</td><td>12,907</td><td>元素充能效率</td><td>132% (突破)</td></tr>
-          <tr><td>暴击率</td><td>5%</td><td>暴击伤害</td><td>50%</td></tr>
+          <tr><td><span class="zh-only">基础攻击力</span><span class="en-only">Base ATK</span></td><td>337</td><td><span class="zh-only">基础防御力</span><span class="en-only">Base DEF</span></td><td>789</td></tr>
+          <tr><td><span class="zh-only">基础生命值</span><span class="en-only">Base HP</span></td><td>12,907</td><td><span class="zh-only">元素充能效率</span><span class="en-only">ER (Ascension)</span></td><td>132%</td></tr>
+          <tr><td><span class="zh-only">暴击率</span><span class="en-only">CRIT Rate</span></td><td>5%</td><td><span class="zh-only">暴击伤害</span><span class="en-only">CRIT DMG</span></td><td>50%</td></tr>
         </tbody>
       </table>
     </div>
   </section>
 
-  <!-- 武器 -->
   <section id="weapon">
-    <h2><span class="icon">🗡️</span> 武器选择 · 5档排名</h2>
-    <p>雷神对武器的核心需求：<strong>充能 &gt; 暴击 &gt; 攻击力</strong>。充能武器能同时提升循环流畅度和雷伤加成（绝缘4+固有天赋双重转化），收益远超纯攻击武器。</p>
+    <h2><span class="icon">🗡️</span> <span class="zh-only">武器选择 · 5档排名</span><span class="en-only">Weapon Ranking (5 Tiers)</span></h2>
+    <p class="zh-only">雷神对武器的核心需求：<strong>充能 &gt; 暴击 &gt; 攻击力</strong>。充能武器能同时提升循环流畅度和雷伤加成（绝缘4+固有天赋双重转化），收益远超纯攻击武器。</p>
+    <p class="en-only">Raiden's weapon priority: <strong>ER > CRIT > ATK</strong>. ER weapons simultaneously improve rotation consistency and Electro DMG bonus (via Emblem 4pc + passive conversion), far outweighing pure ATK weapons.</p>
 
     <table>
       <thead>
-        <tr><th>档位</th><th>武器</th><th>基础攻击</th><th>副属性</th><th>核心优势</th><th>获取</th></tr>
+        <tr><th><span class="zh-only">档位</span><span class="en-only">Tier</span></th><th><span class="zh-only">武器</span><span class="en-only">Weapon</span></th><th><span class="zh-only">基础攻击</span><span class="en-only">Base ATK</span></th><th><span class="zh-only">副属性</span><span class="en-only">Substat</span></th><th><span class="zh-only">核心优势</span><span class="en-only">Key Advantage</span></th><th><span class="zh-only">获取</span><span class="en-only">Source</span></th></tr>
       </thead>
       <tbody>
-        <tr>
-          <td class="tier-s">SS</td>
-          <td><strong>薙草之稻光</strong></td>
-          <td>608</td>
-          <td>充能 55.1%</td>
-          <td>充能转攻双收益，专武完全体。开大后额外+30%充能，完美契合绝缘4</td>
-          <td>限定祈愿</td>
-        </tr>
-        <tr>
-          <td class="tier-s">S</td>
-          <td><strong>和璞鸢</strong></td>
-          <td>674</td>
-          <td>暴击率 22.1%</td>
-          <td>高白值+暴击面板，叠满后伤害提升可观</td>
-          <td>常驻/限定</td>
-        </tr>
-        <tr>
-          <td class="tier-a">A</td>
-          <td><strong>护摩之杖</strong></td>
-          <td>608</td>
-          <td>暴伤 66.2%</td>
-          <td>暴伤面板爆炸，半血以下收益更高</td>
-          <td>限定祈愿</td>
-        </tr>
-        <tr>
-          <td class="tier-a">A</td>
-          <td><strong>渔获 (F2P首选)</strong></td>
-          <td>510</td>
-          <td>充能 45.9%</td>
-          <td>免费满精！大招暴率+12%、大招伤害+32%，性价比之王</td>
-          <td>钓鱼兑换</td>
-        </tr>
-        <tr>
-          <td class="tier-b">B</td>
-          <td><strong>决斗之枪</strong></td>
-          <td>454</td>
-          <td>暴击率 36.8%</td>
-          <td>暴率堆满，但白值偏低</td>
-          <td>纪行</td>
-        </tr>
+        <tr><td class="tier-s">SS</td><td><strong><span class="zh-only">薙草之稻光</span><span class="en-only">Engulfing Lightning</span></strong></td><td>608</td><td><span class="zh-only">充能</span><span class="en-only">ER</span> 55.1%</td><td class="zh-only">充能转攻双收益，专武完全体。开大后额外+30%充能</td><td class="en-only">ER→ATK double conversion, signature weapon. +30% ER after Burst</td><td><span class="zh-only">限定</span><span class="en-only">Limited</span></td></tr>
+        <tr><td class="tier-s">S</td><td><strong><span class="zh-only">和璞鸢</span><span class="en-only">Primordial Jade Spear</span></strong></td><td>674</td><td><span class="zh-only">暴击率</span><span class="en-only">CRIT Rate</span> 22.1%</td><td class="zh-only">高白值+暴击面板，叠满后伤害可观</td><td class="en-only">High base ATK + CRIT, solid stacked DMG</td><td><span class="zh-only">常驻</span><span class="en-only">Standard</span></td></tr>
+        <tr><td class="tier-a">A</td><td><strong><span class="zh-only">护摩之杖</span><span class="en-only">Staff of Homa</span></strong></td><td>608</td><td><span class="zh-only">暴伤</span><span class="en-only">CRIT DMG</span> 66.2%</td><td class="zh-only">暴伤面板爆炸</td><td class="en-only">Massive CRIT DMG stat stick</td><td><span class="zh-only">限定</span><span class="en-only">Limited</span></td></tr>
+        <tr><td class="tier-a">A</td><td><strong><span class="zh-only">渔获</span><span class="en-only">The Catch</span> <span class="zh-only">(F2P首选)</span><span class="en-only">(F2P Best)</span></strong></td><td>510</td><td><span class="zh-only">充能</span><span class="en-only">ER</span> 45.9%</td><td class="zh-only">免费满精！大招暴率+12%、伤害+32%</td><td class="en-only">Free R5! Burst CRIT +12%, DMG +32%</td><td><span class="zh-only">钓鱼兑换</span><span class="en-only">Fishing</span></td></tr>
+        <tr><td class="tier-b">B</td><td><strong><span class="zh-only">决斗之枪</span><span class="en-only">Deathmatch</span></strong></td><td>454</td><td><span class="zh-only">暴击率</span><span class="en-only">CRIT Rate</span> 36.8%</td><td class="zh-only">暴率堆满但白值偏低</td><td class="en-only">Easy CRIT cap but low base ATK</td><td>BP</td></tr>
       </tbody>
     </table>
 
     <div class="highlight">
-      <p><strong>💡 没有专武怎么办？</strong>用<strong>渔获</strong>！一把免费R5武器可以达到专武85%的输出，是目前原神最强的免费四星武器之一。去稻妻钓鱼协会兑换即可。</p>
+      <p class="zh-block"><strong>💡 没有专武怎么办？</strong>用<strong>渔获</strong>！一把免费R5武器可以达到专武85%的输出，是目前原神最强的免费四星武器之一。去稻妻钓鱼协会兑换即可。</p>
+      <p class="en-block"><strong>💡 No signature weapon?</strong> Use <strong>The Catch</strong>! This free R5 weapon achieves ~85% of Engulfing Lightning's output. One of the best F2P weapons in the game. Exchange at Inazuma Fishing Association.</p>
     </div>
   </section>
 
-  <!-- 圣遗物 -->
   <section id="artifact">
-    <h2><span class="icon">💎</span> 圣遗物搭配 · 主词条最优解</h2>
+    <h2><span class="icon">💎</span> <span class="zh-only">圣遗物搭配 · 主词条最优解</span><span class="en-only">Artifacts & Optimal Main Stats</span></h2>
 
-    <h3>首选套装：绝缘之旗印 ×4</h3>
-    <p><strong>2件套：</strong>元素充能效率 +20%<br><strong>4件套：</strong>基于元素充能效率的25%，提升元素爆发伤害，最多提升75%</p>
-    <p>这是雷神的<strong>唯一指定毕业套装</strong>。充能→雷伤（固有天赋）+充能→大招伤害（绝缘4），双重转化收益最大化。需要300%充能才能吃满75%加成。</p>
+    <h3 class="zh-only">首选套装：绝缘之旗印 ×4</h3>
+    <h3 class="en-only">Best Set: Emblem of Severed Fate ×4</h3>
+    <p class="zh-only"><strong>2件套：</strong>元素充能效率 +20%<br><strong>4件套：</strong>基于元素充能效率的25%，提升元素爆发伤害，最多提升75%</p>
+    <p class="en-only"><strong>2pc:</strong> Energy Recharge +20%<br><strong>4pc:</strong> Increases Elemental Burst DMG by 25% of ER, max 75% bonus.</p>
+    <p class="zh-only">这是雷神的<strong>唯一指定毕业套装</strong>。充能→雷伤（固有天赋）+充能→大招伤害（绝缘4），双重转化收益最大化。需要300%充能才能吃满75%加成。</p>
+    <p class="en-only">This is Raiden's <strong>only true endgame set</strong>. ER→Electro DMG (passive) + ER→Burst DMG (Emblem 4pc) — double conversion for max returns. 300% ER needed to cap the 75% bonus.</p>
 
     <div class="card">
-      <h4>🎯 主词条选择</h4>
+      <h4 class="zh-only">🎯 主词条选择</h4>
+      <h4 class="en-only">🎯 Main Stat Choices</h4>
       <table>
-        <thead><tr><th>部位</th><th>最优主词条</th><th>替代方案</th></tr></thead>
+        <thead><tr><th class="zh-only">部位</th><th class="en-only">Slot</th><th class="zh-only">最优主词条</th><th class="en-only">Best</th><th class="zh-only">替代方案</th><th class="en-only">Alternative</th></tr></thead>
         <tbody>
-          <tr><td>时之沙</td><td><strong>元素充能效率</strong></td><td>攻击力%（充能已达标时）</td></tr>
-          <tr><td>空之杯</td><td><strong>攻击力% / 雷元素伤害</strong></td><td>差距在5%以内，哪个副词条好选哪个</td></tr>
-          <tr><td>理之冠</td><td><strong>暴击率 / 暴击伤害</strong></td><td>暴击率优先保证1:2配比</td></tr>
+          <tr><td><span class="zh-only">时之沙</span><span class="en-only">Sands</span></td><td><strong><span class="zh-only">元素充能效率</span><span class="en-only">ER%</span></strong></td><td><span class="zh-only">攻击力%（充能已达标时）</span><span class="en-only">ATK% (if ER met)</span></td></tr>
+          <tr><td><span class="zh-only">空之杯</span><span class="en-only">Goblet</span></td><td><strong><span class="zh-only">攻击力% / 雷元素伤害</span><span class="en-only">ATK% / Electro DMG</span></strong></td><td><span class="zh-only">差距在5%以内</span><span class="en-only">Difference &lt;5%</span></td></tr>
+          <tr><td><span class="zh-only">理之冠</span><span class="en-only">Circlet</span></td><td><strong><span class="zh-only">暴击率 / 暴击伤害</span><span class="en-only">CRIT Rate / CRIT DMG</span></strong></td><td><span class="zh-only">优先保证1:2配比</span><span class="en-only">Keep 1:2 ratio</span></td></tr>
         </tbody>
       </table>
     </div>
 
     <div class="card">
-      <h4>📏 副词条优先级</h4>
-      <p><strong>充能效率(至270%) &gt; 暴击率/暴击伤害(1:2) &gt; 攻击力% &gt; 元素充能效率(270%+)</strong></p>
-      <p>目标面板：充能 250-270%、暴率 60-70%、暴伤 130-160%。如果带渔获，暴率要求可以降低5-10%（渔获被动给12%大招暴率）。</p>
+      <h4 class="zh-only">📏 副词条优先级</h4>
+      <h4 class="en-only">📏 Substat Priority</h4>
+      <p><strong><span class="zh-only">充能效率(至270%) &gt; 暴击率/暴击伤害(1:2) &gt; 攻击力% &gt; 元素充能效率(270%+)</span><span class="en-only">ER (to 270%) > CRIT Rate/CRIT DMG (1:2) > ATK% > ER (270%+)</span></strong></p>
+      <p class="zh-only">目标面板：充能 250-270%、暴率 60-70%、暴伤 130-160%。如果带渔获，暴率要求可以降低5-10%。</p>
+      <p class="en-only">Target stats: 250-270% ER, 60-70% CRIT Rate, 130-160% CRIT DMG. With The Catch, CRIT Rate requirement drops 5-10%.</p>
     </div>
   </section>
 
-  <!-- 命座 -->
   <section id="constellation">
-    <h2><span class="icon">⭐</span> 命座分析 · C2 质变详解</h2>
+    <h2><span class="icon">⭐</span> <span class="zh-only">命座分析 · C2 质变详解</span><span class="en-only">Constellations · The C2 Powerspike</span></h2>
     <table>
-      <thead><tr><th>命座</th><th>效果</th><th>提升幅度</th><th>推荐度</th></tr></thead>
+      <thead><tr><th class="zh-only">命座</th><th class="en-only">Cons</th><th class="zh-only">效果</th><th class="en-only">Effect</th><th class="zh-only">提升幅度</th><th class="en-only">Gain</th><th class="zh-only">推荐度</th><th class="en-only">Rating</th></tr></thead>
       <tbody>
-        <tr><td>C1</td><td>更快叠满愿力层数（雷元素队友×1.8倍）</td><td>≈5%</td><td>⭐</td></tr>
-        <tr><td><strong>C2</strong></td><td><strong>梦想一心状态下攻击无视敌人60%防御力</strong></td><td><strong>≈43% 🔥</strong></td><td>⭐⭐⭐⭐⭐</td></tr>
-        <tr><td>C3</td><td>元素爆发等级+3</td><td>≈18%</td><td>⭐⭐⭐</td></tr>
-        <tr><td>C4</td><td>梦想一心结束后全队+30%攻击力</td><td>≈8%</td><td>⭐</td></tr>
-        <tr><td>C5</td><td>元素战技等级+3</td><td>≈3%</td><td>⭐</td></tr>
-        <tr><td>C6</td><td>梦想一心状态下减少队友大招冷却</td><td>功能性</td><td>⭐⭐</td></tr>
+        <tr><td>C1</td><td class="zh-only">更快叠满愿力层数</td><td class="en-only">Faster Resolve stacking</td><td>≈5%</td><td>⭐</td></tr>
+        <tr><td><strong>C2</strong></td><td><strong class="zh-only">梦想一心状态下攻击无视敌人60%防御力</strong><strong class="en-only">Musou Isshin attacks ignore 60% DEF</strong></td><td><strong>≈43% 🔥</strong></td><td>⭐⭐⭐⭐⭐</td></tr>
+        <tr><td>C3</td><td class="zh-only">元素爆发等级+3</td><td class="en-only">Burst LV +3</td><td>≈18%</td><td>⭐⭐⭐</td></tr>
+        <tr><td>C4</td><td class="zh-only">全队+30%攻击力</td><td class="en-only">Team +30% ATK</td><td>≈8%</td><td>⭐</td></tr>
+        <tr><td>C5</td><td class="zh-only">元素战技等级+3</td><td class="en-only">Skill LV +3</td><td>≈3%</td><td>⭐</td></tr>
+        <tr><td>C6</td><td class="zh-only">减少队友大招冷却</td><td class="en-only">Reduce team Burst CD</td><td><span class="zh-only">功能性</span><span class="en-only">Utility</span></td><td>⭐⭐</td></tr>
       </tbody>
     </table>
     <div class="highlight">
-      <p><strong>🚨 C2是雷神最大的质变：</strong>无视60%防御力直接提升约43%的最终伤害，是从「好用辅助」到「一拖三主C」的分水岭。推荐目标：<strong>C0够用 → C2质变 → C3锦上添花</strong>。</p>
+      <p class="zh-block"><strong>🚨 C2是雷神最大的质变：</strong>无视60%防御力直接提升约43%的最终伤害，是从「好用辅助」到「一拖三主C」的分水岭。推荐目标：<strong>C0够用 → C2质变 → C3锦上添花</strong>。</p>
+      <p class="en-block"><strong>🚨 C2 is Raiden's biggest powerspike:</strong> Ignoring 60% DEF translates to ~43% final damage increase. It's the difference between "good support" and "hypercarry that solos everything." Goal: <strong>C0 functional → C2 game-changer → C3 cherry on top</strong>.</p>
     </div>
   </section>
 
-  <!-- 配队 -->
   <section id="teams">
-    <h2><span class="icon">🤝</span> 配队方案 · 3大主流体系</h2>
+    <h2><span class="icon">🤝</span> <span class="zh-only">配队方案 · 3大主流体系</span><span class="en-only">Team Comps · 3 Main Archetypes</span></h2>
 
     <div class="team-grid">
       <div class="team-card">
-        <div class="t-name">⚡ 雷神国家队</div>
-        <div class="t-chars">雷神 + 香菱 + 行秋 + 班尼特</div>
-        <div class="t-desc">经典永不过时。双火共鸣+雷神充能，香菱行秋无限大招循环。造价极低（两四星+班尼特），深渊12层满星首选。</div>
+        <div class="t-name">⚡ <span class="zh-only">雷神国家队</span><span class="en-only">Rational</span></div>
+        <div class="t-chars"><span class="zh-only">雷神 + 香菱 + 行秋 + 班尼特</span><span class="en-only">Raiden + Xiangling + Xingqiu + Bennett</span></div>
+        <div class="t-desc"><span class="zh-only">经典永不过时。双火共鸣+雷神充能，香菱行秋无限大招循环。造价极低，深渊12层满星首选。</span><span class="en-only">Timeless classic. Pyro resonance + Raiden battery = infinite Burst rotation. Ultra-budget, top pick for Floor 12 full stars.</span></div>
       </div>
       <div class="team-card">
-        <div class="t-name">⚡ 雷九万班</div>
-        <div class="t-chars">雷神(C2) + 九条裟罗(C6) + 万叶 + 班尼特</div>
-        <div class="t-desc">雷神 Hypercarry 体系。九条给60%暴伤+攻击，万叶减抗增伤，班尼特加攻，三拐一让雷神一刀砍出50万+。</div>
+        <div class="t-name">⚡ <span class="zh-only">雷九万班</span><span class="en-only">Raiden Hypercarry</span></div>
+        <div class="t-chars"><span class="zh-only">雷神(C2) + 九条裟罗(C6) + 万叶 + 班尼特</span><span class="en-only">Raiden(C2) + Sara(C6) + Kazuha + Bennett</span></div>
+        <div class="t-desc"><span class="zh-only">雷神 Hypercarry 体系。九条给60%暴伤+攻击，万叶减抗增伤，班尼特加攻，三拐一让雷神一刀砍出50万+。</span><span class="en-only">Hypercarry setup. Sara gives +60% CRIT DMG + ATK, Kazuha shreds & buffs, Bennett ATK boost — triple buffer for 500K+ slashes.</span></div>
       </div>
       <div class="team-card">
-        <div class="t-name">⚡ 雷草激化队</div>
-        <div class="t-chars">雷神 + 纳西妲 + 菲谢尔 + 钟离</div>
-        <div class="t-desc">激化反应高频触发，纳西妲提供精通拐，钟离保障生存。适合对单Boss环境，稳定高伤。</div>
+        <div class="t-name">⚡ <span class="zh-only">雷草激化队</span><span class="en-only">Aggravate</span></div>
+        <div class="t-chars"><span class="zh-only">雷神 + 纳西妲 + 菲谢尔 + 钟离</span><span class="en-only">Raiden + Nahida + Fischl + Zhongli</span></div>
+        <div class="t-desc"><span class="zh-only">激化反应高频触发，纳西妲提供精通拐，钟离保障生存。适合对单Boss环境，稳定高伤。</span><span class="en-only">Frequent Aggravate procs, Nahida EM buff, Zhongli shield. Best vs single-target bosses, consistent high DPS.</span></div>
       </div>
     </div>
 
     <div class="card">
-      <h4>🎮 雷国标准输出手法</h4>
-      <p>雷神 E → 班尼特 Q → 行秋 Q+E → 香菱 Q+E → <strong>雷神 Q 站场重击循环×4~5</strong> → 下一轮</p>
-      <p style="margin-top:8px">核心思路：E起手挂雷 → 三人依次开大攒愿力 → 雷神最后Q收尾，同时给全队充能回到起点。</p>
+      <h4 class="zh-only">🎮 雷国标准输出手法</h4>
+      <h4 class="en-only">🎮 Rational Rotation</h4>
+      <p><span class="zh-only">雷神 E → 班尼特 Q → 行秋 Q+E → 香菱 Q+E → </span><span class="en-only">Raiden E → Bennett Q → Xingqiu Q+E → Xiangling Q+E → </span><strong><span class="zh-only">雷神 Q 站场重击循环×4~5</span><span class="en-only">Raiden Q, charged attacks ×4~5</span></strong> → <span class="zh-only">下一轮</span><span class="en-only">Repeat</span></p>
+      <p style="margin-top:8px" class="zh-only">核心思路：E起手挂雷 → 三人依次开大攒愿力 → 雷神最后Q收尾，同时给全队充能回到起点。</p>
+      <p style="margin-top:8px" class="en-only">Core logic: E for Electro aura → three teammates Burst to build Resolve → Raiden Q finale, recharging everyone back to start.</p>
     </div>
   </section>
 
-  <!-- FAQ -->
   <section id="faq">
-    <h2><span class="icon">❓</span> 常见问题 FAQ</h2>
+    <h2><span class="icon">❓</span> <span class="zh-only">常见问题 FAQ</span><span class="en-only">FAQ</span></h2>
 
     <div class="card">
-      <h4>充能沙还是攻击沙？</h4>
-      <p><strong>首选充能沙。</strong>非专武情况下充能沙收益远高于攻击沙。只有带薙草且副词条充能已到250%+才考虑换攻击沙。</p>
+      <h4 class="zh-only">充能沙还是攻击沙？</h4>
+      <h4 class="en-only">ER Sands or ATK Sands?</h4>
+      <p class="zh-block"><strong>首选充能沙。</strong>非专武情况下充能沙收益远高于攻击沙。只有带薙草且副词条充能已到250%+才考虑换攻击沙。</p>
+      <p class="en-block"><strong>ER Sands first.</strong> Without Engulfing Lightning, ER sands greatly outperforms ATK. Only consider ATK sands with Engulfing + 250%+ ER from substats.</p>
     </div>
     <div class="card">
-      <h4>0命能玩吗？</h4>
-      <p><strong>完全可以。</strong>0命雷神在雷国队中已经是核心引擎。C2是加分项不是必选项，先抽角色0命配渔获就能打通深渊。</p>
+      <h4 class="zh-only">0命能玩吗？</h4>
+      <h4 class="en-only">Is C0 viable?</h4>
+      <p class="zh-block"><strong>完全可以。</strong>0命雷神在雷国队中已经是核心引擎。C2是加分项不是必选项，先抽角色0命配渔获就能打通深渊。</p>
+      <p class="en-block"><strong>Absolutely.</strong> C0 Raiden is already the core engine of Rational team. C2 is a bonus, not a requirement. C0 + The Catch can full-star Abyss.</p>
     </div>
     <div class="card">
-      <h4>雷伤杯还是攻击杯？</h4>
-      <p><strong>攻击杯。</strong>因为雷神自身（固有天赋+绝缘4）已经给了大量增伤区，攻击杯在大多数配队中略优于雷伤杯（差距约3-5%）。哪个副词条好用哪个。</p>
+      <h4 class="zh-only">雷伤杯还是攻击杯？</h4>
+      <h4 class="en-only">Electro DMG or ATK Goblet?</h4>
+      <p class="zh-block"><strong>攻击杯。</strong>因为雷神自身（固有天赋+绝缘4）已经给了大量增伤区，攻击杯在大多数配队中略优于雷伤杯（差距约3-5%）。哪个副词条好用哪个。</p>
+      <p class="en-block"><strong>ATK Goblet.</strong> Raiden already has massive DMG% from her passive + Emblem 4pc. ATK Goblet slightly edges out Electro DMG in most teams (~3-5% gap). Use whichever has better substats.</p>
     </div>
   </section>
 
-  <!-- CTA -->
   <div class="cta">
-    <p style="font-size:1.1rem; font-weight:600;">📬 觉得有用？订阅获取更多角色攻略</p>
-    <p style="color:var(--text-dim)">新角色测评、深渊配队、武器对比，第一时间推送</p>
-    <a href="../index.html#subscribe" class="btn">📩 免费订阅更新</a>
+    <p style="font-size:1.1rem; font-weight:600;"><span class="zh-only">📬 觉得有用？订阅获取更多角色攻略</span><span class="en-only">📬 Found this useful? Subscribe for more guides</span></p>
+    <p style="color:var(--text-dim)"><span class="zh-only">新角色测评、深渊配队、武器对比，第一时间推送</span><span class="en-only">New character reviews, Abyss teams, weapon comparisons — delivered first</span></p>
+    <a href="../index.html#subscribe" class="btn"><span class="zh-only">📩 免费订阅更新</span><span class="en-only">📩 Subscribe Free</span></a>
   </div>
 
 </div>
 
 <div class="footer">
-  © 2026 提瓦特旅人指南 · <a href="../index.html">返回首页</a> · Genshin Impact © HoYoverse
+  <span class="zh-only">© 2026 提瓦特旅人指南</span><span class="en-only">© 2026 Teyvat Traveler's Guide</span> · <a href="../index.html"><span class="zh-only">返回首页</span><span class="en-only">Home</span></a> · Genshin Impact © HoYoverse
 </div>
 
+<script>
+  const langToggle = document.getElementById('langToggle');
+  const langOptions = langToggle.querySelectorAll('.lang-option');
+  function setLang(lang) {
+    if (lang === 'en') { document.body.classList.add('lang-en'); }
+    else { document.body.classList.remove('lang-en'); }
+    document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+    localStorage.setItem('genshinLang', lang);
+    langOptions.forEach(opt => opt.classList.toggle('active', opt.dataset.lang === lang));
+  }
+  langOptions.forEach(opt => opt.addEventListener('click', () => setLang(opt.dataset.lang)));
+  setLang(localStorage.getItem('genshinLang') || 'zh');
+</script>
 </body>
 </html>

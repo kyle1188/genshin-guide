@@ -32,6 +32,17 @@
   .nav a:hover { color:#fff; }
   .nav-logo { font-weight:700; font-size:1rem; color:#fff !important; display:flex; align-items:center; gap:8px; }
 
+  .lang-toggle { display:inline-flex; align-items:center; gap:0; border:1px solid rgba(255,255,255,0.2); border-radius:20px; overflow:hidden; font-size:0.75rem; cursor:pointer; }
+  .lang-option { padding:4px 12px; color:rgba(255,255,255,0.5); transition:all 0.25s; font-weight:500; user-select:none; }
+  .lang-option.active { background:var(--accent); color:#0a0a0f; font-weight:700; }
+  body:not(.lang-en) .en-only { display:none !important; }
+  body:not(.lang-en) .zh-only { display:inline; }
+  body.lang-en .zh-only { display:none !important; }
+  body.lang-en .en-only { display:inline; }
+  .zh-block, .en-block { display:none; }
+  body:not(.lang-en) .zh-block { display:block; }
+  body.lang-en .en-block { display:block; }
+
   .container { max-width:860px; margin:0 auto; padding:100px 24px 80px; }
 
   .breadcrumb { font-size:0.8rem; color:var(--text-dim); margin-bottom:20px; }
@@ -105,127 +116,150 @@
 <body>
 
 <nav class="nav">
-  <a href="../index.html" class="nav-logo">⚡ 提瓦特旅人指南</a>
-  <a href="../index.html">← 返回首页</a>
+  <a href="../index.html" class="nav-logo">⚡ <span class="zh-only">提瓦特旅人指南</span><span class="en-only">Teyvat Traveler's Guide</span></a>
+  <div style="display:flex;align-items:center;gap:16px;">
+    <div class="lang-toggle" id="langToggle">
+      <span class="lang-option active" data-lang="zh">中文</span>
+      <span class="lang-option" data-lang="en">EN</span>
+    </div>
+    <a href="../index.html"><span class="zh-only">← 返回首页</span><span class="en-only">← Back to Home</span></a>
+  </div>
 </nav>
 
 <div class="container">
 
   <div class="breadcrumb">
-    <a href="../index.html">首页</a> &nbsp;›&nbsp; <a href="../index.html#teams">深渊配队</a> &nbsp;›&nbsp; 深渊12层攻略
+    <a href="../index.html"><span class="zh-only">首页</span><span class="en-only">Home</span></a> &nbsp;›&nbsp; <a href="../index.html#teams"><span class="zh-only">深渊配队</span><span class="en-only">Abyss Team Comps</span></a> &nbsp;›&nbsp; <span class="zh-only">深渊12层攻略</span><span class="en-only">Floor 12 Guide</span>
   </div>
 
   <header class="article-header">
     <div class="tags">
-      <span class="tag hot">热门</span>
-      <span class="tag danger">深渊</span>
-      <span class="tag new">5.7版本</span>
+      <span class="tag hot"><span class="zh-only">热门</span><span class="en-only">Popular</span></span>
+      <span class="tag danger"><span class="zh-only">深渊</span><span class="en-only">Abyss</span></span>
+      <span class="tag new"><span class="zh-only">5.7版本</span><span class="en-only">V5.7</span></span>
     </div>
-    <h1>🗡️ 深渊12层满星攻略 · T0配队一网打尽</h1>
+    <h1>🗡️ <span class="zh-only">深渊12层满星攻略 · T0配队一网打尽</span><span class="en-only">Abyss Floor 12 Full-Star Guide · All T0 Team Comps</span></h1>
     <div class="meta">
-      <span>🕐 更新于 2026年6月11日</span>
-      <span>📖 约 16 分钟阅读</span>
-      <span>👁️ 浏览 86,000+</span>
+      <span><span class="zh-only">🕐 更新于 2026年6月11日</span><span class="en-only">🕐 Updated Jun 11, 2026</span></span>
+      <span><span class="zh-only">📖 约 16 分钟阅读</span><span class="en-only">📖 ~16 min read</span></span>
+      <span><span class="zh-only">👁️ 浏览 86,000+</span><span class="en-only">👁️ 86,000+ views</span></span>
     </div>
   </header>
 
   <!-- 目录 -->
   <nav class="toc">
-    <h4>📋 本文目录</h4>
+    <h4><span class="zh-only">📋 本文目录</span><span class="en-only">📋 Table of Contents</span></h4>
     <ol>
-      <li><a href="#overview">5.7版本深渊环境速览</a></li>
-      <li><a href="#tier">配队强度排行 · 全部T0-T1阵容</a></li>
-      <li><a href="#mavuika">① 玛薇卡蒸发队 — T0 版本答案</a></li>
-      <li><a href="#neuvillette">② 那维莱特队 — T0 水龙无双</a></li>
-      <li><a href="#raiden">③ 雷神国家队 — T0.5 经典永存</a></li>
-      <li><a href="#alhaitham">④ 艾尔海森激绽 — T0.5 须弥之光</a></li>
-      <li><a href="#budget">⑤ 平民低金配队 — 0+0也能满星</a></li>
+      <li><a href="#overview"><span class="zh-only">5.7版本深渊环境速览</span><span class="en-only">V5.7 Abyss Environment Overview</span></a></li>
+      <li><a href="#tier"><span class="zh-only">配队强度排行 · 全部T0-T1阵容</span><span class="en-only">Team Comp Tier List · All T0-T1 Lineups</span></a></li>
+      <li><a href="#mavuika"><span class="zh-only">① 玛薇卡蒸发队 — T0 版本答案</span><span class="en-only">① Mavuika Vaporize — T0 Meta Answer</span></a></li>
+      <li><a href="#neuvillette"><span class="zh-only">② 那维莱特队 — T0 水龙无双</span><span class="en-only">② Neuvillette — T0 Hydro Dragon Supreme</span></a></li>
+      <li><a href="#raiden"><span class="zh-only">③ 雷神国家队 — T0.5 经典永存</span><span class="en-only">③ Raiden National — T0.5 Timeless Classic</span></a></li>
+      <li><a href="#alhaitham"><span class="zh-only">④ 艾尔海森激绽 — T0.5 须弥之光</span><span class="en-only">④ Alhaitham Quicken-Bloom — T0.5 Sumeru's Light</span></a></li>
+      <li><a href="#budget"><span class="zh-only">⑤ 平民低金配队 — 0+0也能满星</span><span class="en-only">⑤ F2P Low-Cost Teams — 0+0 Can Also Full-Star</span></a></li>
     </ol>
   </nav>
 
   <!-- 版本概述 -->
   <section id="overview">
-    <h2><span class="icon">📊</span> 5.7版本深渊环境速览</h2>
+    <h2><span class="icon">📊</span> <span class="zh-only">5.7版本深渊环境速览</span><span class="en-only">V5.7 Abyss Environment Overview</span></h2>
 
     <div class="card">
-      <h4>🛡️ 12层怪物分布</h4>
+      <h4><span class="zh-only">🛡️ 12层怪物分布</span><span class="en-only">🛡️ Floor 12 Enemy Layout</span></h4>
       <table>
-        <thead><tr><th>间层</th><th>上半</th><th>下半</th><th>推荐元素</th></tr></thead>
+        <thead><tr>
+          <th><span class="zh-only">间层</span><span class="en-only">Chamber</span></th>
+          <th><span class="zh-only">上半</span><span class="en-only">First Half</span></th>
+          <th><span class="zh-only">下半</span><span class="en-only">Second Half</span></th>
+          <th><span class="zh-only">推荐元素</span><span class="en-only">Recommended Elements</span></th>
+        </tr></thead>
         <tbody>
-          <tr><td>12-1</td><td>机关阵列×2</td><td>深海龙蜥×3</td><td>火/雷/岩</td></tr>
-          <tr><td>12-2</td><td>冰深渊使徒 + 冰法师</td><td>雷深渊咏者 + 雷史莱姆</td><td>上半火、下半冰/草</td></tr>
-          <tr><td>12-3</td><td>恒常机关阵列(Boss)</td><td>深海龙蜥(Boss)</td><td>爆发型主C</td></tr>
+          <tr><td>12-1</td><td><span class="zh-only">机关阵列×2</span><span class="en-only">Ruin Grader×2</span></td><td><span class="zh-only">深海龙蜥×3</span><span class="en-only">Bathysmal Vishap×3</span></td><td><span class="zh-only">火/雷/岩</span><span class="en-only">Pyro/Electro/Geo</span></td></tr>
+          <tr><td>12-2</td><td><span class="zh-only">冰深渊使徒 + 冰法师</span><span class="en-only">Cryo Lector + Cryo Mage</span></td><td><span class="zh-only">雷深渊咏者 + 雷史莱姆</span><span class="en-only">Electro Heralds + Electro Slimes</span></td><td><span class="zh-only">上半火、下半冰/草</span><span class="en-only">1st: Pyro, 2nd: Cryo/Dendro</span></td></tr>
+          <tr><td>12-3</td><td><span class="zh-only">恒常机关阵列(Boss)</span><span class="en-only">Perpetual Mechanical Array (Boss)</span></td><td><span class="zh-only">深海龙蜥(Boss)</span><span class="en-only">Bathysmal Vishap (Boss)</span></td><td><span class="zh-only">爆发型主C</span><span class="en-only">Burst DPS</span></td></tr>
         </tbody>
       </table>
     </div>
 
     <div class="highlight">
-      <p><strong>⚡ 关键信息：</strong>12-2是破盾检验关——上半需要高频火破冰盾，下半需要高频草/冰破雷盾。带错元素等于直接翻车。12-3两路都是纯Boss战，爆发DPS为王。</p>
+      <div class="zh-block">
+        <p><strong>⚡ 关键信息：</strong>12-2是破盾检验关——上半需要高频火破冰盾，下半需要高频草/冰破雷盾。带错元素等于直接翻车。12-3两路都是纯Boss战，爆发DPS为王。</p>
+      </div>
+      <div class="en-block">
+        <p><strong>⚡ Key Info:</strong> Chamber 12-2 is a shield-breaking check — first half needs high-frequency Pyro to break Cryo shields, second half needs high-frequency Dendro/Cryo to break Electro shields. Wrong elements = instant wipe. Chamber 12-3 is pure Boss fights on both sides, Burst DPS is king.</p>
+      </div>
     </div>
   </section>
 
   <!-- 强度排行 -->
   <section id="tier">
-    <h2><span class="icon">🏆</span> 配队强度排行 · 全部T0-T1阵容</h2>
+    <h2><span class="icon">🏆</span> <span class="zh-only">配队强度排行 · 全部T0-T1阵容</span><span class="en-only">Team Comp Tier List · All T0-T1 Lineups</span></h2>
 
     <table>
-      <thead><tr><th>评级</th><th>阵容</th><th>核心角色</th><th>适用半区</th><th>造价</th><th>难度</th></tr></thead>
+      <thead><tr>
+        <th><span class="zh-only">评级</span><span class="en-only">Tier</span></th>
+        <th><span class="zh-only">阵容</span><span class="en-only">Team Comp</span></th>
+        <th><span class="zh-only">核心角色</span><span class="en-only">Core Characters</span></th>
+        <th><span class="zh-only">适用半区</span><span class="en-only">Best Half</span></th>
+        <th><span class="zh-only">造价</span><span class="en-only">Cost</span></th>
+        <th><span class="zh-only">难度</span><span class="en-only">Difficulty</span></th>
+      </tr></thead>
       <tbody>
         <tr>
           <td class="t0">T0</td>
-          <td><strong>玛薇卡蒸发队</strong></td>
-          <td>玛薇卡+芙宁娜+希诺宁+班尼特</td>
-          <td>上半</td>
-          <td>3金</td>
-          <td>中</td>
+          <td><strong><span class="zh-only">玛薇卡蒸发队</span><span class="en-only">Mavuika Vaporize</span></strong></td>
+          <td><span class="zh-only">玛薇卡+芙宁娜+希诺宁+班尼特</span><span class="en-only">Mavuika+Furina+Xilonen+Bennett</span></td>
+          <td><span class="zh-only">上半</span><span class="en-only">1st Half</span></td>
+          <td><span class="zh-only">3金</span><span class="en-only">3★</span></td>
+          <td><span class="zh-only">中</span><span class="en-only">Mid</span></td>
         </tr>
         <tr>
           <td class="t0">T0</td>
-          <td><strong>那维莱特队</strong></td>
-          <td>那维莱特+芙宁娜+万叶+白术</td>
-          <td>下半</td>
-          <td>3金</td>
-          <td>低</td>
+          <td><strong><span class="zh-only">那维莱特队</span><span class="en-only">Neuvillette</span></strong></td>
+          <td><span class="zh-only">那维莱特+芙宁娜+万叶+白术</span><span class="en-only">Neuvillette+Furina+Kazuha+Baizhu</span></td>
+          <td><span class="zh-only">下半</span><span class="en-only">2nd Half</span></td>
+          <td><span class="zh-only">3金</span><span class="en-only">3★</span></td>
+          <td><span class="zh-only">低</span><span class="en-only">Low</span></td>
         </tr>
         <tr>
           <td class="t0-5">T0.5</td>
-          <td><strong>雷神国家队</strong></td>
-          <td>雷电将军+香菱+行秋+班尼特</td>
-          <td>上半</td>
-          <td>1金</td>
-          <td>低</td>
+          <td><strong><span class="zh-only">雷神国家队</span><span class="en-only">Raiden National</span></strong></td>
+          <td><span class="zh-only">雷电将军+香菱+行秋+班尼特</span><span class="en-only">Raiden+Xiangling+Xingqiu+Bennett</span></td>
+          <td><span class="zh-only">上半</span><span class="en-only">1st Half</span></td>
+          <td><span class="zh-only">1金</span><span class="en-only">1★</span></td>
+          <td><span class="zh-only">低</span><span class="en-only">Low</span></td>
         </tr>
         <tr>
           <td class="t0-5">T0.5</td>
-          <td><strong>艾尔海森激绽</strong></td>
-          <td>艾尔海森+纳西妲+行秋+久岐忍</td>
-          <td>下半</td>
-          <td>2金</td>
-          <td>中</td>
+          <td><strong><span class="zh-only">艾尔海森激绽</span><span class="en-only">Alhaitham Quicken-Bloom</span></strong></td>
+          <td><span class="zh-only">艾尔海森+纳西妲+行秋+久岐忍</span><span class="en-only">Alhaitham+Nahida+Xingqiu+Kuki</span></td>
+          <td><span class="zh-only">下半</span><span class="en-only">2nd Half</span></td>
+          <td><span class="zh-only">2金</span><span class="en-only">2★</span></td>
+          <td><span class="zh-only">中</span><span class="en-only">Mid</span></td>
         </tr>
         <tr>
           <td class="t1">T1</td>
-          <td><strong>胡桃双水</strong></td>
-          <td>胡桃+芙宁娜+夜兰+钟离</td>
-          <td>上半</td>
-          <td>4金</td>
-          <td>中高</td>
+          <td><strong><span class="zh-only">胡桃双水</span><span class="en-only">Hu Tao Double Hydro</span></strong></td>
+          <td><span class="zh-only">胡桃+芙宁娜+夜兰+钟离</span><span class="en-only">Hu Tao+Furina+Yelan+Zhongli</span></td>
+          <td><span class="zh-only">上半</span><span class="en-only">1st Half</span></td>
+          <td><span class="zh-only">4金</span><span class="en-only">4★</span></td>
+          <td><span class="zh-only">中高</span><span class="en-only">Mid-High</span></td>
         </tr>
         <tr>
           <td class="t1">T1</td>
-          <td><strong>永冻队</strong></td>
-          <td>神里绫华+茜特菈莉+万叶+心海</td>
-          <td>下半</td>
-          <td>3金</td>
-          <td>中</td>
+          <td><strong><span class="zh-only">永冻队</span><span class="en-only">Freeze Team</span></strong></td>
+          <td><span class="zh-only">神里绫华+茜特菈莉+万叶+心海</span><span class="en-only">Ayaka+Citlali+Kazuha+Kokomi</span></td>
+          <td><span class="zh-only">下半</span><span class="en-only">2nd Half</span></td>
+          <td><span class="zh-only">3金</span><span class="en-only">3★</span></td>
+          <td><span class="zh-only">中</span><span class="en-only">Mid</span></td>
         </tr>
         <tr>
           <td class="t1">T1</td>
-          <td><strong>娜维娅双火</strong></td>
-          <td>娜维娅+香菱+班尼特+钟离</td>
-          <td>上半</td>
-          <td>2金</td>
-          <td>低</td>
+          <td><strong><span class="zh-only">娜维娅双火</span><span class="en-only">Navia Double Pyro</span></strong></td>
+          <td><span class="zh-only">娜维娅+香菱+班尼特+钟离</span><span class="en-only">Navia+Xiangling+Bennett+Zhongli</span></td>
+          <td><span class="zh-only">上半</span><span class="en-only">1st Half</span></td>
+          <td><span class="zh-only">2金</span><span class="en-only">2★</span></td>
+          <td><span class="zh-only">低</span><span class="en-only">Low</span></td>
         </tr>
       </tbody>
     </table>
@@ -233,120 +267,192 @@
 
   <!-- 玛薇卡蒸发队 -->
   <section id="mavuika">
-    <h2><span class="icon">🔥</span> ① 玛薇卡蒸发队 — T0 版本答案</h2>
+    <h2><span class="icon">🔥</span> <span class="zh-only">① 玛薇卡蒸发队 — T0 版本答案</span><span class="en-only">① Mavuika Vaporize — T0 Meta Answer</span></h2>
 
     <div class="team-detail">
       <div class="td-header">
         <span class="td-rank tr-t0">T0</span>
-        <strong style="font-size:1.1rem;">🌊🔥 蒸发蒸发！</strong>
+        <strong style="font-size:1.1rem;">🌊🔥 <span class="zh-only">蒸发蒸发！</span><span class="en-only">Vaporize for Days!</span></strong>
       </div>
       <div class="td-chars">
-        <span class="td-char core">玛薇卡 (主C)</span>
-        <span class="td-char">芙宁娜 (挂水+增伤)</span>
-        <span class="td-char">希诺宁 (减抗)</span>
-        <span class="td-char">班尼特 (增伤+治疗)</span>
+        <span class="td-char core"><span class="zh-only">玛薇卡 (主C)</span><span class="en-only">Mavuika (Main DPS)</span></span>
+        <span class="td-char"><span class="zh-only">芙宁娜 (挂水+增伤)</span><span class="en-only">Furina (Hydro app+DMG buff)</span></span>
+        <span class="td-char"><span class="zh-only">希诺宁 (减抗)</span><span class="en-only">Xilonen (RES shred)</span></span>
+        <span class="td-char"><span class="zh-only">班尼特 (增伤+治疗)</span><span class="en-only">Bennett (ATK buff+Heal)</span></span>
       </div>
-      <p style="margin-top:12px;"><strong>输出手法：</strong>芙宁娜 E(黑芙) Q → 希诺宁 E Q 减抗 → 班尼特 Q → <strong>玛薇卡 Q(核爆) → 强化重击×4~5</strong></p>
-      <p>芙宁娜EQ挂水覆盖全程，玛薇卡Q蒸发核爆可打<b>50万+</b>。12-3上半稳定<strong>40秒</strong>通关。双火共鸣+芙宁娜增伤75%+希诺宁减抗36%+班尼特加攻——四重增伤叠加，输出爆炸。</p>
-      <p style="font-size:0.85rem; color:var(--accent2); margin-top:8px;">💡 替代：没有芙宁娜换行秋（伤害低20%），没有希诺宁换万叶。</p>
+      <div class="zh-block">
+        <p style="margin-top:12px;"><strong>输出手法：</strong>芙宁娜 E(黑芙) Q → 希诺宁 E Q 减抗 → 班尼特 Q → <strong>玛薇卡 Q(核爆) → 强化重击×4~5</strong></p>
+        <p>芙宁娜EQ挂水覆盖全程，玛薇卡Q蒸发核爆可打<b>50万+</b>。12-3上半稳定<strong>40秒</strong>通关。双火共鸣+芙宁娜增伤75%+希诺宁减抗36%+班尼特加攻——四重增伤叠加，输出爆炸。</p>
+        <p style="font-size:0.85rem; color:var(--accent2); margin-top:8px;">💡 替代：没有芙宁娜换行秋（伤害低20%），没有希诺宁换万叶。</p>
+      </div>
+      <div class="en-block">
+        <p style="margin-top:12px;"><strong>Rotation:</strong> Furina E(Ousia) Q → Xilonen E Q RES shred → Bennett Q → <strong>Mavuika Q(Nuke) → Enhanced Charged ATK×4~5</strong></p>
+        <p>Furina's EQ maintains full Hydro uptime, Mavuika's Q Vaporize nuke can hit <b>500K+</b>. Clears 12-3 first half in a stable <strong>40 seconds</strong>. Double Pyro resonance + Furina's 75% DMG bonus + Xilonen's 36% RES shred + Bennett's ATK buff — quadruple stacking, insane damage.</p>
+        <p style="font-size:0.85rem; color:var(--accent2); margin-top:8px;">💡 Substitutes: No Furina → Xingqiu (20% less damage), No Xilonen → Kazuha.</p>
+      </div>
     </div>
   </section>
 
   <!-- 那维莱特 -->
   <section id="neuvillette">
-    <h2><span class="icon">🌊</span> ② 那维莱特队 — T0 水龙无双</h2>
+    <h2><span class="icon">🌊</span> <span class="zh-only">② 那维莱特队 — T0 水龙无双</span><span class="en-only">② Neuvillette — T0 Hydro Dragon Supreme</span></h2>
 
     <div class="team-detail">
       <div class="td-header">
         <span class="td-rank tr-t0">T0</span>
-        <strong style="font-size:1.1rem;">🌊 审判之时！</strong>
+        <strong style="font-size:1.1rem;">🌊 <span class="zh-only">审判之时！</span><span class="en-only">Time for Judgment!</span></strong>
       </div>
       <div class="td-chars">
-        <span class="td-char core">那维莱特 (主C)</span>
-        <span class="td-char">芙宁娜 (增伤)</span>
-        <span class="td-char">万叶 (减抗聚怪)</span>
-        <span class="td-char">白术 (群奶)</span>
+        <span class="td-char core"><span class="zh-only">那维莱特 (主C)</span><span class="en-only">Neuvillette (Main DPS)</span></span>
+        <span class="td-char"><span class="zh-only">芙宁娜 (增伤)</span><span class="en-only">Furina (DMG buff)</span></span>
+        <span class="td-char"><span class="zh-only">万叶 (减抗聚怪)</span><span class="en-only">Kazuha (RES shred+Gather)</span></span>
+        <span class="td-char"><span class="zh-only">白术 (群奶)</span><span class="en-only">Baizhu (Team Heal)</span></span>
       </div>
-      <p style="margin-top:12px;"><strong>输出手法：</strong>芙宁娜 E Q → 万叶 E Q → 白术 E Q 群奶 → <strong>那维莱特 E Q → 蓄力重击×3</strong></p>
-      <p>操作最简单、容错率最高的T0队。那维莱特自烧自回完美触发芙宁娜叠层，白术瞬奶拉满增伤。一喷伤害3~5万×8段，15秒打完。12-3下半两个Boss都可以一喷到底。</p>
-      <p style="font-size:0.85rem; color:var(--accent2); margin-top:8px;">💡 替代：没有白术换夏洛蒂/瑶瑶，没有万叶换砂糖。</p>
+      <div class="zh-block">
+        <p style="margin-top:12px;"><strong>输出手法：</strong>芙宁娜 E Q → 万叶 E Q → 白术 E Q 群奶 → <strong>那维莱特 E Q → 蓄力重击×3</strong></p>
+        <p>操作最简单、容错率最高的T0队。那维莱特自烧自回完美触发芙宁娜叠层，白术瞬奶拉满增伤。一喷伤害3~5万×8段，15秒打完。12-3下半两个Boss都可以一喷到底。</p>
+        <p style="font-size:0.85rem; color:var(--accent2); margin-top:8px;">💡 替代：没有白术换夏洛蒂/瑶瑶，没有万叶换砂糖。</p>
+      </div>
+      <div class="en-block">
+        <p style="margin-top:12px;"><strong>Rotation:</strong> Furina E Q → Kazuha E Q → Baizhu E Q team heal → <strong>Neuvillette E Q → Charged ATK×3</strong></p>
+        <p>The easiest T0 team with the highest error margin. Neuvillette's self-HP drain and recovery perfectly stacks Furina's buff, Baizhu's instant heal maximizes DMG bonus. Each charged attack deals 30K~50K×8 hits, clearing in 15s. Both Bosses in 12-3 second half can be swept in one rotation.</p>
+        <p style="font-size:0.85rem; color:var(--accent2); margin-top:8px;">💡 Substitutes: No Baizhu → Charlotte/Yaoyao, No Kazuha → Sucrose.</p>
+      </div>
     </div>
   </section>
 
   <!-- 雷国 -->
   <section id="raiden">
-    <h2><span class="icon">⚡</span> ③ 雷神国家队 — T0.5 经典永存</h2>
+    <h2><span class="icon">⚡</span> <span class="zh-only">③ 雷神国家队 — T0.5 经典永存</span><span class="en-only">③ Raiden National — T0.5 Timeless Classic</span></h2>
 
     <div class="team-detail">
       <div class="td-header">
         <span class="td-rank tr-t0-5">T0.5</span>
-        <strong style="font-size:1.1rem;">⚡ 雷国！启动！</strong>
+        <strong style="font-size:1.1rem;">⚡ <span class="zh-only">雷国！启动！</span><span class="en-only">Raiden National! Go!</span></strong>
       </div>
       <div class="td-chars">
-        <span class="td-char core">雷电将军 (充能+站场)</span>
-        <span class="td-char">香菱 (副C)</span>
-        <span class="td-char">行秋 (挂水)</span>
-        <span class="td-char">班尼特 (增伤)</span>
+        <span class="td-char core"><span class="zh-only">雷电将军 (充能+站场)</span><span class="en-only">Raiden (Energy+On-field)</span></span>
+        <span class="td-char"><span class="zh-only">香菱 (副C)</span><span class="en-only">Xiangling (Sub DPS)</span></span>
+        <span class="td-char"><span class="zh-only">行秋 (挂水)</span><span class="en-only">Xingqiu (Hydro app)</span></span>
+        <span class="td-char"><span class="zh-only">班尼特 (增伤)</span><span class="en-only">Bennett (ATK buff)</span></span>
       </div>
-      <p style="margin-top:12px;"><strong>输出手法：</strong>雷神 E → 班尼特 Q → 行秋 Q E → 香菱 Q E → <strong>雷神 Q → 重击循环×5 → 下一轮</strong></p>
-      <p>全游戏性价比天花板——<strong>1金成本（仅雷神0命）</strong>，三人四星满命即可。雷神大招给全队充能，让香菱和行秋实现无缝大招循环。版本更迭三年了依然是深渊常客。</p>
-      <p style="font-size:0.85rem; color:var(--accent2); margin-top:8px;">💡 雷神无专武用渔获（免费），香菱用渔获/西风，行秋用祭礼剑。</p>
+      <div class="zh-block">
+        <p style="margin-top:12px;"><strong>输出手法：</strong>雷神 E → 班尼特 Q → 行秋 Q E → 香菱 Q E → <strong>雷神 Q → 重击循环×5 → 下一轮</strong></p>
+        <p>全游戏性价比天花板——<strong>1金成本（仅雷神0命）</strong>，三人四星满命即可。雷神大招给全队充能，让香菱和行秋实现无缝大招循环。版本更迭三年了依然是深渊常客。</p>
+        <p style="font-size:0.85rem; color:var(--accent2); margin-top:8px;">💡 雷神无专武用渔获（免费），香菱用渔获/西风，行秋用祭礼剑。</p>
+      </div>
+      <div class="en-block">
+        <p style="margin-top:12px;"><strong>Rotation:</strong> Raiden E → Bennett Q → Xingqiu Q E → Xiangling Q E → <strong>Raiden Q → Charged ATK loop×5 → Next cycle</strong></p>
+        <p>The best value-for-cost team in the game — <strong>only 1★ cost (Raiden C0)</strong>, the rest are C6 4-stars. Raiden's Burst restores Energy for the whole team, enabling seamless Burst loops for Xiangling and Xingqiu. Three years of meta shifts and it's still an Abyss staple.</p>
+        <p style="font-size:0.85rem; color:var(--accent2); margin-top:8px;">💡 No signature weapon? Raiden uses The Catch (free), Xiangling uses The Catch/Sacrificial, Xingqiu uses Sacrificial Sword.</p>
+      </div>
     </div>
   </section>
 
   <!-- 艾尔海森 -->
   <section id="alhaitham">
-    <h2><span class="icon">🌿</span> ④ 艾尔海森激绽队 — T0.5 须弥之光</h2>
+    <h2><span class="icon">🌿</span> <span class="zh-only">④ 艾尔海森激绽队 — T0.5 须弥之光</span><span class="en-only">④ Alhaitham Quicken-Bloom — T0.5 Sumeru's Light</span></h2>
 
     <div class="team-detail">
       <div class="td-header">
         <span class="td-rank tr-t0-5">T0.5</span>
-        <strong style="font-size:1.1rem;">🌿 海哥激绽！</strong>
+        <strong style="font-size:1.1rem;">🌿 <span class="zh-only">海哥激绽！</span><span class="en-only">Alhaitham QB!</span></strong>
       </div>
       <div class="td-chars">
-        <span class="td-char core">艾尔海森 (主C)</span>
-        <span class="td-char">纳西妲 (挂草)</span>
-        <span class="td-char">行秋 (挂水)</span>
-        <span class="td-char">久岐忍 (种子触发+治疗)</span>
+        <span class="td-char core"><span class="zh-only">艾尔海森 (主C)</span><span class="en-only">Alhaitham (Main DPS)</span></span>
+        <span class="td-char"><span class="zh-only">纳西妲 (挂草)</span><span class="en-only">Nahida (Dendro app)</span></span>
+        <span class="td-char"><span class="zh-only">行秋 (挂水)</span><span class="en-only">Xingqiu (Hydro app)</span></span>
+        <span class="td-char"><span class="zh-only">久岐忍 (种子触发+治疗)</span><span class="en-only">Kuki (Hyperbloom+Heal)</span></span>
       </div>
-      <p style="margin-top:12px;"><strong>输出手法：</strong>纳西妲 E Q → 行秋 Q E → 久岐忍 E → <strong>艾尔海森 Q → 普攻×4 → E → 下落攻击 → 普攻×4</strong></p>
-      <p>激化+超绽放双反应体系。纳西妲提供精通拐，行秋水剑挂水产种子，久岐忍全精通堆到1000+触发3万+超绽放伤害，艾尔海森前台打超激化。完美克制12-2下半雷盾环境。</p>
-      <p style="font-size:0.85rem; color:var(--accent2); margin-top:8px;">💡 久岐忍全堆精通（饰金4/乐园4），行秋换夜兰也可以。</p>
+      <div class="zh-block">
+        <p style="margin-top:12px;"><strong>输出手法：</strong>纳西妲 E Q → 行秋 Q E → 久岐忍 E → <strong>艾尔海森 Q → 普攻×4 → E → 下落攻击 → 普攻×4</strong></p>
+        <p>激化+超绽放双反应体系。纳西妲提供精通拐，行秋水剑挂水产种子，久岐忍全精通堆到1000+触发3万+超绽放伤害，艾尔海森前台打超激化。完美克制12-2下半雷盾环境。</p>
+        <p style="font-size:0.85rem; color:var(--accent2); margin-top:8px;">💡 久岐忍全堆精通（饰金4/乐园4），行秋换夜兰也可以。</p>
+      </div>
+      <div class="en-block">
+        <p style="margin-top:12px;"><strong>Rotation:</strong> Nahida E Q → Xingqiu Q E → Kuki E → <strong>Alhaitham Q → NA×4 → E → Plunge → NA×4</strong></p>
+        <p>Dual-reaction Quicken + Hyperbloom system. Nahida provides EM buff, Xingqiu's Hydro swords produce Dendro Cores, Kuki stacks 1000+ full EM to trigger 30K+ Hyperbloom damage, Alhaitham deals Aggravate on-field. Perfect counter to 12-2 second half Electro shields.</p>
+        <p style="font-size:0.85rem; color:var(--accent2); margin-top:8px;">💡 Kuki goes full EM (Gilded Dreams/Paradise Lost), Xingqiu can swap to Yelan.</p>
+      </div>
     </div>
   </section>
 
   <!-- 平民 -->
   <section id="budget">
-    <h2><span class="icon">💰</span> ⑤ 平民低金配队 — 0+0也能满星</h2>
+    <h2><span class="icon">💰</span> <span class="zh-only">⑤ 平民低金配队 — 0+0也能满星</span><span class="en-only">⑤ F2P Low-Cost Teams — 0+0 Can Also Full-Star</span></h2>
 
     <div class="card">
-      <h4>⭐ 0金超绽放队（全四星）</h4>
-      <p><strong>草主 + 行秋 + 久岐忍 + 柯莱/瑶瑶</strong></p>
-      <p>不需要任何五星！草主（免费）挂草、行秋挂水产种、久岐忍触发超绽放。久岐忍90级+乐园4件套+铁蜂刺，一颗种子3万伤害，12-3也能磨过去。</p>
+      <h4><span class="zh-only">⭐ 0金超绽放队（全四星）</span><span class="en-only">⭐ 0★ Hyperbloom Team (All 4-Stars)</span></h4>
+      <div class="zh-block">
+        <p><strong>草主 + 行秋 + 久岐忍 + 柯莱/瑶瑶</strong></p>
+        <p>不需要任何五星！草主（免费）挂草、行秋挂水产种、久岐忍触发超绽放。久岐忍90级+乐园4件套+铁蜂刺，一颗种子3万伤害，12-3也能磨过去。</p>
+      </div>
+      <div class="en-block">
+        <p><strong>Dendro MC + Xingqiu + Kuki + Collei/Yaoyao</strong></p>
+        <p>No 5-stars needed! Dendro MC (free) applies Dendro, Xingqiu applies Hydro to produce cores, Kuki triggers Hyperbloom. Kuki at Lv90 + Paradise Lost 4pc + Iron Sting, each core deals 30K damage, can grind through 12-3.</p>
+      </div>
     </div>
 
     <div class="card">
-      <h4>⭐ 1金砂糖国家队</h4>
-      <p><strong>砂糖 + 香菱 + 行秋 + 班尼特</strong></p>
-      <p>没有雷神？砂糖来凑！砂糖站场普攻触发扩散+行秋水剑+香菱火轮，蒸发反应打满。砂糖带讨龙+翠绿4，班尼特带西风。操作比雷国复杂但输出不输。</p>
+      <h4><span class="zh-only">⭐ 1金砂糖国家队</span><span class="en-only">⭐ 1★ Sucrose National</span></h4>
+      <div class="zh-block">
+        <p><strong>砂糖 + 香菱 + 行秋 + 班尼特</strong></p>
+        <p>没有雷神？砂糖来凑！砂糖站场普攻触发扩散+行秋水剑+香菱火轮，蒸发反应打满。砂糖带讨龙+翠绿4，班尼特带西风。操作比雷国复杂但输出不输。</p>
+      </div>
+      <div class="en-block">
+        <p><strong>Sucrose + Xiangling + Xingqiu + Bennett</strong></p>
+        <p>No Raiden? Sucrose steps in! Sucrose stays on-field with NA triggering Swirl + Xingqiu Hydro swords + Xiangling Pyronado, maxing Vaporize reactions. Sucrose runs Thrilling Tales + VV 4pc, Bennett runs Favonius. Harder to play than Raiden National but comparable damage.</p>
+      </div>
     </div>
 
     <div class="highlight">
-      <p><strong>🎯 平民满星核心思路：</strong>上半用火/雷主C破12-2冰盾，下半用草/水主C处理雷盾。不要硬凑T0阵容，环境适配 > 角色强度。</p>
+      <div class="zh-block">
+        <p><strong>🎯 平民满星核心思路：</strong>上半用火/雷主C破12-2冰盾，下半用草/水主C处理雷盾。不要硬凑T0阵容，环境适配 > 角色强度。</p>
+      </div>
+      <div class="en-block">
+        <p><strong>🎯 F2P Full-Star Core Strategy:</strong> Use Pyro/Electro main DPS first half to break 12-2 Cryo shields, use Dendro/Hydro main DPS second half for Electro shields. Don't force T0 comps — matchup advantage > character strength.</p>
+      </div>
     </div>
   </section>
 
   <div class="cta">
-    <p style="font-size:1.1rem; font-weight:600;">⚔️ 每期深渊更新，第一时间推送最新配队</p>
-    <p style="color:var(--text-dim)">抄作业就能过，不用自己动脑配队</p>
-    <a href="../index.html#subscribe" class="btn">📩 免费订阅更新</a>
+    <p style="font-size:1.1rem; font-weight:600;"><span class="zh-only">⚔️ 每期深渊更新，第一时间推送最新配队</span><span class="en-only">⚔️ Latest Abyss team comps delivered every reset</span></p>
+    <p style="color:var(--text-dim)"><span class="zh-only">抄作业就能过，不用自己动脑配队</span><span class="en-only">Copy-paste comps, no theorycrafting needed</span></p>
+    <a href="../index.html#subscribe" class="btn"><span class="zh-only">📩 免费订阅更新</span><span class="en-only">📩 Subscribe for Free</span></a>
   </div>
 
 </div>
 
 <div class="footer">
-  © 2026 提瓦特旅人指南 · <a href="../index.html">返回首页</a> · Genshin Impact © HoYoverse
+  © 2026 <span class="zh-only">提瓦特旅人指南</span><span class="en-only">Teyvat Traveler's Guide</span> · <a href="../index.html"><span class="zh-only">返回首页</span><span class="en-only">Back to Home</span></a> · Genshin Impact © HoYoverse
 </div>
+
+<script>
+(function(){
+  var key='genshinLang';
+  var saved=localStorage.getItem(key);
+  if(saved==='en'){document.body.classList.add('lang-en');}
+  var toggle=document.getElementById('langToggle');
+  var options=toggle.querySelectorAll('.lang-option');
+  function setActive(lang){
+    options.forEach(function(o){
+      o.classList.toggle('active',o.getAttribute('data-lang')===lang);
+    });
+    if(lang==='en'){
+      document.body.classList.add('lang-en');
+    }else{
+      document.body.classList.remove('lang-en');
+    }
+    localStorage.setItem(key,lang);
+  }
+  options.forEach(function(o){
+    o.addEventListener('click',function(){
+      setActive(o.getAttribute('data-lang'));
+    });
+  });
+  if(saved==='en'){setActive('en');}else{setActive('zh');}
+})();
+</script>
 
 </body>
 </html>
