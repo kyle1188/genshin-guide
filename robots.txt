@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+
+Sitemap: https://kyle1188.github.io/genshin-guide/sitemap.xml
