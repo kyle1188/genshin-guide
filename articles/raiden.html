@@ -344,7 +344,7 @@
     langOptions.forEach(opt => opt.classList.toggle('active', opt.dataset.lang === lang));
   }
   langOptions.forEach(opt => opt.addEventListener('click', () => setLang(opt.dataset.lang)));
-  setLang(localStorage.getItem('genshinLang') || 'zh');
+  setLang(localStorage.getItem('genshinLang') || ((navigator.language||navigator.userLanguage||'').startsWith('zh')?'zh':'en'));
 </script>
 </body>
 </html>

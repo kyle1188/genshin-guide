@@ -430,7 +430,7 @@
 <script>
 (function(){
   var key='genshinLang';
-  var saved=localStorage.getItem(key);
+  var saved=localStorage.getItem(key) || ((navigator.language||navigator.userLanguage||'').startsWith('zh')?'zh':'en');
   if(saved==='en'){document.body.classList.add('lang-en');}
   var toggle=document.getElementById('langToggle');
   var options=toggle.querySelectorAll('.lang-option');
@@ -450,7 +450,7 @@
       setActive(o.getAttribute('data-lang'));
     });
   });
-  if(saved==='en'){setActive('en');}else{setActive('zh');}
+  setActive(saved==='en'?'en':'zh');
 })();
 </script>
 

@@ -824,7 +824,11 @@
     opt.addEventListener('click', () => setLang(opt.dataset.lang));
   });
 
-  const savedLang = localStorage.getItem('genshinLang') || 'en';
+  const detectLang = () => {
+    const navLang = navigator.language || navigator.userLanguage || '';
+    return navLang.startsWith('zh') ? 'zh' : 'en';
+  };
+  const savedLang = localStorage.getItem('genshinLang') || detectLang();
   setLang(savedLang);
 
   // ── Navigation scroll effect ──
