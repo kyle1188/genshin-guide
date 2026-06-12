@@ -339,20 +339,12 @@
     background: rgba(255,189,89,0.1);
     color: var(--accent);
   }
-  /* ── Coming Soon card ── */
-  .guide-card.coming-soon {
-    cursor: default; opacity: 0.55;
+  /* ── More content notice ── */
+  .more-notice {
+    text-align: center; padding: 40px 0;
+    color: var(--text-dim); font-size: 0.85rem;
   }
-  .guide-card.coming-soon:hover {
-    transform: none;
-    border-color: var(--border);
-    box-shadow: none;
-  }
-  .guide-card.coming-soon:hover::before { transform: scaleX(0); }
-  .coming-label {
-    background: rgba(255,255,255,0.06) !important;
-    color: var(--text-dim) !important;
-  }
+  .more-notice span { display:inline-block; padding:8px 20px; border:1px dashed var(--border); border-radius:20px; }
 
   /* ── Character Spotlight ── */
   .spotlight {
@@ -501,8 +493,6 @@
     <ul class="nav-links" id="navLinks">
       <li><a href="#characters"><span class="zh-only">角色攻略</span><span class="en-only">Builds</span></a></li>
       <li><a href="#teams"><span class="zh-only">深渊配队</span><span class="en-only">Abyss Teams</span></a></li>
-      <li><a href="#explore"><span class="zh-only">探索解谜</span><span class="en-only">Exploration</span></a></li>
-      <li><a href="#farm"><span class="zh-only">材料刷取</span><span class="en-only">Farming</span></a></li>
       <li><a href="#subscribe" class="btn-nav"><span class="zh-only">订阅更新</span><span class="en-only">Subscribe</span></a></li>
     </ul>
     <div class="lang-toggle" id="langToggle" title="Switch Language / 切换语言">
@@ -542,16 +532,12 @@
     </div>
     <div class="hero-stats">
       <div class="hero-stat">
-        <div class="hero-stat-num"><span class="zh-only">精选</span><span class="en-only">Curated</span></div>
-        <div class="hero-stat-label"><span class="zh-only">深度攻略</span><span class="en-only">Deep Guides</span></div>
+        <div class="hero-stat-num"><span class="zh-only">每日</span><span class="en-only">Daily</span></div>
+        <div class="hero-stat-label"><span class="zh-only">持续更新</span><span class="en-only">Updates</span></div>
       </div>
       <div class="hero-stat">
         <div class="hero-stat-num"><span class="zh-only">双语</span><span class="en-only">Bilingual</span></div>
         <div class="hero-stat-label"><span class="zh-only">中英对照</span><span class="en-only">CN + EN</span></div>
-      </div>
-      <div class="hero-stat">
-        <div class="hero-stat-num"><span class="zh-only">每日</span><span class="en-only">Daily</span></div>
-        <div class="hero-stat-label"><span class="zh-only">持续更新</span><span class="en-only">Updates</span></div>
       </div>
     </div>
   </div>
@@ -572,24 +558,6 @@
   </div>
 
   <div class="guide-grid">
-    <div class="guide-card reveal coming-soon">
-      <div class="guide-card-icon char">🔥</div>
-      <h3><span class="zh-only">火神 · 玛薇卡 — 全方位培养指南</span><span class="en-only">Mavuika — Complete Build Guide</span></h3>
-      <p><span class="zh-only">纳塔火神到底怎么养？武器排名、圣遗物选择、最优配队，一篇讲透。</span><span class="en-only">How to build Natlan's Pyro Archon? Weapons, artifacts, best teams — all covered.</span></p>
-      <div class="guide-card-meta">
-        <span class="guide-card-tag coming-label"><span class="zh-only">即将上线</span><span class="en-only">Coming Soon</span></span>
-        <span>—</span> <span>—</span>
-      </div>
-    </div>
-    <div class="guide-card reveal coming-soon">
-      <div class="guide-card-icon char">❄️</div>
-      <h3><span class="zh-only">茜特菈莉 — 冰系新神？深度实测</span><span class="en-only">Citlali — The New Cryo Queen?</span></h3>
-      <p><span class="zh-only">5.7版本新五星冰辅到底值不值得抽？实战数据告诉你答案。</span><span class="en-only">Is the new 5★ Cryo support worth pulling? Real combat data has the answer.</span></p>
-      <div class="guide-card-meta">
-        <span class="guide-card-tag coming-label"><span class="zh-only">即将上线</span><span class="en-only">Coming Soon</span></span>
-        <span>—</span> <span>—</span>
-      </div>
-    </div>
     <a href="articles/furina.html" class="guide-card reveal">
       <div class="guide-card-icon char">💧</div>
       <h3><span class="zh-only">芙宁娜 · 从零到满命完全攻略</span><span class="en-only">Furina — C0 to C6 Complete Guide</span></h3>
@@ -600,15 +568,6 @@
         <span>15 min</span>
       </div>
     </a>
-    <div class="guide-card reveal coming-soon">
-      <div class="guide-card-icon char">🌿</div>
-      <h3><span class="zh-only">纳西妲 · 草神永不过时</span><span class="en-only">Nahida — The Dendro Archon</span></h3>
-      <p><span class="zh-only">种门圣女全面培养指南 — 超激化、绽放、燃烧，三流派全覆盖。</span><span class="en-only">Complete Dendro guide — Aggravate, Bloom, Burgeon — all three playstyles covered.</span></p>
-      <div class="guide-card-meta">
-        <span class="guide-card-tag coming-label"><span class="zh-only">即将上线</span><span class="en-only">Coming Soon</span></span>
-        <span>—</span> <span>—</span>
-      </div>
-    </div>
     <a href="articles/raiden.html" class="guide-card reveal">
       <div class="guide-card-icon char">⚡</div>
       <h3><span class="zh-only">雷电将军 · 雷国配队核心</span><span class="en-only">Raiden Shogun — National Team Core</span></h3>
@@ -619,15 +578,9 @@
         <span>11 min</span>
       </div>
     </a>
-    <div class="guide-card reveal coming-soon">
-      <div class="guide-card-icon char">🛡️</div>
-      <h3><span class="zh-only">钟离 · 最强盾辅终极培养</span><span class="en-only">Zhongli — Ultimate Shield Build</span></h3>
-      <p><span class="zh-only">5万血量不是梦！千岩/磐岩/逆飞三流派对比，武器推荐数据实测。</span><span class="en-only">50K HP is not a dream! Three build variants compared with real damage testing.</span></p>
-      <div class="guide-card-meta">
-        <span class="guide-card-tag coming-label"><span class="zh-only">即将上线</span><span class="en-only">Coming Soon</span></span>
-        <span>—</span> <span>—</span>
-      </div>
-    </div>
+  </div>
+  <div class="more-notice reveal">
+    <span><span class="zh-only">🔥 更多角色攻略、探索解谜、材料路线正在制作中…</span><span class="en-only">🔥 More character builds, exploration guides & farming routes coming soon…</span></span>
   </div>
 </section>
 
@@ -681,87 +634,6 @@
   </div>
 </section>
 
-<!-- Explore / Puzzles -->
-<section class="section" id="explore">
-  <div class="section-header reveal">
-    <p class="section-tag">Exploration</p>
-    <h2 class="section-title">
-      <span class="zh-only">探索解谜攻略</span>
-      <span class="en-only">Exploration Guides</span>
-    </h2>
-    <p class="section-sub">
-      <span class="zh-only">隐藏任务、神瞳收集、秘境解谜，告别卡关</span>
-      <span class="en-only">Hidden quests, oculi collection, domain puzzles — never get stuck again</span>
-    </p>
-  </div>
-
-  <div class="guide-grid">
-    <div class="guide-card reveal coming-soon">
-      <div class="guide-card-icon explore">🗺️</div>
-      <h3><span class="zh-only">纳塔全神瞳收集路线（127个）</span><span class="en-only">Natlan All Oculi Locations (127)</span></h3>
-      <p><span class="zh-only">5.7版本全127个火神瞳位置，附实时地图标注与飞行路线规划。</span><span class="en-only">All 127 Pyroculi in v5.7, with map markers and flight route planning.</span></p>
-      <div class="guide-card-meta">
-        <span class="guide-card-tag coming-label"><span class="zh-only">即将上线</span><span class="en-only">Coming Soon</span></span>
-        <span>—</span>
-      </div>
-    </div>
-    <div class="guide-card reveal coming-soon">
-      <div class="guide-card-icon explore">🔮</div>
-      <h3><span class="zh-only">纳塔隐藏任务全收录</span><span class="en-only">Natlan Hidden Quests Complete</span></h3>
-      <p><span class="zh-only">17个隐藏世界任务 + 42个隐藏成就，附触发条件和完整流程。</span><span class="en-only">17 hidden world quests + 42 hidden achievements with unlock conditions.</span></p>
-      <div class="guide-card-meta">
-        <span class="guide-card-tag coming-label"><span class="zh-only">即将上线</span><span class="en-only">Coming Soon</span></span>
-        <span>—</span>
-      </div>
-    </div>
-    <div class="guide-card reveal coming-soon">
-      <div class="guide-card-icon explore">🏛️</div>
-      <h3><span class="zh-only">枫丹水下遗迹完全解谜</span><span class="en-only">Fontaine Underwater Ruins Guide</span></h3>
-      <p><span class="zh-only">安眠处、海沫村全机关破解，水下战斗技巧详解。</span><span class="en-only">All puzzle solutions for Resting Place & Merusea Village, underwater combat tips.</span></p>
-      <div class="guide-card-meta">
-        <span class="guide-card-tag coming-label"><span class="zh-only">即将上线</span><span class="en-only">Coming Soon</span></span>
-        <span>—</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Farm -->
-<section class="section" id="farm">
-  <div class="section-header reveal">
-    <p class="section-tag">Farming Routes</p>
-    <h2 class="section-title">
-      <span class="zh-only">材料刷取路线</span>
-      <span class="en-only">Farming Routes</span>
-    </h2>
-    <p class="section-sub">
-      <span class="zh-only">每日体力规划 + 突破材料最优路线</span>
-      <span class="en-only">Daily resin planning + optimal ascension material routes</span>
-    </p>
-  </div>
-
-  <div class="guide-grid">
-    <div class="guide-card reveal coming-soon">
-      <div class="guide-card-icon farm">💎</div>
-      <h3><span class="zh-only">每日体力最优分配方案</span><span class="en-only">Daily Resin Optimization</span></h3>
-      <p><span class="zh-only">180树脂怎么用最划算？经验书/摩拉/圣遗物/武器材料优先级排序。</span><span class="en-only">How to spend 180 resin? XP books, Mora, artifacts, weapon mats — priority ranked.</span></p>
-      <span class="guide-card-tag coming-label"><span class="zh-only">即将上线</span><span class="en-only">Coming Soon</span></span>
-    </div>
-    <div class="guide-card reveal coming-soon">
-      <div class="guide-card-icon farm">🌸</div>
-      <h3><span class="zh-only">全角色突破材料速刷路线</span><span class="en-only">All Ascension Material Routes</span></h3>
-      <p><span class="zh-only">琉璃袋、劫波莲、月莲…所有采集物最高效路线图。</span><span class="en-only">Violetgrass, Kalpalata Lotus, Nilotpala Lotus… most efficient collection routes.</span></p>
-      <span class="guide-card-tag coming-label"><span class="zh-only">即将上线</span><span class="en-only">Coming Soon</span></span>
-    </div>
-    <div class="guide-card reveal coming-soon">
-      <div class="guide-card-icon farm">⚔️</div>
-      <h3><span class="zh-only">圣遗物狗粮车路线</span><span class="en-only">Artifact Fodder Route</span></h3>
-      <p><span class="zh-only">每天12分钟跑满100个圣遗物狗粮，经验最大化计算。</span><span class="en-only">12 min daily for 100 artifact fodder spots, max XP efficiency.</span></p>
-      <span class="guide-card-tag coming-label"><span class="zh-only">即将上线</span><span class="en-only">Coming Soon</span></span>
-    </div>
-  </div>
-</section>
-
 <!-- CTA / Subscribe -->
 <section class="cta" id="subscribe">
   <h2 class="reveal">
@@ -791,20 +663,16 @@
     <h5><span class="zh-only">攻略分类</span><span class="en-only">Categories</span></h5>
     <a href="#characters"><span class="zh-only">角色培养</span><span class="en-only">Character Builds</span></a>
     <a href="#teams"><span class="zh-only">深渊配队</span><span class="en-only">Abyss Teams</span></a>
-    <a href="#explore"><span class="zh-only">探索解谜</span><span class="en-only">Exploration</span></a>
-    <a href="#farm"><span class="zh-only">材料刷取</span><span class="en-only">Farming Routes</span></a>
   </div>
   <div class="footer-col">
     <h5><span class="zh-only">关于我们</span><span class="en-only">About</span></h5>
-    <a href="#"><span class="zh-only">关于本站</span><span class="en-only">About Us</span></a>
-    <a href="#"><span class="zh-only">合作联系</span><span class="en-only">Contact</span></a>
-    <a href="#"><span class="zh-only">广告投放</span><span class="en-only">Advertise</span></a>
+    <a href="#subscribe"><span class="zh-only">订阅更新</span><span class="en-only">Subscribe</span></a>
+    <a href="mailto:contact@teyvat-guide.com"><span class="zh-only">邮件联系</span><span class="en-only">Contact</span></a>
   </div>
   <div class="footer-col">
     <h5><span class="zh-only">关注我们</span><span class="en-only">Follow Us</span></h5>
-    <a href="#">Bilibili</a>
-    <a href="#">Xiaohongshu</a>
-    <a href="#">WeChat</a>
+    <span style="color:rgba(255,255,255,0.5);font-size:0.85rem;"><span class="zh-only">B站 / 小红书 / 微信</span><span class="en-only">Bilibili / RedNote / WeChat</span></span>
+    <span style="color:var(--text-dim);font-size:0.7rem;"><span class="zh-only">账号筹备中，敬请期待</span><span class="en-only">Accounts coming soon</span></span>
   </div>
 </div>
 <div class="footer-bottom">
