@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-theme="dark">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -492,8 +492,8 @@
       <li><a href="#subscribe" class="btn-nav"><span class="zh-only">订阅更新</span><span class="en-only">Subscribe</span></a></li>
     </ul>
     <div class="lang-toggle" id="langToggle" title="Switch Language / 切换语言">
-      <span class="lang-option active" data-lang="zh">中文</span>
-      <span class="lang-option" data-lang="en">EN</span>
+      <span class="lang-option" data-lang="zh">中文</span>
+      <span class="lang-option active" data-lang="en">EN</span>
     </div>
     <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
   </div>
@@ -824,7 +824,7 @@
     opt.addEventListener('click', () => setLang(opt.dataset.lang));
   });
 
-  const savedLang = localStorage.getItem('genshinLang') || 'zh';
+  const savedLang = localStorage.getItem('genshinLang') || 'en';
   setLang(savedLang);
 
   // ── Navigation scroll effect ──
