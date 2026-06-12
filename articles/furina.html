@@ -129,6 +129,11 @@
   .back-to-top { position:fixed; bottom:24px; right:24px; width:40px; height:40px; border-radius:50%; background:var(--accent); color:#0a0a0f; border:none; cursor:pointer; font-size:1.2rem; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity 0.3s; z-index:99; }
   .back-to-top.visible { opacity:1; pointer-events:auto; }
   @media (max-width:768px) { .toc-sidebar { display:none; } .back-to-top { bottom:16px; right:16px; } }
+  .article-nav { display:flex; justify-content:space-between; align-items:center; gap:16px; max-width:860px; margin:0 auto; padding:32px 24px 48px; }
+  .article-nav a { display:flex; flex-direction:column; gap:4px; padding:14px 20px; border-radius:12px; border:1px solid var(--border); text-decoration:none; transition:all 0.25s; max-width:360px; }
+  .article-nav a:hover { border-color:var(--accent); background:rgba(255,189,89,0.04); }
+  .article-nav .nav-label { font-size:0.7rem; color:var(--text-dim); }
+  .article-nav .nav-title { font-size:0.9rem; color:#fff; font-weight:600; }
 </style>
 </head>
 <body>
@@ -419,6 +424,17 @@
   </div>
 
 </div>
+
+<nav class="article-nav">
+  <a href="raiden.html" class="prev">
+    <span class="nav-label"><span class="zh-only">← 上一篇</span><span class="en-only">← Previous</span></span>
+    <span class="nav-title"><span class="zh-only">雷电将军 · 雷国配队核心</span><span class="en-only">Raiden Shogun — National Core</span></span>
+  </a>
+  <a href="abyss.html" class="next">
+    <span class="nav-label"><span class="zh-only">下一篇 →</span><span class="en-only">Next →</span></span>
+    <span class="nav-title"><span class="zh-only">深渊12层配队攻略</span><span class="en-only">Spiral Abyss Floor 12</span></span>
+  </a>
+</nav>
 
 <div class="footer">
   <span class="zh-only">© 2026 提瓦特旅人指南</span><span class="en-only">© 2026 Teyvat Traveler's Guide</span> · <a href="../index.html"><span class="zh-only">返回首页</span><span class="en-only">Home</span></a> · Genshin Impact © HoYoverse

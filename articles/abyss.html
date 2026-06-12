@@ -120,6 +120,11 @@
     thead th, tbody td { padding:8px 10px; }
     .toc-sidebar { display:none; } .back-to-top { bottom:16px; right:16px; }
   }
+  .article-nav { display:flex; justify-content:space-between; align-items:center; gap:16px; max-width:860px; margin:0 auto; padding:32px 24px 48px; }
+  .article-nav a { display:flex; flex-direction:column; gap:4px; padding:14px 20px; border-radius:12px; border:1px solid var(--border); text-decoration:none; transition:all 0.25s; max-width:360px; }
+  .article-nav a:hover { border-color:var(--accent); background:rgba(255,189,89,0.04); }
+  .article-nav .nav-label { font-size:0.7rem; color:var(--text-dim); }
+  .article-nav .nav-title { font-size:0.9rem; color:#fff; font-weight:600; }
 </style>
 </head>
 <body>
@@ -441,6 +446,14 @@
   </div>
 
 </div>
+
+<nav class="article-nav">
+  <a href="furina.html" class="prev">
+    <span class="nav-label"><span class="zh-only">&larr; 上一篇</span><span class="en-only">&larr; Previous</span></span>
+    <span class="nav-title"><span class="zh-only">芙宁娜 &middot; 从零到满命</span><span class="en-only">Furina &mdash; C0 to C6 Guide</span></span>
+  </a>
+  <div></div>
+</nav>
 
 <div class="footer">
   © 2026 <span class="zh-only">提瓦特旅人指南</span><span class="en-only">Teyvat Traveler's Guide</span> · <a href="../index.html"><span class="zh-only">返回首页</span><span class="en-only">Back to Home</span></a> · Genshin Impact © HoYoverse
