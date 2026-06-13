@@ -10,9 +10,13 @@
 <meta property="og:description" content="原神攻略站 — 精选热门角色深度培养指南、深渊12层配队解析。Genshin guide — in-depth character builds, Abyss team analysis.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kyle1188.github.io/genshin-guide/">
+<meta property="og:image" content="https://patchwiki.biligame.com/images/ys/6/68/gf8q0j490ygvze7w9npx35e49hw6iu0.png">
+<meta property="og:image:width" content="720">
+<meta property="og:image:height" content="720">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="原神攻略 · 提瓦特旅人指南 | Genshin Guide">
 <meta name="twitter:description" content="原神攻略站 — 热门角色培养指南 · 深渊配队解析">
+<meta name="twitter:image" content="https://patchwiki.biligame.com/images/ys/6/68/gf8q0j490ygvze7w9npx35e49hw6iu0.png">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="canonical" href="https://kyle1188.github.io/genshin-guide/">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CZBN84E1PH"></script>
@@ -357,6 +361,12 @@
     color: var(--text-dim); font-size: 0.85rem;
   }
   .more-notice span { display:inline-block; padding:8px 20px; border:1px dashed var(--border); border-radius:20px; }
+  .roadmap { max-width:500px; margin:0 auto; text-align:left; }
+  .roadmap-title { font-size:0.9rem; font-weight:700; color:var(--accent); margin-bottom:16px; text-align:center; }
+  .roadmap-items { display:flex; flex-direction:column; gap:8px; }
+  .roadmap-item { padding:8px 16px; border-radius:10px; font-size:0.82rem; background:var(--bg-card); border:1px solid var(--border); }
+  .roadmap-item.done { border-color:rgba(77,212,172,0.2); color:var(--text-dim); }
+  .roadmap-item.next { border-color:rgba(255,189,89,0.12); color:var(--text-dim); background:rgba(255,189,89,0.03); }
 
   /* ── Character Spotlight ── */
   .spotlight {
@@ -600,7 +610,18 @@
     </a>
   </div>
   <div class="more-notice reveal">
-    <span><span class="zh-only">🔥 更多角色攻略、探索解谜、材料路线正在制作中…</span><span class="en-only">🔥 More character builds, exploration guides & farming routes coming soon…</span></span>
+    <div class="roadmap">
+      <div class="roadmap-title"><span class="zh-only">📋 制作路线图</span><span class="en-only">📋 Content Roadmap</span></div>
+      <div class="roadmap-items">
+        <div class="roadmap-item done"><span class="zh-only">✅ 芙宁娜全攻略</span><span class="en-only">✅ Furina Complete Guide</span></div>
+        <div class="roadmap-item done"><span class="zh-only">✅ 雷电将军全攻略</span><span class="en-only">✅ Raiden Shogun Complete Guide</span></div>
+        <div class="roadmap-item done"><span class="zh-only">✅ 深渊12层配队</span><span class="en-only">✅ Abyss Floor 12 Teams</span></div>
+        <div class="roadmap-item next"><span class="zh-only">⏳ 那维莱特攻略（制作中）</span><span class="en-only">⏳ Neuvillette Guide (WIP)</span></div>
+        <div class="roadmap-item next"><span class="zh-only">⏳ 纳西妲攻略（制作中）</span><span class="en-only">⏳ Nahida Guide (WIP)</span></div>
+        <div class="roadmap-item next"><span class="zh-only">⏳ 万叶攻略（制作中）</span><span class="en-only">⏳ Kazuha Guide (WIP)</span></div>
+        <div class="roadmap-item next"><span class="zh-only">⏳ 钟离攻略（制作中）</span><span class="en-only">⏳ Zhongli Guide (WIP)</span></div>
+      </div>
+    </div>
   </div>
 </section>
 

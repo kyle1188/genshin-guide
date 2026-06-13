@@ -52,7 +52,22 @@
   .breadcrumb a { color:var(--accent); text-decoration:none; }
   .breadcrumb a:hover { text-decoration:underline; }
 
-  .article-header { margin-bottom:40px; }
+  .article-header { margin-bottom:12px; }
+  .abyss-hero {
+    margin:0 0 32px;
+    text-align:center;
+    padding:48px 24px;
+    border-radius:var(--radius-lg);
+    background: linear-gradient(135deg, rgba(200,50,50,0.15) 0%, rgba(120,40,180,0.12) 40%, rgba(40,80,200,0.1) 100%);
+    border:1px solid rgba(255,255,255,0.06);
+  }
+  .abyss-hero-teams {
+    display:flex; justify-content:center; gap:16px; margin-top:16px; flex-wrap:wrap;
+  }
+  .abyss-hero-teams span {
+    padding:6px 14px; border-radius:16px;
+    background:rgba(255,255,255,0.06); font-size:0.8rem; color:var(--text-dim);
+  }
   .tags { display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap; }
   .tag { padding:4px 12px; border-radius:12px; font-size:0.72rem; font-weight:600; }
   .tag.hot { background:rgba(255,189,89,0.12); color:var(--accent); }
@@ -169,6 +184,14 @@
       <span><span class="zh-only">👁️ 浏览 86,000+</span><span class="en-only">👁️ 86,000+ views</span></span>
     </div>
   </header>
+
+  <div class="abyss-hero">
+    <div style="font-size:3rem;margin-bottom:8px;">⚔️</div>
+    <div style="font-size:0.85rem;color:var(--text-dim);margin-bottom:4px;"><span class="zh-only">本期收录配队</span><span class="en-only">Teams covered in this guide</span></div>
+    <div class="abyss-hero-teams">
+      <span>🔥 蒸发队</span><span>🌊 纯水队</span><span>⚡ 超激化</span><span>❄️ 永冻队</span><span>🌿 超绽放</span><span>💪 平民队</span>
+    </div>
+  </div>
 
   <!-- 目录 -->
   <nav class="toc">
