@@ -165,10 +165,10 @@
   /* ── Hero ── */
   .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
-    padding: 120px 60px 100px;
+    padding: 100px 60px 80px;
     overflow: hidden;
   }
   .hero-bg {
@@ -264,7 +264,7 @@
 
   /* ── Sections ── */
   .section {
-    padding: 100px 60px;
+    padding: 80px 60px;
     position: relative;
   }
   .section-header {
@@ -357,14 +357,15 @@
   }
   /* ── More content notice ── */
   .more-notice {
-    text-align: center; padding: 40px 0;
+    text-align: center; padding: 32px 0 0;
     color: var(--text-dim); font-size: 0.85rem;
   }
   .more-notice span { display:inline-block; padding:8px 20px; border:1px dashed var(--border); border-radius:20px; }
-  .roadmap { max-width:500px; margin:0 auto; text-align:left; }
+  .roadmap { max-width:700px; margin:0 auto; text-align:left; }
   .roadmap-title { font-size:0.9rem; font-weight:700; color:var(--accent); margin-bottom:16px; text-align:center; }
-  .roadmap-items { display:flex; flex-direction:column; gap:8px; }
-  .roadmap-item { padding:8px 16px; border-radius:10px; font-size:0.82rem; background:var(--bg-card); border:1px solid var(--border); }
+  .roadmap-items { display:grid; grid-template-columns:repeat(2, 1fr); gap:10px; }
+  @media (max-width: 600px) { .roadmap-items { grid-template-columns: 1fr; } }
+  .roadmap-item { padding:10px 16px; border-radius:10px; font-size:0.82rem; background:var(--bg-card); border:1px solid var(--border); }
   .roadmap-item.done { border-color:rgba(77,212,172,0.2); color:var(--text-dim); }
   .roadmap-item.next { border-color:rgba(255,189,89,0.12); color:var(--text-dim); background:rgba(255,189,89,0.03); }
 
@@ -372,23 +373,25 @@
   .spotlight {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
     align-items: center;
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
-    padding: 48px;
+    padding: 36px;
     overflow: hidden;
   }
   .spotlight-img {
     width: 100%;
+    max-width: 360px;
     aspect-ratio: 1;
     border-radius: var(--radius);
     background: linear-gradient(135deg, rgba(255,189,89,0.15), rgba(245,200,66,0.1));
     display: flex; align-items: center; justify-content: center;
     font-size: 6rem;
+    overflow: hidden;
   }
   .spotlight-info h3 { font-size: 1.6rem; font-weight: 800; margin-bottom: 8px; }
   .spotlight-info .tagline { color: var(--accent); font-size: 0.85rem; margin-bottom: 16px; }
@@ -408,7 +411,7 @@
   /* ── CTA ── */
   .cta {
     text-align: center;
-    padding: 80px 60px;
+    padding: 60px 60px;
     background:
       radial-gradient(ellipse at 50% 50%, rgba(245,200,66,0.08) 0%, transparent 70%),
       var(--bg-elevated);
