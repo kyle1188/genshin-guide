@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>钟离完全攻略 — 武器/圣遗物/配队 | Zhongli Build Guide · Teyvat Traveler</title>
+<meta name="description" content="原神钟离全方位培养攻略：护盾辅助/副C双流派详解、武器排名、千岩4件套、命座分析、5大配队方案。Complete Zhongli guide: Shield/Burst support, weapon ranking, Tenacity 4pc, constellation analysis, 5 team comps.">
+<meta property="og:title" content="钟离完全攻略 | Zhongli Guide · Teyvat Traveler">
+<meta property="og:description" content="最强护盾·岩王帝君：武器排名、千岩4配装、命座分析、5大配队。Strongest shield: weapon ranking, Tenacity builds, constellation & team analysis.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://kyle1188.github.io/genshin-guide/articles/zhongli.html">
+<meta property="og:image" content="https://patchwiki.biligame.com/images/ys/8/81/8393e6kjulrau058jy9qolyv30bfkiz.png">
+<meta property="og:image:width" content="720">
+<meta property="og:image:height" content="720">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://patchwiki.biligame.com/images/ys/8/81/8393e6kjulrau058jy9qolyv30bfkiz.png">
+<meta name="robots" content="index, follow, max-snippet:-1">
+<link rel="canonical" href="https://kyle1188.github.io/genshin-guide/articles/zhongli.html">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CZBN84E1PH"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CZBN84E1PH');</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"钟离完全攻略 | Zhongli Build Guide","description":"原神钟离全方位培养攻略：护盾辅助/副C双流派详解、黑缨枪护盾流、护摩之杖副C流、千岩4件套、命座分析、5大配队方案。Complete Zhongli guide: Shield/Burst support, Black Tassel shield build, Staff of Homa burst build, Tenacity 4pc, constellation analysis.", "datePublished":"2026-06-08","dateModified":"2026-06-08"}
+</script>
+<style>
+  :root {
+    --bg: #0a0a0f; --bg-card: #1a1a25; --text: #e8e6e3; --text-dim: #8b8a92;
+    --accent: #ffbd59; --accent2: #f5c842; --accent3: #4dc4ff; --border: rgba(255,255,255,0.06);
+    --radius: 12px; --radius-lg: 20px;
+  }
+  *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: -apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased;
+  }
+  ::-webkit-scrollbar { width:5px; } ::-webkit-scrollbar-track { background:var(--bg); }
+  ::-webkit-scrollbar-thumb { background:rgba(255,255,255,0.1); border-radius:4px; }
+
+  /* Language Toggle */
+  .lang-toggle { display:inline-flex; align-items:center; gap:0; border:1px solid rgba(255,255,255,0.2); border-radius:20px; overflow:hidden; font-size:0.75rem; cursor:pointer; }
+  .lang-option { padding:4px 12px; color:rgba(255,255,255,0.5); transition:all 0.25s; font-weight:500; user-select:none; }
+  .lang-option.active { background:var(--accent); color:#0a0a0f; font-weight:700; }
+  body:not(.lang-en) .en-only { display:none !important; }
+  body:not(.lang-en) .zh-only { display:inline; }
+  body.lang-en .zh-only { display:none !important; }
+  body.lang-en .en-only { display:inline; }
+  .zh-block, .en-block { display:none; }
+  body:not(.lang-en) .zh-block { display:block; }
+  body.lang-en .en-block { display:block; }
+  .zh-inline, .en-inline { display:none; }
+  body:not(.lang-en) .zh-inline { display:inline; }
+  body.lang-en .en-inline { display:inline; }
+
+  .nav { position:fixed; top:0; left:0; right:0; z-index:100; padding:14px 40px; display:flex; align-items:center; justify-content:space-between; background:rgba(10,10,15,0.85); backdrop-filter:blur(24px) saturate(180%); border-bottom:1px solid var(--border); }
+  .nav a { color:rgba(255,255,255,0.7); text-decoration:none; font-size:0.85rem; transition:color 0.25s; }
+  .nav a:hover { color:#fff; }
+  .nav-logo { font-weight:700; font-size:1rem; color:#fff !important; display:flex; align-items:center; gap:8px; }
+  .nav-right { display:flex; align-items:center; gap:14px; }
+
+  .container { max-width:860px; margin:0 auto; padding:100px 24px 80px; }
+
+  .breadcrumb { font-size:0.8rem; color:var(--text-dim); margin-bottom:20px; }
+  .breadcrumb a { color:var(--accent); text-decoration:none; }
+  .breadcrumb a:hover { text-decoration:underline; }
+
+  .article-header { margin-bottom:12px; }
+  .article-hero { text-align:center; margin:0 0 32px; }
+  .article-hero-img { max-width:300px; width:100%; border-radius:var(--radius-lg); border:2px solid rgba(77,196,255,0.3); }
+  .tags { display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap; }
+  .tag { padding:4px 12px; border-radius:12px; font-size:0.72rem; font-weight:600; }
+  .tag.hot { background:rgba(255,189,89,0.12); color:var(--accent); }
+  .tag.new { background:rgba(77,212,172,0.12); color:#4dd4ac; }
+  .tag.core { background:rgba(77,196,255,0.12); color:var(--accent3); }
+  h1 { font-size:2.4rem; font-weight:800; line-height:1.2; margin-bottom:12px; letter-spacing:-0.02em; }
+  .meta { font-size:0.85rem; color:var(--text-dim); display:flex; gap:24px; flex-wrap:wrap; }
+
+  .toc { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:24px 28px; margin-bottom:40px; }
+  .toc h4 { font-size:0.85rem; color:var(--accent); margin-bottom:12px; text-transform:uppercase; letter-spacing:0.08em; }
+  .toc ol { padding-left:20px; color:var(--text-dim); font-size:0.9rem; line-height:2; }
+  .toc ol a { color:var(--text); text-decoration:none; transition:color 0.2s; }
+  .toc ol a:hover { color:var(--accent); }
+
+  section { margin-bottom:48px; }
+  h2 { font-size:1.5rem; font-weight:700; margin-bottom:20px; padding-bottom:10px; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:10px; }
+  h2 .icon { font-size:1.4rem; }
+  h3 { font-size:1.15rem; font-weight:700; margin:24px 0 12px; }
+
+  p { color:var(--text-dim); margin-bottom:12px; }
+  p strong { color:var(--text); }
+
+  .card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:24px; margin-bottom:20px; }
+  .card h4 { font-size:1rem; margin-bottom:8px; color:var(--accent2); }
+
+  table { width:100%; border-collapse:collapse; margin:16px 0; font-size:0.88rem; }
+  thead th { background:rgba(255,189,89,0.08); color:var(--accent); padding:10px 14px; text-align:left; font-weight:600; border-bottom:2px solid var(--border); font-size:0.8rem; letter-spacing:0.04em; }
+  tbody td { padding:10px 14px; border-bottom:1px solid var(--border); color:var(--text-dim); }
+  tbody tr:hover td { background:rgba(255,255,255,0.02); }
+  .tier-ss { color:#ffbd59; font-weight:800; }
+  .tier-s { color:#ffbd59; font-weight:800; }
+  .tier-a { color:#4dd4ac; font-weight:700; }
+  .tier-b { color:#8b8a92; font-weight:600; }
+
+  .highlight { background:rgba(255,189,89,0.06); border-left:3px solid var(--accent); padding:16px 20px; border-radius:0 var(--radius) var(--radius) 0; margin:16px 0; }
+  .highlight p { margin:0; font-size:0.9rem; }
+  .highlight strong { color:var(--accent); }
+
+  .mode-switch { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:16px 0; }
+  .mode-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:20px; text-align:center; }
+  .mode-card .m-name { font-weight:700; font-size:1.1rem; margin-bottom:6px; }
+  .mode-card .m-sub { font-size:0.8rem; color:var(--text-dim); }
+
+  .team-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px; margin:16px 0; }
+  .team-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:20px; }
+  .team-card .t-name { font-weight:700; margin-bottom:6px; }
+  .team-card .t-chars { font-size:0.85rem; color:var(--accent3); margin-bottom:6px; }
+  .team-card .t-desc { font-size:0.8rem; color:var(--text-dim); }
+
+  .cta { text-align:center; padding:40px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); margin:40px 0; }
+  .cta p { margin-bottom:16px; }
+  .btn { display:inline-flex; align-items:center; gap:8px; padding:12px 28px; border-radius:24px; font-weight:600; font-size:0.95rem; text-decoration:none; border:none; cursor:pointer; transition:all 0.25s; background:var(--accent); color:#0a0a0f; }
+  .btn:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(255,189,89,0.25); }
+
+  .footer { text-align:center; padding:32px 24px; border-top:1px solid var(--border); font-size:0.8rem; color:var(--text-dim); margin-top:40px; }
+  .footer a { color:var(--accent); text-decoration:none; }
+
+  @media (max-width:768px) {
+    .nav { padding:12px 20px; }
+    h1 { font-size:1.7rem; }
+    .container { padding:80px 16px 60px; }
+    .mode-switch { grid-template-columns:1fr; }
+    table { font-size:0.78rem; }
+    thead th, tbody td { padding:8px 10px; }
+    .nav-right { gap:8px; }
+  }
+  .toc-sidebar { position:fixed; right:16px; top:50%; transform:translateY(-50%); z-index:90; display:flex; flex-direction:column; gap:6px; }
+  .toc-link { display:block; padding:6px 14px; border-radius:8px; font-size:0.75rem; color:var(--text-dim); text-decoration:none; border-left:2px solid transparent; transition:all 0.25s; background:rgba(10,10,15,0.7); }
+  .toc-link:hover,.toc-link.active { color:var(--accent); border-left-color:var(--accent); background:rgba(255,189,89,0.08); }
+  .back-to-top { position:fixed; bottom:24px; right:24px; width:40px; height:40px; border-radius:50%; background:var(--accent); color:#0a0a0f; border:none; cursor:pointer; font-size:1.2rem; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity 0.3s; z-index:99; }
+  .back-to-top.visible { opacity:1; pointer-events:auto; }
+  @media (max-width:768px) { .toc-sidebar { display:none; } .back-to-top { bottom:16px; right:16px; } }
+  .article-nav { display:flex; justify-content:space-between; align-items:center; gap:16px; max-width:860px; margin:0 auto; padding:32px 24px 48px; }
+  .article-nav a { display:flex; flex-direction:column; gap:4px; padding:14px 20px; border-radius:12px; border:1px solid var(--border); text-decoration:none; transition:all 0.25s; max-width:360px; }
+  .article-nav a:hover { border-color:var(--accent); background:rgba(255,189,89,0.04); }
+  .article-nav .nav-label { font-size:0.7rem; color:var(--text-dim); }
+  .article-nav .nav-title { font-size:0.9rem; color:#fff; font-weight:600; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">🪨 <span class="zh-only">提瓦特旅人指南</span><span class="en-only">Teyvat Traveler's Guide</span></a>
+  <div class="nav-right">
+    <div class="lang-toggle" id="langToggle">
+      <span class="lang-option active" data-lang="zh">中文</span>
+      <span class="lang-option" data-lang="en">EN</span>
+    </div>
+    <a href="../index.html">← <span class="zh-only">返回首页</span><span class="en-only">Home</span></a>
+  </div>
+</nav>
+
+<div class="container">
+<aside class="toc-sidebar">
+  <a href="#weapon" class="toc-link"><span class="zh-only">武器排行</span><span class="en-only">Weapon Ranking</span></a>
+  <a href="#artifact" class="toc-link"><span class="zh-only">圣遗物配装</span><span class="en-only">Artifacts</span></a>
+  <a href="#teams" class="toc-link"><span class="zh-only">配队方案</span><span class="en-only">Team Comps</span></a>
+  <a href="#faq" class="toc-link"><span class="zh-only">常见问题</span><span class="en-only">FAQ</span></a>
+</aside>
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <div class="breadcrumb">
+    <a href="../index.html"><span class="zh-only">首页</span><span class="en-only">Home</span></a> &nbsp;›&nbsp; <a href="../index.html#characters"><span class="zh-only">角色攻略</span><span class="en-only">Character Builds</span></a> &nbsp;›&nbsp; <span class="zh-only">钟离</span><span class="en-only">Zhongli</span>
+  </div>
+
+  <header class="article-header">
+    <div class="tags">
+      <span class="tag hot"><span class="zh-only">必看</span><span class="en-only">Must Read</span></span>
+      <span class="tag core"><span class="zh-only">岩神</span><span class="en-only">Geo Archon</span></span>
+      <span class="tag new"><span class="zh-only">5.7版本适用</span><span class="en-only">v5.7 Valid</span></span>
+    </div>
+    <h1>🪨 <span class="zh-only">钟离 · 护盾与减抗完全攻略</span><span class="en-only">Zhongli · Shield & RES Shred Guide</span></h1>
+    <div class="meta">
+      <span><span class="zh-only">🕐 更新于 2026年6月8日</span><span class="en-only">🕐 Updated Jun 8, 2026</span></span>
+      <span><span class="zh-only">📖 约 11 分钟阅读</span><span class="en-only">📖 ~11 min read</span></span>
+      <span>👁️ 120,000+</span>
+    </div>
+  </header>
+  <div class="article-hero">
+    <img src="https://patchwiki.biligame.com/images/ys/8/81/8393e6kjulrau058jy9qolyv30bfkiz.png" alt="Zhongli" class="article-hero-img" loading="lazy">
+  </div>
+
+  <nav class="toc">
+    <h4>📋 <span class="zh-only">本文目录</span><span class="en-only">Table of Contents</span></h4>
+    <ol>
+      <li><a href="#overview"><span class="zh-only">角色定位 · 护盾与减抗机制详解</span><span class="en-only">Role &amp; Shield Mechanics</span></a></li>
+      <li><a href="#weapon"><span class="zh-only">武器选择 · 6档排名</span><span class="en-only">Weapon Ranking (6 Tiers)</span></a></li>
+      <li><a href="#artifact"><span class="zh-only">圣遗物搭配 · 主词条与面板目标</span><span class="en-only">Artifacts &amp; Target Stats</span></a></li>
+      <li><a href="#constellation"><span class="zh-only">命座分析 · C0/C2/C6 关键节点</span><span class="en-only">Constellations · C0, C2 &amp; C6 Analysis</span></a></li>
+      <li><a href="#teams"><span class="zh-only">配队方案 · 5大主流体系</span><span class="en-only">Teams · 5 Main Archetypes</span></a></li>
+      <li><a href="#faq"><span class="zh-only">常见问题 FAQ</span><span class="en-only">FAQ</span></a></li>
+    </ol>
+  </nav>
+
+  <!-- 角色定位 -->
+  <section id="overview">
+    <h2><span class="icon">🪨</span> <span class="zh-only">角色定位 · 护盾与减抗机制详解</span><span class="en-only">Role &amp; Shield Mechanics</span></h2>
+    <p class="zh-block">钟离 — 五星岩元素长柄武器角色，定位为<strong>护盾辅助 / 爆发副C / 全元素减抗</strong>（岩王帝君）。元素战技长按生成游戏最强护盾，对所有元素伤害和物理伤害拥有<strong>150%吸收效率</strong>，同时为周围敌人施加<strong>20%全元素减抗光环</strong>（含物理）。元素爆发「天星」造成大范围岩元素伤害，并石化敌人3-6秒。</p>
+    <p class="en-block">Zhongli — 5★ Geo Polearm character. Role: <strong>Shield Support / Burst Sub-DPS / Universal RES Shredder</strong> (Geo Archon). His Elemental Skill (hold) creates the strongest shield in the game with <strong>150% absorption efficiency</strong> vs all damage types, while applying a <strong>20% universal RES shred aura</strong> (all elements + physical). His Burst "Planet Befall" deals massive AoE Geo DMG and petrifies enemies for 3–6 seconds.</p>
+
+    <div class="highlight">
+      <p class="zh-block"><strong>一句话总结：</strong>钟离是原神最强的生存辅助——只要长按E，你就能获得一个持续20秒、CD仅12秒的超厚护盾，同时降低周围敌人全抗性。黑缨枪+全生命圣遗物就能毕业，全游性价比最高的角色。</p>
+      <p class="en-block"><strong>TL;DR:</strong> Zhongli is the ultimate comfort pick — hold E for a 20s shield (12s CD) with unmatched durability, paired with a 20% universal RES shred aura. Black Tassel + full HP artifacts is all you need for endgame. The most cost-efficient character in the game.</p>
+    </div>
+
+    <div class="card">
+      <h4 class="zh-only">🔑 核心天赋优先级</h4>
+      <h4 class="en-only">🔑 Talent Priority</h4>
+      <p><strong><span class="zh-only">元素战技 (E) &gt;&gt; 元素爆发 (Q) &gt; 普通攻击 (A)</span><span class="en-only">Elemental Skill (E) >> Elemental Burst (Q) > Normal Attack (A)</span></strong></p>
+      <p class="zh-only">E是核心护盾来源，优先升满。Q提供石化控制和爆发伤害。普攻可不点（非物理C玩法下完全不用）。</p>
+      <p class="en-only">Skill creates the core shield — max it first. Burst provides petrification CC and burst damage. Normal Attack can be skipped (unused outside physical DPS builds).</p>
+    </div>
+
+    <div class="card">
+      <h4 class="zh-only">🛡️ 玉璋护盾机制</h4>
+      <h4 class="en-only">🛡️ Jade Shield Mechanics</h4>
+      <p class="zh-block">长按E生成玉璋护盾，<strong>吸收量完全基于钟离最大生命值</strong>。LV10时基础吸收量 = <strong>23.04% Max HP + 2712</strong>。典型5万HP出装下，基础盾量约14,000 HP。由于岩元素护盾对所有伤害类型拥有150%吸收效率，<strong>等效吸收量 ≈ 21,000+ HP</strong>。持续20秒，CD仅12秒，实现100%覆盖。护盾存在期间，周围敌人全元素抗性与物理抗性降低20%。</p>
+      <p class="en-block">Hold E creates Jade Shield — <strong>absorption scales purely with Zhongli's Max HP</strong>. At LV10, base absorption = <strong>23.04% Max HP + 2712</strong>. With a typical 50K HP build, that's ~14,000 HP base shield. Since Geo shields have 150% absorption efficiency vs all damage types, <strong>effective absorption ≈ 21,000+ HP</strong>. 20s duration with 12s CD = 100% uptime. While the shield is active, enemies' all-element and physical RES is reduced by 20%.</p>
+    </div>
+
+    <div class="card">
+      <h4 class="zh-only">🏛️ 岩脊共鸣</h4>
+      <h4 class="en-only">🏛️ Stone Stele Resonance</h4>
+      <p class="zh-block">点按E或长按E同时生成岩脊（Stone Stele）。岩脊会与场上其他岩造物产生<strong>共鸣</strong>，造成范围岩元素伤害。在纯岩队中，多个岩造物同时共鸣可产生可观的后台伤害。</p>
+      <p class="en-block">Tap E or hold E also summons a Stone Stele. The Stele <strong>resonates</strong> with other Geo constructs on the field, dealing AoE Geo DMG. In mono-Geo teams, multiple constructs resonating simultaneously can generate meaningful off-field damage.</p>
+    </div>
+  </section>
+
+  <!-- 武器 -->
+  <section id="weapon">
+    <h2><span class="icon">🗡️</span> <span class="zh-only">武器选择 · 6档排名</span><span class="en-only">Weapon Ranking (6 Tiers)</span></h2>
+    <p class="zh-only">钟离的武器需求取决于玩法：<strong>纯护盾辅助 → 生命%优先；爆发副C → 暴击/暴伤 &gt; 攻击%</strong>。纯盾用黑缨枪即可，副C需要五星武器。</p>
+    <p class="en-only">Zhongli's weapon priority depends on build: <strong>Pure shield support → HP% first; Burst Sub-DPS → CRIT > ATK%</strong>. Black Tassel suffices for pure shield; 5★ weapons are needed for burst DPS builds.</p>
+
+    <table>
+      <thead>
+        <tr><th><span class="zh-only">档位</span><span class="en-only">Tier</span></th><th><span class="zh-only">武器</span><span class="en-only">Weapon</span></th><th><span class="zh-only">基础攻击</span><span class="en-only">Base ATK</span></th><th><span class="zh-only">副属性</span><span class="en-only">Substat</span></th><th><span class="zh-only">核心优势</span><span class="en-only">Key Advantage</span></th><th><span class="zh-only">获取</span><span class="en-only">Source</span></th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tier-ss">SS</td>
+          <td><strong><span class="zh-only">护摩之杖</span><span class="en-only">Staff of Homa</span></strong></td>
+          <td>608</td>
+          <td><span class="zh-only">暴伤</span><span class="en-only">CRIT DMG</span> 66.2%</td>
+          <td class="zh-only">万能之选。HP转化攻击+暴伤面板，护盾与爆发双吃</td>
+          <td class="en-only">Universal best-in-slot. HP→ATK conversion + CRIT DMG, boosts both shield and burst</td>
+          <td><span class="zh-only">限定祈愿</span><span class="en-only">Limited</span></td>
+        </tr>
+        <tr>
+          <td class="tier-s">S</td>
+          <td><strong><span class="zh-only">贯虹之槊</span><span class="en-only">Vortex Vanquisher</span></strong></td>
+          <td>608</td>
+          <td><span class="zh-only">攻击力</span><span class="en-only">ATK</span> 49.6%</td>
+          <td class="zh-only">专武外观毕业。攻击力叠加，仅适合爆发副C流派</td>
+          <td class="en-only">Signature aesthetics. ATK stacking, only for burst Sub-DPS builds</td>
+          <td><span class="zh-only">限定祈愿</span><span class="en-only">Limited</span></td>
+        </tr>
+        <tr>
+          <td class="tier-s">S</td>
+          <td><strong><span class="zh-only">黑缨枪 (F2P护盾首选)</span><span class="en-only">Black Tassel (F2P Shield Best)</span></strong></td>
+          <td>354</td>
+          <td><span class="zh-only">生命值</span><span class="en-only">HP</span> 46.9%</td>
+          <td class="zh-only">三星神器！46.9%生命值，纯护盾毕业武器，无需抽卡</td>
+          <td class="en-only">3★ gem! 46.9% HP, pure shield endgame weapon. Zero wishes required</td>
+          <td><span class="zh-only">祈愿3★</span><span class="en-only">Gacha 3★</span></td>
+        </tr>
+        <tr>
+          <td class="tier-a">A</td>
+          <td><strong><span class="zh-only">西风长枪</span><span class="en-only">Favonius Lance</span></strong></td>
+          <td>454</td>
+          <td><span class="zh-only">充能</span><span class="en-only">ER</span> 30.6%</td>
+          <td class="zh-only">白色微粒为全队充能，充能辅助工具</td>
+          <td class="en-only">White particles for team energy, ER support tool</td>
+          <td><span class="zh-only">常驻</span><span class="en-only">Standard</span></td>
+        </tr>
+        <tr>
+          <td class="tier-a">A</td>
+          <td><strong><span class="zh-only">决斗之枪</span><span class="en-only">Deathmatch</span></strong></td>
+          <td>454</td>
+          <td><span class="zh-only">暴击率</span><span class="en-only">CRIT Rate</span> 36.8%</td>
+          <td class="zh-only">暴率面板灵活，适合爆发副C流派</td>
+          <td class="en-only">Flexible CRIT Rate stat stick, good for burst DPS builds</td>
+          <td><span class="zh-only">纪行</span><span class="en-only">Battle Pass</span></td>
+        </tr>
+        <tr>
+          <td class="tier-b">B</td>
+          <td><strong><span class="zh-only">试作星镰</span><span class="en-only">Prototype Starglitter</span></strong></td>
+          <td>510</td>
+          <td><span class="zh-only">充能</span><span class="en-only">ER</span> 45.9%</td>
+          <td class="zh-only">锻造充能武器，产球后增伤</td>
+          <td class="en-only">Craftable ER option, DMG buff after generating particles</td>
+          <td><span class="zh-only">锻造</span><span class="en-only">Craftable</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight">
+      <p class="zh-block"><strong>💡 纯护盾辅助用什么？黑缨枪 R5！</strong>一把三星武器提供46.9%生命值——这就是你撑起5万+HP护盾所需要的全部。完全不需要抽卡。护摩之杖仅在你玩爆发副C钟离时才需要。</p>
+      <p class="en-block"><strong>💡 For pure shield support? Black Tassel R5!</strong> It's a 3★ weapon that provides 46.9% HP — all you need for a 50K+ HP shield. Zero wishes required. Staff of Homa is only needed for burst support Zhongli.</p>
+    </div>
+  </section>
+
+  <!-- 圣遗物 -->
+  <section id="artifact">
+    <h2><span class="icon">💎</span> <span class="zh-only">圣遗物搭配 · 主词条与面板目标</span><span class="en-only">Artifacts &amp; Target Stats</span></h2>
+
+    <h3 class="zh-only">首选套装：千岩牢固 ×4</h3>
+    <h3 class="en-only">Best Set: Tenacity of the Millelith ×4</h3>
+    <p class="zh-only"><strong>2件套：</strong>生命值 +20%<br><strong>4件套：</strong>元素战技命中敌人后，队伍中所有角色攻击力+20%，护盾强效+30%，持续3秒。可通过岩脊共鸣在后台触发。</p>
+    <p class="en-only"><strong>2pc:</strong> HP +20%<br><strong>4pc:</strong> After Skill hits an enemy, all party members' ATK +20% and Shield Strength +30% for 3s. Can trigger off-field via Stone Stele pulses.</p>
+    <p class="zh-block">千岩4件套完美契合钟离：2件套提升生命值=更强护盾；4件套通过岩脊共鸣后台触发，为全队提供攻击力加成和护盾强效。唯一指定毕业套装。</p>
+    <p class="en-block">Tenacity 4pc is tailor-made for Zhongli: 2pc increases HP = stronger shield; 4pc triggers off-field via Stele resonance, buffing the entire team with ATK% and Shield Strength. The definitive endgame set.</p>
+
+    <div class="card">
+      <h4 class="zh-only">🔄 替代方案</h4>
+      <h4 class="en-only">🔄 Alternative Set</h4>
+      <p><strong><span class="zh-only">2千岩 + 2宗室：</span><span class="en-only">2pc Tenacity + 2pc Noblesse:</span></strong><span class="zh-only">混合爆发辅助，牺牲部分护盾强度换取更高的Q爆发伤害。适合副C钟离。</span><span class="en-only">Hybrid burst support — trades some shield durability for higher Burst DMG. Good for Sub-DPS Zhongli.</span></p>
+    </div>
+
+    <div class="card">
+      <h4 class="zh-only">🎯 主词条选择</h4>
+      <h4 class="en-only">🎯 Main Stat Choices</h4>
+      <table>
+        <thead><tr><th><span class="zh-only">部位</span><span class="en-only">Slot</span></th><th><span class="zh-only">护盾流</span><span class="en-only">Shield Build</span></th><th><span class="zh-only">爆发副C流</span><span class="en-only">Burst Support</span></th></tr></thead>
+        <tbody>
+          <tr><td><span class="zh-only">时之沙</span><span class="en-only">Sands</span></td><td><strong><span class="zh-only">生命值%</span><span class="en-only">HP%</span></strong></td><td><strong><span class="zh-only">生命值%</span><span class="en-only">HP%</span></strong></td></tr>
+          <tr><td><span class="zh-only">空之杯</span><span class="en-only">Goblet</span></td><td><strong><span class="zh-only">生命值%</span><span class="en-only">HP%</span></strong></td><td><strong><span class="zh-only">岩元素伤害</span><span class="en-only">Geo DMG</span></strong></td></tr>
+          <tr><td><span class="zh-only">理之冠</span><span class="en-only">Circlet</span></td><td><strong><span class="zh-only">生命值%</span><span class="en-only">HP%</span></strong></td><td><strong><span class="zh-only">暴击率 / 暴击伤害</span><span class="en-only">CRIT Rate / CRIT DMG</span></strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h4 class="zh-only">📏 面板目标</h4>
+      <h4 class="en-only">📏 Target Stats</h4>
+      <p><strong><span class="zh-only">护盾流：HP 50,000+ | 充能 130-150% | 暴击无要求</span><span class="en-only">Shield Build: HP 50,000+ | ER 130–150% | CRIT irrelevant</span></strong></p>
+      <p><strong><span class="zh-only">爆发副C流：HP 30,000+ | 暴击率 60%+ | 暴伤 140%+ | 充能 130%+</span><span class="en-only">Burst Support: HP 30,000+ | CRIT Rate 60%+ | CRIT DMG 140%+ | ER 130%+</span></strong></p>
+      <p class="zh-only">副词条优先级（护盾流）：生命值% &gt; 充能效率 &gt; 攻击力%（收益极低）</p>
+      <p class="en-only">Substat priority (Shield build): HP% > ER > ATK% (very low value)</p>
+      <p class="zh-only">副词条优先级（爆发流）：暴击/暴伤 &gt; 生命值% &gt; 充能 &gt; 攻击力%</p>
+      <p class="en-only">Substat priority (Burst build): CRIT > HP% > ER > ATK%</p>
+    </div>
+  </section>
+
+  <!-- 命座 -->
+  <section id="constellation">
+    <h2><span class="icon">⭐</span> <span class="zh-only">命座分析 · C0/C2/C6 关键节点</span><span class="en-only">Constellations · C0, C2 &amp; C6 Powerspikes</span></h2>
+    <table>
+      <thead><tr><th class="zh-only">命座</th><th class="en-only">Cons</th><th><span class="zh-only">效果</span><span class="en-only">Effect</span></th><th><span class="zh-only">推荐度</span><span class="en-only">Rating</span></th></tr></thead>
+      <tbody>
+        <tr><td>C1</td><td class="zh-only">可同时存在2根岩脊</td><td class="en-only">Can have 2 Stone Steles on field simultaneously</td><td>⭐⭐</td></tr>
+        <tr><td>C2</td><td class="zh-only">释放Q时，为附近我方角色赋予玉璋护盾。联机辅助，QoL提升</td><td class="en-only">Using Q grants nearby party members Jade Shield. Co-op support, QoL</td><td>⭐⭐⭐</td></tr>
+        <tr><td>C3</td><td class="zh-only">元素战技等级+3，护盾更厚</td><td class="en-only">Skill LV +3, stronger shield</td><td>⭐⭐⭐</td></tr>
+        <tr><td>C4</td><td class="zh-only">Q范围+20%，石化持续时间+2秒</td><td class="en-only">Burst AoE +20% larger, petrification +2s</td><td>⭐⭐</td></tr>
+        <tr><td>C5</td><td class="zh-only">元素爆发等级+3，天星伤害更高</td><td class="en-only">Burst LV +3, higher Planet Befall DMG</td><td>⭐⭐⭐</td></tr>
+        <tr><td><strong>C6</strong></td><td><strong class="zh-only">护盾受伤害时回复生命值（受伤量的40%，每次最多回复最大生命值8%）</strong><strong class="en-only">Shield heals when taking damage (40% of damage taken, max 8% Max HP per heal)</strong></td><td>⭐⭐⭐⭐</td></tr>
+      </tbody>
+    </table>
+    <div class="highlight">
+      <p class="zh-block"><strong>🛡️ C0已经是最佳安逸之选。</strong>C2解锁Q给盾（联机神器），C6让护盾受伤回血=不死之身。<strong>推荐目标：C0完美 → C2 QoL → C6神级</strong>。</p>
+      <p class="en-block"><strong>🛡️ C0 is already the ultimate comfort pick.</strong> C2 grants Q-shield (great for co-op). C6 makes you immortal (shield heals on damage). <strong>Goal: C0 perfect → C2 QoL → C6 god mode</strong>.</p>
+    </div>
+  </section>
+
+  <!-- 配队 -->
+  <section id="teams">
+    <h2><span class="icon">🤝</span> <span class="zh-only">配队方案 · 5大主流体系</span><span class="en-only">Teams · 5 Main Archetypes</span></h2>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="t-name">🔥 <span class="zh-only">胡行钟夜</span><span class="en-only">Hu Tao Double Hydro</span></div>
+        <div class="t-chars"><span class="zh-only">胡桃 + 行秋/夜兰 + 钟离 + 灵活位</span><span class="en-only">Hu Tao + Yelan/Xingqiu + Zhongli + Flex</span></div>
+        <div class="t-desc"><span class="zh-only">经典胡桃体系。钟离提供护盾和减抗，让胡桃在低血量下安全输出。双水共鸣补充血量，是深渊的常青阵容。</span><span class="en-only">Classic Hu Tao system. Zhongli provides shield + shred, enabling Hu Tao's low-HP playstyle safely. Double Hydro resonance supplements HP. A timeless Abyss staple.</span></div>
+      </div>
+      <div class="team-card">
+        <div class="t-name">🗿 <span class="zh-only">一斗岩队</span><span class="en-only">Itto Mono Geo</span></div>
+        <div class="t-chars"><span class="zh-only">荒泷一斗 + 五郎 + 钟离 + 阿贝多</span><span class="en-only">Itto + Gorou + Zhongli + Albedo</span></div>
+        <div class="t-desc"><span class="zh-only">三岩共鸣。钟离减抗+护盾，阿贝多后台输出，五郎加防增伤，一斗前台重击。纯粹岩伤碾压。</span><span class="en-only">Triple Geo resonance. Zhongli shred + shield, Albedo off-field DMG, Gorou DEF buff, Itto on-field charged attacks. Pure Geo domination.</span></div>
+      </div>
+      <div class="team-card">
+        <div class="t-name">💧 <span class="zh-only">那芙钟万</span><span class="en-only">Neuvillette Premium</span></div>
+        <div class="t-chars"><span class="zh-only">那维莱特 + 芙宁娜 + 钟离 + 万叶</span><span class="en-only">Neuvillette + Furina + Zhongli + Kazuha</span></div>
+        <div class="t-desc"><span class="zh-only">那维莱特的顶级配队。钟离护盾让那维莱特在重击时不被击飞打断，万叶聚怪减抗，芙宁娜增伤。舒适又暴力。</span><span class="en-only">Neuvillette's premium comp. Zhongli's shield prevents interruption during charged attacks, Kazuha groups + shreds, Furina buffs damage. Comfortable and devastating.</span></div>
+      </div>
+      <div class="team-card">
+        <div class="t-name">🌿 <span class="zh-only">提八钟妲</span><span class="en-only">Tighnari Spread</span></div>
+        <div class="t-chars"><span class="zh-only">提纳里 + 八重神子 + 钟离 + 纳西妲</span><span class="en-only">Tighnari + Yae Miko + Nahida + Zhongli</span></div>
+        <div class="t-desc"><span class="zh-only">安全远程激化队。钟离护盾让提纳里和八重在远处安逸输出。纳西妲挂草减抗，激化伤害拉满。</span><span class="en-only">Safe ranged Spread team. Zhongli's shield lets Tighnari and Yae output from a safe distance. Nahida applies Dendro + shred, maxing Spread damage.</span></div>
+      </div>
+      <div class="team-card">
+        <div class="t-name">⚪ <span class="zh-only">通用盾位</span><span class="en-only">Universal Flex</span></div>
+        <div class="t-chars"><span class="zh-only">任意主C + 任意副C + 任意辅助 + 钟离</span><span class="en-only">Any Main DPS + Any Sub-DPS + Any Support + Zhongli</span></div>
+        <div class="t-desc"><span class="zh-only">钟离可以塞进几乎所有需要生存的队伍。20%全元素减抗+最强护盾，任何阵容都能受益。</span><span class="en-only">Zhongli fits literally any team that wants survival. 20% universal RES shred + strongest shield benefits every comp imaginable.</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h4 class="zh-only">🎮 标准输出手法（胡行钟夜）</h4>
+      <h4 class="en-only">🎮 Standard Rotation (Hu Tao Double Hydro)</h4>
+      <p><span class="zh-only">钟离长按E（护盾）→ 夜兰/行秋 E Q → 灵活位 E Q → </span><span class="en-only">Zhongli hold E (shield) → Yelan/Xingqiu E Q → Flex E Q → </span><strong><span class="zh-only">胡桃 E 重击/普攻循环</span><span class="en-only">Hu Tao E NA/CA spam</span></strong></p>
+      <p style="margin-top:8px" class="zh-only">核心思路：钟离先手护盾+减抗→夜兰行秋挂水→胡桃开E在护盾保护下半血重击。护盾保证胡桃不会死于低血量。</p>
+      <p style="margin-top:8px" class="en-only">Core logic: Zhongli opens with shield + shred → Yelan/Xingqiu apply Hydro → Hu Tao activates E and spams charged attacks at low HP under shield protection. The shield ensures Hu Tao survives at low HP.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2><span class="icon">❓</span> <span class="zh-only">常见问题 FAQ</span><span class="en-only">FAQ</span></h2>
+
+    <div class="card">
+      <h4 class="zh-only">护盾流还是爆发流？</h4>
+      <h4 class="en-only">Shield or Burst build?</h4>
+      <p class="zh-block"><strong>纯护盾流（5万+HP）更安全更通用。</strong>爆发流（3万HP + 暴击）牺牲护盾强度换取约10万一发的天星伤害。日常使用推荐护盾流。</p>
+      <p class="en-block"><strong>Pure shield build (50K+ HP) is safer and more universal.</strong> Burst build (30K HP + CRIT) sacrifices shield strength for ~100K meteor hits. Choose shield for general use.</p>
+    </div>
+    <div class="card">
+      <h4 class="zh-only">生命杯还是岩伤杯？</h4>
+      <h4 class="en-only">HP goblet or Geo goblet?</h4>
+      <p class="zh-block"><strong>护盾流选生命杯，爆发流选岩伤杯。</strong>永远不要带攻击力杯——钟离的技能伤害和护盾都不吃攻击力杯的收益。</p>
+      <p class="en-block"><strong>HP% goblet for shield build. Geo DMG goblet for burst build.</strong> Never use ATK% — Zhongli's skill damage and shield both gain negligible value from ATK% goblet.</p>
+    </div>
+    <div class="card">
+      <h4 class="zh-only">0命值得抽吗？</h4>
+      <h4 class="en-only">Is C0 worth pulling?</h4>
+      <p class="zh-block"><strong>值得，绝对值得。</strong>钟离是全游戏提升游戏体验最大的角色。他的护盾能让95%的游戏内容变得毫无压力。如果你感觉操作吃力或者总是暴毙，抽他就对了。</p>
+      <p class="en-block"><strong>YES. Absolutely.</strong> Zhongli is the single best quality-of-life upgrade in the game. His shield trivializes 95% of content. If you struggle with dodging or survivability, pull him immediately.</p>
+    </div>
+  </section>
+
+  <div class="cta">
+    <p style="font-size:1.1rem; font-weight:600;"><span class="zh-only">📬 觉得有用？订阅获取更多角色攻略</span><span class="en-only">📬 Found this useful? Subscribe for more guides</span></p>
+    <p style="color:var(--text-dim)"><span class="zh-only">新角色测评、深渊配队、武器对比，第一时间推送</span><span class="en-only">New character reviews, Abyss teams, weapon comparisons — delivered first</span></p>
+    <a href="../index.html#subscribe" class="btn"><span class="zh-only">📩 免费订阅更新</span><span class="en-only">📩 Subscribe Free</span></a>
+  </div>
+
+</div>
+
+<nav class="article-nav">
+  <a href="kazuha.html" class="prev">
+    <span class="nav-label"><span class="zh-only">← 上一篇</span><span class="en-only">← Previous</span></span>
+    <span class="nav-title"><span class="zh-only">枫原万叶 · 聚怪增伤核心</span><span class="en-only">Kazuha — CC &amp; Buff Core</span></span>
+  </a>
+  <a href="../index.html" class="next">
+    <span class="nav-label"><span class="zh-only">下一篇 →</span><span class="en-only">Next →</span></span>
+    <span class="nav-title"><span class="zh-only">返回首页</span><span class="en-only">Home</span></span>
+  </a>
+</nav>
+
+<div class="footer">
+  <span class="zh-only">© 2026 提瓦特旅人指南</span><span class="en-only">© 2026 Teyvat Traveler's Guide</span> · <a href="../index.html"><span class="zh-only">返回首页</span><span class="en-only">Home</span></a> · Genshin Impact © HoYoverse
+</div>
+
+<script>
+  const langToggle = document.getElementById('langToggle');
+  const langOptions = langToggle.querySelectorAll('.lang-option');
+  function setLang(lang) {
+    if (lang === 'en') { document.body.classList.add('lang-en'); }
+    else { document.body.classList.remove('lang-en'); }
+    document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+    localStorage.setItem('genshinLang', lang);
+    langOptions.forEach(opt => opt.classList.toggle('active', opt.dataset.lang === lang));
+  }
+  langOptions.forEach(opt => opt.addEventListener('click', () => setLang(opt.dataset.lang)));
+  setLang(localStorage.getItem('genshinLang') || ((navigator.language||navigator.userLanguage||'').startsWith('zh')?'zh':'en'));
+
+  // Back to top
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('visible', window.scrollY > 400);
+  });
+  backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // TOC active section
+  const tocLinks = document.querySelectorAll('.toc-link');
+  const sections = [...tocLinks].map(l => document.querySelector(l.getAttribute('href')));
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => {
+      if (sec && sec.getBoundingClientRect().top < 200) current = sec.id;
+    });
+    tocLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + current));
+  });
+</script>
+</body>
+</html>

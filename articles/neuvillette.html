@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>那维莱特完全攻略 — 武器/圣遗物/配队 | Neuvillette Build Guide · Teyvat Traveler</title>
+<meta name="description" content="原神那维莱特全方位培养攻略：静水流涌之辉领衔武器排名、猎人4件套最优解、重击水龙炮机制、A1被动详解、C1/C2命座分析。Complete Neuvillette guide: weapon ranking, Marechaussee Hunter builds, charged attack mechanics, A1 passive, C1/C2 analysis.">
+<meta property="og:title" content="那维莱特完全攻略 | Neuvillette Guide · Teyvat Traveler">
+<meta property="og:description" content="静水流涌之辉武器排名、猎人4最优解、重击水龙炮机制、A1被动详解、C1/C2分析。Weapon ranking, Marechaussee Hunter builds, charged attack mechanics, A1 passive, C1/C2 analysis.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://kyle1188.github.io/genshin-guide/articles/neuvillette.html">
+<meta property="og:image" content="https://patchwiki.biligame.com/images/ys/1/12/586c68eu5xrmi7xu3ah7z8nrmlcae62.png">
+<meta property="og:image:width" content="720">
+<meta property="og:image:height" content="720">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://patchwiki.biligame.com/images/ys/1/12/586c68eu5xrmi7xu3ah7z8nrmlcae62.png">
+<meta name="robots" content="index, follow, max-snippet:-1">
+<link rel="canonical" href="https://kyle1188.github.io/genshin-guide/articles/neuvillette.html">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CZBN84E1PH"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CZBN84E1PH');</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"那维莱特完全攻略 — 武器/圣遗物/配队 | Neuvillette Build Guide","description":"原神那维莱特全方位培养攻略：武器排名、猎人4件套最优解、重击水龙炮机制、A1被动详解、C1/C2命座分析。","datePublished":"2024-11-08","dateModified":"2026-06-12","author":{"@type":"Person","name":"Teyvat Traveler"},"publisher":{"@type":"Organization","name":"Teyvat Traveler's Guide","url":"https://kyle1188.github.io/genshin-guide/"}}</script>
+<style>
+  :root {
+    --bg: #0a0a0f; --bg-card: #1a1a25; --text: #e8e6e3; --text-dim: #8b8a92;
+    --accent: #ffbd59; --accent2: #f5c842; --accent3: #4dc4ff; --border: rgba(255,255,255,0.06);
+    --radius: 12px; --radius-lg: 20px;
+  }
+  *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: -apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased;
+  }
+  ::-webkit-scrollbar { width:5px; } ::-webkit-scrollbar-track { background:var(--bg); }
+  ::-webkit-scrollbar-thumb { background:rgba(255,255,255,0.1); border-radius:4px; }
+
+  /* Language Toggle */
+  .lang-toggle { display:inline-flex; align-items:center; gap:0; border:1px solid rgba(255,255,255,0.2); border-radius:20px; overflow:hidden; font-size:0.75rem; cursor:pointer; }
+  .lang-option { padding:4px 12px; color:rgba(255,255,255,0.5); transition:all 0.25s; font-weight:500; user-select:none; }
+  .lang-option.active { background:var(--accent); color:#0a0a0f; font-weight:700; }
+  body:not(.lang-en) .en-only { display:none !important; }
+  body:not(.lang-en) .zh-only { display:inline; }
+  body.lang-en .zh-only { display:none !important; }
+  body.lang-en .en-only { display:inline; }
+  .zh-block, .en-block { display:none; }
+  body:not(.lang-en) .zh-block { display:block; }
+  body.lang-en .en-block { display:block; }
+  .zh-inline, .en-inline { display:none; }
+  body:not(.lang-en) .zh-inline { display:inline; }
+  body.lang-en .en-inline { display:inline; }
+
+  .nav { position:fixed; top:0; left:0; right:0; z-index:100; padding:14px 40px; display:flex; align-items:center; justify-content:space-between; background:rgba(10,10,15,0.85); backdrop-filter:blur(24px) saturate(180%); border-bottom:1px solid var(--border); }
+  .nav a { color:rgba(255,255,255,0.7); text-decoration:none; font-size:0.85rem; transition:color 0.25s; }
+  .nav a:hover { color:#fff; }
+  .nav-logo { font-weight:700; font-size:1rem; color:#fff !important; display:flex; align-items:center; gap:8px; }
+  .nav-right { display:flex; align-items:center; gap:14px; }
+
+  .container { max-width:860px; margin:0 auto; padding:100px 24px 80px; }
+
+  .breadcrumb { font-size:0.8rem; color:var(--text-dim); margin-bottom:20px; }
+  .breadcrumb a { color:var(--accent); text-decoration:none; }
+  .breadcrumb a:hover { text-decoration:underline; }
+
+  .article-header { margin-bottom:12px; }
+  .article-hero { text-align:center; margin:0 0 32px; }
+  .article-hero-img { max-width:300px; width:100%; border-radius:var(--radius-lg); border:2px solid rgba(77,196,255,0.3); }
+  .tags { display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap; }
+  .tag { padding:4px 12px; border-radius:12px; font-size:0.72rem; font-weight:600; }
+  .tag.hot { background:rgba(255,189,89,0.12); color:var(--accent); }
+  .tag.new { background:rgba(77,212,172,0.12); color:#4dd4ac; }
+  .tag.core { background:rgba(77,196,255,0.12); color:var(--accent3); }
+  h1 { font-size:2.4rem; font-weight:800; line-height:1.2; margin-bottom:12px; letter-spacing:-0.02em; }
+  .meta { font-size:0.85rem; color:var(--text-dim); display:flex; gap:24px; flex-wrap:wrap; }
+
+  .toc { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:24px 28px; margin-bottom:40px; }
+  .toc h4 { font-size:0.85rem; color:var(--accent); margin-bottom:12px; text-transform:uppercase; letter-spacing:0.08em; }
+  .toc ol { padding-left:20px; color:var(--text-dim); font-size:0.9rem; line-height:2; }
+  .toc ol a { color:var(--text); text-decoration:none; transition:color 0.2s; }
+  .toc ol a:hover { color:var(--accent); }
+
+  section { margin-bottom:48px; }
+  h2 { font-size:1.5rem; font-weight:700; margin-bottom:20px; padding-bottom:10px; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:10px; }
+  h2 .icon { font-size:1.4rem; }
+  h3 { font-size:1.15rem; font-weight:700; margin:24px 0 12px; }
+
+  p { color:var(--text-dim); margin-bottom:12px; }
+  p strong { color:var(--text); }
+
+  .card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:24px; margin-bottom:20px; }
+  .card h4 { font-size:1rem; margin-bottom:8px; color:var(--accent2); }
+
+  table { width:100%; border-collapse:collapse; margin:16px 0; font-size:0.88rem; }
+  thead th { background:rgba(255,189,89,0.08); color:var(--accent); padding:10px 14px; text-align:left; font-weight:600; border-bottom:2px solid var(--border); font-size:0.8rem; letter-spacing:0.04em; }
+  tbody td { padding:10px 14px; border-bottom:1px solid var(--border); color:var(--text-dim); }
+  tbody tr:hover td { background:rgba(255,255,255,0.02); }
+  .tier-s { color:#ffbd59; font-weight:800; }
+  .tier-a { color:#4dd4ac; font-weight:700; }
+  .tier-b { color:#8b8a92; font-weight:600; }
+
+  .highlight { background:rgba(255,189,89,0.06); border-left:3px solid var(--accent); padding:16px 20px; border-radius:0 var(--radius) var(--radius) 0; margin:16px 0; }
+  .highlight p { margin:0; font-size:0.9rem; }
+  .highlight strong { color:var(--accent); }
+
+  .mode-switch { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:16px 0; }
+  .mode-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:20px; text-align:center; }
+  .mode-card .m-name { font-weight:700; font-size:1.1rem; margin-bottom:6px; }
+  .mode-card .m-sub { font-size:0.8rem; color:var(--text-dim); }
+
+  .team-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px; margin:16px 0; }
+  .team-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:20px; }
+  .team-card .t-name { font-weight:700; margin-bottom:6px; }
+  .team-card .t-chars { font-size:0.85rem; color:var(--accent3); margin-bottom:6px; }
+  .team-card .t-desc { font-size:0.8rem; color:var(--text-dim); }
+
+  .cta { text-align:center; padding:40px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); margin:40px 0; }
+  .cta p { margin-bottom:16px; }
+  .btn { display:inline-flex; align-items:center; gap:8px; padding:12px 28px; border-radius:24px; font-weight:600; font-size:0.95rem; text-decoration:none; border:none; cursor:pointer; transition:all 0.25s; background:var(--accent); color:#0a0a0f; }
+  .btn:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(255,189,89,0.25); }
+
+  .footer { text-align:center; padding:32px 24px; border-top:1px solid var(--border); font-size:0.8rem; color:var(--text-dim); margin-top:40px; }
+  .footer a { color:var(--accent); text-decoration:none; }
+
+  @media (max-width:768px) {
+    .nav { padding:12px 20px; }
+    h1 { font-size:1.7rem; }
+    .container { padding:80px 16px 60px; }
+    .mode-switch { grid-template-columns:1fr; }
+    table { font-size:0.78rem; }
+    thead th, tbody td { padding:8px 10px; }
+    .nav-right { gap:8px; }
+  }
+  .toc-sidebar { position:fixed; right:16px; top:50%; transform:translateY(-50%); z-index:90; display:flex; flex-direction:column; gap:6px; }
+  .toc-link { display:block; padding:6px 14px; border-radius:8px; font-size:0.75rem; color:var(--text-dim); text-decoration:none; border-left:2px solid transparent; transition:all 0.25s; background:rgba(10,10,15,0.7); }
+  .toc-link:hover,.toc-link.active { color:var(--accent); border-left-color:var(--accent); background:rgba(255,189,89,0.08); }
+  .back-to-top { position:fixed; bottom:24px; right:24px; width:40px; height:40px; border-radius:50%; background:var(--accent); color:#0a0a0f; border:none; cursor:pointer; font-size:1.2rem; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity 0.3s; z-index:99; }
+  .back-to-top.visible { opacity:1; pointer-events:auto; }
+  @media (max-width:768px) { .toc-sidebar { display:none; } .back-to-top { bottom:16px; right:16px; } }
+  .article-nav { display:flex; justify-content:space-between; align-items:center; gap:16px; max-width:860px; margin:0 auto; padding:32px 24px 48px; }
+  .article-nav a { display:flex; flex-direction:column; gap:4px; padding:14px 20px; border-radius:12px; border:1px solid var(--border); text-decoration:none; transition:all 0.25s; max-width:360px; }
+  .article-nav a:hover { border-color:var(--accent); background:rgba(255,189,89,0.04); }
+  .article-nav .nav-label { font-size:0.7rem; color:var(--text-dim); }
+  .article-nav .nav-title { font-size:0.9rem; color:#fff; font-weight:600; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">💧 <span class="zh-only">提瓦特旅人指南</span><span class="en-only">Teyvat Traveler's Guide</span></a>
+  <div class="nav-right">
+    <div class="lang-toggle" id="langToggle">
+      <span class="lang-option active" data-lang="zh">中文</span>
+      <span class="lang-option" data-lang="en">EN</span>
+    </div>
+    <a href="../index.html">← <span class="zh-only">返回首页</span><span class="en-only">Home</span></a>
+  </div>
+</nav>
+
+<div class="container">
+<aside class="toc-sidebar">
+  <a href="#build" class="toc-link"><span class="zh-only">武器圣遗物</span><span class="en-only">Weapons &amp; Artifacts</span></a>
+  <a href="#teams" class="toc-link"><span class="zh-only">配队方案</span><span class="en-only">Team Comps</span></a>
+  <a href="#faq" class="toc-link"><span class="zh-only">常见问题</span><span class="en-only">FAQ</span></a>
+</aside>
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <div class="breadcrumb">
+    <a href="../index.html"><span class="zh-only">首页</span><span class="en-only">Home</span></a> &nbsp;›&nbsp; <a href="../index.html#characters"><span class="zh-only">角色攻略</span><span class="en-only">Character Builds</span></a> &nbsp;›&nbsp; <span class="zh-only">那维莱特</span><span class="en-only">Neuvillette</span>
+  </div>
+
+  <header class="article-header">
+    <div class="tags">
+      <span class="tag hot"><span class="zh-only">必看</span><span class="en-only">Must Read</span></span>
+      <span class="tag core"><span class="zh-only">水龙王</span><span class="en-only">Hydro Dragon</span></span>
+      <span class="tag new"><span class="zh-only">5.7版本适用</span><span class="en-only">v5.7 Valid</span></span>
+    </div>
+    <h1>🌊 <span class="zh-only">那维莱特 · 从零到满命完全攻略</span><span class="en-only">Neuvillette · Complete Guide (C0–C6)</span></h1>
+    <div class="meta">
+      <span><span class="zh-only">🕐 更新于 2026年6月12日</span><span class="en-only">🕐 Updated Jun 12, 2026</span></span>
+      <span><span class="zh-only">📖 约 15 分钟阅读</span><span class="en-only">📖 ~15 min read</span></span>
+      <span>👁️ 78,000+</span>
+    </div>
+  </header>
+  <div class="article-hero">
+    <img src="https://patchwiki.biligame.com/images/ys/1/12/586c68eu5xrmi7xu3ah7z8nrmlcae62.png" alt="Neuvillette" class="article-hero-img" loading="lazy">
+  </div>
+
+  <nav class="toc">
+    <h4>📋 <span class="zh-only">本文目录</span><span class="en-only">Table of Contents</span></h4>
+    <ol>
+      <li><a href="#overview"><span class="zh-only">角色定位 · 重击水龙炮机制</span><span class="en-only">Role &amp; Charged Attack Mechanics</span></a></li>
+      <li><a href="#weapon"><span class="zh-only">武器选择 · 6档排名</span><span class="en-only">Weapon Ranking (6 Tiers)</span></a></li>
+      <li><a href="#artifact"><span class="zh-only">圣遗物搭配 · 主词条与目标面板</span><span class="en-only">Artifacts &amp; Target Stats</span></a></li>
+      <li><a href="#constellation"><span class="zh-only">命座分析 · C1/C2 关键节点</span><span class="en-only">Constellations · C1 &amp; C2 Analysis</span></a></li>
+      <li><a href="#teams"><span class="zh-only">配队方案 · 5大主流体系</span><span class="en-only">Teams · 5 Main Archetypes</span></a></li>
+      <li><a href="#faq"><span class="zh-only">常见问题 FAQ</span><span class="en-only">FAQ</span></a></li>
+    </ol>
+  </nav>
+
+  <!-- 角色定位 -->
+  <section id="overview">
+    <h2><span class="icon">🌊</span> <span class="zh-only">角色定位 · 重击水龙炮机制</span><span class="en-only">Role &amp; Charged Attack Mechanics</span></h2>
+    <p class="zh-block">那维莱特 — 五星水元素法器角色，定位为<strong>主C输出（Hydro Hypercarry）</strong>。核心机制是重击「衡平推裁」（水龙炮）造成大范围水元素伤害并自我治疗。A1被动根据队友触发的水元素反应数量，提供最高160%的重击伤害加成。源水灵珠（来自E/Q）可大幅缩短重击蓄力时间。</p>
+    <p class="en-block">Neuvillette — 5★ Hydro Catalyst character. Role: <strong>Main DPS (Hydro Hypercarry)</strong>. His core mechanic is the charged attack "Equitable Judgment" (water cannon) dealing massive AoE Hydro DMG while self-healing. His A1 passive grants up to 160% CA DMG bonus based on party members triggering Hydro reactions. Sourcewater droplets (from E/Q) speed up charged attack charge time.</p>
+
+    <div class="highlight">
+      <p class="zh-block"><strong>一句话总结：</strong>那维莱特是游戏中最强的AoE主C——重击水龙炮自带穿透+自疗，0命即可单通深渊12层。搭配芙宁娜可实现T0级别的枫丹水龙队。</p>
+      <p class="en-block"><strong>TL;DR:</strong> Neuvillette is the strongest AoE Main DPS in the game — his charged attack "water cannon" has innate penetration + self-healing, capable of solo-clearing Abyss Floor 12 at C0. Pair with Furina for the T0 Fontaine Hydro Dragon team.</p>
+    </div>
+
+    <div class="card">
+      <h4 class="zh-only">🔑 核心天赋优先级</h4>
+      <h4 class="en-only">🔑 Talent Priority</h4>
+      <p><strong><span class="zh-only">普通攻击 (重击) &gt; 元素战技 (E) ≥ 元素爆发 (Q)</span><span class="en-only">Normal Attack (CA) > Elemental Skill (E) ≥ Elemental Burst (Q)</span></strong></p>
+      <p class="zh-only">关键：普攻天赋等级直接决定重击伤害，必须优先满级。A1被动：队友每触发1种水相关反应，获得1层「昔日龙荣」（最多3层 = 110%/125%/160%重击伤害加成）。</p>
+      <p class="en-only">Key: NA talent levels are critical as CA damage scales directly with NA level. A1 passive: For each unique Hydro-related reaction triggered by party members, gain 1 stack of "Past Draconic Glories" (max 3 stacks = 110%/125%/160% CA DMG at 1/2/3 stacks).</p>
+    </div>
+
+    <div class="card">
+      <h4 class="zh-only">📊 源水灵珠机制</h4>
+      <h4 class="en-only">📊 Sourcewater Droplet Mechanics</h4>
+      <p class="zh-block">E技能和Q爆发会生成源水灵珠。拾取灵珠可：①立即减少重击蓄力时间；②恢复生命值；③提供1层A1被动（若灵珠来自其他水角色触发的反应）。最多持有6颗灵珠。</p>
+      <p class="en-block">Elemental Skill and Burst generate Sourcewater Droplets. Picking up droplets: ① immediately reduces charged attack charge time; ② restores HP; ③ provides 1 A1 passive stack (if droplet came from reactions triggered by other Hydro characters). Max 6 droplets can be held.</p>
+    </div>
+  </section>
+
+  <!-- 武器 -->
+  <section id="weapon">
+    <h2><span class="icon">🗡️</span> <span class="zh-only">武器选择 · 6档排名</span><span class="en-only">Weapon Ranking (6 Tiers)</span></h2>
+    <p class="zh-only">那维莱特的武器需求：<strong>暴伤/暴率 &gt; HP% &gt; 元素精通</strong>。重击伤害是核心，生命值影响治疗和A1被动触发频率。</p>
+    <p class="en-only">Neuvillette's weapon priority: <strong>CRIT DMG/CRIT Rate > HP% > Elemental Mastery</strong>. Charged Attack DMG is the core; HP influences healing and A1 passive trigger frequency.</p>
+
+    <table>
+      <thead>
+        <tr><th><span class="zh-only">档位</span><span class="en-only">Tier</span></th><th><span class="zh-only">武器</span><span class="en-only">Weapon</span></th><th><span class="zh-only">基础攻击</span><span class="en-only">Base ATK</span></th><th><span class="zh-only">副属性</span><span class="en-only">Substat</span></th><th><span class="zh-only">核心优势</span><span class="en-only">Key Advantage</span></th><th><span class="zh-only">获取</span><span class="en-only">Source</span></th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tier-s">SS</td>
+          <td><strong><span class="zh-only">静水流涌之辉（专武）</span><span class="en-only">Tome of the Eternal Flow</span></strong></td>
+          <td>542</td>
+          <td><span class="zh-only">暴伤</span><span class="en-only">CRIT DMG</span> 88.2%</td>
+          <td class="zh-only">专武。HP波动+重击伤害加成，完美契合水龙炮机制</td>
+          <td class="en-only">Signature. HP fluctuation + CA DMG bonus, perfect synergy with water cannon</td>
+          <td><span class="zh-only">限定祈愿</span><span class="en-only">Limited</span></td>
+        </tr>
+        <tr>
+          <td class="tier-s">S</td>
+          <td><strong><span class="zh-only">典祭玉瓒（纪行）</span><span class="en-only">Sacrificial Jade</span></strong></td>
+          <td>510</td>
+          <td><span class="zh-only">暴击率</span><span class="en-only">CRIT Rate</span> 36.8%</td>
+          <td class="zh-only">HP+精通加成，最佳4★武器，纪行可换</td>
+          <td class="en-only">HP + EM bonus, best 4★ option, Battle Pass exclusive</td>
+          <td><span class="zh-only">纪行</span><span class="en-only">Battle Pass</span></td>
+        </tr>
+        <tr>
+          <td class="tier-s">S</td>
+          <td><strong><span class="zh-only">四风原典</span><span class="en-only">Lost Prayer to the Sacred Winds</span></strong></td>
+          <td>608</td>
+          <td><span class="zh-only">暴击率</span><span class="en-only">CRIT Rate</span> 33.1%</td>
+          <td class="zh-only">元素伤害叠加，站场主C适配度高</td>
+          <td class="en-only">Elemental DMG stacking, high on-field Main DPS synergy</td>
+          <td><span class="zh-only">常驻</span><span class="en-only">Standard</span></td>
+        </tr>
+        <tr>
+          <td class="tier-a">A</td>
+          <td><strong><span class="zh-only">试作金珀 (F2P首选)</span><span class="en-only">Prototype Amber (F2P Best)</span></strong></td>
+          <td>510</td>
+          <td><span class="zh-only">HP%</span><span class="en-only">HP%</span> 41.3%</td>
+          <td class="zh-only">免费R5！HP%主词条+ team治疗+回能</td>
+          <td class="en-only">Free R5! HP% main stat + team healing + energy regen</td>
+          <td><span class="zh-only">锻造</span><span class="en-only">Craftable</span></td>
+        </tr>
+        <tr>
+          <td class="tier-a">A</td>
+          <td><strong><span class="zh-only">流浪乐章</span><span class="en-only">The Widsith</span></strong></td>
+          <td>510</td>
+          <td><span class="zh-only">暴伤</span><span class="en-only">CRIT DMG</span> 55.1%</td>
+          <td class="zh-only">随机buff RNG，爆发期伤害极高</td>
+          <td class="en-only">Random buff RNG, explosive DMG during proc window</td>
+          <td><span class="zh-only">祈愿</span><span class="en-only">Gacha</span></td>
+        </tr>
+        <tr>
+          <td class="tier-b">B</td>
+          <td><strong><span class="zh-only"> ash-Graven Drinking Horn</span><span class="en-only">Ash-Graven Drinking Horn</span></strong></td>
+          <td>510</td>
+          <td><span class="zh-only">HP%</span><span class="en-only">HP%</span> 41.3%</td>
+          <td class="zh-only">HP% stat stick，活动限定（绝版）</td>
+          <td class="en-only">HP% stat stick, Event limited (unavailable)</td>
+          <td><span class="zh-only">活动(绝版)</span><span class="en-only">Event (Limited)</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight">
+      <p class="zh-block"><strong>💡 没有5★法器？</strong>去锻造台制作<strong>试作金珀</strong>，免费R5，HP%副属性+ team治疗+回能，完全够用。纪行优先换<strong>典祭玉瓒</strong>，最佳4★武器。</p>
+      <p class="en-block"><strong>💡 No 5★ catalyst?</strong> Craft <strong>Prototype Amber</strong> at the forge — free R5, HP% substat + team healing + energy regen, completely sufficient. Prioritize <strong>Sacrificial Jade</strong> from the Battle Pass, the best 4★ option.</p>
+    </div>
+  </section>
+
+  <!-- 圣遗物 -->
+  <section id="artifact">
+    <h2><span class="icon">💎</span> <span class="zh-only">圣遗物搭配 · 主词条与目标面板</span><span class="en-only">Artifacts &amp; Target Stats</span></h2>
+
+    <h3 class="zh-only">首选套装：猎人的恪守 ×4</h3>
+    <h3 class="en-only">Best Set: Marechaussee Hunter ×4</h3>
+    <p class="zh-only"><strong>2件套：</strong>普通攻击与重击伤害 +15%<br><strong>4件套：</strong>生命值提升或降低时，暴击率提升12%，最多叠加3层（共计36%免费暴击率）。那维莱特的自疗机制会持续触发此效果。</p>
+    <p class="en-only"><strong>2pc:</strong> Normal Attack & Charged Attack DMG +15%<br><strong>4pc:</strong> When HP increases or decreases, CRIT Rate increases by 12%, up to 3 stacks (total 36% free CRIT Rate). Neuvillette's self-heal triggers this constantly.</p>
+    <p class="zh-block">猎人4是唯一指定毕业套装。那维莱特的重击自带自疗，配合4件套效果可轻松获得36%暴击率，大幅降低面板压力。</p>
+    <p class="en-block">Marechaussee Hunter 4pc is the one and only endgame set. Neuvillette's charged attack self-heals constantly, triggering the 4pc effect for 36% free CRIT Rate, drastically reducing stat pressure.</p>
+
+    <div class="card">
+      <h4 class="zh-only">🎯 主词条选择</h4>
+      <h4 class="en-only">🎯 Main Stat Choices</h4>
+      <table>
+        <thead><tr><th><span class="zh-only">部位</span><span class="en-only">Slot</span></th><th><span class="zh-only">最优主词条</span><span class="en-only">Best Main Stat</span></th><th><span class="zh-only">替代方案</span><span class="en-only">Alternative</span></th></tr></thead>
+        <tbody>
+          <tr><td><span class="zh-only">时之沙</span><span class="en-only">Sands</span></td><td><strong><span class="zh-only">生命值%</span><span class="en-only">HP%</span></strong></td><td><span class="zh-only">永远不选充能沙，HP%是唯一选择</span><span class="en-only">Never pick ER Sands, HP% is the only choice</span></td></tr>
+          <tr><td><span class="zh-only">空之杯</span><span class="en-only">Goblet</span></td><td><strong><span class="zh-only">水元素伤害 / 生命值%</span><span class="en-only">Hydro DMG / HP%</span></strong></td><td><span class="zh-only">水伤杯约优3%，但HP%杯副属性更好时选HP%</span><span class="en-only">Hydro DMG Goblet ~3% better, but HP% Goblet wins with better subs</span></td></tr>
+          <tr><td><span class="zh-only">理之冠</span><span class="en-only">Circlet</span></td><td><strong><span class="zh-only">暴击伤害 / 暴击率</span><span class="en-only">CRIT DMG / CRIT Rate</span></strong></td><td><span class="zh-only">暴伤优先，除非暴击率低于40%</span><span class="en-only">CRIT DMG priority unless CRIT Rate below 40%</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h4 class="zh-only">📏 面板目标</h4>
+      <h4 class="en-only">📏 Target Stats</h4>
+      <p><strong><span class="zh-only">HP 35,000+ | 暴击率 40-64% (猎人4buff前) | 暴伤 200%+ | 充能 120-140%</span><span class="en-only">HP 35,000+ | CRIT Rate 40-64% (before MH buff) | CRIT DMG 200%+ | ER 120-140%</span></strong></p>
+      <p class="zh-only">单水队充能需求约120%+，双水队可降至110%。副词条：暴击/暴伤 > HP% > 充能 > 攻击力%（几乎没用）。48K HP是HP杯的阈值。</p>
+      <p class="en-only">Solo Hydro needs ~120%+ ER, double Hydro can drop to 110%. Substat priority: CRIT > HP% > ER > ATK% (nearly useless). 48K HP is the HP Goblet threshold.</p>
+    </div>
+  </section>
+
+  <!-- 命座 -->
+  <section id="constellation">
+    <h2><span class="icon">⭐</span> <span class="zh-only">命座分析 · C1/C2 关键节点</span><span class="en-only">Constellations · C1 &amp; C2 Powerspikes</span></h2>
+    <table>
+      <thead><tr><th class="zh-only">命座</th><th class="en-only">Cons</th><th><span class="zh-only">效果</span><span class="en-only">Effect</span></th><th><span class="zh-only">提升幅度</span><span class="en-only">Gain</span></th><th><span class="zh-only">推荐度</span><span class="en-only">Rating</span></th></tr></thead>
+      <tbody>
+        <tr><td><strong>C1</strong></td><td><strong class="zh-only">重击期间抗打断大幅提升 + 初始获得1层A1被动</strong></td><td><strong class="en-only">During CA, interruption RES greatly increased + starts with 1 A1 stack</strong></td><td>≈15% QoL + DMG</td><td>⭐⭐⭐⭐</td></tr>
+        <tr><td><strong>C2</strong></td><td><strong class="zh-only">每层A1被动使重击暴伤提升14%，最多42%</strong></td><td><strong class="en-only">Each A1 stack increases CA CRIT DMG by 14%, max 42%</strong></td><td><strong>≈20% 🔥</strong></td><td>⭐⭐⭐⭐⭐</td></tr>
+        <tr><td>C3</td><td class="zh-only">普通攻击等级+3（重击伤害大幅提升）</td><td class="en-only">NA LV +3 (massive CA DMG increase)</td><td>≈18%</td><td>⭐⭐⭐⭐</td></tr>
+        <tr><td>C4</td><td class="zh-only">源水灵珠额外生成1枚能量微粒</td><td class="en-only">Sourcewater droplets generate 1 extra energy particle</td><td><span class="zh-only">充能优化</span><span class="en-only">ER QoL</span></td><td>⭐⭐</td></tr>
+        <tr><td>C5</td><td class="zh-only">元素爆发等级+3</td><td class="en-only">Burst LV +3</td><td>≈8%</td><td>⭐⭐</td></tr>
+        <tr><td><strong>C6</strong></td><td><strong class="zh-only">延长重击时间 + 额外水 torrent</strong></td><td><strong class="en-only">Extended CA time + extra water torrent</strong></td><td><strong><span class="zh-only">质变</span><span class="en-only">Game-changer</span> 🔥</strong></td><td>⭐⭐⭐⭐⭐</td></tr>
+      </tbody>
+    </table>
+    <div class="highlight">
+      <p class="zh-block"><strong>🚨 C1 是关键QoL命座：</strong>重击期间抗打断大幅提升，避免被打断的尴尬。C2是伤害分水岭，3层A1被动叠加42%暴伤。C6解锁超长水龙炮+额外水柱，真正的水龙王。<strong>推荐目标：C0够用 → C1舒适 → C2/C3伤害 → C6超carry</strong>。</p>
+      <p class="en-block"><strong>🚨 C1 is the key QoL constellation:</strong> Interruption resistance during CA is essential to avoid getting knocked out of the water cannon. C2 is the DMG powerspike with 42% CA CRIT DMG at 3 A1 stacks. C6 unlocks extended CA + extra water torrent, the true Hydro Dragon. <strong>Goal: C0 excellent → C1 comfort → C2/C3 damage → C6 hypercarry</strong>.</p>
+    </div>
+  </section>
+
+  <!-- 配队 -->
+  <section id="teams">
+    <h2><span class="icon">🤝</span> <span class="zh-only">配队方案 · 5大主流体系</span><span class="en-only">Teams · 5 Main Archetypes</span></h2>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="t-name">🌊 <span class="zh-only">那芙万白</span><span class="en-only">Neuv+Furina Hyper</span></div>
+        <div class="t-chars"><span class="zh-only">那维莱特 + 芙宁娜 + 万叶 + 白术</span><span class="en-only">Neuvillette + Furina + Kazuha + Baizhu</span></div>
+        <div class="t-desc"><span class="zh-only">T0 meta。芙宁娜增伤+白术群奶保障生存，枫丹双雄组合。万叶减抗聚怪，那维莱特水龙炮乱杀。</span><span class="en-only">T0 meta. Furina DMG buffer + Baizhu team heal for survival, Fontaine's twin duo. Kazuha shred + grouping, Neuvillette water cannon dominates.</span></div>
+      </div>
+      <div class="team-card">
+        <div class="t-name">🌊 <span class="zh-only">那芙钟万</span><span class="en-only">Neuv+Furina Shield</span></div>
+        <div class="t-chars"><span class="zh-only">那维莱特 + 芙宁娜 + 钟离 + 万叶</span><span class="en-only">Neuvillette + Furina + Zhongli + Kazuha</span></div>
+        <div class="t-desc"><span class="zh-only">钟离盾替代白术。极致安逸，钟离盾保证那维莱特重击不被打断，适合新手。</span><span class="en-only">Zhongli shield alternative to Baizhu. Maximum comfort, Zhongli's shield guarantees Neuvillette's CA won't be interrupted, ideal for beginners.</span></div>
+      </div>
+      <div class="team-card">
+        <div class="t-name">🌊 <span class="zh-only">那万皇白</span><span class="en-only">F2P Neuv Team</span></div>
+        <div class="t-chars"><span class="zh-only">那维莱特 + 万叶 + 菲谢尔 + 白术</span><span class="en-only">Neuvillette + Kazuha + Fischl + Baizhu</span></div>
+        <div class="t-desc"><span class="zh-only">F2P友好，不需要芙宁娜。菲谢尔脱手雷触发感电/蒸发，白术保证生存，万叶减抗。</span><span class="en-only">F2P friendly, no Furina needed. Fischl off-field Electro triggers Electro-Charged/Vaporize, Baizhu sustains, Kazuha shreds RES.</span></div>
+      </div>
+      <div class="team-card">
+        <div class="t-name">🌊 <span class="zh-only">那芙琳希</span><span class="en-only">Premium Neuv</span></div>
+        <div class="t-chars"><span class="zh-only">那维莱特 + 芙宁娜 + 希诺宁 + 茜特菈莉</span><span class="en-only">Neuvillette + Furina + Sigewinne + Xilonen</span></div>
+        <div class="t-desc"><span class="zh-only">高端配置。希诺宁减抗+治疗，茜特菈莉提供护盾，芙宁娜满层增伤。</span><span class="en-only">Premium comp. Sigewinne RES shred + healing, Xilonen shield, Furina max DMG bonus stacking.</span></div>
+      </div>
+      <div class="team-card">
+        <div class="t-name">🌊 <span class="zh-only">心芙那万</span><span class="en-only">Mono Hydro Luxury</span></div>
+        <div class="t-chars"><span class="zh-only">心海 + 芙宁娜 + 那维莱特 + 万叶</span><span class="en-only">Kokomi + Furina + Neuvillette + Kazuha</span></div>
+        <div class="t-desc"><span class="zh-only">纯水豪华队。心海永续治疗+挂水，芙宁娜增伤，万叶减抗，那维莱特主C输出。</span><span class="en-only">Mono Hydro luxury. Kokomi infinite healing + Hydro application, Furina DMG buffer, Kazuha shred, Neuvillette Main DPS.</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h4 class="zh-only">🎮 标准输出手法（那芙万白）</h4>
+      <h4 class="en-only">🎮 Standard Rotation (Neuv+Furina+Kazuha+Baizhu)</h4>
+      <p><span class="zh-only">那维莱特E → 芙宁娜EQ → 万叶EQ减抗 → 白术EQ群奶 → </span><span class="en-only">Neuvillette E → Furina E Q → Kazuha E Q shred → Baizhu E Q team heal → </span><strong><span class="zh-only">那维莱特Q 重击×3</span><span class="en-only">Neuvillette Q CA ×3</span></strong></p>
+      <p style="margin-top:8px" class="zh-only">核心思路：芙宁娜先手EQ叠气氛值→万叶减抗增伤→白术瞬间群奶→那维莱特开Q吃满buff开始水龙炮重击循环。</p>
+      <p style="margin-top:8px" class="en-only">Core logic: Furina opens with EQ to stack Fanfare → Kazuha shreds RES and buffs → Baizhu snapshots team-wide heal → Neuvillette Q absorbs all buffs before starting water cannon CA loop.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2><span class="icon">❓</span> <span class="zh-only">常见问题 FAQ</span><span class="en-only">FAQ</span></h2>
+
+    <div class="card">
+      <h4 class="zh-only">HP杯还是水伤杯？</h4>
+      <h4 class="en-only">HP Goblet or Hydro DMG Goblet?</h4>
+      <p class="zh-block">水伤杯约优3%，但<strong>HP%杯副属性更好时选HP%杯</strong>。48K HP是HP杯的阈值，达标后水伤杯更优。</p>
+      <p class="en-block">Hydro DMG Goblet is ~3% better, but <strong>HP% Goblet with better substats wins</strong>. 48K HP is the HP Goblet threshold — once reached, Hydro DMG Goblet is superior.</p>
+    </div>
+    <div class="card">
+      <h4 class="zh-only">充能需求多少？</h4>
+      <h4 class="en-only">How much ER do I need?</h4>
+      <p class="zh-block"><strong>120%单水是最低要求。</strong>双水队可降至110%。试作金珀用户需求更低（武器被动回能）。不足会导致Q循环断档。</p>
+      <p class="en-block"><strong>120% solo Hydro is the minimum.</strong> Double Hydro can drop to 110%. Prototype Amber users need even less (weapon passive regens energy). Insufficient ER causes Q rotation gaps.</p>
+    </div>
+    <div class="card">
+      <h4 class="zh-only">0命值得抽吗？</h4>
+      <h4 class="en-only">Is C0 worth pulling?</h4>
+      <p class="zh-block"><strong>绝对值得。</strong>0命那维莱特是游戏中最强的AoE主C，能够单通深渊12层。C1提供关键的抗打断，C2是伤害分水岭。</p>
+      <p class="en-block"><strong>Absolutely yes.</strong> C0 Neuvillette is the strongest AoE DPS in the game, capable of solo-clearing Abyss Floor 12. C1 provides essential interruption resistance, C2 is the DMG powerspike.</p>
+    </div>
+  </section>
+
+  <div class="cta">
+    <p style="font-size:1.1rem; font-weight:600;"><span class="zh-only">📬 觉得有用？订阅获取更多角色攻略</span><span class="en-only">📬 Found this useful? Subscribe for more guides</span></p>
+    <p style="color:var(--text-dim)"><span class="zh-only">新角色测评、深渊配队、武器对比，第一时间推送</span><span class="en-only">New character reviews, Abyss teams, weapon comparisons — delivered first</span></p>
+    <a href="../index.html#subscribe" class="btn"><span class="zh-only">📩 免费订阅更新</span><span class="en-only">📩 Subscribe Free</span></a>
+  </div>
+
+</div>
+
+<nav class="article-nav">
+  <a href="../index.html" class="prev">
+    <span class="nav-label"><span class="zh-only">← 返回首页</span><span class="en-only">← Home</span></span>
+    <span class="nav-title"><span class="zh-only">首页 · 角色列表</span><span class="en-only">Home · Character List</span></span>
+  </a>
+  <a href="raiden.html" class="next">
+    <span class="nav-label"><span class="zh-only">下一篇 →</span><span class="en-only">Next →</span></span>
+    <span class="nav-title"><span class="zh-only">雷电将军 · 雷国配队核心</span><span class="en-only">Raiden Shogun — National Core</span></span>
+  </a>
+</nav>
+
+<div class="footer">
+  <span class="zh-only">© 2026 提瓦特旅人指南</span><span class="en-only">© 2026 Teyvat Traveler's Guide</span> · <a href="../index.html"><span class="zh-only">返回首页</span><span class="en-only">Home</span></a> · Genshin Impact © HoYoverse
+</div>
+
+<script>
+  const langToggle = document.getElementById('langToggle');
+  const langOptions = langToggle.querySelectorAll('.lang-option');
+  function setLang(lang) {
+    if (lang === 'en') { document.body.classList.add('lang-en'); }
+    else { document.body.classList.remove('lang-en'); }
+    document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+    localStorage.setItem('genshinLang', lang);
+    langOptions.forEach(opt => opt.classList.toggle('active', opt.dataset.lang === lang));
+  }
+  langOptions.forEach(opt => opt.addEventListener('click', () => setLang(opt.dataset.lang)));
+  setLang(localStorage.getItem('genshinLang') || ((navigator.language||navigator.userLanguage||'').startsWith('zh')?'zh':'en'));
+
+  // Back to top
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('visible', window.scrollY > 400);
+  });
+  backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // TOC active section
+  const tocLinks = document.querySelectorAll('.toc-link');
+  const sections = [...tocLinks].map(l => document.querySelector(l.getAttribute('href')));
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => {
+      if (sec && sec.getBoundingClientRect().top < 200) current = sec.id;
+    });
+    tocLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + current));
+  });
+</script>
+</body>
+</html>

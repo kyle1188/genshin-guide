@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>枫原万叶完全攻略 — 武器/圣遗物/配队 | Kazuha Build Guide · Teyvat Traveler</title>
+<meta name="description" content="原神枫原万叶全方位培养攻略：苍古自由之誓领衔武器排名、翠绿之影4件套最优解、A4被动扩散增伤机制、C2命座分析。Complete Kazuha guide: weapon ranking, Viridescent Venerer optimization, A4 Swirl DMG buff, C2 analysis.">
+<meta property="og:title" content="枫原万叶完全攻略 | Kazuha Guide · Teyvat Traveler">
+<meta property="og:description" content="苍古自由之誓武器排名、风套4最优解、A4扩散增伤机制、C2命座分析。Weapon ranking, VV builds, A4 Swirl buff & C2 analysis.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://kyle1188.github.io/genshin-guide/articles/kazuha.html">
+<meta property="og:image" content="https://patchwiki.biligame.com/images/ys/d/db/fr7q01g7bxcf22oco5qbc3qdkkjl0ow.png">
+<meta property="og:image:width" content="720">
+<meta property="og:image:height" content="720">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://patchwiki.biligame.com/images/ys/d/db/fr7q01g7bxcf22oco5qbc3qdkkjl0ow.png">
+<meta name="robots" content="index, follow, max-snippet:-1">
+<link rel="canonical" href="https://kyle1188.github.io/genshin-guide/articles/kazuha.html">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CZBN84E1PH"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CZBN84E1PH');</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"枫原万叶完全攻略 — 武器/圣遗物/配队 | Kazuha Build Guide","description":"原神枫原万叶全方位培养攻略：苍古自由之誓武器排名、风套4最优解、A4扩散增伤机制、C2分析。Complete Kazuha guide: weapon ranking, VV builds, A4 Swirl buff, C2 analysis.","datePublished":"2025-01-15","dateModified":"2026-06-09","author":{"@type":"Organization","name":"Teyvat Traveler's Guide"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"圣遗物堆精通还是攻风暴？","acceptedAnswer":{"@type":"Answer","text":"辅助万叶全堆精通（三精通主词条）。攻/风/暴只用于C6站场主C玩法。"}},{"@type":"Question","name":"铁蜂刺还是西风剑？","acceptedAnswer":{"@type":"Answer","text":"充能≥160%选铁蜂刺。充能不够选西风剑——全队充能收益远大于165精通。"}},{"@type":"Question","name":"0命够用吗？","acceptedAnswer":{"@type":"Answer","text":"完全够用。0命万叶已经是游戏最强增伤辅助。C2是锦上添花。先抽0命，再考虑武器。"}}]}
+</script>
+<style>
+  :root {
+    --bg: #0a0a0f; --bg-card: #1a1a25; --text: #e8e6e3; --text-dim: #8b8a92;
+    --accent: #ffbd59; --accent2: #f5c842; --accent3: #4dc4ff; --border: rgba(255,255,255,0.06);
+    --radius: 12px; --radius-lg: 20px;
+  }
+  *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: -apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased;
+  }
+  ::-webkit-scrollbar { width:5px; } ::-webkit-scrollbar-track { background:var(--bg); }
+  ::-webkit-scrollbar-thumb { background:rgba(255,255,255,0.1); border-radius:4px; }
+
+  /* Language Toggle */
+  .lang-toggle { display:inline-flex; align-items:center; gap:0; border:1px solid rgba(255,255,255,0.2); border-radius:20px; overflow:hidden; font-size:0.75rem; cursor:pointer; }
+  .lang-option { padding:4px 12px; color:rgba(255,255,255,0.5); transition:all 0.25s; font-weight:500; user-select:none; }
+  .lang-option.active { background:var(--accent); color:#0a0a0f; font-weight:700; }
+  body:not(.lang-en) .en-only { display:none !important; }
+  body:not(.lang-en) .zh-only { display:inline; }
+  body.lang-en .zh-only { display:none !important; }
+  body.lang-en .en-only { display:inline; }
+  .zh-block, .en-block { display:none; }
+  body:not(.lang-en) .zh-block { display:block; }
+  body.lang-en .en-block { display:block; }
+  .zh-inline, .en-inline { display:none; }
+  body:not(.lang-en) .zh-inline { display:inline; }
+  body.lang-en .en-inline { display:inline; }
+
+  .nav { position:fixed; top:0; left:0; right:0; z-index:100; padding:14px 40px; display:flex; align-items:center; justify-content:space-between; background:rgba(10,10,15,0.85); backdrop-filter:blur(24px) saturate(180%); border-bottom:1px solid var(--border); }
+  .nav a { color:rgba(255,255,255,0.7); text-decoration:none; font-size:0.85rem; transition:color 0.25s; }
+  .nav a:hover { color:#fff; }
+  .nav-logo { font-weight:700; font-size:1rem; color:#fff !important; display:flex; align-items:center; gap:8px; }
+  .nav-right { display:flex; align-items:center; gap:14px; }
+
+  .container { max-width:860px; margin:0 auto; padding:100px 24px 80px; }
+
+  .breadcrumb { font-size:0.8rem; color:var(--text-dim); margin-bottom:20px; }
+  .breadcrumb a { color:var(--accent); text-decoration:none; }
+  .breadcrumb a:hover { text-decoration:underline; }
+
+  .article-header { margin-bottom:12px; }
+  .article-hero { text-align:center; margin:0 0 32px; }
+  .article-hero-img { max-width:300px; width:100%; border-radius:var(--radius-lg); border:2px solid rgba(77,196,255,0.3); }
+  .tags { display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap; }
+  .tag { padding:4px 12px; border-radius:12px; font-size:0.72rem; font-weight:600; }
+  .tag.hot { background:rgba(255,189,89,0.12); color:var(--accent); }
+  .tag.new { background:rgba(77,212,172,0.12); color:#4dd4ac; }
+  .tag.core { background:rgba(77,196,255,0.12); color:var(--accent3); }
+  h1 { font-size:2.4rem; font-weight:800; line-height:1.2; margin-bottom:12px; letter-spacing:-0.02em; }
+  .meta { font-size:0.85rem; color:var(--text-dim); display:flex; gap:24px; flex-wrap:wrap; }
+
+  .toc { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:24px 28px; margin-bottom:40px; }
+  .toc h4 { font-size:0.85rem; color:var(--accent); margin-bottom:12px; text-transform:uppercase; letter-spacing:0.08em; }
+  .toc ol { padding-left:20px; color:var(--text-dim); font-size:0.9rem; line-height:2; }
+  .toc ol a { color:var(--text); text-decoration:none; transition:color 0.2s; }
+  .toc ol a:hover { color:var(--accent); }
+
+  section { margin-bottom:48px; }
+  h2 { font-size:1.5rem; font-weight:700; margin-bottom:20px; padding-bottom:10px; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:10px; }
+  h2 .icon { font-size:1.4rem; }
+  h3 { font-size:1.15rem; font-weight:700; margin:24px 0 12px; }
+
+  p { color:var(--text-dim); margin-bottom:12px; }
+  p strong { color:var(--text); }
+
+  .card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:24px; margin-bottom:20px; }
+  .card h4 { font-size:1rem; margin-bottom:8px; color:var(--accent2); }
+
+  table { width:100%; border-collapse:collapse; margin:16px 0; font-size:0.88rem; }
+  thead th { background:rgba(255,189,89,0.08); color:var(--accent); padding:10px 14px; text-align:left; font-weight:600; border-bottom:2px solid var(--border); font-size:0.8rem; letter-spacing:0.04em; }
+  tbody td { padding:10px 14px; border-bottom:1px solid var(--border); color:var(--text-dim); }
+  tbody tr:hover td { background:rgba(255,255,255,0.02); }
+  .tier-s { color:#ffbd59; font-weight:800; }
+  .tier-a { color:#4dd4ac; font-weight:700; }
+  .tier-b { color:#8b8a92; font-weight:600; }
+
+  .highlight { background:rgba(255,189,89,0.06); border-left:3px solid var(--accent); padding:16px 20px; border-radius:0 var(--radius) var(--radius) 0; margin:16px 0; }
+  .highlight p { margin:0; font-size:0.9rem; }
+  .highlight strong { color:var(--accent); }
+
+  .mode-switch { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:16px 0; }
+  .mode-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:20px; text-align:center; }
+  .mode-card .m-name { font-weight:700; font-size:1.1rem; margin-bottom:6px; }
+  .mode-card .m-sub { font-size:0.8rem; color:var(--text-dim); }
+
+  .team-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px; margin:16px 0; }
+  .team-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:20px; }
+  .team-card .t-name { font-weight:700; margin-bottom:6px; }
+  .team-card .t-chars { font-size:0.85rem; color:var(--accent3); margin-bottom:6px; }
+  .team-card .t-desc { font-size:0.8rem; color:var(--text-dim); }
+
+  .cta { text-align:center; padding:40px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); margin:40px 0; }
+  .cta p { margin-bottom:16px; }
+  .btn { display:inline-flex; align-items:center; gap:8px; padding:12px 28px; border-radius:24px; font-weight:600; font-size:0.95rem; text-decoration:none; border:none; cursor:pointer; transition:all 0.25s; background:var(--accent); color:#0a0a0f; }
+  .btn:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(255,189,89,0.25); }
+
+  .footer { text-align:center; padding:32px 24px; border-top:1px solid var(--border); font-size:0.8rem; color:var(--text-dim); margin-top:40px; }
+  .footer a { color:var(--accent); text-decoration:none; }
+
+  @media (max-width:768px) {
+    .nav { padding:12px 20px; }
+    h1 { font-size:1.7rem; }
+    .container { padding:80px 16px 60px; }
+    .mode-switch { grid-template-columns:1fr; }
+    table { font-size:0.78rem; }
+    thead th, tbody td { padding:8px 10px; }
+    .nav-right { gap:8px; }
+  }
+  .toc-sidebar { position:fixed; right:16px; top:50%; transform:translateY(-50%); z-index:90; display:flex; flex-direction:column; gap:6px; }
+  .toc-link { display:block; padding:6px 14px; border-radius:8px; font-size:0.75rem; color:var(--text-dim); text-decoration:none; border-left:2px solid transparent; transition:all 0.25s; background:rgba(10,10,15,0.7); }
+  .toc-link:hover,.toc-link.active { color:var(--accent); border-left-color:var(--accent); background:rgba(255,189,89,0.08); }
+  .back-to-top { position:fixed; bottom:24px; right:24px; width:40px; height:40px; border-radius:50%; background:var(--accent); color:#0a0a0f; border:none; cursor:pointer; font-size:1.2rem; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity 0.3s; z-index:99; }
+  .back-to-top.visible { opacity:1; pointer-events:auto; }
+  @media (max-width:768px) { .toc-sidebar { display:none; } .back-to-top { bottom:16px; right:16px; } }
+  .article-nav { display:flex; justify-content:space-between; align-items:center; gap:16px; max-width:860px; margin:0 auto; padding:32px 24px 48px; }
+  .article-nav a { display:flex; flex-direction:column; gap:4px; padding:14px 20px; border-radius:12px; border:1px solid var(--border); text-decoration:none; transition:all 0.25s; max-width:360px; }
+  .article-nav a:hover { border-color:var(--accent); background:rgba(255,189,89,0.04); }
+  .article-nav .nav-label { font-size:0.7rem; color:var(--text-dim); }
+  .article-nav .nav-title { font-size:0.9rem; color:#fff; font-weight:600; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">🍁 <span class="zh-only">提瓦特旅人指南</span><span class="en-only">Teyvat Traveler's Guide</span></a>
+  <div class="nav-right">
+    <div class="lang-toggle" id="langToggle">
+      <span class="lang-option active" data-lang="zh">中文</span>
+      <span class="lang-option" data-lang="en">EN</span>
+    </div>
+    <a href="../index.html">← <span class="zh-only">返回首页</span><span class="en-only">Home</span></a>
+  </div>
+</nav>
+
+<div class="container">
+<aside class="toc-sidebar">
+  <a href="#overview" class="toc-link"><span class="zh-only">角色定位</span><span class="en-only">Role Overview</span></a>
+  <a href="#weapon" class="toc-link"><span class="zh-only">武器排名</span><span class="en-only">Weapon Ranking</span></a>
+  <a href="#artifact" class="toc-link"><span class="zh-only">圣遗物搭配</span><span class="en-only">Artifacts</span></a>
+  <a href="#constellation" class="toc-link"><span class="zh-only">命座分析</span><span class="en-only">Constellations</span></a>
+  <a href="#teams" class="toc-link"><span class="zh-only">配队方案</span><span class="en-only">Team Comps</span></a>
+  <a href="#faq" class="toc-link"><span class="zh-only">常见问题</span><span class="en-only">FAQ</span></a>
+</aside>
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <div class="breadcrumb">
+    <a href="../index.html"><span class="zh-only">首页</span><span class="en-only">Home</span></a> &nbsp;›&nbsp; <a href="../index.html#characters"><span class="zh-only">角色攻略</span><span class="en-only">Character Builds</span></a> &nbsp;›&nbsp; <span class="zh-only">枫原万叶</span><span class="en-only">Kaedehara Kazuha</span>
+  </div>
+
+  <header class="article-header">
+    <div class="tags">
+      <span class="tag hot"><span class="zh-only">必看</span><span class="en-only">Must Read</span></span>
+      <span class="tag core"><span class="zh-only">万叶</span><span class="en-only">T0 Support</span></span>
+      <span class="tag new"><span class="zh-only">5.7版本适用</span><span class="en-only">v5.7 Valid</span></span>
+    </div>
+    <h1>🍁 <span class="zh-only">枫原万叶 · 从零到满命完全攻略</span><span class="en-only">Kaedehara Kazuha · Complete Guide (C0–C6)</span></h1>
+    <div class="meta">
+      <span><span class="zh-only">🕐 更新于 2026年6月9日</span><span class="en-only">🕐 Updated Jun 9, 2026</span></span>
+      <span><span class="zh-only">📖 约 12 分钟阅读</span><span class="en-only">📖 ~12 min read</span></span>
+      <span>👁️ 88,000+</span>
+    </div>
+  </header>
+  <div class="article-hero">
+    <img src="https://patchwiki.biligame.com/images/ys/d/db/fr7q01g7bxcf22oco5qbc3qdkkjl0ow.png" alt="Kazuha" class="article-hero-img" loading="lazy">
+  </div>
+
+  <nav class="toc">
+    <h4>📋 <span class="zh-only">本文目录</span><span class="en-only">Table of Contents</span></h4>
+    <ol>
+      <li><a href="#overview"><span class="zh-only">角色定位 · A4扩散增伤机制详解</span><span class="en-only">Role &amp; A4 Swirl DMG Buff Mechanics</span></a></li>
+      <li><a href="#weapon"><span class="zh-only">武器选择 · 6档排名</span><span class="en-only">Weapon Ranking (6 Tiers)</span></a></li>
+      <li><a href="#artifact"><span class="zh-only">圣遗物搭配 · 主词条与充能阈值</span><span class="en-only">Artifacts &amp; ER Requirements</span></a></li>
+      <li><a href="#constellation"><span class="zh-only">命座分析 · C2/C6 关键节点</span><span class="en-only">Constellations · C2 &amp; C6 Analysis</span></a></li>
+      <li><a href="#teams"><span class="zh-only">配队方案 · 5大主流体系</span><span class="en-only">Teams · 5 Main Archetypes</span></a></li>
+      <li><a href="#faq"><span class="zh-only">常见问题 FAQ</span><span class="en-only">FAQ</span></a></li>
+    </ol>
+  </nav>
+
+  <!-- 角色定位 -->
+  <section id="overview">
+    <h2><span class="icon">🍁</span> <span class="zh-only">角色定位 · A4扩散增伤机制详解</span><span class="en-only">Role &amp; A4 Swirl DMG Buff Mechanics</span></h2>
+    <p class="zh-block">枫原万叶 — 五星风元素单手剑角色，定位为<strong>元素增伤辅助 + 聚怪 + 副C输出</strong>。核心机制是固有天赋「风物之诗咏」：万叶触发扩散反应后，每1点元素精通为全队提供0.04%对应元素伤害加成。<strong>1000精通的万叶可提供40%元素伤害加成</strong>，配合翠绿之影4件套再削减敌人40%元素抗性，一个角色实现增伤+减抗双覆盖。</p>
+    <p class="en-block">Kaedehara Kazuha — 5★ Anemo Sword character. Role: <strong>Elemental DMG Buffer + Crowd Control + Sub-DPS</strong>. His core mechanic is the A4 passive "Poetics of Fuubutsu": after triggering a Swirl, Kazuha grants 0.04% Elemental DMG bonus per point of EM to the entire party. <strong>At 1000 EM, that's 40% Elemental DMG bonus</strong>. Combined with 4pc Viridescent Venerer shredding 40% enemy RES, one character provides both DMG buffing and RES shredding.</p>
+
+    <div class="highlight">
+      <p class="zh-block"><strong>一句话总结：</strong>万叶是公认的原神最强风系增伤辅助——E技能提供聚怪和强力的下落攻击，Q技能展开大范围风元素领域并吸收元素进行持续扩散。配合A4天赋和风套4，一个角色实现增伤、减抗、聚怪三合一。</p>
+      <p class="en-block"><strong>TL;DR:</strong> Kazuha is the undisputed best Anemo support in Genshin Impact — his E skill provides grouping (CC) with a powerful plunge attack, his Q creates a large Anemo field with elemental absorption. Combined with his A4 passive and VV 4pc, one character handles DMG buffing, RES shredding, and crowd control simultaneously.</p>
+    </div>
+
+    <div class="mode-switch">
+      <div class="mode-card">
+        <div class="m-name">🌀 <span class="zh-only">点按E</span><span class="en-only">Tap E</span></div>
+        <div class="m-sub"><span class="zh-only">短CD · 小范围聚怪 · 快速起跳 · 适合速切</span><span class="en-only">Short CD · Small AoE pull · Fast launch · Quick-swap friendly</span></div>
+      </div>
+      <div class="mode-card">
+        <div class="m-name">🌪️ <span class="zh-only">长按E</span><span class="en-only">Hold E</span></div>
+        <div class="m-sub"><span class="zh-only">更大范围 · 更强吸力 · 更高跳跃 · 远程聚怪</span><span class="en-only">Larger AoE · Stronger pull · Higher jump · Long-range grouping</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h4 class="zh-only">🔑 核心天赋优先级</h4>
+      <h4 class="en-only">🔑 Talent Priority</h4>
+      <p><strong><span class="zh-only">元素爆发 (Q) ≥ 元素战技 (E) &gt;&gt; 普通攻击 (A)</span><span class="en-only">Elemental Burst (Q) ≥ Elemental Skill (E) >> Normal Attack (A)</span></strong></p>
+      <p class="zh-only">Q提供持续扩散和元素转化，E提供聚怪+触发扩散。普攻不点（C6以前完全没用）。</p>
+      <p class="en-only">Burst provides continuous Swirl and elemental absorption; Skill provides grouping + Swirl trigger. Normal Attack can be ignored entirely (useless before C6).</p>
+    </div>
+
+    <div class="card">
+      <h4 class="zh-only">📊 A4扩散增伤机制</h4>
+      <h4 class="en-only">📊 A4 Swirl DMG Buff Mechanics</h4>
+      <p class="zh-block">万叶触发扩散反应 → A4被动将精通转化为全队元素伤害加成（每种扩散元素独立计算）。<strong>1000精通 = 40%元素增伤</strong>。配合翠绿之影4件套进一步削减敌人元素抗性40%，持续10秒。通过合理操作可同时扩散多个元素，实现双增伤。</p>
+      <p class="en-block">Kazuha triggers Swirl → A4 passive converts EM to team-wide Elemental DMG bonus (per swirled element). <strong>1000 EM = 40% Elemental DMG bonus</strong>. Viridescent Venerer 4pc further shreds enemy Elemental RES by 40% for 10s. Multiple elements can be buffed simultaneously with proper rotation.</p>
+    </div>
+  </section>
+
+  <!-- 武器 -->
+  <section id="weapon">
+    <h2><span class="icon">🗡️</span> <span class="zh-only">武器选择 · 6档排名</span><span class="en-only">Weapon Ranking (6 Tiers)</span></h2>
+    <p class="zh-only">万叶的武器需求：<strong>元素精通 &gt; 元素充能效率</strong>。精通是万叶的核心属性，直接决定A4被动提供的增伤数值。充能需求约为160-180%（单风队），有西风/祭礼或双风可降至140%。</p>
+    <p class="en-only">Kazuha's weapon priority: <strong>Elemental Mastery > Energy Recharge</strong>. EM is Kazuha's core stat, directly determining the DMG bonus from his A4 passive. ER requirement is roughly 160–180% (solo Anemo), dropping to 140%+ with Favonius/Sacrificial or double-Anemo teams.</p>
+
+    <table>
+      <thead>
+        <tr><th><span class="zh-only">档位</span><span class="en-only">Tier</span></th><th><span class="zh-only">武器</span><span class="en-only">Weapon</span></th><th><span class="zh-only">基础攻击</span><span class="en-only">Base ATK</span></th><th><span class="zh-only">副属性</span><span class="en-only">Substat</span></th><th><span class="zh-only">核心优势</span><span class="en-only">Key Advantage</span></th><th><span class="zh-only">获取</span><span class="en-only">Source</span></th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tier-s">SS</td>
+          <td><strong><span class="zh-only">苍古自由之誓</span><span class="en-only">Freedom-Sworn</span></strong></td>
+          <td>608</td>
+          <td><span class="zh-only">精通</span><span class="en-only">EM</span> 198</td>
+          <td class="zh-only">专武。高额精通+全队普攻/重击/下落增伤+攻击力提升，完美毕业</td>
+          <td class="en-only">Signature. High EM + team NA/CA/Plunge DMG + ATK buff, perfect synergy</td>
+          <td><span class="zh-only">限定祈愿</span><span class="en-only">Limited</span></td>
+        </tr>
+        <tr>
+          <td class="tier-s">S</td>
+          <td><strong><span class="zh-only">西福斯的月光</span><span class="en-only">Xiphos' Moonlight</span></strong></td>
+          <td>510</td>
+          <td><span class="zh-only">精通</span><span class="en-only">EM</span> 165</td>
+          <td class="zh-only">精通转全队充能，完美解决循环问题。最强4★</td>
+          <td class="en-only">Converts EM to team ER, solves energy. Best 4★ option</td>
+          <td><span class="zh-only">限定4★</span><span class="en-only">Limited 4★</span></td>
+        </tr>
+        <tr>
+          <td class="tier-s">S</td>
+          <td><strong><span class="zh-only">铁蜂刺 (F2P首选)</span><span class="en-only">Iron Sting (F2P Best)</span></strong></td>
+          <td>510</td>
+          <td><span class="zh-only">精通</span><span class="en-only">EM</span> 165</td>
+          <td class="zh-only">免费锻造！165精通直接获得，施放E后全伤+12%</td>
+          <td class="en-only">Free craftable! 165 EM directly, +12% all DMG after using Skill</td>
+          <td><span class="zh-only">锻造</span><span class="en-only">Craftable</span></td>
+        </tr>
+        <tr>
+          <td class="tier-a">A</td>
+          <td><strong><span class="zh-only">西风剑</span><span class="en-only">Favonius Sword</span></strong></td>
+          <td>454</td>
+          <td><span class="zh-only">充能</span><span class="en-only">ER</span> 61.3%</td>
+          <td class="zh-only">白色微粒喂养全队，充能不足时的最优解</td>
+          <td class="en-only">White particles feed entire team, best choice when ER is lacking</td>
+          <td><span class="zh-only">常驻</span><span class="en-only">Standard</span></td>
+        </tr>
+        <tr>
+          <td class="tier-a">A</td>
+          <td><strong><span class="zh-only">祭礼剑</span><span class="en-only">Sacrificial Sword</span></strong></td>
+          <td>454</td>
+          <td><span class="zh-only">充能</span><span class="en-only">ER</span> 61.3%</td>
+          <td class="zh-only">E技能重置实现双聚怪+双倍产球</td>
+          <td class="en-only">E reset for double grouping + double particle generation</td>
+          <td><span class="zh-only">抽卡</span><span class="en-only">Gacha</span></td>
+        </tr>
+        <tr>
+          <td class="tier-b">B</td>
+          <td><strong><span class="zh-only">暗铁剑 (零氪低保)</span><span class="en-only">Dark Iron Sword (F2P Budget)</span></strong></td>
+          <td>401</td>
+          <td><span class="zh-only">精通</span><span class="en-only">EM</span> 141</td>
+          <td class="zh-only">3★武器但白送精通。NPC对话免费获取</td>
+          <td class="en-only">3★ but free EM. Obtained via NPC dialogue for free</td>
+          <td><span class="zh-only">NPC对话</span><span class="en-only">NPC Dialogue</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight">
+      <p class="zh-block"><strong>💡 零氪玩家选什么？</strong>锻造<strong>铁蜂刺</strong> — 165精通就是你需要的全部。如果充能不够（低于160%），换<strong>西风剑</strong>，全队充能收益远大于那165精通。有<strong>西福斯的月光</strong>的话直接上，4★毕业级武器。</p>
+      <p class="en-block"><strong>💡 F2P recommendation?</strong> Craft <strong>Iron Sting</strong> — 165 EM is all you need. If struggling with ER (below 160%), use <strong>Favonius Sword</strong> — the team energy is worth more than 165 EM. If you have <strong>Xiphos' Moonlight</strong>, use it without hesitation — it's the best 4★ option.</p>
+    </div>
+  </section>
+
+  <!-- 圣遗物 -->
+  <section id="artifact">
+    <h2><span class="icon">💎</span> <span class="zh-only">圣遗物搭配 · 主词条与充能阈值</span><span class="en-only">Artifacts &amp; ER Requirements</span></h2>
+
+    <h3 class="zh-only">首选套装：翠绿之影 ×4（风套4）</h3>
+    <h3 class="en-only">Best Set: Viridescent Venerer ×4 (VV 4pc)</h3>
+    <p class="zh-only"><strong>2件套：</strong>风元素伤害加成 +15%<br><strong>4件套：</strong>扩散反应伤害+60%，被扩散元素对应抗性-40%，持续10秒</p>
+    <p class="en-only"><strong>2pc:</strong> Anemo DMG +15%<br><strong>4pc:</strong> Swirl DMG +60%, enemy Elemental RES -40% for 10s for the swirled element</p>
+    <p class="zh-block">翠绿之影4件套是辅助万叶的<strong>强制唯一选择</strong>。40%减抗+60%扩散伤害提升，配合A4天赋的增伤，万叶一个角色为队伍提供增伤+减抗的双重增益。任何其他套装都不如风套4。</p>
+    <p class="en-block">4pc Viridescent Venerer is <strong>mandatory</strong> for support Kazuha. 40% RES shred + 60% Swirl DMG increase, combined with A4 passive DMG buff, Kazuha single-handedly provides both team DMG buffing and enemy RES shredding. No other artifact set comes close.</p>
+
+    <div class="card">
+      <h4 class="zh-only">🎯 主词条选择</h4>
+      <h4 class="en-only">🎯 Main Stat Choices</h4>
+      <table>
+        <thead><tr><th><span class="zh-only">部位</span><span class="en-only">Slot</span></th><th><span class="zh-only">最优主词条</span><span class="en-only">Best Main Stat</span></th><th><span class="zh-only">替代方案</span><span class="en-only">Alternative</span></th></tr></thead>
+        <tbody>
+          <tr><td><span class="zh-only">时之沙</span><span class="en-only">Sands</span></td><td><strong><span class="zh-only">元素精通（始终）</span><span class="en-only">EM (always)</span></strong></td><td><span class="zh-only">无替代，辅助万叶必选精通</span><span class="en-only">No alternative — EM is mandatory for support</span></td></tr>
+          <tr><td><span class="zh-only">空之杯</span><span class="en-only">Goblet</span></td><td><strong><span class="zh-only">元素精通（始终）</span><span class="en-only">EM (always)</span></strong></td><td><span class="zh-only">无替代，精通杯不可替代</span><span class="en-only">No alternative — EM Goblet is irreplaceable</span></td></tr>
+          <tr><td><span class="zh-only">理之冠</span><span class="en-only">Circlet</span></td><td><strong><span class="zh-only">元素精通（辅助）/ 暴击率（C6主C）</span><span class="en-only">EM (support) / CRIT Rate (C6 DPS)</span></strong></td><td><span class="zh-only">C6站场才能换暴击头</span><span class="en-only">Only swap to CRIT Circlet at C6 for on-field DPS</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h4 class="zh-only">📏 面板目标</h4>
+      <h4 class="en-only">📏 Target Stats</h4>
+      <p><strong><span class="zh-only">元素精通 800-1000 | 充能效率 160-180%（单风）或 140%+（有西风/祭礼）</span><span class="en-only">EM 800-1000 | ER 160-180% (solo Anemo) or 140%+ (with Fav/Sac)</span></strong></p>
+      <p class="zh-only">副词条优先度：元素精通 &gt; 元素充能效率（达标前）&gt; 攻击力% &gt; 暴击。辅助万叶不需要暴击和暴伤。</p>
+      <p class="en-only">Substat priority: EM > ER (until threshold) > ATK% > CRIT. Support Kazuha does not need CRIT Rate or CRIT DMG.</p>
+    </div>
+  </section>
+
+  <!-- 命座 -->
+  <section id="constellation">
+    <h2><span class="icon">⭐</span> <span class="zh-only">命座分析 · C2/C6 关键节点</span><span class="en-only">Constellations · C2 &amp; C6 Powerspikes</span></h2>
+    <table>
+      <thead><tr><th class="zh-only">命座</th><th class="en-only">Cons</th><th><span class="zh-only">效果</span><span class="en-only">Effect</span></th><th><span class="zh-only">提升幅度</span><span class="en-only">Gain</span></th><th><span class="zh-only">推荐度</span><span class="en-only">Rating</span></th></tr></thead>
+      <tbody>
+        <tr><td>C1</td><td class="zh-only">E技能CD-10%。施放Q后重置E技能CD</td><td class="en-only">E CD -10%. Using Q resets E CD</td><td><span class="zh-only">手感优化</span><span class="en-only">QoL</span></td><td>⭐⭐⭐</td></tr>
+        <tr><td><strong>C2</strong></td><td><strong class="zh-only">Q领域内万叶+200精通，全队+200精通</strong><strong class="en-only">Inside Q field, Kazuha +200 EM, all party members +200 EM</strong></td><td><strong>≈25% 🔥</strong></td><td>⭐⭐⭐⭐⭐</td></tr>
+        <tr><td>C3</td><td class="zh-only">元素战技等级+3</td><td class="en-only">Skill LV +3</td><td><span class="zh-only">小幅提升</span><span class="en-only">Minor</span></td><td>⭐⭐</td></tr>
+        <tr><td>C4</td><td class="zh-only">万叶能量低于45时回复能量</td><td class="en-only">ER management when Kazuha's energy is below 45</td><td><span class="zh-only">充能优化</span><span class="en-only">ER QoL</span></td><td>⭐⭐</td></tr>
+        <tr><td>C5</td><td class="zh-only">元素爆发等级+3</td><td class="en-only">Burst LV +3</td><td><span class="zh-only">小幅提升</span><span class="en-only">Minor</span></td><td>⭐⭐</td></tr>
+        <tr><td><strong>C6</strong></td><td><strong class="zh-only">获得风附魔+普攻/重击/下落伤害基于精通提升</strong><strong class="en-only">Gains Anemo infusion + NA/CA/Plunge DMG scales with EM</strong></td><td><strong><span class="zh-only">质变</span><span class="en-only">Game-changer</span> 🔥</strong></td><td>⭐⭐⭐⭐</td></tr>
+      </tbody>
+    </table>
+    <div class="highlight">
+      <p class="zh-block"><strong>🚨 C2 是核心命座：</strong>Q领域内全队+200精通，约为25%团队伤害提升，是万叶最强的团队增益命座。C6解锁站场主C玩法，获得风附魔且普攻伤害基于精通（0.2%/每点精通）。<strong>推荐目标：C0完美毕业 → C2团队质变 → C6主C形态</strong>。</p>
+      <p class="en-block"><strong>🚨 C2 is the massive powerspike:</strong> +200 EM to entire team inside Q field ≈ 25% team DMG increase, Kazuha's strongest support constellation. C6 unlocks on-field Main DPS mode with Anemo infusion and EM-scaling NA/CA/Plunge DMG (0.2% per EM). <strong>Goal: C0 perfect → C2 team-wide buff → C6 DPS carry</strong>.</p>
+    </div>
+  </section>
+
+  <!-- 配队 -->
+  <section id="teams">
+    <h2><span class="icon">🤝</span> <span class="zh-only">配队方案 · 5大主流体系</span><span class="en-only">Teams · 5 Main Archetypes</span></h2>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="t-name">🌊 <span class="zh-only">万达国际</span><span class="en-only">Childe International</span></div>
+        <div class="t-chars"><span class="zh-only">达达利亚 + 万叶 + 班尼特 + 香菱</span><span class="en-only">Childe + Kazuha + Bennett + Xiangling</span></div>
+        <div class="t-desc"><span class="zh-only">原神历史上最具标志性的队伍。万叶双扩散水火增伤，香菱蒸发+达达利亚断流对群，深渊常青树。</span><span class="en-only">The most iconic team in Genshin history. Kazuha double-swirls Hydro+Pyro for dual buffs, Xiangling Vaporize + Childe Riptide for AoE carnage. Abyss evergreen.</span></div>
+      </div>
+      <div class="team-card">
+        <div class="t-name">⚡ <span class="zh-only">雷九万班</span><span class="en-only">Raiden Hyper</span></div>
+        <div class="t-chars"><span class="zh-only">雷电将军 + 九条裟罗(C6) + 万叶 + 班尼特</span><span class="en-only">Raiden + Sara(C6) + Kazuha + Bennett</span></div>
+        <div class="t-desc"><span class="zh-only">雷神主C体系。万叶增伤减抗+班尼特加攻+九条爆伤，三拐一雷神一刀百万的经典配队。</span><span class="en-only">Raiden hypercarry comp. Kazuha DMG buff + RES shred, Bennett ATK buff, Sara CRIT DMG — triple-buff Raiden for million-damage slashes.</span></div>
+      </div>
+      <div class="team-card">
+        <div class="t-name">❄️ <span class="zh-only">神鹤万心</span><span class="en-only">Ayaka Freeze</span></div>
+        <div class="t-chars"><span class="zh-only">神里绫华 + 申鹤 + 万叶 + 珊瑚宫心海</span><span class="en-only">Ayaka + Shenhe + Kazuha + Kokomi</span></div>
+        <div class="t-desc"><span class="zh-only">经典永冻队顶配。万叶聚怪+增伤，心海挂水冻结，申鹤冰翎+绫华Q爆发，对群冻结安逸输出。</span><span class="en-only">Classic premium Freeze. Kazuha grouping + DMG buff, Kokomi Hydro application, Shenhe Icy Quills + Ayaka Burst for devastating frozen AoE.</span></div>
+      </div>
+      <div class="team-card">
+        <div class="t-name">🔥 <span class="zh-only">胡行钟万</span><span class="en-only">Hu Tao Vape</span></div>
+        <div class="t-chars"><span class="zh-only">胡桃 + 行秋 + 钟离 + 万叶</span><span class="en-only">Hu Tao + Xingqiu + Zhongli + Kazuha</span></div>
+        <div class="t-desc"><span class="zh-only">胡桃双扩散体系。万叶通过行秋水剑扩散水元素为胡桃增伤，钟离提供护盾保障低血胡桃生存。</span><span class="en-only">Hu Tao double-swirl setup. Kazuha swirls Hydro via Xingqiu's Rain Swords to buff Hu Tao, Zhongli shield protects low-HP Hu Tao.</span></div>
+      </div>
+      <div class="team-card">
+        <div class="t-name">⚡ <span class="zh-only">刻皇万白</span><span class="en-only">Keqing Aggravate</span></div>
+        <div class="t-chars"><span class="zh-only">刻晴 + 菲谢尔 + 万叶 + 白术/瑶瑶</span><span class="en-only">Keqing + Fischl + Kazuha + Baizhu/Yaoyao</span></div>
+        <div class="t-desc"><span class="zh-only">超激化速切队。万叶聚怪+扩散雷元素增伤，菲谢尔奥兹后台输出，刻晴站场触发激化。</span><span class="en-only">Aggravate quick-swap. Kazuha groups enemies + buffs Electro DMG, Fischl Oz off-field DPS, Keqing drives Aggravate on-field.</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h4 class="zh-only">🎮 标准输出手法（万达国际）</h4>
+      <h4 class="en-only">🎮 Standard Rotation (Childe International)</h4>
+      <p><span class="zh-only">达达利亚E（挂水）→ 万叶E(点按)Q（双扩散水火）→ 班尼特Q → 香菱EQ → </span><strong><span class="zh-only">达达利亚QE近战重击循环</span><span class="en-only">Childe Q E NA spam</span></strong></p>
+      <p style="margin-top:8px" class="zh-only">核心思路：达达利亚先手挂水→万叶双扩散达成水火双增伤+双减抗→班尼特加攻→香菱锁面板开大→达达利亚近战蒸发输出。万叶E点按Q的顺序确保扩散到水元素后再吸收班尼特火领域。</p>
+      <p style="margin-top:8px" class="en-only">Core logic: Childe applies Hydro → Kazuha double-swirls Hydro+Pyro for dual buff + dual shred → Bennett ATK buff → Xiangling snapshots and casts Burst → Childe melee stance Vaporize DPS. Tap E into Q ensures Kazuha swirls Hydro first before absorbing Bennett's Pyro field.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2><span class="icon">❓</span> <span class="zh-only">常见问题 FAQ</span><span class="en-only">FAQ</span></h2>
+
+    <div class="card">
+      <h4 class="zh-only">圣遗物堆精通还是攻风暴？</h4>
+      <h4 class="en-only">EM or ATK/CRIT for build?</h4>
+      <p class="zh-block"><strong>全堆精通（三精通主词条）</strong>是辅助万叶的唯一正确选择。攻/风/暴只适用于C6站场主C玩法。精通直接转化为全队增伤——越多越好，1000精通即为毕业。</p>
+      <p class="en-block"><strong>Full EM (triple EM main stats)</strong> is the only correct build for support Kazuha. ATK/Anemo/CRIT is only for C6 on-field DPS. EM directly converts to team DMG bonus — the more the better, with 1000 EM as the graduation benchmark.</p>
+    </div>
+    <div class="card">
+      <h4 class="zh-only">铁蜂刺还是西风剑？</h4>
+      <h4 class="en-only">Iron Sting or Favonius?</h4>
+      <p class="zh-block"><strong>充能≥160%选铁蜂刺。</strong>充能不够选西风剑——全队充能收益远大于165精通。万叶开不出大招意味着丢失持续扩散和增伤覆盖，优先保证循环。</p>
+      <p class="en-block"><strong>Iron Sting if ER ≥ 160%.</strong> Favonius if ER is struggling — the team energy is worth more than 165 EM. If Kazuha can't burst on cooldown, you lose continuous Swirl and DMG buff uptime — prioritize smooth rotations.</p>
+    </div>
+    <div class="card">
+      <h4 class="zh-only">0命够用吗？</h4>
+      <h4 class="en-only">Is C0 enough?</h4>
+      <p class="zh-block"><strong>完全够用。</strong>0命万叶已经是游戏最强增伤辅助——增伤+减抗+聚怪三合一的角色。C2是全队+200精通的豪华升级，C6是主C形态。先抽0命，再考虑武器，最后追命座。</p>
+      <p class="en-block"><strong>Absolutely.</strong> C0 Kazuha is already the best support in the game — DMG buffing + RES shredding + crowd control all in one. C2 is a luxury team upgrade (+200 EM), C6 is for DPS Kazuha. Pull C0 first, then weapons, then constellations.</p>
+    </div>
+  </section>
+
+  <div class="cta">
+    <p style="font-size:1.1rem; font-weight:600;"><span class="zh-only">📬 觉得有用？订阅获取更多角色攻略</span><span class="en-only">📬 Found this useful? Subscribe for more guides</span></p>
+    <p style="color:var(--text-dim)"><span class="zh-only">新角色测评、深渊配队、武器对比，第一时间推送</span><span class="en-only">New character reviews, Abyss teams, weapon comparisons — delivered first</span></p>
+    <a href="../index.html#subscribe" class="btn"><span class="zh-only">📩 免费订阅更新</span><span class="en-only">📩 Subscribe Free</span></a>
+  </div>
+
+</div>
+
+<nav class="article-nav">
+  <a href="nahida.html" class="prev">
+    <span class="nav-label"><span class="zh-only">← 上一篇</span><span class="en-only">← Previous</span></span>
+    <span class="nav-title"><span class="zh-only">纳西妲 · 草神须弥体系核心</span><span class="en-only">Nahida — Dendro Archon Core</span></span>
+  </a>
+  <a href="zhongli.html" class="next">
+    <span class="nav-label"><span class="zh-only">下一篇 →</span><span class="en-only">Next →</span></span>
+    <span class="nav-title"><span class="zh-only">钟离 · 岩王帝君护盾核心</span><span class="en-only">Zhongli — Geo Archon Shield Core</span></span>
+  </a>
+</nav>
+
+<div class="footer">
+  <span class="zh-only">© 2026 提瓦特旅人指南</span><span class="en-only">© 2026 Teyvat Traveler's Guide</span> · <a href="../index.html"><span class="zh-only">返回首页</span><span class="en-only">Home</span></a> · Genshin Impact © HoYoverse
+</div>
+
+<script>
+  const langToggle = document.getElementById('langToggle');
+  const langOptions = langToggle.querySelectorAll('.lang-option');
+  function setLang(lang) {
+    if (lang === 'en') { document.body.classList.add('lang-en'); }
+    else { document.body.classList.remove('lang-en'); }
+    document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+    localStorage.setItem('genshinLang', lang);
+    langOptions.forEach(opt => opt.classList.toggle('active', opt.dataset.lang === lang));
+  }
+  langOptions.forEach(opt => opt.addEventListener('click', () => setLang(opt.dataset.lang)));
+  setLang(localStorage.getItem('genshinLang') || ((navigator.language||navigator.userLanguage||'').startsWith('zh')?'zh':'en'));
+
+  // Back to top
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('visible', window.scrollY > 400);
+  });
+  backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // TOC active section
+  const tocLinks = document.querySelectorAll('.toc-link');
+  const sections = [...tocLinks].map(l => document.querySelector(l.getAttribute('href')));
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => {
+      if (sec && sec.getBoundingClientRect().top < 200) current = sec.id;
+    });
+    tocLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + current));
+  });
+</script>
+</body>
+</html>

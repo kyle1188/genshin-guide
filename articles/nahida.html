@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>纳西妲完全攻略 — 武器/圣遗物/配队 | Nahida Build Guide · Teyvat Traveler</title>
+<meta name="description" content="原神纳西妲全方位培养攻略：千夜浮梦领衔武器排名、深林4件套最优解、草神标记机制详解、C2命座分析。Complete Nahida guide: weapon ranking, Deepwood Memories build, mark mechanic details, C2 analysis.">
+<meta property="og:title" content="纳西妲完全攻略 | Nahida Guide · Teyvat Traveler">
+<meta property="og:description" content="千夜浮梦武器排名、深林4最优解、草神标记机制、C2分析。Weapon ranking, Deepwood build, mark mechanics, C2 analysis.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://kyle1188.github.io/genshin-guide/articles/nahida.html">
+<meta property="og:image" content="https://patchwiki.biligame.com/images/ys/3/30/6mlpdxkvtkncah5h2xe26bsmyhfqpfp.png">
+<meta property="og:image:width" content="720">
+<meta property="og:image:height" content="720">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://patchwiki.biligame.com/images/ys/3/30/6mlpdxkvtkncah5h2xe26bsmyhfqpfp.png">
+<meta name="robots" content="index, follow, max-snippet:-1">
+<link rel="canonical" href="https://kyle1188.github.io/genshin-guide/articles/nahida.html">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CZBN84E1PH"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CZBN84E1PH');</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"纳西妲完全攻略 — 武器/圣遗物/配队","description":"原神纳西妲全方位培养攻略：千夜浮梦领衔武器排名、深林4件套最优解、草神标记机制详解、C2命座分析。","datePublished":"2023-08-16","dateModified":"2026-06-10","author":{"@type":"Person","name":"Teyvat Traveler"},"publisher":{"@type":"Organization","name":"Teyvat Traveler's Guide","url":"https://kyle1188.github.io/genshin-guide/"}}
+</script>
+<style>
+  :root {
+    --bg: #0a0a0f; --bg-card: #1a1a25; --text: #e8e6e3; --text-dim: #8b8a92;
+    --accent: #6dd66d; --accent2: #4dc94d; --accent3: #a8e6a8; --border: rgba(255,255,255,0.06);
+    --radius: 12px; --radius-lg: 20px;
+  }
+  *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: -apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased;
+  }
+  ::-webkit-scrollbar { width:5px; } ::-webkit-scrollbar-track { background:var(--bg); }
+  ::-webkit-scrollbar-thumb { background:rgba(255,255,255,0.1); border-radius:4px; }
+
+  /* Language Toggle */
+  .lang-toggle { display:inline-flex; align-items:center; gap:0; border:1px solid rgba(255,255,255,0.2); border-radius:20px; overflow:hidden; font-size:0.75rem; cursor:pointer; }
+  .lang-option { padding:4px 12px; color:rgba(255,255,255,0.5); transition:all 0.25s; font-weight:500; user-select:none; }
+  .lang-option.active { background:var(--accent); color:#0a0a0f; font-weight:700; }
+  body:not(.lang-en) .en-only { display:none !important; }
+  body:not(.lang-en) .zh-only { display:inline; }
+  body.lang-en .zh-only { display:none !important; }
+  body.lang-en .en-only { display:inline; }
+  .zh-block, .en-block { display:none; }
+  body:not(.lang-en) .zh-block { display:block; }
+  body.lang-en .en-block { display:block; }
+  .zh-inline, .en-inline { display:none; }
+  body:not(.lang-en) .zh-inline { display:inline; }
+  body.lang-en .en-inline { display:inline; }
+
+  .nav { position:fixed; top:0; left:0; right:0; z-index:100; padding:14px 40px; display:flex; align-items:center; justify-content:space-between; background:rgba(10,10,15,0.85); backdrop-filter:blur(24px) saturate(180%); border-bottom:1px solid var(--border); }
+  .nav a { color:rgba(255,255,255,0.7); text-decoration:none; font-size:0.85rem; transition:color 0.25s; }
+  .nav a:hover { color:#fff; }
+  .nav-logo { font-weight:700; font-size:1rem; color:#fff !important; display:flex; align-items:center; gap:8px; }
+  .nav-right { display:flex; align-items:center; gap:14px; }
+
+  .container { max-width:860px; margin:0 auto; padding:100px 24px 80px; }
+
+  .breadcrumb { font-size:0.8rem; color:var(--text-dim); margin-bottom:20px; }
+  .breadcrumb a { color:var(--accent); text-decoration:none; }
+  .breadcrumb a:hover { text-decoration:underline; }
+
+  .article-header { margin-bottom:12px; }
+  .article-hero { text-align:center; margin:0 0 32px; }
+  .article-hero-img { max-width:300px; width:100%; border-radius:var(--radius-lg); border:2px solid rgba(109,214,109,0.3); }
+  .tags { display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap; }
+  .tag { padding:4px 12px; border-radius:12px; font-size:0.72rem; font-weight:600; }
+  .tag.hot { background:rgba(255,189,89,0.12); color:#ffbd59; }
+  .tag.new { background:rgba(77,212,172,0.12); color:#4dd4ac; }
+  .tag.core { background:rgba(109,214,109,0.12); color:var(--accent); }
+  h1 { font-size:2.4rem; font-weight:800; line-height:1.2; margin-bottom:12px; letter-spacing:-0.02em; }
+  .meta { font-size:0.85rem; color:var(--text-dim); display:flex; gap:24px; flex-wrap:wrap; }
+
+  .toc { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:24px 28px; margin-bottom:40px; }
+  .toc h4 { font-size:0.85rem; color:var(--accent); margin-bottom:12px; text-transform:uppercase; letter-spacing:0.08em; }
+  .toc ol { padding-left:20px; color:var(--text-dim); font-size:0.9rem; line-height:2; }
+  .toc ol a { color:var(--text); text-decoration:none; transition:color 0.2s; }
+  .toc ol a:hover { color:var(--accent); }
+
+  section { margin-bottom:48px; }
+  h2 { font-size:1.5rem; font-weight:700; margin-bottom:20px; padding-bottom:10px; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:10px; }
+  h2 .icon { font-size:1.4rem; }
+  h3 { font-size:1.15rem; font-weight:700; margin:24px 0 12px; }
+
+  p { color:var(--text-dim); margin-bottom:12px; }
+  p strong { color:var(--text); }
+
+  .card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:24px; margin-bottom:20px; }
+  .card h4 { font-size:1rem; margin-bottom:8px; color:var(--accent2); }
+
+  table { width:100%; border-collapse:collapse; margin:16px 0; font-size:0.88rem; }
+  thead th { background:rgba(109,214,109,0.08); color:var(--accent); padding:10px 14px; text-align:left; font-weight:600; border-bottom:2px solid var(--border); font-size:0.8rem; letter-spacing:0.04em; }
+  tbody td { padding:10px 14px; border-bottom:1px solid var(--border); color:var(--text-dim); }
+  tbody tr:hover td { background:rgba(255,255,255,0.02); }
+  .tier-s { color:#ffbd59; font-weight:800; }
+  .tier-a { color:#4dd4ac; font-weight:700; }
+  .tier-b { color:#8b8a92; font-weight:600; }
+
+  .highlight { background:rgba(109,214,109,0.06); border-left:3px solid var(--accent); padding:16px 20px; border-radius:0 var(--radius) var(--radius) 0; margin:16px 0; }
+  .highlight p { margin:0; font-size:0.9rem; }
+  .highlight strong { color:var(--accent); }
+
+  .team-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px; margin:16px 0; }
+  .team-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:20px; }
+  .team-card .t-name { font-weight:700; margin-bottom:6px; }
+  .team-card .t-chars { font-size:0.85rem; color:var(--accent3); margin-bottom:6px; }
+  .team-card .t-desc { font-size:0.8rem; color:var(--text-dim); }
+
+  .cta { text-align:center; padding:40px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); margin:40px 0; }
+  .cta p { margin-bottom:16px; }
+  .btn { display:inline-flex; align-items:center; gap:8px; padding:12px 28px; border-radius:24px; font-weight:600; font-size:0.95rem; text-decoration:none; border:none; cursor:pointer; transition:all 0.25s; background:var(--accent); color:#0a0a0f; }
+  .btn:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(109,214,109,0.25); }
+
+  .footer { text-align:center; padding:32px 24px; border-top:1px solid var(--border); font-size:0.8rem; color:var(--text-dim); margin-top:40px; }
+  .footer a { color:var(--accent); text-decoration:none; }
+
+  @media (max-width:768px) {
+    .nav { padding:12px 20px; }
+    h1 { font-size:1.7rem; }
+    .container { padding:80px 16px 60px; }
+    table { font-size:0.78rem; }
+    thead th, tbody td { padding:8px 10px; }
+    .nav-right { gap:8px; }
+  }
+  .toc-sidebar { position:fixed; right:16px; top:50%; transform:translateY(-50%); z-index:90; display:flex; flex-direction:column; gap:6px; }
+  .toc-link { display:block; padding:6px 14px; border-radius:8px; font-size:0.75rem; color:var(--text-dim); text-decoration:none; border-left:2px solid transparent; transition:all 0.25s; background:rgba(10,10,15,0.7); }
+  .toc-link:hover,.toc-link.active { color:var(--accent); border-left-color:var(--accent); background:rgba(109,214,109,0.08); }
+  .back-to-top { position:fixed; bottom:24px; right:24px; width:40px; height:40px; border-radius:50%; background:var(--accent); color:#0a0a0f; border:none; cursor:pointer; font-size:1.2rem; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity 0.3s; z-index:99; }
+  .back-to-top.visible { opacity:1; pointer-events:auto; }
+  @media (max-width:768px) { .toc-sidebar { display:none; } .back-to-top { bottom:16px; right:16px; } }
+  .article-nav { display:flex; justify-content:space-between; align-items:center; gap:16px; max-width:860px; margin:0 auto; padding:32px 24px 48px; }
+  .article-nav a { display:flex; flex-direction:column; gap:4px; padding:14px 20px; border-radius:12px; border:1px solid var(--border); text-decoration:none; transition:all 0.25s; max-width:360px; }
+  .article-nav a:hover { border-color:var(--accent); background:rgba(109,214,109,0.04); }
+  .article-nav .nav-label { font-size:0.7rem; color:var(--text-dim); }
+  .article-nav .nav-title { font-size:0.9rem; color:#fff; font-weight:600; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">🌿 <span class="zh-only">提瓦特旅人指南</span><span class="en-only">Teyvat Traveler's Guide</span></a>
+  <div class="nav-right">
+    <div class="lang-toggle" id="langToggle">
+      <span class="lang-option active" data-lang="zh">中文</span>
+      <span class="lang-option" data-lang="en">EN</span>
+    </div>
+    <a href="../index.html">← <span class="zh-only">返回首页</span><span class="en-only">Home</span></a>
+  </div>
+</nav>
+
+<div class="container">
+<aside class="toc-sidebar">
+  <a href="#overview" class="toc-link"><span class="zh-only">角色定位</span><span class="en-only">Overview</span></a>
+  <a href="#weapon" class="toc-link"><span class="zh-only">武器排名</span><span class="en-only">Weapons</span></a>
+  <a href="#artifact" class="toc-link"><span class="zh-only">圣遗物</span><span class="en-only">Artifacts</span></a>
+  <a href="#constellation" class="toc-link"><span class="zh-only">命座分析</span><span class="en-only">Constellations</span></a>
+  <a href="#teams" class="toc-link"><span class="zh-only">配队方案</span><span class="en-only">Team Comps</span></a>
+  <a href="#faq" class="toc-link"><span class="zh-only">常见问题</span><span class="en-only">FAQ</span></a>
+</aside>
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <div class="breadcrumb">
+    <a href="../index.html"><span class="zh-only">首页</span><span class="en-only">Home</span></a> &nbsp;›&nbsp; <a href="../index.html#characters"><span class="zh-only">角色攻略</span><span class="en-only">Character Builds</span></a> &nbsp;›&nbsp; <span class="zh-only">纳西妲</span><span class="en-only">Nahida</span>
+  </div>
+
+  <header class="article-header">
+    <div class="tags">
+      <span class="tag hot"><span class="zh-only">必看</span><span class="en-only">Must Read</span></span>
+      <span class="tag core"><span class="zh-only">草神</span><span class="en-only">Dendro Archon</span></span>
+      <span class="tag new"><span class="zh-only">5.7版本适用</span><span class="en-only">v5.7 Valid</span></span>
+    </div>
+    <h1>🌿 <span class="zh-only">纳西妲 · 草神完全攻略</span><span class="en-only">Nahida · Complete Guide (Dendro Archon)</span></h1>
+    <div class="meta">
+      <span><span class="zh-only">🕐 更新于 2026年6月10日</span><span class="en-only">🕐 Updated Jun 10, 2026</span></span>
+      <span><span class="zh-only">📖 约 13 分钟阅读</span><span class="en-only">📖 ~13 min read</span></span>
+      <span>👁️ 95,000+</span>
+    </div>
+  </header>
+  <div class="article-hero">
+    <img src="https://patchwiki.biligame.com/images/ys/3/30/6mlpdxkvtkncah5h2xe26bsmyhfqpfp.png" alt="Nahida" class="article-hero-img" loading="lazy">
+  </div>
+
+  <nav class="toc">
+    <h4>📋 <span class="zh-only">本文目录</span><span class="en-only">Table of Contents</span></h4>
+    <ol>
+      <li><a href="#overview"><span class="zh-only">角色定位 · 标记机制详解</span><span class="en-only">Role &amp; Mark Mechanic</span></a></li>
+      <li><a href="#weapon"><span class="zh-only">武器选择 · 7档排名</span><span class="en-only">Weapon Ranking (7 Tiers)</span></a></li>
+      <li><a href="#artifact"><span class="zh-only">圣遗物搭配 · 主词条与面板目标</span><span class="en-only">Artifacts &amp; Stat Targets</span></a></li>
+      <li><a href="#constellation"><span class="zh-only">命座分析 · C2 关键节点</span><span class="en-only">Constellations · C2 Analysis</span></a></li>
+      <li><a href="#teams"><span class="zh-only">配队方案 · 5大主流体系</span><span class="en-only">Teams · 5 Main Archetypes</span></a></li>
+      <li><a href="#faq"><span class="zh-only">常见问题 FAQ</span><span class="en-only">FAQ</span></a></li>
+    </ol>
+  </nav>
+
+  <!-- 角色定位 -->
+  <section id="overview">
+    <h2><span class="icon">🌿</span> <span class="zh-only">角色定位 · 标记机制详解</span><span class="en-only">Role &amp; Mark Mechanic</span></h2>
+    <p class="zh-block">纳西妲 — 五星草元素法器角色，定位为<strong>副C + 草元素附着核心 + 全队增益</strong>。核心机制是元素战技「所闻遍计」标记敌人，当标记敌人触发任何元素反应时，对所有标记敌人同时造成草元素伤害（Tri-Karma Purification）。元素爆发「心景幻梦」展开巨大领域，根据队伍元素组成强化队友。</p>
+    <p class="en-block">Nahida — 5★ Dendro Catalyst character. Role: <strong>Sub-DPS + Dendro applier + team buffer</strong>. Core mechanic: Elemental Skill "All Schemes to Know" marks enemies; when ANY marked enemy triggers an elemental reaction, ALL marked enemies take Tri-Karma Purification Dendro DMG simultaneously. Elemental Burst "Illusory Heart" creates a massive field that buffs the team based on party element composition.</p>
+
+    <div class="highlight">
+      <p class="zh-block"><strong>一句话总结：</strong>纳西妲是所有草反应队的无可争议女王——她的E技能提供全游戏最优秀的脱手草附着，Q技能根据队伍元素提供团队增益。任何草反应队有她都质变。</p>
+      <p class="en-block"><strong>TL;DR:</strong> Nahida is the undisputed queen of all Dendro reaction teams — her E provides the best off-field Dendro application in the game, and her Q buffs the team based on party elements. Any Dendro team improves drastically with her.</p>
+    </div>
+
+    <div class="card">
+      <h4 class="zh-only">🔑 核心天赋优先级</h4>
+      <h4 class="en-only">🔑 Talent Priority</h4>
+      <p><strong><span class="zh-only">元素战技 (E) &gt; 元素爆发 (Q) &gt;&gt; 普通攻击 (A)</span><span class="en-only">Elemental Skill (E) > Elemental Burst (Q) >> Normal Attack (A)</span></strong></p>
+      <p class="zh-only">E是核心脱手输出+草附着手段，Q提供团队增益，普攻完全不点（C6以前无用）。</p>
+      <p class="en-only">Skill is the core off-field DPS + Dendro application. Burst provides team buffs. Normal Attack can be ignored entirely (useless before C6).</p>
+    </div>
+
+    <div class="card">
+      <h4 class="zh-only">📊 标记机制详解</h4>
+      <h4 class="en-only">📊 Mark Mechanic Details</h4>
+      <p class="zh-block">E技能「所闻遍计」标记最多<strong>8个敌人</strong>。当任意标记敌人触发反应（绽放/超绽放/烈绽放/激化/燃烧/扩散/激化/超激化）时，<strong>所有标记敌人同时受到Tri-Karma Purification草元素伤害</strong>。这是全游戏最优秀的草元素附着机制。</p>
+      <p class="en-block">Skill "All Schemes to Know" marks up to <strong>8 enemies</strong>. When ANY marked enemy triggers a reaction (Bloom/Hyperbloom/Burgeon/Quicken/Burning/Spread/Aggravate), <strong>ALL marked enemies receive Tri-Karma Purification Dendro DMG simultaneously</strong>. This is the best Dendro application mechanic in the game.</p>
+    </div>
+
+    <div class="card">
+      <h4 class="zh-only">🧠 被动天赋（A4）</h4>
+      <h4 class="en-only">🧠 Passive Talent (A4)</h4>
+      <p class="zh-block">纳西妲的<strong>元素精通超过200的部分</strong>，每点额外元素精通提供：E技能<strong>0.1%暴击率</strong>（上限24%）和<strong>0.03%伤害加成</strong>（上限80%）。1000元素精通封顶。这意味着堆元素精通同时提升暴击率和伤害。</p>
+      <p class="en-block">Nahida's EM above 200 grants up to <strong>24% CRIT Rate</strong> and <strong>80% DMG bonus</strong> to her E (0.1% CRIT Rate and 0.03% DMG per EM above 200, capped at 1000 EM). This means building EM simultaneously boosts both CRIT Rate and DMG.</p>
+    </div>
+  </section>
+
+  <!-- 武器 -->
+  <section id="weapon">
+    <h2><span class="icon">🗡️</span> <span class="zh-only">武器选择 · 7档排名</span><span class="en-only">Weapon Ranking (7 Tiers)</span></h2>
+    <p class="zh-only">纳西妲的武器需求：<strong>元素精通 > 暴击/暴伤 > 攻击力%</strong>。她是全游戏极少数元素精通直接转化为输出的角色，优先选择高元素精通武器。</p>
+    <p class="en-only">Nahida's weapon priority: <strong>EM > CRIT/CRIT DMG > ATK%</strong>. She is one of the very few characters who directly convert EM into output. Prioritize high EM weapons.</p>
+
+    <table>
+      <thead>
+        <tr><th><span class="zh-only">档位</span><span class="en-only">Tier</span></th><th><span class="zh-only">武器</span><span class="en-only">Weapon</span></th><th><span class="zh-only">基础攻击</span><span class="en-only">Base ATK</span></th><th><span class="zh-only">副属性</span><span class="en-only">Substat</span></th><th><span class="zh-only">核心优势</span><span class="en-only">Key Advantage</span></th><th><span class="zh-only">获取</span><span class="en-only">Source</span></th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tier-s">SS</td>
+          <td><strong><span class="zh-only">千夜浮梦</span><span class="en-only">A Thousand Floating Dreams</span></strong></td>
+          <td>542</td>
+          <td><span class="zh-only">元素精通</span><span class="en-only">EM</span> 265</td>
+          <td class="zh-only">专武。团队EM增益+个人伤害，完美契合</td>
+          <td class="en-only">Signature. Team EM buff + personal DMG, perfect synergy</td>
+          <td><span class="zh-only">限定祈愿</span><span class="en-only">Limited</span></td>
+        </tr>
+        <tr>
+          <td class="tier-s">S</td>
+          <td><strong><span class="zh-only">流浪乐章</span><span class="en-only">Wandering Evenstar</span></strong></td>
+          <td>510</td>
+          <td><span class="zh-only">元素精通</span><span class="en-only">EM</span> 165</td>
+          <td class="zh-only">EM转化为全队攻击力，限定4★优质选择</td>
+          <td class="en-only">Converts EM to ATK for team, limited 4★</td>
+          <td><span class="zh-only">限定祈愿</span><span class="en-only">Limited 4★</span></td>
+        </tr>
+        <tr>
+          <td class="tier-s">S</td>
+          <td><strong><span class="zh-only">祭礼残章</span><span class="en-only">Sacrificial Fragments</span></strong></td>
+          <td>454</td>
+          <td><span class="zh-only">元素精通</span><span class="en-only">EM</span> 221</td>
+          <td class="zh-only">最高EM副词条，E重置应对复杂轴</td>
+          <td class="en-only">Highest EM substat, E reset for tricky rotations</td>
+          <td><span class="zh-only">祈愿</span><span class="en-only">Gacha</span></td>
+        </tr>
+        <tr>
+          <td class="tier-a">A</td>
+          <td><strong><span class="zh-only">魔导绪论 (F2P首选)</span><span class="en-only">Magic Guide (F2P Best)</span></strong></td>
+          <td>354</td>
+          <td><span class="zh-only">元素精通</span><span class="en-only">EM</span> 187</td>
+          <td class="zh-only">3★神器！187EM+对水/雷附着敌人+24%伤害</td>
+          <td class="en-only">3★ hidden gem! 187 EM + 24% DMG vs Hydro/Electro</td>
+          <td><span class="zh-only">祈愿</span><span class="en-only">Gacha 3★</span></td>
+        </tr>
+        <tr>
+          <td class="tier-a">A</td>
+          <td><strong><span class="zh-only">万国诸海图谱</span><span class="en-only">Mappa Mare</span></strong></td>
+          <td>565</td>
+          <td><span class="zh-only">元素精通</span><span class="en-only">EM</span> 110</td>
+          <td class="zh-only">锻造获取，反应触发元素伤害加成</td>
+          <td class="en-only">Craftable, EM + Elemental DMG on reaction trigger</td>
+          <td><span class="zh-only">锻造</span><span class="en-only">Craftable</span></td>
+        </tr>
+        <tr>
+          <td class="tier-b">B</td>
+          <td><strong><span class="zh-only">匣里日月</span><span class="en-only">The Widsith</span></strong></td>
+          <td>510</td>
+          <td><span class="zh-only">暴伤</span><span class="en-only">CRIT DMG</span> 55.1%</td>
+          <td class="zh-only">RNG增益，3种效果2种对纳西妲无用</td>
+          <td class="en-only">RNG buff, 2/3 effects useless for Nahida</td>
+          <td><span class="zh-only">祈愿</span><span class="en-only">Gacha</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight">
+      <p class="zh-block"><strong>💡 没有五星武器？</strong>用<strong>魔导绪论 R5</strong>！虽然是3★武器，但提供187元素精通，且对水/雷附着敌人额外+24%伤害——完美适配超绽放队伍。性价比碾压绝大多数4★武器。</p>
+      <p class="en-block"><strong>💡 No 5★ weapon?</strong> Use <strong>Magic Guide R5</strong>! It's a 3★ weapon but gives 187 EM + 24% DMG vs Electro/Hydro-affected enemies — perfect for Hyperbloom teams. Outperforms most 4★ options by far.</p>
+    </div>
+  </section>
+
+  <!-- 圣遗物 -->
+  <section id="artifact">
+    <h2><span class="icon">💎</span> <span class="zh-only">圣遗物搭配 · 主词条与面板目标</span><span class="en-only">Artifacts &amp; Stat Targets</span></h2>
+
+    <h3 class="zh-only">首选套装：深林的记忆 ×4（深林4）</h3>
+    <h3 class="en-only">Best Set: Deepwood Memories ×4</h3>
+    <p class="zh-only"><strong>2件套：</strong>草元素伤害加成 +15%<br><strong>4件套：</strong>元素战技或元素爆发命中敌人后，使命中敌人的草元素抗性降低30%，持续8秒（可脱手触发）。</p>
+    <p class="en-only"><strong>2pc:</strong> Dendro DMG Bonus +15%<br><strong>4pc:</strong> After Elemental Skill or Burst hits an enemy, enemy Dendro RES -30% for 8s (works off-field).</p>
+    <p class="zh-block">深林4是<strong>草反应队指定辅助套装</strong>——纳西妲必须携带，除非队伍中已有其他角色装备深林4。脱手触发，覆盖率接近100%。</p>
+    <p class="en-block">Deepwood 4 is <strong>THE support set for Dendro reaction teams</strong> — Nahida must carry it unless someone else on the team already has Deepwood 4. Triggers off-field with near 100% uptime.</p>
+
+    <div class="card">
+      <h4 class="zh-only">🎯 主词条选择</h4>
+      <h4 class="en-only">🎯 Main Stat Choices</h4>
+      <table>
+        <thead><tr><th><span class="zh-only">部位</span><span class="en-only">Slot</span></th><th><span class="zh-only">最优主词条</span><span class="en-only">Best Main Stat</span></th><th><span class="zh-only">替代方案</span><span class="en-only">Alternative</span></th></tr></thead>
+        <tbody>
+          <tr><td><span class="zh-only">时之沙</span><span class="en-only">Sands</span></td><td><strong><span class="zh-only">元素精通</span><span class="en-only">EM</span></strong></td><td><span class="zh-only">永远选元素精通</span><span class="en-only">Always EM, no exception</span></td></tr>
+          <tr><td><span class="zh-only">空之杯</span><span class="en-only">Goblet</span></td><td><strong><span class="zh-only">元素精通 / 草伤</span><span class="en-only">EM / Dendro DMG</span></strong></td><td><span class="zh-only">EM低于1000选EM，高于1000可选草伤</span><span class="en-only">EM if below 1000, Dendro DMG if above</span></td></tr>
+          <tr><td><span class="zh-only">理之冠</span><span class="en-only">Circlet</span></td><td><strong><span class="zh-only">元素精通 / 暴击率 / 暴伤</span><span class="en-only">EM / CRIT Rate / CRIT DMG</span></strong></td><td><span class="zh-only">EM低于850选EM头，高于850选暴击头</span><span class="en-only">EM circlet if below 850, CRIT if above</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h4 class="zh-only">📏 面板目标</h4>
+      <h4 class="en-only">📏 Target Stats</h4>
+      <p><strong><span class="zh-only">元素精通 800–1000 | 暴击率 45%+ | 暴伤 120%+ | 充能 130–150%</span><span class="en-only">EM 800–1000 | CRIT Rate 45%+ | CRIT DMG 120%+ | ER 130–150%</span></strong></p>
+      <p class="zh-only">1000元素精通是A4被动的硬上限。超过1000的部分不提供额外收益。若队友已携带深林4，纳西妲可换用<strong>饰金4</strong>或<strong>2+2 EM散件</strong>。</p>
+      <p class="en-only">1000 EM is the hard cap for her A4 passive. Any EM above 1000 gives no extra benefit. If a teammate already has Deepwood 4, Nahida can use <strong>Gilded Dreams 4pc</strong> or <strong>2pc+2pc EM sets</strong>.</p>
+    </div>
+
+    <div class="card">
+      <h4 class="zh-only">🔄 深林4 vs 饰金4</h4>
+      <h4 class="en-only">🔄 Deepwood 4 vs Gilded 4</h4>
+      <p class="zh-block"><strong>绝大多数情况穿深林4。</strong>只有确定队伍中已有其他角色（如白术、瑶瑶）装备深林4时，纳西妲才切换为饰金4或2+2 EM散件，最大化自身输出。</p>
+      <p class="en-block"><strong>Wear Deepwood 4 in almost all cases.</strong> Only switch to Gilded 4 or 2pc+2pc EM if another teammate (e.g., Baizhu, Yaoyao) is already using Deepwood 4, to maximize her own output.</p>
+    </div>
+  </section>
+
+  <!-- 命座 -->
+  <section id="constellation">
+    <h2><span class="icon">⭐</span> <span class="zh-only">命座分析 · C2 关键节点</span><span class="en-only">Constellations · C2 Powerspike</span></h2>
+    <table>
+      <thead><tr><th class="zh-only">命座</th><th class="en-only">Cons</th><th><span class="zh-only">效果</span><span class="en-only">Effect</span></th><th><span class="zh-only">提升幅度</span><span class="en-only">Gain</span></th><th><span class="zh-only">推荐度</span><span class="en-only">Rating</span></th></tr></thead>
+      <tbody>
+        <tr><td>C1</td><td class="zh-only">Q的增益效果对火/水/雷元素相关效果计数+1</td><td class="en-only">Burst buff counts for Pyro/Hydro/Electro increase by 1</td><td><span class="zh-only">小幅提升</span><span class="en-only">Minor</span></td><td>⭐⭐</td></tr>
+        <tr><td><strong>C2</strong></td><td><strong class="zh-only">标记敌人：燃烧/绽放/超绽放/烈绽放可暴击（固定20%暴击，100%伤害）。激化/超激化/扩散降低敌人30%防御力</strong></td><td class="en-only"><strong>Marked enemies: Burning/Bloom/Hyperbloom/Burgeon can CRIT (20% fixed, 100% DMG). Quicken/Aggravate/Spread reduces enemy DEF by 30%.</strong></td><td><strong>≈20% 🔥</strong></td><td>⭐⭐⭐⭐⭐</td></tr>
+        <tr><td>C3</td><td class="zh-only">元素战技等级+3</td><td class="en-only">Elemental Skill LV +3</td><td>≈18%</td><td>⭐⭐⭐⭐</td></tr>
+        <tr><td>C4</td><td class="zh-only">E命中1-4个标记敌人→全队+100-160元素精通</td><td class="en-only">E hits 1-4 marked enemies → +100-160 EM for team</td><td><span class="zh-only">优秀</span><span class="en-only">Good</span></td><td>⭐⭐⭐</td></tr>
+        <tr><td>C5</td><td class="zh-only">元素爆发等级+3</td><td class="en-only">Elemental Burst LV +3</td><td>≈8%</td><td>⭐⭐</td></tr>
+        <tr><td><strong>C6</strong></td><td><strong class="zh-only">使用后Q后，普通攻击命中标记敌人→额外草元素伤害（基于攻击力+元素精通）</strong></td><td><strong class="en-only">After using Q, NA hits marked enemies → extra Dendro DMG (scales with ATK+EM). On-field DPS mode.</strong></td><td><strong><span class="zh-only">站场质变</span><span class="en-only">On-field game-changer</span> 🔥</strong></td><td>⭐⭐⭐⭐</td></tr>
+      </tbody>
+    </table>
+    <div class="highlight">
+      <p class="zh-block"><strong>🚨 C2 是游戏中最强的早期命座之一：</strong>草反应可以暴击（绽放/超绽放/烈绽放20%固定暴击），同时激化相关反应降低敌人30%防御力。<strong>推荐目标：C0已毕业 → C2质变 → C6站场主C</strong>。</p>
+      <p class="en-block"><strong>🚨 C2 is one of the most broken early constellations in the game:</strong> Dendro reactions can CRIT (Bloom/Hyperbloom/Burgeon 20% fixed CRIT), while Aggravate-related reactions reduce enemy DEF by 30%. <strong>Goal: C0 excellent → C2 broken → C6 on-field carry</strong>.</p>
+    </div>
+  </section>
+
+  <!-- 配队 -->
+  <section id="teams">
+    <h2><span class="icon">🤝</span> <span class="zh-only">配队方案 · 5大主流体系</span><span class="en-only">Teams · 5 Main Archetypes</span></h2>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="t-name">🌸 <span class="zh-only">妮露绽放</span><span class="en-only">Nilou Bloom</span></div>
+        <div class="t-chars"><span class="zh-only">妮露 + 纳西妲 + 心海 + 旅行者(草)/柯莱</span><span class="en-only">Nilou + Nahida + Kokomi + DMC/Collei</span></div>
+        <div class="t-desc"><span class="zh-only">妮露丰穰之核+纳西妲标记。绽放种子伤害最大化，Seed of paradise。</span><span class="en-only">Nilou bountiful cores + Nahida mark. Maximizes Bloom seed DMG. Seeded paradise.</span></div>
+      </div>
+      <div class="team-card">
+        <div class="t-name">🌿 <span class="zh-only">海哥激化</span><span class="en-only">Alhaitham Spread</span></div>
+        <div class="t-chars"><span class="zh-only">艾尔海森 + 纳西妲 + 八重神子/菲谢尔 + 钟离</span><span class="en-only">Alhaitham + Nahida + Yae/Fischl + Zhongli</span></div>
+        <div class="t-desc"><span class="zh-only">双草扩散体系。艾尔海森站场打扩散/超扩散，纳西妲脱手挂草+增伤。</span><span class="en-only">Dual Dendro Spread carry. Alhaitham on-field Spread/Aggravate, Nahida off-field Dendro + DMG buff.</span></div>
+      </div>
+      <div class="team-card">
+        <div class="t-name">⚡ <span class="zh-only">赛诺超激绽</span><span class="en-only">Cyno Quickbloom</span></div>
+        <div class="t-chars"><span class="zh-only">赛诺 + 纳西妲 + 芙宁娜/行秋 + 白术</span><span class="en-only">Cyno + Nahida + Furina/Xingqiu + Baizhu</span></div>
+        <div class="t-desc"><span class="zh-only">超激绽体系。赛诺站场打超激化+种子超绽放，纳西妲挂草全覆盖。</span><span class="en-only">Quickbloom dominance. Cyno on-field Aggravate + Hyperbloom, Nahida full Dendro coverage.</span></div>
+      </div>
+      <div class="team-card">
+        <div class="t-name">⚡ <span class="zh-only">刻晴激化</span><span class="en-only">Keqing Aggravate</span></div>
+        <div class="t-chars"><span class="zh-only">刻晴 + 纳西妲 + 菲谢尔 + 万叶</span><span class="en-only">Keqing + Nahida + Fischl + Kazuha</span></div>
+        <div class="t-desc"><span class="zh-only">经典激化速切。刻晴EQ速切打激化，菲谢尔奥兹协同，万叶聚怪减抗。</span><span class="en-only">Classic Aggravate quick-swap. Keqing E/Q Aggravate bursts, Fischl Oz support, Kazuha group + shred.</span></div>
+      </div>
+      <div class="team-card">
+        <div class="t-name">🌱 <span class="zh-only">草行久 (F2P T0)</span><span class="en-only">Hyperbloom F2P (T0)</span></div>
+        <div class="t-chars"><span class="zh-only">纳西妲 + 行秋 + 久岐忍 + 自由位</span><span class="en-only">Nahida + Xingqiu + Kuki Shinobu + flex</span></div>
+        <div class="t-desc"><span class="zh-only">平民超绽放队，伤害超越诸多5★队伍。真正的T0级别。成本低，上限高。</span><span class="en-only">The budget Hyperbloom team that out-damages 5★ teams. Real T0. Low cost, high ceiling.</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h4 class="zh-only">🎮 标准输出手法（超绽放 F2P）</h4>
+      <h4 class="en-only">🎮 Standard Rotation (Hyperbloom F2P)</h4>
+      <p><span class="zh-only">纳西妲 E Q → 行秋 E Q → 久岐忍 E → 自由位 → </span><span class="en-only">Nahida E Q → Xingqiu E Q → Kuki E → flex → </span><strong><span class="zh-only">纳西妲普攻触发更多标记</span><span class="en-only">Nahida NA to trigger more marks</span></strong></p>
+      <p style="margin-top:8px" class="zh-only">核心思路：纳西妲先手EQ挂草+减草抗→行秋Q提供水剑协同挂水→久岐忍E触发超绽放种子→纳西妲普攻维持标记覆盖。</p>
+      <p style="margin-top:8px" class="en-only">Core logic: Nahida opens with EQ to apply Dendro + shred RES → Xingqiu Q for Hydro swords → Kuki E triggers Hyperbloom seeds → Nahida NA to maintain mark coverage.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2><span class="icon">❓</span> <span class="zh-only">常见问题 FAQ</span><span class="en-only">FAQ</span></h2>
+
+    <div class="card">
+      <h4 class="zh-only">头冠选元素精通还是暴击？</h4>
+      <h4 class="en-only">EM or CRIT circlet?</h4>
+      <p class="zh-block">BUFF后元素精通<strong>低于850</strong>→选<strong>元素精通头</strong>。850以上→选<strong>暴击率/暴伤头</strong>。1000元素精通是A4被动的硬上限，超过后不再获得暴击率和伤害加成。</p>
+      <p class="en-block"><strong>Below 850 EM</strong> after buffs → pick <strong>EM circlet</strong>. Above 850 EM → <strong>CRIT Rate/DMG circlet</strong>. 1000 EM is the hard cap for her A4 passive — beyond that you gain no extra CRIT Rate or DMG bonus.</p>
+    </div>
+    <div class="card">
+      <h4 class="zh-only">深林4还是饰金4？</h4>
+      <h4 class="en-only">Deepwood or Gilded?</h4>
+      <p class="zh-block"><strong>纳西妲应在大多数队伍中穿深林4。</strong>只有确定队伍中已有其他角色（如白术、瑶瑶）装备深林4时，才切换为饰金4或2+2 EM散件。</p>
+      <p class="en-block"><strong>Nahida should wear Deepwood 4 in most teams.</strong> Only switch to Gilded 4 or 2pc+2pc EM if another teammate (e.g., Baizhu, Yaoyao) is already using Deepwood 4.</p>
+    </div>
+    <div class="card">
+      <h4 class="zh-only">0命值得抽吗？</h4>
+      <h4 class="en-only">Is C0 worth pulling?</h4>
+      <p class="zh-block"><strong>必抽。</strong>纳西妲是所有草反应队中单角色影响力最大的单位。任何草反应队有她都会产生质变提升。0命即毕业级别。</p>
+      <p class="en-block"><strong>Must-pull.</strong> Nahida is the single most impactful Dendro unit. Any Dendro team improves drastically with her. C0 is already graduation-level.</p>
+    </div>
+  </section>
+
+  <div class="cta">
+    <p style="font-size:1.1rem; font-weight:600;"><span class="zh-only">📬 觉得有用？订阅获取更多角色攻略</span><span class="en-only">📬 Found this useful? Subscribe for more guides</span></p>
+    <p style="color:var(--text-dim)"><span class="zh-only">新角色测评、深渊配队、武器对比，第一时间推送</span><span class="en-only">New character reviews, Abyss teams, weapon comparisons — delivered first</span></p>
+    <a href="../index.html#subscribe" class="btn"><span class="zh-only">📩 免费订阅更新</span><span class="en-only">📩 Subscribe Free</span></a>
+  </div>
+
+</div>
+
+<nav class="article-nav">
+  <a href="neuvillette.html" class="prev">
+    <span class="nav-label"><span class="zh-only">← 上一篇</span><span class="en-only">← Previous</span></span>
+    <span class="nav-title"><span class="zh-only">那维莱特 · 枫丹龙王完全攻略</span><span class="en-only">Neuvillette — Hydro Dragon</span></span>
+  </a>
+  <a href="kazuha.html" class="next">
+    <span class="nav-label"><span class="zh-only">下一篇 →</span><span class="en-only">Next →</span></span>
+    <span class="nav-title"><span class="zh-only">枫原万叶 · 风系辅助天花板</span><span class="en-only">Kaedehara Kazuha — Anemo Support</span></span>
+  </a>
+</nav>
+
+<div class="footer">
+  <span class="zh-only">© 2026 提瓦特旅人指南</span><span class="en-only">© 2026 Teyvat Traveler's Guide</span> · <a href="../index.html"><span class="zh-only">返回首页</span><span class="en-only">Home</span></a> · Genshin Impact © HoYoverse
+</div>
+
+<script>
+  const langToggle = document.getElementById('langToggle');
+  const langOptions = langToggle.querySelectorAll('.lang-option');
+  function setLang(lang) {
+    if (lang === 'en') { document.body.classList.add('lang-en'); }
+    else { document.body.classList.remove('lang-en'); }
+    document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+    localStorage.setItem('genshinLang', lang);
+    langOptions.forEach(opt => opt.classList.toggle('active', opt.dataset.lang === lang));
+  }
+  langOptions.forEach(opt => opt.addEventListener('click', () => setLang(opt.dataset.lang)));
+  setLang(localStorage.getItem('genshinLang') || ((navigator.language||navigator.userLanguage||'').startsWith('zh')?'zh':'en'));
+
+  // Back to top
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('visible', window.scrollY > 400);
+  });
+  backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // TOC active section
+  const tocLinks = document.querySelectorAll('.toc-link');
+  const sections = [...tocLinks].map(l => document.querySelector(l.getAttribute('href')));
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => {
+      if (sec && sec.getBoundingClientRect().top < 200) current = sec.id;
+    });
+    tocLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + current));
+  });
+</script>
+</body>
+</html>
