@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="zh-CN" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>原神攻略 · 提瓦特旅人指南 | Genshin Impact Guide · Teyvat Traveler</title>
-<meta name="description" content="最详细的 Genshin Impact 原神攻略站 — 全角色培养推荐、深渊12层配队、圣遗物刷取路线、隐藏任务攻略。The most comprehensive Genshin Impact guide — character builds, Spiral Abyss teams, artifact routes, hidden quests. Updated daily.">
-<meta name="keywords" content="原神攻略, Genshin Impact, 角色培养, 深渊配队, 圣遗物, character builds, spiral abyss, artifacts">
+<meta name="description" content="原神攻略站 — 精选热门角色深度培养指南、深渊12层配队解析。持续更新中。Genshin Impact guide — in-depth character build guides, Spiral Abyss team analysis. More content added regularly.">
+<meta name="keywords" content="原神攻略, Genshin Impact, 角色培养, 深渊配队, 芙宁娜, 雷电将军, Furina, Raiden Shogun, character builds, spiral abyss">
 <meta property="og:title" content="原神攻略 · 提瓦特旅人指南 | Genshin Impact Guide">
-<meta property="og:description" content="最详细的原神攻略站 — 全角色培养推荐、深渊12层配队、圣遗物刷取路线。The most comprehensive Genshin guide — builds, teams, routes.">
+<meta property="og:description" content="原神攻略站 — 精选热门角色深度培养指南、深渊12层配队解析。Genshin guide — in-depth character builds, Abyss team analysis.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kyle1188.github.io/genshin-guide/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="原神攻略 · 提瓦特旅人指南 | Genshin Guide">
-<meta name="twitter:description" content="最详细的原神攻略站 — 角色培养 · 深渊配队 · 探索解谜">
+<meta name="twitter:description" content="原神攻略站 — 热门角色培养指南 · 深渊配队解析">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="canonical" href="https://kyle1188.github.io/genshin-guide/">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CZBN84E1PH"></script>
@@ -294,13 +294,14 @@
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
-    padding: 28px;
     transition: all 0.35s cubic-bezier(0.25,0.1,0.25,1);
     cursor: pointer;
     text-decoration: none;
     display: block;
     position: relative;
     overflow: hidden;
+    width: 380px;
+    max-width: 100%;
   }
   .guide-card::before {
     content: '';
@@ -309,6 +310,7 @@
     background: linear-gradient(90deg, var(--accent), var(--accent2), var(--accent3));
     transform: scaleX(0);
     transition: transform 0.4s ease;
+    z-index: 2;
   }
   .guide-card:hover {
     transform: translateY(-4px);
@@ -316,6 +318,15 @@
     box-shadow: var(--shadow);
   }
   .guide-card:hover::before { transform: scaleX(1); }
+  .guide-card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+  .guide-card-body {
+    padding: 20px 24px 24px;
+  }
   .guide-card-icon {
     width: 48px; height: 48px;
     border-radius: 12px;
@@ -518,8 +529,8 @@
       <span class="en-only">Teyvat Traveler's Guide</span>
     </h1>
     <p>
-      <span class="zh-block">最硬核的原神攻略站 — 从萌新到大佬，从蒙德到至冬。<br>角色培养、深渊配队、隐藏成就、材料速刷，一网打尽。</span>
-      <span class="en-block">The ultimate Genshin Impact guide — from beginner to pro, from Mondstadt to Snezhnaya.<br>Character builds, Abyss teams, hidden achievements, farming routes. All in one place.</span>
+      <span class="zh-block">原神热门角色深度攻略站 — 芙宁娜、雷电将军完整培养指南，深渊12层配队全解析。<br>每一篇都是万字干货，不水字数，不抄wiki。更多角色持续更新中。</span>
+      <span class="en-block">In-depth Genshin Impact guides — complete Furina & Raiden Shogun build breakdowns, Spiral Abyss Floor 12 team analysis.<br>Every guide is thoroughly researched. More characters coming soon.</span>
     </p>
     <div class="hero-actions">
       <a href="#characters" class="btn btn-primary">
@@ -533,11 +544,15 @@
     </div>
     <div class="hero-stats">
       <div class="hero-stat">
-        <div class="hero-stat-num"><span class="zh-only">每日</span><span class="en-only">Daily</span></div>
-        <div class="hero-stat-label"><span class="zh-only">持续更新</span><span class="en-only">Updates</span></div>
+        <div class="hero-stat-num">2</div>
+        <div class="hero-stat-label"><span class="zh-only">角色深度攻略</span><span class="en-only">Character Guides</span></div>
       </div>
       <div class="hero-stat">
-        <div class="hero-stat-num"><span class="zh-only">双语</span><span class="en-only">Bilingual</span></div>
+        <div class="hero-stat-num">5+</div>
+        <div class="hero-stat-label"><span class="zh-only">配队方案</span><span class="en-only">Team Comps</span></div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num"><span class="zh-only">双语</span><span class="en-only">BI</span></div>
         <div class="hero-stat-label"><span class="zh-only">中英对照</span><span class="en-only">CN + EN</span></div>
       </div>
     </div>
@@ -560,7 +575,8 @@
 
   <div class="guide-grid">
     <a href="articles/furina.html" class="guide-card reveal">
-      <div class="guide-card-icon char">💧</div>
+      <img src="https://patchwiki.biligame.com/images/ys/6/68/gf8q0j490ygvze7w9npx35e49hw6iu0.png" alt="Furina" class="guide-card-img" loading="lazy">
+      <div class="guide-card-body">
       <h3><span class="zh-only">芙宁娜 · 从零到满命完全攻略</span><span class="en-only">Furina — C0 to C6 Complete Guide</span></h3>
       <p><span class="zh-only">水神全方位解析：输出/辅助双形态、武器面板计算、圣遗物主词条最优解。</span><span class="en-only">Full Furina breakdown: DPS & support modes, weapon calcs, optimal artifact main stats.</span></p>
       <div class="guide-card-meta">
@@ -568,15 +584,18 @@
         <span><span class="zh-only">更新于 6月7日</span><span class="en-only">Updated Jun 7</span></span>
         <span>15 min</span>
       </div>
+      </div>
     </a>
     <a href="articles/raiden.html" class="guide-card reveal">
-      <div class="guide-card-icon char">⚡</div>
+      <img src="https://patchwiki.biligame.com/images/ys/f/f9/1tc98q94ddh4ly2he2f4lm4k4as0osx.png" alt="Raiden Shogun" class="guide-card-img" loading="lazy">
+      <div class="guide-card-body">
       <h3><span class="zh-only">雷电将军 · 雷国配队核心</span><span class="en-only">Raiden Shogun — National Team Core</span></h3>
       <p><span class="zh-only">从零命到六命，充能沙还是攻击沙？最佳圣遗物搭配与武器选择详解。</span><span class="en-only">C0 to C6: ER or ATK sands? Best artifacts and weapon choices in detail.</span></p>
       <div class="guide-card-meta">
         <span class="guide-card-tag"><span class="zh-only">热门</span><span class="en-only">Hot</span></span>
         <span><span class="zh-only">更新于 6月3日</span><span class="en-only">Updated Jun 3</span></span>
         <span>11 min</span>
+      </div>
       </div>
     </a>
   </div>
@@ -600,7 +619,7 @@
   </div>
 
   <div class="spotlight reveal">
-    <div class="spotlight-img">🌊🔥</div>
+    <div class="spotlight-img"><img src="https://patchwiki.biligame.com/images/ys/4/41/pwvljpmr0uduc3uo2wqzk3fdq2t21d2.png" alt="Mavuika" style="width:100%;height:100%;object-fit:cover;border-radius:12px;" loading="lazy"></div>
     <div class="spotlight-info">
       <h3><span class="zh-only">蒸发蒸发！玛薇卡蒸发队</span><span class="en-only">Mavuika Vaporize Team</span></h3>
       <p class="tagline"><a href="articles/abyss.html"><span class="zh-only">5.7版本深渊12层 T0 配队 → 查看全部</span><span class="en-only">v5.7 Abyss Floor 12 T0 Comp → View All</span></a></p>
@@ -615,22 +634,10 @@
 
   <div class="guide-grid" style="margin-top: 32px;">
     <a href="articles/abyss.html" class="guide-card reveal">
-      <div class="guide-card-icon team">🌿</div>
-      <h3><span class="zh-only">超激化队 — 刻晴/赛诺双核</span><span class="en-only">Aggravate — Keqing/Cyno Dual Carry</span></h3>
-      <p><span class="zh-only">纳西妲+万叶经典组合，双C切换输出</span><span class="en-only">Nahida + Kazuha classic combo, dual DPS rotation</span></p>
-      <span class="guide-card-tag">S+</span>
-    </a>
-    <a href="articles/abyss.html" class="guide-card reveal">
-      <div class="guide-card-icon team">❄️</div>
-      <h3><span class="zh-only">永冻队 — 神里绫华新时代</span><span class="en-only">Freeze — Ayaka New Era</span></h3>
-      <p><span class="zh-only">茜特菈莉入队，永冻队迎来第二春</span><span class="en-only">Citlali joins the team, freeze comp revival</span></p>
-      <span class="guide-card-tag">S</span>
-    </a>
-    <a href="articles/abyss.html" class="guide-card reveal">
-      <div class="guide-card-icon team">⚡</div>
-      <h3><span class="zh-only">雷国队 — 万年常青树</span><span class="en-only">Rational — Timeless Classic</span></h3>
-      <p><span class="zh-only">雷神+香菱+行秋+班尼特，经典永不过时</span><span class="en-only">Raiden + Xiangling + Xingqiu + Bennett, never out of meta</span></p>
-      <span class="guide-card-tag">S</span>
+      <div class="guide-card-icon team">⚔️</div>
+      <h3><span class="zh-only">查看完整深渊攻略 →</span><span class="en-only">Full Abyss Guide →</span></h3>
+      <p><span class="zh-only">包含 超激化队、永冻队、雷国队、低金平民队等多支配队详细解析，12层满星一路畅通。</span><span class="en-only">Aggravate, Freeze, Rational, and budget teams — detailed breakdowns for full-star Floor 12 clears.</span></p>
+      <span class="guide-card-tag"><span class="zh-only">5.7版本</span><span class="en-only">v5.7</span></span>
     </a>
   </div>
 </section>
@@ -642,23 +649,20 @@
     <span class="en-only">Subscribe for Genshin Updates</span>
   </h2>
   <p class="reveal">
-    <span class="zh-only">新版本攻略、新角色测评、深渊配队，第一时间推送给你</span>
-    <span class="en-only">New patch guides, character reviews, abyss teams — delivered straight to your inbox</span>
+    <span class="zh-only">邮件订阅功能即将上线。<br>现在可以先收藏本站（Ctrl+D），我们会持续更新热门角色攻略和深渊配队。</span>
+    <span class="en-only">Email newsletter coming soon.<br>For now, bookmark this site (Ctrl+D) — we're adding more character guides and Abyss teams regularly.</span>
   </p>
-  <form class="cta-form reveal" id="subscribeForm">
-    <input type="email" placeholder="your@email.com" required>
-    <button type="submit" class="btn btn-primary">
-      <span class="zh-only">免费订阅</span>
-      <span class="en-only">Subscribe Free</span>
-    </button>
-  </form>
+  <div class="reveal" style="margin-top:16px; display:flex; gap:12px; justify-content:center;">
+    <a href="articles/furina.html" class="btn btn-outline"><span class="zh-only">📖 最新攻略：芙宁娜</span><span class="en-only">📖 Latest: Furina Guide</span></a>
+    <a href="articles/abyss.html" class="btn btn-outline"><span class="zh-only">⚔️ 深渊配队</span><span class="en-only">⚔️ Abyss Teams</span></a>
+  </div>
 </section>
 
 <!-- Footer -->
 <div class="footer">
   <div class="footer-brand">
     <h4>⚡ <span class="zh-only">提瓦特旅人指南</span><span class="en-only">Teyvat Traveler's Guide</span></h4>
-    <p><span class="zh-only">最硬核的原神攻略站。<br>始于2026年，坚持每日更新。</span><span class="en-only">The ultimate Genshin Impact guide.<br>Est. 2026. Updated daily.</span></p>
+    <p><span class="zh-only">原神角色深度攻略站。<br>始于2026年，持续更新中。</span><span class="en-only">In-depth Genshin character guides.<br>Est. 2026. Updated regularly.</span></p>
   </div>
   <div class="footer-col">
     <h5><span class="zh-only">攻略分类</span><span class="en-only">Categories</span></h5>
@@ -668,7 +672,7 @@
   <div class="footer-col">
     <h5><span class="zh-only">关于我们</span><span class="en-only">About</span></h5>
     <a href="#subscribe"><span class="zh-only">订阅更新</span><span class="en-only">Subscribe</span></a>
-    <a href="mailto:contact@teyvat-guide.com"><span class="zh-only">邮件联系</span><span class="en-only">Contact</span></a>
+    <span style="color:rgba(255,255,255,0.35);font-size:0.8rem;"><span class="zh-only">更多内容制作中</span><span class="en-only">More content coming</span></span>
   </div>
   <div class="footer-col">
     <h5><span class="zh-only">关注我们</span><span class="en-only">Follow Us</span></h5>
@@ -741,23 +745,6 @@
   }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
 
   document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
-  // ── Subscribe form ──
-  document.getElementById('subscribeForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const email = this.querySelector('input').value;
-    if (email) {
-      const btn = this.querySelector('button');
-      btn.textContent = '✅ Subscribed!';
-      btn.style.background = '#4dd4ac';
-      setTimeout(() => {
-        const isEn = document.body.classList.contains('lang-en');
-        btn.textContent = isEn ? 'Subscribe Free' : '免费订阅';
-        btn.style.background = '';
-        this.reset();
-      }, 3000);
-    }
-  });
 
   // ── Smooth scroll ──
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
