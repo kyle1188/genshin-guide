@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://genshin-guide-1.vercel.app/sitemap.xml
+Sitemap: https://genshin-guide-one-five.vercel.app/sitemap.xml
