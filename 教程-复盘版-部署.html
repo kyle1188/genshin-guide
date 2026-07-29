@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8">
+<style>
+.brief-body { font-family:-apple-system,Segoe UI,Microsoft YaHei,sans-serif; color:#1f2329; }
+.brief-body h1 { font-size:19px; margin:28px 0 14px; padding-bottom:8px; border-bottom:2px solid #3d5a80; color:#1f2329; }
+.brief-body h2 { font-size:15px; margin:24px 0 12px; padding-left:10px; border-left:4px solid #3d5a80; color:#1f2329; }
+.brief-body h2:nth-of-type(3n+1) { border-left-color:#3d5a80; }
+.brief-body h2:nth-of-type(3n+2) { border-left-color:#c0392b; }
+.brief-body h2:nth-of-type(3n)   { border-left-color:#e08e0b; }
+.brief-body h3 { font-size:14px; margin:18px 0 8px; color:#3d5a80; }
+.brief-body p { font-size:13.5px; line-height:1.75; color:#333; margin:8px 0; }
+.brief-body ul, .brief-body ol { font-size:13.5px; color:#333; line-height:1.8; padding-left:20px; margin:8px 0; }
+.brief-body li { margin:4px 0; }
+.brief-body strong { color:#1f2329; }
+.brief-body table { width:100%; border-collapse:collapse; font-size:13px; margin:10px 0 18px; }
+.brief-body th { background:#f7f8fa; color:#5a6573; text-align:left; padding:9px 11px; font-weight:600; border-bottom:2px solid #e3e6ea; }
+.brief-body td { padding:9px 11px; border-bottom:1px solid #eef0f3; color:#333; vertical-align:top; }
+.brief-body pre { background:#f4f5f7; border:1px solid #e8eaed; border-radius:8px; padding:12px 14px; overflow-x:auto; margin:10px 0 16px; }
+.brief-body code { font-family:Consolas,Menlo,monospace; font-size:12.5px; color:#c0392b; }
+.brief-body pre code { color:#2b3a55; white-space:pre; }
+.brief-body blockquote { margin:10px 0 16px; padding:10px 14px; border-left:4px solid #3d5a80; background:#f7f8fa; color:#6b7280; font-size:13px; line-height:1.7; }
+.brief-body hr { border:none; border-top:1px solid #eef0f3; margin:20px 0; }
+.brief-body a { color:#3d5a80; text-decoration:underline; }
+</style>
+</head>
+<body style="margin:0;background:#f4f5f7;padding:24px 0">
+<div style="max-width:680px;margin:0 auto;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.06)">
+  <div style="background:linear-gradient(135deg,#2b3a55,#3d5a80);color:#fff;padding:22px 26px">
+    <div style="font-size:13px;opacity:.8;letter-spacing:1px">原神攻略站 · 实战教程合集</div>
+    <div style="font-size:20px;font-weight:700;margin-top:4px">部署教程 · Git → GitHub → Vercel</div>
+    <div style="font-size:13px;opacity:.9;margin-top:6px">一条龙自动部署 SOP：改代码 → git push → 自动上线</div>
+    <div style="font-size:12px;opacity:.7;margin-top:8px">2026-07-29 · 周三</div>
+  </div>
+  <div style="padding:20px 26px" class="brief-body">
+<h1>教程一：从 Git → GitHub → Vercel 自动部署</h1>
+<blockquote>
+<p>适用：纯静态网站（HTML/CSS/JS 单文件或多文件），如本《原神》攻略站。<br />
+目标：改一次代码 → <code>git push</code> → 网站自动更新，网址永久不变。<br />
+前置：已装 Git、有 GitHub 账号、有 Vercel 账号（免费版即可）。</p>
+</blockquote>
+<hr />
+<h2>一、本地初始化（第一次做）</h2>
+<p>假设项目文件放在 <code>E:\workbuddy\项目名\</code>（<strong>一律放 E 盘，别放 C 盘</strong>）。</p>
+<pre><code class="language-bash">cd E:/workbuddy/项目名
+git init
+git add -A
+git commit -m &quot;initial&quot;
+</code></pre>
+<blockquote>
+<p>首次提交前建议放一个 <code>vercel.json</code>，纯静态站用这个：<br />
+<code>json
+{ "version": 2, "outputDirectory": "." }</code></p>
+</blockquote>
+<hr />
+<h2>二、登录 GitHub（只需做一次）</h2>
+<h3>方法 A：用 GitHub CLI（推荐，最省事）</h3>
+<pre><code class="language-bash">gh auth login
+</code></pre>
+<p>按提示选 GitHub.com → 选 HTTPS → 选「Login with a web browser」→ 它给一个一次性码，复制到浏览器授权即可。</p>
+<h3>方法 B：手动发 Personal Access Token（PAT）</h3>
+<ol>
+<li>GitHub 网页 → Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate</li>
+<li>勾 <code>Contents: Read and write</code></li>
+<li>把生成的 token 保存好，本地 push 时用户名填 GitHub 账号、密码填 token。</li>
+</ol>
+<p>登录后让 git 走 gh 凭证（避免每次输密码）：</p>
+<pre><code class="language-bash">gh auth setup-git
+</code></pre>
+<hr />
+<h2>三、建仓库并推送（一条命令）</h2>
+<pre><code class="language-bash">gh repo create 项目名 --public --source=. --push
+</code></pre>
+<p>这条命令会自动：① 在 GitHub 建公开仓库 → ② 连 <code>origin</code> remote → ③ 推送当前分支。<br />
+仓库地址： <code>https://github.com/&lt;你的账号&gt;/&lt;项目名&gt;</code></p>
+<blockquote>
+<p>若仓库名已存在：<code>gh repo create 项目名 --public --source=. --remote=origin --push</code> 连已有仓库。</p>
+</blockquote>
+<hr />
+<h2>四、Vercel 关联部署（只需做一次）</h2>
+<ol>
+<li>打开 https://vercel.com → 登录（点 <strong>Continue with GitHub</strong> 授权）</li>
+<li><strong>Add New... → Project</strong></li>
+<li>在 <strong>Import Git Repository</strong> 里找到你的仓库 → 点 <strong>Import</strong></li>
+<li>关键设置：</li>
+<li><strong>Framework Preset</strong> → 选 <strong>Other</strong>（纯静态站，不要选 Jekyll/Vite 等）</li>
+<li><strong>Project Name</strong> → 可自定义（最终地址 = <code>项目名.vercel.app</code>）</li>
+<li><strong>Root Directory</strong> → <code>./</code></li>
+<li>点 <strong>Deploy</strong></li>
+</ol>
+<p>部署完拿到地址，如 <code>https://genshin-guide-one-five.vercel.app</code>。</p>
+<hr />
+<h2>五、统一域名（重要，避免 SEO 链接错乱）</h2>
+<p>拿到 Vercel 地址后，把代码里所有出现的<strong>旧/占位域名</strong>全局替换成新地址：</p>
+<pre><code class="language-bash"># 在 Linux/Git Bash 下批量替换（Windows 用 VS Code 全局替换更直观）
+grep -rn &quot;旧域名&quot; index.html sitemap.xml robots.txt
+# 确认后逐个改，或：
+sed -i 's#旧域名#新域名#g' index.html sitemap.xml robots.txt
+</code></pre>
+<p>改完提交推送：</p>
+<pre><code class="language-bash">git add -A
+git commit -m &quot;fix: update domain&quot;
+git push
+</code></pre>
+<blockquote>
+<p>⚠️ <strong>分支坑（我们踩过）</strong>：GitHub 仓库默认分支可能是 <code>main</code>，而本地代码在 <code>master</code>，Vercel 默认拉 <code>main</code> 会部署成<strong>另一个项目</strong>。<br />
+解决：确保 Vercel 的 Production Branch 指向你的实际分支；或把代码推到 <code>main</code>：<br />
+<code>bash
+git push origin master:main --force</code><br />
+推送前务必把旧 <code>main</code> 备份：<code>git push origin &lt;旧main的SHA&gt;:refs/heads/backup-old-main</code>。</p>
+</blockquote>
+<hr />
+<h2>六、以后更新网站（日常）</h2>
+<p>你说"改 XX" → 我改完文件 → 执行：</p>
+<pre><code class="language-bash">git add -A
+git commit -m &quot;改动说明&quot;
+git push
+</code></pre>
+<p>Vercel 收到 webhook 自动重新部署，<strong>你什么都不用做</strong>，刷新网址就是新版。</p>
+<blockquote>
+<p>若本地在 <code>master</code> 而 Vercel 盯 <code>main</code>，记得两个都推：<br />
+<code>bash
+git push origin master &amp;&amp; git push origin master:main</code></p>
+</blockquote>
+<hr />
+<h2>七、排错速查</h2>
+<table>
+<thead>
+<tr>
+<th>现象</th>
+<th>原因</th>
+<th>解决</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>线上不是我的站</td>
+<td>分支错配（main/master）</td>
+<td>把代码推到 Vercel 实际拉的分支</td>
+</tr>
+<tr>
+<td>push 报 Connection reset</td>
+<td>网络抖动</td>
+<td>重试；或 <code>git -c http.version=HTTP/1.1 push</code></td>
+</tr>
+<tr>
+<td>Vercel 地址每次都变</td>
+<td>每次去 /new 新建项目</td>
+<td>只首次 Import，之后只 push</td>
+</tr>
+<tr>
+<td>部署后内容没变</td>
+<td>CDN 缓存</td>
+<td>等 1–2 分钟，加 <code>?v=1</code> 强刷</td>
+</tr>
+<tr>
+<td>页面 404</td>
+<td>outputDirectory 设错</td>
+<td>vercel.json 设 <code>.</code>，Preset 选 Other</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>八、换自己买的域名（可选，花钱）</h2>
+<ol>
+<li>在域名商（如 Namecheap/阿里云）买 <code>.com</code></li>
+<li>Vercel 项目 → Settings → Domains → 添加域名</li>
+<li>按提示去域名商加 DNS 记录（CNAME / TXT）</li>
+<li>验证通过后，Vercel 自动签发 SSL，再把代码里域名替换成新域名推送。</li>
+</ol>
+  </div>
+  <div style="background:#f7f8fa;color:#9aa0a6;font-size:12px;padding:14px 26px;text-align:center;border-top:1px solid #eef0f3">本教程由原神攻略站实战流程整理，复盘简报版式，仅供学习参考。</div>
+</div>
+</body>
+</html>

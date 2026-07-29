@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8">
+<style>
+.brief-body { font-family:-apple-system,Segoe UI,Microsoft YaHei,sans-serif; color:#1f2329; }
+.brief-body h1 { font-size:19px; margin:28px 0 14px; padding-bottom:8px; border-bottom:2px solid #3d5a80; color:#1f2329; }
+.brief-body h2 { font-size:15px; margin:24px 0 12px; padding-left:10px; border-left:4px solid #3d5a80; color:#1f2329; }
+.brief-body h2:nth-of-type(3n+1) { border-left-color:#3d5a80; }
+.brief-body h2:nth-of-type(3n+2) { border-left-color:#c0392b; }
+.brief-body h2:nth-of-type(3n)   { border-left-color:#e08e0b; }
+.brief-body h3 { font-size:14px; margin:18px 0 8px; color:#3d5a80; }
+.brief-body p { font-size:13.5px; line-height:1.75; color:#333; margin:8px 0; }
+.brief-body ul, .brief-body ol { font-size:13.5px; color:#333; line-height:1.8; padding-left:20px; margin:8px 0; }
+.brief-body li { margin:4px 0; }
+.brief-body strong { color:#1f2329; }
+.brief-body table { width:100%; border-collapse:collapse; font-size:13px; margin:10px 0 18px; }
+.brief-body th { background:#f7f8fa; color:#5a6573; text-align:left; padding:9px 11px; font-weight:600; border-bottom:2px solid #e3e6ea; }
+.brief-body td { padding:9px 11px; border-bottom:1px solid #eef0f3; color:#333; vertical-align:top; }
+.brief-body pre { background:#f4f5f7; border:1px solid #e8eaed; border-radius:8px; padding:12px 14px; overflow-x:auto; margin:10px 0 16px; }
+.brief-body code { font-family:Consolas,Menlo,monospace; font-size:12.5px; color:#c0392b; }
+.brief-body pre code { color:#2b3a55; white-space:pre; }
+.brief-body blockquote { margin:10px 0 16px; padding:10px 14px; border-left:4px solid #3d5a80; background:#f7f8fa; color:#6b7280; font-size:13px; line-height:1.7; }
+.brief-body hr { border:none; border-top:1px solid #eef0f3; margin:20px 0; }
+.brief-body a { color:#3d5a80; text-decoration:underline; }
+</style>
+</head>
+<body style="margin:0;background:#f4f5f7;padding:24px 0">
+<div style="max-width:680px;margin:0 auto;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.06)">
+  <div style="background:linear-gradient(135deg,#2b3a55,#3d5a80);color:#fff;padding:22px 26px">
+    <div style="font-size:13px;opacity:.8;letter-spacing:1px">原神攻略站 · 实战教程合集</div>
+    <div style="font-size:20px;font-weight:700;margin-top:4px">收录教程 · Google Search Console</div>
+    <div style="font-size:13px;opacity:.9;margin-top:6px">HTML 标记验证 · sitemap 提交 · 请求索引 · 排名优化</div>
+    <div style="font-size:12px;opacity:.7;margin-top:8px">2026-07-29 · 周三</div>
+  </div>
+  <div style="padding:20px 26px" class="brief-body">
+<h1>教程二：Google 收录与 Google Search Console（GSC）</h1>
+<blockquote>
+<p>适用：已部署上线的网站（如 <code>https://genshin-guide-one-five.vercel.app</code>）。<br />
+目标：让 Google 收录你的站，并尽量在搜索中排名靠前。<br />
+前置：网站已上线 + 你有 Google 账号。</p>
+</blockquote>
+<hr />
+<h2>一、添加资源并验证（必须你亲自登录 Google）</h2>
+<ol>
+<li>打开 https://search.google.com/search-console</li>
+<li>左上角 <strong>「添加资源」</strong> → 选 <strong>「网址前缀」</strong>（不是网域）</li>
+<li>输入完整地址（含 <code>https://</code>）：<br />
+<code>https://genshin-guide-one-five.vercel.app</code><br />
+   → 点 <strong>继续</strong></li>
+</ol>
+<hr />
+<h2>二、验证方式：选「HTML 标记」（最简单）</h2>
+<blockquote>
+<p>⚠️ 别选「HTML 文件」——那要往根目录塞一个空文件。选 <strong>HTML 标记</strong> 只需在 <code>&lt;head&gt;</code> 加一行。</p>
+</blockquote>
+<ol>
+<li>在验证方法里选 <strong>「HTML 标记」</strong></li>
+<li>复制它给的那段代码里的 <code>content</code> 值，类似：<br />
+<code>t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A</code></li>
+<li><strong>把这串字符发给帮你部署的人</strong>（或自己加）：<br />
+   在 <code>index.html</code> 的 <code>&lt;head&gt;</code> 里，<code>&lt;meta name="theme-color"&gt;</code> 之后加一行：<br />
+<code>html
+   &lt;meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" /&gt;</code></li>
+<li>提交推送：<br />
+<code>bash
+   git add -A &amp;&amp; git commit -m "seo: add GSC verification" &amp;&amp; git push</code><br />
+   （若 Vercel 盯 main：<code>git push origin master:main</code>）</li>
+<li>等 Vercel 重新部署完（1–2 分钟），回 GSC 点 <strong>「验证」</strong> → 显示 ✅ 已验证。</li>
+</ol>
+<blockquote>
+<p>想确认线上是否生效，可用 curl 抓 HTML 看有没有这段 meta：<br />
+<code>bash
+curl -s https://你的地址/ | grep google-site-verification</code></p>
+</blockquote>
+<hr />
+<h2>三、提交站点地图 sitemap.xml（核心收录入口）</h2>
+<ol>
+<li>GSC 左侧菜单 → <strong>「站点地图」</strong></li>
+<li>输入框填  <code>sitemap.xml</code>  → 点 <strong>提交</strong></li>
+<li>状态显示 <strong>「成功」</strong> → Google 会按地图里的链接自动抓取全部页面。</li>
+</ol>
+<blockquote>
+<p>提交前确认 sitemap.xml 里所有链接都指向<strong>当前真实域名</strong>（我们曾踩坑：英文版链接漏改成旧 CloudStudio 地址）。本地全局搜一遍旧域名再推：<br />
+<code>bash
+grep -rn "旧域名\|agentos-app" .</code></p>
+</blockquote>
+<hr />
+<h2>四、请求编入索引（加速，可选）</h2>
+<ol>
+<li>左侧 → <strong>「网址检查」</strong></li>
+<li>粘贴首页地址 → 回车</li>
+<li>点 <strong>「请求编入索引」</strong>（Request indexing）</li>
+</ol>
+<blockquote>
+<p>⚠️ <strong>每日配额限制</strong>：GSC 这个功能每天只能点几次，超了会报「超出了配额 / 今天已超出每日配额，请明天再试」。<br />
+<strong>这不是网站问题，是 Google 的限流</strong>。即使今天点不了，只要 sitemap 已提交，Google 几天内也会自动收录。明天配额重置再点一次即可。</p>
+</blockquote>
+<hr />
+<h2>五、让排名更靠前（你的原目标）</h2>
+<p>光收录不够，要超过靠前攻略站，核心打法：<strong>长尾词 + 外链</strong>，大站做不好的地方我们正好强。</p>
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>具体动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>长尾词命中</strong></td>
+<td>抽卡模拟器、原石规划器、元素反应演示、零氪开荒日程——这些「工具词」大站多是纯文字，我们是可交互独家内容</td>
+</tr>
+<tr>
+<td><strong>多语覆盖</strong></td>
+<td>英文版（Genshin starter guide / gacha simulator）吃海外 Google 流量；已配 <code>hreflang</code> 让中英文各搜各的</td>
+</tr>
+<tr>
+<td><strong>外链分发</strong></td>
+<td>把站点链接发到米游社 / B站 / 小红书 / 贴吧 / Reddit，每篇带链接 = 给 Google 投票</td>
+</tr>
+<tr>
+<td><strong>结构化数据</strong></td>
+<td>页面已加 JSON-LD，帮助 Google 理解内容类型</td>
+</tr>
+<tr>
+<td><strong>持续更新</strong></td>
+<td>用 Git 部署随便改，更新频率高利于排名</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>六、排错速查</h2>
+<table>
+<thead>
+<tr>
+<th>现象</th>
+<th>原因</th>
+<th>解决</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GSC 报「找不到验证文件」</td>
+<td>选了 HTML 文件法但没放文件</td>
+<td>改用 HTML 标记法，加 meta 标签</td>
+</tr>
+<tr>
+<td>验证失败（已加 tag）</td>
+<td>Vercel 还没重新部署完</td>
+<td>等 1–2 分钟再点验证</td>
+</tr>
+<tr>
+<td>「超出了配额」</td>
+<td>当天请求索引次数用尽</td>
+<td>明天再试，不影响收录</td>
+</tr>
+<tr>
+<td>sitemap 提交报错</td>
+<td>XML 格式错 / 链接域名不对</td>
+<td>本地核对 XML，旧域名全局替换</td>
+</tr>
+<tr>
+<td>搜 <code>site:域名</code> 看不到</td>
+<td>还没被收录 / 刚提交</td>
+<td>等几天，先请求编入索引</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>七、检查收录进度</h2>
+<ul>
+<li>GSC 左侧 <strong>「效果」</strong> 看曝光/点击</li>
+<li>直接 Google 搜： <code>site:genshin-guide-one-five.vercel.app</code></li>
+<li>几天后能看到你的页面，说明已收录成功。</li>
+</ul>
+  </div>
+  <div style="background:#f7f8fa;color:#9aa0a6;font-size:12px;padding:14px 26px;text-align:center;border-top:1px solid #eef0f3">本教程由原神攻略站实战流程整理，复盘简报版式，仅供学习参考。</div>
+</div>
+</body>
+</html>

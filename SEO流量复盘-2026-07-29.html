@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+</head>
+<body style="margin:0;background:#f4f5f7;font-family:-apple-system,Segoe UI,Microsoft YaHei,sans-serif;color:#1f2329;padding:24px 0">
+<div style="max-width:680px;margin:0 auto;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.06)">
+  <div style="background:linear-gradient(135deg,#2b3a55,#3d5a80);color:#fff;padding:22px 26px">
+    <div style="font-size:13px;opacity:.8;letter-spacing:1px">SEO 流量复盘 · 原神攻略站</div>
+    <div style="font-size:22px;font-weight:700;margin-top:4px">GSC 数据诊断与增长方案</div>
+    <div style="font-size:13px;opacity:.7;margin-top:6px">2026-07-29 · 周三 ｜ 目标：曝光 15 → 1500+ / 月</div>
+  </div>
+
+  <div style="padding:24px 26px">
+    <!-- ===== 一、现状诊断 ===== -->
+    <h2 style="font-size:15px;margin:0 0 14px;padding-left:10px;border-left:4px solid #3d5a80">一、现状诊断：为什么只有 15 次</h2>
+    <table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:8px">
+      <tr style="background:#f7f8fa;color:#5a6573">
+        <th style="text-align:left;padding:10px 12px;font-weight:600">指标</th>
+        <th style="text-align:right;padding:10px 12px;font-weight:600">数值</th>
+        <th style="text-align:left;padding:10px 12px;font-weight:600">含义</th>
+      </tr>
+      <tr style="border-bottom:1px solid #eef0f3">
+        <td style="padding:10px 12px">总点击</td>
+        <td style="text-align:right;padding:10px 12px;color:#c0392b;font-weight:700">0</td>
+        <td style="padding:10px 12px;color:#6b7280">没人从 Google 点进来过</td>
+      </tr>
+      <tr style="border-bottom:1px solid #eef0f3">
+        <td style="padding:10px 12px">总曝光</td>
+        <td style="text-align:right;padding:10px 12px;color:#c0392b;font-weight:700">15</td>
+        <td style="padding:10px 12px;color:#6b7280">3 个月才被搜到展示 15 次</td>
+      </tr>
+      <tr style="border-bottom:1px solid #eef0f3">
+        <td style="padding:10px 12px">点击率</td>
+        <td style="text-align:right;padding:10px 12px;color:#c0392b;font-weight:700">0%</td>
+        <td style="padding:10px 12px;color:#6b7280">展示了但没人点</td>
+      </tr>
+      <tr style="border-bottom:1px solid #eef0f3">
+        <td style="padding:10px 12px">平均排名</td>
+        <td style="text-align:right;padding:10px 12px;font-weight:700">9.6</td>
+        <td style="padding:10px 12px;color:#6b7280">卡在第 10 名边缘（首页=前 10）</td>
+      </tr>
+    </table>
+    <p style="font-size:13px;color:#6b7280;line-height:1.6;margin:6px 0 22px">3 个月仅 15 次曝光对新站属正常区间，但根因清晰——按权重排序：<b>① 站太新无权重</b>（沙盒期）⭐⭐⭐⭐⭐、<b>② 零外链</b>（Google 不知你存在）⭐⭐⭐⭐⭐、<b>③ 无内容更新</b>⭐⭐⭐⭐、<b>④ 关键词竞争激烈</b>（"原神攻略"被大站霸占）⭐⭐⭐、<b>⑤ 旧 GitHub Pages 站分散权重</b>⭐⭐⭐。旧站 `kyle1188.github.io/genshin-guide/` 仍在 GSC，可能造成重复内容。</p>
+
+    <!-- ===== 二、第一阶段 ===== -->
+    <h2 style="font-size:15px;margin:0 0 14px;padding-left:10px;border-left:4px solid #c0392b">二、第一阶段：本周立刻做（3 步）</h2>
+
+    <p style="font-size:14px;font-weight:600;margin:0 0 8px;color:#1f2329">① 换掉 GSC 里的旧站</p>
+    <ol style="font-size:13.5px;color:#333;line-height:1.8;margin:0 0 16px;padding-left:20px">
+      <li>打开 search.google.com/search-console</li>
+      <li>左侧删除旧资源 <code style="background:#f2f3f5;padding:1px 5px;border-radius:4px">kyle1188.github.io/genshin-guide/</code></li>
+      <li>添加资源 → 网址前缀填 <code style="background:#f2f3f5;padding:1px 5px;border-radius:4px">https://genshin-guide-one-five.vercel.app</code></li>
+      <li>验证选 <b>HTML 标记</b>（验证码已写进代码，直接过）</li>
+      <li>提交 sitemap.xml → 首页请求编入索引</li>
+    </ol>
+    <p style="font-size:13px;color:#6b7280;line-height:1.6;margin:0 0 18px">旧站已废弃却仍在 GSC，会分散精力且可能被判重复内容降权；新 Vercel 站有完整 SEO 地基（i18n / hreflang / JSON-LD / sitemap）。</p>
+
+    <p style="font-size:14px;font-weight:600;margin:0 0 8px;color:#1f2329">② 发外链（本周核心动作）</p>
+    <table style="width:100%;border-collapse:collapse;font-size:13px;margin-bottom:8px">
+      <tr style="background:#f7f8fa;color:#5a6573">
+        <th style="text-align:left;padding:9px 10px;font-weight:600">平台</th>
+        <th style="text-align:left;padding:9px 10px;font-weight:600">文案 / 文件</th>
+      </tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:9px 10px">米游社 / 小红书 / 贴吧 / B站</td><td style="padding:9px 10px">推广文案包.md（各平台版）</td></tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:9px 10px">推特 / X</td><td style="padding:9px 10px">推特推广文案.md（中+英主推文）</td></tr>
+    </table>
+    <ul style="font-size:13px;color:#333;line-height:1.7;margin:6px 0 16px;padding-left:18px">
+      <li>每条必须带链接 + 配图（有图曝光高 3–5 倍）</li>
+      <li>真诚分享"我做了个工具好用"，别硬广</li>
+      <li>发完去大号下评论带链接，转化更高</li>
+      <li>每周 2–3 条不同角度</li>
+    </ul>
+
+    <p style="font-size:14px;font-weight:600;margin:0 0 8px;color:#1f2329">③ 请求编入索引</p>
+    <p style="font-size:13px;color:#6b7280;line-height:1.6;margin:0 0 22px">GSC → 网址检查 → 贴首页 URL → 请求编入索引。Google 有每日配额（每天几次），超了显示"超出了配额"是正常，第二天重置，持续点到通过。</p>
+
+    <!-- ===== 三、第二阶段 ===== -->
+    <h2 style="font-size:15px;margin:0 0 14px;padding-left:10px;border-left:4px solid #e08e0b">三、第二阶段：1–2 周</h2>
+    <table style="width:100%;border-collapse:collapse;font-size:13px;margin-bottom:12px">
+      <tr style="background:#f7f8fa;color:#5a6573">
+        <th style="text-align:left;padding:9px 10px;font-weight:600">动作</th>
+        <th style="text-align:left;padding:9px 10px;font-weight:600">频率</th>
+        <th style="text-align:left;padding:9px 10px;font-weight:600">效果</th>
+      </tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:9px 10px">平台发帖</td><td style="padding:9px 10px">每周 2–3 条</td><td style="padding:9px 10px">外链数 = 权重基础</td></tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:9px 10px">大号下评论带链接</td><td style="padding:9px 10px">每天 1–2 条</td><td style="padding:9px 10px">自然外链，权重高</td></tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:9px 10px">写长尾词文章</td><td style="padding:9px 10px">每周 1 篇</td><td style="padding:9px 10px">覆盖大站吃不到的意图</td></tr>
+    </table>
+    <p style="font-size:13.5px;font-weight:600;margin:0 0 8px;color:#1f2329">长尾词方向（我来写）：</p>
+    <table style="width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:10px">
+      <tr style="background:#f7f8fa;color:#5a6573">
+        <th style="text-align:left;padding:8px 9px;font-weight:600">长尾词</th>
+        <th style="text-align:left;padding:8px 9px;font-weight:600">为什么有效</th>
+        <th style="text-align:left;padding:8px 9px;font-weight:600">对应工具</th>
+      </tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:8px 9px">原神抽卡保底机制详解</td><td style="padding:8px 9px">大站只有文字，我们有模拟器</td><td style="padding:8px 9px">抽卡模拟器</td></tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:8px 9px">原石获取全渠道汇总</td><td style="padding:8px 9px">一站式整理，信息散落各处</td><td style="padding:8px 9px">原石规划器</td></tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:8px 9px">元素反应表新手向</td><td style="padding:8px 9px">大站表不交互，我们能看动画</td><td style="padding:8px 9px">元素反应演示</td></tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:8px 9px">原神零氪开荒顺序2026</td><td style="padding:8px 9px">时间敏感，竞争小</td><td style="padding:8px 9px">开荒打卡清单</td></tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:8px 9px">Genshin beginner guide English</td><td style="padding:8px 9px">海外长尾，双语站独有</td><td style="padding:8px 9px">全站 i18n</td></tr>
+    </table>
+    <p style="font-size:13px;color:#6b7280;line-height:1.6;margin:0 0 22px">每周看一次 GSC <b>效果报告</b>：曝光是否涨、CTR 低则优化标题/描述、平均排名目标从第 10 进前 5。截图给我，帮你分析哪些词能冲。</p>
+
+    <!-- ===== 四、第三阶段 ===== -->
+    <h2 style="font-size:15px;margin:0 0 14px;padding-left:10px;border-left:4px solid #3d5a80">四、第三阶段：1–3 月预期时间线</h2>
+    <table style="width:100%;border-collapse:collapse;font-size:13px;margin-bottom:12px">
+      <tr style="background:#f7f8fa;color:#5a6573">
+        <th style="text-align:left;padding:9px 10px;font-weight:600">时间节点</th>
+        <th style="text-align:left;padding:9px 10px;font-weight:600">预期曝光</th>
+        <th style="text-align:left;padding:9px 10px;font-weight:600">关键动作</th>
+      </tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:9px 10px">第 1 周</td><td style="padding:9px 10px;color:#3d5a80;font-weight:700">15 → 50</td><td style="padding:9px 10px">换 GSC 资源 + 首批外链 3–5 条 + 索引</td></tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:9px 10px">第 2–4 周</td><td style="padding:9px 10px;color:#3d5a80;font-weight:700">50 → 200</td><td style="padding:9px 10px">外链累计 10–20 条 + 长尾文 2–3 篇</td></tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:9px 10px">第 2 月</td><td style="padding:9px 10px;color:#3d5a80;font-weight:700">200 → 800</td><td style="padding:9px 10px">外链稳增 + Google 给更多词排名</td></tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:9px 10px">第 3 月</td><td style="padding:9px 10px;color:#1aa260;font-weight:700">800 → 1500+</td><td style="padding:9px 10px">长尾矩阵成型 + 停留时间提升</td></tr>
+    </table>
+    <p style="font-size:13.5px;font-weight:600;margin:0 0 8px;color:#1f2329">为什么能成（我们的优势 vs 大站劣势）：</p>
+    <ul style="font-size:13px;color:#333;line-height:1.7;margin:0 0 14px;padding-left:18px">
+      <li>5 个<b>可交互</b>工具（大站只有静态文字/图）</li>
+      <li>中英<b>双语自动切换</b>（大站大多只有中文）</li>
+      <li>单页 Vercel CDN <b>加载快、无广告</b>（大站广告多、慢）</li>
+      <li>长尾词<b>覆盖精准</b>（大站只做头部大词）</li>
+    </ul>
+    <p style="font-size:13.5px;font-weight:600;margin:0 0 8px;color:#1f2329">数据不达预期怎么办：</p>
+    <table style="width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:10px">
+      <tr style="background:#f7f8fa;color:#5a6573">
+        <th style="text-align:left;padding:8px 9px;font-weight:600">情况</th>
+        <th style="text-align:left;padding:8px 9px;font-weight:600">调整方案</th>
+      </tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:8px 9px">曝光不涨</td><td style="padding:8px 9px">外链量翻倍 + 检查 sitemap 提交</td></tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:8px 9px">曝光涨但 CTR 低</td><td style="padding:8px 9px">优化 title / meta description</td></tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:8px 9px">排名卡 10–20 名</td><td style="padding:8px 9px">更多长尾文 + 高权重平台外链（知乎/CSDN/Medium）</td></tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:8px 9px">3 月仍 &lt;500</td><td style="padding:8px 9px">买 .com 域名（信任度高于 vercel.app）+ 301 重定向</td></tr>
+    </table>
+
+    <!-- ===== 五、命令速查 ===== -->
+    <h2 style="font-size:15px;margin:26px 0 14px;padding-left:10px;border-left:4px solid #3d5a80">五、命令速查表</h2>
+    <table style="width:100%;border-collapse:collapse;font-size:13px">
+      <tr style="background:#f7f8fa;color:#5a6573">
+        <th style="text-align:left;padding:9px 10px;font-weight:600">操作</th>
+        <th style="text-align:left;padding:9px 10px;font-weight:600">命令 / 路径</th>
+      </tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:9px 10px">查看 GSC 数据</td><td style="padding:9px 10px">search.google.com/search-console → 效果报告</td></tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:9px 10px">提交 sitemap</td><td style="padding:9px 10px">GSC → 站点地图 → 输入 <code style="background:#f2f3f5;padding:1px 5px;border-radius:4px">sitemap.xml</code></td></tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:9px 10px">请求索引</td><td style="padding:9px 10px">GSC → 网址检查 → 贴 URL → 请求编入索引</td></tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:9px 10px">推送代码更新</td><td style="padding:9px 10px"><code style="background:#f2f3f5;padding:1px 5px;border-radius:4px">git push</code>（Vercel 自动部署）</td></tr>
+      <tr style="border-bottom:1px solid #eef0f3"><td style="padding:9px 10px">线上地址</td><td style="padding:9px 10px">https://genshin-guide-one-five.vercel.app</td></tr>
+    </table>
+
+    <!-- ===== 六、关键提醒 ===== -->
+    <h2 style="font-size:15px;margin:26px 0 14px;padding-left:10px;border-left:4px solid #3d5a80">六、关键提醒</h2>
+    <ol style="font-size:13px;color:#333;line-height:1.8;margin:0;padding-left:20px">
+      <li><b>不是一夜之间</b>——新站 0→有流量通常 1–3 月，坚持发外链是唯一捷径</li>
+      <li><b>质量 > 数量</b>——3 条真诚分享胜 100 条垃圾 spam</li>
+      <li><b>工具是护城河</b>——抽卡模拟器、元素反应演示大站做不到，推广重点突出</li>
+      <li><b>每周看一次 GSC</b>——不用天天盯，但完全不看不知什么在起作用</li>
+      <li><b>保持更新</b>——每月改一点（加工具/修 bug/写新文），Google 提高抓取频率</li>
+    </ol>
+  </div>
+
+  <div style="background:#f7f8fa;color:#9aa0a6;font-size:12px;padding:14px 26px;text-align:center;border-top:1px solid #eef0f3">本简报基于 2026-07-29 真实 GSC 数据自动整理，仅供增长参考，不构成流量承诺。</div>
+</div>
+</body>
+</html>
