@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://genshin-guide-three.vercel.app/</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-three.vercel.app/" />
+    <loc>https://genshin-guide-1.vercel.app/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-1.vercel.app/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://dcc502452e874bb0943f6b2a0046f6b2a0046f415.bj7.agentos-app.net/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-three.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-1.vercel.app/" />
     <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>

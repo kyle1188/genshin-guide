@@ -43,7 +43,7 @@
 
 ✅ 完成！之后**只要 `git push`，这个地址就自动更新**，不用再拖文件夹。
 
-> 旧的 `genshin-guide-three.vercel.app`（Drop 上传版）现在可以不管，也可在 Vercel 项目设置最底部「Delete Project」删掉。
+> 旧的 `genshin-guide-1.vercel.app`（Drop 上传版）现在可以不管，也可在 Vercel 项目设置最底部「Delete Project」删掉。
 
 ---
 
@@ -68,5 +68,5 @@ push 成功 → 几秒后 Vercel 自动重新部署 → 线上就是最新版。
   ```bash
   git config user.email "你真实的github邮箱"
   ```
-- **域名**：当前站点文件里的域名是 `genshin-guide-three.vercel.app`。第 2 步导入后若 Vercel 给了新地址，把新地址发我，我把 `index.html`(canonical/hreflang/JSON-LD/og:url)、`sitemap.xml`、`robots.txt` 三处域名一次性改掉再 push。
+- **域名**：当前站点文件里的域名是 `genshin-guide-1.vercel.app`。第 2 步导入后若 Vercel 给了新地址，把新地址发我，我把 `index.html`(canonical/hreflang/JSON-LD/og:url)、`sitemap.xml`、`robots.txt` 三处域名一次性改掉再 push。
 - **私有仓库**：上面用 `--private` 是私有的，Vercel 仍能访问（你授权过）。想公开也行，把 `--private` 去掉即可。
