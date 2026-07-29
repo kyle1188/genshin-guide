@@ -1,0 +1,250 @@
+<!doctype html>
+<!-- deployed: English Furina build guide (single-language, en + x-default). zh-CN pair to be added later. -->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Genshin Furina Build Guide 2026 — Best Weapons, Artifacts &amp; Teams</title>
+<meta name="description" content="The complete Furina build guide for Genshin Impact in 2026: best weapons (Splendor of Tranquil Waters, F2P picks like Fleuve Cendre Ferryman), the Golden Troupe artifact set, stat targets, team comps, and the HP-fluctuation mechanic that makes her the strongest 5-star buffer." />
+<meta name="keywords" content="genshin furina build, furina best weapons, furina artifacts, furina team comp, furina f2p build, furina golden troupe, genshin hydro archon build" />
+<meta name="author" content="Teyvat Starter Guide" />
+<meta name="theme-color" content="#0c0f16" />
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/furina-build-en.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/furina-build-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/furina-build-en.html" />
+<meta property="og:title" content="Genshin Furina Build Guide 2026 — Best Weapons, Artifacts & Teams" />
+<meta property="og:description" content="Best weapons, the Golden Troupe set, stat targets, team comps, and the HP-fluctuation mechanic behind the strongest 5-star buffer in Genshin." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/furina-build-en.html" />
+<meta property="og:locale" content="en_US" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Genshin Furina Build Guide 2026 — Best Weapons, Artifacts & Teams",
+  "description":"A complete Furina build guide: weapons, the Golden Troupe artifact set, stat targets, team comps, and the HP-fluctuation mechanic.",
+  "author":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "publisher":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "datePublished":"2026-07-29",
+  "dateModified":"2026-07-29",
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://genshin-guide-one-five.vercel.app/guides/furina-build-en.html"}
+}
+</script>
+<style>
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff;
+    --fire:#ff6b4a; --water:#4aa8ff; --thunder:#b06bff; --grass:#7dd35f; --rock:#e0c068; --wind:#a8e6cf;
+    --r:14px; --maxw:920px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.8; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:14px; height:58px}
+  .brand{display:flex; align-items:center; gap:9px; font-weight:700; letter-spacing:.5px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+  .brand b{color:var(--gold)}
+  .lang{color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .lang:hover{color:var(--txt); background:var(--panel)}
+  .back{margin-left:auto; color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .back:hover{color:var(--txt); background:var(--panel)}
+  .crumb{font-size:13px; color:var(--txt-mute); margin:26px 0 4px}
+  .crumb a{color:var(--txt-dim)}
+  article{padding:8px 0 40px}
+  h1{font-size:clamp(26px,4.4vw,38px); line-height:1.25; margin:6px 0 14px; letter-spacing:.3px}
+  h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .lead{color:#cdd6e4; font-size:16px; margin:0 0 26px}
+  h2{font-size:clamp(20px,3vw,26px); margin:38px 0 12px; padding-left:14px; border-left:4px solid var(--gold)}
+  h3{font-size:18px; margin:22px 0 8px; color:#fff}
+  p{color:var(--txt-dim); margin:10px 0}
+  ul,ol{color:var(--txt-dim); padding-left:22px}
+  li{margin:6px 0}
+  .src-note{font-size:13px; color:var(--txt-mute); border-left:3px solid var(--line); padding:8px 14px; margin:18px 0; background:var(--panel); border-radius:0 8px 8px 0}
+  .grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; transition:.2s}
+  .card:hover{border-color:rgba(232,196,116,.4)}
+  .card h3{display:flex; align-items:center; gap:10px; margin-top:0}
+  .tag{font-size:12px; font-weight:700; color:#0c0f16; padding:3px 9px; border-radius:7px; white-space:nowrap}
+  .tag.fire{background:var(--fire)} .tag.water{background:var(--water)} .tag.thunder{background:var(--thunder)}
+  .tag.grass{background:var(--grass)} .tag.rock{background:var(--rock)} .tag.wind{background:var(--wind)}
+  .card .role{font-size:13px; color:var(--gold); font-weight:600; margin:2px 0 8px}
+  .card p{font-size:14px; margin:6px 0}
+  .mini{font-size:13px; color:var(--txt-mute); margin-top:8px; border-top:1px dashed var(--line); padding-top:8px}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; background:var(--panel); border-radius:var(--r); overflow:hidden}
+  th,td{padding:11px 13px; text-align:left; border-bottom:1px solid var(--line); color:var(--txt-dim)}
+  th{background:rgba(232,196,116,.08); color:var(--gold); font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .callout{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .callout b{color:var(--gold)}
+  .btn{padding:11px 18px; border-radius:12px; font-weight:700; font-size:14px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; border:1px solid transparent}
+  .btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--txt-mute); font-size:13px; text-align:center}
+  footer a{color:var(--txt-dim)}
+  .pairbox{display:flex; flex-wrap:wrap; gap:12px; margin:30px 0 6px}
+  .pairbox a{padding:10px 16px; border:1px solid var(--line); border-radius:12px; color:var(--txt-dim); font-size:14px; font-weight:600; transition:.2s}
+  .pairbox a:hover{border-color:rgba(232,196,116,.4); color:var(--txt)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+    <a class="back" href="/">← Back to Home</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumb"><a href="/">Teyvat Starter Guide</a> › Furina Build</nav>
+  <article>
+    <h1>Genshin Furina Build 2026: <span class="grad">Best Weapons, Artifacts &amp; Teams</span></h1>
+    <p class="lead">Furina — the Hydro Archon of Fontaine — is widely regarded as the most account-defining 5-star since Kazuha. Her Elemental Burst hands the <b>entire team</b> up to +75% damage, she applies Hydro off-field, and she deals real damage herself. This guide covers how to build her: weapons, the Golden Troupe artifact set, stat targets, team comps, and the HP-fluctuation mechanic that ties it all together.</p>
+
+    <div class="src-note">Note: Furina's kit, stat priorities, and artifact/weapon ranking are long-term stable meta knowledge and do not change with patches. Constellation and banner availability shift over time, but the builds below hold. In-game data is always final.</div>
+
+    <h2>Why Furina Is Worth Building</h2>
+    <p>Furina's value comes from four layered effects that stack into one of the strongest buffs in the game:</p>
+    <ul>
+      <li><b>Universal team damage:</b> her Burst grants up to <b>+75% team-wide DMG</b> (capped at 250 Fanfare stacks) for ~18s of a 30s window — and it is <b>multiplicative</b> with ATK buffs, VV shred, and reaction multipliers.</li>
+      <li><b>Reliable off-field Hydro:</b> her Salon Members apply Hydro every ~2.5s, enabling Vaporize, Freeze, and Bloom teams without needing the on-field character to Normal Attack.</li>
+      <li><b>Self-sustaining HP mechanic:</b> with a healer on the team, her HP-draining Skill becomes a fast fanfare engine instead of a liability.</li>
+      <li><b>Her own damage:</b> the summoned Salon Members scale off her Max HP, so she is never "just a buffer."</li>
+    </ul>
+    <div class="callout">In a Neuvillette Hypercarry team, Furina alone adds roughly <b>+50% team DPS</b> compared to any other support in her slot. That is why she is the #1 pull on most meta wishlists.</div>
+
+    <h2>Best Weapons</h2>
+    <p>Furina scales off <b>Max HP, CRIT, and Energy Recharge</b> — her weapon choice is unusually flexible, and the F2P option reaches ~85% of her signature's value.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag water">5★ BiS</span>Splendor of Tranquil Waters</h3>
+        <div class="role">Signature · highest ceiling</div>
+        <p>Her tailor-made weapon: 88.2% CRIT DMG plus Skill DMG and Max HP boosts that mirror her kit. The clear best-in-slot, but pulling the weapon banner just for her is generally <b>not</b> recommended — the gap to F2P is only ~15%.</p>
+        <div class="mini">Obtain: Furina weapon banner</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag water">5★</span>Primordial Jade Cutter</h3>
+        <div class="role">CRIT Rate + HP-based ATK</div>
+        <p>High CRIT Rate and an ATK bonus scaled off HP — great if you already own it. Simplifies substat hunting.</p>
+        <div class="mini">Obtain: standard banner / Chronicled</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag water">F2P ★</span>Fleuve Cendre Ferryman</h3>
+        <div class="role">Top free-to-play pick</div>
+        <p>From Fontaine fishing. Gives Energy Recharge and Skill CRIT Rate — solves both uptime and crit needs at zero cost. The default recommendation for a F2P Furina.</p>
+        <div class="mini">Obtain: Fontaine Fishing Association</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag water">F2P</span>Favonius Sword / Wolf-Fang</h3>
+        <div class="role">ER battery / Battle Pass</div>
+        <p><b>Favonius Sword</b> generates particles for team burst uptime (build some CRIT Rate to proc it). <b>Wolf-Fang</b> (Battle Pass) gives CRIT Rate plus Skill/Burst DMG and stacks off-field.</p>
+        <div class="mini">Obtain: all banners / Gnostic Hymn</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag water">Budget</span>Harbinger of Dawn / Dockhand's Assistant</h3>
+        <div class="role">3★ / craftable fill-ins</div>
+        <p><b>Harbinger of Dawn</b> (3★) gives big CRIT DMG and a CRIT passive if HP stays above 90% — strong on a shielded team. <b>The Dockhand's Assistant</b> (craftable, R5) supplies HP% and ER on heal ticks.</p>
+        <div class="mini">Obtain: chests / blacksmith</div>
+      </div>
+    </div>
+
+    <h2>Best Artifacts</h2>
+    <p>The 4-piece Golden Troupe is her best-in-slot for damage; Tenacity of the Millelith is the pure-support alternative. Pick by role.</p>
+    <table>
+      <tr><th>Set</th><th>Use when</th><th>Why</th></tr>
+      <tr><td><b>Golden Troupe</b> (4pc)</td><td>Almost always (DPS / hybrid)</td><td>+25% Elemental Skill DMG, +25% more off-field — her Salon Members live off-field, so she keeps the bonus nearly constantly. Highest personal damage.</td></tr>
+      <tr><td><b>Tenacity of the Millelith</b> (4pc)</td><td>Pure buffer / hypercarry teams</td><td>+20% team ATK on Skill hit, stacked on top of her +75% DMG. Best when you run her buff-only.</td></tr>
+      <tr><td><b>Marechaussee Hunter</b> (4pc)</td><td>C6 on-field Furina</td><td>CRIT Rate from HP changes — only worth it once she is your on-field DPS at C6.</td></tr>
+      <tr><td><b>2pc HP% + 2pc Hydro DMG</b></td><td>Flexible filler</td><td>A safe generic combo while you farm the above. 2pc Golden Troupe + 2pc HP (e.g. Vourukasha / Nymph's Dream) also works.</td></tr>
+    </table>
+
+    <h2>Stat Targets</h2>
+    <p>Furina's damage and healing scale off <b>Max HP</b>, so HP is the spine of her build. Energy Recharge keeps her 60-cost Burst up every rotation.</p>
+    <table>
+      <tr><th>Slot</th><th>Main stat</th><th>Substat priority</th></tr>
+      <tr><td>Sands</td><td>HP% (or ER if struggling)</td><td rowspan="3">HP% &gt; CRIT Rate ≈ CRIT DMG &gt; Energy Recharge (130–180%) &gt; Hydro DMG%</td></tr>
+      <tr><td>Goblet</td><td>HP% (or Hydro DMG% at C2)</td></tr>
+      <tr><td>Circlet</td><td>CRIT Rate / CRIT DMG</td></tr>
+    </table>
+    <div class="callout"><b>Target numbers:</b> Max HP <b>36,000–42,000+</b>, CRIT Rate <b>55–65%</b> (or 69–73% on Ferryman/Festering Desire), CRIT DMG <b>120–160%</b>, Energy Recharge <b>130–180%</b>. Hit HP first, then balance crit, then ER.</div>
+
+    <h2>Best Team Comps</h2>
+    <p>Furina slots into almost any team, but she <b>needs a healer</b> to convert her HP drain into fanfare stacks. Pair her with Charlotte, Baizhu, Jean, or Kokomi.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag water">Hypercarry</span>Neuvillette + Furina</h3>
+        <div class="role">Premium meta core</div>
+        <p>Neuvillette on-field, Furina off-field buffer, a healer (Charlotte/Baizhu), and a flex (Kazuha/Electro). The single highest-DPS archetype Furina defines.</p>
+        <div class="mini">~+50% team DPS vs other supports</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">Vaporize</span>Hu Tao / Lyney</h3>
+        <div class="role">Pyro carry + Furina</div>
+        <p>Furina's off-field Hydro enables clean Vaporize windows. Add a shield (Zhongli) or healer. Strong, accessible, and very popular.</p>
+        <div class="mini">Works great with Xingqiu too</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag water">Freeze</span>Ayaka / Wriothesley</h3>
+        <div class="role">Freeze bloom teams</div>
+        <p>Furina + Cryo carry + Anemo (Kazuha/Sucrose for VV) + healer. Reliable crowd control and big Furina buffs.</p>
+        <div class="mini">Pair with a VV holder</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag grass">Bloom</span>Nilou / Quicken</h3>
+        <div class="role">Reaction teams</div>
+        <p>In Bloom/Nilou teams Furina adds damage and Hydro application. Note her +75% DMG bonus excludes Bloom reaction damage itself, but her personal damage still helps.</p>
+        <div class="mini">Add a Dendro + healer</div>
+      </div>
+    </div>
+
+    <h2>Talent Priority</h2>
+    <p>Level in this order — her Normal Attack barely matters:</p>
+    <ol>
+      <li><b>Elemental Burst</b> (Let the People Rejoice) → 9 or Crown. The Fanfare buff scales with talent level; this is where her value lives.</li>
+      <li><b>Elemental Skill</b> (Salon Solitaire) → 8–9. The Salon Members deal damage and generate the HP fluctuations that feed fanfare.</li>
+      <li><b>Normal Attack</b> → 1. Ignore unless you run a C6 on-field build.</li>
+    </ol>
+
+    <h2>How the HP-Fluctuation Engine Works</h2>
+    <p>Furina's kit is unique: her Burst records every HP gain or loss across the team and turns it into damage. Master this and she out-values any other support.</p>
+    <ul>
+      <li><b>Cast Skill (Ousia):</b> three Salon Members drain party HP over time and deal off-field Hydro. Swap to <b>Pneuma</b> (via Charged Attack) for a stationary healer instead.</li>
+      <li><b>Cast Burst:</b> activates Universal Revelry for 30s. Every HP change (up or down) adds Fanfare stacks → +0.15% DMG per stack, capped at +75% (250 stacks).</li>
+      <li><b>The rotation:</b> Furina E → Q → swap to healer (HP recovers, generating stacks) → swap to DPS and unload during the peak fanfare window. A healer makes stacks climb at maximum rate.</li>
+    </ul>
+    <div class="callout"><b>Key rule:</b> without a healer, your team's HP just drops and fanfare stalls. <b>Always bring a healer</b> — that is what turns her "downside" into her biggest upside.</div>
+
+    <h2>Common Mistakes</h2>
+    <ul>
+      <li><b>No healer on the team.</b> Her HP drain never recovers, fanfare never stacks, and you lose most of her buff. The #1 error.</li>
+      <li><b>Building her like a normal DPS.</b> She wants HP% and ER, not raw ATK. Ignoring HP leaves both her damage and healing weak.</li>
+      <li><b>Skipping Energy Recharge.</b> A dead Burst = no team buff. Aim for 130–180% ER so it's up every rotation.</li>
+      <li><b>Using her as a pure healer.</b> Her buff needs HP <i>fluctuation</i>, not a static full bar. Pure-heal playstyle wastes her kit.</li>
+      <li><b>Pulling her signature weapon on impulse.</b> Fleuve Cendre Ferryman already gets ~85% of the value. Spend those primogems on constellations or other units.</li>
+    </ul>
+
+    <h2>Don't Have Furina Yet?</h2>
+    <p>She is a limited 5-star, so you may not own her. For off-field Hydro application, <a href="/guides/beginner-characters-en.html">Xingqiu and Yelan</a> (both on the beginner must-build list) cover most teams — they just don't bring her team-wide damage buff. Build them while you wait for her banner.</p>
+
+    <div class="pairbox">
+      <a href="/guides/beginner-characters-en.html">← Beginner Must-Build Characters</a>
+      <a href="/guides/artifact-farming-en.html">Artifact Farming Guide →</a>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    Teyvat Starter Guide · Independent Genshin Impact build reference · <a href="/">Home</a><br/>
+    Not affiliated with HoYoverse. In-game data is always final.
+  </div>
+</footer>
+</body>
+</html>
