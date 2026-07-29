@@ -1,0 +1,1100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>提瓦特开荒攻略站 · 原神新手到进阶 · 可交互攻略</title>
+<meta name="description" id="metaDesc" content="原神开荒一站式攻略站：核心机制、30天开荒日程、专属零氪开荒顺序，并内置抽卡模拟器、元素反应演示、原石规划器、配队共鸣、开荒进度打卡。AI整合社区与官方攻略，可搜索可交互。" />
+<meta name="keywords" content="原神攻略,原神开荒,新手攻略,零氪攻略,抽卡模拟器,元素反应,原石规划,深渊,配队,提瓦特,genshin guide,starter guide,gacha simulator,primogem planner" />
+<meta name="author" content="提瓦特攻略站 (AI整合)" />
+<meta name="theme-color" content="#0c0f16" />
+<meta property="og:title" id="ogTitle" content="提瓦特开荒攻略站 · 原神可交互攻略" />
+<meta property="og:description" id="ogDesc" content="攻略+工具合一：抽卡模拟、元素反应演示、原石规划、配队共鸣、进度打卡，比静态攻略站更好用。" />
+<meta property="og:locale" id="ogLocale" content="zh_CN" />
+<meta property="og:type" content="website" />
+<link rel="canonical" href="https://genshin-guide-three.vercel.app/" />
+<link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-three.vercel.app/" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-three.vercel.app/" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-three.vercel.app/" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"WebSite","@id":"https://genshin-guide-three.vercel.app/#website","url":"https://genshin-guide-three.vercel.app/","name":"提瓦特开荒攻略站","description":"原神开荒攻略+可交互工具：抽卡模拟器、元素反应演示、原石规划器、配队共鸣、开荒进度打卡。","inLanguage":"zh-CN"},
+    {"@type":"SoftwareApplication","name":"原神抽卡模拟器","applicationCategory":"GameApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"},"description":"在线十连抽卡模拟，含90抽5星/10抽4星保底逻辑与金光动画。"},
+    {"@type":"SoftwareApplication","name":"原神原石规划器","applicationCategory":"GameApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"},"description":"输入现有原石与日获取量，自动计算距离目标抽数还需天数。"},
+    {"@type":"SoftwareApplication","name":"原神元素反应演示","applicationCategory":"GameApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"},"description":"选择任意两种元素，动态演示反应动画与倍率说明。"}
+  ]
+}
+</script>
+<style>
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff; --cyan:#7fd8e8;
+    --fire:#ff6b4a; --water:#4aa8ff; --ice:#9fe6ff; --thunder:#b06bff;
+    --grass:#7dd35f; --wind:#a8e6cf; --rock:#e0c068;
+    --ok:#5fd08a; --bad:#ff6f7d;
+    --r:14px; --maxw:1180px; --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.7; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+
+  /* language switch */
+  html[data-lang="zh"] .en{display:none !important}
+  html[data-lang="en"] .zh{display:none !important}
+  .lang-toggle{display:flex; gap:4px; background:var(--panel); border:1px solid var(--line); border-radius:999px; padding:3px}
+  .lang-toggle button{border:none; background:transparent; color:var(--txt-dim); width:34px; height:30px; border-radius:999px; cursor:pointer; font-size:15px; transition:.2s; display:grid; place-items:center}
+  .lang-toggle button.active{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d}
+
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:18px; height:60px}
+  .brand{display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.5px; white-space:nowrap}
+  .brand .dot{width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 14px var(--gold)}
+  .brand b{color:var(--gold)}
+  nav.links{display:flex; gap:6px; margin-left:auto; flex-wrap:wrap}
+  nav.links a{color:var(--txt-dim); padding:8px 14px; border-radius:999px; font-size:14px; font-weight:600; transition:.2s; white-space:nowrap}
+  nav.links a:hover{color:var(--txt); background:var(--panel)}
+  nav.links a.active{color:#10141d; background:linear-gradient(135deg,var(--gold),var(--gold-2)); box-shadow:0 4px 14px rgba(232,196,116,.35)}
+  .search{position:relative; display:block}
+  .search input{width:200px; padding:8px 12px 8px 32px; border-radius:999px; border:1px solid var(--line); background:var(--panel); color:var(--txt); font-size:13px; outline:none; transition:.2s}
+  .search input:focus{border-color:var(--gold); width:240px}
+  .search svg{position:absolute; left:10px; top:50%; transform:translateY(-50%); opacity:.5}
+  .menu-btn{display:none; background:var(--panel); border:1px solid var(--line); color:var(--txt); width:40px;height:40px;border-radius:10px; font-size:18px; cursor:pointer}
+
+  /* HERO with bg image */
+  .hero{position:relative; padding:0; min-height:78vh; display:flex; align-items:center; overflow:hidden}
+  .hero .bg{position:absolute; inset:0; background-image:url('assets/A_vast_fantasy_landscape_of_Te_2026-07-29T01-51-15.png');
+    background-size:112% 112%; background-position:top left; background-repeat:no-repeat; filter:saturate(1.05)}
+  .hero .bg::after{content:""; position:absolute; inset:0;
+    background:linear-gradient(90deg,rgba(12,15,22,.95) 0%, rgba(12,15,22,.72) 45%, rgba(12,15,22,.45) 100%),
+               linear-gradient(0deg,rgba(12,15,22,.95), transparent 55%);}
+  .hero .inner{position:relative; z-index:2; padding:90px 0 60px; width:100%}
+  .hero .kicker{display:inline-flex; align-items:center; gap:8px; font-size:13px; color:var(--gold); border:1px solid rgba(232,196,116,.35); padding:6px 12px; border-radius:999px; background:rgba(232,196,116,.06)}
+  .hero h1{font-size:clamp(30px,5vw,54px); margin:18px 0 10px; line-height:1.15; letter-spacing:.5px; max-width:760px}
+  .hero h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .hero p.lead{color:#cdd6e4; max-width:640px; font-size:16px; margin:0 0 26px}
+  .hero .badges{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:26px}
+  .badge{font-size:12.5px; color:#d6deea; border:1px solid var(--line); background:rgba(18,23,35,.6); padding:7px 13px; border-radius:10px; backdrop-filter:blur(4px)}
+  .badge b{color:var(--gold)}
+  .cta-row{display:flex; gap:12px; flex-wrap:wrap}
+  .btn{padding:12px 20px; border-radius:12px; font-weight:700; font-size:14.5px; cursor:pointer; border:1px solid transparent; transition:.2s; display:inline-flex; align-items:center; gap:8px}
+  .btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d; box-shadow:0 8px 22px rgba(232,196,116,.3)}
+  .btn.primary:hover{transform:translateY(-2px)}
+  .btn.ghost{background:rgba(18,23,35,.6); border-color:var(--line); color:var(--txt); backdrop-filter:blur(4px)}
+  .btn.ghost:hover{background:var(--panel-strong)}
+
+  section{padding:44px 0; scroll-margin-top:74px}
+  .sec-head{display:flex; align-items:baseline; gap:14px; margin-bottom:8px; flex-wrap:wrap}
+  .sec-head .num{font-size:13px; font-weight:800; color:var(--gold); border:1px solid rgba(232,196,116,.4); padding:3px 10px; border-radius:8px}
+  .sec-head h2{font-size:clamp(22px,3vw,30px); margin:0}
+  .sec-sub{color:var(--txt-mute); margin:0 0 22px; font-size:14.5px}
+  .src-note{font-size:12.5px; color:var(--txt-mute); border-left:3px solid var(--line); padding:6px 12px; margin:0 0 22px; background:var(--panel); border-radius:0 8px 8px 0}
+
+  /* banner (section header image) */
+  .banner{position:relative; border-radius:18px; overflow:hidden; padding:30px 28px; margin-bottom:22px; border:1px solid var(--line); min-height:150px; display:flex; align-items:flex-end}
+  .banner .bgb{position:absolute; inset:0; background-size:112% 112%; background-position:top left; background-repeat:no-repeat; filter:saturate(1.05) brightness(.9)}
+  .banner .bgb::after{content:""; position:absolute; inset:0; background:linear-gradient(90deg,rgba(12,15,22,.92),rgba(12,15,22,.5)), linear-gradient(0deg,rgba(12,15,22,.9),transparent 60%)}
+  .banner .bcontent{position:relative; z-index:2}
+  .banner h2{margin:0; font-size:clamp(22px,3.4vw,32px)}
+  .banner .bsub{color:#cdd6e4; font-size:14px; margin-top:6px; max-width:620px}
+
+  .grid{display:grid; gap:16px}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g4{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:880px){.g2,.g3,.g4{grid-template-columns:1fr}}
+
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:18px; transition:.2s; position:relative; overflow:hidden}
+  .card:hover{border-color:rgba(232,196,116,.4); transform:translateY(-2px); box-shadow:var(--shadow)}
+  .card h3{margin:0 0 8px; font-size:17px; display:flex; align-items:center; gap:9px}
+  .card h3 .ic{width:26px;height:26px;border-radius:8px; display:grid; place-items:center; font-size:13px; font-weight:800; color:#0c0f16}
+  .card p{margin:0; color:var(--txt-dim); font-size:14px}
+  .card ul{margin:8px 0 0; padding-left:18px; color:var(--txt-dim); font-size:14px}
+  .card ul li{margin:4px 0}
+
+  .elem{display:inline-flex; align-items:center; gap:7px; padding:8px 12px; border-radius:10px; font-weight:700; font-size:13.5px; color:#0c0f16}
+  .elem i{width:10px;height:10px;border-radius:50%; background:#0c0f16; opacity:.85}
+
+  .tbl-wrap{overflow-x:auto; border:1px solid var(--line); border-radius:var(--r); margin-top:6px}
+  table{border-collapse:collapse; width:100%; font-size:14px; min-width:520px}
+  th,td{padding:12px 14px; text-align:left; border-bottom:1px solid var(--line); vertical-align:top}
+  th{background:var(--panel-strong); color:var(--gold); font-weight:700; white-space:nowrap}
+  tr:last-child td{border-bottom:none}
+  td b{color:var(--txt)}
+
+  .callout{border:1px solid var(--line); border-left:4px solid var(--gold); background:linear-gradient(90deg,rgba(232,196,116,.08),var(--panel)); border-radius:0 12px 12px 0; padding:16px 18px; margin:14px 0}
+  .callout.warn{border-left-color:var(--bad); background:linear-gradient(90deg,rgba(255,111,125,.08),var(--panel))}
+  .callout.tip{border-left-color:var(--ok); background:linear-gradient(90deg,rgba(95,208,138,.08),var(--panel))}
+  .callout .t{font-weight:800; margin-bottom:4px}
+  .callout.warn .t{color:var(--bad)} .callout.tip .t{color:var(--ok)} .callout .t{color:var(--gold)}
+
+  .timeline{position:relative; margin:18px 0 0; padding-left:26px}
+  .timeline::before{content:""; position:absolute; left:9px; top:6px; bottom:6px; width:2px; background:linear-gradient(180deg,var(--gold),var(--blue))}
+  .tl{position:relative; margin-bottom:22px}
+  .tl::before{content:""; position:absolute; left:-22px; top:6px; width:14px;height:14px;border-radius:50%; background:var(--bg); border:3px solid var(--gold); box-shadow:0 0 0 4px rgba(232,196,116,.12)}
+  .tl .stage{font-weight:800; color:var(--gold); font-size:15px}
+  .tl .meta{font-size:12.5px; color:var(--txt-mute); margin-bottom:6px}
+  .tl .body{color:var(--txt-dim); font-size:14px}
+  .tl .body ul{margin:6px 0 0; padding-left:18px}
+
+  .plist{display:grid; gap:12px}
+  .prow{display:flex; gap:14px; align-items:flex-start; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px 16px}
+  .prow .n{flex:none; width:30px;height:30px;border-radius:9px; background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d; font-weight:800; display:grid; place-items:center}
+  .prow .c{font-size:14.5px; color:var(--txt-dim)}
+  .prow .c b{color:var(--txt)}
+
+  .dd{display:grid; gap:10px}
+  .dd .row{display:flex; gap:10px; align-items:flex-start; font-size:14px; padding:10px 12px; border-radius:10px; background:var(--panel); border:1px solid var(--line)}
+  .dd .x{color:var(--bad); font-weight:800; flex:none; width:18px}
+  .dd .o{color:var(--ok); font-weight:800; flex:none; width:18px}
+
+  .stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin-top:8px}
+  .stat{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px}
+  .stat .v{font-size:22px; font-weight:800; color:var(--gold)}
+  .stat .k{font-size:12.5px; color:var(--txt-mute); margin-top:2px}
+
+  .profile{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin:8px 0 4px}
+  .pf{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px}
+  .pf .k{font-size:12px; color:var(--txt-mute)}
+  .pf .v{font-size:15px; font-weight:700; margin-top:4px}
+
+  details.collapse{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:0; margin:10px 0; overflow:hidden}
+  details.collapse summary{cursor:pointer; padding:14px 16px; font-weight:700; font-size:15px; list-style:none; display:flex; justify-content:space-between; align-items:center}
+  details.collapse summary::-webkit-details-marker{display:none}
+  details.collapse summary::after{content:"+"; color:var(--gold); font-size:20px; font-weight:800}
+  details.collapse[open] summary::after{content:"−"}
+  details.collapse .inner{padding:0 16px 16px; color:var(--txt-dim); font-size:14px}
+  details.collapse .inner ul{padding-left:18px; margin:6px 0}
+
+  .block.hide{display:none}
+  mark{background:rgba(232,196,116,.4); color:#fff; border-radius:3px; padding:0 2px}
+
+  /* progress tracker */
+  .tracker{background:linear-gradient(135deg,rgba(232,196,116,.08),var(--panel)); border:1px solid rgba(232,196,116,.3); border-radius:14px; padding:16px 18px; margin:0 0 20px}
+  .tracker .tp{display:flex; align-items:center; gap:14px; flex-wrap:wrap}
+  .tracker .bar{flex:1; min-width:200px; height:12px; border-radius:999px; background:rgba(255,255,255,.08); overflow:hidden}
+  .tracker .bar > i{display:block; height:100%; width:0; background:linear-gradient(90deg,var(--gold),var(--blue)); transition:width .4s}
+  .tracker .pl{font-weight:800; color:var(--gold); white-space:nowrap}
+  .chk{display:flex; gap:10px; align-items:flex-start; padding:9px 12px; border-radius:10px; background:var(--panel); border:1px solid var(--line); margin:8px 0; cursor:pointer; transition:.2s; font-size:14px; color:var(--txt-dim)}
+  .chk:hover{border-color:rgba(232,196,116,.4)}
+  .chk input{margin-top:3px; width:17px;height:17px; accent-color:var(--gold); flex:none}
+  .chk.done{opacity:.62}
+  .chk.done span{text-decoration:line-through}
+
+  /* TOOLS */
+  .tool{background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:20px; margin:16px 0}
+  .tool h3{margin:0 0 4px; font-size:19px; display:flex; align-items:center; gap:10px}
+  .tool .hint{color:var(--txt-mute); font-size:13.5px; margin:0 0 16px}
+  .tool .ic{width:30px;height:30px;border-radius:9px; display:grid; place-items:center; font-weight:800; color:#10141d; background:linear-gradient(135deg,var(--gold),var(--gold-2))}
+
+  /* gacha */
+  .gacha-top{display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-bottom:14px}
+  .fate{display:flex; align-items:center; gap:8px; background:var(--panel-strong); border:1px solid var(--line); border-radius:12px; padding:10px 14px; font-weight:700}
+  .fate .pink{width:16px;height:16px;border-radius:50%; background:radial-gradient(circle at 30% 30%,#ffd1ec,#c94f9c)}
+  .gacha-results{display:grid; grid-template-columns:repeat(5,1fr); gap:10px; margin-top:14px}
+  @media(max-width:680px){.gacha-results{grid-template-columns:repeat(3,1fr)}}
+  .pull{aspect-ratio:3/4; border-radius:12px; display:grid; place-items:center; position:relative; border:2px solid var(--line); background:rgba(255,255,255,.03); font-weight:800; font-size:13px; overflow:hidden; animation:pop .4s ease both}
+  .pull .stars{position:absolute; top:6px; left:0; right:0; text-align:center; font-size:11px; letter-spacing:1px}
+  .pull.r3{border-color:#5b7fb0; color:#9fc0ee}
+  .pull.r4{border-color:#b06bff; color:#d9b8ff; box-shadow:0 0 18px rgba(176,107,255,.4)}
+  .pull.r5{border-color:var(--gold); color:#ffe9b0; box-shadow:0 0 26px rgba(232,196,116,.6); background:radial-gradient(circle at 50% 30%,rgba(232,196,116,.25),transparent)}
+  .pull .label{position:absolute; bottom:8px; left:0; right:0; text-align:center}
+  @keyframes pop{0%{transform:scale(.6); opacity:0}60%{transform:scale(1.08)}100%{transform:scale(1); opacity:1}}
+  .gacha-log{font-size:13px; color:var(--txt-dim); margin-top:12px; display:flex; gap:16px; flex-wrap:wrap}
+
+  /* reaction demo */
+  .react-stage{display:flex; align-items:center; justify-content:center; gap:18px; flex-wrap:wrap; padding:24px; border-radius:14px; background:radial-gradient(circle at 50% 50%,rgba(90,169,255,.12),rgba(255,255,255,.02)); border:1px solid var(--line); min-height:180px}
+  .orb{width:64px;height:64px;border-radius:50%; display:grid; place-items:center; font-weight:800; color:#0c0f16; position:relative; box-shadow:0 0 24px currentColor; animation:float 2.4s ease-in-out infinite}
+  .orb small{position:absolute; bottom:-22px; font-size:11px; color:var(--txt-dim); font-weight:600}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  .react-bolt{font-size:30px; color:var(--gold); font-weight:800; animation:flash 1.4s ease-in-out infinite}
+  @keyframes flash{0%,100%{opacity:.4; transform:scale(.9)}50%{opacity:1; transform:scale(1.15)}}
+  .react-btns{display:flex; gap:8px; flex-wrap:wrap; margin:14px 0}
+  .react-btns button{padding:8px 14px; border-radius:10px; border:1px solid var(--line); background:var(--panel); color:var(--txt); cursor:pointer; font-weight:700; font-size:13.5px; transition:.2s}
+  .react-btns button.active,.react-btns button:hover{border-color:var(--gold); color:var(--gold)}
+  .react-info{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px 16px; font-size:14px; color:var(--txt-dim)}
+  .react-info b{color:var(--txt)}
+
+  /* planner */
+  .form-row{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; margin-bottom:8px}
+  .field{display:flex; flex-direction:column; gap:6px}
+  .field label{font-size:13px; color:var(--txt-dim)}
+  .field input,.field select{padding:11px 12px; border-radius:10px; border:1px solid var(--line); background:var(--panel); color:var(--txt); font-size:14px; outline:none}
+  .field input:focus,.field select:focus{border-color:var(--gold)}
+  .plan-out{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin-top:16px}
+  .plan-card{background:linear-gradient(135deg,rgba(90,169,255,.1),var(--panel)); border:1px solid var(--line); border-radius:12px; padding:16px}
+  .plan-card .v{font-size:24px; font-weight:800; color:var(--blue)}
+  .plan-card .k{font-size:12.5px; color:var(--txt-mute); margin-top:3px}
+  .plan-card.gold .v{color:var(--gold)}
+
+  /* resonance */
+  .team{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-bottom:14px}
+  @media(max-width:680px){.team{grid-template-columns:repeat(2,1fr)}}
+  .team select{padding:12px; border-radius:10px; border:1px solid var(--line); background:var(--panel); color:var(--txt); font-size:14px; outline:none}
+  .res-out{display:flex; gap:10px; flex-wrap:wrap}
+  .res-tag{background:linear-gradient(135deg,rgba(232,196,116,.15),var(--panel)); border:1px solid rgba(232,196,116,.4); border-radius:10px; padding:10px 14px; font-size:14px; color:var(--txt); animation:pop .3s both}
+  .res-tag b{color:var(--gold)}
+  .res-none{color:var(--txt-mute); font-size:14px}
+
+  footer{border-top:1px solid var(--line); margin-top:30px; padding:30px 0; color:var(--txt-mute); font-size:13px}
+  footer .wrap{display:flex; flex-wrap:wrap; gap:14px; justify-content:space-between; align-items:center}
+  .no-result{display:none; text-align:center; color:var(--txt-mute); padding:40px 0}
+
+  @media(max-width:880px){
+    nav.links{position:fixed; top:60px; left:0; right:0; background:rgba(10,13,20,.97); flex-direction:column; padding:14px 20px; gap:8px; border-bottom:1px solid var(--line); display:none}
+    nav.links.open{display:flex}
+    nav.links a{padding:12px 14px; border-radius:10px}
+    .menu-btn{display:block; margin-left:auto}
+    .search{display:block}
+    .search input{width:140px}
+    .search input:focus{width:160px}
+  }
+</style>
+<script>
+  (function(){try{var s=localStorage.getItem('genshin_lang'); if(s!=='zh'&&s!=='en') s='zh'; document.documentElement.setAttribute('data-lang', s);}catch(e){document.documentElement.setAttribute('data-lang','zh');}})();
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span>提瓦特<b>攻略站</b></div>
+    <button class="menu-btn" id="menuBtn" aria-label="菜单">≡</button>
+    <nav class="links" id="navLinks">
+      <a href="#home" class="active"><span class="zh">首页</span><span class="en">Home</span></a>
+      <a href="#overview"><span class="zh">攻略总览</span><span class="en">Overview</span></a>
+      <a href="#schedule"><span class="zh">开荒日程</span><span class="en">Schedule</span></a>
+      <a href="#custom"><span class="zh">专属顺序</span><span class="en">Custom Plan</span></a>
+      <a href="#tools"><span class="zh">互动工具</span><span class="en">Tools</span></a>
+      <a href="#about"><span class="zh">关于来源</span><span class="en">About</span></a>
+    </nav>
+    <div class="search">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input id="search" placeholder="搜索攻略…" />
+    </div>
+    <div class="lang-toggle" id="langToggle" title="Language / 语言">
+      <button data-l="zh" class="active">🇨🇳</button>
+      <button data-l="en">🇬🇧</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="bg"></div>
+  <div class="inner">
+    <div class="wrap">
+      <span class="kicker"><span class="zh">◆ 原神 · 2026 开荒向攻略 · 内置可交互工具</span><span class="en">◆ Genshin Impact · 2026 Starter Guide · Interactive Tools</span></span>
+      <h1><span class="zh">从零到提瓦特畅游<br><span class="grad">新手开荒一站式攻略站</span></span><span class="en">From Zero to Teyvat Explorer<br><span class="grad">Your All-in-One Starter Guide</span></span></h1>
+      <p class="lead"><span class="zh">把碎片化的原神攻略，重排成你能直接照做的行动序列；再配上抽卡模拟、元素反应演示、原石规划、配队共鸣、进度打卡——攻略站也能"玩起来"。</span><span class="en">We reorganized scattered Genshin tips into an action plan you can follow day by day — then added a gacha simulator, elemental reaction demo, primogem planner, team resonance and a check-in tracker. Even a guide site can be "playable".</span></p>
+      <div class="badges">
+        <span class="badge"><span class="zh">当前版本：</span><span class="en">Version: </span><b><span class="zh">月之八·空月之歌·谐谑</span><span class="en">Moon III · Interlude of the Empty Moon</span></b></span>
+        <span class="badge"><span class="zh">上线：</span><span class="en">Released: </span><b>2026/07/01</b></span>
+        <span class="badge"><span class="zh">适配：</span><span class="en">For: </span><b><span class="zh">零氪 / 微氪 / 回坑</span><span class="en">F2P / Low-spend / Returnees</span></b></span>
+        <span class="badge"><span class="zh">内容：</span><span class="en">Includes: </span><b><span class="zh">3 大板块 + 5 个互动工具</span><span class="en">3 sections + 5 tools</span></b></span>
+      </div>
+      <div class="cta-row">
+        <a class="btn primary" href="#schedule"><span class="zh">▶ 看 30 天开荒日程</span><span class="en">▶ 30-Day Schedule</span></a>
+        <a class="btn ghost" href="#tools"><span class="zh">试试抽卡模拟器</span><span class="en">Try the Gacha Simulator</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 攻略总览 -->
+<section id="overview">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">01</span><h2><span class="zh">攻略总览</span><span class="en">Guide Overview</span></h2></div>
+    <p class="sec-sub"><span class="zh">覆盖全阶段的通用知识框架：机制、路线、培养、配队、资源。开荒期重点看标记小节。</span><span class="en">A framework of general knowledge across all stages: mechanics, routes, character building, team comps, resources. Focus on the marked sections during early game.</span></p>
+    <div class="src-note"><span class="zh">来源：米游社官方社区、米哈游官网、游民星空、17173、腾讯新闻游戏分析。版本号/角色强度随版本变化，具体卡池数值以游戏内为准；下方核心机制与资源规划为长期稳定知识。</span><span class="en">Sources: Mijuyou community, miHoYo official site, Gamersky, 17173, Tencent News game analysis. Versions and character strength shift over time — in-game data is final. The core mechanics and resource planning below are long-term stable knowledge.</span></div>
+
+    <div class="banner">
+      <div class="bgb" style="background-image:url('assets/Swirling_elemental_magic_energ_2026-07-29T01-51-46.png')"></div>
+      <div class="bcontent">
+        <h2><span class="zh">七元素与战斗反应</span><span class="en">Seven Elements & Combat Reactions</span></h2>
+        <div class="bsub"><span class="zh">原神的战斗灵魂是元素反应。下面用一张速览 + 可交互演示帮你记住最实用的几个。</span><span class="en">Elemental reactions are the soul of Genshin combat. A quick reference plus an interactive demo helps you remember the most useful ones.</span></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="grid g3">
+        <div class="card">
+          <h3><span class="ic" style="background:var(--gold)">版</span><span class="zh">当前版本动态</span><span class="en">Current Version</span></h3>
+          <p><span class="zh">「月之八·空月之歌·谐谑」2026/07/01 上线。本期祈愿：辉天的星告 / 星边夜语 / 镜中的茶宴；武器池「神铸赋形」：超越之匙、祭星者之望。限时活动「最终远射瞄准线」。</span><span class="en">"Moon III · Interlude of the Empty Moon" launched 2026/07/01. Current banners: Starlit Oath / Whisper by the Stars / Tea Party in the Mirror; weapon banner "Epitome Invocation": Key of Revelation, Stargazers' Wish. Event "Final Long-Range Aim Line".</span></p>
+          <ul><li><span class="zh">趋势：至冬 / 挪德卡莱 / 纳塔体系化，配队更强调体系绑定（新扩散、超导、月反应、夜魂）。</span><span class="en">Trend: Snezhnaya / Nod-Krai / Natlan systems matter more; comps emphasize system synergy (new Swirl, Superconduct, Moon reactions, Nightspirit).</span></li><li><span class="zh">回坑建议优先补<b>新体系核心</b>而非旧命座。</span><span class="en">Returnees: prioritize new-system core units over old constellations.</span></li></ul>
+        </div>
+        <div class="card">
+          <h3><span class="ic" style="background:var(--blue)">元</span><span class="zh">七元素与反应</span><span class="en">Elements & Reactions</span></h3>
+          <p><span class="zh">火 / 水 / 冰 / 雷 / 草 / 岩 / 风。不同元素交互触发反应是战斗灵魂。</span><span class="en">Pyro / Hydro / Cryo / Electro / Dendro / Geo / Anemo. Combining elements to trigger reactions is the core of combat.</span></p>
+          <ul><li><span class="zh">蒸发(火+水)、融化(火+冰)：按倍率增伤，前期主增伤。</span><span class="en">Vaporize (Pyro+Hydro), Melt (Pyro+Cryo): multiplier damage, main early damage boost.</span></li><li><span class="zh">超载(火+雷)：范围火伤，破岩盾。</span><span class="en">Overload (Pyro+Electro): AoE Pyro, breaks Geo shields.</span></li><li><span class="zh">感电(水+雷)：持续雷伤传递。</span><span class="en">Electro-Charged (Hydro+Electro): persistent Electro spread.</span></li><li><span class="zh">冻结(水+冰)：强控。</span><span class="en">Frozen (Hydro+Cryo): strong crowd control.</span></li></ul>
+        </div>
+        <div class="card">
+          <h3><span class="ic" style="background:var(--ok)">盾</span><span class="zh">破盾口诀</span><span class="en">Shield-Breaking</span></h3>
+          <p><span class="zh">新手最实用的一句话记忆法：</span><span class="en">The most useful one-liner for beginners:</span></p>
+          <ul><li><span class="zh">火破冰盾 · 冰破雷盾 · 水破火盾</span><span class="en">Pyro breaks Cryo shields · Cryo breaks Electro · Hydro breaks Pyro</span></li><li><span class="zh">岩盾用双手剑 / 岩伤</span><span class="en">Geo shields: claymore / Geo damage</span></li><li><span class="zh">草盾用火</span><span class="en">Dendro shields: Pyro</span></li></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 style="margin:22px 0 10px; font-size:16px"><span class="zh">七元素速览</span><span class="en">Element Quick Reference</span></h3>
+      <div class="grid g4">
+        <div class="elem e-fire"><i></i><span class="zh">火 · 增伤/破盾</span><span class="en">Pyro · DMG/Shield</span></div>
+        <div class="elem e-water"><i></i><span class="zh">水 · 挂水/冻结</span><span class="en">Hydro · Wet/Freeze</span></div>
+        <div class="elem e-ice"><i></i><span class="zh">冰 · 控制/破雷</span><span class="en">Cryo · CC/Break Electro</span></div>
+        <div class="elem e-thunder"><i></i><span class="zh">雷 · 感电/超导</span><span class="en">Electro · EC/Superconduct</span></div>
+        <div class="elem e-grass"><i></i><span class="zh">草 · 绽放/激化</span><span class="en">Dendro · Bloom/Quicken</span></div>
+        <div class="elem e-wind"><i></i><span class="zh">风 · 扩散聚怪</span><span class="en">Anemo · Swirl/Gather</span></div>
+        <div class="elem e-rock"><i></i><span class="zh">岩 · 护盾/结晶</span><span class="en">Geo · Shield/Crystallize</span></div>
+        <div class="elem" style="background:#bcd;color:#0c0f16"><i></i><span class="zh">物理 · 直伤</span><span class="en">Physical · Raw DMG</span></div>
+      </div>
+      <p style="color:var(--txt-mute); font-size:13px; margin-top:10px"><span class="zh">想看动态演示？去 </span><span class="en">Want the live demo? Go to </span><a href="#tools"><span class="zh">互动工具 → 元素反应演示</span><span class="en">Tools → Reaction Demo</span></a><span class="zh">，点按钮看两种元素碰撞触发反应的动画。</span><span class="en"> and click to see two elements collide and trigger a reaction.</span></p>
+    </div>
+
+    <div class="block">
+      <div class="grid g2" style="margin-top:18px">
+        <div class="card">
+          <h3><span class="ic" style="background:var(--fire)">练</span><span class="zh">角色培养优先级</span><span class="en">Who to Build First</span></h3>
+          <p><b><span class="zh">平民战神（0 命即成型，优先练）</span><span class="en">Free-to-play MVPs (work at C0, build first)</span></b></p>
+          <ul>
+            <li><b><span class="zh">班尼特</span><span class="en">Bennett</span></b><span class="zh">(火)：治疗+全队增伤，必练</span><span class="en">(Pyro): heal + team buff, must-build</span></li>
+            <li><b><span class="zh">行秋</span><span class="en">Xingqiu</span></b><span class="zh">(水)：后台挂水、减伤，必练</span><span class="en">(Hydro): off-field Hydro, damage reduction, must-build</span></li>
+            <li><b><span class="zh">香菱</span><span class="en">Xiangling</span></b><span class="zh">(火)：脱手火副 C，必练</span><span class="en">(Pyro): burst Sub-DPS, must-build</span></li>
+          </ul>
+          <p style="margin-top:8px"><b><span class="zh">主 C 过渡</span><span class="en">Main DPS fill-ins</span></b><span class="zh">：雷泽(物理)、烟绯(火)、菲谢尔(雷)。<br>养成顺序：</span><span class="en">: Razor (Phys), Yanfei (Pyro), Fischl (Electro).<br>Build order: </span><b><span class="zh">天赋 &gt; 武器 &gt; 圣遗物</span><span class="en">Talent &gt; Weapon &gt; Artifacts</span></b><span class="zh">。圣遗物 45 级前用四星过渡。</span><span class="en">. Use 4-star artifacts before AR 45.</span></p>
+        </div>
+        <div class="card">
+          <h3><span class="ic" style="background:var(--cyan)">队</span><span class="zh">配队模板</span><span class="en">Team Templates</span></h3>
+          <p><span class="zh">基础模板：1 主 C + 1 副 C/辅助 + 1 盾奶 + 1 破盾/工具人。</span><span class="en">Basic template: 1 Main DPS + 1 Sub-DPS/Support + 1 Shield/Healer + 1 Shielder/Utility.</span></p>
+          <ul>
+            <li><b><span class="zh">雷神国家队</span><span class="en">Raiden National</span></b><span class="zh">：雷电将军+行秋+香菱+班尼特</span><span class="en">: Raiden + Xingqiu + Xiangling + Bennett</span></li>
+            <li><b><span class="zh">草行久</span><span class="en">Spread/Bloom</span></b><span class="zh">：纳西妲+行秋+久岐忍+草主</span><span class="en">: Nahida + Xingqiu + Kuki + Dendro MC</span></li>
+            <li><b><span class="zh">永冻</span><span class="en">Freeze</span></b><span class="zh">：神里绫华+申鹤+万叶+心海</span><span class="en">: Ayaka + Shenhe + Kazuha + Kokomi</span></li>
+            <li><b><span class="zh">妮露绽放</span><span class="en">Nilou Bloom</span></b><span class="zh">：妮露+纳西妲+心海+草主(不带火/雷)</span><span class="en">: Nilou + Nahida + Kokomi + Dendro MC (no Pyro/Electro)</span></li>
+          </ul>
+          <p style="margin-top:6px"><span class="zh">元素共鸣：双火+25%攻；双风减体力；双岩强盾。</span><span class="en">Resonance: Dual Pyro +25% ATK; Dual Anemo less stamina; Dual Geo stronger shields.</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="grid g2">
+        <div class="card">
+          <h3><span class="ic" style="background:var(--rock)">遗</span><span class="zh">圣遗物与武器基础</span><span class="en">Artifacts & Weapons</span></h3>
+          <ul>
+            <li><span class="zh">主词条：主 C 攻风暴(攻击沙/元素杯/双暴头)；副 C 看机制(充能/精通/双暴)。</span><span class="en">Main stats: Main DPS wants ATK%/Element DMG/Crit; Sub-DPS depends on kit (ER/EM/Crit).</span></li>
+            <li><span class="zh">副词条：双暴 &gt; 百分比攻击 &gt; 元素充能 &gt; 元素精通。</span><span class="en">Substats: Crit &gt; %ATK &gt; ER &gt; EM.</span></li>
+            <li><span class="zh">常见套：绝缘之旗印(充能爆发流)、宗室之仪(班尼特)、磐岩/烬城(新体系)。</span><span class="en">Common sets: Emblem (ER burst), Noblesse (Bennett), Archaic/Scroll (new systems).</span></li>
+            <li><span class="zh">平民四星武器：祭礼剑、渔获、讨龙英杰谭、试作系列。非主 C 不必强求五星。</span><span class="en">F2P 4-stars: Sacrificial Sword, The Catch, Thrilling Tales, Prototype series. Non-Main-DPS need not chase 5-stars.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="ic" style="background:var(--gold)">源</span><span class="zh">资源管理（长期有效）</span><span class="en">Resource Management</span></h3>
+          <ul>
+            <li><b><span class="zh">原石</span><span class="en">Primogems</span></b><span class="zh">：全攒抽限定 UP 池，瞄准泛用辅助或新体系核心。</span><span class="en">: save all for limited character banners, target versatile supports or new-system cores.</span></li>
+            <li><b><span class="zh">树脂</span><span class="en">Resin</span></b><span class="zh">：每日 160，优先周本 BOSS + 天赋本，剩余刷圣遗物；脆弱树脂留到 45 后。</span><span class="en">: 160/day; prioritize weekly bosses + talent domains, then artifacts; save Fragile Resin past AR 45.</span></li>
+            <li><b><span class="zh">每周必做</span><span class="en">Weekly</span></b><span class="zh">：周本 BOSS、声望、地脉花。</span><span class="en">: weekly bosses, reputation, ley line blossoms.</span></li>
+            <li><b><span class="zh">探索派遣</span><span class="en">Dispatch</span></b><span class="zh">：蒙德/璃月矿石食材，攒精锻魔矿。</span><span class="en">: send companions for ore/ingredients, stock forge ore.</span></li>
+            <li><span class="zh">月卡：小月空月祝福性价比最高。</span><span class="en">Blessing of the Moon (monthly card) has the best value.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="card">
+        <h3><span class="ic" style="background:var(--blue)">索</span><span class="zh">探索技巧</span><span class="en">Exploration Tips</span></h3>
+        <ul>
+          <li><span class="zh">优先升级神像提升体力上限；跑图善用双风共鸣、夜兰/流浪者位移。</span><span class="en">Upgrade statues first for stamina; use Dual Anemo resonance and Yelan/Wanderer for mobility.</span></li>
+          <li><span class="zh">宝箱优先级：精致 &gt; 普通；用寻宝罗盘定位未收集宝箱。</span><span class="en">Chest priority: exquisite &gt; common; use Treasure Compass to find uncollected chests.</span></li>
+          <li><span class="zh">多爬高、钻洞，隐藏宝箱/神瞳常在这些地方。</span><span class="en">Climb high and enter caves — hidden chests/oculi often hide there.</span></li>
+          <li><span class="zh">元素视野 + 实时地图标记，避免神瞳漏收集。</span><span class="en">Elemental Sight + live map markers prevent missing oculi.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 新手开荒日程 -->
+<section id="schedule">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">02</span><h2><span class="zh">新手开荒 30 天日程</span><span class="en">30-Day Starter Schedule</span></h2></div>
+    <p class="sec-sub"><span class="zh">按冒险等级里程碑排的每日/每周例行 + 30 天路线。进度以冒险等级为准，天数仅参考。</span><span class="en">Daily/weekly routines and a 30-day route by Adventure Rank milestone. Progress is measured by AR; days are just a reference.</span></p>
+    <div class="src-note"><span class="zh">来源：米游社官方社区、17173、游民星空及多家游戏媒体开荒攻略汇总。当期卡池/数值以游戏内为准。</span><span class="en">Sources: Mijuyou community, 17173, Gamersky and other outlet starter guides. In-game data is final.</span></div>
+
+    <div class="banner">
+      <div class="bgb" style="background-image:url('assets/A_young_traveler_adventurer_in_2026-07-29T01-52-24.png')"></div>
+      <div class="bcontent">
+        <h2><span class="zh">30 天里程碑 · 每日每周例行</span><span class="en">30-Day Milestones · Daily & Weekly</span></h2>
+        <div class="bsub"><span class="zh">照着里程碑走，开荒不迷路。下面还能勾选打卡，进度自动存本机。</span><span class="en">Follow the milestones and you won't get lost. You can also check items off below — progress auto-saves on your device.</span></div>
+      </div>
+    </div>
+
+    <!-- progress tracker -->
+    <div class="tracker" id="tracker">
+      <div class="tp">
+        <div class="pl" id="trackPct"><span class="zh">开荒打卡 0%</span><span class="en">Check-in 0%</span></div>
+        <div class="bar"><i id="trackBar"></i></div>
+        <button class="btn ghost" id="trackReset" style="padding:8px 14px;font-size:13px"><span class="zh">重置</span><span class="en">Reset</span></button>
+      </div>
+      <div style="font-size:12.5px;color:var(--txt-mute);margin-top:8px"><span class="zh">勾选下面完成的项，进度会自动保存到本机（刷新不丢）。这是你的个人开荒进度，攻略站可没有。</span><span class="en">Check off completed items and progress saves on your device (survives refresh). This is your personal progression — guide sites don't have it.</span></div>
+    </div>
+
+    <div class="block">
+      <h3 style="margin:0 0 12px; font-size:16px"><span class="zh">三条核心原则（先记住）</span><span class="en">Three Core Principles (remember first)</span></h3>
+      <div class="plist">
+        <div class="prow"><div class="n">1</div><div class="c"><b><span class="zh">集中养 1 队，别雨露均沾</span><span class="en">Focus one team, don't spread thin</span></b><span class="zh">：前期只养「1 主 C + 1 副 C + 1 奶/盾 + 1 工具人」一支完整队。</span><span class="en">: early game build just one full team of "1 Main DPS + 1 Sub-DPS + 1 Heal/Shield + 1 Utility".</span></div></div>
+        <div class="prow"><div class="n">2</div><div class="c"><b><span class="zh">原石只抽限定 UP 池</span><span class="en">Spend primogems only on limited banners</span></b><span class="zh">：原石 → 换纠缠之缘(粉球) → 抽限时角色；别换常驻蓝球、别碰武器池(前期)。</span><span class="en">: primogems → Intertwined Fate → limited characters; skip the standard blue banner and weapon banner early.</span></div></div>
+        <div class="prow"><div class="n">3</div><div class="c"><b><span class="zh">脆弱树脂 45 级前全囤</span><span class="en">Save all Fragile Resin before AR 45</span></b><span class="zh">：45 前圣遗物副本不出金，树脂只刷突破/天赋材料；45 后集中刷金色圣遗物。</span><span class="en">: pre-45 artifact domains don't drop 5-star; use resin only for ascension/talent mats; farm gold artifacts after 45.</span></div></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="grid g2">
+        <div>
+          <h3 style="margin:0 0 10px; font-size:16px"><span class="zh">每日必做</span><span class="en">Daily</span></h3>
+          <label class="chk" data-id="d1"><input type="checkbox"/><span><span class="zh">每日委托 ×4（12级解锁）→ 凯瑟琳提交，60 原石</span><span class="en">4 Commissions (unlocks AR12) → Katheryne, 60 primos</span></span></label>
+          <label class="chk" data-id="d2"><input type="checkbox"/><span><span class="zh">清完当日树脂（优先主线/突破刚需材料）</span><span class="en">Spend daily resin (priority: story/ascension mats)</span></span></label>
+          <label class="chk" data-id="d3"><input type="checkbox"/><span><span class="zh">探索派遣挂资源（8 小时一轮）</span><span class="en">Dispatch companions (8-hour cycles)</span></span></label>
+          <label class="chk" data-id="d4"><input type="checkbox"/><span><span class="zh">顺手开锚点/神像/捡神瞳（地图打标记）</span><span class="en">Unlock waypoints/statues, grab oculi (mark on map)</span></span></label>
+          <label class="chk" data-id="d5"><input type="checkbox"/><span><span class="zh">限时活动副本每天优先清</span><span class="en">Clear event domains first each day</span></span></label>
+        </div>
+        <div>
+          <h3 style="margin:0 0 10px; font-size:16px"><span class="zh">每周必做（周一清空）</span><span class="en">Weekly (resets Monday)</span></h3>
+          <label class="chk" data-id="w1"><input type="checkbox"/><span><span class="zh">周本 BOSS ×3（前3次半价，掉天赋素材+原胚）</span><span class="en">3 Weekly Bosses (first 3 half cost, drop talents + billets)</span></span></label>
+          <label class="chk" data-id="w2"><input type="checkbox"/><span><span class="zh">声望任务（换神瞳搜寻器/锻造图纸）</span><span class="en">Reputation tasks (oculi searcher / forge blueprints)</span></span></label>
+          <label class="chk" data-id="w3"><input type="checkbox"/><span><span class="zh">纪行任务（换纠缠之缘/脆弱树脂）</span><span class="en">Battle Pass tasks (Intertwined Fate / Fragile Resin)</span></span></label>
+          <label class="chk" data-id="w4"><input type="checkbox"/><span><span class="zh">尘歌壶领洞天宝钱（换浓缩树脂）</span><span class="en">Serenitea Pot currency (Condensed Resin)</span></span></label>
+          <label class="chk" data-id="w5"><input type="checkbox"/><span><span class="zh">地脉花补经验/摩拉（少量）</span><span class="en">Ley Line blossoms for XP/mora (small)</span></span></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 style="margin:22px 0 4px; font-size:16px"><span class="zh">30 天里程碑路线（按冒险等级）</span><span class="en">30-Day Milestone Route (by Adventure Rank)</span></h3>
+      <div class="timeline">
+        <div class="tl">
+          <div class="stage"><span class="zh">阶段 1：冒险等级 1–20（约第 1–5 天）</span><span class="en">Stage 1: AR 1–20 (≈ Day 1–5)</span></div>
+          <div class="meta"><span class="zh">目标：过完蒙德主线，解锁核心功能</span><span class="en">Goal: finish Mondstadt story, unlock core systems</span></div>
+          <div class="body">
+            <ul>
+              <li><span class="zh">推进魔神任务，序章做完解锁风之翼。</span><span class="en">Push the Archon quest; finish prologue to unlock Glider.</span></li>
+              <li><span class="zh">新手池必抽完两次十连（保底得诺艾尔）。</span><span class="en">Use both beginner 10-pulls (guaranteed Noelle).</span></li>
+              <li><span class="zh">12 级解锁每日委托后立即每天做。</span><span class="en">Do commissions daily once unlocked at AR12.</span></li>
+              <li><span class="zh">起步阵容：旅行者+香菱(邀约免费)+芭芭拉(20级奖励)+凯亚。</span><span class="en">Starter team: Traveler + Xiangling (free) + Barbara (AR20 reward) + Kaeya.</span></li>
+              <li><span class="zh">神像、锚点沿途全开；雪山地图前期可跳过。</span><span class="en">Open all statues/waypoints along the way; skip Dragonspine early.</span></li>
+            </ul>
+            <label class="chk" data-id="s1"><input type="checkbox"/><span><span class="zh">完成阶段1：蒙德主线通关 + 拿诺艾尔 + 每日委托起步</span><span class="en">Stage 1 done: Mondstadt cleared + Noelle + commissions started</span></span></label>
+          </div>
+        </div>
+        <div class="tl">
+          <div class="stage"><span class="zh">阶段 2：冒险等级 20–28（约第 6–12 天）</span><span class="en">Stage 2: AR 20–28 (≈ Day 6–12)</span></div>
+          <div class="meta"><span class="zh">目标：拿关键免费角色，进入璃月</span><span class="en">Goal: get key free characters, enter Liyue</span></div>
+          <div class="body">
+            <ul>
+              <li><span class="zh">20 级拿芭芭拉，优先拉到 40 级突破保生存。</span><span class="en">Get Barbara at 20, push to 40 ascension for survival.</span></li>
+              <li><span class="zh">通关深境螺旋 3-3 拿香菱。</span><span class="en">Clear Spiral Abyss 3-3 for Xiangling.</span></li>
+              <li><span class="zh">推进主线到璃月，解锁声望系统。</span><span class="en">Advance story to Liyue, unlock Reputation.</span></li>
+              <li><span class="zh">培养顺序：奶妈→主 C→辅助核心→工具人。</span><span class="en">Build order: healer → Main DPS → core support → utility.</span></li>
+              <li><span class="zh">小技巧：所有已拥有角色先拉到 20 级突破拿成就原石，再集中投资主 C。</span><span class="en">Tip: ascend every owned character to 20 first for achievement primos, then invest in Main DPS.</span></li>
+            </ul>
+            <label class="chk" data-id="s2"><input type="checkbox"/><span><span class="zh">完成阶段2：芭芭拉+香菱到手，进入璃月</span><span class="en">Stage 2 done: Barbara + Xiangling obtained, entered Liyue</span></span></label>
+          </div>
+        </div>
+        <div class="tl">
+          <div class="stage"><span class="zh">阶段 3：冒险等级 28–35（约第 13–20 天）</span><span class="en">Stage 3: AR 28–35 (≈ Day 13–20)</span></div>
+          <div class="meta"><span class="zh">目标：完成璃月主线，世界等级冲 4</span><span class="en">Goal: finish Liyue story, push World Level to 4</span></div>
+          <div class="body">
+            <ul>
+              <li><span class="zh">28 级可放慢享受探索，继续主线至璃月结束。</span><span class="en">At 28 you can slow down and enjoy exploration until Liyue ends.</span></li>
+              <li><span class="zh">世界等级 4 开放周本与高阶材料；别卡世界等级。</span><span class="en">World Level 4 opens weeklies and high-tier mats; don't freeze your WL.</span></li>
+              <li><span class="zh">开始攒原石：限时活动(约 400+)、前瞻码(约 300)、米游社签到。</span><span class="en">Start saving: events (~400+), livestream codes (~300), daily check-in.</span></li>
+              <li><span class="zh">主 C 拉到 70 级、核心天赋点满；辅助 60–80 突破即可。</span><span class="en">Main DPS to 70, core talents maxed; supports just 60–80 ascension.</span></li>
+            </ul>
+            <label class="chk" data-id="s3"><input type="checkbox"/><span><span class="zh">完成阶段3：璃月主线结束，世界等级4，开始攒原石</span><span class="en">Stage 3 done: Liyue cleared, WL4, saving primos</span></span></label>
+          </div>
+        </div>
+        <div class="tl">
+          <div class="stage"><span class="zh">阶段 4：冒险等级 35–45（约第 21–30 天）</span><span class="en">Stage 4: AR 35–45 (≈ Day 21–30)</span></div>
+          <div class="meta"><span class="zh">目标：冲刺 45 级，为圣遗物毕业准备</span><span class="en">Goal: sprint to 45, prep for artifact farming</span></div>
+          <div class="body">
+            <ul>
+              <li><span class="zh">主 C 突破 80 级，核心天赋点到 8 级。</span><span class="en">Main DPS ascends 80, core talents to level 8.</span></li>
+              <li><span class="zh">树脂只刷突破材料 + 天赋本 + 少量地脉花，不碰圣遗物本。</span><span class="en">Resin only for ascension + talent mats + few ley lines, no artifact domains.</span></li>
+              <li><span class="zh">尘歌壶解锁后种突破材料、换树脂。</span><span class="en">After Serenitea Pot, grow ascension mats and convert resin.</span></li>
+              <li><span class="zh">攒够脆弱树脂（建议 20+ 个），等 45 突破后刷主 C 金色圣遗物。</span><span class="en">Stock Fragile Resin (20+ recommended), farm gold artifacts after 45.</span></li>
+            </ul>
+            <label class="chk" data-id="s4"><input type="checkbox"/><span><span class="zh">完成阶段4：主C 80级，囤满脆弱树脂</span><span class="en">Stage 4 done: Main DPS 80, Fragile Resin stocked</span></span></label>
+          </div>
+        </div>
+        <div class="tl">
+          <div class="stage"><span class="zh">45 级突破后（满 30 天之后）</span><span class="en">After AR 45 breakthrough (beyond day 30)</span></div>
+          <div class="meta"><span class="zh">目标：圣遗物毕业，凑两队打深渊</span><span class="en">Goal: artifact graduation, two teams for Abyss</span></div>
+          <div class="body">
+            <ul>
+              <li><span class="zh">圣遗物副本最高难度必掉五星，用囤的脆弱树脂 + 浓缩树脂集中刷主 C 毕业套。</span><span class="en">Top artifact domains guarantee 5-star; use stocked Fragile + Condensed Resin to farm the main set.</span></li>
+              <li><span class="zh">主词条对的上就先用，强化到 +20 停，别死磕副词条。</span><span class="en">Use correct main stats first, enhance to +20, don't chase substats.</span></li>
+              <li><span class="zh">凑出两队能打深渊的阵容，拿满深渊稳定原石（长期正循环）。</span><span class="en">Build two Abyss-capable teams for steady Abyss primos (long-term loop).</span></li>
+            </ul>
+            <label class="chk" data-id="s5"><input type="checkbox"/><span><span class="zh">完成：45突破 + 主C金色圣遗物毕业 + 两队成型</span><span class="en">Done: AR45 + Main DPS gold artifacts + two teams</span></span></label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 style="margin:22px 0 10px; font-size:16px"><span class="zh">角色培养顺序（谁先拉满）</span><span class="en">Character Build Order (who first)</span></h3>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th><span class="zh">顺位</span><span class="en">#</span></th><th><span class="zh">角色类型</span><span class="en">Role</span></th><th><span class="zh">拉到多少</span><span class="en">Level</span></th><th><span class="zh">说明</span><span class="en">Notes</span></th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td><span class="zh">奶妈（芭芭拉/诺艾尔）</span><span class="en">Healer (Barbara/Noelle)</span></td><td><span class="zh">40→70 级</span><span class="en">40→70</span></td><td><span class="zh">生存位基础练度比输出重要，前期不暴毙最值</span><span class="en">Survival matters more than damage early; not dying is the best value</span></td></tr>
+            <tr><td>2</td><td><span class="zh">主 C（香菱/雷泽/烟绯）</span><span class="en">Main DPS (Xiangling/Razor/Yanfei)</span></td><td><span class="zh">70→80 级</span><span class="en">70→80</span></td><td><span class="zh">核心输出，天赋点满战技+爆发</span><span class="en">Core damage; max Skill + Burst talents</span></td></tr>
+            <tr><td>3</td><td><span class="zh">增伤辅助（班尼特/行秋）</span><span class="en">Buff support (Bennett/Xingqiu)</span></td><td><span class="zh">60–80 级</span><span class="en">60–80</span></td><td><span class="zh">只需点核心技能，等级不用拉满也能用</span><span class="en">Just core skills; works without max level</span></td></tr>
+            <tr><td>4</td><td><span class="zh">工具人（凯亚/安柏/砂糖）</span><span class="en">Utility (Kaeya/Amber/Sucrose)</span></td><td><span class="zh">20–60 级</span><span class="en">20–60</span></td><td><span class="zh">解谜/破盾/凑共鸣，用到时拉一下即可</span><span class="en">Puzzles/shields/resonance; level only when needed</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout tip" style="margin-top:14px">
+        <div class="t"><span class="zh">必练「平民战神」四星（0 命即成型，优先级最高）</span><span class="en">Must-build F2P 4-stars (work at C0, top priority)</span></div>
+        <div><b><span class="zh">班尼特</span><span class="en">Bennett</span></b><span class="zh">(火)治疗+全队增伤 · </span><span class="en">(Pyro) heal + team buff · </span><b><span class="zh">行秋</span><span class="en">Xingqiu</span></b><span class="zh">(水)后台挂水减伤 · </span><span class="en">(Hydro) off-field Hydro + DR · </span><b><span class="zh">香菱</span><span class="en">Xiangling</span></b><span class="zh">(火)脱手火副 C，配行秋打蒸发，强度堪比低命五星。</span><span class="en">(Pyro) burst Sub-DPS, Vaporize with Xingqiu, rivals low-constellation 5-stars.</span></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="grid g2">
+        <div class="card">
+          <h3><span class="ic" style="background:var(--rock)">力</span><span class="zh">体力（树脂）分配铁律</span><span class="en">Resin Rules</span></h3>
+          <p><b><span class="zh">45 级前（开荒）</span><span class="en">Before AR 45 (early)</span></b></p>
+          <ul><li><span class="zh">T0：限时活动副本（免费次数清空）</span><span class="en">T0: event domains (use free runs)</span></li><li><span class="zh">T1：主 C/核心辅助突破材料</span><span class="en">T1: Main DPS / core support ascension mats</span></li><li><span class="zh">T2：少量地脉花补经验/摩拉</span><span class="en">T2: few ley lines for XP/mora</span></li><li><span class="zh">T3：完全不碰圣遗物本</span><span class="en">T3: never touch artifact domains</span></li></ul>
+          <p style="margin-top:8px"><b><span class="zh">45 级后（成型）</span><span class="en">After AR 45 (built)</span></b></p>
+          <ul><li><span class="zh">T0：限时活动 → T1：周本 3 次 → T2：主力天赋/武器 → T3：主 C 五星圣遗物本（浓缩树脂双倍）→ T4：地脉花</span><span class="en">T0: events → T1: 3 weeklies → T2: core talents/weapons → T3: Main DPS gold artifacts (Condensed x2) → T4: ley lines</span></li></ul>
+          <p style="margin-top:6px"><span class="zh">避坑：璃月声望 3 级解锁浓缩树脂；圣遗物双倍活动预留大量体力。</span><span class="en">Pitfall: Liyue Reputation 3 unlocks Condensed Resin; reserve resin for double-artifact events.</span></p>
+        </div>
+        <div class="card">
+          <h3><span class="ic" style="background:var(--gold)">武</span><span class="zh">必练四星 & 武器常识</span><span class="en">Key 4-Stars & Weapons</span></h3>
+          <ul>
+            <li><span class="zh">免费强力队：旅行者+香菱+行秋+班尼特（四星四天王）。</span><span class="en">Free power team: Traveler + Xiangling + Xingqiu + Bennett (the four kings).</span></li>
+            <li><span class="zh">经典低金队：雷神国家队、草行久。</span><span class="en">Classic low-cost: Raiden National, Spread/Bloom.</span></li>
+            <li><span class="zh">平民四星武器：祭礼剑、渔获、讨龙英杰谭、西风系列。</span><span class="en">F2P 4-star weapons: Sacrificial Sword, The Catch, Thrilling Tales, Favonius series.</span></li>
+            <li><span class="zh">前中期（56 级前）不建议下武器池，四星与专武一般只差 10%–30%。</span><span class="en">Before ~AR56 skip weapon banner; 4-stars vs signature usually differ only 10%–30%.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 style="margin:22px 0 10px; font-size:16px"><span class="zh">避坑清单（新手最常踩的坑）</span><span class="en">Pitfall List (common newbie mistakes)</span></h3>
+      <div class="dd">
+        <div class="row"><span class="x">✘</span><div><span class="zh">原石换常驻蓝球 / 抽武器池 → </span><span class="en">Spend on standard blue / weapon banner → </span><b style="color:var(--ok)"><span class="zh">只换粉球抽限定角色</span><span class="en">only Intertwined Fate for limited characters</span></b></div></div>
+        <div class="row"><span class="x">✘</span><div><span class="zh">45 级前刷圣遗物本 → </span><span class="en">Farm artifacts before AR45 → </span><b style="color:var(--ok)"><span class="zh">用探索给的四星过渡，45 后必掉金再刷</span><span class="en">use 4-star drops, farm gold only after 45</span></b></div></div>
+        <div class="row"><span class="x">✘</span><div><span class="zh">平均培养五六个角色 → </span><span class="en">Spread levels across 5–6 chars → </span><b style="color:var(--ok)"><span class="zh">集中养 1 主 C + 2 核心辅助</span><span class="en">focus 1 Main DPS + 2 core supports</span></b></div></div>
+        <div class="row"><span class="x">✘</span><div><span class="zh">开局把所有资源给班尼特等辅助 → </span><span class="en">Dump all resources into Bennett-type supports early → </span><b style="color:var(--ok)"><span class="zh">先主 C 练度，辅助点核心技能</span><span class="en">Main DPS first, supports just core skills</span></b></div></div>
+        <div class="row"><span class="x">✘</span><div><span class="zh">卡世界等级不敢突破 → </span><span class="en">Freeze World Level afraid to ascend → </span><b style="color:var(--ok)"><span class="zh">别卡级，突破才能更快养成</span><span class="en">don't freeze; ascension speeds up growth</span></b></div></div>
+        <div class="row"><span class="x">✘</span><div><span class="zh">攒着资源等五星舍不得给四星 → </span><span class="en">Hoarding for 5-stars, stingy on 4-stars → </span><b style="color:var(--ok)"><span class="zh">有什么用什么，四星开荒到 45 完全够</span><span class="en">use what you have; 4-stars carry you to 45 fine</span></b></div></div>
+        <div class="row"><span class="x">✘</span><div><span class="zh">摩拉乱强化低星圣遗物 → </span><span class="en">Waste mora enhancing low-star artifacts → </span><b style="color:var(--ok)"><span class="zh">摩拉优先角色等级/武器突破/主 C 天赋</span><span class="en">mora first on levels / weapon ascension / Main DPS talents</span></b></div></div>
+        <div class="row"><span class="x">✘</span><div><span class="zh">神瞳不标记乱捡 → </span><span class="en">Grab oculi without marking → </span><b style="color:var(--ok)"><span class="zh">地图打标记，供奉神像提体力上限</span><span class="en">mark on map, offer to statues for stamina</span></b></div></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 style="margin:22px 0 10px; font-size:16px"><span class="zh">关键数据速查</span><span class="en">Key Numbers</span></h3>
+      <div class="stats">
+        <div class="stat"><div class="v">60</div><div class="k"><span class="zh">每日委托 4 个 = 原石（12 级解锁）</span><span class="en">4 commissions = primos (AR12)</span></div></div>
+        <div class="stat"><div class="v">160</div><div class="k"><span class="zh">树脂上限（每 8 分钟回 1 点）</span><span class="en">Resin cap (1 per 8 min)</span></div></div>
+        <div class="stat"><div class="v">30</div><div class="k"><span class="zh">周本前 3 次半价（树脂/次，周一刷）</span><span class="en">First 3 weeklies half cost (resin, Mon)</span></div></div>
+        <div class="stat"><div class="v">90/180</div><div class="k"><span class="zh">限定池小/大保底抽数</span><span class="en">Soft/hard pity pulls</span></div></div>
+        <div class="stat"><div class="v"><span class="zh">诺艾尔</span><span class="en">Noelle</span></div><div class="k"><span class="zh">新手池两次十连保底</span><span class="en">Beginner banner guarantee</span></div></div>
+        <div class="stat"><div class="v">45</div><div class="k"><span class="zh">世界等级：圣遗物本必掉五星</span><span class="en">World Lv: artifacts guarantee 5★</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 专属开荒顺序 -->
+<section id="custom">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">03</span><h2><span class="zh">专属开荒顺序（零氪定制）</span><span class="en">Custom Plan (Free-to-Play)</span></h2></div>
+    <p class="sec-sub"><span class="zh">按账号画像定制：零氪 · 蒙德起步 · 已持班尼特/行秋/香菱 + 一人权五星 · 目标开荒推图。</span><span class="en">Tailored to your account: F2P · Mondstadt start · already have Bennett/Xingqiu/Xiangling + one premium 5★ · goal: smooth progression.</span></p>
+    <div class="src-note"><span class="zh">说明：攻略类内容有时效，具体卡池/数值以游戏内为准。</span><span class="en">Note: guides age; in-game data is final.</span></div>
+
+    <div class="banner">
+      <div class="bgb" style="background-image:url('assets/A_mystical_starry_night_sky_wi_2026-07-29T01-52-52.png')"></div>
+      <div class="bcontent">
+        <h2><span class="zh">把原石规划变成可算的</span><span class="en">Make Primogem Planning Calculable</span></h2>
+        <div class="bsub"><span class="zh">辅助已毕业，原石 100% 留给主 C。想知道还要攒多久？去「互动工具 → 原石规划器」算给你看。</span><span class="en">Supports are done; 100% of primos go to a Main DPS. Wonder how long to save? Use the Primogem Planner under Tools.</span></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 style="margin:0 0 10px; font-size:16px"><span class="zh">你的账号画像与核心结论</span><span class="en">Your Account & Core Conclusion</span></h3>
+      <div class="profile">
+        <div class="pf"><div class="k"><span class="zh">氪金</span><span class="en">Spend</span></div><div class="v"><span class="zh">零氪（原石极珍贵）</span><span class="en">F2P (primos precious)</span></div></div>
+        <div class="pf"><div class="k"><span class="zh">进度</span><span class="en">Progress</span></div><div class="v"><span class="zh">蒙德阶段</span><span class="en">Mondstadt</span></div></div>
+        <div class="pf"><div class="k"><span class="zh">已持核心</span><span class="en">Core units</span></div><div class="v"><span class="zh">班尼特+行秋+香菱+人权五星</span><span class="en">Bennett+Xingqiu+Xiangling+1 premium</span></div></div>
+        <div class="pf"><div class="k"><span class="zh">目标</span><span class="en">Goal</span></div><div class="v"><span class="zh">主线/大世界畅通</span><span class="en">Smooth story / open world</span></div></div>
+      </div>
+      <div class="callout">
+        <div class="t"><span class="zh">核心结论</span><span class="en">Core Conclusion</span></div>
+        <div><span class="zh">你的开荒体验会比绝大多数零氪舒服得多。班尼特+行秋+香菱是公认「四星三神」，再加一个人权五星，</span><span class="en">Your early game will be far smoother than most F2P. Bennett+Xingqiu+Xiangling are the famed "3-star gods", plus a premium 5★ — </span><b><span class="zh">辅助底盘已经毕业</span><span class="en">your support base is already complete</span></b><span class="zh">。你唯一需要补的，是</span><span class="en">. The only thing you lack is </span><b><span class="zh">一个主 C</span><span class="en">a Main DPS</span></b><span class="zh">。</span><span class="en">.</span></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="callout warn">
+        <div class="t"><span class="zh">先澄清：你是不是「纯新号」？</span><span class="en">Clarify: are you a "pure new account"?</span></div>
+        <div><span class="zh">你选了「刚建号/蒙德」却「已持有班尼特/行秋/香菱/人权五星」，两点通常不会同时成立（这些角色要抽卡或推进才获得）。两种可能：</span><span class="en">You picked "new account / Mondstadt" yet "already own Bennett/Xingqiu/Xiangling/premium" — these rarely co-occur (those units need wishes or progress). Two cases:</span></div>
+        <ul style="margin:8px 0 0; padding-left:18px; color:var(--txt-dim)">
+          <li><b><span class="zh">情况 A（回坑号/已抽过卡）</span><span class="en">Case A (returnee / already wished)</span></b><span class="zh">：角色是库存，直接照顺序拉满，开荒平推。</span><span class="en">: units are in inventory; just build in order and steamroll.</span></li>
+          <li><b><span class="zh">情况 B（纯新号）</span><span class="en">Case B (pure new)</span></b><span class="zh">：这些是「计划要拿」的目标 → 香菱深境 3-3 送、芭芭拉 20 级送、班尼特/行秋靠祈愿或星辉兑换、人权五星需等复刻/抽。</span><span class="en">: these are "targets to get" → Xiangling from Abyss 3-3, Barbara at AR20, Bennett/Xingqiu via banners or Starglitter, premium waits for rerun/wish.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 style="margin:22px 0 10px; font-size:16px"><span class="zh">专属角色培养顺序（带理由）</span><span class="en">Custom Build Order (with reasons)</span></h3>
+      <p style="color:var(--txt-dim); font-size:14px"><span class="zh">你已有超强辅助，顺序逻辑和普通零氪相反——把已有辅助快速成型，再补主 C。</span><span class="en">You already have strong supports, so the logic reverses vs normal F2P —成型 existing supports fast, then add a Main DPS.</span></p>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th><span class="zh">顺位</span><span class="en">#</span></th><th><span class="zh">角色</span><span class="en">Unit</span></th><th><span class="zh">拉到</span><span class="en">To</span></th><th><span class="zh">理由</span><span class="en">Reason</span></th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td><b><span class="zh">人权五星（钟离）</span><span class="en">Premium 5★ (Zhongli)</span></b></td><td><span class="zh">80 级突破</span><span class="en">Ascend 80</span></td><td><span class="zh">护盾=大世界无敌，开荒最爽，优先拉满</span><span class="en">Shield = open-world invincible, best early comfort, max first</span></td></tr>
+            <tr><td>1'</td><td><span class="zh">人权五星（万叶/纳西妲）</span><span class="en">Premium (Kazuha/Nahida)</span></td><td><span class="zh">60–80 级</span><span class="en">60–80</span></td><td><span class="zh">开荒期不如钟离保命直接，可稍后但都值得练</span><span class="en">Less directly life-saving than Zhongli early; later but worth it</span></td></tr>
+            <tr><td>2</td><td><b><span class="zh">班尼特</span><span class="en">Bennett</span></b></td><td><span class="zh">80 级突破</span><span class="en">Ascend 80</span></td><td><span class="zh">治疗+全队增伤，大招点满；武器选高白值攻击</span><span class="en">Heal + team buff, max Burst; high-base-ATK weapon</span></td></tr>
+            <tr><td>3</td><td><b><span class="zh">行秋</span><span class="en">Xingqiu</span></b></td><td><span class="zh">80 级突破</span><span class="en">Ascend 80</span></td><td><span class="zh">后台挂水核心，祭礼剑最好，E/Q 点高</span><span class="en">Off-field Hydro core, Sacrificial Sword best, high E/Q</span></td></tr>
+            <tr><td>4</td><td><b><span class="zh">香菱</span><span class="en">Xiangling</span></b></td><td><span class="zh">80 级突破</span><span class="en">Ascend 80</span></td><td><span class="zh">脱手火副 C，渔获/充能武器，E/Q 点高（没拿先打通深境 3-3）</span><span class="en">Burst Sub-DPS, The Catch/ER weapon, high E/Q (get from Abyss 3-3 first)</span></td></tr>
+            <tr><td>5</td><td><b><span class="zh">主 C</span><span class="en">Main DPS</span></b>（<span class="zh">凯亚/雷泽/旅行者</span><span class="en">Kaeya/Razor/Traveler</span>）</td><td><span class="zh">80 级突破</span><span class="en">Ascend 80</span></td><td><span class="zh">你缺的是主 C，拉满才是完整队伍</span><span class="en">You lack a Main DPS; maxing it completes the team</span></td></tr>
+            <tr><td>6</td><td><span class="zh">芭芭拉/诺艾尔</span><span class="en">Barbara/Noelle</span></td><td><span class="zh">40–70 级</span><span class="en">40–70</span></td><td><span class="zh">双保险奶/盾，已有钟离+班尼特可省，免费拿的留着备用</span><span class="en">Backup heal/shield; with Zhongli+Bennett you can skip, keep as reserve</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="color:var(--txt-dim); font-size:14px; margin-top:10px"><b><span class="zh">主 C 建议（开荒期不用抽，先用免费）</span><span class="en">Main DPS suggestion (no wish needed early, use free ones)</span></b><span class="zh">：凯亚(冰,初始)、雷泽(物理,易抽)、旅行者(风/岩切换)。攒够原石再抽强势限定主 C 搭这套辅助。</span><span class="en">: Kaeya (Cryo, starter), Razor (Phys, easy), Traveler (Anemo/Geo). Save primos then wish a strong limited Main DPS for this support core.</span></p>
+    </div>
+
+    <div class="block">
+      <div class="grid g2">
+        <div class="card">
+          <h3><span class="ic" style="background:var(--ok)">日</span><span class="zh">专属每日（约 15 分钟）</span><span class="en">Custom Daily (~15 min)</span></h3>
+          <ul>
+            <li><span class="zh">4 个每日委托 → 凯瑟琳提交（60 原石，零氪命脉）</span><span class="en">4 Commissions → Katheryne (60 primos, F2P lifeline)</span></li>
+            <li><span class="zh">清完当日树脂（优先主 C/辅助突破材料，别碰圣遗物本）</span><span class="en">Spend resin (priority Main DPS/support mats, no artifacts)</span></li>
+            <li><span class="zh">探索派遣挂资源</span><span class="en">Dispatch companions for resources</span></li>
+            <li><span class="zh">顺手开锚点/神像/捡神瞳（地图打标记）</span><span class="en">Open waypoints/statues, grab oculi (mark map)</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="ic" style="background:var(--blue)">周</span><span class="zh">专属每周（周一清空）</span><span class="en">Custom Weekly (Mon reset)</span></h3>
+          <ul>
+            <li><span class="zh">周本 BOSS ×3（半价，掉天赋素材+武器原胚）</span><span class="en">3 Weekly Bosses (half cost, talents + billets)</span></li>
+            <li><span class="zh">声望任务（换神瞳搜寻器/锻造图纸）</span><span class="en">Reputation (oculi searcher / forge blueprints)</span></li>
+            <li><span class="zh">尘歌壶领洞天宝钱（换浓缩树脂/纠缠之缘）</span><span class="en">Serenitea Pot currency (Condensed Resin / Fates)</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 style="margin:22px 0 4px; font-size:16px"><span class="zh">30 天里程碑（蒙德起步 → 45）</span><span class="en">30-Day Milestones (Mondstadt → 45)</span></h3>
+      <div class="timeline">
+        <div class="tl"><div class="stage"><span class="zh">1–20 级（约第 1–5 天）</span><span class="en">1–20 (≈ Day 1–5)</span></div><div class="body"><ul><li><span class="zh">推蒙德主线，新手池两次十连拿诺艾尔；12 级起每天委托；20 级拿芭芭拉；深境 3-3 拿香菱。</span><span class="en">Mondstadt story, two beginner 10-pulls for Noelle; commissions from AR12; Barbara at 20; Xiangling from Abyss 3-3.</span></li><li><span class="zh">你已有班尼特+人权，可直接组「人权+班尼特+香菱+主 C」平推。</span><span class="en">With Bennett + premium you can run "premium + Bennett + Xiangling + Main DPS" and steamroll.</span></li></ul></div></div>
+        <div class="tl"><div class="stage"><span class="zh">20–28 级（约第 6–12 天）</span><span class="en">20–28 (≈ Day 6–12)</span></div><div class="body"><ul><li><span class="zh">进璃月，把班尼特/行秋/香菱/人权拉到 60–80。主线极顺，基本无卡点。</span><span class="en">Enter Liyue, push Bennett/Xingqiu/Xiangling/premium to 60–80. Story is smooth, few walls.</span></li></ul></div></div>
+        <div class="tl"><div class="stage"><span class="zh">28–35 级（约第 13–20 天）</span><span class="en">28–35 (≈ Day 13–20)</span></div><div class="body"><ul><li><span class="zh">完成璃月主线，世界等级冲 4；开始攒原石（活动+前瞻码+签到）。</span><span class="en">Finish Liyue, push WL to 4; start saving (events + codes + check-in).</span></li></ul></div></div>
+        <div class="tl"><div class="stage"><span class="zh">35–45 级（约第 21–30 天）</span><span class="en">35–45 (≈ Day 21–30)</span></div><div class="body"><ul><li><span class="zh">主 C 拉到 80、核心天赋 8 级；囤脆弱树脂(20+)；原石全部留着等主 C。</span><span class="en">Main DPS to 80, core talents 8; stock Fragile Resin (20+); keep all primos for a Main DPS.</span></li></ul></div></div>
+        <div class="tl"><div class="stage"><span class="zh">45 级突破后</span><span class="en">After AR 45</span></div><div class="body"><ul><li><span class="zh">圣遗物本必掉五星，用囤的树脂集中刷主 C 毕业套。</span><span class="en">Artifacts guarantee 5-star; use stocked resin to farm the Main DPS set.</span></li></ul></div></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="callout tip">
+        <div class="t"><span class="zh">零氪原石规划（给你最值钱的建议）</span><span class="en">F2P Primogem Plan (the most valuable advice)</span></div>
+        <div><span class="zh">普通零氪都喊「先抽辅助」——</span><span class="en">Normal F2P says "wish supports first" — </span><b><span class="zh">但你辅助已经毕业了</span><span class="en">but your supports are already done</span></b><span class="zh">，所以策略要反过来：</span><span class="en">, so reverse it: </span><b><span class="zh">100% 留给主 C，一个辅助都别再抽。</span><span class="en">100% to a Main DPS, wish no more supports.</span></b></div>
+        <ul style="margin:8px 0 0; padding-left:18px; color:var(--txt-dim)">
+          <li><span class="zh">你已有班尼特+行秋+香菱+人权，几乎任意主 C 都能直接搭。</span><span class="en">With Bennett+Xingqiu+Xiangling+premium, almost any Main DPS slots in directly.</span></li>
+          <li><span class="zh">零氪原石有限，分散抽辅助=样样稀烂；集中抽一个强势限定主 C=直接成型一队。</span><span class="en">Limited F2P primos: spread on supports = mediocre everything; focus one strong limited Main DPS = one complete team.</span></li>
+          <li><span class="zh">纪律：原石只换纠缠之缘 → 只抽认定的主 C UP 池；小保底 90 / 大保底 180，攒满再抽，不博运气。</span><span class="en">Discipline: primos → only Intertwined Fate → only your chosen Main DPS banner; soft 90 / hard 180, save full then pull, no gambling.</span></li>
+          <li><span class="zh">人权五星若你还没有（情况 B），可作未来复刻主目标之一，但优先级仍低于补齐主 C 缺口——除非你连主 C 都不缺。</span><span class="en">If you lack the premium 5★ (Case B), it can be a future rerun target, but lower priority than filling the Main DPS gap — unless you already have one.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 style="margin:22px 0 10px; font-size:16px"><span class="zh">避坑（结合你的情况）</span><span class="en">Pitfalls (for your case)</span></h3>
+      <div class="dd">
+        <div class="row"><span class="x">✘</span><div><span class="zh">看辅助强就继续抽辅助 → </span><span class="en">Keep wishing supports because they're strong → </span><b style="color:var(--ok)"><span class="zh">辅助已够，原石全押主 C</span><span class="en">supports enough, all primos on Main DPS</span></b></div></div>
+        <div class="row"><span class="x">✘</span><div><span class="zh">人权拉满就躺平不练主 C → </span><span class="en">Max premium then slack on Main DPS → </span><b style="color:var(--ok)"><span class="zh">没主 C 一样没输出，主 C 必须拉到 80</span><span class="en">no Main DPS = no damage; must push to 80</span></b></div></div>
+        <div class="row"><span class="x">✘</span><div><span class="zh">45 前刷圣遗物本 → </span><span class="en">Farm artifacts before 45 → </span><b style="color:var(--ok)"><span class="zh">用探索给的四星过渡，45 后必掉金再刷</span><span class="en">use 4-star drops, farm gold only after 45</span></b></div></div>
+        <div class="row"><span class="x">✘</span><div><span class="zh">平均养五六个角色 → </span><span class="en">Spread across 5–6 chars → </span><b style="color:var(--ok)"><span class="zh">先成型「人权+班尼特+行秋+香菱+主 C」一队</span><span class="en">first complete "premium+Bennett+Xingqiu+Xiangling+Main DPS"</span></b></div></div>
+        <div class="row"><span class="x">✘</span><div><span class="zh">卡世界等级不敢突破 → </span><span class="en">Freeze World Level → </span><b style="color:var(--ok)"><span class="zh">你有盾有奶有增伤，突破只会更顺</span><span class="en">you have shield/heal/buff; ascension only smooths it</span></b></div></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="callout">
+        <div class="t"><span class="zh">一句话总结</span><span class="en">In one line</span></div>
+        <div><span class="zh">你这账号是「辅助毕业、只差主 C」的完美开荒胚子：</span><span class="en">Your account is the perfect "supports done, only a Main DPS short" starter: </span><b><span class="zh">把班尼特/行秋/香菱/人权快速拉成型，主 C 用免费的顶着，零氪原石全部囤着等一个强势限定主 C</span><span class="en">quickly build Bennett/Xingqiu/Xiangling/premium, hold the line with a free Main DPS, hoard all F2P primos for one strong limited Main DPS</span></b><span class="zh">——照这个走，30 天稳过开荒、世界等级冲 45，几乎不卡关。</span><span class="en">— follow this and you'll clear early game in 30 days, hit WL45, almost no walls.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 互动工具 -->
+<section id="tools">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">04</span><h2><span class="zh">互动工具箱</span><span class="en">Interactive Tools</span></h2></div>
+    <p class="sec-sub"><span class="zh">攻略站做不了的事，这里都能玩：抽卡模拟、元素反应演示、原石规划、配队共鸣。纯前端、可离线、数据不联网。</span><span class="en">What guide sites can't do, you can play with here: gacha sim, reaction demo, primogem planner, team resonance. Pure frontend, offline, no data sent.</span></p>
+
+    <!-- 抽卡模拟器 -->
+    <div class="tool">
+      <h3><span class="ic">抽</span><span class="zh">抽卡模拟器（含保底逻辑）</span><span class="en">Gacha Simulator (with pity)</span></h3>
+      <p class="hint"><span class="zh">模拟限定 UP 池：5★ 基础 0.6%、90 抽必出（小保底 50% 当期）；4★ 5.1%、10 抽必出。点十连看金光。</span><span class="en">Simulates a limited banner: 5★ base 0.6%, guaranteed at 90 (50% on soft pity); 4★ 5.1%, guaranteed at 10. Pull 10 for the gold flash.</span></p>
+      <div class="gacha-top">
+        <div class="fate"><span class="pink"></span><span class="zh">纠缠之缘：</span><span class="en">Fate: </span><b id="fateCount">160</b></div>
+        <button class="btn primary" id="pull1"><span class="zh">单抽</span><span class="en">x1</span></button>
+        <button class="btn ghost" id="pull10"><span class="zh">十连</span><span class="en">x10</span></button>
+        <span style="color:var(--txt-mute);font-size:13px"><span class="zh">5★ 保底计数：</span><span class="en">5★ pity: </span><b id="p5">0</b>/90 · <span class="zh">4★ 保底：</span><span class="en">4★: </span><b id="p4">0</b>/10</span>
+      </div>
+      <div class="gacha-results" id="gachaResults"></div>
+      <div class="gacha-log">
+        <span><span class="zh">累计抽数：</span><span class="en">Total: </span><b id="totalPulls">0</b></span>
+        <span><span class="zh">5★ 数：</span><span class="en">5★: </span><b id="cnt5">0</b></span>
+        <span><span class="zh">4★ 数：</span><span class="en">4★: </span><b id="cnt4">0</b></span>
+        <span><span class="zh">平均出 5★ 间隔：</span><span class="en">Avg 5★ gap: </span><b id="avg5">—</b></span>
+      </div>
+    </div>
+
+    <!-- 元素反应演示 -->
+    <div class="tool">
+      <h3><span class="ic">元</span><span class="zh">元素反应动态演示</span><span class="en">Elemental Reaction Demo</span></h3>
+      <p class="hint"><span class="zh">选两种元素，看它们碰撞触发什么反应。比文字口诀直观。</span><span class="en">Pick two elements and watch them collide into a reaction. More intuitive than a text rule.</span></p>
+      <div class="react-stage" id="reactStage">
+        <div class="orb" id="orbA" style="background:var(--fire);color:var(--fire)">火<small>火</small></div>
+        <div class="react-bolt">⚡</div>
+        <div class="orb" id="orbB" style="background:var(--water);color:var(--water)">水<small>水</small></div>
+      </div>
+      <div class="react-btns" id="reactBtns"></div>
+      <div class="react-info" id="reactInfo"></div>
+    </div>
+
+    <!-- 原石规划器 -->
+    <div class="tool">
+      <h3><span class="ic">石</span><span class="zh">原石规划器</span><span class="en">Primogem Planner</span></h3>
+      <p class="hint"><span class="zh">输入你手上的资源与目标，算出还要攒多少天。零氪也能心里有数。</span><span class="en">Enter your resources and goal to see how many days to save. Even F2P gets clarity.</span></p>
+      <div class="form-row">
+        <div class="field"><label><span class="zh">当前原石</span><span class="en">Primogems now</span></label><input id="pNow" type="number" value="3000" min="0"></div>
+        <div class="field"><label><span class="zh">当前纠缠之缘（粉球）</span><span class="en">Intertwined Fate</span></label><input id="pFate" type="number" value="20" min="0"></div>
+        <div class="field"><label><span class="zh">每天可获原石（委托60+其他）</span><span class="en">Primos/day (60 commissions+)</span></label><input id="pDay" type="number" value="90" min="0"></div>
+        <div class="field"><label><span class="zh">目标抽数（如大保底180）</span><span class="en">Target pulls (e.g. 180)</span></label><input id="pTarget" type="number" value="180" min="1"></div>
+      </div>
+      <div class="plan-out">
+        <div class="plan-card gold"><div class="v" id="planNeed">—</div><div class="k"><span class="zh">还差原石</span><span class="en">Primos short</span></div></div>
+        <div class="plan-card"><div class="v" id="planDays">—</div><div class="k"><span class="zh">还需天数</span><span class="en">Days needed</span></div></div>
+        <div class="plan-card"><div class="v" id="planPulls">—</div><div class="k"><span class="zh">当前折算抽数</span><span class="en">Current pulls</span></div></div>
+        <div class="plan-card"><div class="v" id="planGap">—</div><div class="k"><span class="zh">还差抽数</span><span class="en">Pulls short</span></div></div>
+      </div>
+    </div>
+
+    <!-- 配队共鸣 -->
+    <div class="tool">
+      <h3><span class="ic">队</span><span class="zh">配队共鸣提示</span><span class="en">Team Resonance</span></h3>
+      <p class="hint"><span class="zh">选 4 个出场角色的元素，实时显示激活的元素共鸣。配队前先算共鸣。</span><span class="en">Pick elements for 4 characters to see active resonance live. Compute resonance before building.</span></p>
+      <div class="team">
+        <select class="tsel" data-i="0"></select>
+        <select class="tsel" data-i="1"></select>
+        <select class="tsel" data-i="2"></select>
+        <select class="tsel" data-i="3"></select>
+      </div>
+      <div class="res-out" id="resOut"><span class="res-none"><span class="zh">选择元素后显示共鸣…</span><span class="en">Pick elements to show resonance…</span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 关于来源 -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">05</span><h2><span class="zh">关于来源与说明</span><span class="en">Sources & Notes</span></h2></div>
+    <div class="grid g2">
+      <div class="card">
+        <h3><span class="ic" style="background:var(--blue)">源</span><span class="zh">内容来源</span><span class="en">Sources</span></h3>
+        <ul>
+          <li><span class="zh">社区/媒体：米游社官方社区、游民星空、17173、腾讯新闻游戏分析。</span><span class="en">Community/media: Mijuyou, Gamersky, 17173, Tencent News game analysis.</span></li>
+          <li><span class="zh">官方信息：米哈游官网 ys.mihoyo.com（版本公告、祈愿详情）。</span><span class="en">Official: miHoYo site ys.mihoyo.com (version notes, banners).</span></li>
+          <li><span class="zh">本页为 </span><span class="en">This page is an </span><b><span class="zh">AI 整合的去噪攻略汇编</span><span class="en">AI-curated, de-noised guide compilation</span></b><span class="zh">，非米哈游官方文档；调研时已剔除 AI 生成的 SEO 灌水文。</span><span class="en">, not an official miHoYo document; AI-generated SEO spam was filtered out.</span></li>
+          <li><span class="zh">站内视觉图为 </span><span class="en">Visuals are </span><b><span class="zh">AI 生成的风格化素材</span><span class="en">AI-generated stylized assets</span></b><span class="zh">（非官方美术），仅作装饰。</span><span class="en"> (not official art), decorative only.</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="ic" style="background:var(--gold)">注</span><span class="zh">使用须知</span><span class="en">Disclaimer</span></h3>
+        <ul>
+          <li><span class="zh">版本号与角色强度随版本迭代变化较快，</span><span class="en">Versions and character strength shift fast; </span><b><span class="zh">具体当期卡池/数值以游戏内为准</span><span class="en">in-game data is final</span></b><span class="zh">。</span><span class="en">.</span></li>
+          <li><span class="zh">核心机制 / 资源规划 / 配队逻辑为长期稳定的通用知识。</span><span class="en">Core mechanics / resource planning / team logic are long-term stable general knowledge.</span></li>
+          <li><span class="zh">抽卡模拟器为概率演示，非真实出货；原石规划器为估算，仅供参考。</span><span class="en">Gacha sim is a probability demo, not real drops; planner is an estimate, reference only.</span></li>
+          <li><span class="zh">攻略含主观经验判断，适合当入门参考，非版本真相来源；权威定论以官方渠道为准。</span><span class="en">Guides carry subjective experience; good as an intro, not the version truth; official channels are authoritative.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout" style="margin-top:16px">
+      <div class="t"><span class="zh">想更进一步？</span><span class="en">Want more?</span></div>
+      <div><span class="zh">告诉我具体角色名（如「钟离 / 万叶 / 纳西妲 哪个」或想抽的主 C），我可以把专属顺序和抽卡规划精确到角色；也可深挖：版本 T0 配队、深渊 12 层满星、神瞳宝箱全收集路线、中长期原石规划。</span><span class="en">Tell me a specific character (e.g. which of Zhongli/Kazuha/Nahida, or your target Main DPS) and I can pin the custom plan and gacha math to that unit; or go deeper: version T0 teams, Abyss 12 stars, full oculi/chest routes, mid-term primogem planning.</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="no-result" id="noResult"><span class="zh">没有匹配的攻略小节，换个关键词试试。</span><span class="en">No matching sections — try another keyword.</span></div>
+
+<footer>
+  <div class="wrap">
+    <div><span class="zh">提瓦特攻略站 · 由 AI 整合社区与官方攻略 + 可交互工具而成 · 仅供学习参考</span><span class="en">Teyvat Guide · AI-curated from community & official guides + interactive tools · for learning only</span></div>
+    <div><span class="zh">版本：月之八·空月之歌·谐谑（2026/07）· 数据以游戏内为准</span><span class="en">Version: Moon III (2026/07) · in-game data is final</span></div>
+  </div>
+</footer>
+
+<script>
+  const curLang = () => (document.documentElement.getAttribute('data-lang') || 'zh');
+  const EN_ELEM = {'火':'Pyro','水':'Hydro','冰':'Cryo','雷':'Electro','草':'Dendro','风':'Anemo','岩':'Geo'};
+  const ZH_ELEM = {'火':'火','水':'水','冰':'冰','雷':'雷','草':'草','风':'风','岩':'岩'};
+
+  // mobile menu
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  // scrollspy
+  const navMap = {};
+  navLinks.querySelectorAll('a').forEach(a => navMap[a.getAttribute('href').slice(1)] = a);
+  const sections = ['home','overview','schedule','custom','tools','about'].map(id => document.getElementById(id));
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        Object.values(navMap).forEach(a => a.classList.remove('active'));
+        if (navMap[e.target.id]) navMap[e.target.id].classList.add('active');
+      }
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  sections.forEach(s => io.observe(s));
+
+  // search filter + highlight
+  const search = document.getElementById('search');
+  const blocks = Array.from(document.querySelectorAll('.block'));
+  const noResult = document.getElementById('noResult');
+  search.addEventListener('input', () => {
+    const q = search.value.trim().toLowerCase();
+    if (!q) { blocks.forEach(b => { b.classList.remove('hide'); clearMarks(b); }); noResult.style.display='none'; return; }
+    let anyVisible = false;
+    blocks.forEach(b => {
+      if (b.textContent.toLowerCase().includes(q)) { b.classList.remove('hide'); anyVisible=true; highlight(b, search.value.trim()); }
+      else { b.classList.add('hide'); clearMarks(b); }
+    });
+    noResult.style.display = anyVisible ? 'none' : 'block';
+  });
+  function clearMarks(root){ root.querySelectorAll('mark').forEach(m => { const t=document.createTextNode(m.textContent); m.parentNode.replaceChild(t,m); m.parentNode.normalize(); }); }
+  function highlight(root, q){
+    clearMarks(root); if(!q) return;
+    const walker=document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null); const targets=[]; let n;
+    while((n=walker.nextNode())){ if(n.nodeValue.toLowerCase().includes(q.toLowerCase()) && n.parentNode.tagName!=='MARK' && n.parentNode.tagName!=='SCRIPT') targets.push(n); }
+    targets.forEach(tn => { const frag=document.createDocumentFragment(); const val=tn.nodeValue; const lower=val.toLowerCase(); let idx=0,pos;
+      while((pos=lower.indexOf(q.toLowerCase(),idx))!==-1){ if(pos>idx) frag.appendChild(document.createTextNode(val.slice(idx,pos))); const m=document.createElement('mark'); m.textContent=val.slice(pos,pos+q.length); frag.appendChild(m); idx=pos+q.length; }
+      if(idx<val.length) frag.appendChild(document.createTextNode(val.slice(idx))); tn.parentNode.replaceChild(frag,tn);
+    });
+  }
+
+  /* ===== 进度打卡 (localStorage) ===== */
+  const CHK_KEY='genshin_checklist_v1';
+  function loadChk(){ try{ return JSON.parse(localStorage.getItem(CHK_KEY)||'{}'); }catch(e){ return {}; } }
+  function saveChk(o){ localStorage.setItem(CHK_KEY, JSON.stringify(o)); }
+  const chkState=loadChk();
+  const chkEls=Array.from(document.querySelectorAll('.chk'));
+  function refreshTracker(){
+    const done=chkEls.filter(c=>c.classList.contains('done')).length;
+    const pct=Math.round(done/chkEls.length*100);
+    document.getElementById('trackPct').innerHTML = (curLang()==='en'?'Check-in ':'开荒打卡 ') + pct + '%';
+    document.getElementById('trackBar').style.width=pct+'%';
+  }
+  chkEls.forEach(c=>{
+    const id=c.dataset.id; const input=c.querySelector('input');
+    if(chkState[id]){ input.checked=true; c.classList.add('done'); }
+    input.addEventListener('change', ()=>{
+      c.classList.toggle('done', input.checked);
+      chkState[id]=input.checked; saveChk(chkState); refreshTracker();
+    });
+  });
+  refreshTracker();
+  document.getElementById('trackReset').addEventListener('click', ()=>{
+    chkEls.forEach(c=>{ c.querySelector('input').checked=false; c.classList.remove('done'); delete chkState[c.dataset.id]; });
+    saveChk(chkState); refreshTracker();
+  });
+
+  /* ===== 抽卡模拟器 ===== */
+  const GS={fate:160, p5:0, p4:0, total:0, c5:0, c4:0, sum5:0, last5:0, guaranteed:false};
+  const el=id=>document.getElementById(id);
+  const NAMES={
+    3:{zh:['史莱姆','蘑菇','矿'],en:['Slime','Mushroom','Ore']},
+    4:{zh:['行秋','香菱','班尼特','雷泽','芭芭拉'],en:['Xingqiu','Xiangling','Bennett','Razor','Barbara']},
+    5:{zh:['钟离','万叶','纳西妲','雷电将军','那维莱特'],en:['Zhongli','Kazuha','Nahida','Raiden','Neuvillette']}
+  };
+  function pullOnce(){
+    if(GS.fate<=0){ alert(curLang()==='en'?'Out of Intertwined Fate — do your daily commissions!':'纠缠之缘不够了，先去每日委托攒吧～'); return null; }
+    GS.fate--; GS.total++; GS.p5++; GS.p4++;
+    let rarity;
+    if(GS.p5>=90){ rarity=5; }
+    else if(GS.p4>=10){ rarity=4; }
+    else { const r=Math.random()*100; if(r<0.6) rarity=5; else if(r<5.7) rarity=4; else rarity=3; }
+    if(rarity===5){
+      GS.p5=0; GS.p4=0; GS.c5++; GS.sum5+=GS.total-GS.last5; GS.last5=GS.total;
+      if(!GS.guaranteed){ GS.guaranteed = Math.random()<0.5 ? true : false; } else { GS.guaranteed=true; }
+    } else if(rarity===4){ GS.p4=0; GS.c4++; }
+    return rarity;
+  }
+  function renderPulls(arr){
+    const box=el('gachaResults'); box.innerHTML='';
+    arr.forEach((r,i)=>{
+      const d=document.createElement('div'); d.className='pull r'+r;
+      const name=NAMES[r][curLang()][Math.floor(Math.random()*NAMES[r][curLang()].length)];
+      d.innerHTML='<div class="stars">'+(r===5?'★★★★★':r===4?'★★★★':'★★★')+'</div><div class="label">'+name+'</div>';
+      d.style.animationDelay=(i*0.05)+'s'; box.appendChild(d);
+    });
+    el('fateCount').textContent=GS.fate; el('p5').textContent=GS.p5; el('p4').textContent=GS.p4;
+    el('totalPulls').textContent=GS.total; el('cnt5').textContent=GS.c5; el('cnt4').textContent=GS.c4;
+    el('avg5').textContent=GS.c5? Math.round(GS.sum5/GS.c5)+(curLang()==='en'?' pulls':' 抽') : '—';
+  }
+  el('pull1').addEventListener('click', ()=>{ const r=pullOnce(); if(r) renderPulls([r]); });
+  el('pull10').addEventListener('click', ()=>{
+    if(GS.fate<10){ alert(curLang()==='en'?'Need 10 Intertwined Fate for a 10-pull':'十连需要 10 个纠缠之缘'); return; }
+    const res=[]; for(let i=0;i<10;i++){ const r=pullOnce(); if(r) res.push(r); } renderPulls(res);
+  });
+
+  /* ===== 元素反应演示 ===== */
+  const ELEM={fire:{n:'火',en:'Pyro',c:'var(--fire)',color:'#ff6b4a'},water:{n:'水',en:'Hydro',c:'var(--water)',color:'#4aa8ff'},ice:{n:'冰',en:'Cryo',c:'var(--ice)',color:'#9fe6ff'},thunder:{n:'雷',en:'Electro',c:'var(--thunder)',color:'#b06bff'},grass:{n:'草',en:'Dendro',c:'var(--grass)',color:'#7dd35f'},wind:{n:'风',en:'Anemo',c:'var(--wind)',color:'#a8e6cf'},rock:{n:'岩',en:'Geo',c:'var(--rock)',color:'#e0c068'}};
+  const REACT={
+    '火+水':{name:{zh:'蒸发',en:'Vaporize'},desc:{zh:'火+水触发，按 1.5 倍（水底）或 2.0 倍（火底）放大伤害，前期主增伤手段。',en:'Pyro+Hydro; amplifies damage 1.5x (Hydro trigger) or 2.0x (Pyro trigger). Key early damage boost.'},a:'fire',b:'water'},
+    '火+冰':{name:{zh:'融化',en:'Melt'},desc:{zh:'火+冰触发，按 1.5 倍（冰底）或 2.0 倍（火底）放大伤害，爆发期核心反应。',en:'Pyro+Cryo; amplifies 1.5x (Cryo) or 2.0x (Pyro). Core reaction for burst windows.'},a:'fire',b:'ice'},
+    '火+雷':{name:{zh:'超载',en:'Overload'},desc:{zh:'火+雷触发，造成范围火伤并击飞，可破岩盾，对群好用。',en:'Pyro+Electro; AoE Pyro damage and knockback, breaks Geo shields, great vs groups.'},a:'fire',b:'thunder'},
+    '水+雷':{name:{zh:'感电',en:'Electro-Charged'},desc:{zh:'水+雷触发，持续雷伤并在潮湿敌人间传递，对群强。',en:'Hydro+Electro; persistent Electro that jumps between wet enemies, strong AoE.'},a:'water',b:'thunder'},
+    '水+冰':{name:{zh:'冻结',en:'Frozen'},desc:{zh:'水+冰触发，强控敌人创造安全输出环境；附冰/附火可碎冰追加伤害。',en:'Hydro+Cryo; hard crowd control for a safe window; Shatter with Cryo/Pyro adds damage.'},a:'water',b:'ice'},
+    '火+草':{name:{zh:'燃烧',en:'Burning'},desc:{zh:'火+草触发，持续火伤区域，低频但持续。',en:'Pyro+Dendro; a lingering burning field, low frequency but sustained.'},a:'fire',b:'grass'},
+    '水+草':{name:{zh:'绽放',en:'Bloom'},desc:{zh:'水+草触发绽放生成草原核，被火/雷引爆成烈绽/超绽，对群天花板。',en:'Hydro+Dendro creates Dendro Cores; ignited by Pyro/Electro into Burgeon/Hyperbloom, top-tier AoE.'},a:'water',b:'grass'},
+    '雷+草':{name:{zh:'激化',en:'Quicken'},desc:{zh:'雷+草触发原激化，后续雷/草攻击享激化加成，提瓦特主流体系。',en:'Electro+Dendro triggers Quicken; follow-up Electro/Dendro hits get Aggravate/Spread. A mainstream system.'},a:'thunder',b:'grass'},
+    '风+火':{name:{zh:'扩散',en:'Swirl'},desc:{zh:'风扩散已有元素，把元素附着扩散到周围敌人并造成该元素伤害。',en:'Anemo spreads an existing element to nearby enemies and deals that element’s damage.'},a:'wind',b:'fire'}
+  };
+  const reactBtns=el('reactBtns'); const reactInfo=el('reactInfo'); const orbA=el('orbA'); const orbB=el('orbB');
+  let currentReactKey='火+水';
+  function setReact(key){
+    currentReactKey=key;
+    const r=REACT[key]; const ea=ELEM[r.a], eb=ELEM[r.b]; const L=curLang();
+    orbA.style.background=ea.c; orbA.style.color=ea.c; orbA.innerHTML=ea.n+'<small>'+ea[L]+'</small>';
+    orbB.style.background=eb.c; orbB.style.color=eb.c; orbB.innerHTML=eb.n+'<small>'+eb[L]+'</small>';
+    const eaLabel = L==='en' ? ea.en : ea.n;
+    const ebLabel = L==='en' ? eb.en : eb.n;
+    reactInfo.innerHTML='<b>'+r.name[L]+'</b>（'+eaLabel+' + '+ebLabel+'）：'+r.desc[L];
+    Array.from(reactBtns.children).forEach(b=>b.classList.toggle('active', b.dataset.k===key));
+  }
+  Object.keys(REACT).forEach(k=>{
+    const b=document.createElement('button'); b.dataset.k=k; b.textContent=k.replace('+',' + ');
+    b.addEventListener('click', ()=>setReact(k)); reactBtns.appendChild(b);
+  });
+  setReact('火+水');
+
+  /* ===== 原石规划器 ===== */
+  const px=id=>document.getElementById(id);
+  function calcPlan(){
+    const now=+px('pNow').value||0, fate=+px('pFate').value||0, day=+px('pDay').value||0, target=+px('pTarget').value||1;
+    const havePulls=Math.floor(now/160)+fate;
+    const need=fate>=target ? 0 : (target-fate)*160 - now;
+    const gap=Math.max(0, target-havePulls);
+    const days= day>0 ? Math.ceil(Math.max(0,need)/day) : '—';
+    const L=curLang();
+    px('planNeed').textContent= need>0 ? need.toLocaleString() : (L==='en'?'Enough':'0（已够）');
+    px('planDays').textContent= days==='—' ? '—' : days+(L==='en'?' days':' 天');
+    px('planPulls').textContent= havePulls+(L==='en'?' pulls':' 抽');
+    px('planGap').textContent= gap+(L==='en'?' pulls':' 抽');
+  }
+  ['pNow','pFate','pDay','pTarget'].forEach(id=>px(id).addEventListener('input', calcPlan));
+  calcPlan();
+
+  /* ===== 配队共鸣 ===== */
+  const ELEMS=['火','水','冰','雷','草','风','岩'];
+  const RESO={
+    '火火':{zh:'双火共鸣：攻击力 +25%',en:'Dual Pyro: ATK +25%'},
+    '水水':{zh:'双水共鸣：受治疗+30%、生命低于50%受治+30%',en:'Dual Hydro: healing +30%, +30% when below 50% HP'},
+    '冰冰':{zh:'双冰共鸣：暴击率 +15%（对冻结敌人）',en:'Dual Cryo: CRIT Rate +15% (vs frozen)'},
+    '雷雷':{zh:'双雷共鸣：元素充能效率提升、触发感电产雷微粒',en:'Dual Electro: ER up, Electro-Charged drops Electro particles'},
+    '风风':{zh:'双风共鸣：体力-15%、移速+10%、冷却-5%',en:'Dual Anemo: stamina -15%, move +10%, CD -5%'},
+    '岩岩':{zh:'双岩共鸣：护盾强效+15%、造成伤害产晶片',en:'Dual Geo: shield strength +15%, damage drops crystals'},
+    '草草':{zh:'双草共鸣：触发燃烧/绽放/激化后全队精通+50',en:'Dual Dendro: after Burn/Bloom/Quicken, team EM +50'},
+    '火水':{zh:'（蒸发/融化体系）无直接共鸣，靠反应增伤',en:'(Vaporize/Melt) no direct resonance, damage via reaction'},
+    '火冰':{zh:'（融化体系）无直接共鸣，靠反应增伤',en:'(Melt) no direct resonance, damage via reaction'},
+    '水雷':{zh:'（感电体系）无直接共鸣，靠反应增伤',en:'(Electro-Charged) no direct resonance, damage via reaction'}
+  };
+  const tsels=Array.from(document.querySelectorAll('.tsel'));
+  function fillTselOptions(){
+    tsels.forEach(s=>{ const old=s.value; while(s.firstChild) s.removeChild(s.firstChild);
+      ELEMS.forEach(e=>{ const o=document.createElement('option'); o.value=e; o.textContent= curLang()==='en'? EN_ELEM[e] : e+'元素'; s.appendChild(o); });
+      if(old) s.value=old;
+    });
+  }
+  fillTselOptions();
+  tsels[0].value='火'; tsels[1].value='火'; tsels[2].value='水'; tsels[3].value='风';
+  function calcReso(){
+    const picks=tsels.map(s=>s.value);
+    const counts={}; picks.forEach(p=>counts[p]=(counts[p]||0)+1);
+    const out=el('resOut'); out.innerHTML='';
+    let any=false;
+    Object.keys(counts).forEach(k=>{ if(counts[k]>=2){ const key=k+k; const txt=(RESO[key]||{zh:k+'元素 ×'+counts[k]+'：无标准共鸣',en:EN_ELEM[k]+' ×'+counts[k]+': no standard resonance'})[curLang()]; const kk= curLang()==='en'? (EN_ELEM[k]+EN_ELEM[k]) : (k+k); const t=document.createElement('div'); t.className='res-tag'; t.innerHTML='<b>'+kk+'</b> · '+txt; out.appendChild(t); any=true; } });
+    if(!any) out.innerHTML='<span class="res-none">'+(curLang()==='en'?'No dual-element resonance — consider matching elements.':'当前阵容无双元素共鸣，可考虑凑同元素激活共鸣。')+'</span>';
+  }
+  tsels.forEach(s=>s.addEventListener('change', calcReso));
+  calcReso();
+
+  /* ===== 语言切换 + IP 自动检测 ===== */
+  const META_TITLE={zh:'提瓦特开荒攻略站 · 原神新手到进阶 · 可交互攻略', en:'Teyvat Starter Guide · Genshin Impact Beginner to Mid · Interactive'};
+  const META_DESC={zh:'原神开荒一站式攻略站：核心机制、30天开荒日程、专属零氪开荒顺序，并内置抽卡模拟器、元素反应演示、原石规划器、配队共鸣、开荒进度打卡。AI整合社区与官方攻略，可搜索可交互。', en:'A one-stop Genshin Impact starter guide: core mechanics, a 30-day progression schedule, a custom free-to-play plan, plus interactive tools — gacha simulator, elemental reaction demo, primogem planner, team resonance, and a check-in tracker.'};
+  const META_OG_TITLE={zh:'提瓦特开荒攻略站 · 原神可交互攻略', en:'Teyvat Starter Guide · Interactive Genshin Impact Tools'};
+  const META_OG_DESC={zh:'攻略+工具合一：抽卡模拟、元素反应演示、原石规划、配队共鸣、进度打卡，比静态攻略站更好用。', en:'Guide + tools in one: gacha simulator, elemental reaction demo, primogem planner, team resonance, and a check-in tracker — more useful than static guide sites.'};
+  function applyLang(lang){
+    if(lang!=='zh'&&lang!=='en') lang='zh';
+    document.documentElement.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('lang', lang==='zh'?'zh-CN':'en');
+    try{ localStorage.setItem('genshin_lang', lang); }catch(e){}
+    document.querySelectorAll('#langToggle button').forEach(b=>b.classList.toggle('active', b.dataset.l===lang));
+    document.title = META_TITLE[lang];
+    const setMeta=(id,val)=>{ const m=document.getElementById(id); if(m) m.setAttribute('content', val); };
+    setMeta('metaDesc', META_DESC[lang]);
+    setMeta('ogTitle', META_OG_TITLE[lang]);
+    setMeta('ogDesc', META_OG_DESC[lang]);
+    setMeta('ogLocale', lang==='zh'?'zh_CN':'en_US');
+    // re-render language-dependent UI
+    setReact(currentReactKey);
+    calcPlan();
+    fillTselOptions();
+    calcReso();
+    refreshTracker();
+  }
+  document.getElementById('langToggle').querySelectorAll('button').forEach(b=>{
+    b.addEventListener('click', ()=>applyLang(b.dataset.l));
+  });
+  function detectLang(){
+    const saved = (function(){ try{ return localStorage.getItem('genshin_lang'); }catch(e){ return null; } })();
+    if(saved==='zh'||saved==='en') return Promise.resolve(saved);
+    const fetchJSON=(url,ms)=>new Promise((res,rej)=>{ const c=new AbortController(); const t=setTimeout(()=>c.abort(),ms);
+      fetch(url,{signal:c.signal}).then(r=>r.json()).then(d=>{clearTimeout(t);res(d);}).catch(e=>{clearTimeout(t);rej(e);}); });
+    return fetchJSON('https://ipapi.co/json/',2500).then(d=>d&&d.country_code)
+      .catch(()=>fetchJSON('https://ip-api.com/json/',2500).then(d=>d&&d.country_code))
+      .then(cc=>{
+        if(cc==='CN') return 'zh';
+        if(cc && cc!=='CN') return 'en';
+        const nav=(navigator.language||'zh-CN').toLowerCase();
+        return nav.startsWith('zh')?'zh':'en';
+      })
+      .catch(()=>{ const nav=(navigator.language||'zh-CN').toLowerCase(); return nav.startsWith('zh')?'zh':'en'; });
+  }
+  detectLang().then(applyLang);
+</script>
+</body>
+</html>

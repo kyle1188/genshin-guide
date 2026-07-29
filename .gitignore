@@ -1,0 +1,14 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# temp / check scripts (should not exist, safety net)
+_check.js
+_test.js
+_c*.js
+
+# local env
+.env
