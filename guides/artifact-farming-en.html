@@ -1,0 +1,197 @@
+<!doctype html>
+<!-- deployed: English artifact-farming guide (single-language, en + x-default). zh-CN pair to be added later. -->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Genshin Artifact Farming Guide: Which Sets to Farm First &amp; Efficient Routes (2026)</title>
+<meta name="description" content="A practical Genshin Impact artifact farming guide for new and free-to-play players: when to start farming, which artifact sets to prioritize (Emblem, Noblesse, Gladiator, Viridescent Venerer, Deepwood and more), the best resin route, and the mistakes that waste weeks of progress." />
+<meta name="keywords" content="genshin artifact farming, genshin which artifacts to farm first, genshin artifact routes, genshin resin priority, emblem of severed fate, genshin beginner artifact guide" />
+<meta name="author" content="Teyvat Starter Guide" />
+<meta name="theme-color" content="#0c0f16" />
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/artifact-farming-en.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/artifact-farming-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/artifact-farming-en.html" />
+<meta property="og:title" content="Genshin Artifact Farming Guide: Which Sets to Farm First" />
+<meta property="og:description" content="When to farm, which sets to prioritize, the best resin route, and the mistakes that waste weeks of progress." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/artifact-farming-en.html" />
+<meta property="og:locale" content="en_US" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Genshin Artifact Farming Guide: Which Sets to Farm First & Efficient Routes (2026)",
+  "description":"A practical artifact farming guide for new and free-to-play Genshin Impact players: when to start, which sets to prioritize, resin routing, and common mistakes.",
+  "author":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "publisher":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "datePublished":"2026-07-29",
+  "dateModified":"2026-07-29",
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://genshin-guide-one-five.vercel.app/guides/artifact-farming-en.html"}
+}
+</script>
+<style>
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff;
+    --fire:#ff6b4a; --water:#4aa8ff; --thunder:#b06bff; --grass:#7dd35f; --rock:#e0c068; --wind:#a8e6cf;
+    --r:14px; --maxw:920px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.8; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:14px; height:58px}
+  .brand{display:flex; align-items:center; gap:9px; font-weight:700; letter-spacing:.5px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+  .brand b{color:var(--gold)}
+  .lang{color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .lang:hover{color:var(--txt); background:var(--panel)}
+  .back{margin-left:auto; color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .back:hover{color:var(--txt); background:var(--panel)}
+  .crumb{font-size:13px; color:var(--txt-mute); margin:26px 0 4px}
+  .crumb a{color:var(--txt-dim)}
+  article{padding:8px 0 40px}
+  h1{font-size:clamp(26px,4.4vw,38px); line-height:1.25; margin:6px 0 14px; letter-spacing:.3px}
+  h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .lead{color:#cdd6e4; font-size:16px; margin:0 0 26px}
+  h2{font-size:clamp(20px,3vw,26px); margin:38px 0 12px; padding-left:14px; border-left:4px solid var(--gold)}
+  h3{font-size:18px; margin:22px 0 8px; color:#fff}
+  p{color:var(--txt-dim); margin:10px 0}
+  ul,ol{color:var(--txt-dim); padding-left:22px}
+  li{margin:6px 0}
+  .src-note{font-size:13px; color:var(--txt-mute); border-left:3px solid var(--line); padding:8px 14px; margin:18px 0; background:var(--panel); border-radius:0 8px 8px 0}
+  .grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; transition:.2s}
+  .card:hover{border-color:rgba(232,196,116,.4)}
+  .card h3{display:flex; align-items:center; gap:10px; margin-top:0}
+  .tag{font-size:12px; font-weight:700; color:#0c0f16; padding:3px 9px; border-radius:7px; white-space:nowrap}
+  .tag.fire{background:var(--fire)} .tag.water{background:var(--water)} .tag.thunder{background:var(--thunder)}
+  .tag.grass{background:var(--grass)} .tag.rock{background:var(--rock)} .tag.wind{background:var(--wind)}
+  .card .role{font-size:13px; color:var(--gold); font-weight:600; margin:2px 0 8px}
+  .card p{font-size:14px; margin:6px 0}
+  .mini{font-size:13px; color:var(--txt-mute); margin-top:8px; border-top:1px dashed var(--line); padding-top:8px}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; background:var(--panel); border-radius:var(--r); overflow:hidden}
+  th,td{padding:11px 13px; text-align:left; border-bottom:1px solid var(--line); color:var(--txt-dim)}
+  th{background:rgba(232,196,116,.08); color:var(--gold); font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .callout{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .callout b{color:var(--gold)}
+  .btn{padding:11px 18px; border-radius:12px; font-weight:700; font-size:14px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; border:1px solid transparent}
+  .btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--txt-mute); font-size:13px; text-align:center}
+  footer a{color:var(--txt-dim)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+    <a class="back" href="/">← Back to Home</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumb"><a href="/">Teyvat Starter Guide</a> › Artifact Farming</nav>
+  <article>
+    <h1>Genshin Artifact Farming: <span class="grad">Which Sets to Farm First</span> &amp; the Routes That Save Weeks</h1>
+    <p class="lead">Artifacts make or break a build — and they are the single easiest place for new players to waste months of Resin. This guide shows when to start farming, which sets to prioritize for a free-to-play account, the resin route that actually pays off, and the mistakes that quietly stall your account.</p>
+
+    <div class="src-note">Note: artifact <i>sets</i> and their bonuses are long-term stable game knowledge and do not change with patches. Exact drop rates and domain layouts may shift slightly, but the priority order below holds. In-game data is always final.</div>
+
+    <h2>When to Actually Start Farming Artifacts</h2>
+    <p><b>Before AR 45: do not farm artifact domains.</b> Below AR 45 the gold-drop rate from domains is low, so most of your Resin returns 4-star pieces you will replace anyway. Use whatever 4-star pieces you pick up from quests and chests, and focus Resin on <b>talent domains, weapon domains, and weekly bosses</b> instead.</p>
+    <p><b>At AR 45:</b> domains start dropping a guaranteed 5-star artifact per run. This is the moment artifact farming becomes efficient. From here, commit Resin to 1–2 specific domains, not a random spread.</p>
+
+    <h2>Which Sets to Farm First (F2P Priority)</h2>
+    <p>These sets cover the universally useful units from the <a href="/guides/beginner-characters-en.html">beginner must-build list</a> and stay relevant into late game. Farm them in roughly this order.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag fire">Pyro</span>Emblem of Severed Fate</h3>
+        <div class="role">Burst Sub-DPS &amp; supports</div>
+        <p>The single highest-value set for a F2P account. 4-piece gives Energy Recharge scaling into burst damage — perfect for Xiangling, Xingqiu, Raiden, Yelan, and anyone living off their burst. One domain feeds half your roster.</p>
+        <div class="mini">Farm: Domain of the "Emblem / Shimenawa" pair · Priority: ★★★★★</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag rock">Geo</span>Noblesse Oblige</h3>
+        <div class="role">Support / buffer</div>
+        <p>4-piece grants a team-wide ATK buff on burst — the default for Bennett and any burst-support. One holder per team is enough; do not stack it on everyone.</p>
+        <div class="mini">Farm: Domain of the "Noblesse / Crimson Witch" pair · Priority: ★★★★</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag wind">Anemo</span>Viridescent Venerer</h3>
+        <div class="role">Anemo supports</div>
+        <p>4-piece shreds enemy elemental RES and amplifies Swirl — the core set for Kazuha, Sucrose, Venti, and Anemo Traveler. Huge damage multiplier for the whole team, not just the wearer.</p>
+        <div class="mini">Farm: Domain of the "VV / Gladiator" pair · Priority: ★★★★</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag grass">Dendro</span>Deepwood Memories</h3>
+        <div class="role">Dendro / Bloom teams</div>
+        <p>4-piece cuts enemy Dendro RES — mandatory in Nahida-led Spread/Bloom teams. One piece on the off-field holder is enough for the team benefit.</p>
+        <div class="mini">Farm: Domain of the "Deepwood / Gilded" pair · Priority: ★★★</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">Pyro</span>Gladiator's Finale / Crimson Witch</h3>
+        <div class="role">Main DPS</div>
+        <p>Gladiator (18% ATK at 2-pc) drops from weekly bosses and is a safe generic main-DPS fill-in. Crimson Witch is the dedicated Vaporize/Melt Pyro set. Farm these once your supports are geared.</div>
+        <div class="mini">Gladiator: weekly bosses · Crimson Witch: Noblesse domain · Priority: ★★★</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag water">New Systems</span>Archaic Petra / Scroll of the Hero of Cinder City</h3>
+        <div class="role">Nod-Krai / Natlan teams</div>
+        <p>The "Scroll" set is a top pick for new-system carries and supports. Pull it in once you commit to a Nod-Krai / Natlan core; skip it early while your account is still generalist.</p>
+        <div class="mini">Farm: respective new-system domains · Priority: ★★ (late-game)</div>
+      </div>
+    </div>
+
+    <h2>Best Resin Route (What to Spend On)</h2>
+    <p>Resin is the only truly limited resource. Spend it in this priority so you never soft-lock your account:</p>
+    <table>
+      <tr><th>Priority</th><th>Spend on</th><th>Why</th></tr>
+      <tr><td>1</td><td>Weekly Bosses (3/week)</td><td>Drop character ascension + talent gems + weapon billets, and 5-star artifact sets (Gladiator / Wanderer's Troupe) — best value per Resin.</td></tr>
+      <tr><td>2</td><td>Talent Domains</td><td>Talents are permanent, account-wide progress and never get replaced.</td></tr>
+      <tr><td>3</td><td>Weapon Domains</td><td>Forge F2P weapons like The Catch; cheap and reusable across characters.</td></tr>
+      <tr><td>4</td><td>Artifact Domains (post-AR45)</td><td>Only after supports/weapons are handled; pick 1–2 domains and commit.</td></tr>
+    </table>
+    <p><b>Save Fragile Resin until AR 45+</b> — spending it pre-45 on low gold-rate domains is the most common early waste. Bank it, then dump it on a domain you are committed to.</p>
+
+    <h2>Efficient Farming Routes</h2>
+    <ul>
+      <li><b>Combo domains:</b> most artifact domains share a building with a talent or weapon domain. Run your daily domains back-to-back in the same region to cut travel time.</li>
+      <li><b>Convert, don't trash:</b> use the Artifact Transmuter (3-to-1) to turn dead 5-star pieces into a targeted set/main-stat. This is how you fix the last missing slot without 200 more runs.</li>
+      <li><b>Feed the dog:</b> level useless 3–4 star artifacts as enhancement fodder instead of selling them — they are worth more as XP than as Mora.</li>
+      <li><b>Strongbox from Liyue:</b> the Mystic Enhancement Ore and artifact strongbox convert duplicates into useful sets; keep spares.</li>
+    </ul>
+
+    <h2>Mistakes That Waste Weeks</h2>
+    <ul>
+      <li><b>Farming artifacts before AR 45.</b> You will drown in 4-stars you replace at 45. Resin spent there is gone forever.</li>
+      <li><b>Chasing perfect double-crit on every slot.</b> A usable piece (right main stat + one good substat) is 90% of the value. Stop at "good enough" and move on.</li>
+      <li><b>Spreading across 5 domains.</b> One focused domain beats five half-farmed ones. Depth &gt; breadth.</li>
+      <li><b>Stacking Noblesse on the whole team.</b> The 4-piece buff doesn't stack — one holder only.</li>
+      <li><b>Burning Fragile Resin early.</b> Save it for committed post-45 farming.</li>
+    </ul>
+
+    <div class="callout"><b>Bottom line:</b> Don't touch artifact domains until AR 45. Then farm <b>Emblem first</b> (it feeds your whole burst-based core), add <b>Noblesse + Viridescent Venerer</b> for supports, and only after that chase main-DPS sets. Spend Resin on weekly bosses and talents first, bank Fragile Resin, and use the Transmuter to close gaps. Do this and your account compounds instead of stalling.</div>
+
+    <p style="margin-top:26px"><a class="btn primary" href="/guides/beginner-characters-en.html">← Pair with: Beginner Must-Build Characters</a></p>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>Teyvat Starter Guide · Free-to-play Genshin Impact guides · <a href="/">Back to Home</a></p>
+    <p>Sources: miHoYo official site, in-game domain data, community farming consensus. Patch data shifts — in-game is final.</p>
+  </footer>
+</div>
+</body>
+</html>
