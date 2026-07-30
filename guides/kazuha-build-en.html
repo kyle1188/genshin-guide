@@ -1,0 +1,247 @@
+<!doctype html>
+<!-- deployed: English Kazuha build guide (single-language, en + x-default). -->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Genshin Kazuha Build Guide 2026 — Best Weapons, Artifacts &amp; Teams</title>
+<meta name="description" content="The complete Kazuha build guide for Genshin Impact in 2026: best weapons (Freedom-Sworn, F2P Iron Sting and Kagotsurubeissou), the 4-piece Viridescent Venerer set, Elemental Mastery stacking, team comps, and why he is the most flexible Anemo support in the game." />
+<meta name="keywords" content="genshin kazuha build, kazuha best weapon f2p, kazuha artifacts viridescent venerer, kazuha em build, kazuha team comp, kazuha freedom sworn, kazuha swirl guide" />
+<meta name="author" content="Teyvat Starter Guide" />
+<meta name="theme-color" content="#0c0f16" />
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/kazuha-build-en.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/kazuha-build-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/kazuha-build-en.html" />
+<meta property="og:title" content="Genshin Kazuha Build Guide 2026 — Best Weapons, Artifacts & Teams" />
+<meta property="og:description" content="Best weapons, the Viridescent Venerer set, Elemental Mastery stacking, team comps, and the swirl engine behind the most flexible Anemo support." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/kazuha-build-en.html" />
+<meta property="og:locale" content="en_US" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Genshin Kazuha Build Guide 2026 — Best Weapons, Artifacts & Teams",
+  "description":"A complete Kazuha build guide: weapons, the Viridescent Venerer artifact set, Elemental Mastery stacking, team comps, and the swirl engine.",
+  "author":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "publisher":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "datePublished":"2026-07-30",
+  "dateModified":"2026-07-30",
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://genshin-guide-one-five.vercel.app/guides/kazuha-build-en.html"}
+}
+</script>
+<style>
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff;
+    --fire:#ff6b4a; --water:#4aa8ff; --thunder:#b06bff; --grass:#7dd35f; --rock:#e0c068; --wind:#a8e6cf;
+    --r:14px; --maxw:920px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.8; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:14px; height:58px}
+  .brand{display:flex; align-items:center; gap:9px; font-weight:700; letter-spacing:.5px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+  .brand b{color:var(--gold)}
+  .lang{color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .lang:hover{color:var(--txt); background:var(--panel)}
+  .back{margin-left:auto; color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .back:hover{color:var(--txt); background:var(--panel)}
+  .crumb{font-size:13px; color:var(--txt-mute); margin:26px 0 4px}
+  .crumb a{color:var(--txt-dim)}
+  article{padding:8px 0 40px}
+  h1{font-size:clamp(26px,4.4vw,38px); line-height:1.25; margin:6px 0 14px; letter-spacing:.3px}
+  h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .lead{color:#cdd6e4; font-size:16px; margin:0 0 26px}
+  h2{font-size:clamp(20px,3vw,26px); margin:38px 0 12px; padding-left:14px; border-left:4px solid var(--gold)}
+  h3{font-size:18px; margin:22px 0 8px; color:#fff}
+  p{color:var(--txt-dim); margin:10px 0}
+  ul,ol{color:var(--txt-dim); padding-left:22px}
+  li{margin:6px 0}
+  .src-note{font-size:13px; color:var(--txt-mute); border-left:3px solid var(--line); padding:8px 14px; margin:18px 0; background:var(--panel); border-radius:0 8px 8px 0}
+  .grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; transition:.2s}
+  .card:hover{border-color:rgba(232,196,116,.4)}
+  .card h3{display:flex; align-items:center; gap:10px; margin-top:0}
+  .tag{font-size:12px; font-weight:700; color:#0c0f16; padding:3px 9px; border-radius:7px; white-space:nowrap}
+  .tag.fire{background:var(--fire)} .tag.water{background:var(--water)} .tag.thunder{background:var(--thunder)}
+  .tag.grass{background:var(--grass)} .tag.rock{background:var(--rock)} .tag.wind{background:var(--wind)}
+  .card .role{font-size:13px; color:var(--gold); font-weight:600; margin:2px 0 8px}
+  .card p{font-size:14px; margin:6px 0}
+  .mini{font-size:13px; color:var(--txt-mute); margin-top:8px; border-top:1px dashed var(--line); padding-top:8px}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; background:var(--panel); border-radius:var(--r); overflow:hidden}
+  th,td{padding:11px 13px; text-align:left; border-bottom:1px solid var(--line); color:var(--txt-dim)}
+  th{background:rgba(232,196,116,.08); color:var(--gold); font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .callout{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .callout b{color:var(--gold)}
+  .btn{padding:11px 18px; border-radius:12px; font-weight:700; font-size:14px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; border:1px solid transparent}
+  .btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--txt-mute); font-size:13px; text-align:center}
+  footer a{color:var(--txt-dim)}
+  .pairbox{display:flex; flex-wrap:wrap; gap:12px; margin:30px 0 6px}
+  .pairbox a{padding:10px 16px; border:1px solid var(--line); border-radius:12px; color:var(--txt-dim); font-size:14px; font-weight:600; transition:.2s}
+  .pairbox a:hover{border-color:rgba(232,196,116,.4); color:var(--txt)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+    <a class="back" href="/">← Back to Home</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumb"><a href="/">Teyvat Starter Guide</a> › Kazuha Build</nav>
+  <article>
+    <h1>Genshin Kazuha Build 2026: <span class="grad">Best Weapons, Artifacts &amp; Teams</span></h1>
+    <p class="lead">Kazuha — the wandering samurai of Inazuma — is the single most flexible support in Genshin Impact. His Elemental Skill pulls enemies together, his <b>Viridescent Venerer</b> set shreds 40% elemental RES, and his passive turns his own Elemental Mastery into team-wide damage. This guide covers weapons, the VV artifact set, EM stacking, team comps, and the swirl engine that makes him a staple in nearly every endgame comp.</p>
+
+    <div class="src-note">Note: Kazuha's kit, stat priorities, and artifact/weapon ranking are long-term stable meta and do not change with patches. Banner availability shifts over time, but the builds below hold. In-game data is always final.</div>
+
+    <h2>Why Kazuha Is Worth Building</h2>
+    <p>Four effects stack into one of the best "just throw him in" supports in the game:</p>
+    <ul>
+      <li><b>40% elemental RES shred:</b> the 4-piece Viridescent Venerer set cuts the swirled element's RES by 40% for everyone — this alone boosts team damage more than most units' entire kit.</li>
+      <li><b>Elemental Mastery share:</b> his passive <i>Poetics of Fuubutsu</i> gives the whole party a damage bonus equal to 0.04% of his EM per point (capped at +40% for Anemo/Hydro/Pyro/Cryo). Stack EM and the whole team hits harder.</li>
+      <li><b>Grouping + interruption:</b> his Skill plunge lifts and clusters small enemies, and his Burst's field deals continuous Anemo and enables clean swirls.</li>
+      <li><b>Universal fit:</b> he drops into Vaporize, Freeze, Taser, Bloom, and mono-element teams with zero rebuild — the definition of evergreen value.</li>
+    </ul>
+    <div class="callout">In a Freeze or Vaporize team, Kazuha's VV shred plus EM share typically adds <b>+25–35% team DPS</b> on top of his own swirl damage. That is why he is on almost every meta wishlist.</div>
+
+    <h2>Best Weapons</h2>
+    <p>Kazuha wants <b>Elemental Mastery</b> above all — his damage and team buff both scale off EM. A high-EM weapon beats a higher-ATK one.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag wind">5★ BiS</span>Freedom-Sworn</h3>
+        <div class="role">Signature · EM + team buff</div>
+        <p>His tailor-made weapon: big Elemental Mastery plus a party-wide ATK/DMG buff after triggering a swirl. The clear best-in-slot, but the gap to F2P is only ~10–15%.</p>
+        <div class="mini">Obtain: weapon banner</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag wind">F2P ★</span>Iron Sting</h3>
+        <div class="role">Top free-to-play pick</div>
+        <p>Craftable (crafting bench, Forgiving smithing) EM sword. Maximum EM at zero cost. The default recommendation for a F2P Kazuha — it reaches most of Freedom-Sworn's value.</p>
+        <div class="mini">Obtain: blacksmith (Mora + crystal cores)</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag wind">F2P</span>Kagotsurubeissou</h3>
+        <div class="role">Event ATK% alternative</div>
+        <p>A free event polearm-style sword giving ATK%. Decent if you have no EM weapon, but you'll want EM substats to compensate. Still a clean step up from nothing.</p>
+        <div class="mini">Obtain: limited-time event</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag wind">F2P</span>Favonius Sword / Toukabou Shigure</h3>
+        <div class="role">ER battery / event EM</div>
+        <p><b>Favonius Sword</b> generates particles for team burst uptime (build some CRIT Rate to proc it). <b>Toukabou Shigure</b> (event) gives EM and Skill DMG — a strong F2P pick if you own it.</p>
+        <div class="mini">Obtain: all banners / event</div>
+      </div>
+    </div>
+
+    <h2>Best Artifacts</h2>
+    <p>The 4-piece Viridescent Venerer is non-negotiable for his support value; everything else is filler while you farm it.</p>
+    <table>
+      <tr><th>Set</th><th>Use when</th><th>Why</th></tr>
+      <tr><td><b>Viridescent Venerer</b> (4pc)</td><td>Always (support)</td><td>-15% Anemo RES on hit + <b>-40% swirled-element RES</b> for the team. This is the entire reason to build him. Highest team value.</td></tr>
+      <tr><td><b>2pc VV + 2pc EM</b> (Wanderer's / Gilded)</td><td>Filler / more personal dmg</td><td>Keeps the VV 4pc bonus while adding EM for bigger swirls and a larger passive share.</td></tr>
+      <tr><td><b>4pc Gilded Dreams / Wanderer's Troupe</b></td><td>On-field EM DPS Kazuha</td><td>Only if you run him as a driver; drops the RES shred, so not recommended for support play.</td></tr>
+      <tr><td><b>2pc VV + 2pc Atk%</b></td><td>Temporary</td><td>A safe generic combo before you finish VV. Acceptable but weaker than 2pc EM.</td></tr>
+    </table>
+
+    <h2>Stat Targets</h2>
+    <p>Kazuha's buff and swirl scale off <b>Elemental Mastery</b>, so EM is the spine of his build. CRIT and ER come after.</p>
+    <table>
+      <tr><th>Slot</th><th>Main stat</th><th>Substat priority</th></tr>
+      <tr><td>Sands</td><td>Elemental Mastery</td><td rowspan="3">EM &gt; CRIT Rate ≈ CRIT DMG &gt; Energy Recharge (120–150%) &gt; ATK%</td></tr>
+      <tr><td>Goblet</td><td>Anemo DMG% (or EM if pure support)</td></tr>
+      <tr><td>Circlet</td><td>CRIT Rate / CRIT DMG (or EM)</td></tr>
+    </table>
+    <div class="callout"><b>Target numbers:</b> Elemental Mastery <b>800–1,000+</b> (1,000 with Freedom-Sworn), CRIT Rate <b>50–70%</b>, CRIT DMG <b>100–140%</b>, Energy Recharge <b>120–150%</b>. Hit EM first, then balance crit, then ER.</div>
+
+    <h2>Best Team Comps</h2>
+    <p>Kazuha slots into almost any team. The only rule: swirl the element your carry actually deals.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag fire">Vaporize</span>Hu Tao / Lyney + Bennett</h3>
+        <div class="role">Pyro carry + VV shred</div>
+        <p>Kazuha swirls Pyro for -40% Pyro RES, Bennett adds ATK. One of the highest ceiling teams he enables. Xiangling or Xingqiu round it out.</p>
+        <div class="mini">Swirl Pyro, not Anemo</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag water">Freeze</span>Ayaka / Wriothesley</h3>
+        <div class="role">Cryo carry + VV</div>
+        <p>Kazuha + Cryo carry + a second Cryo (Shenhe) + healer. His VV Cryo shred plus grouping makes freeze teams trivialize crowds. See the <a href="/guides/neuvillette-build-en.html">Neuvillette</a> page for another carry he pairs with.</p>
+        <div class="mini">Swirl Cryo</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag thunder">Taser</span>Electro-Charged core</h3>
+        <div class="role">Electro + Hydro swirl</div>
+        <p>Kazuha with <a href="/guides/raiden-shogun-build-en.html">Raiden</a>, Xingqiu, and a second Electro (Fischl/Beidou) for continuous swirls and RES shred on two elements.</p>
+        <div class="mini">Swirl Hydro or Electro</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag wind">Universal</span>Any Hypercarry</h3>
+        <div class="role">Flex support slot</div>
+        <p>Drop him into a <a href="/guides/furina-build-en.html">Furina</a> or <a href="/guides/zhongli-build-en.html">Zhongli</a> team for grouping + shred + EM share. He asks for nothing and gives a lot.</p>
+        <div class="mini">Swirl the carry's element</div>
+      </div>
+    </div>
+
+    <h2>Talent Priority</h2>
+    <p>Level in this order — his Normal Attack is the least of his worries:</p>
+    <ol>
+      <li><b>Elemental Skill</b> (Chihayaburu) → 8–9. The plunge is his main damage and swirl trigger; leveling it raises swirl and plunge damage.</li>
+      <li><b>Elemental Burst</b> (Kazuha Slash) → 8. The field enables continuous swirls and grouping; level for comfort, not priority.</li>
+      <li><b>Normal Attack</b> → 1. Ignore unless you run a dedicated on-field DPS build.</li>
+    </ol>
+
+    <h2>How the Swirl Engine Works</h2>
+    <p>Kazuha's value is in the swirl, not the hit. Master this and he out-values most 5-stars:</p>
+    <ul>
+      <li><b>Cast Skill (hold):</b> he lifts into the air and plunges, dealing AoE Anemo and <b>absorbing</b> an element he touches — that element becomes the swirl.</li>
+      <li><b>Swirl the right element:</b> if your carry deals Pyro, make sure Kazuha's plunge passes through Pyro before landing, so VV shreds Pyro RES, not Anemo.</li>
+      <li><b>Passive share:</b> his EM converts to a team damage bonus the moment he swirls — more EM = bigger team buff, which is why EM is his #1 stat.</li>
+    </ul>
+    <div class="callout"><b>Key rule:</b> a Kazuha who never swirls the carry's element wastes 40% of his value. Time the plunge through the right aura.</div>
+
+    <h2>Common Mistakes</h2>
+    <ul>
+      <li><b>Building ATK instead of EM.</b> His buff and swirl scale off EM. An ATK-sponge Kazuha buffs almost nobody.</li>
+      <li><b>Skipping Viridescent Venerer.</b> Without 4pc VV there is no RES shred — he becomes a weak Anemo plunger. The set is the point.</li>
+      <li><b>Swirling the wrong element.</b> Swirling Anemo shreds Anemo RES (useless). Swirl the carry's element for the -40% shred.</li>
+      <li><b>Low CRIT on Favonius.</b> If you run Favonius Sword, you need ~30%+ CRIT to proc its particle generation, or the team's bursts stall.</li>
+      <li><b>Over-leveling his Normal Attack.</b> It barely matters. Spend the books on Skill/Burst.</li>
+    </ul>
+
+    <h2>Don't Have Kazuha Yet?</h2>
+    <p>He is a limited 5-star, so you may not own him. For grouping and Anemo utility, <a href="/guides/beginner-characters-en.html">Sucrose</a> (a 4-star on the beginner list) is the best F2P stand-in — she also shares EM and can hold Viridescent Venerer. Venti groups larger crowds but lacks the RES shred; Lynette is a budget third option. Build them while you wait for his banner.</p>
+
+    <div class="pairbox">
+      <a href="/guides/furina-build-en.html">← Furina Build (team buffer)</a>
+      <a href="/guides/neuvillette-build-en.html">Neuvillette Build →</a>
+      <a href="/guides/raiden-shogun-build-en.html">Raiden Shogun Build →</a>
+      <a href="/guides/zhongli-build-en.html">Zhongli Build →</a>
+      <a href="/guides/artifact-farming-en.html">Artifact Farming Guide →</a>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    Teyvat Starter Guide · Independent Genshin Impact build reference · <a href="/">Home</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a><br/>
+    Not affiliated with HoYoverse. In-game data is always final.
+  </div>
+</footer>
+</body>
+</html>

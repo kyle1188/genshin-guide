@@ -1,0 +1,248 @@
+<!doctype html>
+<!-- deployed: English Zhongli build guide (single-language, en + x-default). -->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Genshin Zhongli Build Guide 2026 — Best Weapons, Artifacts &amp; Teams</title>
+<meta name="description" content="The complete Zhongli build guide for Genshin Impact in 2026: best weapons (Staff of Homa, F2P Black Tassel 3-star), the 4-piece Tenacity of the Millelith set, HP stacking for a near-unbreakable shield, and how his universal 20% RES shred makes him the best shielder in the game." />
+<meta name="keywords" content="genshin zhongli build, zhongli black tassel f2p, zhongli tenacity build, zhongli hp shield, zhongli best weapon, zhongli resistance shred, zhongli artifacts" />
+<meta name="author" content="Teyvat Starter Guide" />
+<meta name="theme-color" content="#0c0f16" />
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/zhongli-build-en.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/zhongli-build-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/zhongli-build-en.html" />
+<meta property="og:title" content="Genshin Zhongli Build Guide 2026 — Best Weapons, Artifacts & Teams" />
+<meta property="og:description" content="Best weapons, the Tenacity of the Millelith set, HP stacking for a near-unbreakable shield, and his universal 20% RES shred." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/zhongli-build-en.html" />
+<meta property="og:locale" content="en_US" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Genshin Zhongli Build Guide 2026 — Best Weapons, Artifacts & Teams",
+  "description":"A complete Zhongli build guide: weapons, the Tenacity of the Millelith artifact set, HP stacking for shields, and his universal RES shred.",
+  "author":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "publisher":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "datePublished":"2026-07-30",
+  "dateModified":"2026-07-30",
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://genshin-guide-one-five.vercel.app/guides/zhongli-build-en.html"}
+}
+</script>
+<style>
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff;
+    --fire:#ff6b4a; --water:#4aa8ff; --thunder:#b06bff; --grass:#7dd35f; --rock:#e0c068; --wind:#a8e6cf;
+    --r:14px; --maxw:920px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.8; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:14px; height:58px}
+  .brand{display:flex; align-items:center; gap:9px; font-weight:700; letter-spacing:.5px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+  .brand b{color:var(--gold)}
+  .lang{color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .lang:hover{color:var(--txt); background:var(--panel)}
+  .back{margin-left:auto; color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .back:hover{color:var(--txt); background:var(--panel)}
+  .crumb{font-size:13px; color:var(--txt-mute); margin:26px 0 4px}
+  .crumb a{color:var(--txt-dim)}
+  article{padding:8px 0 40px}
+  h1{font-size:clamp(26px,4.4vw,38px); line-height:1.25; margin:6px 0 14px; letter-spacing:.3px}
+  h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .lead{color:#cdd6e4; font-size:16px; margin:0 0 26px}
+  h2{font-size:clamp(20px,3vw,26px); margin:38px 0 12px; padding-left:14px; border-left:4px solid var(--gold)}
+  h3{font-size:18px; margin:22px 0 8px; color:#fff}
+  p{color:var(--txt-dim); margin:10px 0}
+  ul,ol{color:var(--txt-dim); padding-left:22px}
+  li{margin:6px 0}
+  .src-note{font-size:13px; color:var(--txt-mute); border-left:3px solid var(--line); padding:8px 14px; margin:18px 0; background:var(--panel); border-radius:0 8px 8px 0}
+  .grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; transition:.2s}
+  .card:hover{border-color:rgba(232,196,116,.4)}
+  .card h3{display:flex; align-items:center; gap:10px; margin-top:0}
+  .tag{font-size:12px; font-weight:700; color:#0c0f16; padding:3px 9px; border-radius:7px; white-space:nowrap}
+  .tag.fire{background:var(--fire)} .tag.water{background:var(--water)} .tag.thunder{background:var(--thunder)}
+  .tag.grass{background:var(--grass)} .tag.rock{background:var(--rock)} .tag.wind{background:var(--wind)}
+  .card .role{font-size:13px; color:var(--gold); font-weight:600; margin:2px 0 8px}
+  .card p{font-size:14px; margin:6px 0}
+  .mini{font-size:13px; color:var(--txt-mute); margin-top:8px; border-top:1px dashed var(--line); padding-top:8px}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; background:var(--panel); border-radius:var(--r); overflow:hidden}
+  th,td{padding:11px 13px; text-align:left; border-bottom:1px solid var(--line); color:var(--txt-dim)}
+  th{background:rgba(232,196,116,.08); color:var(--gold); font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .callout{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .callout b{color:var(--gold)}
+  .btn{padding:11px 18px; border-radius:12px; font-weight:700; font-size:14px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; border:1px solid transparent}
+  .btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--txt-mute); font-size:13px; text-align:center}
+  footer a{color:var(--txt-dim)}
+  .pairbox{display:flex; flex-wrap:wrap; gap:12px; margin:30px 0 6px}
+  .pairbox a{padding:10px 16px; border:1px solid var(--line); border-radius:12px; color:var(--txt-dim); font-size:14px; font-weight:600; transition:.2s}
+  .pairbox a:hover{border-color:rgba(232,196,116,.4); color:var(--txt)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+    <a class="back" href="/">← Back to Home</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumb"><a href="/">Teyvat Starter Guide</a> › Zhongli Build</nav>
+  <article>
+    <h1>Genshin Zhongli Build 2026: <span class="grad">Best Weapons, Artifacts &amp; Teams</span></h1>
+    <p class="lead">Zhongli — the Geo Archon of Liyue — gives Genshin Impact its strongest shield. His Jade Shield scales off his Max HP, grants near-total interruption immunity, and on expiry drops a <b>universal 20% RES shred</b> on every element. This guide covers weapons, the Tenacity of the Millelith set, HP stacking, team comps, and why he is the safest "plug him in anywhere" unit in the game.</p>
+
+    <div class="src-note">Note: Zhongli's kit, stat priorities, and artifact/weapon ranking are long-term stable meta and do not change with patches. Banner availability shifts over time, but the builds below hold. In-game data is always final.</div>
+
+    <h2>Why Zhongli Is Worth Building</h2>
+    <p>His value is the freedom to ignore enemy mechanics entirely:</p>
+    <ul>
+      <li><b>Near-unbreakable shield:</b> the Jade Shield scales off his Max HP and absorbs all damage types, plus <b>100% interruption resistance</b> — your carry never gets knocked out of their animation.</li>
+      <li><b>Universal 20% RES shred:</b> when the shield breaks or he casts his Burst, enemies take <b>-20% to ALL elemental and physical RES</b>. That buff applies to the whole team's damage, every rotation.</li>
+      <li><b>Petrify control:</b> his Burst stuns most enemies and deals burst AoE Geo damage — great for interrupting dangerous attacks.</li>
+      <li><b>Zero rebuild:</b> he does his job at C0 with a 3-star weapon. The most F2P-friendly top-tier unit in the game.</li>
+    </ul>
+    <div class="callout">Because his shield scales off HP and his RES shred is universal, a single Black Tassel + Tenacity build makes almost every carry ~20% stronger and far safer. That is why he is on nearly every account's bench.</div>
+
+    <h2>Best Weapons</h2>
+    <p>Zhongli (shield build) wants <b>Max HP</b> — his damage and shield both scale off HP. A high-HP polearm beats a higher-ATK one for support.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag rock">5★ BiS</span>Staff of Homa</h3>
+        <div class="role">Signature · HP + CRIT DMG</div>
+        <p>His tailor-made weapon: HP% plus a CRIT DMG boost that scales with missing HP. Best for a shield/support hybrid that also deals real damage. The premium pick.</p>
+        <div class="mini">Obtain: weapon banner</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag rock">F2P ★</span>Black Tassel</h3>
+        <div class="role">Top free-to-play pick</div>
+        <p>A 3-star polearm with a massive <b>+46.9% HP</b> at R5. It is the iconic "budget Zhongli" weapon — a maxed Black Tassel often beats 5-stars for pure shielding. Free from Liyue shops.</p>
+        <div class="mini">Obtain: Liyue souvenir shop / chests</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag rock">5★</span>Vortex Vanquisher</h3>
+        <div class="role">Shield-stacked ATK</div>
+        <p>Another HP-flavored polearm that gains ATK while shielded — strong if you own it, but Black Tassel already covers the HP need for free.</p>
+        <div class="mini">Obtain: weapon banner</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag rock">F2P</span>Deathmatch / Favonius Lance</h3>
+        <div class="role">Battle Pass / battery</div>
+        <p><b>Deathmatch</b> (Battle Pass) gives ATK% and CRIT Rate if surrounded — fine for a damage build. <b>Favonius Lance</b> generates particles if your team needs energy, though Zhongli rarely does.</p>
+        <div class="mini">Obtain: Gnostic Hymn / all banners</div>
+      </div>
+    </div>
+
+    <h2>Best Artifacts</h2>
+    <p>The 4-piece Tenacity of the Millelith is his best-in-slot for support — shield on cast, then a team ATK buff.</p>
+    <table>
+      <tr><th>Set</th><th>Use when</th><th>Why</th></tr>
+      <tr><td><b>Tenacity of the Millelith</b> (4pc)</td><td>Almost always (support)</td><td>On Skill cast: +20% team ATK for 3s, plus he already grants the 20% RES shred. Best all-around support set; pairs perfectly with his shield.</td></tr>
+      <tr><td><b>2pc HP% + 2pc HP%</b> (Tenacity + Vourukasha / Bloodstained)</td><td>Pure shield tank</td><td>Maximizes shield thickness. Use when you only care about survivability, not the ATK buff.</td></tr>
+      <tr><td><b>4pc Archaic Petra</b></td><td>Reaction teams</td><td>He "steals" an element on shield hit and buffs that element's damage — niche, only in crystallize-heavy Geo teams.</td></tr>
+      <tr><td><b>2pc Gladiator / Shimenawa + 2pc HP%</b></td><td>Damage-build Zhongli</td><td>Only if you run him as an on-field Geo DPS; drops the support utility.</td></tr>
+    </table>
+
+    <h2>Stat Targets</h2>
+    <p>Zhongli's shield and burst scale off <b>Max HP</b>, so HP is the spine of his build. CRIT only matters if you build him for damage.</p>
+    <table>
+      <tr><th>Slot</th><th>Main stat (shield build)</th><th>Substat priority</th></tr>
+      <tr><td>Sands</td><td>HP%</td><td rowspan="3">HP% &gt; CRIT Rate ≈ CRIT DMG (damage) &gt; Energy Recharge (115%+) &gt; ATK%</td></tr>
+      <tr><td>Goblet</td><td>HP% (or Geo DMG% for damage)</td></tr>
+      <tr><td>Circlet</td><td>HP% (or CRIT for damage)</td></tr>
+    </table>
+    <div class="callout"><b>Target numbers:</b> Max HP <b>40,000–50,000+</b> (Black Tassel + HP sands/goblet/circlet gets there easily), CRIT Rate <b>50–70%</b> if damage-build, Energy Recharge <b>115%+</b> for a consistent Burst. Hit HP first — a thicker shield is the point.</div>
+
+    <h2>Best Team Comps</h2>
+    <p>Zhongli drops into any team that benefits from "don't get hit" and a flat 20% damage boost.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag water">Hypercarry</span>Neuvillette + Furina + Zhongli</h3>
+        <div class="role">Premium Hydro core</div>
+        <p>Zhongli shields the squishy on-field <a href="/guides/neuvillette-build-en.html">Neuvillette</a>, and his RES shred stacks with <a href="/guides/furina-build-en.html">Furina's</a> buff for huge team damage. A top Abyss archetype.</p>
+        <div class="mini">Shield + 20% RES shred</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">Vaporize</span>Hu Tao / Lyney</h3>
+        <div class="role">Pyro carry + shield</div>
+        <p>Hu Tao's low-HP playstyle loves the Jade Shield's safety, and the 20% RES shred boosts her Vaporize. A classic, durable pairing.</p>
+        <div class="mini">Shield keeps her safe</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag rock">Geo double</span>Zhongli + Itto / Albedo / Chiori</h3>
+        <div class="role">Mono-Geo core</div>
+        <p>With another Geo unit he enables Geo resonance (more shield strength, faster burst) and crystallize shields. His RES shred amplifies their Geo damage.</p>
+        <div class="mini">Geo resonance bonus</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag thunder">Universal</span>Any Raiden / Kazuha team</h3>
+        <div class="role">Flex protection slot</div>
+        <p>Drop him into a <a href="/guides/raiden-shogun-build-en.html">Raiden National</a> or <a href="/guides/kazuha-build-en.html">Kazuha</a> team for safety and the universal shred. He asks for nothing and gives a lot.</p>
+        <div class="mini">Plug-and-play</div>
+      </div>
+    </div>
+
+    <h2>Talent Priority</h2>
+    <p>Level in this order — his shield is everything, his burst is utility:</p>
+    <ol>
+      <li><b>Elemental Skill</b> (Dominus Lapidis) → 9–10. The Jade Shield's strength scales with talent level and his HP. This is his core value; max it.</li>
+      <li><b>Elemental Burst</b> (Planet Befall) → 8–9. Petrify + the 20% RES shred on cast. Level for comfort and burst damage.</li>
+      <li><b>Normal Attack</b> → 1–6. Only level if you run a Geo DPS build.</li>
+    </ol>
+
+    <h2>How the Shield + Shred Works</h2>
+    <p>Zhongli's kit is two buttons that make the rest of the fight trivial:</p>
+    <ul>
+      <li><b>Cast Skill (hold):</b> creates the Jade Shield on the active character. Shield HP = base + a large chunk of his Max HP. While it holds, the team has 100% interruption immunity.</li>
+      <li><b>Shield expiry / Burst:</b> when the Jade Shield breaks (or he casts Planet Befall), enemies in range get <b>-20% RES to all elements and physical</b> for 20s. This is a team-wide damage buff, not just his.</li>
+      <li><b>The rotation:</b> Zhongli E (shield up, +20% team ATK from Tenacity) → swap to carry and unload → the shield naturally expires mid-fight, re-applying the RES shred. Re-cast as needed.</li>
+    </ul>
+    <div class="callout"><b>Key rule:</b> his RES shred is universal — it boosts Pyro, Hydro, Cryo, Electro, Anemo, Geo, and physical alike. That is why he slots into literally any team.</div>
+
+    <h2>Common Mistakes</h2>
+    <ul>
+      <li><b>Building ATK instead of HP.</b> His shield scales off HP. An ATK-stack Zhongli has a paper shield and wastes his kit.</li>
+      <li><b>Skipping the Skill levels.</b> The shield strength scales with talent level — leaving it at 1-6 leaves real mitigation on the table. Level it to 9-10.</li>
+      <li><b>Forgetting the RES shred.</b> It only applies when the shield breaks or he bursts. Make sure the shield actually expires (or use his Burst) each rotation to keep the -20% up.</li>
+      <li><b>Over-investing in a 5-star weapon.</b> Black Tassel (3-star, free) already gives more HP than most 5-stars for shielding. Spend primogems elsewhere.</li>
+      <li><b>Running him as a damage dealer by default.</b> His support value (shield + shred + ATK buff) almost always outweighs his personal damage.</li>
+    </ul>
+
+    <h2>Don't Have Zhongli Yet?</h2>
+    <p>He is a limited 5-star, so you may not own him. For shields and interruption immunity, <a href="/guides/beginner-characters-en.html">Noelle</a> (a 4-star Geo on the beginner list) is a solid F2P shielder, and Diona or Layla cover Cryo shielding. They don't bring his universal RES shred, but they keep your carry alive. Build them while you wait for his banner.</p>
+
+    <div class="pairbox">
+      <a href="/guides/kazuha-build-en.html">← Kazuha Build (swirl support)</a>
+      <a href="/guides/raiden-shogun-build-en.html">Raiden Shogun Build →</a>
+      <a href="/guides/furina-build-en.html">Furina Build →</a>
+      <a href="/guides/neuvillette-build-en.html">Neuvillette Build →</a>
+      <a href="/guides/xilonen-build-en.html">Xilonen Build →</a>
+      <a href="/guides/artifact-farming-en.html">Artifact Farming Guide →</a>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    Teyvat Starter Guide · Independent Genshin Impact build reference · <a href="/">Home</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a><br/>
+    Not affiliated with HoYoverse. In-game data is always final.
+  </div>
+</footer>
+</body>
+</html>
