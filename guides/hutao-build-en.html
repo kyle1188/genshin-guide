@@ -1,0 +1,252 @@
+<!doctype html>
+<!-- deployed: English Hu Tao build guide (single-language, en + x-default). -->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Genshin Hu Tao Build Guide 2026 — Best Weapons, Artifacts &amp; Teams</title>
+<meta name="description" content="The complete Hu Tao build guide for Genshin Impact in 2026: best weapons (Staff of Homa, F2P Deathmatch / White Tassel), the 4-piece Crimson Witch of Flames set, her HP-scaling Pyro DPS engine, the Vape team with Yelan / Xingqiu / Zhongli, and the half-HP trick that unlocks her true damage." />
+<meta name="keywords" content="genshin hu tao build, hu tao best weapon f2p, hu tao artifacts crimson witch, hu tao vape team yelan, hu tao staff of homa, hu tao half hp guide, hu tao xingqiu" />
+<meta name="author" content="Teyvat Starter Guide" />
+<meta name="theme-color" content="#0c0f16" />
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/hutao-build-en.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/hutao-build-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/hutao-build-en.html" />
+<meta property="og:title" content="Genshin Hu Tao Build Guide 2026 — Best Weapons, Artifacts & Teams" />
+<meta property="og:description" content="Best weapons, the Crimson Witch of Flames set, her HP-scaling Pyro DPS engine, the Vape team with Yelan / Xingqiu / Zhongli, and the half-HP trick." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/hutao-build-en.html" />
+<meta property="og:locale" content="en_US" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Genshin Hu Tao Build Guide 2026 — Best Weapons, Artifacts & Teams",
+  "description":"A complete Hu Tao build guide: weapons, the Crimson Witch of Flames artifact set, her HP-scaling Pyro DPS engine, the Vape team with Yelan / Xingqiu / Zhongli, and the half-HP trick.",
+  "author":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "publisher":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "datePublished":"2026-07-31",
+  "dateModified":"2026-07-31",
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://genshin-guide-one-five.vercel.app/guides/hutao-build-en.html"}
+}
+</script>
+<style>
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff;
+    --fire:#ff6b4a; --water:#4aa8ff; --thunder:#b06bff; --grass:#7dd35f; --rock:#e0c068; --wind:#a8e6cf;
+    --r:14px; --maxw:920px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.8; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:14px; height:58px}
+  .brand{display:flex; align-items:center; gap:9px; font-weight:700; letter-spacing:.5px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+  .brand b{color:var(--gold)}
+  .lang{color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .lang:hover{color:var(--txt); background:var(--panel)}
+  .back{margin-left:auto; color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .back:hover{color:var(--txt); background:var(--panel)}
+  .crumb{font-size:13px; color:var(--txt-mute); margin:26px 0 4px}
+  .crumb a{color:var(--txt-dim)}
+  article{padding:8px 0 40px}
+  h1{font-size:clamp(26px,4.4vw,38px); line-height:1.25; margin:6px 0 14px; letter-spacing:.3px}
+  h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .lead{color:#cdd6e4; font-size:16px; margin:0 0 26px}
+  h2{font-size:clamp(20px,3vw,26px); margin:38px 0 12px; padding-left:14px; border-left:4px solid var(--gold)}
+  h3{font-size:18px; margin:22px 0 8px; color:#fff}
+  p{color:var(--txt-dim); margin:10px 0}
+  ul,ol{color:var(--txt-dim); padding-left:22px}
+  li{margin:6px 0}
+  .src-note{font-size:13px; color:var(--txt-mute); border-left:3px solid var(--line); padding:8px 14px; margin:18px 0; background:var(--panel); border-radius:0 8px 8px 0}
+  .grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; transition:.2s}
+  .card:hover{border-color:rgba(232,196,116,.4)}
+  .card h3{display:flex; align-items:center; gap:10px; margin-top:0}
+  .tag{font-size:12px; font-weight:700; color:#0c0f16; padding:3px 9px; border-radius:7px; white-space:nowrap}
+  .tag.fire{background:var(--fire)} .tag.water{background:var(--water)} .tag.thunder{background:var(--thunder)}
+  .tag.grass{background:var(--grass)} .tag.rock{background:var(--rock)} .tag.wind{background:var(--wind)}
+  .card .role{font-size:13px; color:var(--gold); font-weight:600; margin:2px 0 8px}
+  .card p{font-size:14px; margin:6px 0}
+  .mini{font-size:13px; color:var(--txt-mute); margin-top:8px; border-top:1px dashed var(--line); padding-top:8px}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; background:var(--panel); border-radius:var(--r); overflow:hidden}
+  th,td{padding:11px 13px; text-align:left; border-bottom:1px solid var(--line); color:var(--txt-dim)}
+  th{background:rgba(232,196,116,.08); color:var(--gold); font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .callout{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .callout b{color:var(--gold)}
+  .btn{padding:11px 18px; border-radius:12px; font-weight:700; font-size:14px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; border:1px solid transparent}
+  .btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--txt-mute); font-size:13px; text-align:center}
+  footer a{color:var(--txt-dim)}
+  .pairbox{display:flex; flex-wrap:wrap; gap:12px; margin:30px 0 6px}
+  .pairbox a{padding:10px 16px; border:1px solid var(--line); border-radius:12px; color:var(--txt-dim); font-size:14px; font-weight:600; transition:.2s}
+  .pairbox a:hover{border-color:rgba(232,196,116,.4); color:var(--txt)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+    <a class="back" href="/">← Back to Home</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumb"><a href="/">Teyvat Starter Guide</a> › Hu Tao Build</nav>
+  <article>
+    <h1>Genshin Hu Tao Build 2026: <span class="grad">Best Weapons, Artifacts &amp; Teams</span></h1>
+    <p class="lead">Hu Tao — the 77th Director of the Wangsheng Funeral Parlor — is the premier <b>Pyro DPS</b> in Genshin Impact for single-target content. Her Elemental Skill consumes HP to convert her Normal and Charged Attacks into Pyro damage scaling off her <b>Max HP</b>, and her passive rewards keeping her below half health. This guide covers weapons (Staff of Homa to F2P picks), the Crimson Witch of Flames set, her HP-scaling engine, the Vape team with <a href="/guides/yelan-build-en.html">Yelan</a> / Xingqiu / <a href="/guides/zhongli-build-en.html">Zhongli</a>, and the half-HP trick that unlocks her true damage.</p>
+
+    <div class="src-note">Note: Hu Tao's kit, stat priorities, and artifact/weapon ranking are long-term stable meta and do not change with patches. Banner availability shifts over time, but the builds below hold. In-game data is always final.</div>
+
+    <h2>Why Hu Tao Is Worth Building</h2>
+    <p>She is the benchmark single-target Pyro carry: her damage scales off HP (a stat that also boosts her tankiness) and she runs one of the highest-damage Vape setups in the game.</p>
+    <ul>
+      <li><b>HP-scaled Pyro:</b> her Skill (Paramita Papilio) turns her attacks into Pyro and scales them off Max HP — building HP raises both damage and survivability.</li>
+      <li><b>Half-HP passive ("Flutter By"):</b> when her HP is below 50%, her Pyro DMG Bonus jumps by up to +33%. Mastering the low-HP window is the core of her kit.</li>
+      <li><b>Vape monster:</b> her frequent Charged Attacks pair perfectly with a Hydro unit for reverse Vaporize, multiplying her already-high single-target damage.</li>
+      <li><b>Self-sufficient DPS:</b> she does not need a second Pyro unit for resonance, freeing her team slot for shields, an Anemo shredder, or a second Hydro.</li>
+    </ul>
+    <div class="callout">In a clean Vape rotation, Hu Tao's Charged Attacks typically deal <b>2–4×</b> the damage of most other single-target carries. She is the gold standard for boss DPS — at the cost of tighter HP management.</div>
+
+    <h2>Best Weapons</h2>
+    <p>Hu Tao wants <b>CRIT</b> and a polearm. HP weapons are ideal because they amplify her scaling, but any high-CRIT polearm works well.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag fire">5★ BiS</span>Staff of Homa</h3>
+        <div class="role">Signature · HP% + CRIT DMG</div>
+        <p>Her tailor-made weapon: grants a huge HP% bonus (boosting her scaling) and a CRIT DMG spike, plus an ATK buff when below half HP. The clear best-in-slot for both damage and comfort.</p>
+        <div class="mini">Obtain: weapon banner</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">5★ alt</span>Staff of the Scarlet Sands</h3>
+        <div class="role">HP-based CRIT alternative</div>
+        <p>Converts her Max HP into CRIT Rate, easing the substat chase. Strong if you already own it and lack Homa — but it gives no HP%, so lean on artifacts for HP.</p>
+        <div class="mini">Obtain: weapon banner</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">F2P ★</span>Deathmatch</h3>
+        <div class="role">Top free-to-play pick</div>
+        <p>A battle-pass polearm that grants CRIT Rate and a big ATK/DEF buff. It is the best non-5★ option and dramatically smooths her CRIT stat. Widely considered the F2P gold standard.</p>
+        <div class="mini">Obtain: Gnostic Hymn (battle pass)</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">F2P</span>White Tassel / Lithic Spear</h3>
+        <div class="role">Craftable / 4★ alternatives</div>
+        <p><b>White Tassel</b> (a 3-star from Liyue shops) gives CRIT Rate and a Normal Attack boost — surprisingly good. <b>Lithic Spear</b> adds CRIT and ATK if your party is Liyue-heavy. Both are free and easy to refine.</p>
+        <div class="mini">Obtain: shop (Mora) / Liyue banner</div>
+      </div>
+    </div>
+
+    <h2>Best Artifacts</h2>
+    <p>The choice depends on how you trigger Vape. For most players, <b>Crimson Witch of Flames is her default</b> because it boosts both Pyro and reaction damage.</p>
+    <table>
+      <tr><th>Set</th><th>Use when</th><th>Why</th></tr>
+      <tr><td><b>Crimson Witch of Flames</b> (4pc)</td><td>Almost always</td><td>+15% Pyro DMG and stacks of reaction DMG% — perfect for a Vape playstyle. The best set in nearly every Hu Tao team.</td></tr>
+      <tr><td><b>Shimenawa's Reminiscence</b> (4pc)</td><td>Non-Vape / pure NA build</td><td>Big Normal/Charged Attack boost, at the cost of Burst energy. Strong when you barely use her Q and run a shield.</td></tr>
+      <tr><td><b>2pc CW + 2pc Crimson Witch / ATK%</b></td><td>Bridging sets</td><td>Any two-piece Pyro DMG or ATK% combo is a fine stopgap while you farm a full 4pc. Use until the right 4pc drops.</td></tr>
+      <tr><td><b>2pc CW + 2pc Tenacity of the Millelith</b></td><td>HP-push build</td><td>Keeps Pyro DMG while adding HP% for more Skill-scaled damage. Good if you run Homa and want more HP.</td></tr>
+    </table>
+
+    <h2>Stat Targets</h2>
+    <p>Hu Tao's damage scales off <b>Max HP</b>, but CRIT and a Vape-ready EM floor matter too. Balance HP, CRIT, and Pyro DMG.</p>
+    <table>
+      <tr><th>Slot</th><th>Main stat</th><th>Substat priority</th></tr>
+      <tr><td>Sands</td><td>HP% (or EM for Vape)</td><td rowspan="3">CRIT Rate ≈ CRIT DMG &gt; HP% &gt; EM (≈100–150 for Vape) &gt; ATK%</td></tr>
+      <tr><td>Goblet</td><td>Pyro DMG%</td></tr>
+      <tr><td>Circlet</td><td>CRIT Rate / CRIT DMG</td></tr>
+    </table>
+    <div class="callout"><b>Target numbers:</b> Max HP <b>28,000–38,000</b> (Homa-driven), CRIT Rate <b>60–80%</b>, CRIT DMG <b>120–200%</b>, Elemental Mastery <b>100–180</b> for Vape. Keep her comfortably below 50% HP in combat for the passive, but never let her die — a shield solves both.</div>
+
+    <h2>Best Team Comps</h2>
+    <p>Hu Tao's best teams revolve around <b>Vape</b> and <b>HP management</b>. A shield unit is almost mandatory to hold her low-HP window safely.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag fire">Vape</span>Hu Tao Vape (double Hydro)</h3>
+        <div class="role">Top single-target DPS</div>
+        <p>Hu Tao + <a href="/guides/yelan-build-en.html">Yelan</a> + Xingqiu + <a href="/guides/zhongli-build-en.html">Zhongli</a>. Double Hydro keeps Vape procs consistent, while Zhongli's shield lets her sit safely below half HP. The flagship comp.</p>
+        <div class="mini">Zhongli shield = safe half-HP window</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag wind">Hu Tao + Kazuha</span>VV Shred Vape</h3>
+        <div class="role">AoE-friendly variant</div>
+        <p>Hu Tao + Xingqiu + <a href="/guides/kazuha-build-en.html">Kazuha</a> + flex. Kazuha's Viridescent Venerer swirl shreds Hydro/Pyro RES, lifting Vape numbers and giving light grouping. Great for mixed content.</p>
+        <div class="mini">Kazuha VV shred amplifies Vape</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag rock">Hu Tao + Zhongli</span>Comfort tank</h3>
+        <div class="role">Safe low-HP sustain</div>
+        <p>Hu Tao + <a href="/guides/zhongli-build-en.html">Zhongli</a> + Xingqiu + flex. Zhongli's shield + RES shred makes the half-HP passive risk-free and boosts her damage. The most beginner-friendly shell.</p>
+        <div class="mini">Best first Hu Tao team to build</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">Mono Pyro</span>Hu Tao + Xiangling</h3>
+        <div class="role">Pyro resonance variant</div>
+        <p>Hu Tao + Xiangling + <a href="/guides/yelan-build-en.html">Yelan</a> (off-field Hydro) + flex. Double Pyro resonance gives +25% ATK; Xiangling's Guoba adds off-field Pyro for occasional double Vape. Niche but fun.</p>
+        <div class="mini">Pyro resonance = +25% ATK</div>
+      </div>
+    </div>
+
+    <h2>Talent Priority</h2>
+    <p>Level in this order — her Charged Attack through the Skill is everything:</p>
+    <ol>
+      <li><b>Elemental Skill</b> (Paramita Papilio) → 8–10. This is the source of her Pyro-converted, HP-scaled attacks. Leveling it raises nearly all of her damage.</li>
+      <li><b>Normal Attack</b> → 8–9. Her Charged Attacks (fired through the Skill) are the actual hit; leveling NA raises them directly.</li>
+      <li><b>Elemental Burst</b> → 6–8. Useful for healing (via her passive) and AoE, but lower priority than Skill/NA.</li>
+    </ol>
+
+    <h2>The Half-HP Trick (Her A4 Passive)</h2>
+    <p>Hu Tao's damage ceiling lives below 50% HP. Manage it on purpose, not by accident:</p>
+    <ul>
+      <li><b>Stay under 50% HP in combat:</b> her "Flutter By" passive grants up to +33% Pyro DMG Bonus while below half health — this is where her real numbers come from.</li>
+      <li><b>Use a shield:</b> <a href="/guides/zhongli-build-en.html">Zhongli</a> (or Diona / Layla) lets her sit at low HP without dying. No shield = constant death risk at the exact moment she is strongest.</li>
+      <li><b>Burst to heal:</b> her Elemental Burst heals her based on the number of enemies hit — a panic button to climb back above the danger line, then drop again.</li>
+      <li><b>Don't over-stack HP:</b> enough HP to survive under a shield is plenty. Past ~38k HP you get more value from CRIT and EM instead.</li>
+    </ul>
+    <div class="callout"><b>Key rule:</b> a Hu Tao sitting at full HP is a fraction of her potential. Embrace the low-HP window — with a shield, it is safe and dramatically stronger.</div>
+
+    <h2>Common Mistakes</h2>
+    <ul>
+      <li><b>Keeping her at full HP.</b> The half-HP passive is her biggest damage source. Running her topped-off throws away up to +33% Pyro DMG.</li>
+      <li><b>No shield.</b> Low-HP play without a shielder (Zhongli / Diona) is a death spiral. A shield is not optional for her best numbers.</li>
+      <li><b>Building ATK instead of HP.</b> Her Skill-scaled attacks scale off Max HP (and Pyro/CRIT). A pure-ATK Hu Tao underperforms badly.</li>
+      <li><b>Forgetting Elemental Mastery for Vape.</b> In a Vape team, ~100–180 EM noticeably lifts reaction damage. Zero EM leaves damage on the table.</li>
+      <li><b>Spamming her Burst.</b> Her Q is for healing/AoE, not her main rotation. Over-relying on it wastes the Skill-Charged-Attack loop that is her real DPS.</li>
+    </ul>
+
+    <h2>Don't Have Hu Tao Yet?</h2>
+    <p>She is a limited 5-star, so you may not own her. For Pyro single-target DPS, <b>Diluc</b> (a free 4-star from the starter and shop) is the classic stand-in, and <b>Yoimiya</b> (a 4-star on banners) covers single-target Pyro via Normal Attacks. For a free Vape driver, <b>Xiangling</b> (from Spiral Abyss and the shop) is excellent and pairs with the same Xingqiu / Yelan / Zhongli shells. Build any of these while you wait for her banner; they cover most Pyro teams until she arrives.</p>
+
+    <div class="pairbox">
+      <a href="/guides/yelan-build-en.html">← Yelan Build (Vape Hydro partner)</a>
+      <a href="/guides/zhongli-build-en.html">Zhongli Build →</a>
+      <a href="/guides/kazuha-build-en.html">Kazuha Build →</a>
+      <a href="/guides/furina-build-en.html">Furina Build →</a>
+      <a href="/guides/neuvillette-build-en.html">Neuvillette Build →</a>
+      <a href="/guides/xilonen-build-en.html">Xilonen Build →</a>
+      <a href="/guides/raiden-shogun-build-en.html">Raiden Shogun Build →</a>
+      <a href="/guides/nahida-build-en.html">Nahida Build →</a>
+      <a href="/guides/artifact-farming-en.html">Artifact Farming Guide →</a>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    Teyvat Starter Guide · Independent Genshin Impact build reference · <a href="/">Home</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a><br/>
+    Not affiliated with HoYoverse. In-game data is always final.
+  </div>
+</footer>
+</body>
+</html>
