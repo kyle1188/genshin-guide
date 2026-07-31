@@ -1,0 +1,253 @@
+<!doctype html>
+<!-- deployed: English Ganyu build guide (single-language, en + x-default). -->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Genshin Ganyu Build Guide 2026 — Best Weapons, Artifacts &amp; Teams</title>
+<meta name="description" content="The complete Ganyu build guide for Genshin Impact in 2026: best bows (Amos' Bow, F2P Prototype Crescent / Blackcliff Warbow), the Wanderer's Troupe set, her Charged Shot Frostflake Arrow engine, the Melt team with Bennett / Xiangling / Zhongli, and the Freeze variant with Mona / Kazuha." />
+<meta name="keywords" content="genshin ganyu build, ganyu best bow f2p, ganyu artifacts wanderer troupe, ganyu melt team bennett, ganyu amos bow, ganyu frostflake arrow, ganyu freeze team" />
+<meta name="author" content="Teyvat Starter Guide" />
+<meta name="theme-color" content="#0c0f16" />
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/ganyu-build-en.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/ganyu-build-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/ganyu-build-en.html" />
+<meta property="og:title" content="Genshin Ganyu Build Guide 2026 — Best Weapons, Artifacts & Teams" />
+<meta property="og:description" content="Best bows, the Wanderer's Troupe set, her Charged Shot Frostflake Arrow engine, the Melt team with Bennett / Xiangling / Zhongli, and the Freeze variant." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/ganyu-build-en.html" />
+<meta property="og:locale" content="en_US" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Genshin Ganyu Build Guide 2026 — Best Weapons, Artifacts & Teams",
+  "description":"A complete Ganyu build guide: bows, the Wanderer's Troupe artifact set, her Charged Shot Frostflake Arrow engine, the Melt team with Bennett / Xiangling / Zhongli, and the Freeze variant.",
+  "author":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "publisher":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "datePublished":"2026-08-01",
+  "dateModified":"2026-08-01",
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://genshin-guide-one-five.vercel.app/guides/ganyu-build-en.html"}
+}
+</script>
+<style>
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff;
+    --fire:#ff6b4a; --water:#4aa8ff; --thunder:#b06bff; --grass:#7dd35f; --rock:#e0c068; --wind:#a8e6cf; --ice:#9fe3ff;
+    --r:14px; --maxw:920px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.8; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:14px; height:58px}
+  .brand{display:flex; align-items:center; gap:9px; font-weight:700; letter-spacing:.5px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+  .brand b{color:var(--gold)}
+  .lang{color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .lang:hover{color:var(--txt); background:var(--panel)}
+  .back{margin-left:auto; color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .back:hover{color:var(--txt); background:var(--panel)}
+  .crumb{font-size:13px; color:var(--txt-mute); margin:26px 0 4px}
+  .crumb a{color:var(--txt-dim)}
+  article{padding:8px 0 40px}
+  h1{font-size:clamp(26px,4.4vw,38px); line-height:1.25; margin:6px 0 14px; letter-spacing:.3px}
+  h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .lead{color:#cdd6e4; font-size:16px; margin:0 0 26px}
+  h2{font-size:clamp(20px,3vw,26px); margin:38px 0 12px; padding-left:14px; border-left:4px solid var(--gold)}
+  h3{font-size:18px; margin:22px 0 8px; color:#fff}
+  p{color:var(--txt-dim); margin:10px 0}
+  ul,ol{color:var(--txt-dim); padding-left:22px}
+  li{margin:6px 0}
+  .src-note{font-size:13px; color:var(--txt-mute); border-left:3px solid var(--line); padding:8px 14px; margin:18px 0; background:var(--panel); border-radius:0 8px 8px 0}
+  .grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; transition:.2s}
+  .card:hover{border-color:rgba(232,196,116,.4)}
+  .card h3{display:flex; align-items:center; gap:10px; margin-top:0}
+  .tag{font-size:12px; font-weight:700; color:#0c0f16; padding:3px 9px; border-radius:7px; white-space:nowrap}
+  .tag.fire{background:var(--fire)} .tag.water{background:var(--water)} .tag.thunder{background:var(--thunder)}
+  .tag.grass{background:var(--grass)} .tag.rock{background:var(--rock)} .tag.wind{background:var(--wind)} .tag.ice{background:var(--ice)}
+  .card .role{font-size:13px; color:var(--gold); font-weight:600; margin:2px 0 8px}
+  .card p{font-size:14px; margin:6px 0}
+  .mini{font-size:13px; color:var(--txt-mute); margin-top:8px; border-top:1px dashed var(--line); padding-top:8px}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; background:var(--panel); border-radius:var(--r); overflow:hidden}
+  th,td{padding:11px 13px; text-align:left; border-bottom:1px solid var(--line); color:var(--txt-dim)}
+  th{background:rgba(232,196,116,.08); color:var(--gold); font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .callout{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .callout b{color:var(--gold)}
+  .btn{padding:11px 18px; border-radius:12px; font-weight:700; font-size:14px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; border:1px solid transparent}
+  .btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--txt-mute); font-size:13px; text-align:center}
+  footer a{color:var(--txt-dim)}
+  .pairbox{display:flex; flex-wrap:wrap; gap:12px; margin:30px 0 6px}
+  .pairbox a{padding:10px 16px; border:1px solid var(--line); border-radius:12px; color:var(--txt-dim); font-size:14px; font-weight:600; transition:.2s}
+  .pairbox a:hover{border-color:rgba(232,196,116,.4); color:var(--txt)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+    <a class="back" href="/">← Back to Home</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumb"><a href="/">Teyvat Starter Guide</a> › Ganyu Build</nav>
+  <article>
+    <h1>Genshin Ganyu Build 2026: <span class="grad">Best Weapons, Artifacts &amp; Teams</span></h1>
+    <p class="lead">Ganyu — the half-qilin emissary of Liyue's Cloud Retainer — is the iconic <b>Cryo bow DPS</b> in Genshin Impact, famous for her Charged Shot "Frostflake Arrow" that drops a blooming AoE Cryo explosion. She excels at both <b>Melt</b> (massive single-target bursts) and <b>Freeze</b> (comfortable AoE control) teams. This guide covers bows (Amos' Bow to F2P picks), the Wanderer's Troupe set, her Charged Shot engine, the Melt team with Bennett / Xiangling / <a href="/guides/zhongli-build-en.html">Zhongli</a>, and the Freeze variant with Mona / <a href="/guides/kazuha-build-en.html">Kazuha</a>.</p>
+
+    <div class="src-note">Note: Ganyu's kit, stat priorities, and artifact/weapon ranking are long-term stable meta and do not change with patches. Banner availability shifts over time, but the builds below hold. In-game data is always final.</div>
+
+    <h2>Why Ganyu Is Worth Building</h2>
+    <p>She is the benchmark ranged Cryo carry and one of the few units that scales beautifully into both Melt and Freeze. Her kit rewards patient Charged Shot aiming over spammy rotations.</p>
+    <ul>
+      <li><b>Frostflake Arrow (her signature):</b> her charged shot splits into a bloom that deals AoE Cryo damage. This is her core damage and the trigger for Melt/Freeze reactions.</li>
+      <li><b>Massive Melt ceiling:</b> a well-built Melt Ganyu can delete bosses — her Frostflake bloom procs Melt for a 2× Cryo multiplier, among the highest single-hit numbers in the game.</li>
+      <li><b>Comfortable Freeze:</b> in a Freeze team she stays safe while dealing steady AoE, great for Spiral Abyss and open-world clearing.</li>
+      <li><b>Off-field value too:</b> her Elemental Burst (Celestial Shower) drops an AoE Cryo field that enables both reactions and light crowd control.</li>
+    </ul>
+    <div class="callout">A Melt Ganyu's Frostflake bloom can hit <b>50k–100k+</b> per shot in endgame — the gold standard for Cryo burst damage, at the cost of aiming discipline.</div>
+
+    <h2>Best Weapons</h2>
+    <p>Ganyu wants <b>ATK</b> and <b>CRIT</b> on a bow. Charge-shot bonuses are ideal, but any high-CRIT bow works.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag ice">5★ BiS</span>Amos' Bow</h3>
+        <div class="role">Signature · Charged Shot DMG</div>
+        <p>Her tailor-made weapon: a stacking Charged Attack damage buff that ramps up the longer the arrow flies — perfect for her Frostflake playstyle. The clear best-in-slot.</p>
+        <div class="mini">Obtain: weapon banner</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag ice">5★ alt</span>Thundering Pulse / Aqua Simulacra</h3>
+        <div class="role">CRIT-stacking alternatives</div>
+        <p>Both give huge CRIT DMG/Rate and conditional ATK, smoothing her stats if you lack Amos. Strong universal bows that slot in cleanly without changing her build.</p>
+        <div class="mini">Obtain: weapon banner</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag ice">F2P ★</span>Prototype Crescent</h3>
+        <div class="role">Top free-to-play pick</div>
+        <p>A craftable bow that grants ATK% after hitting weak spots — often the best free option for Charged Shot Ganyu. Refine it for a meaningful damage bump.</p>
+        <div class="mini">Obtain: blacksmith (forge)</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag ice">F2P</span>Blackcliff Warbow / Hamayumi</h3>
+        <div class="role">Shop / event alternatives</div>
+        <p><b>Blackcliff Warbow</b> (Starglitter shop) gives CRIT DMG and a kill-stack ATK buff. <b>Hamayumi</b> (Inazuma forge) boosts Normal/Charged Attack when Burst isn't used. Both are free and solid.</p>
+        <div class="mini">Obtain: shop / forge</div>
+      </div>
+    </div>
+
+    <h2>Best Artifacts</h2>
+    <p>The choice depends on your team. For Melt, <b>Wanderer's Troupe is her default</b> because it boosts Charged Shot damage directly.</p>
+    <table>
+      <tr><th>Set</th><th>Use when</th><th>Why</th></tr>
+      <tr><td><b>Wanderer's Troupe</b> (4pc)</td><td>Melt / Charged Shot build</td><td>+35% Charged Attack DMG for bow/catalyst users and an EM bonus — the best set for a Melt Ganyu by a wide margin.</td></tr>
+      <tr><td><b>Blizzard Strayer</b> (4pc)</td><td>Freeze team</td><td>Free Crit Rate when enemies are Frozen / affected by Cryo — in Freeze you can hit ~100% CRIT Rate, freeing substats for CRIT DMG and ATK.</td></tr>
+      <tr><td><b>2pc WT + 2pc Blizzard / ATK%</b></td><td>Bridging sets</td><td>Any two-piece Charged or Cryo DMG combo is a fine stopgap while you farm a full 4pc. Use until the right 4pc drops.</td></tr>
+      <tr><td><b>2pc ATK% (Gladiator/Shimenawa) + 2pc WT</b></td><td>ATK-push build</td><td>Keeps Charged Shot bonus while adding ATK% — good if your weapon/substats are light on ATK.</td></tr>
+    </table>
+
+    <h2>Stat Targets</h2>
+    <p>Ganyu's damage scales off <b>ATK</b> and <b>CRIT</b>, with Elemental Mastery mattering for Melt. Balance ATK, CRIT, and Cryo DMG.</p>
+    <table>
+      <tr><th>Slot</th><th>Main stat</th><th>Substat priority</th></tr>
+      <tr><td>Sands</td><td>ATK%</td><td rowspan="3">CRIT Rate ≈ CRIT DMG &gt; ATK% &gt; EM (≈80–150 for Melt) &gt; Energy Recharge</td></tr>
+      <tr><td>Goblet</td><td>Cryo DMG%</td></tr>
+      <tr><td>Circlet</td><td>CRIT Rate / CRIT DMG</td></tr>
+    </table>
+    <div class="callout"><b>Target numbers:</b> ATK <b>1,800–2,400</b>, CRIT Rate <b>60–100%</b> (Freeze can push near 100% via Blizzard Strayer), CRIT DMG <b>120–220%</b>, Elemental Mastery <b>80–160</b> for Melt. Freeze teams need far less CRIT Rate because the set supplies it.</div>
+
+    <h2>Best Team Comps</h2>
+    <p>Ganyu's best teams split into <b>Melt</b> (burst) and <b>Freeze</b> (comfort). Both want a shielder and a reaction enabler.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag fire">Melt</span>Ganyu Melt (classic)</h3>
+        <div class="role">Top single-target DPS</div>
+        <p>Ganyu + Bennett + Xiangling + <a href="/guides/zhongli-build-en.html">Zhongli</a>. Bennett/ Xiangling apply Pyro for Melt on her Frostflake bloom; Zhongli shields and shreds RES. The flagship burst comp.</p>
+        <div class="mini">Melt = up to 2× Cryo multiplier</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag ice">Freeze</span>Ganyu Morgana</h3>
+        <div class="role">Comfortable AoE control</div>
+        <p>Ganyu + Mona + <a href="/guides/kazuha-build-en.html">Kazuha</a> + Diona. Mona's Omen and Kazuha's VV shred amplify her Cryo; Diona heals/shields. Stays safe and freezes everything. The classic "Morgana" shell.</p>
+        <div class="mini">Blizzard Strayer → near-100% CRIT</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag rock">Ganyu + Zhongli</span>Comfort tank</h3>
+        <div class="role">Safe Melt/Freeze core</div>
+        <p>Ganyu + <a href="/guides/zhongli-build-en.html">Zhongli</a> + flex + flex. Zhongli's shield + RES shred makes her stationary aiming risk-free and boosts damage. The most beginner-friendly shell.</p>
+        <div class="mini">Best first Ganyu team to build</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag wind">Ganyu + Kazuha</span>VV Shred Freeze</h3>
+        <div class="role">AoE-friendly variant</div>
+        <p>Ganyu + <a href="/guides/kazuha-build-en.html">Kazuha</a> + Hydro (Mona / Xingqiu) + flex. Kazuha's Viridescent Venerer swirl shreds Cryo/Hydro RES and gives grouping, lifting her Freeze numbers enormously.</p>
+        <div class="mini">Kazuha VV shred amplifies Cryo</div>
+      </div>
+    </div>
+
+    <h2>Talent Priority</h2>
+    <p>Level in this order — her Frostflake Arrow comes from her Charged Attack, which is governed by Normal Attack:</p>
+    <ol>
+      <li><b>Normal Attack</b> (Liutian Archery) → 8–10. Her Charged Shot / Frostflake bloom scales off NA level — this is nearly all of her damage.</li>
+      <li><b>Elemental Burst</b> (Celestial Shower) → 8–9. The AoE Cryo field enables reactions and adds meaningful burst damage.</li>
+      <li><b>Elemental Skill</b> (Floral Brush) → 6–8. Mostly a taunt (Ice Lotus) to distract enemies while you aim; low damage priority.</li>
+    </ol>
+
+    <h2>Frostflake Arrow &amp; Aiming (Her Core)</h2>
+    <p>Ganyu's damage lives in the charged shot. Master the loop on purpose:</p>
+    <ul>
+      <li><b>Always charge to Level 2:</b> the Frostflake bloom (the second hit, AoE Cryo) is her real damage. A Level-1 charge wastes most of her kit.</li>
+      <li><b>Aim for weak spots / group centers:</b> Prototype Crescent and headshots reward precise aiming — a stationary target (thanks to a shield) makes this consistent.</li>
+      <li><b>Time reactions:</b> in Melt, let Pyro linger on the enemy, then drop the Frostflake so Cryo triggers Melt (not the reverse — Pyro on Cryo is only 1.5×, Cryo on Pyro is 2×).</li>
+      <li><b>Use the taunt:</b> her Skill's Ice Lotus draws aggro so she can aim undisturbed. Place it between you and the enemy.</li>
+    </ul>
+    <div class="callout"><b>Key rule:</b> Ganyu is an aiming DPS, not a button-masher. A shielded, stationary Ganyu firing precise Level-2 Frostflake blooms will out-damage a panicking one by a mile.</div>
+
+    <h2>Common Mistakes</h2>
+    <ul>
+      <li><b>Releasing at Level 1 charge.</b> The Frostflake bloom (AoE) only appears on a full Level-2 charge. Short-charging throws away most of her damage.</li>
+      <li><b>Wrong reaction order in Melt.</b> Ganyu must apply Cryo onto existing Pyro (2×). If Pyro hits her Cryo first (1.5×), she loses a third of the multiplier.</li>
+      <li><b>Building ER instead of ATK/CRIT.</b> She is not Burst-spam reliant; over-investing in Energy Recharge starves her main stats.</li>
+      <li><b>No shielder.</b> Without Zhongli/Diona she gets interrupted mid-aim and dies to melee — her damage collapses.</li>
+      <li><b>Ignoring Elemental Mastery in Melt.</b> ~80–160 EM noticeably lifts Melt damage. Zero EM leaves burst damage on the table.</li>
+    </ul>
+
+    <h2>Don't Have Ganyu Yet?</h2>
+    <p>She is a limited 5-star. For Cryo ranged DPS, <b>Rosaria</b> (a 4-star from banners and story) is a strong polearm Cryo carry and crit-support, and <b>Kaeya</b> (a free starter) covers off-field Cryo application. For Freeze enablement, <b>Mona</b> / <b>Xingqiu</b> and a shielder (Zhongli / Diona) cover most of Ganyu's shells. Build any of these while you wait for her banner; they slot into the same teams until she arrives.</p>
+
+    <div class="pairbox">
+      <a href="/guides/hutao-build-en.html">← Hu Tao Build (Pyro DPS reference)</a>
+      <a href="/guides/zhongli-build-en.html">Zhongli Build →</a>
+      <a href="/guides/kazuha-build-en.html">Kazuha Build →</a>
+      <a href="/guides/furina-build-en.html">Furina Build →</a>
+      <a href="/guides/neuvillette-build-en.html">Neuvillette Build →</a>
+      <a href="/guides/xilonen-build-en.html">Xilonen Build →</a>
+      <a href="/guides/raiden-shogun-build-en.html">Raiden Shogun Build →</a>
+      <a href="/guides/nahida-build-en.html">Nahida Build →</a>
+      <a href="/guides/yelan-build-en.html">Yelan Build →</a>
+      <a href="/guides/artifact-farming-en.html">Artifact Farming Guide →</a>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    Teyvat Starter Guide · Independent Genshin Impact build reference · <a href="/">Home</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a><br/>
+    Not affiliated with HoYoverse. In-game data is always final.
+  </div>
+</footer>
+</body>
+</html>
