@@ -168,6 +168,30 @@ git push origin master &amp;&amp; git push origin master:main</code></p>
 <li>按提示去域名商加 DNS 记录（CNAME / TXT）</li>
 <li>验证通过后，Vercel 自动签发 SSL，再把代码里域名替换成新域名推送。</li>
 </ol>
+<hr />
+<h2>九、需要你手动操作的部分（区分「你做」与「我来做」）</h2>
+<blockquote>
+<p>下面把本项目的部署动作拆清楚：哪些是你本人必须在浏览器/终端亲手做的，哪些是我（部署方）改完代码自动完成的。本攻略站已搭好，GitHub 仓库、Vercel 项目都已就绪，所以日常你几乎什么都不用碰。</p>
+</blockquote>
+<h3>① 一次性设置（只做一遍，之后不用再管）</h3>
+<ol>
+<li><strong>GitHub 授权</strong>：首次需要你跑一次授权，让 git 能推代码。在终端执行 <code>gh auth login</code> → 选 GitHub.com → HTTPS → <strong>Login with a web browser</strong> → 它会给一个一次性码，<strong>你复制到浏览器登录授权</strong>即可。这一步是整套流程里唯一要你亲手在浏览器点的；授权后 git 凭证走 gh，以后不用再输密码。</li>
+<li><strong>Vercel 首次关联</strong>：打开 vercel.com → <strong>Continue with GitHub</strong> 授权 → <strong>Add New... → Project</strong> → 找到你的仓库点 <strong>Import</strong> → Preset 选 <strong>Other</strong> → Root 填 <code>./</code> → <strong>Deploy</strong>。点完这几下，以后全自动。本项目已做过，不用重复。</li>
+</ol>
+<h3>② 日常更新（你说"改 XX"，其余我来）</h3>
+<ul>
+<li>你只需告诉我改什么 → 我改完文件 → 我执行 <code>git add / commit / push</code> → Vercel 收到 webhook 自动重新部署。</li>
+<li><strong>你什么都不用做</strong>，刷新网址就是新版。</li>
+</ul>
+<h3>③ 如果哪天你自己想改代码再推</h3>
+<ol>
+<li><strong>分支坑</strong>：本地在 <code>master</code>、Vercel 拉 <code>main</code>，两个都要推：<code>git push origin master &amp;&amp; git push origin master:main</code>。</li>
+<li><strong>假失败坑</strong>：终端若报 <code>send-pack: unexpected disconnect</code> 后跟着 <code>Everything up-to-date</code>，<strong>别信它</strong>——服务器其实已接收。以 <code>git fetch</code> 后比对 commit 是否一致为准（本项目已踩过并解决）。</li>
+<li><strong>部署后没变</strong>：等 1–2 分钟 CDN 刷新，或加 <code>?v=1</code> 强刷。</li>
+</ol>
+<blockquote>
+<p>⚠️ <strong>一句话总结：</strong>授权一次 + Vercel 点一次，之后「你说改、我部署、你刷新」即可，全程不用碰命令行。需要我帮你做 git 推送时，以我最后向你确认的「已上线 + fetch 比对一致」为准，别被终端假报错吓到。</p>
+</blockquote>
   </div>
   <div style="background:#f7f8fa;color:#9aa0a6;font-size:12px;padding:14px 26px;text-align:center;border-top:1px solid #eef0f3">本教程由原神攻略站实战流程整理，复盘简报版式，仅供学习参考。</div>
 </div>

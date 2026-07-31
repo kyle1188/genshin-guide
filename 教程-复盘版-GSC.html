@@ -173,6 +173,39 @@ grep -rn "旧域名\|agentos-app" .</code></p>
 <li>直接 Google 搜： <code>site:genshin-guide-one-five.vercel.app</code></li>
 <li>几天后能看到你的页面，说明已收录成功。</li>
 </ul>
+<hr />
+<h2>八、需要你手动操作的部分（亲自在 GSC 后台做）</h2>
+<blockquote>
+<p>下面这些步骤必须你本人登录 Google 账号在 GSC 网页上操作，部署方（我）没法替你点。验证标签、sitemap 文件、全部文章页面都早已上线，你只需走完网页流程即可。</p>
+</blockquote>
+<h3>① 一次性设置（只做一遍）</h3>
+<ol>
+<li>打开 https://search.google.com/search-console ，用你的 Google 账号登录。</li>
+<li>左上角 <strong>「添加资源」</strong> → 选 <strong>「网址前缀」</strong> → 输入 <code>https://genshin-guide-one-five.vercel.app</code> → 点 <strong>继续</strong>。</li>
+<li>验证方式选 <strong>「HTML 标记」</strong>。验证用的 meta 标签我们已经加进 <code>index.html</code> 并部署上线，你<strong>不用再改代码</strong>；等 1–2 分钟 Vercel 部署完，回 GSC 点 <strong>「验证」</strong> → 显示 ✅ 已验证。</li>
+<li>左侧菜单 → <strong>「站点地图」</strong> → 输入框填 <code>sitemap.xml</code> → 点 <strong>提交</strong> → 状态显示 <strong>「成功」</strong>。</li>
+</ol>
+<h3>② 每批文章上线后做（本次 8 篇 / 9 个页面）</h3>
+<ol>
+<li>左侧 → <strong>「网址检查」</strong>。</li>
+<li>逐个粘贴下面 9 个真实链接（<strong>不带 ?v</strong>）→ 回车 → 点 <strong>「请求编入索引」</strong>：</li>
+</ol>
+<ul>
+<li><code>https://genshin-guide-one-five.vercel.app/guides/beginner-characters.html</code>（新手必练角色 · 中文）</li>
+<li><code>https://genshin-guide-one-five.vercel.app/guides/beginner-characters-en.html</code>（新手必练角色 · 英文）</li>
+<li><code>https://genshin-guide-one-five.vercel.app/guides/artifact-farming-en.html</code>（圣遗物刷取优先级）</li>
+<li><code>https://genshin-guide-one-five.vercel.app/guides/furina-build-en.html</code>（Furina 深度 build）</li>
+<li><code>https://genshin-guide-one-five.vercel.app/guides/neuvillette-build-en.html</code>（Neuvillette 深度 build）</li>
+<li><code>https://genshin-guide-one-five.vercel.app/guides/xilonen-build-en.html</code>（Xilonen 深度 build）</li>
+<li><code>https://genshin-guide-one-five.vercel.app/guides/kazuha-build-en.html</code>（Kazuha 深度 build）</li>
+<li><code>https://genshin-guide-one-five.vercel.app/guides/raiden-shogun-build-en.html</code>（Raiden Shogun 深度 build）</li>
+<li><code>https://genshin-guide-one-five.vercel.app/guides/zhongli-build-en.html</code>（Zhongli 深度 build）</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>两点提醒：</strong><br />
+1. <strong>每日配额</strong>：GSC「请求编入索引」每天只能点几次，超额会报「超出了配额」。这不是网站问题，明天配额重置再点剩余链接即可；只要 sitemap 已提交，Google 也会自动收录。<br />
+2. <strong>三备审页不用提交</strong>：隐私政策 / 关于本站 / 联系投稿（<code>/privacy.html</code> <code>/about.html</code> <code>/contact.html</code>）是给 AdSense 准备的，不必请求索引。</p>
+</blockquote>
   </div>
   <div style="background:#f7f8fa;color:#9aa0a6;font-size:12px;padding:14px 26px;text-align:center;border-top:1px solid #eef0f3">本教程由原神攻略站实战流程整理，复盘简报版式，仅供学习参考。</div>
 </div>

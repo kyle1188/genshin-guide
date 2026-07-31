@@ -304,6 +304,36 @@ git push origin master:main
 <blockquote>
 <p>三篇教程（本文 + 部署 + GSC）构成完整 SOP。新项目直接照抄，半天就能从 0 到一个被 Google 收录的双语互动站。</p>
 </blockquote>
+<hr />
+<h2>9. 需要你手动操作的部分（建站环节：你做 vs 我来）</h2>
+<blockquote>
+<p>实战搭建这篇，绝大部份是我（建站方）写代码完成的；你本人要亲手做的，主要是「定方向 + 验收 + 部署/收录」。下面拆清楚，避免你以为要自己写 HTML/JS。</p>
+</blockquote>
+<h3>① 你定方向、我来落地</h3>
+<ul>
+<li><strong>定目标人群</strong>：告诉我是做新手向 / 零氪向 / 数据向（本项目定为「新手 + 零氪」）。</li>
+<li><strong>列想要的工具</strong>：说清要哪些互动工具（如抽卡模拟、原石规划、配队共鸣），我来实现。</li>
+<li><strong>给内容素材</strong>：你提供的实测数据 / 偏好，我会整合成结构化攻略文档。</li>
+</ul>
+<h3>② 你验收、我改</h3>
+<ul>
+<li>我做好一版 → 你把线上地址打开看 → 提「哪里不对 / 想加什么」。</li>
+<li>反复几轮到满意，进入部署（见《部署教程》）。</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>建站本身你不用写代码</strong>：单页 HTML、5 个工具、i18n 双语切换、SEO 地基都是我完成。你只管「说要什么」和「看对不对」。</p>
+</blockquote>
+<h3>③ 部署与收录（这两步你要亲自点，见另两篇）</h3>
+<ul>
+<li><strong>部署</strong>：GitHub 授权 + Vercel 首次 Import（详见《部署教程》第九节「需要你手动操作的部分」）。</li>
+<li><strong>收录</strong>：GSC 添加资源 + 验证 + 提交 sitemap + 请求索引（详见《GSC 收录教程》第八节）。</li>
+</ul>
+<h3>④ 如果哪天你想自己改内容 / 加工具</h3>
+<ol>
+<li><strong>改文字</strong>：直接编辑 <code>index.html</code> 里对应 <code>.zh</code> / <code>.en</code> 文案，照第 8 节命令提交推送。</li>
+<li><strong>加工具</strong>：复制第 3 节某个工具的渲染函数模板，新写一段 JS，注意切语言时整体重渲（3.4）。</li>
+<li><strong>推送后</strong>：分支坑 + push 假失败坑，照《部署教程》第九节处理。</li>
+</ol>
   </div>
   <div style="background:#f7f8fa;color:#9aa0a6;font-size:12px;padding:14px 26px;text-align:center;border-top:1px solid #eef0f3">本教程由原神攻略站实战流程整理，复盘简报版式，仅供学习参考。</div>
 </div>
