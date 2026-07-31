@@ -1,0 +1,255 @@
+<!doctype html>
+<!-- deployed: English Xiangling build guide (single-language, en + x-default). -->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Genshin Xiangling Build Guide 2026 — Best Weapons, Artifacts &amp; Teams</title>
+<meta name="description" content="The complete Xiangling build guide for Genshin Impact in 2026: her best weapon (The Catch, R5), the Emblem of Severed Fate set, the Energy Recharge breakpoint that makes her Pyronado spin forever, the Raiden National team with Bennett / Xingqiu / Raiden, and Vape shells with Ganyu / Hu Tao / Neuvillette." />
+<meta name="keywords" content="genshin xiangling build, xiangling best weapon the catch, xiangling artifacts emblem severed fate, xiangling national team, xiangling energy recharge, xiangling pyro sub dps, xiangling constellations" />
+<meta name="author" content="Teyvat Starter Guide" />
+<meta name="theme-color" content="#0c0f16" />
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/xiangling-build-en.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/xiangling-build-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/xiangling-build-en.html" />
+<meta property="og:title" content="Genshin Xiangling Build Guide 2026 — Best Weapons, Artifacts & Teams" />
+<meta property="og:description" content="Best weapon (The Catch), the Emblem set, the ER breakpoint, the Raiden National team, and Vape shells with Ganyu / Hu Tao / Neuvillette." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/xiangling-build-en.html" />
+<meta property="og:locale" content="en_US" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Genshin Xiangling Build Guide 2026 — Best Weapons, Artifacts & Teams",
+  "description":"A complete Xiangling build guide: The Catch weapon, the Emblem of Severed Fate artifact set, her Energy Recharge breakpoint, the Raiden National team, and Vape shells with Ganyu / Hu Tao / Neuvillette.",
+  "author":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "publisher":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "datePublished":"2026-08-01",
+  "dateModified":"2026-08-01",
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://genshin-guide-one-five.vercel.app/guides/xiangling-build-en.html"}
+}
+</script>
+<style>
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff;
+    --fire:#ff6b4a; --water:#4aa8ff; --thunder:#b06bff; --grass:#7dd35f; --rock:#e0c068; --wind:#a8e6cf; --ice:#9fe3ff;
+    --r:14px; --maxw:920px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.8; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:14px; height:58px}
+  .brand{display:flex; align-items:center; gap:9px; font-weight:700; letter-spacing:.5px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+  .brand b{color:var(--gold)}
+  .lang{color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .lang:hover{color:var(--txt); background:var(--panel)}
+  .back{margin-left:auto; color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .back:hover{color:var(--txt); background:var(--panel)}
+  .crumb{font-size:13px; color:var(--txt-mute); margin:26px 0 4px}
+  .crumb a{color:var(--txt-dim)}
+  article{padding:8px 0 40px}
+  h1{font-size:clamp(26px,4.4vw,38px); line-height:1.25; margin:6px 0 14px; letter-spacing:.3px}
+  h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .lead{color:#cdd6e4; font-size:16px; margin:0 0 26px}
+  h2{font-size:clamp(20px,3vw,26px); margin:38px 0 12px; padding-left:14px; border-left:4px solid var(--gold)}
+  h3{font-size:18px; margin:22px 0 8px; color:#fff}
+  p{color:var(--txt-dim); margin:10px 0}
+  ul,ol{color:var(--txt-dim); padding-left:22px}
+  li{margin:6px 0}
+  .src-note{font-size:13px; color:var(--txt-mute); border-left:3px solid var(--line); padding:8px 14px; margin:18px 0; background:var(--panel); border-radius:0 8px 8px 0}
+  .grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; transition:.2s}
+  .card:hover{border-color:rgba(232,196,116,.4)}
+  .card h3{display:flex; align-items:center; gap:10px; margin-top:0}
+  .tag{font-size:12px; font-weight:700; color:#0c0f16; padding:3px 9px; border-radius:7px; white-space:nowrap}
+  .tag.fire{background:var(--fire)} .tag.water{background:var(--water)} .tag.thunder{background:var(--thunder)}
+  .tag.grass{background:var(--grass)} .tag.rock{background:var(--rock)} .tag.wind{background:var(--wind)} .tag.ice{background:var(--ice)}
+  .card .role{font-size:13px; color:var(--gold); font-weight:600; margin:2px 0 8px}
+  .card p{font-size:14px; margin:6px 0}
+  .mini{font-size:13px; color:var(--txt-mute); margin-top:8px; border-top:1px dashed var(--line); padding-top:8px}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; background:var(--panel); border-radius:var(--r); overflow:hidden}
+  th,td{padding:11px 13px; text-align:left; border-bottom:1px solid var(--line); color:var(--txt-dim)}
+  th{background:rgba(232,196,116,.08); color:var(--gold); font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .callout{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .callout b{color:var(--gold)}
+  .btn{padding:11px 18px; border-radius:12px; font-weight:700; font-size:14px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; border:1px solid transparent}
+  .btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--txt-mute); font-size:13px; text-align:center}
+  footer a{color:var(--txt-dim)}
+  .pairbox{display:flex; flex-wrap:wrap; gap:12px; margin:30px 0 6px}
+  .pairbox a{padding:10px 16px; border:1px solid var(--line); border-radius:12px; color:var(--txt-dim); font-size:14px; font-weight:600; transition:.2s}
+  .pairbox a:hover{border-color:rgba(232,196,116,.4); color:var(--txt)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+    <a class="back" href="/">← Back to Home</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumb"><a href="/">Teyvat Starter Guide</a> › Xiangling Build</nav>
+  <article>
+    <h1>Genshin Xiangling Build 2026: <span class="grad">Best Weapons, Artifacts &amp; Teams</span></h1>
+    <p class="lead">Xiangling — the chef of Liyue's Wanmin Restaurant — is the most-built 4-star in Genshin Impact and the backbone of more top-tier teams than almost any 5-star. She is an <b>off-field Pyro Sub-DPS</b> whose summoned panda <b>Guoba</b> and spinning <b>Pyronado</b> Burst blanket the field in Pyro, enabling Vape, Melt, and the legendary <b>Raiden National</b> team. She is also <b>free</b> (clear Spiral Abyss floor 3 to own her forever). This guide covers her best weapon (<a href="/guides/hutao-build-en.html">The Catch</a> vs Staff of Homa), the Emblem of Severed Fate set, the Energy Recharge breakpoint that keeps her Pyronado spinning, and teams with <a href="/guides/raiden-shogun-build-en.html">Raiden</a> / <a href="/guides/ganyu-build-en.html">Ganyu</a> / <a href="/guides/hutao-build-en.html">Hu Tao</a> / <a href="/guides/neuvillette-build-en.html">Neuvillette</a> / <a href="/guides/yelan-build-en.html">Yelan</a>.</p>
+
+    <div class="src-note">Note: Xiangling's kit, weapon ranking (The Catch), artifact set (Emblem of Severed Fate), and the ~180–220% ER requirement are long-term stable meta and do not change with patches. Banner/event availability shifts, but the build below holds. In-game data is always final.</div>
+
+    <h2>Why Xiangling Is Worth Building</h2>
+    <p>She is the single best free damage engine in the game, and she slots into more team archetypes than any other unit. If you only build one 4-star, make it her.</p>
+    <ul>
+      <li><b>Free and permanent:</b> clear Spiral Abyss floor 3-3 and she is yours at C0 — no wishes, no RNG. You can then crown her constellations from Starglitter shop.</li>
+      <li><b>Off-field Pyro uptime:</b> her Burst (Pyronado) is a homing, field-wide Pyro applicator that follows your active character. It enables Vaporize/Melt on your entire team's damage.</li>
+      <li><b>Raiden National core:</b> Xiangling + Bennett + Xingqiu + Raiden is one of the highest-clearing, lowest-cost teams in the game's history — it beats content far above its investment.</li>
+      <li><b>Scales with the team:</b> because her damage rides on reactions and Burst uptime, she gets stronger as you add better carries and shredders (<a href="/guides/kazuha-build-en.html">Kazuha</a>, <a href="/guides/zhongli-build-en.html">Zhongli</a>, <a href="/guides/furina-build-en.html">Furina</a>).</li>
+    </ul>
+    <div class="callout">A well-built Xiangling's Pyronado ticks can hit <b>20k–40k+ per spin</b> in Vape/Melt setups — comparable to many 5-star Sub-DPS, at zero wish cost.</div>
+
+    <h2>Best Weapons</h2>
+    <p>Xiangling wants <b>Energy Recharge</b> and <b>CRIT/ATK</b> on a polearm. Her signature is a fishing reward, not a banner weapon.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag fire">BiS ★</span>The Catch (R5)</h3>
+        <div class="role">Best-in-slot · free from fishing</div>
+        <p>Her tailor-made weapon: ER% plus a Burst CRIT Rate and DMG bonus at Refinement 5. It is <b>free</b> (catch the required fish in any region) and strictly better than most paid polearms for her. The clear default.</p>
+        <div class="mini">Obtain: fishing (exchange at the rod NPC)</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">5★</span>Staff of Homa</h3>
+        <div class="role">Premium damage option</div>
+        <p>Huge HP→ATK conversion and CRIT DMG. Pairs well if you funnel a Homa into her, but you'll still need ER from substats/team to keep her Burst up. Best when you already own one.</div>
+        <div class="mini">Obtain: weapon banner</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">F2P</span>Deathmatch / Dragon's Bane</h3>
+        <div class="role">Battle Pass / forge picks</div>
+        <p><b>Deathmatch</b> (BP) gives CRIT Rate and ATK and is a stable damage upgrade. <b>Dragon's Bane</b> (forge) gives EM — excellent in Vape/Melt because her Pyronado procs reactions constantly. Both are free-ish and strong.</p>
+        <div class="mini">Obtain: BP / blacksmith</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">ER tools</span>Favonius Lance / Kitain Cross Spear</h3>
+        <div class="role">Fixes energy problems</div>
+        <p><b>Favonius Lance</b> generates team energy via CRIT hits — great if your Xiangling struggles to Burst. <b>Kitain Cross Spear</b> (Inazuma forge) gives ER and a Burst buff. Use these when ER is your bottleneck.</p>
+        <div class="mini">Obtain: shop / forge</div>
+      </div>
+    </div>
+
+    <h2>Best Artifacts</h2>
+    <p>For 99% of players, <b>Emblem of Severed Fate is her default</b> because it converts ER directly into Burst damage — solving both her energy and damage needs at once.</p>
+    <table>
+      <tr><th>Set</th><th>Use when</th><th>Why</th></tr>
+      <tr><td><b>Emblem of Severed Fate</b> (4pc)</td><td>Always (default)</td><td>+20% ER and turns ER into Burst DMG (up to +75% at 300% ER). The single best set — fixes her energy AND boosts her Pyronado.</td></tr>
+      <tr><td><b>Crimson Witch of Flames</b> (4pc)</td><td>Pure Vape/Melt carry</td><td>Boosts Pyro DMG and amplifies reaction damage. Stronger than Emblem only when you already have comfortable ER from weapons/substats.</td></tr>
+      <tr><td><b>2pc Emblem + 2pc Crimson / ATK%</b></td><td>Bridging sets</td><td>A flexible stopgap while farming. Keeps ER and adds Pyro DMG or ATK until the right 4pc drops.</td></tr>
+      <tr><td><b>2pc Emblem + 2pc Wanderer's / Gilded</b></td><td>EM-push Vape</td><td>If you run Dragon's Bane and want more reaction damage, add an EM two-piece. Niche but effective.</td></tr>
+    </table>
+
+    <h2>Stat Targets — ER Is the Headline</h2>
+    <p>Unlike most DPS, Xiangling's #1 stat is <b>Energy Recharge</b>. Her Burst costs 80 and she generates almost no energy herself, so she needs ER from weapon + substats to spin every rotation.</p>
+    <table>
+      <tr><th>Slot</th><th>Main stat</th><th>Substat priority</th></tr>
+      <tr><td>Sands</td><td>ER% (or ATK% if ER is covered)</td><td rowspan="3">ER% (until breakpoint) &gt; CRIT Rate ≈ CRIT DMG &gt; ATK% &gt; EM (≈80–160 in Vape/Melt)</td></tr>
+      <tr><td>Goblet</td><td>Pyro DMG%</td></tr>
+      <tr><td>Circlet</td><td>CRIT Rate / CRIT DMG</td></tr>
+    </table>
+    <div class="callout"><b>ER breakpoint by team:</b> solo/2-Pyro with Bennett ≈ <b>180–200% ER</b>; with another battery (Raiden, <a href="/guides/raiden-shogun-build-en.html">Raiden</a>) ≈ <b>160–180%</b>; no Bennett and no battery ≈ <b>220%+ ER</b>. Hit the breakpoint first, then pour everything into CRIT and ATK. With The Catch you usually land in range from substats alone.</div>
+
+    <h2>Best Team Comps</h2>
+    <p>Xiangling's best teams share one rule: <b>pair her with Bennett</b> (Pyro resonance + heal + ATK buff + battery) and a Hydro/Pyro applier for reactions.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag fire">National</span>Raiden National</h3>
+        <div class="role">Best cost-to-power team in the game</div>
+        <p>Xiangling + Bennett + Xingqiu + <a href="/guides/raiden-shogun-build-en.html">Raiden</a>. Raiden batteries everyone, Bennett buffs, Xingqiu enables Vape, and Xiangling's Pyronado deletes content. The flagship "free" team.</p>
+        <div class="mini">Clears Abyss far above its cost</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag ice">Melt</span>Ganyu / Hu Tao Melt</h3>
+        <div class="role">Pyro enabler for Cryo/Pyro carries</div>
+        <p>With <a href="/guides/ganyu-build-en.html">Ganyu</a> or <a href="/guides/hutao-build-en.html">Hu Tao</a>, Xiangling applies off-field Pyro so their hits trigger Melt. She is the reason Melt Ganyu/Hu Tao can proc 2× reactions consistently.</p>
+        <div class="mini">Off-field Pyro = steady Melt</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag water">Vape</span>Neuvillette / Yelan Vape</h3>
+        <div class="role">Reaction fuel for Hydro carries</div>
+        <p>Alongside <a href="/guides/neuvillette-build-en.html">Neuvillette</a> / <a href="/guides/yelan-build-en.html">Yelan</a> + Bennett, Xiangling's Pyro lets the Hydro carry Vaporize. Great for stacks of AoE damage in endgame.</p>
+        <div class="mini">Hydro Vape amplifier</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag rock">Tank</span>Xiangling + Zhongli</h3>
+        <div class="role">Safe, shredded core</div>
+        <p>Xiangling + Bennett + flex + <a href="/guides/zhongli-build-en.html">Zhongli</a>. Zhongli shields and shreds RES so her Pyronado lands uninterrupted and hits harder. Beginner-friendly and durable.</p>
+        <div class="mini">Best first Xiangling shell</div>
+      </div>
+    </div>
+
+    <h2>Talent Priority</h2>
+    <p>Level in this order — almost all her damage is the Burst:</p>
+    <ol>
+      <li><b>Elemental Burst</b> (Pyronado) → 8–10. The homing Pyro field is ~90% of her output. Crown this first if you can.</li>
+      <li><b>Elemental Skill</b> (Guoba) → 8–9. Guoba's Pyro application sets up reactions and adds decent off-field damage. Level it second.</li>
+      <li><b>Normal Attack</b> → 1–6. She rarely auto-attacks; leave it low unless you on-field her (not recommended).</li>
+    </ol>
+
+    <h2>Pyronado &amp; Energy (Her Core)</h2>
+    <p>Xiangling's power lives in a perfectly-timed Burst loop. Master these:</p>
+    <ul>
+      <li><b>Hit the ER breakpoint first.</b> A Xiangling who can't Burst every rotation does ~30% of her value. Weapon (The Catch) + Emblem + Bennett usually gets you there.</li>
+      <li><b>Snapshot timing.</b> Pyronado "snapshots" her stats at cast — buff Bennett's ATK field and any DMG bonus (Noblesse, <a href="/guides/furina-build-en.html">Furina</a>) before you pop her Burst.</li>
+      <li><b>Guoba placement.</b> Guoba waddles to a spot and breathes Pyro; position it on the enemy cluster so its breaths actually connect (it has a short range).</li>
+      <li><b>Use Bennett's burst as the battery.</b> Standing in Bennett's circle both buffs her ATK and refunds energy — the reason 2-Pyro teams fix her energy.</li>
+    </ul>
+    <div class="callout"><b>Key rule:</b> Xiangling is an off-field engine, not an on-field carry. Build her for Burst uptime (ER) and reaction damage (CRIT/EM), then let your main DPS eat the Vape/Melt. Don't swap her in to auto-attack.</div>
+
+    <h2>Common Mistakes</h2>
+    <ul>
+      <li><b>Too little Energy Recharge.</b> The #1 Xiangling killer. Sub-180% ER without a battery means missed Bursts and collapsed damage.</li>
+      <li><b>Building her on-field as a main DPS.</b> She wants to throw Guoba + Burst and swap out. Auto-attacking wastes her kit.</li>
+      <li><b>Skipping Bennett.</b> Bennett is ~half her value (battery + buff + heal). A Xiangling without Bennett needs way more ER.</li>
+      <li><b>Ignoring Elemental Mastery in Vape/Melt.</b> ~80–160 EM noticeably lifts reaction damage. Zero EM leaves free damage on the table.</li>
+      <li><b>Crimson Witch without enough ER.</b> 4pc CW is only better than Emblem when energy is already solved — otherwise Emblem wins on both fronts.</li>
+    </ul>
+
+    <h2>Don't Have Xiangling Yet?</h2>
+    <p>She is free: clear Spiral Abyss floor 3 (any half-decent team) and she is permanently yours. While you get there, <b>Bennett</b> (also free from the same Abyss floors) covers Pyro buffing, and <b>Yanfei</b> / <b>Thoma</b> / <b>Dehya</b> can substitute off-field Pyro application in a pinch — but none match her free, Burst-based uptime. Build Bennett and Xiangling together; they are the foundation of the National shell that carries most accounts through endgame.</p>
+
+    <div class="pairbox">
+      <a href="/guides/hutao-build-en.html">← Hu Tao Build (Pyro DPS reference)</a>
+      <a href="/guides/ganyu-build-en.html">Ganyu Build →</a>
+      <a href="/guides/raiden-shogun-build-en.html">Raiden Shogun Build →</a>
+      <a href="/guides/neuvillette-build-en.html">Neuvillette Build →</a>
+      <a href="/guides/yelan-build-en.html">Yelan Build →</a>
+      <a href="/guides/furina-build-en.html">Furina Build →</a>
+      <a href="/guides/kazuha-build-en.html">Kazuha Build →</a>
+      <a href="/guides/zhongli-build-en.html">Zhongli Build →</a>
+      <a href="/guides/nahida-build-en.html">Nahida Build →</a>
+      <a href="/guides/xilonen-build-en.html">Xilonen Build →</a>
+      <a href="/guides/beginner-characters-en.html">Beginner Must-Build Characters</a>
+      <a href="/guides/artifact-farming-en.html">Artifact Farming Guide →</a>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    Teyvat Starter Guide · Independent Genshin Impact build reference · <a href="/">Home</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a><br/>
+    Not affiliated with HoYoverse. In-game data is always final.
+  </div>
+</footer>
+</body>
+</html>
