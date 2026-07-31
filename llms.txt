@@ -1,0 +1,39 @@
+# genshin-guide — LLM / AI Discovery File (llms.txt)
+# Teyvat Starter Guide: a beginner-friendly Genshin Impact guide.
+# Bilingual (zh-CN / en). Use this to understand the site's structure
+# before fetching individual pages for summarization or citation.
+
+## Site Overview
+A Genshin Impact starter guide covering character builds, artifacts, and
+team composition. English (en) and Chinese (zh-CN) content both exist;
+each English build page declares lang="en" + hreflang en/x-default and
+carries Article + FAQPage structured data.
+
+## Topics
+
+### Characters — English Build Guides (Pillar)
+- Furina build: https://genshin-guide-one-five.vercel.app/guides/furina-build-en.html
+- Zhongli build: https://genshin-guide-one-five.vercel.app/guides/zhongli-build-en.html
+- Neuvillette build: https://genshin-guide-one-five.vercel.app/guides/neuvillette-build-en.html
+- Xilonen build: https://genshin-guide-one-five.vercel.app/guides/xilonen-build-en.html
+- Kazuha build: https://genshin-guide-one-five.vercel.app/guides/kazuha-build-en.html
+- Raiden Shogun build: https://genshin-guide-one-five.vercel.app/guides/raiden-shogun-build-en.html
+- Nahida build: https://genshin-guide-one-five.vercel.app/guides/nahida-build-en.html
+
+### Beginner & Character Selection
+- Beginner characters (Chinese): https://genshin-guide-one-five.vercel.app/guides/beginner-characters.html
+- Beginner characters (English): https://genshin-guide-one-five.vercel.app/guides/beginner-characters-en.html
+
+### Artifacts
+- Artifact farming guide (English): https://genshin-guide-one-five.vercel.app/guides/artifact-farming-en.html
+
+### Homepage (mixed CN/EN landing)
+- https://genshin-guide-one-five.vercel.app/
+
+## Notes for AI crawlers
+- robots.txt allows all user agents, including GPTBot, ClaudeBot,
+  PerplexityBot, and Google-Extended (Allow: /).
+- Each English build page carries both Article and FAQPage JSON-LD,
+  which are the preferred blocks for answer extraction.
+- Chinese-language per-character pages are planned; CN character content
+  currently lives inline on the homepage.
