@@ -1,0 +1,266 @@
+<!doctype html>
+<!-- deployed: English Xingqiu build guide (single-language, en + x-default). Top hot-take hook rides the 6.7 Phase 2 Raiden Shogun rerun. -->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Genshin Xingqiu Build Guide 2026 — Best Weapons, Artifacts &amp; Teams</title>
+<meta name="description" content="The complete Xingqiu build guide for Genshin Impact in 2026: his best weapon (Sacrificial Sword, Favonius, Wolf-Fang), the 4pc Emblem of Severed Fate set, the ~200% Energy Recharge breakpoint, why C2 is the real upgrade, and teams like Raiden National with Raiden / Xiangling / Bennett, Hu Tao Vape, and Neuvillette." />
+<meta name="keywords" content="genshin xingqiu build, xingqiu best weapon sacrificial sword, xingqiu artifacts emblem noblesse, xingqiu constellations c2 c6, xingqiu hydro sub dps, xingqiu raiden national" />
+<meta name="author" content="Teyvat Starter Guide" />
+<meta name="theme-color" content="#0c0f16" />
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/xingqiu-build-en.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/xingqiu-build-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/xingqiu-build-en.html" />
+<meta property="og:title" content="Genshin Xingqiu Build Guide 2026 — Best Weapons, Artifacts & Teams" />
+<meta property="og:description" content="Best weapon (Sacrificial Sword), the 4pc Emblem set, the ER breakpoint, why C2 matters, and teams like Raiden National, Hu Tao Vape, and Neuvillette." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/xingqiu-build-en.html" />
+<meta property="og:locale" content="en_US" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Genshin Xingqiu Build Guide 2026 — Best Weapons, Artifacts & Teams",
+  "description":"A complete Xingqiu build guide: his best weapon, the 4pc Emblem of Severed Fate set, the Energy Recharge breakpoint, why C2 is the real upgrade, and teams like Raiden National, Hu Tao Vape, and Neuvillette.",
+  "author":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "publisher":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "datePublished":"2026-08-02",
+  "dateModified":"2026-08-02",
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://genshin-guide-one-five.vercel.app/guides/xingqiu-build-en.html"}
+}
+</script>
+<style>
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff;
+    --fire:#ff6b4a; --water:#4aa8ff; --thunder:#b06bff; --grass:#7dd35f; --rock:#e0c068; --wind:#a8e6cf; --ice:#9fe3ff;
+    --r:14px; --maxw:920px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.8; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:14px; height:58px}
+  .brand{display:flex; align-items:center; gap:9px; font-weight:700; letter-spacing:.5px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+  .brand b{color:var(--gold)}
+  .lang{color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .lang:hover{color:var(--txt); background:var(--panel)}
+  .back{margin-left:auto; color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .back:hover{color:var(--txt); background:var(--panel)}
+  .crumb{font-size:13px; color:var(--txt-mute); margin:26px 0 4px}
+  .crumb a{color:var(--txt-dim)}
+  article{padding:8px 0 40px}
+  h1{font-size:clamp(26px,4.4vw,38px); line-height:1.25; margin:6px 0 14px; letter-spacing:.3px}
+  h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .lead{color:#cdd6e4; font-size:16px; margin:0 0 26px}
+  h2{font-size:clamp(20px,3vw,26px); margin:38px 0 12px; padding-left:14px; border-left:4px solid var(--gold)}
+  h3{font-size:18px; margin:22px 0 8px; color:#fff}
+  p{color:var(--txt-dim); margin:10px 0}
+  ul,ol{color:var(--txt-dim); padding-left:22px}
+  li{margin:6px 0}
+  .src-note{font-size:13px; color:var(--txt-mute); border-left:3px solid var(--line); padding:8px 14px; margin:18px 0; background:var(--panel); border-radius:0 8px 8px 0}
+  .grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; transition:.2s}
+  .card:hover{border-color:rgba(232,196,116,.4)}
+  .card h3{display:flex; align-items:center; gap:10px; margin-top:0}
+  .tag{font-size:12px; font-weight:700; color:#0c0f16; padding:3px 9px; border-radius:7px; white-space:nowrap}
+  .tag.fire{background:var(--fire)} .tag.water{background:var(--water)} .tag.thunder{background:var(--thunder)}
+  .tag.grass{background:var(--grass)} .tag.rock{background:var(--rock)} .tag.wind{background:var(--wind)} .tag.ice{background:var(--ice)}
+  .card .role{font-size:13px; color:var(--gold); font-weight:600; margin:2px 0 8px}
+  .card p{font-size:14px; margin:6px 0}
+  .mini{font-size:13px; color:var(--txt-mute); margin-top:8px; border-top:1px dashed var(--line); padding-top:8px}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; background:var(--panel); border-radius:var(--r); overflow:hidden}
+  th,td{padding:11px 13px; text-align:left; border-bottom:1px solid var(--line); color:var(--txt-dim)}
+  th{background:rgba(232,196,116,.08); color:var(--gold); font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .callout{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .callout b{color:var(--gold)}
+  .hot-hook{background:linear-gradient(135deg,rgba(255,107,74,.14),rgba(176,107,255,.08)); border:1px solid rgba(255,107,74,.4); border-left:4px solid var(--fire); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .hot-hook .kicker{display:inline-block; font-size:12px; font-weight:700; letter-spacing:.5px; color:var(--fire); text-transform:uppercase; margin-bottom:6px}
+  .hot-hook b{color:var(--gold)}
+  .btn{padding:11px 18px; border-radius:12px; font-weight:700; font-size:14px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; border:1px solid transparent}
+  .btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--txt-mute); font-size:13px; text-align:center}
+  footer a{color:var(--txt-dim)}
+  .pairbox{display:flex; flex-wrap:wrap; gap:12px; margin:30px 0 6px}
+  .pairbox a{padding:10px 16px; border:1px solid var(--line); border-radius:12px; color:var(--txt-dim); font-size:14px; font-weight:600; transition:.2s}
+  .pairbox a:hover{border-color:rgba(232,196,116,.4); color:var(--txt)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+    <a class="back" href="/">← Back to Home</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumb"><a href="/">Teyvat Starter Guide</a> › Xingqiu Build</nav>
+  <article>
+    <h1>Genshin Xingqiu Build 2026: <span class="grad">Best Weapons, Artifacts &amp; Teams</span></h1>
+
+    <div class="hot-hook">
+      <span class="kicker">Hot right now · Genshin 6.7 Phase 2 (live through Aug 11, 2026)</span>
+      <p style="margin:0;color:var(--txt)"><b>Raiden Shogun is rerunning now</b> — and Xingqiu is the missing 4th piece of <b>Raiden National</b> (Raiden + Xingqiu + <a href="/guides/xiangling-build-en.html">Xiangling</a> + <a href="/guides/bennett-build-en.html">Bennett</a>), the free team that clears Spiral Abyss far above its cost. If you're pulling <a href="/guides/raiden-shogun-build-en.html">Raiden</a>, you need Xingqiu built right: enough ER to ult every rotation, the Sacrificial Sword trick, and the C2 breakpoint. This guide covers exactly that.</p>
+    </div>
+
+    <p class="lead">Xingqiu — the rain-calling bookworm of Liyue — is the single best <b>Hydro enabler</b> in Genshin Impact. His Burst rains swords that apply Hydro off-field, cut incoming damage by 15%, and keep your carry alive, all while he sits in the backline doing zero on-field work. He is also <b>permanent and farmable</b> (wishes + the Starglitter shop). This guide covers his best weapon (Sacrificial Sword vs Favonius/Wolf-Fang), the 4pc Emblem of Severed Fate set, the ~200% Energy Recharge breakpoint, why <b>C2 is the real upgrade</b>, and teams with <a href="/guides/raiden-shogun-build-en.html">Raiden</a> / <a href="/guides/hutao-build-en.html">Hu Tao</a> / <a href="/guides/neuvillette-build-en.html">Neuvillette</a> / <a href="/guides/bennett-build-en.html">Bennett</a>.</p>
+
+    <div class="src-note">Note: Xingqiu's kit, his Sacrificial Sword default, the 4pc Emblem preference, and the ~200% ER requirement are long-term stable meta and do not shift with patches. The 6.7 Raiden rerun above is a traffic note, not a build change — the guide below holds regardless of banner.</div>
+
+    <h2>Why Xingqiu Is Worth Building</h2>
+    <p>No other Hydro unit delivers off-field application, team survivability, and reaction enabler in one cheap package. If you build one support besides Bennett, make it him.</p>
+    <ul>
+      <li><b>Off-field Hydro engine:</b> his Q (Raincutter) rains swords that hit enemies automatically, enabling Vape/Melt on every carry swing without him taking the field.</li>
+      <li><b>Built-in 15% damage cut:</b> the Rain Swords shatter to reduce incoming damage to the active character — a permanent mini-shield that makes squishy carries survive.</li>
+      <li><b>Minor heal + C6 ATK buff:</b> shattered swords heal a little; at C6 the field also grants +15% ATK and interruption resistance to your on-fielder.</li>
+      <li><b>Permanent and accessible:</b> obtainable from any standard/wuxu banner and the Starglitter shop, so he is never gated behind a specific rerun.</li>
+    </ul>
+    <div class="callout">A correctly built Xingqiu turns almost any on-fielder into a Vape/Melt monster and cuts team deaths by a third. For a free unit, that is absurd value.</div>
+
+    <h2>Best Weapons</h2>
+    <p>Xingqiu wants <b>Energy Recharge</b> (to Burst every rotation) and likes <b>CRIT / HP%</b> for personal damage. He uses a <b>sword</b>.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag water">BiS ★</span>Sacrificial Sword</h3>
+        <div class="role">Best-in-slot · 4★ sword (R5 ideal)</div>
+        <p>The default for a reason: its passive lets his Elemental Skill recast, generating a second wave of energy particles and doubling Hydro application. R5 is the dream; even R1 plus C2 enables the double-E combo. This is what makes National tick.</p>
+        <div class="mini">Obtain: forge / wishes</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag water">4★</span>Favonius Sword</h3>
+        <div class="role">Team-energy tool</div>
+        <p>Generates CRIT-based particles on hit, solving energy for the <i>whole</i> team when Xingqiu can't ER his own Burst. Best when nobody else on the team has a battery. Pair with some CRIT rate.</p>
+        <div class="mini">Obtain: wishes</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag water">5★</span>Wolf-Fang / Primordial Jade Cutter</h3>
+        <div class="role">Personal-damage options</div>
+        <p><b>Wolf-Fang</b> (battle pass) gives CRIT rate and ramps his own Skill/Burst damage — strong if you value his hits. <b>Primordial Jade Cutter</b> converts HP into CRIT and ATK for a beefy, hard-hitting Xingqiu. Use when ER is already covered.</p>
+        <div class="mini">Obtain: battle pass / weapon banner</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag water">Alt</span>Haran / Key of Khaj-Nisut</h3>
+        <div class="role">Premium personal-dmg</div>
+        <p>If Xingqiu is your personal-damage piece (rare but valid in quickswap shells), Haran or Key push his numbers hard. Overkill for a pure enabler — only when ER and support duties are solved.</p>
+        <div class="mini">Obtain: weapon banner</div>
+      </div>
+    </div>
+
+    <h2>Best Artifacts</h2>
+    <p>For essentially every Xingqiu, <b>4pc Emblem of Severed Fate is best</b> — its 2-piece ER feeds his Burst uptime and the 4-piece turns that same ER into Burst damage. His damage lives in his Q, so this set is tailor-made for him.</p>
+    <table>
+      <tr><th>Set</th><th>Use when</th><th>Why</th></tr>
+      <tr><td><b>Emblem of Severed Fate</b> (4pc)</td><td>Always (default)</td><td>+20% ER on 2pc and converts ER into Burst DMG on 4pc. His identity set — run it unless someone else needs the slot.</td></tr>
+      <tr><td><b>2pc Emblem + 2pc Heart of Depth</b></td><td>ER already solved</td><td>Keeps ER from the Emblem half while adding flat Hydro DMG%. Slightly more personal damage when you over-cap on recharge.</td></tr>
+      <tr><td><b>2pc Emblem + 2pc Noblesse</b></td><td>Team needs the buff</td><td>If no one else holds 4pc Noblesse, Xingqiu can wear it — but he usually wants Emblem for his own damage.</td></tr>
+      <tr><td><b>2pc Emblem + 2pc ER%</b></td><td>Tight energy</td><td>When you can't hit the ER breakpoint from weapon/substats, the extra ER two-piece guarantees uptime.</td></tr>
+    </table>
+
+    <h2>Stat Targets — ER First, Always</h2>
+    <p>Xingqiu's entire value is his Burst. If Q is down, he contributes almost nothing. So ER is non-negotiable: hit the breakpoint, then stack CRIT/HP% for personal damage.</p>
+    <table>
+      <tr><th>Slot</th><th>Main stat</th><th>Substat priority</th></tr>
+      <tr><td>Sands</td><td>ER% (never ATK% on him)</td><td rowspan="3">ER% (to breakpoint) &gt; CRIT Rate &gt; CRIT DMG &gt; HP% (for Jade Cutter / survivability)</td></tr>
+      <tr><td>Goblet</td><td>Hydro DMG% (or HP% if using Jade Cutter)</td></tr>
+      <tr><td>Circlet</td><td>CRIT Rate / CRIT DMG</td></tr>
+    </table>
+    <div class="callout"><b>ER breakpoint by team:</b> with Raiden or another battery + Sacrificial Sword ≈ <b>180–200% ER</b>; solo Hydro, no battery ≈ <b>220%+ ER</b>; with Favonius + a battery you can dip to ~160%. Miss the breakpoint and Q goes on cooldown — that is the #1 Xingqiu failure.</div>
+
+    <h2>Best Team Comps</h2>
+    <p>Xingqiu's teams share one rule: put him behind any on-fielder that wants off-field Hydro, then let reactions do the work.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag thunder">National</span>Raiden National</h3>
+        <div class="role">Best cost-to-power team in the game</div>
+        <p><a href="/guides/raiden-shogun-build-en.html">Raiden</a> + Xingqiu + <a href="/guides/xiangling-build-en.html">Xiangling</a> + <a href="/guides/bennett-build-en.html">Bennett</a>. Raiden batteries everyone, Xingqiu rains Hydro so Xiangling's Pyronado vaporizes every hit. The flagship free Abyss team, and the reason his rerun matters right now.</p>
+        <div class="mini">Clears Abyss far above its cost</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">Vape</span>Hu Tao Vape</h3>
+        <div class="role">Best Pyro DPS shell</div>
+        <p><a href="/guides/hutao-build-en.html">Hu Tao</a> + Xingqiu + <a href="/guides/zhongli-build-en.html">Zhongli</a> + flex. Xingqiu enables clean Vape on her charged attacks and the 15% damage cut keeps her healthy at low HP. A staple for the strongest Pyro carry.</p>
+        <div class="mini">Pairs with Hu Tao perfectly</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag water">Hydro</span>Neuvillette / Furina</h3>
+        <div class="role">HP-drain enabler</div>
+        <p>With <a href="/guides/neuvillette-build-en.html">Neuvillette</a> or <a href="/guides/furina-build-en.html">Furina</a>, Xingqiu's off-field Hydro + the damage cut supports their HP-mechanic kits and adds Vape on top. He is the safe, f2p-friendly hydro partner.</p>
+        <div class="mini">Great with HP-scaling carries</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag wind">International</span>Childe International</h3>
+        <div class="role">Classic single-target monster</div>
+        <p>Childe + Xingqiu + <a href="/guides/bennett-build-en.html">Bennett</a> + <a href="/guides/kazuha-build-en.html">Kazuha</a> / Sucrose. Xingqiu's rain lets Childe's melee stance Vape constantly while the sword damage cut keeps him up. Still a top single-target shell.</p>
+        <div class="mini">Strong vs bosses</div>
+      </div>
+    </div>
+
+    <h2>Talent Priority</h2>
+    <p>Level in this order — his Skill feeds energy and his Burst is his damage:</p>
+    <ol>
+      <li><b>Elemental Skill</b> (Guhua Sword) → 8–13. Generates his particles and, with Sacrificial Sword, enables the double-cast that solves energy. Crown this first if you can.</li>
+      <li><b>Elemental Burst</b> (Raincutter) → 8–13. The Rain Sword damage and Hydro application scale here. Level it right after the Skill.</li>
+      <li><b>Normal Attack</b> → 1–6. He barely swings his sword outside quickswap memes. Leave it low.</li>
+    </ol>
+
+    <h2>Constellations — C2 Is the Real Upgrade</h2>
+    <p>Xingqiu's constellation curve is front-loaded: one constellation changes everything, then it is smooth sailing.</p>
+    <ul>
+      <li><b>C1 (Crushing Rain):</b> small — increases Rain Sword damage and extends their duration slightly. Nice, not essential.</li>
+      <li><b>C2 (Soothing Droplet):</b> adds a 3rd Rain Sword and cuts his Skill cooldown by 3s. This is the <b>big one</b>: with R1 Sacrificial Sword the -3s lets him double-cast the Skill, doubling Hydro application and energy. Hugely better uptime and Vape consistency.</li>
+      <li><b>C4:</b> extends Q duration and makes more Rain Swords — more uptime and damage. A clear step up.</li>
+      <li><b>C6 (Hydropathic Absolution):</b> the on-field character in his Q gains +15% ATK and interruption resistance. A free team buff that caps his value. Worth it if you main him.</li>
+    </ul>
+    <div class="callout"><b>Key rule:</b> Get C2 and stop. C2 is where Xingqiu goes from "good" to "best Hydro enabler in the game." C6 is a luxury, not a requirement.</div>
+
+    <h2>Common Mistakes</h2>
+    <ul>
+      <li><b>Too little Energy Recharge.</b> The #1 Xingqiu killer. Sub-180% ER without a battery means a dead Burst and a team that loses all its Vape and shielding.</li>
+      <li><b>Building him as a main DPS.</b> His job is the rain, not the sword. Stacking raw ATK/DMG on him wastes the slot — ER and CRIT/HP% win.</li>
+      <li><b>Skipping Sacrificial Sword.</b> Without the double-E, his energy and Hydro application both suffer. It is the single highest-impact weapon for him.</li>
+      <li><b>Wrong artifact set.</b> Random 2pc+2pc without Emblem leaves ER and Burst damage on the table. Emblem 4pc is the default for a reason.</li>
+      <li><b>Forcing him where Yelan is better.</b> For pure single-target personal damage, <a href="/guides/yelan-build-en.html">Yelan</a> out-scales him — but she gives no particles and no damage cut, so Xingqiu still wins for battery-needing and survivability-focused teams.</li>
+    </ul>
+
+    <h2>Don't Have Xingqiu Yet?</h2>
+    <p>He is permanent: pull him from any standard banner or grab copies via the Starglitter shop over time. While you wait, <b>Barbara</b> or <b>Candace</b> can supply off-field Hydro in a pinch, and <a href="/guides/yelan-build-en.html">Yelan</a> covers single-target Vape — but neither gives Xingqiu's rain of swords plus the 15% damage cut plus his own battery. Build him alongside <a href="/guides/bennett-build-en.html">Bennett</a> and <a href="/guides/xiangling-build-en.html">Xiangling</a>; together they are the National core that carries most accounts through endgame, and right now they're the backbone of every Raiden National clear during the 6.7 rerun.</p>
+
+    <div class="pairbox">
+      <a href="/guides/bennett-build-en.html">← Bennett Build (National core)</a>
+      <a href="/guides/raiden-shogun-build-en.html">Raiden Shogun Build →</a>
+      <a href="/guides/xiangling-build-en.html">Xiangling Build →</a>
+      <a href="/guides/hutao-build-en.html">Hu Tao Build →</a>
+      <a href="/guides/neuvillette-build-en.html">Neuvillette Build →</a>
+      <a href="/guides/yelan-build-en.html">Yelan Build →</a>
+      <a href="/guides/furina-build-en.html">Furina Build →</a>
+      <a href="/guides/kazuha-build-en.html">Kazuha Build →</a>
+      <a href="/guides/zhongli-build-en.html">Zhongli Build →</a>
+      <a href="/guides/nahida-build-en.html">Nahida Build →</a>
+      <a href="/guides/xilonen-build-en.html">Xilonen Build →</a>
+      <a href="/guides/ganyu-build-en.html">Ganyu Build →</a>
+      <a href="/guides/beginner-characters-en.html">Beginner Must-Build Characters</a>
+      <a href="/guides/artifact-farming-en.html">Artifact Farming Guide →</a>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    Teyvat Starter Guide · Independent Genshin Impact build reference · <a href="/">Home</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a><br/>
+    Not affiliated with HoYoverse. In-game data is always final.
+  </div>
+</footer>
+</body>
+</html>
