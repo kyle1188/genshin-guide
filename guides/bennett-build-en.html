@@ -1,0 +1,265 @@
+<!doctype html>
+<!-- deployed: English Bennett build guide (single-language, en + x-default). Top hot-take hook rides the 6.7 Phase 2 Raiden Shogun rerun. -->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Genshin Bennett Build Guide 2026 — Best Weapons, Artifacts &amp; Teams</title>
+<meta name="description" content="The complete Bennett build guide for Genshin Impact in 2026: his best weapon (Aquila Favonia, Sapwood Blade, Favonius Sword), the 4pc Noblesse Oblige set, the ~200% Energy Recharge breakpoint, why C1 is the real upgrade, the C6 Pyro-infusion caveat, and teams like Raiden National with Raiden / Xiangling / Xingqiu, Melt Ganyu, and Vape Hu Tao." />
+<meta name="keywords" content="genshin bennett build, bennett best weapon, bennett artifacts noblesse oblige, bennett constellations c1 c6, bennett support build, bennett energy recharge, bennett raiden national" />
+<meta name="author" content="Teyvat Starter Guide" />
+<meta name="theme-color" content="#0c0f16" />
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/bennett-build-en.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/bennett-build-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/bennett-build-en.html" />
+<meta property="og:title" content="Genshin Bennett Build Guide 2026 — Best Weapons, Artifacts & Teams" />
+<meta property="og:description" content="Best weapon (Aquila Favonia), the 4pc Noblesse set, the ER breakpoint, why C1 matters, the C6 caveat, and teams like Raiden National, Melt Ganyu, and Vape Hu Tao." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/bennett-build-en.html" />
+<meta property="og:locale" content="en_US" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Genshin Bennett Build Guide 2026 — Best Weapons, Artifacts & Teams",
+  "description":"A complete Bennett build guide: his best weapon, the 4pc Noblesse Oblige set, the Energy Recharge breakpoint, why C1 is the real upgrade, the C6 Pyro-infusion caveat, and teams like Raiden National, Melt Ganyu, and Vape Hu Tao.",
+  "author":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "publisher":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "datePublished":"2026-08-01",
+  "dateModified":"2026-08-01",
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://genshin-guide-one-five.vercel.app/guides/bennett-build-en.html"}
+}
+</script>
+<style>
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff;
+    --fire:#ff6b4a; --water:#4aa8ff; --thunder:#b06bff; --grass:#7dd35f; --rock:#e0c068; --wind:#a8e6cf; --ice:#9fe3ff;
+    --r:14px; --maxw:920px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.8; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:14px; height:58px}
+  .brand{display:flex; align-items:center; gap:9px; font-weight:700; letter-spacing:.5px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+  .brand b{color:var(--gold)}
+  .lang{color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .lang:hover{color:var(--txt); background:var(--panel)}
+  .back{margin-left:auto; color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .back:hover{color:var(--txt); background:var(--panel)}
+  .crumb{font-size:13px; color:var(--txt-mute); margin:26px 0 4px}
+  .crumb a{color:var(--txt-dim)}
+  article{padding:8px 0 40px}
+  h1{font-size:clamp(26px,4.4vw,38px); line-height:1.25; margin:6px 0 14px; letter-spacing:.3px}
+  h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .lead{color:#cdd6e4; font-size:16px; margin:0 0 26px}
+  h2{font-size:clamp(20px,3vw,26px); margin:38px 0 12px; padding-left:14px; border-left:4px solid var(--gold)}
+  h3{font-size:18px; margin:22px 0 8px; color:#fff}
+  p{color:var(--txt-dim); margin:10px 0}
+  ul,ol{color:var(--txt-dim); padding-left:22px}
+  li{margin:6px 0}
+  .src-note{font-size:13px; color:var(--txt-mute); border-left:3px solid var(--line); padding:8px 14px; margin:18px 0; background:var(--panel); border-radius:0 8px 8px 0}
+  .grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; transition:.2s}
+  .card:hover{border-color:rgba(232,196,116,.4)}
+  .card h3{display:flex; align-items:center; gap:10px; margin-top:0}
+  .tag{font-size:12px; font-weight:700; color:#0c0f16; padding:3px 9px; border-radius:7px; white-space:nowrap}
+  .tag.fire{background:var(--fire)} .tag.water{background:var(--water)} .tag.thunder{background:var(--thunder)}
+  .tag.grass{background:var(--grass)} .tag.rock{background:var(--rock)} .tag.wind{background:var(--wind)} .tag.ice{background:var(--ice)}
+  .card .role{font-size:13px; color:var(--gold); font-weight:600; margin:2px 0 8px}
+  .card p{font-size:14px; margin:6px 0}
+  .mini{font-size:13px; color:var(--txt-mute); margin-top:8px; border-top:1px dashed var(--line); padding-top:8px}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; background:var(--panel); border-radius:var(--r); overflow:hidden}
+  th,td{padding:11px 13px; text-align:left; border-bottom:1px solid var(--line); color:var(--txt-dim)}
+  th{background:rgba(232,196,116,.08); color:var(--gold); font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .callout{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .callout b{color:var(--gold)}
+  .hot-hook{background:linear-gradient(135deg,rgba(255,107,74,.14),rgba(176,107,255,.08)); border:1px solid rgba(255,107,74,.4); border-left:4px solid var(--fire); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .hot-hook .kicker{display:inline-block; font-size:12px; font-weight:700; letter-spacing:.5px; color:var(--fire); text-transform:uppercase; margin-bottom:6px}
+  .hot-hook b{color:var(--gold)}
+  .btn{padding:11px 18px; border-radius:12px; font-weight:700; font-size:14px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; border:1px solid transparent}
+  .btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--txt-mute); font-size:13px; text-align:center}
+  footer a{color:var(--txt-dim)}
+  .pairbox{display:flex; flex-wrap:wrap; gap:12px; margin:30px 0 6px}
+  .pairbox a{padding:10px 16px; border:1px solid var(--line); border-radius:12px; color:var(--txt-dim); font-size:14px; font-weight:600; transition:.2s}
+  .pairbox a:hover{border-color:rgba(232,196,116,.4); color:var(--txt)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+    <a class="back" href="/">← Back to Home</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumb"><a href="/">Teyvat Starter Guide</a> › Bennett Build</nav>
+  <article>
+    <h1>Genshin Bennett Build 2026: <span class="grad">Best Weapons, Artifacts &amp; Teams</span></h1>
+
+    <div class="hot-hook">
+      <span class="kicker">Hot right now · Genshin 6.7 Phase 2 (live through Aug 11, 2026)</span>
+      <p style="margin:0;color:var(--txt)"><b>Raiden Shogun is rerunning now</b> — and Bennett is the irreplaceable core of <b>Raiden National</b> (Raiden + Bennett + <a href="/guides/xiangling-build-en.html">Xiangling</a> + Xingqiu), the team that clears Spiral Abyss far above its cost. If you just pulled or plan to pull <a href="/guides/raiden-shogun-build-en.html">Raiden</a>, building Bennett correctly is what makes the whole shell actually click. This guide covers exactly that: his weapon, artifacts, the ER breakpoint, and the constellations that matter.</p>
+    </div>
+
+    <p class="lead">Bennett — the down-on-his-luck adventurer from Mondstadt — is the single highest-usage support in Genshin Impact's history. He is a <b>Pyro support</b> who, with one tap of his Burst, provides a massive <b>ATK buff</b>, a <b>healing circle</b>, <b>Pyro resonance</b>, and a <b>party battery</b> all at once. He is also <b>free</b> (clear Spiral Abyss floor 3 to own him forever). This guide covers his best weapon (<a href="/guides/hutao-build-en.html">Aquila Favonia</a> vs Favonius/Sapwood), the 4pc Noblesse Oblige set, the ~200% Energy Recharge breakpoint, why <b>C1 is the real upgrade</b>, the <b>C6 Pyro-infusion caveat</b>, and teams with <a href="/guides/raiden-shogun-build-en.html">Raiden</a> / <a href="/guides/ganyu-build-en.html">Ganyu</a> / <a href="/guides/hutao-build-en.html">Hu Tao</a> / <a href="/guides/xiangling-build-en.html">Xiangling</a>.</p>
+
+    <div class="src-note">Note: Bennett's kit, weapon ranking, the 4pc Noblesse Oblige default, and the ~200% ER requirement are long-term stable meta and do not shift with patches. The 6.7 Raiden rerun above is a traffic note, not a build change — the guide below holds regardless of banner.</div>
+
+    <h2>Why Bennett Is Worth Building</h2>
+    <p>No other unit delivers this much team value from a single skill, at zero wish cost. If you build only one support, make it him.</p>
+    <ul>
+      <li><b>Free and permanent:</b> clear Spiral Abyss floor 3-3 and Bennett is yours at C0. You can then stack constellations from the Starglitter shop.</li>
+      <li><b>All-in-one Burst:</b> his Q (Fantastic Voyage) drops a field that <b>buffs ATK</b> (scales with Bennett's base ATK) and <b>heals</b> anyone above 70% HP. One button fixes your team's damage and survival.</li>
+      <li><b>Pyro resonance + battery:</b> standing in his circle fuels his own Burst and enables 2-Pyro teams, which is why he props up Xiangling, Hu Tao, and every Pyro carry.</li>
+      <li><b>Universally slottable:</b> he fits Melt, Vape, Physical, and mono-element teams alike. His buff does not care about your main DPS's element.</li>
+    </ul>
+    <div class="callout">A properly built Bennett's ATK buff alone can add <b>800–1,200+ flat ATK</b> to your whole team — the single biggest raw damage multiplier most accounts ever get, for free.</div>
+
+    <h2>Best Weapons</h2>
+    <p>Bennett wants <b>Base ATK</b> (for the buff) and <b>Energy Recharge</b> (to Burst every rotation). He uses a <b>sword</b>.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag fire">BiS ★</span>Aquila Favonia</h3>
+        <div class="role">Best-in-slot · 5★ sword</div>
+        <p>The premier choice: huge base ATK pumps his buff, and it self-heals on taking damage — perfect for a circle-tank. If you already own it, it is his default.</p>
+        <div class="mini">Obtain: weapon banner / standard</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">4★</span>Sapwood Blade / Favonius Sword</h3>
+        <div class="role">ER tools · craftable / farmable</div>
+        <p><b>Sapwood Blade</b> (Sumeru craft) grants ER and refunds energy to the team on Burst — excellent when Bennett is your battery. <b>Favonius Sword</b> generates CRIT particles to fix anyone's energy. Both are top F2P picks.</p>
+        <div class="mini">Obtain: forge / wishes</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">F2P</span>Prototype Rancour / Harbinger of Dawn</h3>
+        <div class="role">Free damage / free crit</div>
+        <p><b>Prototype Rancour</b> (forge) gives ATK% and a small on-hit buff. <b>Harbinger of Dawn</b> (3★) grants CRIT Rate + DMG while above 90% HP — and Bennett sits in his own heal circle at full HP, so the passive stays live. A classic budget build.</p>
+        <div class="mini">Obtain: forge / starter</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">Alt 5★</span>Skyward Blade</h3>
+        <div class="role">ER-heavy option</div>
+        <p>If energy is your bottleneck and you have no Favonius, Skyward Blade's ER% plus on-Burst CRIT/energy helps him Burst off cooldown. Use only when you over-need recharge.</p>
+        <div class="mini">Obtain: standard banner</div>
+      </div>
+    </div>
+
+    <h2>Best Artifacts</h2>
+    <p>For essentially every Bennett, <b>4pc Noblesse Oblige is mandatory</b> — its 2-piece already gives him ER, and the 4-piece adds a team-wide +20% ATK on Burst, stacking directly with his own buff.</p>
+    <table>
+      <tr><th>Set</th><th>Use when</th><th>Why</th></tr>
+      <tr><td><b>Noblesse Oblige</b> (4pc)</td><td>Always (default)</td><td>+20% ER on 2pc and a team-wide +20% ATK on Burst. This is his identity — run it unless someone else on the team already holds it.</td></tr>
+      <tr><td><b>2pc Noblesse + 2pc HP%</b></td><td>Buffing a squishy carry</td><td>More healing and survivability from the HP two-piece, while keeping the Noblesse Burst buff. Good for heal-focused builds.</td></tr>
+      <tr><td><b>2pc Noblesse + 2pc ER%</b></td><td>Tight energy</td><td>If you can't hit the ER breakpoint from weapon/substats, the extra ER two-piece guarantees uptime.</td></tr>
+      <tr><td><b>2pc Noblesse + 2pc ATK%</b></td><td>Maximizing the buff</td><td>Pushes his base ATK higher so the ATK buff number grows. Niche; only when ER and healing are already solved.</td></tr>
+    </table>
+
+    <h2>Stat Targets — ER First, Then Base ATK</h2>
+    <p>Bennett's two priorities are contradictory on paper, so target them in order: get enough <b>ER</b> to Burst every rotation, then pile <b>Base ATK</b> (from weapon + sands/circlet) to grow the buff.</p>
+    <table>
+      <tr><th>Slot</th><th>Main stat</th><th>Substat priority</th></tr>
+      <tr><td>Sands</td><td>ER% (or ATK% if ER covered)</td><td rowspan="3">ER% (to breakpoint) &gt; ATK% (base ATK) &gt; HP% (for healing) &gt; CRIT (for Favonius)</td></tr>
+      <tr><td>Goblet</td><td>HP% (or ATK% / Pyro DMG%)</td></tr>
+      <tr><td>Circlet</td><td>HP% / ATK% ( Healing% only if struggling)</td></tr>
+    </table>
+    <div class="callout"><b>ER breakpoint by team:</b> with another Pyro (2-Pyro) or a battery like Raiden ≈ <b>180–200% ER</b>; solo Pyro, no battery ≈ <b>220%+ ER</b>; with Favonius/Sapwood + 2-Pyro you can dip to ~160%. Hit the breakpoint first — a Bennett who misses his Burst loses both the buff and the heal.</div>
+
+    <h2>Best Team Comps</h2>
+    <p>Bennett's teams share one rule: drop his circle, then let your carry eat the ATK buff and reactions.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag thunder">National</span>Raiden National</h3>
+        <div class="role">Best cost-to-power team in the game</div>
+        <p>Bennett + <a href="/guides/xiangling-build-en.html">Xiangling</a> + Xingqiu + <a href="/guides/raiden-shogun-build-en.html">Raiden</a>. Raiden batteries the team, Bennett buffs and heals, Xiangling's Pyronado vaporizes — the flagship free Abyss team, and the reason his rerun matters right now.</p>
+        <div class="mini">Clears Abyss far above its cost</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag ice">Melt</span>Ganyu / Hu Tao Melt</h3>
+        <div class="role">ATK buff + Pyro enabler</div>
+        <p>With <a href="/guides/ganyu-build-en.html">Ganyu</a> or <a href="/guides/hutao-build-en.html">Hu Tao</a>, Bennett's circle both buffs their damage and supplies off-field Pyro so their hits trigger Melt. He is the glue of every Melt shell.</p>
+        <div class="mini">Biggest single buff in the game</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">Vape</span>Hu Tao Vape</h3>
+        <div class="role">Pyro enabler for the best Pyro DPS</div>
+        <p>Hu Tao + Xingqiu + Bennett + flex. Bennett tops up HP (careful near C6) and buffs her already-huge damage. A staple for the strongest Pyro carry.</p>
+        <div class="mini">Pairs with Xingqiu perfectly</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag rock">Tank</span>Bennett + Zhongli</h3>
+        <div class="role">Safe, shredded core</div>
+        <p>Bennett + <a href="/guides/zhongli-build-en.html">Zhongli</a> + your carry + flex. Zhongli shields and shreds RES so Bennett's buff lands uninterrupted and your carry survives. The most beginner-friendly durable shell.</p>
+        <div class="mini">Best first Bennett shell</div>
+      </div>
+    </div>
+
+    <h2>Talent Priority</h2>
+    <p>Level in this order — his value is almost entirely the Burst:</p>
+    <ol>
+      <li><b>Elemental Burst</b> (Fantastic Voyage) → 8–13. The ATK buff and heal scale directly with Burst level. Crown this first; it is his whole kit.</li>
+      <li><b>Elemental Skill</b> (Passion Overload) → 6–8. Mostly used to generate energy and for the occasional Nuke build. Level it second.</li>
+      <li><b>Normal Attack</b> → 1–6. He rarely swings his sword outside meme Nuke comps. Leave it low.</li>
+    </ol>
+
+    <h2>Constellations — C1 Is the Real Upgrade</h2>
+    <p>Bennett's constellation curve is unusual: one constellation changes everything, and another is a trap.</p>
+    <ul>
+      <li><b>C1 (Grand Expectation):</b> removes the 70% HP gate on his ATK buff, so <b>everyone</b> gets the full buff regardless of HP. This is a massive, account-wide damage jump — the single best low-cost constellation in the game. Prioritize it.</li>
+      <li><b>C2–C4:</b> small QoL (more Burst stats, longer circle, more ER). Nice but not essential.</li>
+      <li><b>C5:</b> raises Burst talent level by 3 — a real buff-number bump.</li>
+      <li><b>C6 (Fire Ventures):</b> infuses melee characters in the circle with <b>Pyro</b>. This can <b>ruin</b> Physical or Anemo carries (Xiao, Razor, Heizou) and break Normal-Attack-focused teams. Only unlock C6 if you know you'll never need those, or keep it at C5. Many players stop at C5 on purpose.</li>
+    </ul>
+    <div class="callout"><b>Key rule:</b> Build toward C1, celebrate C5, and think twice before C6. A C6 Bennett that Pyro-locks your Xiao or Razor is a regret, not an upgrade.</div>
+
+    <h2>Common Mistakes</h2>
+    <ul>
+      <li><b>Too little Energy Recharge.</b> The #1 Bennett killer. Sub-180% ER without a battery means missed Bursts and a team that loses both buff and heal.</li>
+      <li><b>Building him as a DPS.</b> His personal damage is tiny; his job is the circle. Stacking CRIT/DMG on him wastes the slot.</li>
+      <li><b>Skipping C1.</b> Without C1, low-HP carries (Hu Tao at half HP, low-HP Ganyu) miss the buff entirely. C1 is where he becomes broken.</li>
+      <li><b>Blindly unlocking C6.</b> The Pyro infusion sabotages Physical/Anemo on-fielders. Stop at C5 unless you're sure.</li>
+      <li><b>Letting someone else hog Noblesse.</b> If a teammate already runs 4pc Noblesse, Bennett's own set is wasted. Coordinate the set across the team.</li>
+    </ul>
+
+    <h2>Don't Have Bennett Yet?</h2>
+    <p>He is free: clear Spiral Abyss floor 3 (any half-decent team) and he is permanently yours. While you get there, <b>Xiangling</b> (free from the same floors) covers off-field Pyro, and <b>Thoma</b> / <b>Dehya</b> can substitute a Pyro circle in a pinch — but neither matches Bennett's ATK buff + heal combo. Build Bennett and Xiangling together; they are the foundation of the National shell that carries most accounts through endgame, and right now they're the backbone of every Raiden National clear during the 6.7 rerun.</p>
+
+    <div class="pairbox">
+      <a href="/guides/hutao-build-en.html">← Hu Tao Build (Pyro DPS reference)</a>
+      <a href="/guides/ganyu-build-en.html">Ganyu Build →</a>
+      <a href="/guides/raiden-shogun-build-en.html">Raiden Shogun Build →</a>
+      <a href="/guides/neuvillette-build-en.html">Neuvillette Build →</a>
+      <a href="/guides/yelan-build-en.html">Yelan Build →</a>
+      <a href="/guides/furina-build-en.html">Furina Build →</a>
+      <a href="/guides/kazuha-build-en.html">Kazuha Build →</a>
+      <a href="/guides/zhongli-build-en.html">Zhongli Build →</a>
+      <a href="/guides/nahida-build-en.html">Nahida Build →</a>
+      <a href="/guides/xilonen-build-en.html">Xilonen Build →</a>
+      <a href="/guides/xiangling-build-en.html">Xiangling Build →</a>
+      <a href="/guides/beginner-characters-en.html">Beginner Must-Build Characters</a>
+      <a href="/guides/artifact-farming-en.html">Artifact Farming Guide →</a>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    Teyvat Starter Guide · Independent Genshin Impact build reference · <a href="/">Home</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a><br/>
+    Not affiliated with HoYoverse. In-game data is always final.
+  </div>
+</footer>
+</body>
+</html>
