@@ -1086,6 +1086,7 @@
     setMeta('ogLocale', lang==='zh'?'zh_CN':'en_US');
     // re-render language-dependent UI
     setReact(currentReactKey);
+    Array.from(reactBtns.children).forEach(b=>{ const L=curLang(); const ra=ELEM[REACT[b.dataset.k].a], rb=ELEM[REACT[b.dataset.k].b]; b.textContent = L==='en' ? (ra.en+' + '+rb.en) : b.dataset.k.replace('+',' + '); });
     calcPlan();
     fillTselOptions();
     calcReso();
