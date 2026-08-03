@@ -62,6 +62,12 @@
   nav.links a{color:var(--txt-dim); padding:8px 14px; border-radius:999px; font-size:14px; font-weight:600; transition:.2s; white-space:nowrap}
   nav.links a:hover{color:var(--txt); background:var(--panel)}
   nav.links a.active{color:#10141d; background:linear-gradient(135deg,var(--gold),var(--gold-2)); box-shadow:0 4px 14px rgba(232,196,116,.35)}
+  .nav-dropdown{position:relative; display:inline-block}
+  .nav-dropdown > a{cursor:pointer}
+  .nav-dropdown-menu{position:absolute; top:calc(100% + 8px); right:0; background:rgba(12,15,22,.98); border:1px solid var(--line); border-radius:12px; padding:8px; display:none; flex-direction:column; gap:2px; min-width:180px; z-index:60; box-shadow:0 12px 30px rgba(0,0,0,.45)}
+  .nav-dropdown:hover .nav-dropdown-menu{display:flex}
+  .nav-dropdown-menu a{white-space:nowrap; padding:9px 12px; border-radius:8px}
+  .nav-dropdown-menu a:hover{color:var(--txt); background:var(--panel)}
   .search{position:relative; display:block}
   .search input{width:200px; padding:8px 12px 8px 32px; border-radius:999px; border:1px solid var(--line); background:var(--panel); color:var(--txt); font-size:13px; outline:none; transition:.2s}
   .search input:focus{border-color:var(--gold); width:240px}
@@ -255,6 +261,8 @@
     .search{display:block}
     .search input{width:140px}
     .search input:focus{width:160px}
+    .nav-dropdown{width:100%}
+    .nav-dropdown-menu{position:static; display:flex; box-shadow:none; border:none; background:transparent; padding:6px 0 0 8px; min-width:0}
   }
 </style>
 <script>
@@ -274,7 +282,21 @@
       <a href="#custom"><span class="zh">专属顺序</span><span class="en">Custom Plan</span></a>
       <a href="#tools"><span class="zh">互动工具</span><span class="en">Tools</span></a>
       <a href="#about"><span class="zh">关于来源</span><span class="en">About</span></a>
-      <a href="/guides/beginner-characters.html"><span class="zh">新手配队</span><span class="en">Roster</span></a>
+      <div class="nav-dropdown">
+        <a href="/guides/beginner-characters.html"><span class="zh">角色配装</span><span class="en">Builds</span> ▾</a>
+        <div class="nav-dropdown-menu">
+          <a href="/guides/furina-build.html"><span class="zh">芙宁娜</span><span class="en">Furina</span></a>
+          <a href="/guides/neuvillette-build.html"><span class="zh">那维莱特</span><span class="en">Neuvillette</span></a>
+          <a href="/guides/zhongli-build.html"><span class="zh">钟离</span><span class="en">Zhongli</span></a>
+          <a href="/guides/raiden-shogun-build.html"><span class="zh">雷电将军</span><span class="en">Raiden</span></a>
+          <a href="/guides/hutao-build.html"><span class="zh">胡桃</span><span class="en">Hu Tao</span></a>
+          <a href="/guides/kazuha-build.html"><span class="zh">枫原万叶</span><span class="en">Kazuha</span></a>
+          <a href="/guides/yelan-build.html"><span class="zh">夜兰</span><span class="en">Yelan</span></a>
+          <a href="/guides/bennett-build.html"><span class="zh">班尼特</span><span class="en">Bennett</span></a>
+          <a href="/guides/xingqiu-build.html"><span class="zh">行秋</span><span class="en">Xingqiu</span></a>
+          <a href="/guides/xiangling-build.html"><span class="zh">香菱</span><span class="en">Xiangling</span></a>
+        </div>
+      </div>
     </nav>
     <div class="search">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
@@ -370,19 +392,19 @@
             <li><b><span class="zh">香菱</span><span class="en">Xiangling</span></b><span class="zh">(火)：脱手火副 C，必练</span><span class="en">(Pyro): burst Sub-DPS, must-build</span></li>
           </ul>
           <p style="margin-top:8px"><b><span class="zh">主 C 过渡</span><span class="en">Main DPS fill-ins</span></b><span class="zh">：雷泽(物理)、烟绯(火)、菲谢尔(雷)。<br>养成顺序：</span><span class="en">: Razor (Phys), Yanfei (Pyro), Fischl (Electro).<br>Build order: </span><b><span class="zh">天赋 &gt; 武器 &gt; 圣遗物</span><span class="en">Talent &gt; Weapon &gt; Artifacts</span></b><span class="zh">。圣遗物 45 级前用四星过渡。</span><span class="en">. Use 4-star artifacts before AR 45.</span></p>
-          <p style="margin-top:10px"><a href="/guides/furina-build-en.html" style="color:var(--blue);font-weight:600"><span class="zh">芙宁娜深度配装（英文）→</span><span class="en">Furina deep build guide (EN) →</span></a></p>
-          <p style="margin-top:10px"><a href="/guides/neuvillette-build-en.html" style="color:var(--blue);font-weight:600"><span class="zh">那维莱特深度配装（英文）→</span><span class="en">Neuvillette deep build guide (EN) →</span></a></p>
+          <p style="margin-top:10px"><a href="/guides/furina-build.html" style="color:var(--blue);font-weight:600"><span class="zh">芙宁娜深度配装 →</span><span class="en">Furina build guide →</span></a></p>
+          <p style="margin-top:10px"><a href="/guides/neuvillette-build.html" style="color:var(--blue);font-weight:600"><span class="zh">那维莱特深度配装 →</span><span class="en">Neuvillette build guide →</span></a></p>
           <p style="margin-top:6px"><a href="/guides/xilonen-build-en.html" style="color:var(--blue);font-weight:600"><span class="zh">希诺宁深度配装（英文）→</span><span class="en">Xilonen deep build guide (EN) →</span></a></p>
-          <p style="margin-top:6px"><a href="/guides/kazuha-build-en.html" style="color:var(--blue);font-weight:600"><span class="zh">枫原万叶深度配装（英文）→</span><span class="en">Kazuha deep build guide (EN) →</span></a></p>
-          <p style="margin-top:6px"><a href="/guides/raiden-shogun-build-en.html" style="color:var(--blue);font-weight:600"><span class="zh">雷电将军深度配装（英文）→</span><span class="en">Raiden Shogun deep build guide (EN) →</span></a></p>
-          <p style="margin-top:6px"><a href="/guides/zhongli-build-en.html" style="color:var(--blue);font-weight:600"><span class="zh">钟离深度配装（英文）→</span><span class="en">Zhongli deep build guide (EN) →</span></a></p>
+          <p style="margin-top:6px"><a href="/guides/kazuha-build.html" style="color:var(--blue);font-weight:600"><span class="zh">枫原万叶深度配装 →</span><span class="en">Kazuha build guide →</span></a></p>
+          <p style="margin-top:6px"><a href="/guides/raiden-shogun-build.html" style="color:var(--blue);font-weight:600"><span class="zh">雷电将军深度配装 →</span><span class="en">Raiden Shogun build guide →</span></a></p>
+          <p style="margin-top:6px"><a href="/guides/zhongli-build.html" style="color:var(--blue);font-weight:600"><span class="zh">钟离深度配装 →</span><span class="en">Zhongli build guide →</span></a></p>
           <p style="margin-top:6px"><a href="/guides/nahida-build-en.html" style="color:var(--blue);font-weight:600"><span class="zh">纳西妲深度配装（英文）→</span><span class="en">Nahida deep build guide (EN) →</span></a></p>
-          <p style="margin-top:6px"><a href="/guides/yelan-build-en.html" style="color:var(--blue);font-weight:600"><span class="zh">夜兰深度配装（英文）→</span><span class="en">Yelan deep build guide (EN) →</span></a></p>
-          <p style="margin-top:6px"><a href="/guides/hutao-build-en.html" style="color:var(--blue);font-weight:600"><span class="zh">胡桃深度配装（英文）→</span><span class="en">Hu Tao deep build guide (EN) →</span></a></p>
+          <p style="margin-top:6px"><a href="/guides/yelan-build.html" style="color:var(--blue);font-weight:600"><span class="zh">夜兰深度配装 →</span><span class="en">Yelan build guide →</span></a></p>
+          <p style="margin-top:6px"><a href="/guides/hutao-build.html" style="color:var(--blue);font-weight:600"><span class="zh">胡桃深度配装 →</span><span class="en">Hu Tao build guide →</span></a></p>
           <p style="margin-top:6px"><a href="/guides/ganyu-build-en.html" style="color:var(--blue);font-weight:600"><span class="zh">甘雨深度配装（英文）→</span><span class="en">Ganyu deep build guide (EN) →</span></a></p>
-          <p style="margin-top:6px"><a href="/guides/xiangling-build-en.html" style="color:var(--blue);font-weight:600"><span class="zh">香菱深度配装（英文）→</span><span class="en">Xiangling deep build guide (EN) →</span></a></p>
-          <p style="margin-top:6px"><a href="/guides/bennett-build-en.html" style="color:var(--blue);font-weight:600"><span class="zh">班尼特深度配装（英文）→</span><span class="en">Bennett deep build guide (EN) →</span></a></p>
-          <p style="margin-top:6px"><a href="/guides/xingqiu-build-en.html" style="color:var(--blue);font-weight:600"><span class="zh">行秋深度配装（英文）→</span><span class="en">Xingqiu deep build guide (EN) →</span></a></p>
+          <p style="margin-top:6px"><a href="/guides/xiangling-build.html" style="color:var(--blue);font-weight:600"><span class="zh">香菱深度配装 →</span><span class="en">Xiangling build guide →</span></a></p>
+          <p style="margin-top:6px"><a href="/guides/bennett-build.html" style="color:var(--blue);font-weight:600"><span class="zh">班尼特深度配装 →</span><span class="en">Bennett build guide →</span></a></p>
+          <p style="margin-top:6px"><a href="/guides/xingqiu-build.html" style="color:var(--blue);font-weight:600"><span class="zh">行秋深度配装 →</span><span class="en">Xingqiu build guide →</span></a></p>
           <p style="margin-top:10px"><a href="/guides/beginner-characters.html" style="color:var(--gold);font-weight:600"><span class="zh">新手必练角色完整清单（含获取与简配）→</span><span class="en">Full beginner roster guide (with how to get &amp; budget build) →</span></a></p>
         </div>
         <div class="card">

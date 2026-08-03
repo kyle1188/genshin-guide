@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>原神胡桃配装攻略 2026：武器、圣遗物、蒸发配队与半血机制</title>
+<meta name="description" content="原神胡桃怎么养？2026配装指南：护摩之杖、匣里灭辰等武器推荐，魔女/追忆圣遗物、生命与双暴属性目标、胡行钟夜蒸发队与半血机制解析。" />
+<meta name="keywords" content="原神胡桃,胡桃配装,胡桃武器,胡桃圣遗物,胡桃配队,胡行钟夜,胡桃蒸发,胡桃攻略" />
+<meta name="author" content="提瓦特开荒攻略站" />
+<meta name="theme-color" content="#0c0f16" />
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/hutao-build.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/hutao-build.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/hutao-build-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/hutao-build-en.html" />
+<meta property="og:title" content="原神胡桃配装攻略 2026：武器、圣遗物、蒸发配队" />
+<meta property="og:description" content="胡桃完整配装：武器、圣遗物、属性目标、蒸发配队与半血机制。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/hutao-build.html" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"原神胡桃配装攻略 2026：武器、圣遗物、蒸发配队与半血机制",
+  "description":"胡桃完整配装：武器、圣遗物、属性目标、蒸发配队与半血机制。",
+  "author":{"@type":"Organization","name":"提瓦特开荒攻略站"},
+  "publisher":{"@type":"Organization","name":"提瓦特开荒攻略站"},
+  "datePublished":"2026-08-03",
+  "dateModified":"2026-08-03",
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://genshin-guide-one-five.vercel.app/guides/hutao-build.html"}
+}
+</script>
+<style>
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff;
+    --fire:#ff6b4a; --water:#4aa8ff; --thunder:#b06bff; --grass:#7dd35f; --rock:#e0c068; --wind:#a8e6cf;
+    --r:14px; --maxw:920px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.8; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:14px; height:58px}
+  .brand{display:flex; align-items:center; gap:9px; font-weight:700; letter-spacing:.5px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+  .brand b{color:var(--gold)}
+  .lang{color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .lang:hover{color:var(--txt); background:var(--panel)}
+  .back{margin-left:auto; color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .back:hover{color:var(--txt); background:var(--panel)}
+  .crumb{font-size:13px; color:var(--txt-mute); margin:26px 0 4px}
+  .crumb a{color:var(--txt-dim)}
+  article{padding:8px 0 40px}
+  h1{font-size:clamp(26px,4.4vw,38px); line-height:1.25; margin:6px 0 14px; letter-spacing:.3px}
+  h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .lead{color:#cdd6e4; font-size:16px; margin:0 0 26px}
+  h2{font-size:clamp(20px,3vw,26px); margin:38px 0 12px; padding-left:14px; border-left:4px solid var(--gold)}
+  h3{font-size:18px; margin:22px 0 8px; color:#fff}
+  p{color:var(--txt-dim); margin:10px 0}
+  ul,ol{color:var(--txt-dim); padding-left:22px}
+  li{margin:6px 0}
+  .src-note{font-size:13px; color:var(--txt-mute); border-left:3px solid var(--line); padding:8px 14px; margin:18px 0; background:var(--panel); border-radius:0 8px 8px 0}
+  .grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; transition:.2s}
+  .card:hover{border-color:rgba(232,196,116,.4)}
+  .card h3{display:flex; align-items:center; gap:10px; margin-top:0}
+  .tag{font-size:12px; font-weight:700; color:#0c0f16; padding:3px 9px; border-radius:7px; white-space:nowrap}
+  .tag.fire{background:var(--fire)} .tag.water{background:var(--water)} .tag.thunder{background:var(--thunder)}
+  .tag.grass{background:var(--grass)} .tag.rock{background:var(--rock)} .tag.wind{background:var(--wind)}
+  .card .role{font-size:13px; color:var(--gold); font-weight:600; margin:2px 0 8px}
+  .card p{font-size:14px; margin:6px 0}
+  .mini{font-size:13px; color:var(--txt-mute); margin-top:8px; border-top:1px dashed var(--line); padding-top:8px}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; background:var(--panel); border-radius:var(--r); overflow:hidden}
+  th,td{padding:11px 13px; text-align:left; border-bottom:1px solid var(--line); color:var(--txt-dim)}
+  th{background:rgba(232,196,116,.08); color:var(--gold); font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .callout{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .callout b{color:var(--gold)}
+  .btn{padding:11px 18px; border-radius:12px; font-weight:700; font-size:14px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; border:1px solid transparent}
+  .btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--txt-mute); font-size:13px; text-align:center}
+  footer a{color:var(--txt-dim)}
+  .pairbox{display:flex; flex-wrap:wrap; gap:12px; margin:30px 0 6px}
+  .pairbox a{padding:10px 16px; border:1px solid var(--line); border-radius:12px; color:var(--txt-dim); font-size:14px; font-weight:600; transition:.2s}
+  .pairbox a:hover{border-color:rgba(232,196,116,.4); color:var(--txt)}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "胡桃用攻击沙还是生命沙？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "胡桃优先用生命沙。她的攻击力基础低，但元素战技按生命值上限提供大量攻击力加成，生命沙的收益远高于攻击沙。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "胡桃四星武器选什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "四星首选匣里灭辰，提供精通和对水火附着敌人的增伤，完美契合蒸发玩法。没有的话可用决斗之枪或千岩长枪过渡。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "胡桃为什么需要压血？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "胡桃天赋「血之灶火」在生命值低于50%时提供33%火伤加成；元素战技按生命值上限转化攻击力。半血以下伤害最高，所以通常配合护盾和治疗（控血）而不是一直满血。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span><span>提瓦特<b>开荒攻略站</b></span></div>
+    <a class="lang" href="/guides/hutao-build-en.html">EN</a>
+    <a class="back" href="/">← 返回首页</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumb"><a href="/">提瓦特开荒攻略站</a> › 胡桃配装</nav>
+  <article>
+    <h1>原神胡桃配装攻略 2026：<span class="grad">武器、圣遗物、蒸发配队与半血机制</span></h1>
+    <p class="lead">胡桃——往生堂堂主，全游戏最经典的火元素主C之一。她通过<b>元素战技消耗生命值获得高额攻击力</b>，再用重击打出蒸发反应。本篇讲清楚武器、圣遗物、属性目标、配队，以及她的半血机制。</p>
+
+    <div class="src-note">说明：胡桃的蒸发体系和半血机制长期稳定。以下推荐基于 2026 版本环境，游戏内数据为准。</div>
+
+    <h2>为什么值得养胡桃</h2>
+    <ul>
+      <li><b>高爆发蒸发伤害：</b>重击配合行秋/夜兰的挂水，每次都能打出高额蒸发。</li>
+      <li><b>生命值转攻击：</b>元素战技按生命值上限提供攻击力，毕业属性相对好堆。</li>
+      <li><b>对单极强：</b>深渊单体 BOSS 层表现出色，是长期保值的主C。</li>
+      <li><b>经典配队成熟：</b>胡行钟夜经过多年验证，操作简单强度高。</li>
+    </ul>
+    <div class="callout">胡桃+行秋+钟离+夜兰组成的「胡行钟夜」，是许多玩家打单体 BOSS 的首选队伍。</div>
+
+    <h2>最佳武器</h2>
+    <p>胡桃吃<b>生命值、暴击、暴伤、精通</b>，武器选择围绕这些属性。</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag fire">5★ 专武</span>护摩之杖</h3>
+        <div class="role">毕业首选</div>
+        <p>提供暴击伤害和生命值加成，半血以下额外加攻击。胡桃量身定做。</p>
+        <div class="mini">获取：常驻/UP 武器池</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">四星 ★</span>匣里灭辰</h3>
+        <div class="role">蒸发四星毕业</div>
+        <p>提供元素精通，对处于火/水影响下的敌人增伤。胡桃打蒸发时伤害极高，性价比超过很多五星。</p>
+        <div class="mini">获取：常驻池</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">四星</span>决斗之枪</h3>
+        <div class="role">高暴击率</div>
+        <p>纪行武器，提供高暴击率。适合圣遗物暴伤多但暴击率不足时使用。</p>
+        <div class="mini">获取：珍珠纪行</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">过渡</span>千岩长枪 / 黑岩刺枪</h3>
+        <div class="role">易得替代</div>
+        <p>千岩长枪在璃月队中表现不错；黑岩刺枪提供暴伤，适合对群环境。</p>
+        <div class="mini">获取：常驻池 / 星辉兑换</div>
+      </div>
+    </div>
+
+    <h2>最佳圣遗物</h2>
+    <table>
+      <tr><th>圣遗物</th><th>适用场景</th><th>原因</th></tr>
+      <tr><td><b>炽烈的炎之魔女</b>（4件）</td><td>蒸发毕业</td><td>火伤加成 + 蒸发反应系数提升，完美契合胡桃。</td></tr>
+      <tr><td><b>追忆之注连</b>（4件）</td><td>重击特化</td><td>强化重击伤害，但会扣 15 点能量。适合不打大招或伤害已够的玩家。</td></tr>
+      <tr><td><b>2 火 + 2 生命/攻击</b></td><td>过渡</td><td>灵活搭配，容易成型。</td></tr>
+    </table>
+
+    <h2>属性目标</h2>
+    <table>
+      <tr><th>位置</th><th>主词条</th><th>副词条优先级</th></tr>
+      <tr><td>时之沙</td><td>生命值%</td><td rowspan="3">暴击率 ≈ 暴击伤害 ＞ 生命值% ＞ 元素精通 ＞ 元素充能</td></tr>
+      <tr><td>空之杯</td><td>火元素伤害%</td></tr>
+      <tr><td>理之冠</td><td>暴击率 / 暴击伤害</td></tr>
+    </table>
+    <div class="callout"><b>参考数值：</b>生命值 <b>28000–34000</b>（开 E 后攻击力约 3000–3500）；暴击率 <b>70%+</b>，暴击伤害 <b>180%+</b>；元素精通 <b>100–200</b>。半血以下火伤加成会自动触发。</div>
+
+    <h2>主流配队</h2>
+    <p>胡桃配队的核心是<b>挂水 + 护盾 + 增伤</b>。</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag fire">经典</span>胡行钟夜</h3>
+        <div class="role">胡桃+行秋+钟离+夜兰</div>
+        <p>行秋+夜兰双水保证蒸发，钟离提供护盾和减抗。最成熟、最安逸的胡桃队。</p>
+        <div class="mini">单体 BOSS 首选</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">蒸发</span>胡桃 + 行秋 + 砂糖</h3>
+        <div class="role">低成本</div>
+        <p>没有钟离/夜兰时，用行秋挂水、砂糖聚怪加精通、班尼特回血加攻。注意班尼特会让胡桃血量高于 50%，损失天赋火伤。</p>
+        <div class="mini">新手过渡可用</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">双岩</span>胡桃 + 钟离 + 阿贝多</h3>
+        <div class="role">稳定增伤</div>
+        <p>双岩共鸣加 15% 护盾强效和 20% 岩伤，阿贝多提供后台伤害。适合有阿贝多的玩家。</p>
+        <div class="mini">生存能力拉满</div>
+      </div>
+    </div>
+
+    <h2>天赋优先级</h2>
+    <ol>
+      <li><b>普通攻击</b>（往生秘传枪法）→ 优先升满。重击是主要输出。</li>
+      <li><b>元素战技</b>（蝶引来生）→ 9 级。提供生命值转攻击力和火附魔。</li>
+      <li><b>元素爆发</b>（安神秘法）→ 6–8 级。提供回血和爆发伤害，优先级最低。</li>
+    </ol>
+
+    <h2>半血机制与操作要点</h2>
+    <ul>
+      <li><b>天赋火伤加成：</b>生命值低于 50% 时，火元素伤害提升 33%。</li>
+      <li><b>元素战技扣血：</b>开启 E 时消耗当前 30% 生命值，容易把血量压到 50% 以下。</li>
+      <li><b>重击输出：</b>胡桃输出主要是 A-重击-跳/闪避循环，尽量让每次重击都打到水附着的敌人。</li>
+    </ul>
+    <div class="callout"><b>关键规则：</b>胡桃不要带班尼特硬奶满血。班尼特大招虽然加攻，但会让胡桃失去半血火伤加成，总体可能亏伤害。钟离护盾+控血是最优解。</div>
+
+    <h2>常见误区</h2>
+    <ul>
+      <li><b>用攻击沙。</b>胡桃开 E 后攻击已经很高，生命沙收益更高。</li>
+      <li><b>一直满血。</b>满血会损失 33% 火伤加成，伤害低很多。</li>
+      <li><b>重击不打蒸发。</b>没有行秋/夜兰挂水时，胡桃伤害会掉一大截。</li>
+      <li><b>忽视暴击率。</b>胡桃重击次数少，不暴击会很亏，建议暴击率 70% 以上。</li>
+    </ul>
+
+    <h2>没有胡桃怎么办</h2>
+    <p>胡桃是限定五星。如果缺火C，可以先用<a href="/guides/xiangling-build.html">香菱</a>作为脱手火输出，她是深渊国家队核心，造价更低。</p>
+
+    <div class="pairbox">
+      <a href="/guides/xingqiu-build.html">← 行秋配装（蒸发核心）</a>
+      <a href="/guides/yelan-build.html">夜兰配装 →</a>
+      <a href="/guides/beginner-characters.html">新手必练角色清单</a>
+      <a href="/guides/zhongli-build.html">钟离配装 →</a>
+      <a href="/guides/furina-build.html">芙宁娜配装 →</a>
+      <a href="/guides/bennett-build.html">班尼特配装 →</a>
+      <a href="/guides/xiangling-build.html">香菱配装 →</a>
+      <a href="/guides/kazuha-build.html">枫原万叶配装 →</a>
+      <a href="/guides/raiden-shogun-build.html">雷电将军配装 →</a>
+      <a href="/guides/neuvillette-build.html">那维莱特配装 →</a>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    提瓦特开荒攻略站 · 原神新手到进阶一站式攻略 · <a href="/">返回首页</a> · <a href="/about.html">关于本站</a> · <a href="/privacy.html">隐私政策</a> · <a href="/contact.html">联系投稿</a><br/>
+    非 HoYoverse 官方站点，游戏内数据为准。
+  </div>
+</footer>
+</body>
+</html>

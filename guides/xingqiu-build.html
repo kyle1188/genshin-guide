@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>原神行秋配装攻略 2026：武器、圣遗物、充能与挂水机制</title>
+<meta name="description" content="原神行秋怎么养？2026配装指南：祭礼剑、西风剑等武器推荐，绝缘之旗印圣遗物、充能与双暴属性目标、挂水机制与蒸发/冻结队配队。" />
+<meta name="keywords" content="原神行秋,行秋配装,行秋武器,行秋圣遗物,行秋充能,行秋挂水,原神水神,行秋攻略" />
+<meta name="author" content="提瓦特开荒攻略站" />
+<meta name="theme-color" content="#0c0f16" />
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/xingqiu-build.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/xingqiu-build.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/xingqiu-build-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/xingqiu-build-en.html" />
+<meta property="og:title" content="原神行秋配装攻略 2026：武器、圣遗物、充能与挂水" />
+<meta property="og:description" content="行秋完整配装：武器、绝缘套、充能/双暴属性、挂水机制与配队。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/xingqiu-build.html" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"原神行秋配装攻略 2026：武器、圣遗物、充能与挂水机制",
+  "description":"行秋完整配装：武器、绝缘套、充能/双暴属性、挂水机制与配队。",
+  "author":{"@type":"Organization","name":"提瓦特开荒攻略站"},
+  "publisher":{"@type":"Organization","name":"提瓦特开荒攻略站"},
+  "datePublished":"2026-08-03",
+  "dateModified":"2026-08-03",
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://genshin-guide-one-five.vercel.app/guides/xingqiu-build.html"}
+}
+</script>
+<style>
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff;
+    --fire:#ff6b4a; --water:#4aa8ff; --thunder:#b06bff; --grass:#7dd35f; --rock:#e0c068; --wind:#a8e6cf;
+    --r:14px; --maxw:920px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.8; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:14px; height:58px}
+  .brand{display:flex; align-items:center; gap:9px; font-weight:700; letter-spacing:.5px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+  .brand b{color:var(--gold)}
+  .lang{color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .lang:hover{color:var(--txt); background:var(--panel)}
+  .back{margin-left:auto; color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .back:hover{color:var(--txt); background:var(--panel)}
+  .crumb{font-size:13px; color:var(--txt-mute); margin:26px 0 4px}
+  .crumb a{color:var(--txt-dim)}
+  article{padding:8px 0 40px}
+  h1{font-size:clamp(26px,4.4vw,38px); line-height:1.25; margin:6px 0 14px; letter-spacing:.3px}
+  h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .lead{color:#cdd6e4; font-size:16px; margin:0 0 26px}
+  h2{font-size:clamp(20px,3vw,26px); margin:38px 0 12px; padding-left:14px; border-left:4px solid var(--gold)}
+  h3{font-size:18px; margin:22px 0 8px; color:#fff}
+  p{color:var(--txt-dim); margin:10px 0}
+  ul,ol{color:var(--txt-dim); padding-left:22px}
+  li{margin:6px 0}
+  .src-note{font-size:13px; color:var(--txt-mute); border-left:3px solid var(--line); padding:8px 14px; margin:18px 0; background:var(--panel); border-radius:0 8px 8px 0}
+  .grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; transition:.2s}
+  .card:hover{border-color:rgba(232,196,116,.4)}
+  .card h3{display:flex; align-items:center; gap:10px; margin-top:0}
+  .tag{font-size:12px; font-weight:700; color:#0c0f16; padding:3px 9px; border-radius:7px; white-space:nowrap}
+  .tag.fire{background:var(--fire)} .tag.water{background:var(--water)} .tag.thunder{background:var(--thunder)}
+  .tag.grass{background:var(--grass)} .tag.rock{background:var(--rock)} .tag.wind{background:var(--wind)}
+  .card .role{font-size:13px; color:var(--gold); font-weight:600; margin:2px 0 8px}
+  .card p{font-size:14px; margin:6px 0}
+  .mini{font-size:13px; color:var(--txt-mute); margin-top:8px; border-top:1px dashed var(--line); padding-top:8px}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; background:var(--panel); border-radius:var(--r); overflow:hidden}
+  th,td{padding:11px 13px; text-align:left; border-bottom:1px solid var(--line); color:var(--txt-dim)}
+  th{background:rgba(232,196,116,.08); color:var(--gold); font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .callout{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .callout b{color:var(--gold)}
+  .btn{padding:11px 18px; border-radius:12px; font-weight:700; font-size:14px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; border:1px solid transparent}
+  .btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--txt-mute); font-size:13px; text-align:center}
+  footer a{color:var(--txt-dim)}
+  .pairbox{display:flex; flex-wrap:wrap; gap:12px; margin:30px 0 6px}
+  .pairbox a{padding:10px 16px; border:1px solid var(--line); border-radius:12px; color:var(--txt-dim); font-size:14px; font-weight:600; transition:.2s}
+  .pairbox a:hover{border-color:rgba(232,196,116,.4); color:var(--txt)}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "行秋必须带祭礼剑吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "祭礼剑是行秋的最佳四星武器，重置战技 CD 能提供大量水元素微粒，大幅缓解充能压力。如果没有祭礼剑，可用西风剑或充能沙替代，但循环会更吃紧。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "行秋充能需要多少？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "单水入队建议 200% 以上；双水队伍可降至 180% 左右。带祭礼剑时充能压力会小很多。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "行秋圣遗物选什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "毕业首选绝缘之旗印4件套，提升大招伤害。也可以用2水伤+2攻击过渡。主词条：充能/攻击沙、水伤杯、暴击/暴伤头。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span><span>提瓦特<b>开荒攻略站</b></span></div>
+    <a class="lang" href="/guides/xingqiu-build-en.html">EN</a>
+    <a class="back" href="/">← 返回首页</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumb"><a href="/">提瓦特开荒攻略站</a> › 行秋配装</nav>
+  <article>
+    <h1>原神行秋配装攻略 2026：<span class="grad">武器、圣遗物、充能与挂水机制</span></h1>
+    <p class="lead">行秋——飞云商会的二少爷，被玩家戏称为"水神"。他的元素爆发提供<b>稳定后台挂水、减伤、抗打断和协同伤害</b>，是蒸发队、冻结队的核心拼图。本篇讲清楚行秋的武器、圣遗物、属性目标和配队。</p>
+
+    <div class="src-note">说明：行秋的后台挂水机制长期稳定，是新手最值得优先培养的四星之一。以下推荐基于 2026 版本环境，游戏内数据为准。</div>
+
+    <h2>为什么值得养行秋</h2>
+    <ul>
+      <li><b>稳定后台挂水：</b>元素爆发期间，前台角色普攻会触发剑雨协同攻击，稳定挂水。</li>
+      <li><b>减伤+抗打断：</b>雨帘剑提供约 40% 减伤和抗打断，大幅提升生存能力。</li>
+      <li><b>伤害不俗：</b>虽然是四星，但大招总倍率很高，配合绝缘套输出可观。</li>
+      <li><b>获取容易：</b>海灯节可自选，卡池也常陪跑，新手很容易获得。</li>
+    </ul>
+    <div class="callout">行秋是胡桃、雷神国家队、蒸发香菱等队伍不可替代的核心。新手抽到直接拉满，能用到关服。</div>
+
+    <h2>最佳武器</h2>
+    <p>行秋吃<b>攻击力、暴击、暴伤、充能</b>。武器优先保证充能循环，再追求伤害。</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag water">四星 ★</span>祭礼剑</h3>
+        <div class="role">毕业四星</div>
+        <p>提供充能，战技命中后概率重置 CD。行秋最需要的武器，两次 E 产球能彻底解决充能问题。</p>
+        <div class="mini">获取：常驻池</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag water">5★</span>磐岩结绿 / 雾切之回光</h3>
+        <div class="role">输出向五星</div>
+        <p>绿剑提供暴击率和生命值转攻；雾切提供元素伤害加成。适合充能已经溢出的行秋。</p>
+        <div class="mini">获取：常驻/UP 武器池</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag water">四星</span>西风剑</h3>
+        <div class="role">团队充能</div>
+        <p>没有祭礼剑时的替代，提供充能和产球。需要堆暴击率触发被动。</p>
+        <div class="mini">获取：常驻池</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag water">四星</span>黎明神剑</h3>
+        <div class="role">极限输出</div>
+        <p>三星武器，提供高额双暴。适合有班尼特回血、能保持 90% 血以上的行秋。</p>
+        <div class="mini">获取：宝箱/祈愿</div>
+      </div>
+    </div>
+
+    <h2>最佳圣遗物</h2>
+    <table>
+      <tr><th>圣遗物</th><th>适用场景</th><th>原因</th></tr>
+      <tr><td><b>绝缘之旗印</b>（4件）</td><td>毕业首选</td><td>基于充能提升大招伤害，完美契合行秋。</td></tr>
+      <tr><td><b>2 水伤 + 2 攻击</b></td><td>过渡</td><td>沉沦之心/水仙之梦 + 角斗士/追忆，容易成型。</td></tr>
+      <tr><td><b>昔日宗室之仪</b>（4件）</td><td>辅助向</td><td>开大后全队加攻。如果队伍里没有其他人带宗室，可选。</td></tr>
+    </table>
+
+    <h2>属性目标</h2>
+    <table>
+      <tr><th>位置</th><th>主词条</th><th>副词条优先级</th></tr>
+      <tr><td>时之沙</td><td>元素充能效率 / 攻击力%</td><td rowspan="3">元素充能 ＞ 暴击率 ≈ 暴击伤害 ＞ 攻击力% ＞ 元素精通</td></tr>
+      <tr><td>空之杯</td><td>水元素伤害%</td></tr>
+      <tr><td>理之冠</td><td>暴击率 / 暴击伤害</td></tr>
+    </table>
+    <div class="callout"><b>参考数值：</b>元素充能 <b>180–220%</b>（祭礼剑可降至 180%，西风剑建议 200%+）；攻击力 <b>1700+</b>；暴击率 <b>60%+</b>，暴击伤害 <b>120%+</b>。</div>
+
+    <h2>主流配队</h2>
+    <p>行秋的核心价值是挂水和生存，几乎所有火C都想要他。</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag fire">胡桃</span>胡行钟夜</h3>
+        <div class="role">经典蒸发</div>
+        <p>胡桃 + 行秋 + 钟离 + 夜兰。行秋提供稳定挂水和抗打断，让胡桃安心打蒸发。</p>
+        <div class="mini">对单强力</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag thunder">雷神</span>雷神国家队</h3>
+        <div class="role">国家队核心</div>
+        <p>雷神 + 班尼特 + 香菱 + 行秋。行秋挂水让香菱打蒸发，雷神站场充电。</p>
+        <div class="mini">低造价高强度</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">香菱</span>万达/砂达</h3>
+        <div class="role">蒸发副C</div>
+        <p>公子/砂糖 + 香菱 + 班尼特 + 行秋。行秋补充挂水，让香菱蒸发更稳定。</p>
+        <div class="mini">老牌强队</div>
+      </div>
+    </div>
+
+    <h2>天赋优先级</h2>
+    <ol>
+      <li><b>元素爆发</b>（古华剑·裁雨留虹）→ 优先升满。核心输出和挂水技能。</li>
+      <li><b>元素战技</b>（古华剑·画雨笼山）→ 8–9 级。产球和爆发伤害。</li>
+      <li><b>普通攻击</b> → 1 级。不需要点。</li>
+    </ol>
+
+    <h2>挂水与减伤机制</h2>
+    <ul>
+      <li><b>雨帘剑：</b>战技生成，提供减伤和抗打断。破碎时还能回血。</li>
+      <li><b>剑雨协同：</b>大招期间，前台角色普攻触发水剑协同攻击，每次 2–3 支剑。</li>
+      <li><b>挂水频率：</b>大招期间挂水频率极高，能稳定支持火C打蒸发。</li>
+    </ul>
+    <div class="callout"><b>关键规则：</b>行秋的大招能量需求 80 点，是他最吃充能的原因。祭礼剑重置 E 让他可以连放两次战技产球，是循环的关键。没有祭礼剑时一定要用充能沙。</div>
+
+    <h2>常见误区</h2>
+    <ul>
+      <li><b>不带祭礼剑也不堆充能。</b>行秋大招能量 80，充能不够会严重影响队伍循环。</li>
+      <li><b>杯子用攻击杯。</b>水伤杯对行秋大招提升更大。</li>
+      <li><b>忽视雨帘剑的减伤。</b>行秋不仅是挂水工具人，他的减伤和抗打断能显著提升队伍生存。</li>
+      <li><b>和夜兰互相排斥。</b>两者可以一起上，双水共鸣还能互相补充能。</li>
+    </ul>
+
+    <h2>没有行秋怎么办</h2>
+    <p>行秋是四星角色，但获取需要一定运气。如果暂时没有，可以用<a href="/guides/yelan-build.html">夜兰</a>作为上位替代（但生存稍弱），或用芭芭拉、莫娜临时过渡。</p>
+
+    <div class="pairbox">
+      <a href="/guides/bennett-build.html">← 班尼特配装</a>
+      <a href="/guides/xiangling-build.html">香菱配装 →</a>
+      <a href="/guides/beginner-characters.html">新手必练角色清单</a>
+      <a href="/guides/hutao-build.html">胡桃配装 →</a>
+      <a href="/guides/yelan-build.html">夜兰配装 →</a>
+      <a href="/guides/raiden-shogun-build.html">雷电将军配装 →</a>
+      <a href="/guides/furina-build.html">芙宁娜配装 →</a>
+      <a href="/guides/kazuha-build.html">枫原万叶配装 →</a>
+      <a href="/guides/zhongli-build.html">钟离配装 →</a>
+      <a href="/guides/neuvillette-build.html">那维莱特配装 →</a>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    提瓦特开荒攻略站 · 原神新手到进阶一站式攻略 · <a href="/">返回首页</a> · <a href="/about.html">关于本站</a> · <a href="/privacy.html">隐私政策</a> · <a href="/contact.html">联系投稿</a><br/>
+    非 HoYoverse 官方站点，游戏内数据为准。
+  </div>
+</footer>
+</body>
+</html>
