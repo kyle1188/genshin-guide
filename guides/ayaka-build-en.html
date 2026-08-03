@@ -1,0 +1,268 @@
+<!doctype html>
+<!-- deployed: English Ayaka build guide (single-language, en + x-default). Top hot-take hook rides the 7.0 Snezhnaya preview (launches Aug 12, 2026). -->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Genshin Ayaka Build Guide 2026 — Best Weapons, Artifacts &amp; Teams</title>
+<meta name="description" content="The complete Ayaka build guide for Genshin Impact in 2026: her best weapon (Mistsplitter Reforged, the craftable Amenoma Kageuchi, Haran), the 4pc Blizzard Strayer set, the ATK% / Cryo DMG / CRIT plan, why C2 is the key constellation, and Freeze / Mono Cryo teams with Ganyu, Kazuha, Furina and Shenhe." />
+<meta name="keywords" content="genshin ayaka build, ayaka best weapon mistsplitter amenoma kageuchi, ayaka artifacts blizzard strayer, ayaka constellations c2, ayaka freeze team, ayaka cryo main dps" />
+<meta name="author" content="Teyvat Starter Guide" />
+<meta name="theme-color" content="#0c0f16" />
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/ayaka-build-en.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/ayaka-build-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/ayaka-build-en.html" />
+<meta property="og:title" content="Genshin Ayaka Build Guide 2026 — Best Weapons, Artifacts & Teams" />
+<meta property="og:description" content="Best weapon (Mistsplitter / craftable Amenoma), the 4pc Blizzard Strayer set, the ATK% / Cryo DMG / CRIT plan, why C2 matters, and Freeze / Mono Cryo teams." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/ayaka-build-en.html" />
+<meta property="og:locale" content="en_US" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Genshin Ayaka Build Guide 2026 — Best Weapons, Artifacts & Teams",
+  "description":"A complete Ayaka build guide: her best weapon, the 4pc Blizzard Strayer set, the ATK% / Cryo DMG / CRIT plan, why C2 is the key constellation, and Freeze / Mono Cryo teams.",
+  "author":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "publisher":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "datePublished":"2026-08-03",
+  "dateModified":"2026-08-03",
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://genshin-guide-one-five.vercel.app/guides/ayaka-build-en.html"}
+}
+</script>
+<style>
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff;
+    --fire:#ff6b4a; --water:#4aa8ff; --thunder:#b06bff; --grass:#7dd35f; --rock:#e0c068; --wind:#a8e6cf; --ice:#9fe3ff;
+    --r:14px; --maxw:920px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.8; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:14px; height:58px}
+  .brand{display:flex; align-items:center; gap:9px; font-weight:700; letter-spacing:.5px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+  .brand b{color:var(--gold)}
+  .lang{color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .lang:hover{color:var(--txt); background:var(--panel)}
+  .back{margin-left:auto; color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .back:hover{color:var(--txt); background:var(--panel)}
+  .crumb{font-size:13px; color:var(--txt-mute); margin:26px 0 4px}
+  .crumb a{color:var(--txt-dim)}
+  article{padding:8px 0 40px}
+  h1{font-size:clamp(26px,4.4vw,38px); line-height:1.25; margin:6px 0 14px; letter-spacing:.3px}
+  h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .lead{color:#cdd6e4; font-size:16px; margin:0 0 26px}
+  h2{font-size:clamp(20px,3vw,26px); margin:38px 0 12px; padding-left:14px; border-left:4px solid var(--gold)}
+  h3{font-size:18px; margin:22px 0 8px; color:#fff}
+  p{color:var(--txt-dim); margin:10px 0}
+  ul,ol{color:var(--txt-dim); padding-left:22px}
+  li{margin:6px 0}
+  .src-note{font-size:13px; color:var(--txt-mute); border-left:3px solid var(--line); padding:8px 14px; margin:18px 0; background:var(--panel); border-radius:0 8px 8px 0}
+  .grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; transition:.2s}
+  .card:hover{border-color:rgba(232,196,116,.4)}
+  .card h3{display:flex; align-items:center; gap:10px; margin-top:0}
+  .tag{font-size:12px; font-weight:700; color:#0c0f16; padding:3px 9px; border-radius:7px; white-space:nowrap}
+  .tag.fire{background:var(--fire)} .tag.water{background:var(--water)} .tag.thunder{background:var(--thunder)}
+  .tag.grass{background:var(--grass)} .tag.rock{background:var(--rock)} .tag.wind{background:var(--wind)} .tag.ice{background:var(--ice)}
+  .card .role{font-size:13px; color:var(--gold); font-weight:600; margin:2px 0 8px}
+  .card p{font-size:14px; margin:6px 0}
+  .mini{font-size:13px; color:var(--txt-mute); margin-top:8px; border-top:1px dashed var(--line); padding-top:8px}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; background:var(--panel); border-radius:var(--r); overflow:hidden}
+  th,td{padding:11px 13px; text-align:left; border-bottom:1px solid var(--line); color:var(--txt-dim)}
+  th{background:rgba(232,196,116,.08); color:var(--gold); font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .callout{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .callout b{color:var(--gold)}
+  .hot-hook{background:linear-gradient(135deg,rgba(159,227,255,.14),rgba(176,107,255,.08)); border:1px solid rgba(159,227,255,.4); border-left:4px solid var(--ice); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .hot-hook .kicker{display:inline-block; font-size:12px; font-weight:700; letter-spacing:.5px; color:var(--ice); text-transform:uppercase; margin-bottom:6px}
+  .hot-hook b{color:var(--gold)}
+  .btn{padding:11px 18px; border-radius:12px; font-weight:700; font-size:14px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; border:1px solid transparent}
+  .btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--txt-mute); font-size:13px; text-align:center}
+  footer a{color:var(--txt-dim)}
+  .pairbox{display:flex; flex-wrap:wrap; gap:12px; margin:30px 0 6px}
+  .pairbox a{padding:10px 16px; border:1px solid var(--line); border-radius:12px; color:var(--txt-dim); font-size:14px; font-weight:600; transition:.2s}
+  .pairbox a:hover{border-color:rgba(232,196,116,.4); color:var(--txt)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+    <a class="back" href="/">← Back to Home</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumb"><a href="/">Teyvat Starter Guide</a> › Ayaka Build</nav>
+  <article>
+    <h1>Genshin Ayaka Build 2026: <span class="grad">Best Weapons, Artifacts &amp; Teams</span></h1>
+
+    <div class="hot-hook">
+      <span class="kicker">Hot right now · Genshin 7.0 Snezhnaya (launches Aug 12, 2026)</span>
+      <p style="margin:0;color:var(--txt)">Version 7.0 reworks Cryo with the new <b>Stellar Reactions</b> and debuts Odette, so Cryo units are the talk of the patch. <b>Ayaka</b> stays the smoothest <b>f2p-friendly Cryo main DPS</b>, and her Freeze shell only gets stronger alongside the new reactions. Build her (Mistsplitter or the craftable Amenoma, 4pc Blizzard Strayer, C2 if you can) and your Cryo core is 7.0-ready from day one. This guide covers exactly that.</p>
+    </div>
+
+    <p class="lead">Ayaka — the frost princess of Inazuma — is the game's cleanest <b>Cryo main DPS</b>. Her kit is built around Normal and Charged Attacks (her Skill dashes and infuses Cryo; her Burst floods the field with Cryo blades), so she thrives in <b>Freeze</b> teams where enemies can never move. She is the Cryo counterpart to Hu Tao: a dedicated on-fielder who rewards good artifacts and a tight rotation. This guide covers her best weapon (Mistsplitter Reforged vs the craftable <a href="/guides/xiangling-build-en.html">Amenoma Kageuchi</a>), the <b>4pc Blizzard Strayer</b> set, the ATK% / Cryo DMG / CRIT plan, why <b>C2 is the key constellation</b>, and teams with <a href="/guides/ganyu-build-en.html">Ganyu</a> / <a href="/guides/kazuha-build-en.html">Kazuha</a> / <a href="/guides/furina-build-en.html">Furina</a> / Shenhe.</p>
+
+    <div class="src-note">Note: Ayaka's kit, her Blizzard Strayer preference, and the C2 breakpoint are long-term stable meta and do not shift with patches. The 7.0 banner note above is a traffic note, not a build change — the guide below holds regardless of version.</div>
+
+    <h2>Why Ayaka Is Worth Building</h2>
+    <p>Among Cryo carries, Ayaka is the most self-contained: she needs no field-buffing support to function and she hard-counters any enemy that can be frozen.</p>
+    <ul>
+      <li><b>On-field Cryo DPS:</b> her infused Normal/Charged Attacks plus her Burst deal consistent Cryo damage with no dependency on off-field applicators.</li>
+      <li><b>Freeze lock:</b> pair her with Hydro and she freezes entire groups, removing enemy actions entirely — the safest way to play the Abyss.</li>
+      <li><b>F2p-friendly:</b> her best craftable (Amenoma Kageuchi) is forgeable, so she performs without a 5★ weapon.</li>
+      <li><b>7.0-ready:</b> with the Cryo rework adding Stellar Reactions, her Freeze core gains new team options without changing her build.</li>
+    </ul>
+    <div class="callout">A correctly built Ayaka is the Cryo answer to Hu Tao: a dedicated on-fielder who, once her artifacts click, clears the Abyss with zero drama. If you want one reliable Cryo carry, she is the pick.</div>
+
+    <h2>Best Weapons</h2>
+    <p>Ayaka wants <b>CRIT</b>, <b>ATK%</b> and a high base-attack sword. She uses a <b>sword</b>.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag ice">BiS ★</span>Mistsplitter Reforged</h3>
+        <div class="role">Best-in-slot · 5★ sword (her sig)</div>
+        <p>Her signature: huge base ATK, CRIT DMG substat, and a stacking buff (ATK% + Elemental DMG) that rewards her infusion playstyle. The clean "equip and forget" option.</p>
+        <div class="mini">Obtain: weapon banner</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag ice">4★</span>Amenoma Kageuchi</h3>
+        <div class="role">Craftable f2p best</div>
+        <p>Free from the Inazuma forge: its passive refunds Energy on skill casts, smoothing her Burst uptime, and it has clean ATK%/CRIT-friendly stats. The best weapon you can make yourself.</div>
+        <div class="mini">Obtain: forge (Inazuma)</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag ice">5★</span>Haran Geppaku Futsu</h3>
+        <div class="role">Alternative sig-tier sword</div>
+        <p>High base ATK plus a Normal Attack damage buff after her Skill — strong if you already own it from another character's banner. Close second to Mistsplitter.</p>
+        <div class="mini">Obtain: weapon banner</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag ice">Alt</span>The Black Sword / Finale of the Deep</h3>
+        <div class="role">F2P Battle Pass / forge options</div>
+        <p><b>The Black Sword</b> (Battle Pass) gives CRIT + a self-heal on NA/CA — great sustain. <b>Finale of the Deep</b> (forgeable) offers ATK% and a stacking buff. Both solid if Amenoma is taken.</p>
+        <div class="mini">Obtain: BP / forge</div>
+      </div>
+    </div>
+
+    <h2>Best Artifacts</h2>
+    <p>For almost every Ayaka, <b>4pc Blizzard Strayer is best</b> — when enemies are Frozen (which her teams guarantee), its 40% CRIT Rate bonus lets you dump everything into CRIT DMG.</p>
+    <table>
+      <tr><th>Set</th><th>Use when</th><th>Why</th></tr>
+      <tr><td><b>Blizzard Strayer</b> (4pc)</td><td>Default Freeze team</td><td>+15% Cryo DMG and +40% CRIT Rate vs Frozen enemies. Since her teams freeze on contact, this is a free, massive stat jackpot. Her identity set.</td></tr>
+      <tr><td><b>2pc Shimenawa + 2pc Blizzard Strayer</b></td><td>NA/CA-focused builds</td><td>Shimenawa boosts her infused attacks while keeping the Cryo 2-piece. Good when your Strayer pieces are weak.</td></tr>
+      <tr><td><b>2pc Gladiator + 2pc Blizzard Strayer</b></td><td>ATK% needed</td><td>Adds 18% ATK% alongside Cryo DMG. Safe all-rounder when you lack a third set.</td></tr>
+      <tr><td><b>4pc Shenhe's / Marechaussee (if off-meta)</b></td><td>Special shells</td><td>Only for niche Furina-buffed or HP-scaling variants. Default to Blizzard Strayer.</td></tr>
+    </table>
+
+    <h2>Stat Targets — CRIT First, Then ATK% / Cryo</h2>
+    <p>With 4pc Blizzard Strayer you already get +40% CRIT Rate from Freeze, so push <b>CRIT DMG</b> hard and fill the rest with ATK% / Cryo DMG.</p>
+    <table>
+      <tr><th>Slot</th><th>Main stat</th><th>Substat priority</th></tr>
+      <tr><td>Sands</td><td>ATK% (never EM on a carry)</td><td rowspan="3">CRIT DMG &gt; ATK% &gt; CRIT Rate (to ~70% with set) &gt; ER% (only if Burst drops)</td></tr>
+      <tr><td>Goblet</td><td>Cryo DMG% (always over ATK% on her)</td></tr>
+      <tr><td>Circlet</td><td>CRIT DMG / CRIT Rate (balance to ~70/140+)</td></tr>
+    </table>
+    <div class="callout"><b>ER note:</b> Ayaka wants her Burst up every rotation. With Amenoma's refund you usually hit ~110–130% ER comfortably; with Mistsplitter you may need a touch more from substats. Miss the Burst and her damage floor drops sharply.</div>
+
+    <h2>Best Team Comps</h2>
+    <p>Ayaka's teams share one rule: apply Hydro first, freeze everything, then let her swing.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag ice">Freeze</span>Classic Freeze</h3>
+        <div class="role">Premium freeze lock</div>
+        <p>Ayaka + <a href="/guides/xingqiu-build-en.html">Xingqiu</a> (or Yelan / Mona) + <a href="/guides/kazuha-build-en.html">Kazuha</a> (VV shred) + a Cryo battery (<a href="/guides/ganyu-build-en.html">Ganyu</a> / Diona / Shenhe). Kazuha swirls Hydro/Cryo, the team perma-freezes, and Ayaka deletes the board.</p>
+        <div class="mini">Best all-around Cryo shell</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag ice">Mono Cryo</span>Double Cryo</h3>
+        <div class="role">Cryo resonance + battery</div>
+        <p>Ayaka + <a href="/guides/ganyu-build-en.html">Ganyu</a> + Kazuha + Shenhe (or Diona). Cryo Resonance cuts her ER need and Shenhe boosts her skill damage. The highest-ceiling Cryo team.</p>
+        <div class="mini">Highest single-target</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag water">Furina Core</span>Ayaka + Furina</h3>
+        <div class="role">Fontaine-era freeze</div>
+        <p>Ayaka + <a href="/guides/furina-build-en.html">Furina</a> + Kazuha + flex (Charlotte / Shenhe). Furina's fanfare buffs Ayaka's already-high damage, and the two freeze-lock the screen together — strong into 7.0.</p>
+        <div class="mini">Great vs groups</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag wind">Burst Nuke</span>Ayaka + Shenhe</h3>
+        <div class="role">Skill-buffed nuke</div>
+        <p>Ayaka + Shenhe + Kazuha + <a href="/guides/furina-build-en.html">Furina</a>. Shenhe's Skill DMG buff turns Ayaka's Burst into a screen-wiping nuke. A luxury, high-investment shell.</p>
+        <div class="mini">Boss blast</div>
+      </div>
+    </div>
+
+    <h2>Talent Priority</h2>
+    <p>Level in this order — her attacks are the damage, her Skill the dash/infusion, her Burst the nuke:</p>
+    <ol>
+      <li><b>Normal Attack</b> (Kamisato Art — Kabuki) → 9–13. Her infused NA/CA are the core damage. Crown this first if you can.</li>
+      <li><b>Elemental Burst</b> (Kamisato Art — Soumetsu) → 9–13. The Cryo-blade flood is her biggest single hit. Level right after NA.</li>
+      <li><b>Elemental Skill</b> (Kamisato Art — Hyouka) → 6–9. Mostly a dash + small AoE; level last.</li>
+    </ol>
+
+    <h2>Constellations — C2 Is the Key Upgrade</h2>
+    <p>Ayaka's curve is smooth, but one constellation stands out as the real value stop.</p>
+    <ul>
+      <li><b>C1 (Snowswept Sacrifice):</b> her Burst gains +1 extra blade wave and a small DMG boost. Nice, not essential.</li>
+      <li><b>C2 (Blizzard Blade Seki no To):</b> the key one — her Burst's blades deal +20% more damage to enemies below 50% HP and hit a wider area. C2 roughly doubles her burst-clear value. Worth chasing.</li>
+      <li><b>C4 (Crystal Divine Body):</b> after her Skill, her NA/CA gain +20% DMG for a while. A clear step up.</li>
+      <li><b>C6 (Frostflake Iris):</b> her Burst gains another blade wave and her infused attacks deal extra Cryo. Luxury cap.</li>
+    </ul>
+    <div class="callout"><b>Key rule:</b> C0 is already a top-tier Cryo carry; get C2 and stop. C2 is where her clear speed jumps from "good" to "elite." C6 is a luxury.</div>
+
+    <h2>Common Mistakes</h2>
+    <ul>
+      <li><b>No freeze setup.</b> Ayaka without Hydro loses the Blizzard Strayer CRIT bonus and most of her comfort. Always pair her with a Hydro applier.</li>
+      <li><b>Wrong Goblet.</b> An ATK% Goblet on her is a damage loss — Cryo DMG% is strictly better once she has base ATK from weapons/artifacts.</li>
+      <li><b>Skipping CRIT DMG.</b> Because Blizzard Strayer hands her CRIT Rate, stacking CRIT DMG is how she actually scales. A 70/140 split is the floor.</li>
+      <li><b>Burst downtime.</b> Her floor drops hard without her Burst. Watch ER (Amenoma helps) and her rotation so Soumetsu is up every cycle.</li>
+    </ul>
+
+    <h2>Don't Have Ayaka Yet?</h2>
+    <p>She is a limited 5★, so you pull her on a rerun — and with 7.0 Snezhnaya spotlighting Cryo via the Stellar Reactions rework and Odette, building your Cryo core now pays off. While you wait, <b>Ganyu</b> can supply Cryo main-DPS in a pinch (her Bloom/Aim style is different but effective), and <a href="/guides/ganyu-build-en.html">Kaeya</a> is a free Cryo option for Superconduct. Build her alongside <a href="/guides/kazuha-build-en.html">Kazuha</a> and <a href="/guides/furina-build-en.html">Furina</a>; together they are the Cryo core that carries most accounts through endgame, and right now they are the safest evergreen pickup before the 7.0 shift.</p>
+
+    <div class="pairbox">
+      <a href="/guides/fischl-build-en.html">← Fischl Build (Electro sub-DPS)</a>
+      <a href="/guides/ganyu-build-en.html">Ganyu Build →</a>
+      <a href="/guides/kazuha-build-en.html">Kazuha Build →</a>
+      <a href="/guides/furina-build-en.html">Furina Build →</a>
+      <a href="/guides/raiden-shogun-build-en.html">Raiden Shogun Build →</a>
+      <a href="/guides/xiangling-build-en.html">Xiangling Build →</a>
+      <a href="/guides/bennett-build-en.html">Bennett Build →</a>
+      <a href="/guides/hutao-build-en.html">Hu Tao Build →</a>
+      <a href="/guides/neuvillette-build-en.html">Neuvillette Build →</a>
+      <a href="/guides/yelan-build-en.html">Yelan Build →</a>
+      <a href="/guides/nahida-build-en.html">Nahida Build →</a>
+      <a href="/guides/xingqiu-build-en.html">Xingqiu Build →</a>
+      <a href="/guides/zhongli-build-en.html">Zhongli Build →</a>
+      <a href="/guides/xilonen-build-en.html">Xilonen Build →</a>
+      <a href="/guides/baizhu-build-en.html">Baizhu Build →</a>
+      <a href="/guides/beginner-characters-en.html">Beginner Must-Build Characters</a>
+      <a href="/guides/artifact-farming-en.html">Artifact Farming Guide →</a>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    Teyvat Starter Guide · Independent Genshin Impact build reference · <a href="/">Home</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a><br/>
+    Not affiliated with HoYoverse. In-game data is always final.
+  </div>
+</footer>
+</body>
+</html>

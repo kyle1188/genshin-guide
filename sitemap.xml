@@ -159,6 +159,22 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/fischl-build-en.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/fischl-build-en.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/fischl-build-en.html" />
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/ayaka-build-en.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/ayaka-build-en.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/ayaka-build-en.html" />
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://genshin-guide-one-five.vercel.app/privacy.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/privacy.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/privacy.html" />
