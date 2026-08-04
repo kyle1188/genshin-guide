@@ -1,0 +1,271 @@
+<!doctype html>
+<!-- English Albedo build guide (single-language, en + x-default). Top hot-take hook rides the 7.0 Snezhnaya preview (launches Aug 12, 2026). -->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Genshin Albedo Build Guide 2026 — Best Weapons, Artifacts &amp; Teams</title>
+<meta name="description" content="The complete Albedo build guide for Genshin Impact in 2026: his best weapon (Cinnabar Spindle R5, Harbinger of Dawn, Favonius Sword), the 4pc Husk of Opulent Dreams set, the DEF% / Geo DMG stat plan, why his Elemental Skill is the whole kit, and teams like Double Geo, Mono Geo and Bloom with Zhongli and Nahida." />
+<meta name="keywords" content="genshin albedo build, albedo best weapon cinnabar spindle, albedo artifacts husk of opulent dreams, albedo def sands, albedo double geo team, albedo skill off-field geo" />
+<meta name="author" content="Teyvat Starter Guide" />
+<meta name="theme-color" content="#0c0f16" />
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/albedo-build-en.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/albedo-build-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/albedo-build-en.html" />
+<meta property="og:title" content="Genshin Albedo Build Guide 2026 — Best Weapons, Artifacts & Teams" />
+<meta property="og:description" content="Best weapon (Cinnabar Spindle R5), the 4pc Husk of Opulent Dreams set, the DEF% / Geo DMG plan, why his Skill is the whole kit, and teams like Double Geo and Bloom." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/albedo-build-en.html" />
+<meta property="og:locale" content="en_US" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Genshin Albedo Build Guide 2026 — Best Weapons, Artifacts & Teams",
+  "description":"A complete Albedo build guide: his best weapon, the 4pc Husk of Opulent Dreams set, the DEF% / Geo DMG plan, why his Elemental Skill is the whole kit, and teams like Double Geo and Bloom.",
+  "author":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "publisher":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "datePublished":"2026-08-04",
+  "dateModified":"2026-08-04",
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://genshin-guide-one-five.vercel.app/guides/albedo-build-en.html"}
+}
+</script>
+<style>
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff;
+    --fire:#ff6b4a; --water:#4aa8ff; --thunder:#b06bff; --grass:#7dd35f; --rock:#e0c068; --wind:#a8e6cf; --ice:#9fe3ff;
+    --r:14px; --maxw:920px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.8; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:14px; height:58px}
+  .brand{display:flex; align-items:center; gap:9px; font-weight:700; letter-spacing:.5px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+  .brand b{color:var(--gold)}
+  .lang{color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .lang:hover{color:var(--txt); background:var(--panel)}
+  .back{margin-left:auto; color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .back:hover{color:var(--txt); background:var(--panel)}
+  .crumb{font-size:13px; color:var(--txt-mute); margin:26px 0 4px}
+  .crumb a{color:var(--txt-dim)}
+  article{padding:8px 0 40px}
+  h1{font-size:clamp(26px,4.4vw,38px); line-height:1.25; margin:6px 0 14px; letter-spacing:.3px}
+  h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .lead{color:#cdd6e4; font-size:16px; margin:0 0 26px}
+  h2{font-size:clamp(20px,3vw,26px); margin:38px 0 12px; padding-left:14px; border-left:4px solid var(--gold)}
+  h3{font-size:18px; margin:22px 0 8px; color:#fff}
+  p{color:var(--txt-dim); margin:10px 0}
+  ul,ol{color:var(--txt-dim); padding-left:22px}
+  li{margin:6px 0}
+  .src-note{font-size:13px; color:var(--txt-mute); border-left:3px solid var(--line); padding:8px 14px; margin:18px 0; background:var(--panel); border-radius:0 8px 8px 0}
+  .grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; transition:.2s}
+  .card:hover{border-color:rgba(232,196,116,.4)}
+  .card h3{display:flex; align-items:center; gap:10px; margin-top:0}
+  .tag{font-size:12px; font-weight:700; color:#0c0f16; padding:3px 9px; border-radius:7px; white-space:nowrap}
+  .tag.fire{background:var(--fire)} .tag.water{background:var(--water)} .tag.thunder{background:var(--thunder)}
+  .tag.grass{background:var(--grass)} .tag.rock{background:var(--rock)} .tag.wind{background:var(--wind)} .tag.ice{background:var(--ice)}
+  .card .role{font-size:13px; color:var(--gold); font-weight:600; margin:2px 0 8px}
+  .card p{font-size:14px; margin:6px 0}
+  .mini{font-size:13px; color:var(--txt-mute); margin-top:8px; border-top:1px dashed var(--line); padding-top:8px}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; background:var(--panel); border-radius:var(--r); overflow:hidden}
+  th,td{padding:11px 13px; text-align:left; border-bottom:1px solid var(--line); color:var(--txt-dim)}
+  th{background:rgba(232,196,116,.08); color:var(--gold); font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .callout{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .callout b{color:var(--gold)}
+  .hot-hook{background:linear-gradient(135deg,rgba(176,107,255,.14),rgba(125,211,95,.08)); border:1px solid rgba(176,107,255,.4); border-left:4px solid var(--thunder); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .hot-hook .kicker{display:inline-block; font-size:12px; font-weight:700; letter-spacing:.5px; color:var(--thunder); text-transform:uppercase; margin-bottom:6px}
+  .hot-hook b{color:var(--gold)}
+  .btn{padding:11px 18px; border-radius:12px; font-weight:700; font-size:14px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; border:1px solid transparent}
+  .btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--txt-mute); font-size:13px; text-align:center}
+  footer a{color:var(--txt-dim)}
+  .pairbox{display:flex; flex-wrap:wrap; gap:12px; margin:30px 0 6px}
+  .pairbox a{padding:10px 16px; border:1px solid var(--line); border-radius:12px; color:var(--txt-dim); font-size:14px; font-weight:600; transition:.2s}
+  .pairbox a:hover{border-color:rgba(232,196,116,.4); color:var(--txt)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+    <a class="back" href="/">← Back to Home</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumb"><a href="/">Teyvat Starter Guide</a> › Albedo Build</nav>
+  <article>
+    <h1>Genshin Albedo Build 2026: <span class="grad">Best Weapons, Artifacts &amp; Teams</span></h1>
+
+    <div class="hot-hook">
+      <span class="kicker">Hot right now · Genshin 7.0 Snezhnaya (launches Aug 12, 2026)</span>
+      <p style="margin:0;color:var(--txt)">Version 7.0 Snezhnaya is about to flood the banner with new Cryo and Electro units — but the accounts that clear endgame are still the ones with a solid <b>evergreen core</b>. <b>Albedo</b> is exactly that: a Geo sub-DPS whose off-field Skill flowers deal steady, investment-light damage no matter what the meta does. While everyone chases the 7.0 hype, building Albedo now gives you a permanent Double-Geo backbone (pair him with <b>Zhongli</b>) that outlasts any patch. This guide covers his best weapon, the <b>4pc Husk of Opulent Dreams</b> set, the DEF% / Geo DMG stat plan, and the teams that make him worth it.</p>
+    </div>
+
+    <p class="lead">Albedo is the game's best <b>off-field Geo</b> unit. His Elemental Skill drops a <b>Transient Blossom</b> that automatically detonates whenever a nearby attack lands, dealing AoE Geo damage scaled on his <b>DEF</b> — zero field time, permanent background damage. He is the Geo version of a set-and-forget sub-DPS, and with <a href="/guides/zhongli-build-en.html">Zhongli</a> he forms the classic Double-Geo core that every account benefits from. This guide covers his best weapon (<a href="/guides/zhongli-build-en.html">Cinnabar Spindle R5</a> vs Harbinger of Dawn / Favonius Sword), the <b>4pc Husk of Opulent Dreams</b> set, the DEF% / Geo DMG stat plan, the teams with <a href="/guides/zhongli-build-en.html">Zhongli</a> / <a href="/guides/nahida-build-en.html">Nahida</a> / <a href="/guides/kazuha-build-en.html">Kazuha</a> / <a href="/guides/bennett-build-en.html">Bennett</a>, and why his Skill is basically his whole kit.</p>
+
+    <div class="src-note">Note: Albedo's kit, his Husk of Opulent Dreams preference, and his DEF scaling are long-term stable meta and do not shift with patches. The 7.0 banner note above is a traffic note, not a build change — the guide below holds regardless of version.</div>
+
+    <h2>Why Albedo Is Worth Building</h2>
+    <p>Among Geo units, only Albedo gives you a no-field-time, DEF-scaled damage engine that slots into almost any team as a quiet power boost.</p>
+    <ul>
+      <li><b>Off-field Geo engine:</b> the Blossom detonates on every nearby hit, feeding Geo resonance, crystallize shields and steady AoE without a swap.</li>
+      <li><b>DEF-scaling:</b> he gets stronger from DEF% substats, which are the most common stat on artifacts — easy to build well.</li>
+      <li><b>Double-Geo backbone:</b> with <a href="/guides/zhongli-build-en.html">Zhongli</a> he triggers Geo Resonance (+HP% + shields + 15% DMG to shielded foes), a staple of durable, high-damage cores.</li>
+      <li><b>Ultra-flexible:</b> he fits Mono Geo, Bloom/Burgeon, Physical and general hypercarry teams as a plug-in sub-DPS.</li>
+    </ul>
+    <div class="callout">A correctly built Albedo is the Geo version of a premium off-field sub-DPS: minimal field time, no rotation tax, permanent background damage. If you want one Geo unit that works everywhere, make it him.</div>
+
+    <h2>Best Weapons</h2>
+    <p>Albedo wants <b>DEF%</b> and <b>CRIT</b>, and loves anything that boosts his Skill. He uses a <b>sword</b>.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag rock">BiS ★</span>Cinnabar Spindle (R5)</h3>
+        <div class="role">Best-in-slot · 4★ sword (craftable)</div>
+        <p>His signature-ish weapon: DEF% main stat plus a passive that boosts Elemental Skill damage by a % of his DEF. R5 is craftable from his story quest, so it is free and perfect. The clear default.</p>
+        <div class="mini">Obtain: craft / story quest (R5)</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag rock">3★</span>Harbinger of Dawn (R5)</h3>
+        <div class="role">Best budget · huge CRIT</div>
+        <p>Massive CRIT Rate and CRIT DMG when above 90% HP — and Albedo almost always stays topped up behind a <a href="/guides/zhongli-build-en.html">Zhongli</a> shield. The best free weapon for him, no contest.</p>
+        <div class="mini">Obtain: shop / gacha (3★)</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag rock">4★</span>Favonius Sword</h3>
+        <div class="role">Energy battery for the team</div>
+        <p>Generates team Energy from CRIT hits. Best when your team is ER-starved (e.g. Mono Geo without another battery). Trades a little personal damage for party uptime.</p>
+        <div class="mini">Obtain: shop</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag rock">4★</span>Wolf-Fang</h3>
+        <div class="role">Battle Pass all-rounder</div>
+        <p>Boosts both Skill and Burst damage on a stacking passive. A clean generalist option if you already refine it and lack Cinnabar Spindle.</p>
+        <div class="mini">Obtain: Battle Pass</div>
+      </div>
+    </div>
+
+    <h2>Best Artifacts</h2>
+    <p>For a sub-DPS Albedo, <b>4pc Husk of Opulent Dreams is best</b> — it stacks DEF% and Skill damage just by having him on field at the start, which is exactly his play pattern.</p>
+    <table>
+      <tr><th>Set</th><th>Use when</th><th>Why</th></tr>
+      <tr><td><b>Husk of Opulent Dreams</b> (4pc)</td><td>Default sub-DPS</td><td>Up to +54% DEF and +24% Elemental Skill damage from stacks gained just by existing on field. His identity set, free damage.</td></tr>
+      <tr><td><b>2pc Husk + 2pc Archaic Petra</b></td><td>Mono Geo / crystallize teams</td><td>Petra's +35% Geo DMG on pickup compounds with Husk's DEF; strong when another Geo unit holds Petra instead.</td></tr>
+      <tr><td><b>2pc Husk + 2pc DEF% 18%</b></td><td>Easy, no set dependency</td><td>Safe all-rounder that just stacks raw DEF for both his damage and his resonance buffs.</td></tr>
+      <tr><td><b>4pc Noblesse Oblige</b></td><td>Pure support shell</td><td>Only if he is your team's buffer and nobody else holds Noblesse — gives the party +20% ATK.</td></tr>
+    </table>
+
+    <h2>Stat Targets — DEF%, Then Geo DMG, Then CRIT</h2>
+    <p>Albedo's Blossom damage scales on <b>DEF%</b>, so DEF is his priority main stat. Geo DMG and CRIT finish the build.</p>
+    <table>
+      <tr><th>Slot</th><th>Main stat</th><th>Substat priority</th></tr>
+      <tr><td>Sands</td><td>DEF% (never ATK% — he does not scale on ATK)</td><td rowspan="3">CRIT (rate/dmg) &gt; DEF% &gt; ER% (only if Burst drops)</td></tr>
+      <tr><td>Goblet</td><td>Geo DMG% (or DEF% if no good Geo piece)</td></tr>
+      <tr><td>Circlet</td><td>CRIT Rate / CRIT DMG (balance to ~70/140)</td></tr>
+    </table>
+    <div class="callout"><b>ER note:</b> Albedo's Burst is nice but not essential; his kit runs on the Skill. A little ER substat is fine, but do not sacrifice DEF% or CRIT for it. Most builds sit comfortably under 130% ER.</div>
+
+    <h2>Best Team Comps</h2>
+    <p>Albedo's teams share one rule: drop his Skill, shield up, and let the main carry trigger the Blossoms.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag rock">Double Geo</span>Albedo + Zhongli</h3>
+        <div class="role">The evergreen core</div>
+        <p><a href="/guides/zhongli-build-en.html">Zhongli</a> shield + Geo Resonance gives Albedo +HP% and +15% DMG to shielded foes while his Blossoms tick. The safest, tankiest sub-DPS shell in the game.</p>
+        <div class="mini">Best all-around Geo shell</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag rock">Mono Geo</span>Itto / Navia Core</h3>
+        <div class="role">Geo carry battery</div>
+        <p>Albedo + <a href="/guides/zhongli-build-en.html">Zhongli</a> + a Geo main (Itto / Navia) + flex (Geo Traveller / Ningguang). His off-field flowers and resonance juice the Geo carry's damage.</p>
+        <div class="mini">Premium Geo DPS teams</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag grass">Bloom</span>Nahida Bloom / Burgeon</h3>
+        <div class="role">Dendro reaction sub-DPS</div>
+        <p><a href="/guides/nahida-build-en.html">Nahida</a> + Albedo + Hydro + flex. His off-field Geo adds damage and crystallize shields without stealing the Dendro core's reactions.</p>
+        <div class="mini">Comfy reaction team</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">Physical</span>Eula Carry</h3>
+        <div class="role">Physical DPS support</div>
+        <p>Albedo + <a href="/guides/zhongli-build-en.html">Zhongli</a> + Eula + flex. His Blossoms and Geo RES shred (via set) support a physical hypercarry while Zhongli keeps Eula alive.</p>
+        <div class="mini">Great vs bosses</div>
+      </div>
+    </div>
+
+    <h2>Talent Priority</h2>
+    <p>Level in this order — his Skill drives the Blossoms, his Burst is a bonus nuke:</p>
+    <ol>
+      <li><b>Elemental Skill</b> (Abiogenesis: Solar Isotoma) → 8–13. The Blossom damage and Resonance Shaft live here. Crown this first.</li>
+      <li><b>Elemental Burst</b> (Rite of Progeniture: Tectonic Tide) → 6–10. A decent AoE nuke that also snapshots his DEF; level it after the Skill.</li>
+      <li><b>Normal Attack</b> → 1–6. He barely attacks outside meme on-field builds. Leave it low.</li>
+    </ol>
+
+    <h2>Constellations — C2 Is the Sweet Spot</h2>
+    <p>Albedo's constellation curve is gentle: C1 helps, C2 is the breakpoint, the rest are nice-to-have.</p>
+    <ul>
+      <li><b>C1 (Flowers of First Snowfall):</b> Blossoms can crit, smoothing his damage floor. A clean quality-of-life boost.</li>
+      <li><b>C2 (Opening of Phanerozoic):</b> the big one — Blossoms deal AoE damage and +20% Skill damage, and the Burst's ATK buff range grows. C2 is where he jumps in value.</li>
+      <li><b>C4 (Descent of Divinity):</b> the Burst's ATK buff is stronger and lasts longer — a clear team buff.</li>
+      <li><b>C6 (Dust of Purification):</b> Blossoms erupt into secondary explosions on Burst, turning him briefly into a burst DPS. Fun, not required.</li>
+    </ul>
+    <div class="callout"><b>Key rule:</b> C0 is already a top-tier off-field Geo; get to <b>C2</b> and stop. Because he is a standard 5★ who reruns occasionally, C2 is a realistic stopping point — don't over-invest chasing C6.</div>
+
+    <h2>Common Mistakes</h2>
+    <ul>
+      <li><b>Building him on ATK%.</b> Albedo's Blossoms scale on DEF, not ATK. ATK% Sands is a wasted slot — go DEF% every time.</li>
+      <li><b>Wrong artifact set.</b> Random 2pc+2pc without Husk leaves the DEF-stacking and +24% Skill damage on the table. Husk 4pc is the default for a reason.</li>
+      <li><b>Placing the Skill where it can't be hit.</b> The Blossom only detonates on nearby attacks — drop it under the enemy, not across the map, or it never triggers.</li>
+      <li><b>Over-investing ER.</b> His Burst isn't essential; piling ER substats steals from DEF%/CRIT. Keep ER modest.</li>
+    </ul>
+
+    <h2>Don't Have Albedo Yet?</h2>
+    <p>He is a <b>standard 5★</b> who shares the banner with limited characters, so you will meet him on any wish — and with 7.0 Snezhnaya reshaping the roster, locking in your <b>evergreen Geo core now</b> (Albedo + <a href="/guides/zhongli-build-en.html">Zhongli</a>) is the safest long-term play. While you wait, <b>Noelle</b> or <b>Ningguang</b> can supply off-field Geo in a pinch, but neither gives Albedo's clean, investment-light Skill damage. Build him alongside <a href="/guides/nahida-build-en.html">Nahida</a> and <a href="/guides/kazuha-build-en.html">Kazuha</a>; together Geo + Dendro + Anemo is the durable backbone that carries most accounts through endgame, and right now they are the safest evergreen pickups before the 7.0 shift.</p>
+
+    <div class="pairbox">
+      <a href="/guides/ayaka-build-en.html">← Ayaka Build (Cryo DPS)</a>
+      <a href="/guides/yae-miko-build-en.html">Yae Miko Build →</a>
+      <a href="/guides/xingqiu-build-en.html">Xingqiu Build →</a>
+      <a href="/guides/nahida-build-en.html">Nahida Build →</a>
+      <a href="/guides/raiden-shogun-build-en.html">Raiden Shogun Build →</a>
+      <a href="/guides/xiangling-build-en.html">Xiangling Build →</a>
+      <a href="/guides/bennett-build-en.html">Bennett Build →</a>
+      <a href="/guides/hutao-build-en.html">Hu Tao Build →</a>
+      <a href="/guides/neuvillette-build-en.html">Neuvillette Build →</a>
+      <a href="/guides/yelan-build-en.html">Yelan Build →</a>
+      <a href="/guides/furina-build-en.html">Furina Build →</a>
+      <a href="/guides/kazuha-build-en.html">Kazuha Build →</a>
+      <a href="/guides/zhongli-build-en.html">Zhongli Build →</a>
+      <a href="/guides/xilonen-build-en.html">Xilonen Build →</a>
+      <a href="/guides/ganyu-build-en.html">Ganyu Build →</a>
+      <a href="/guides/baizhu-build-en.html">Baizhu Build →</a>
+      <a href="/guides/fischl-build-en.html">Fischl Build →</a>
+      <a href="/guides/xiao-build-en.html">Xiao Build →</a>
+      <a href="/guides/beginner-characters-en.html">Beginner Must-Build Characters</a>
+      <a href="/guides/artifact-farming-en.html">Artifact Farming Guide →</a>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    Teyvat Starter Guide · Independent Genshin Impact build reference · <a href="/">Home</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a><br/>
+    Not affiliated with HoYoverse. In-game data is always final.
+  </div>
+</footer>
+</body>
+</html>

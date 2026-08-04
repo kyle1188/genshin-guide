@@ -1,0 +1,271 @@
+<!doctype html>
+<!-- English Xiao build guide (single-language, en + x-default). Top hot-take hook rides the 7.0 Snezhnaya preview (launches Aug 12, 2026). -->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Genshin Xiao Build Guide 2026 — Best Weapons, Artifacts &amp; Teams</title>
+<meta name="description" content="The complete Xiao build guide for Genshin Impact in 2026: his best weapon (Primordial Jade Winged-Spear, Staff of Homa, Deathmatch), the 4pc Vermillion Hereafter set, the ATK% / Anemo DMG / CRIT stat plan, why Energy Recharge keeps his plunge uptime, and teams like Xiao Hypercarry with Zhongli, Bennett and Furina." />
+<meta name="keywords" content="genshin xiao build, xiao best weapon jade winged spear, xiao artifacts vermillion hereafter, xiao plunge team, xiao er requirement, xiao hypercarry zhongli bennett" />
+<meta name="author" content="Teyvat Starter Guide" />
+<meta name="theme-color" content="#0c0f16" />
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/xiao-build-en.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/xiao-build-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/xiao-build-en.html" />
+<meta property="og:title" content="Genshin Xiao Build Guide 2026 — Best Weapons, Artifacts & Teams" />
+<meta property="og:description" content="Best weapon (Primordial Jade Winged-Spear), the 4pc Vermillion Hereafter set, the ATK% / Anemo DMG / CRIT plan, why ER keeps his plunge uptime, and Xiao Hypercarry teams." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/xiao-build-en.html" />
+<meta property="og:locale" content="en_US" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Genshin Xiao Build Guide 2026 — Best Weapons, Artifacts & Teams",
+  "description":"A complete Xiao build guide: his best weapon, the 4pc Vermillion Hereafter set, the ATK% / Anemo DMG / CRIT plan, why ER keeps his plunge uptime, and Xiao Hypercarry teams.",
+  "author":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "publisher":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "datePublished":"2026-08-04",
+  "dateModified":"2026-08-04",
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://genshin-guide-one-five.vercel.app/guides/xiao-build-en.html"}
+}
+</script>
+<style>
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff;
+    --fire:#ff6b4a; --water:#4aa8ff; --thunder:#b06bff; --grass:#7dd35f; --rock:#e0c068; --wind:#a8e6cf; --ice:#9fe3ff;
+    --r:14px; --maxw:920px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.8; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:14px; height:58px}
+  .brand{display:flex; align-items:center; gap:9px; font-weight:700; letter-spacing:.5px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+  .brand b{color:var(--gold)}
+  .lang{color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .lang:hover{color:var(--txt); background:var(--panel)}
+  .back{margin-left:auto; color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .back:hover{color:var(--txt); background:var(--panel)}
+  .crumb{font-size:13px; color:var(--txt-mute); margin:26px 0 4px}
+  .crumb a{color:var(--txt-dim)}
+  article{padding:8px 0 40px}
+  h1{font-size:clamp(26px,4.4vw,38px); line-height:1.25; margin:6px 0 14px; letter-spacing:.3px}
+  h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .lead{color:#cdd6e4; font-size:16px; margin:0 0 26px}
+  h2{font-size:clamp(20px,3vw,26px); margin:38px 0 12px; padding-left:14px; border-left:4px solid var(--gold)}
+  h3{font-size:18px; margin:22px 0 8px; color:#fff}
+  p{color:var(--txt-dim); margin:10px 0}
+  ul,ol{color:var(--txt-dim); padding-left:22px}
+  li{margin:6px 0}
+  .src-note{font-size:13px; color:var(--txt-mute); border-left:3px solid var(--line); padding:8px 14px; margin:18px 0; background:var(--panel); border-radius:0 8px 8px 0}
+  .grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; transition:.2s}
+  .card:hover{border-color:rgba(232,196,116,.4)}
+  .card h3{display:flex; align-items:center; gap:10px; margin-top:0}
+  .tag{font-size:12px; font-weight:700; color:#0c0f16; padding:3px 9px; border-radius:7px; white-space:nowrap}
+  .tag.fire{background:var(--fire)} .tag.water{background:var(--water)} .tag.thunder{background:var(--thunder)}
+  .tag.grass{background:var(--grass)} .tag.rock{background:var(--rock)} .tag.wind{background:var(--wind)} .tag.ice{background:var(--ice)}
+  .card .role{font-size:13px; color:var(--gold); font-weight:600; margin:2px 0 8px}
+  .card p{font-size:14px; margin:6px 0}
+  .mini{font-size:13px; color:var(--txt-mute); margin-top:8px; border-top:1px dashed var(--line); padding-top:8px}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; background:var(--panel); border-radius:var(--r); overflow:hidden}
+  th,td{padding:11px 13px; text-align:left; border-bottom:1px solid var(--line); color:var(--txt-dim)}
+  th{background:rgba(232,196,116,.08); color:var(--gold); font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .callout{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .callout b{color:var(--gold)}
+  .hot-hook{background:linear-gradient(135deg,rgba(176,107,255,.14),rgba(125,211,95,.08)); border:1px solid rgba(176,107,255,.4); border-left:4px solid var(--thunder); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .hot-hook .kicker{display:inline-block; font-size:12px; font-weight:700; letter-spacing:.5px; color:var(--thunder); text-transform:uppercase; margin-bottom:6px}
+  .hot-hook b{color:var(--gold)}
+  .btn{padding:11px 18px; border-radius:12px; font-weight:700; font-size:14px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; border:1px solid transparent}
+  .btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--txt-mute); font-size:13px; text-align:center}
+  footer a{color:var(--txt-dim)}
+  .pairbox{display:flex; flex-wrap:wrap; gap:12px; margin:30px 0 6px}
+  .pairbox a{padding:10px 16px; border:1px solid var(--line); border-radius:12px; color:var(--txt-dim); font-size:14px; font-weight:600; transition:.2s}
+  .pairbox a:hover{border-color:rgba(232,196,116,.4); color:var(--txt)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+    <a class="back" href="/">← Back to Home</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumb"><a href="/">Teyvat Starter Guide</a> › Xiao Build</nav>
+  <article>
+    <h1>Genshin Xiao Build 2026: <span class="grad">Best Weapons, Artifacts &amp; Teams</span></h1>
+
+    <div class="hot-hook">
+      <span class="kicker">Hot right now · Genshin 7.0 Snezhnaya (launches Aug 12, 2026)</span>
+      <p style="margin:0;color:var(--txt)">Version 7.0 Snezhnaya is about to flood the banner with new Cryo and Electro units — but the accounts that clear endgame are still the ones with a self-sufficient main DPS. <b>Xiao</b> is exactly that: an Anemo plunge carry who needs <b>no specific teammate</b> to function, so he stays relevant no matter how the 7.0 meta shifts. While everyone chases the new units, building Xiao now gives you a permanent, team-agnostic DPS that you can drop into almost any team. This guide covers his best weapon, the <b>4pc Vermillion Hereafter</b> set, the ATK% / Anemo DMG / CRIT stat plan, the Energy Recharge that keeps his plunge uptime, and the Xiao Hypercarry shell.</p>
+    </div>
+
+    <p class="lead">Xiao is the game's premier <b>Anemo plunge DPS</b>. His Elemental Burst (Bane of All Evil) transforms him into a high-air plunge attacker, dealing massive AoE Anemo damage at the cost of his own HP. He is the Anemo answer to a selfish hypercarry — pair him with a shield (<a href="/guides/zhongli-build-en.html">Zhongli</a>) and a battery (<a href="/guides/bennett-build-en.html">Bennett</a>) and he deletes groups. This guide covers his best weapon (<a href="/guides/zhongli-build-en.html">Primordial Jade Winged-Spear</a> vs Staff of Homa / Deathmatch), the <b>4pc Vermillion Hereafter</b> set, the ATK% / Anemo DMG / CRIT stat plan, the ER that keeps his Burst up, and teams with <a href="/guides/zhongli-build-en.html">Zhongli</a> / <a href="/guides/bennett-build-en.html">Bennett</a> / <a href="/guides/furina-build-en.html">Furina</a> / <a href="/guides/kazuha-build-en.html">Kazuha</a>.</p>
+
+    <div class="src-note">Note: Xiao's kit, his Vermillion Hereafter preference, and his plunge playstyle are long-term stable meta and do not shift with patches. The 7.0 banner note above is a traffic note, not a build change — the guide below holds regardless of version.</div>
+
+    <h2>Why Xiao Is Worth Building</h2>
+    <p>Among Anemo units, only Xiao gives you a pure, self-contained main DPS that does not depend on a specific teammate to shine.</p>
+    <ul>
+      <li><b>Team-agnostic carry:</b> his Burst makes him the damage source; he works with whoever gives him shield + buffs, so he never gets benched by meta shifts.</li>
+      <li><b>Huge AoE plunge clears:</b> his Burst plunges hit surrounding enemies repeatedly — the best group-clear in the game for Spiral Abyss floors.</li>
+      <li><b>HP-cost design:</b> he sacrifices his own HP instead of needing a squishy setup, which pairs perfectly with a <a href="/guides/zhongli-build-en.html">Zhongli</a> shield.</li>
+      <li><b>Evergreen value:</b> an Anemo DPS that has lasted every version since release — a safe long-term investment.</li>
+    </ul>
+    <div class="callout">A correctly built Xiao is the Anemo version of a selfish hypercarry: point him at a group, pop Burst, and watch it disappear. If you want one main DPS that never goes stale, make it him.</div>
+
+    <h2>Best Weapons</h2>
+    <p>Xiao wants <b>ATK%</b>, <b>CRIT</b> and a high base ATK. He uses a <b>polearm</b>.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag wind">BiS ★</span>Primordial Jade Winged-Spear</h3>
+        <div class="role">Best-in-slot · 5★ polearm</div>
+        <p>His signature-ish weapon: high base ATK and a passive that stacks ATK% on hits, which snowballs through his long plunge combos. The clear best if you have it.</p>
+        <div class="mini">Obtain: weapon banner</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag wind">5★</span>Staff of Homa</h3>
+        <div class="role">Highest personal damage</div>
+        <p>HP-to-ATK conversion plus a low-HP damage bonus — and Xiao sits at low HP during his Burst, so the passive is always active. Best raw damage after PJWS.</p>
+        <div class="mini">Obtain: weapon banner</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag wind">4★</span>Deathmatch</h3>
+        <div class="role">Best Battle Pass option</div>
+        <p>Big CRIT Rate and an ATK% boost when surrounded (which he always is while plunging). The strongest f2p-friendly 4★ for him.</p>
+        <div class="mini">Obtain: Battle Pass</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag wind">3★</span>White Tassel (R5)</h3>
+        <div class="role">Free budget pick</div>
+        <p>Massive Normal Attack boost at R5 — and Xiao's plunges count as Normal Attacks. The best free weapon; refine it and it punches far above its rarity.</p>
+        <div class="mini">Obtain: shop / gacha (3★)</div>
+      </div>
+    </div>
+
+    <h2>Best Artifacts</h2>
+    <p>For a plunge DPS Xiao, <b>4pc Vermillion Hereafter is best</b> — its ATK% stacking after Burst is tailor-made for his entire kit.</p>
+    <table>
+      <tr><th>Set</th><th>Use when</th><th>Why</th></tr>
+      <tr><td><b>Vermillion Hereafter</b> (4pc)</td><td>Default plunge DPS</td><td>+18% ATK plus up to +48% more ATK after Burst — his identity set, a massive free damage jump during his window.</td></tr>
+      <tr><td><b>2pc Viridescent Venerer + 2pc ATK% 18%</b></td><td>Flex / no VH pieces</td><td>VV's Anemo RES shred plus raw ATK; a strong, flexible stand-in when Vermillion pieces are weak.</td></tr>
+      <tr><td><b>2pc Shimenawa + 2pc Gladiator</b></td><td>Generic ATK stacking</td><td>Safe all-rounder that boosts his Normal/plunge damage without a set bonus dependency.</td></tr>
+      <tr><td><b>4pc Shimenawa's Reminiscence</b></td><td>When not Bursting often</td><td>Trades Burst for a NA damage buff — only if your rotation under-uses his Burst (rare).</td></tr>
+    </table>
+
+    <h2>Stat Targets — ATK%, Then Anemo DMG, Then CRIT (and Some ER)</h2>
+    <p>Xiao's plunge damage scales on <b>ATK%</b> and CRIT; his Burst cost is high, so a little <b>ER%</b> keeps his window up.</p>
+    <table>
+      <tr><th>Slot</th><th>Main stat</th><th>Substat priority</th></tr>
+      <tr><td>Sands</td><td>ATK% (never EM — he does not react)</td><td rowspan="3">CRIT (rate/dmg) &gt; ATK% &gt; ER% (aim ~120–130% with Furina / ~140% without)</td></tr>
+      <tr><td>Goblet</td><td>Anemo DMG% (or ATK% if no good Anemo piece)</td></tr>
+      <tr><td>Circlet</td><td>CRIT Rate / CRIT DMG (balance to ~70/140)</td></tr>
+    </table>
+    <div class="callout"><b>ER note:</b> Xiao lives and dies by his Burst uptime. With <a href="/guides/furina-build-en.html">Furina</a> fanfare or a battery he can sit ~120% ER; without one, push toward 140% so his plunge window is always ready. This is the stat most under-built Xiao players neglect.</div>
+
+    <h2>Best Team Comps</h2>
+    <p>Xiao's teams share one rule: shield him, buff his ATK, battery his Burst, then let him plunge.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag wind">Hypercarry</span>Xiao + Zhongli + Bennett</h3>
+        <div class="role">The evergreen core</div>
+        <p><a href="/guides/zhongli-build-en.html">Zhongli</a> shield + <a href="/guides/bennett-build-en.html">Bennett</a> ATK buff + flex (Furina / Jean / Faruzan). The safest, highest-damage Xiao shell — tanky and forgiving.</p>
+        <div class="mini">Best all-around Xiao team</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag water">Furina Core</span>Xiao + Furina</h3>
+        <div class="role">Fanfare damage amp</div>
+        <p><a href="/guides/furina-build-en.html">Furina</a> builds fanfare stacks that turn into a huge team DMG buff, and her off-field Hydro pairs with a healer. One of Xiao's strongest modern teams.</p>
+        <div class="mini">Premium current-meta shell</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag wind">Anemo</span>Xiao + Kazuha / Faruzan</h3>
+        <div class="role">Anemo RES shred + battery</div>
+        <p><a href="/guides/kazuha-build-en.html">Kazuha</a> (or Faruzan) shreds Anemo RES and groups enemies; Faruzan also batteries Xiao's Burst. Adds damage and comfort.</p>
+        <div class="mini">Strong vs groups</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag rock">Double Geo</span>Xiao + Zhongli + Geo</h3>
+        <div class="role">Durable plunge shell</div>
+        <p>Xiao + <a href="/guides/zhongli-build-en.html">Zhongli</a> + a Geo flex (Albedo / Ningguang) for Geo Resonance's +HP% / +15% DMG to shielded foes. Tanky and self-sufficient.</p>
+        <div class="mini">Great vs bosses</div>
+      </div>
+    </div>
+
+    <h2>Talent Priority</h2>
+    <p>Level in this order — his Normal Attack drives plunges, his Skill gives the jump, his Burst enables the window:</p>
+    <ol>
+      <li><b>Normal Attack</b> (Whirlwind Throw) → 9–13. Plunges scale off NA level; this is his damage. Crown this first.</li>
+      <li><b>Elemental Burst</b> (Bane of All Evil) → 8–10. Extends the plunge window and boosts plunge damage; level it after NA.</li>
+      <li><b>Elemental Skill</b> (Lumidouce Eruption) → 6–8. A small jump + nuke; useful for mobility and energy, not his core damage.</li>
+    </ol>
+
+    <h2>Constellations — C1 and C2 Matter Most</h2>
+    <p>Xiao's constellation curve is front-loaded: early cons fix his biggest pain points.</p>
+    <ul>
+      <li><b>C1 (Conqueror of Evil: Wrath Deity):</b> an extra mid-air charge and reduced fall damage — smoother, longer plunge rotations.</li>
+      <li><b>C2 (Conqueror of Evil: Devourer of Sins):</b> increases his Skill's jump charges and converts them into burst energy — a real ER and damage boost.</li>
+      <li><b>C4 (Conqueror of Evil: Guardian Yaksha):</b> within his Burst he gains +CRIT Rate after using his Skill — smooths his crit floor.</li>
+      <li><b>C6 (Conqueror of Evil: Guardian Yaksha):</b> plunges create mini-vacuum blades on hit — a big personal DPS spike. The whale stop.</li>
+    </ul>
+    <div class="callout"><b>Key rule:</b> C0 is already a top-tier plunge DPS; C1/C2 are the realistic sweet spot if you main him. Because he is a limited 5★, stop at C2 unless Xiao is your favorite.</div>
+
+    <h2>Common Mistakes</h2>
+    <ul>
+      <li><b>Skipping Energy Recharge.</b> Without ~120–140% ER his Burst misses and he does nothing. ER is the stat most new Xiao players ignore.</li>
+      <li><b>No shield.</b> Xiao drains his own HP in Burst; without a <a href="/guides/zhongli-build-en.html">Zhongli</a> / Diona shield he can kill himself. Shield is mandatory.</li>
+      <li><b>Wrong artifact set.</b> Random 2pc+2pc without Vermillion Hereafter leaves the post-Burst ATK stacking on the table. VH 4pc is the default for a reason.</li>
+      <li><b>Building EM or ATK% Goblet wrong.</b> He wants Anemo DMG Goblet and ATK% Sands — EM is useless on him since he barely reacts.</li>
+    </ul>
+
+    <h2>Don't Have Xiao Yet?</h2>
+    <p>He is a <b>limited 5★</b> who reruns periodically, so pull him when he returns — and with 7.0 Snezhnaya reshaping the roster, locking in a <b>team-agnostic main DPS now</b> is the safest long-term play. While you wait, <b>Kaedehara Kazuha</b> or a plunge-friendly 4★ can scratch the AoE itch, but neither gives Xiao's self-contained carry power. Build him alongside <a href="/guides/zhongli-build-en.html">Zhongli</a> and <a href="/guides/bennett-build-en.html">Bennett</a>; together Anemo + Geo + Pyro is the durable hypercarry backbone that carries most accounts through endgame, and right now they are the safest evergreen pickups before the 7.0 shift.</p>
+
+    <div class="pairbox">
+      <a href="/guides/albedo-build-en.html">← Albedo Build (Geo Sub-DPS)</a>
+      <a href="/guides/yae-miko-build-en.html">Yae Miko Build →</a>
+      <a href="/guides/xingqiu-build-en.html">Xingqiu Build →</a>
+      <a href="/guides/nahida-build-en.html">Nahida Build →</a>
+      <a href="/guides/raiden-shogun-build-en.html">Raiden Shogun Build →</a>
+      <a href="/guides/xiangling-build-en.html">Xiangling Build →</a>
+      <a href="/guides/bennett-build-en.html">Bennett Build →</a>
+      <a href="/guides/hutao-build-en.html">Hu Tao Build →</a>
+      <a href="/guides/neuvillette-build-en.html">Neuvillette Build →</a>
+      <a href="/guides/yelan-build-en.html">Yelan Build →</a>
+      <a href="/guides/furina-build-en.html">Furina Build →</a>
+      <a href="/guides/kazuha-build-en.html">Kazuha Build →</a>
+      <a href="/guides/zhongli-build-en.html">Zhongli Build →</a>
+      <a href="/guides/xilonen-build-en.html">Xilonen Build →</a>
+      <a href="/guides/ganyu-build-en.html">Ganyu Build →</a>
+      <a href="/guides/baizhu-build-en.html">Baizhu Build →</a>
+      <a href="/guides/fischl-build-en.html">Fischl Build →</a>
+      <a href="/guides/ayaka-build-en.html">Ayaka Build →</a>
+      <a href="/guides/beginner-characters-en.html">Beginner Must-Build Characters</a>
+      <a href="/guides/artifact-farming-en.html">Artifact Farming Guide →</a>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    Teyvat Starter Guide · Independent Genshin Impact build reference · <a href="/">Home</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a><br/>
+    Not affiliated with HoYoverse. In-game data is always final.
+  </div>
+</footer>
+</body>
+</html>
