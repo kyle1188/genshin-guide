@@ -478,6 +478,7 @@ function renderTeamSlots(){
     const f2 = document.createElement('div'); f2.className='field'; f2.style.marginBottom='10px';
     const l2 = document.createElement('label'); l2.innerHTML = curLang()==='en'?'Element':'元素';
     const es = document.createElement('select'); es.className='elsel'; es.dataset.idx=i;
+    const eblank = document.createElement('option'); eblank.value=''; eblank.textContent = curLang()==='en'?'— element —':'— 元素 —'; es.appendChild(eblank);
     Object.keys(EL).forEach(ec=>{ const o=document.createElement('option'); o.value=ec; o.textContent = curLang()==='en'?EL[ec].en:EL[ec].zh; es.appendChild(o); });
     es.addEventListener('change', calcTeam);
     f2.appendChild(l2); f2.appendChild(es);
