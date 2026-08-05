@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>原神散兵配装攻略 2026：武器、圣遗物、配队与悬浮机制</title>
+<meta name="description" content="原神散兵（流浪者）怎么养？2026完整配装：最佳武器（图莱杜拉的回忆、流浪乐章）、沙上楼阁史话圣遗物、属性目标、主流配队与珉林配合机制解析。" />
+<meta name="keywords" content="原神散兵,散兵配装,散兵武器,散兵圣遗物,散兵配队,原神流浪者,散兵攻略,散兵珉林" />
+<meta name="author" content="提瓦特开荒攻略站" />
+<meta name="theme-color" content="#0c0f16" />
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/wanderer-build.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/wanderer-build.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/wanderer-build-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/wanderer-build-en.html" />
+<meta property="og:title" content="原神散兵配装攻略 2026：武器、圣遗物、配队" />
+<meta property="og:description" content="2026散兵完整配装：武器、沙上楼阁史话、属性目标、配队与珉林配合机制。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/wanderer-build.html" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"原神散兵配装攻略 2026：武器、圣遗物、配队与悬浮机制",
+  "description":"原神散兵（流浪者）完整配装指南：武器、圣遗物、属性目标、配队与珉林配合机制。",
+  "author":{"@type":"Organization","name":"提瓦特开荒攻略站"},
+  "publisher":{"@type":"Organization","name":"提瓦特开荒攻略站"},
+  "datePublished":"2026-08-05",
+  "dateModified":"2026-08-05",
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://genshin-guide-one-five.vercel.app/guides/wanderer-build.html"}
+}
+</script>
+<style>
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff;
+    --fire:#ff6b4a; --water:#4aa8ff; --thunder:#b06bff; --grass:#7dd35f; --rock:#e0c068; --wind:#a8e6cf;
+    --r:14px; --maxw:920px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.8; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:14px; height:58px}
+  .brand{display:flex; align-items:center; gap:9px; font-weight:700; letter-spacing:.5px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+  .brand b{color:var(--gold)}
+  .lang{color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .lang:hover{color:var(--txt); background:var(--panel)}
+  .back{margin-left:auto; color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .back:hover{color:var(--txt); background:var(--panel)}
+  .crumb{font-size:13px; color:var(--txt-mute); margin:26px 0 4px}
+  .crumb a{color:var(--txt-dim)}
+  article{padding:8px 0 40px}
+  h1{font-size:clamp(26px,4.4vw,38px); line-height:1.25; margin:6px 0 14px; letter-spacing:.3px}
+  h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .lead{color:#cdd6e4; font-size:16px; margin:0 0 26px}
+  h2{font-size:clamp(20px,3vw,26px); margin:38px 0 12px; padding-left:14px; border-left:4px solid var(--gold)}
+  h3{font-size:18px; margin:22px 0 8px; color:#fff}
+  p{color:var(--txt-dim); margin:10px 0}
+  ul,ol{color:var(--txt-dim); padding-left:22px}
+  li{margin:6px 0}
+  .src-note{font-size:13px; color:var(--txt-mute); border-left:3px solid var(--line); padding:8px 14px; margin:18px 0; background:var(--panel); border-radius:0 8px 8px 0}
+  .grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; transition:.2s}
+  .card:hover{border-color:rgba(168,230,207,.4)}
+  .card h3{display:flex; align-items:center; gap:10px; margin-top:0}
+  .tag{font-size:12px; font-weight:700; color:#0c0f16; padding:3px 9px; border-radius:7px; white-space:nowrap}
+  .tag.fire{background:var(--fire)} .tag.water{background:var(--water)} .tag.thunder{background:var(--thunder)}
+  .tag.grass{background:var(--grass)} .tag.rock{background:var(--rock)} .tag.wind{background:var(--wind)}
+  .card .role{font-size:13px; color:var(--gold); font-weight:600; margin:2px 0 8px}
+  .card p{font-size:14px; margin:6px 0}
+  .mini{font-size:13px; color:var(--txt-mute); margin-top:8px; border-top:1px dashed var(--line); padding-top:8px}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; background:var(--panel); border-radius:var(--r); overflow:hidden}
+  th,td{padding:11px 13px; text-align:left; border-bottom:1px solid var(--line); color:var(--txt-dim)}
+  th{background:rgba(232,196,116,.08); color:var(--gold); font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .callout{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .callout b{color:var(--gold)}
+  .btn{padding:11px 18px; border-radius:12px; font-weight:700; font-size:14px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; border:1px solid transparent}
+  .btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--txt-mute); font-size:13px; text-align:center}
+  footer a{color:var(--txt-dim)}
+  .pairbox{display:flex; flex-wrap:wrap; gap:12px; margin:30px 0 6px}
+  .pairbox a{padding:10px 16px; border:1px solid var(--line); border-radius:12px; color:var(--txt-dim); font-size:14px; font-weight:600; transition:.2s}
+  .pairbox a:hover{border-color:rgba(232,196,116,.4); color:var(--txt)}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "散兵最佳配装是什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "散兵走风系站场主C路线，圣遗物首选4件套沙上楼阁史话，主词条攻击沙、风伤杯、暴击/暴伤头，攻击力约2000、暴击率70%–80%、暴击伤害160%以上。武器方面五星首选专武图莱杜拉的回忆，四星平民首选流浪乐章，锻造可用证誓之明瞳。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "散兵为什么必须带珉林？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "珉林（Faruzan）是目前唯一能大幅削减敌人风抗并给风C加成的风系辅助。没有她，散兵的风伤会被敌方风抗吃掉一大截，且缺少关键的增伤乘区。珉林达到6命后还能额外提供暴击伤害，是散兵队的核心拼图。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "散兵充能需要多少？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "散兵是站场主C，自身吃到的元素微粒多，元素爆发的需求不高。一般堆到100%–130%元素充能即可保证每轮循环开出大招；若队伍里没有第二个风系角色分担产球，可再提高到130%左右。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span><span>提瓦特<b>开荒攻略站</b></span></div>
+    <a class="lang" href="/guides/wanderer-build-en.html">EN</a>
+    <a class="back" href="/">← 返回首页</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumb"><a href="/">提瓦特开荒攻略站</a> › 散兵配装</nav>
+  <article>
+    <h1>原神散兵配装攻略 2026：<span class="grad">武器、圣遗物、配队与悬浮机制</span></h1>
+    <p class="lead">散兵（流浪者 / Scaramouche）——稻妻出身的<b>风系法器站场主C</b>。他靠元素战技凌空悬浮、打出高频风伤普攻，是少数能"一边躲伤害一边输出"的角色。本篇从零讲清楚：武器、圣遗物、属性目标、主流配队，以及他和<b>珉林（Faruzan）</b>的搭配机制。</p>
+
+    <div class="src-note">说明：散兵的技能机制、属性优先级和套装选择属于长期稳定的核心玩法，不随版本大改。命座与卡池安排会变，但下面这套培养思路一直成立。游戏内数据为准。</div>
+
+    <h2>散兵值得养吗</h2>
+    <p>散兵的价值来自四个特点，让他成为风系里最舒服的站场输出之一：</p>
+    <ul>
+      <li><b>高频风伤普攻：</b>悬浮后普攻全部转风伤，攻速快、手感顺，对群对单都稳。</li>
+      <li><b>自带风套减抗（通过队友）：</b>配合珉林能削敌风抗并吃满风伤乘区，这是他伤害的核心来源。</li>
+      <li><b>输出同时能躲伤害：</b>悬浮状态免于近战贴脸，生存体验比多数站场C好。</li>
+      <li><b>适配多种反应：</b>战技接触火/水/雷/冰会获得对应增益，能灵活塞进蒸发、感电、冻结等队伍。</li>
+    </ul>
+    <div class="callout">散兵的<b>命座提升幅度有限</b>：0 命即可成型，性价比很高。真要投资，<b>6 命</b>才出现质变（大幅强化普攻与重击、降低悬浮体力消耗）；1 命和 2 命只是小幅增益，普通玩家不强制抽。</div>
+
+    <h2>最佳武器</h2>
+    <p>散兵吃<b>攻击力、暴击、普攻伤害</b>，武器选择偏向暴击类法器，四星也能达到专武约 85% 的水平。</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag wind">5★ 专武</span>图莱杜拉的回忆</h3>
+        <div class="role">上限最高</div>
+        <p>散兵量身定做的武器：高暴击伤害，释放战技后层层叠加普攻增伤，完美契合悬浮普攻玩法。但专武池成本极高，<b>一般不建议专门下武器池</b>。</p>
+        <div class="mini">获取：散兵武器池</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag wind">5★</span>现世流涌之证</h3>
+        <div class="role">高攻击 + 暴击率</div>
+        <p>高基础攻击与暴击率，被动加普攻伤害。若你已有这把（狼哥专武），散兵能用且手感很好。</p>
+        <div class="mini">获取：常驻 / 混池（限定时出现）</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag wind">5★</span>四风原典</h3>
+        <div class="role">稳定暴击率</div>
+        <p>提供暴击率与移动速度，被动叠满给元素伤害。不吃珉林减抗冲突，是容易获得的常驻五星法器。</p>
+        <div class="mini">获取：常驻池 / 混池</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag wind">四星 ★</span>流浪乐章</h3>
+        <div class="role">平民首选</div>
+        <p>入场随机buff，最好情况给大量攻击或元素伤害，是散兵<b>最推荐的四星武器</b>。缺点是要看脸触发，但周期短、收益高。</p>
+        <div class="mini">获取：常驻池 / 混池</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag wind">锻造</span>证誓之明瞳</h3>
+        <div class="role">可肝四星</div>
+        <p>枫丹锻造法器，提供元素精通与受击/触发后的增伤，稳定好用、零成本，适合没有流浪乐章的玩家。</p>
+        <div class="mini">获取：枫丹铁匠铺锻造</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag wind">纪行</span>匣里日月</h3>
+        <div class="role">纪行武器</div>
+        <p>珍珠纪行武器，叠层提供普攻与战技增伤，稳定且易精炼。是有纪行的玩家的高性价比选择。</p>
+        <div class="mini">获取：珍珠纪行</div>
+      </div>
+    </div>
+
+    <h2>最佳圣遗物</h2>
+    <p>散兵首选 <b>4 件套沙上楼阁史话</b>；想用风套减抗思路可参考下表。按定位选择：</p>
+    <table>
+      <tr><th>圣遗物</th><th>适用场景</th><th>原因</th></tr>
+      <tr><td><b>沙上楼阁史话</b>（4件）</td><td>绝大多数情况</td><td>重击命中后提升普攻速度并大幅加成普攻/重击/下落伤害，正好吃满散兵的悬浮普攻输出，个人伤害最高。</td></tr>
+      <tr><td><b>追忆之注连</b>（4件）</td><td>无沙上楼阁过渡</td><td>效果类似（增普攻伤），但开大更吃能量。仅作为过渡或没刷到沙上楼阁时用。</td></tr>
+      <tr><td><b>逐影猎人</b>（4件）</td><td>搭配芙宁娜队</td><td>生命值波动提供暴击率，仅在队伍里有芙宁娜这类"扣血又回血"角色时才值得，否则不如沙上楼阁。</td></tr>
+      <tr><td><b>2 攻击% + 2 风伤</b></td><td>过渡</td><td>角斗士/翠绿之影等混搭，词条好就能用，是通用的过渡组合。</td></tr>
+    </table>
+
+    <h2>属性目标</h2>
+    <p>散兵的伤害几乎全吃攻击力与双暴，元素充能只要够开大即可。</p>
+    <table>
+      <tr><th>位置</th><th>主词条</th><th>副词条优先级</th></tr>
+      <tr><td>时之沙</td><td>攻击力%</td><td rowspan="3">暴击率 ≈ 暴击伤害 ＞ 攻击力% ＞ 元素精通（点缀）＞ 元素充能（100–130%）</td></tr>
+      <tr><td>空之杯</td><td>风元素伤害%</td></tr>
+      <tr><td>理之冠</td><td>暴击率 / 暴击伤害</td></tr>
+    </table>
+    <div class="callout"><b>参考数值：</b>攻击力 <b>约 2000</b>（含buff前），暴击率 <b>70–80%</b>，暴击伤害 <b>160% 以上</b>，元素充能 <b>100–130%</b>。先堆够攻击再平衡双暴，充能不必拉太高。</div>
+
+    <h2>主流配队</h2>
+    <p>散兵队的<b>灵魂是珉林</b>——她提供风抗削减与风C增伤，没有她伤害会少一大截。班尼特则提供攻击力、治疗与抗打断，是第二核心。推荐搭配：</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag wind">经典</span>散兵 + 珉林 + 班尼特 + 香菱</h3>
+        <div class="role">最稳万金油</div>
+        <p>珉林减风抗增伤，班尼特给攻击与治疗抗打断，香菱后台火伤。散兵战技接触火元素还能额外加攻击与悬浮上限，循环舒服、对群强。</p>
+        <div class="mini">新手最推荐的散兵队</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag water">蒸发</span>散兵 + 珉林 + 班尼特 + 夜兰</h3>
+        <div class="role">高上限</div>
+        <p>夜兰后台高频挂水与增伤，配合班尼特的双 buff，上限比香菱队更高，但操作与充能要求略高。</p>
+        <div class="mini">追求极限伤害选这套</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag thunder">感电</span>散兵 + 珉林 + 行秋 + 菲谢尔</h3>
+        <div class="role">对群舒适</div>
+        <p>行秋挂水抗打断、菲谢尔补雷打感电，双后台保证生存与反应覆盖，适合深渊对群环境。</p>
+        <div class="mini">缺班尼特时的替代</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">双风</span>散兵 + 珉林 + 班尼特 + 枫原万叶</h3>
+        <div class="role">风系特化</div>
+        <p>万叶带风套进一步减抗并聚怪，珉林再削一轮风抗，风伤乘区叠满。对单略逊、对群极佳。</p>
+        <div class="mini">需要第二个风系分担充能</div>
+      </div>
+    </div>
+
+    <h2>天赋优先级</h2>
+    <p>散兵的普攻和战技是主要输出来源，优先升级这两个：</p>
+    <ol>
+      <li><b>普通攻击</b>（行相）→ 9 级或给皇冠。悬浮后的高频普攻是他绝大部分伤害的来源。</li>
+      <li><b>元素战技</b>（羽画·风姿华歌）→ 8–9 级。开启悬浮、提供增益并刷新普攻节奏。</li>
+      <li><b>元素爆发</b>（狂言·式乐五番）→ 8 级即可。主要用于聚怪补伤害，不是循环核心。</li>
+    </ol>
+
+    <h2>悬浮与元素增益机制</h2>
+    <p>散兵的核心机制：开战技进入悬浮（凌空）状态，普攻转风伤；战技<b>接触到的元素</b>会给他对应增益。搞懂这个，伤害才有质变。</p>
+    <ul>
+      <li><b>开战技（悬浮）：</b>进入凌空状态，普攻/重击/下落全部转风伤，并能小幅躲开近战攻击。</li>
+      <li><b>元素接触增益：</b>悬浮中战技碰到火（班尼特）或水（夜兰/行秋），会提升<b>攻击力约 30%</b> 并增加悬浮体力上限。所以班尼特/夜兰不仅是辅助，更是他的伤害放大器。</li>
+      <li><b>珉林的风套效果：</b>珉林大招给全队风伤加成并削减敌人风抗，这是散兵伤害乘区里最关键的一块。珉林 6 命额外给暴击伤害。</li>
+    </ul>
+    <div class="callout"><b>关键规则：</b>散兵<b>怕打断</b>——悬浮被击会掉下来。班尼特的抗打断、钟离的护盾都能显著提升输出环境。没有护盾/抗打断时，他的体验会差很多。</div>
+
+    <h2>常见误区</h2>
+    <ul>
+      <li><b>不带珉林。</b>没有风抗削减，风伤被敌方风抗吃掉，伤害直接少一大截。珉林是散兵队的核心，不是可选项。</li>
+      <li><b>把他当传统攻击C堆攻击。</b>散兵要攻击力和双暴，但<b>充能不必太高</b>；更常见的问题是双暴没堆够，普攻打不出暴击。</li>
+      <li><b>忽视抗打断。</b>悬浮被击落就断输出。班尼特或护盾角色能解决，别裸站。</li>
+      <li><b>冲动下武器池捞专武。</b>流浪乐章已经达到约 85% 的专武水平，原石建议优先命座或其他角色。</li>
+      <li><b>用翠绿之影（风套）给散兵自己穿。</b>风套减抗要给<b>珉林</b>穿才有用；散兵自己穿风套不如沙上楼阁。别搞反了。</li>
+    </ul>
+
+    <h2>还没抽到散兵</h2>
+    <p>散兵是限定五星。如果缺风系站场主C，<a href="/guides/kazuha-build.html">枫原万叶</a>是顶尖的风系增伤辅助、<a href="/guides/xiao-build.html">魈</a>是另一名风系站场主C（吃攻速与充能），都能覆盖不同需求。先把珉林练起来，等散兵复刻再抽也不迟。</p>
+
+    <div class="pairbox">
+      <a href="/guides/kazuha-build.html">← 枫原万叶配装（风系辅助）</a>
+      <a href="/guides/xiao-build.html">魈配装 →</a>
+      <a href="/guides/bennett-build.html">班尼特配装 →</a>
+      <a href="/guides/xingqiu-build.html">行秋配装 →</a>
+      <a href="/guides/xiangling-build.html">香菱配装 →</a>
+      <a href="/guides/fischl-build.html">菲谢尔配装 →</a>
+      <a href="/guides/yelan-build.html">夜兰配装 →</a>
+      <a href="/guides/beginner-characters.html">新手必练角色清单</a>
+      <a href="/guides/artifact-farming.html">圣遗物刷取优先级</a>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    提瓦特开荒攻略站 · 原神新手到进阶一站式攻略 · <a href="/">返回首页</a> · <a href="/about.html">关于本站</a> · <a href="/privacy.html">隐私政策</a> · <a href="/contact.html">联系投稿</a><br/>
+    非 HoYoverse 官方站点，游戏内数据为准。
+  </div>
+</footer>
+</body>
+</html>
