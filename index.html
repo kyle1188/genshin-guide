@@ -327,6 +327,25 @@
         <a class="btn primary" href="#schedule"><span class="zh">▶ 看 30 天开荒日程</span><span class="en">▶ 30-Day Schedule</span></a>
         <a class="btn ghost" href="#tools"><span class="zh">试试抽卡模拟器</span><span class="en">Try the Gacha Simulator</span></a>
       </div>
+
+      <!-- 热门角色 build 快捷区 -->
+      <div class="hot-builds" style="margin-top:30px;max-width:780px">
+        <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:12px;flex-wrap:wrap">
+          <span style="font-weight:800;font-size:15px;color:var(--gold)"><span class="zh">热门角色配装</span><span class="en">Popular Builds</span></span>
+          <span style="font-size:13px;color:var(--txt-mute)"><span class="zh">直接点进去看武器 / 圣遗物 / 配队</span><span class="en">Tap to open weapon, artifact &amp; team guides</span></span>
+        </div>
+        <div style="display:flex;gap:9px;flex-wrap:wrap">
+          <a href="/guides/neuvillette-build-en.html" style="display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border-radius:999px;border:1px solid var(--line);background:rgba(18,23,35,.6);color:var(--txt);font-size:13.5px;font-weight:600;backdrop-filter:blur(4px);transition:.2s"><i style="width:8px;height:8px;border-radius:50%;background:var(--water);display:inline-block"></i>Neuvillette</a>
+          <a href="/guides/furina-build-en.html" style="display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border-radius:999px;border:1px solid var(--line);background:rgba(18,23,35,.6);color:var(--txt);font-size:13.5px;font-weight:600;backdrop-filter:blur(4px);transition:.2s"><i style="width:8px;height:8px;border-radius:50%;background:var(--water);display:inline-block"></i>Furina</a>
+          <a href="/guides/raiden-shogun-build-en.html" style="display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border-radius:999px;border:1px solid var(--line);background:rgba(18,23,35,.6);color:var(--txt);font-size:13.5px;font-weight:600;backdrop-filter:blur(4px);transition:.2s"><i style="width:8px;height:8px;border-radius:50%;background:var(--thunder);display:inline-block"></i>Raiden</a>
+          <a href="/guides/nahida-build-en.html" style="display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border-radius:999px;border:1px solid var(--line);background:rgba(18,23,35,.6);color:var(--txt);font-size:13.5px;font-weight:600;backdrop-filter:blur(4px);transition:.2s"><i style="width:8px;height:8px;border-radius:50%;background:var(--grass);display:inline-block"></i>Nahida</a>
+          <a href="/guides/zhongli-build-en.html" style="display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border-radius:999px;border:1px solid var(--line);background:rgba(18,23,35,.6);color:var(--txt);font-size:13.5px;font-weight:600;backdrop-filter:blur(4px);transition:.2s"><i style="width:8px;height:8px;border-radius:50%;background:var(--rock);display:inline-block"></i>Zhongli</a>
+          <a href="/guides/kazuha-build-en.html" style="display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border-radius:999px;border:1px solid var(--line);background:rgba(18,23,35,.6);color:var(--txt);font-size:13.5px;font-weight:600;backdrop-filter:blur(4px);transition:.2s"><i style="width:8px;height:8px;border-radius:50%;background:var(--wind);display:inline-block"></i>Kazuha</a>
+          <a href="/guides/hutao-build-en.html" style="display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border-radius:999px;border:1px solid var(--line);background:rgba(18,23,35,.6);color:var(--txt);font-size:13.5px;font-weight:600;backdrop-filter:blur(4px);transition:.2s"><i style="width:8px;height:8px;border-radius:50%;background:var(--fire);display:inline-block"></i>Hu Tao</a>
+          <a href="/guides/ganyu-build-en.html" style="display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border-radius:999px;border:1px solid var(--line);background:rgba(18,23,35,.6);color:var(--txt);font-size:13.5px;font-weight:600;backdrop-filter:blur(4px);transition:.2s"><i style="width:8px;height:8px;border-radius:50%;background:var(--ice);display:inline-block"></i>Ganyu</a>
+        </div>
+        <a class="btn primary" href="#allbuilds" style="margin-top:16px"><span class="zh">查看全部 21 篇角色配装 →</span><span class="en">All 21 Character Builds →</span></a>
+      </div>
     </div>
   </div>
 </section>
@@ -382,8 +401,8 @@
     </div>
 
     <div class="block">
-      <div class="grid g2" style="margin-top:18px">
-        <div class="card">
+        <div class="grid g2" style="margin-top:18px">
+        <div class="card" id="allbuilds">
           <h3><span class="ic" style="background:var(--fire)"><span class="zh">练</span><span class="en">B</span></span><span class="zh">角色培养优先级</span><span class="en">Who to Build First</span></h3>
           <p><b><span class="zh">平民战神（0 命即成型，优先练）</span><span class="en">Free-to-play MVPs (work at C0, build first)</span></b></p>
           <ul>
