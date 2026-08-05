@@ -1,0 +1,567 @@
+<!doctype html>
+<!-- 圣遗物评分 + 配队计算器，纯前端可交互工具页。复用站点暗色主题与中英双语 lang-toggle。 -->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>圣遗物评分 &amp; 配队计算器 · 原神可交互工具</title>
+<meta name="description" id="metaDesc" content="原神圣遗物评分器与配队计算器：输入词条算评分与评级，选角色看元素共鸣、可触发反应与阵容建议。纯前端、可离线、数据不上传。" />
+<meta name="keywords" content="原神圣遗物评分,圣遗物计算器,配队计算器,元素共鸣,原神工具,genshin artifact scorer,genshin team calculator,elemental resonance" />
+<meta name="author" content="提瓦特攻略站 (AI整合)" />
+<meta name="theme-color" content="#0c0f16" />
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<meta property="og:title" content="圣遗物评分 &amp; 配队计算器 · 原神可交互工具" />
+<meta property="og:description" id="ogDesc" content="圣遗物评分器 + 配队计算器：输入词条算评分，选角色看元素共鸣与阵容建议。纯前端、可离线。" />
+<meta property="og:locale" id="ogLocale" content="zh_CN" />
+<meta property="og:type" content="website" />
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/tools/calculators.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/tools/calculators.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/tools/calculators.html" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"WebSite","@id":"https://genshin-guide-one-five.vercel.app/#website","url":"https://genshin-guide-one-five.vercel.app/","name":"提瓦特开荒攻略站","description":"原神开荒攻略+可交互工具：抽卡模拟器、元素反应演示、原石规划器、配队共鸣、开荒进度打卡。","inLanguage":"zh-CN"},
+    {"@type":"SoftwareApplication","name":"原神圣遗物评分器","applicationCategory":"GameApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"},"description":"输入圣遗物的词条数值，按权重算法估算评分与 SS/S/A/B/C/D 评级，并标出目标词条。"},
+    {"@type":"SoftwareApplication","name":"原神配队计算器","applicationCategory":"GameApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"},"description":"选择至多 4 名角色，自动识别元素并显示元素共鸣、可触发反应与阵容建议。"}
+  ]
+}
+</script>
+<style>
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff; --cyan:#7fd8e8;
+    --fire:#ff6b4a; --water:#4aa8ff; --ice:#9fe6ff; --thunder:#b06bff;
+    --grass:#7dd35f; --wind:#a8e6cf; --rock:#e0c068;
+    --ok:#5fd08a; --bad:#ff6f7d;
+    --r:14px; --maxw:1180px; --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.7; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+
+  html[data-lang="zh"] .en{display:none !important}
+  html[data-lang="en"] .zh{display:none !important}
+  .lang-toggle{display:flex; gap:4px; background:var(--panel); border:1px solid var(--line); border-radius:999px; padding:3px}
+  .lang-toggle button{border:none; background:transparent; color:var(--txt-dim); width:34px; height:30px; border-radius:999px; cursor:pointer; font-size:15px; transition:.2s; display:grid; place-items:center}
+  .lang-toggle button.active{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d}
+
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:18px; height:60px}
+  .brand{display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.5px; white-space:nowrap}
+  .brand .dot{width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 14px var(--gold)}
+  .brand b{color:var(--gold)}
+  nav.links{display:flex; gap:6px; margin-left:auto; flex-wrap:wrap}
+  nav.links a{color:var(--txt-dim); padding:8px 14px; border-radius:999px; font-size:14px; font-weight:600; transition:.2s; white-space:nowrap}
+  nav.links a:hover{color:var(--txt); background:var(--panel)}
+  .nav-dropdown{position:relative; display:inline-block}
+  .nav-dropdown > a{cursor:pointer}
+  .nav-dropdown-menu{position:absolute; top:calc(100% + 8px); right:0; background:rgba(12,15,22,.98); border:1px solid var(--line); border-radius:12px; padding:8px; display:none; flex-direction:column; gap:2px; min-width:180px; z-index:60; box-shadow:0 12px 30px rgba(0,0,0,.45)}
+  .nav-dropdown:hover .nav-dropdown-menu{display:flex}
+  .nav-dropdown-menu a{white-space:nowrap; padding:9px 12px; border-radius:8px}
+  .nav-dropdown-menu a:hover{color:var(--txt); background:var(--panel)}
+  .menu-btn{display:none}
+
+  .page{max-width:980px; margin:0 auto; padding:30px 20px 50px}
+  .page-head{margin-bottom:8px}
+  .page-head h1{font-size:26px; margin:0 0 6px; letter-spacing:.3px}
+  .page-head p{color:var(--txt-dim); margin:0 0 4px; font-size:14.5px}
+  .src-note{font-size:12.5px; color:var(--txt-mute); border-left:3px solid var(--line); padding:6px 12px; margin:14px 0 0; background:var(--panel); border-radius:0 8px 8px 0}
+
+  .tool-card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:22px; margin:22px 0; box-shadow:var(--shadow)}
+  .tool-card h2{display:flex; align-items:center; gap:10px; font-size:19px; margin:0 0 4px}
+  .tool-card h2 .ic{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(232,196,116,.2),var(--panel));border:1px solid rgba(232,196,116,.35);font-weight:800;color:var(--gold)}
+  .tool-sub{color:var(--txt-mute); font-size:13.5px; margin:0 0 18px}
+
+  .field-row{display:flex; gap:14px; flex-wrap:wrap}
+  .field{flex:1; min-width:150px; margin-bottom:12px}
+  .field label{display:block; font-size:13px; color:var(--txt-dim); margin-bottom:6px}
+  .field input,.field select{padding:11px 12px; border-radius:10px; border:1px solid var(--line); background:var(--panel); color:var(--txt); font-size:14px; outline:none; width:100%}
+  .field input:focus,.field select:focus{border-color:var(--gold)}
+
+  .sub-row{display:flex; gap:10px; align-items:center; margin:9px 0}
+  .sub-row select{flex:1}
+  .sub-row input{flex:0 0 120px}
+  .sub-row .unit{color:var(--txt-mute); font-size:13px; min-width:26px}
+  .sub-row .del{flex:0 0 auto; background:var(--panel); border:1px solid var(--line); color:var(--txt-dim); border-radius:8px; width:34px; height:38px; cursor:pointer; font-size:16px}
+  .sub-row .del:hover{color:var(--bad); border-color:var(--bad)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0 4px}
+  .chip{padding:7px 13px; border-radius:999px; border:1px solid var(--line); background:var(--panel); cursor:pointer; font-size:13px; color:var(--txt-dim); transition:.15s; user-select:none}
+  .chip.on{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d; border-color:transparent; font-weight:700}
+
+  .btn{border:none; border-radius:999px; padding:11px 20px; font-size:14px; font-weight:700; cursor:pointer; transition:.2s; display:inline-flex; align-items:center; gap:7px}
+  .btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d; box-shadow:0 6px 18px rgba(232,196,116,.3)}
+  .btn.primary:hover{filter:brightness(1.06)}
+  .btn.ghost{background:rgba(18,23,35,.6); border:1px solid var(--line); color:var(--txt)}
+  .btn.ghost:hover{background:var(--panel-strong)}
+
+  .score-box{display:flex; align-items:center; gap:22px; margin:18px 0 8px; flex-wrap:wrap}
+  .score-ring{width:104px; height:104px; border-radius:50%; display:grid; place-items:center; flex:0 0 auto; position:relative; background:conic-gradient(var(--gold) calc(var(--p,0)*1%), rgba(255,255,255,.07) 0)}
+  .score-ring::after{content:""; position:absolute; inset:9px; border-radius:50%; background:var(--bg2)}
+  .score-ring .inner{position:relative; z-index:1; text-align:center}
+  .score-ring .num{font-size:30px; font-weight:800; line-height:1}
+  .score-ring .lab{font-size:11px; color:var(--txt-mute)}
+  .grade{font-size:22px; font-weight:800; padding:8px 16px; border-radius:12px; background:var(--panel); border:1px solid var(--line)}
+  .score-note{color:var(--txt-dim); font-size:13.5px; margin:4px 0 0}
+
+  .breakdown{margin-top:16px}
+  .bk-row{display:flex; align-items:center; gap:10px; margin:8px 0; font-size:13.5px}
+  .bk-name{flex:0 0 130px; color:var(--txt)}
+  .bk-name.pri::after{content:" ★"; color:var(--gold)}
+  .bk-bar{flex:1; height:10px; background:var(--panel); border:1px solid var(--line); border-radius:6px; overflow:hidden}
+  .bk-bar>i{display:block; height:100%; background:linear-gradient(90deg,var(--gold-2),var(--gold))}
+  .bk-val{flex:0 0 92px; text-align:right; color:var(--txt-mute); font-size:12.5px}
+
+  .res-tag{background:linear-gradient(135deg,rgba(232,196,116,.15),var(--panel)); border:1px solid rgba(232,196,116,.4); border-radius:10px; padding:11px 14px; font-size:14px; color:var(--txt); margin:8px 0}
+  .res-tag b{color:var(--gold)}
+  .res-none{color:var(--txt-mute); font-size:14px}
+  .el-pill{display:inline-flex; align-items:center; gap:7px; padding:5px 12px; border-radius:999px; border:1px solid var(--line); font-size:13px; margin:4px 6px 4px 0; background:var(--panel)}
+  .el-pill i{width:9px;height:9px;border-radius:50%;display:inline-block}
+  .tip{background:rgba(255,111,125,.08); border:1px solid rgba(255,111,125,.3); border-radius:10px; padding:11px 14px; font-size:13.5px; color:var(--txt-dim); margin:10px 0}
+  .tip.ok{background:rgba(95,208,138,.08); border-color:rgba(95,208,138,.3)}
+  .links-out{margin-top:14px; font-size:13.5px; color:var(--txt-dim)}
+  .links-out a{margin-right:14px}
+
+  footer{border-top:1px solid var(--line); margin-top:30px; padding:26px 0; color:var(--txt-mute); font-size:13px}
+  footer a{color:var(--txt-dim)}
+  @media(max-width:680px){
+    .nav-dropdown-menu{min-width:150px}
+    .bk-name{flex:0 0 96px}
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="dot"></span><span><b>提瓦特</b>开荒攻略</span></a>
+    <nav class="links">
+      <a href="/"><span class="zh">首页</span><span class="en">Home</span></a>
+      <a href="/#tools"><span class="zh">互动工具</span><span class="en">Tools</span></a>
+      <a href="/#about"><span class="zh">关于来源</span><span class="en">About</span></a>
+      <div class="nav-dropdown">
+        <a><span class="zh">角色配装</span><span class="en">Builds</span> ▾</a>
+        <div class="nav-dropdown-menu">
+          <a href="/guides/furina-build.html"><span class="zh">芙宁娜</span><span class="en">Furina</span></a>
+          <a href="/guides/neuvillette-build.html"><span class="zh">那维莱特</span><span class="en">Neuvillette</span></a>
+          <a href="/guides/zhongli-build.html"><span class="zh">钟离</span><span class="en">Zhongli</span></a>
+          <a href="/guides/raiden-shogun-build.html"><span class="zh">雷电将军</span><span class="en">Raiden</span></a>
+          <a href="/guides/hutao-build.html"><span class="zh">胡桃</span><span class="en">Hu Tao</span></a>
+          <a href="/guides/kazuha-build.html"><span class="zh">枫原万叶</span><span class="en">Kazuha</span></a>
+          <a href="/guides/yelan-build.html"><span class="zh">夜兰</span><span class="en">Yelan</span></a>
+          <a href="/guides/bennett-build.html"><span class="zh">班尼特</span><span class="en">Bennett</span></a>
+        </div>
+      </div>
+    </nav>
+    <div class="lang-toggle" id="langToggle" title="Language / 语言">
+      <button data-l="zh" class="active">🇨🇳</button>
+      <button data-l="en">🇬🇧</button>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+  <div class="page-head">
+    <h1><span class="zh">圣遗物评分 &amp; 配队计算器</span><span class="en">Artifact Scorer &amp; Team Calculator</span></h1>
+    <p><span class="zh">两个纯前端小工具：给圣遗物算分，给阵容看共鸣。数据只在本机计算，不上传任何服务器。</span><span class="en">Two pure-frontend tools: score your artifacts, read your team's resonances. Everything is computed on your device — nothing is uploaded.</span></p>
+  </div>
+  <div class="src-note"><span class="zh">评分为经验权重估算，仅作横向比较参考，非官方标准；共鸣数值以游戏当前版本为准。</span><span class="en">Scores are a weighted estimate for comparison only, not an official standard. Resonance values follow the current game version.</span></div>
+
+  <!-- ===== 圣遗物评分 ===== -->
+  <div class="tool-card">
+    <h2><span class="ic">★</span><span class="zh">圣遗物评分器</span><span class="en">Artifact Scorer</span></h2>
+    <p class="tool-sub"><span class="zh">填入圣遗物的 4 条副词条，勾选你这把配装看重的「目标词条」，自动算分并评级。</span><span class="en">Enter up to 4 substats, tick the stats your build cares about, and get an instant score &amp; grade.</span></p>
+
+    <div class="field-row">
+      <div class="field">
+        <label><span class="zh">部位（仅提示主词条）</span><span class="en">Slot (main-stat hint)</span></label>
+        <select id="slot">
+          <option value="flower"><span class="zh">花</span><span class="en">Flower</span></option>
+          <option value="plume"><span class="zh">羽</span><span class="en">Plume</span></option>
+          <option value="sands"><span class="zh">沙漏</span><span class="en">Sands</span></option>
+          <option value="goblet"><span class="zh">杯</span><span class="en">Goblet</span></option>
+          <option value="circlet"><span class="zh">头</span><span class="en">Circlet</span></option>
+        </select>
+      </div>
+      <div class="field">
+        <label><span class="zh">主词条</span><span class="en">Main stat</span></label>
+        <select id="mainstat">
+          <option value="hpflat"><span class="zh">生命（固定）</span><span class="en">HP (flat)</span></option>
+          <option value="atkflat"><span class="zh">攻击（固定）</span><span class="en">ATK (flat)</span></option>
+          <option value="def"><span class="zh">防御%</span><span class="en">DEF%</span></option>
+          <option value="hp"><span class="zh">生命%</span><span class="en">HP%</span></option>
+          <option value="atk"><span class="zh">攻击%</span><span class="en">ATK%</span></option>
+          <option value="em"><span class="zh">元素精通</span><span class="en">EM</span></option>
+          <option value="er"><span class="zh">元素充能</span><span class="en">ER</span></option>
+          <option value="critRate"><span class="zh">暴击率</span><span class="en">CRIT Rate</span></option>
+          <option value="critDmg"><span class="zh">暴击伤害</span><span class="en">CRIT DMG</span></option>
+          <option value="pyro"><span class="zh">火伤%</span><span class="en">Pyro DMG%</span></option>
+          <option value="hydro"><span class="zh">水伤%</span><span class="en">Hydro DMG%</span></option>
+          <option value="cryo"><span class="zh">冰伤%</span><span class="en">Cryo DMG%</span></option>
+          <option value="electro"><span class="zh">雷伤%</span><span class="en">Electro DMG%</span></option>
+          <option value="anemo"><span class="zh">风伤%</span><span class="en">Anemo DMG%</span></option>
+          <option value="geo"><span class="zh">岩伤%</span><span class="en">Geo DMG%</span></option>
+          <option value="dendro"><span class="zh">草伤%</span><span class="en">Dendro DMG%</span></option>
+          <option value="heal"><span class="zh">治疗加成</span><span class="en">Healing%</span></option>
+          <option value="phys"><span class="zh">物理伤害%</span><span class="en">Physical DMG%</span></option>
+        </select>
+      </div>
+    </div>
+
+    <div style="font-size:13px;color:var(--txt-dim);margin:6px 0 2px"><span class="zh">目标词条（勾选后权重提升）：</span><span class="en">Target stats (ticked = weighted higher):</span></div>
+    <div class="chips" id="prioChips"></div>
+
+    <div style="font-size:13px;color:var(--txt-dim);margin:14px 0 2px"><span class="zh">副词条（最多 4 条）：</span><span class="en">Substats (up to 4):</span></div>
+    <div id="subList"></div>
+    <button class="btn ghost" id="addSub" style="margin-top:6px"><span class="zh">+ 加一条副词条</span><span class="en">+ Add substat</span></button>
+
+    <div class="score-box">
+      <div class="score-ring" id="scoreRing"><div class="inner"><div class="num" id="scoreNum">0</div><div class="lab"><span class="zh">评分</span><span class="en">Score</span></div></div></div>
+      <div>
+        <div class="grade" id="gradeBadge">—</div>
+        <div class="score-note" id="scoreNote"></div>
+      </div>
+    </div>
+    <div class="breakdown" id="breakdown"></div>
+  </div>
+
+  <!-- ===== 配队计算器 ===== -->
+  <div class="tool-card">
+    <h2><span class="ic">⚔</span><span class="zh">配队计算器</span><span class="en">Team Calculator</span></h2>
+    <p class="tool-sub"><span class="zh">选至多 4 名角色（自动识别元素），看元素共鸣、可触发反应与阵容建议；有站内攻略的角色会直接给出链接。</span><span class="en">Pick up to 4 characters (element auto-detected) to see resonances, available reactions, and team tips. Characters with an on-site guide link straight to it.</span></p>
+
+    <div id="teamSlots"></div>
+
+    <h3 style="font-size:15px;margin:20px 0 8px"><span class="zh">元素共鸣</span><span class="en">Elemental Resonance</span></h3>
+    <div id="resOut"></div>
+
+    <h3 style="font-size:15px;margin:18px 0 8px"><span class="zh">元素覆盖 &amp; 可触发反应</span><span class="en">Element Coverage &amp; Reactions</span></h3>
+    <div id="covOut"></div>
+
+    <div id="sustainOut"></div>
+
+    <div class="links-out" id="buildLinks"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span class="zh">提瓦特开荒攻略站 · 粉丝向非官方站点 · 与 HoYoverse / 米哈游 无隶属关系</span><span class="en">Teyvat Starter Guide · fan-made, not affiliated with HoYoverse / miHoYo</span><br/>
+    <a href="/privacy.html"><span class="zh">隐私政策</span><span class="en">Privacy</span></a> ·
+    <a href="/about.html"><span class="zh">关于本站</span><span class="en">About</span></a> ·
+    <a href="/contact.html"><span class="zh">联系投稿</span><span class="en">Contact</span></a>
+  </div>
+</footer>
+
+<script>
+/* ============ 语言切换 ============ */
+function curLang(){ return document.documentElement.getAttribute('data-lang') || 'zh'; }
+const META_TITLE = {zh:'圣遗物评分 & 配队计算器 · 原神可交互工具', en:'Artifact Scorer & Team Calculator · Genshin Tools'};
+const META_DESC = {zh:'原神圣遗物评分器与配队计算器：输入词条算评分与评级，选角色看元素共鸣、可触发反应与阵容建议。纯前端、可离线、数据不上传。', en:'Genshin Impact artifact scorer and team calculator: score your artifacts by substats, pick characters to see elemental resonances and team tips. Pure frontend, offline.'};
+function applyLang(lang){
+  if(lang!=='zh' && lang!=='en') lang='zh';
+  const d=document.documentElement;
+  d.setAttribute('data-lang', lang);
+  d.setAttribute('lang', lang==='zh'?'zh-CN':'en');
+  try{ localStorage.setItem('genshin_lang', lang); }catch(e){}
+  document.querySelectorAll('#langToggle button').forEach(b=>b.classList.toggle('active', b.dataset.l===lang));
+  document.title = META_TITLE[lang];
+  const set=(id,v)=>{ const m=document.getElementById(id); if(m) m.setAttribute('content', v); };
+  set('metaDesc', META_DESC[lang]); set('ogDesc', META_DESC[lang]); set('ogLocale', lang==='zh'?'zh_CN':'en_US');
+  renderPrioChips(); renderSubstats(); renderTeamSlots(); scoreArtifact(); calcTeam();
+}
+document.getElementById('langToggle').querySelectorAll('button').forEach(b=>{
+  b.addEventListener('click', ()=>applyLang(b.dataset.l));
+});
+
+/* ============ 圣遗物评分器 ============ */
+const SUB = {
+  critRate:{zh:'暴击率', en:'CRIT Rate', unit:'%', max:19.4, w:1.0},
+  critDmg :{zh:'暴击伤害', en:'CRIT DMG', unit:'%', max:38.8, w:1.0},
+  atkPct  :{zh:'攻击%', en:'ATK%', unit:'%', max:29.0, w:0.9},
+  em      :{zh:'元素精通', en:'EM', unit:'', max:116, w:0.7},
+  er      :{zh:'元素充能', en:'ER', unit:'%', max:32.6, w:0.5},
+  atkFlat :{zh:'攻击(固定)', en:'ATK flat', unit:'', max:147, w:0.25},
+  hpPct   :{zh:'生命%', en:'HP%', unit:'%', max:29.0, w:0.35},
+  defPct  :{zh:'防御%', en:'DEF%', unit:'%', max:36.5, w:0.3},
+  hpFlat  :{zh:'生命(固定)', en:'HP flat', unit:'', max:1478, w:0.15},
+  defFlat :{zh:'防御(固定)', en:'DEF flat', unit:'', max:184, w:0.12}
+};
+const PRIO_DEFAULT = ['critRate','critDmg','atkPct','em'];
+let prio = new Set(PRIO_DEFAULT);
+const PRI_MULT = 1.6;
+
+function renderPrioChips(){
+  const box = document.getElementById('prioChips');
+  box.innerHTML = '';
+  Object.keys(SUB).forEach(k=>{
+    const c = document.createElement('span');
+    c.className = 'chip' + (prio.has(k)?' on':'');
+    c.textContent = curLang()==='en' ? SUB[k].en : SUB[k].zh;
+    c.addEventListener('click', ()=>{ if(prio.has(k)) prio.delete(k); else prio.add(k); renderPrioChips(); scoreArtifact(); });
+    box.appendChild(c);
+  });
+}
+
+function renderSubstats(){
+  const list = document.getElementById('subList');
+  const rows = Array.from(list.children);
+  if(rows.length===0){ addSub(); return; }
+  rows.forEach(row=>{
+    const sel = row.querySelector('select.subtype');
+    const prev = sel.value;
+    sel.innerHTML = '';
+    Object.keys(SUB).forEach(k=>{
+      const o=document.createElement('option'); o.value=k; o.textContent = curLang()==='en'?SUB[k].en:SUB[k].zh; sel.appendChild(o);
+    });
+    if(prev) sel.value = prev;
+  });
+}
+function addSub(){
+  const list = document.getElementById('subList');
+  if(list.children.length >= 4) return;
+  const row = document.createElement('div');
+  row.className = 'sub-row';
+  const sel = document.createElement('select'); sel.className='subtype';
+  Object.keys(SUB).forEach(k=>{ const o=document.createElement('option'); o.value=k; o.textContent = curLang()==='en'?SUB[k].en:SUB[k].zh; sel.appendChild(o); });
+  const inp = document.createElement('input'); inp.type='number'; inp.min='0'; inp.step='0.1'; inp.placeholder='0'; inp.dataset.role='val';
+  inp.addEventListener('input', scoreArtifact);
+  sel.addEventListener('change', scoreArtifact);
+  const unit = document.createElement('span'); unit.className='unit';
+  const del = document.createElement('button'); del.className='del'; del.textContent='×';
+  del.addEventListener('click', ()=>{ row.remove(); scoreArtifact(); });
+  row.appendChild(sel); row.appendChild(inp); row.appendChild(unit); row.appendChild(del);
+  list.appendChild(row);
+  scoreArtifact();
+}
+document.getElementById('addSub').addEventListener('click', addSub);
+
+function scoreArtifact(){
+  const rows = Array.from(document.querySelectorAll('#subList .sub-row'));
+  const breakdown = [];
+  let sum = 0;
+  rows.forEach(row=>{
+    const type = row.querySelector('select.subtype').value;
+    const val = parseFloat(row.querySelector('input[data-role=val]').value) || 0;
+    const unitEl = row.querySelector('.unit');
+    unitEl.textContent = SUB[type].unit || '';
+    if(val>0){
+      let c = Math.min(val, SUB[type].max) / SUB[type].max * SUB[type].w;
+      const isPri = prio.has(type);
+      if(isPri) c *= PRI_MULT;
+      sum += c;
+      breakdown.push({type, val, c, isPri});
+    }
+  });
+  let bestW = 0;
+  if(prio.size){ Object.keys(SUB).forEach(k=>{ if(prio.has(k)) bestW=Math.max(bestW, SUB[k].w*PRI_MULT); }); }
+  else { Object.keys(SUB).forEach(k=>{ bestW=Math.max(bestW, SUB[k].w); }); }
+  const ideal = bestW * 4;
+  let score = ideal>0 ? Math.round(sum/ideal*100) : 0;
+  if(score>100) score=100;
+  const g = gradeOf(score);
+  document.getElementById('scoreNum').textContent = score;
+  document.getElementById('scoreRing').style.setProperty('--p', score);
+  const badge = document.getElementById('gradeBadge');
+  badge.textContent = g.label + ' (' + score + ')';
+  badge.style.color = g.color; badge.style.borderColor = g.color;
+  const note = document.getElementById('scoreNote');
+  note.innerHTML = curLang()==='en'
+    ? 'Weighted estimate — compare pieces for the same build, not across builds.'
+    : '权重估算值 —— 用于同配装内横向比较，不建议跨配装比大小。';
+  // breakdown
+  const bd = document.getElementById('breakdown'); bd.innerHTML='';
+  if(breakdown.length===0){
+    bd.innerHTML = '<div class="res-none">'+(curLang()==='en'?'Enter at least one substat value > 0.':'至少填入一条大于 0 的词条数值。')+'</div>';
+    return;
+  }
+  const maxC = Math.max.apply(null, breakdown.map(b=>b.c)) || 1;
+  breakdown.forEach(b=>{
+    const L = curLang();
+    const name = L==='en'?SUB[b.type].en:SUB[b.type].zh;
+    const r = document.createElement('div'); r.className='bk-row';
+    const nm = document.createElement('div'); nm.className='bk-name'+(b.isPri?' pri':''); nm.textContent = name + (b.isPri?'':'');
+    const bar = document.createElement('div'); bar.className='bk-bar';
+    const i = document.createElement('i'); i.style.width = Math.round(b.c/maxC*100)+'%'; bar.appendChild(i);
+    const v = document.createElement('div'); v.className='bk-val';
+    v.textContent = (SUB[b.type].unit? b.val+SUB[b.type].unit : b.val) + (b.isPri?' ★':'');
+    r.appendChild(nm); r.appendChild(bar); r.appendChild(v);
+    bd.appendChild(r);
+  });
+}
+function gradeOf(s){
+  if(s>=85) return {label:'SS', color:'#e8c474'};
+  if(s>=72) return {label:'S', color:'#7fd8e8'};
+  if(s>=58) return {label:'A', color:'#5fd08a'};
+  if(s>=42) return {label:'B', color:'#5aa9ff'};
+  if(s>=26) return {label:'C', color:'#d4a24a'};
+  return {label:'D', color:'#ff6f7d'};
+}
+
+/* ============ 配队计算器 ============ */
+const EL = {
+  pyro  :{zh:'火', en:'Pyro', color:'#ff6b4a'},
+  hydro :{zh:'水', en:'Hydro', color:'#4aa8ff'},
+  cryo  :{zh:'冰', en:'Cryo', color:'#9fe6ff'},
+  electro:{zh:'雷', en:'Electro', color:'#b06bff'},
+  anemo :{zh:'风', en:'Anemo', color:'#a8e6cf'},
+  geo   :{zh:'岩', en:'Geo', color:'#e0c068'},
+  dendro:{zh:'草', en:'Dendro', color:'#7dd35f'}
+};
+const RESO = {
+  pyro :{zh:'攻击力 +25%；冰元素附着持续时间 −40%', en:'ATK +25%; Cryo aura duration −40%'},
+  hydro:{zh:'受到的治疗量 +30%；火元素附着持续时间 −40%', en:'Incoming healing +30%; Pyro aura duration −40%'},
+  cryo :{zh:'对冻结 / 冰元素影响下的敌人暴击率 +15%；雷元素附着持续时间 −40%', en:'CRIT Rate +15% vs Frozen/Cryo-affected enemies; Electro aura duration −40%'},
+  electro:{zh:'超载 / 感电 / 超导更容易掉落雷元素微粒；水元素附着持续时间 −40%', en:'Overloaded/Electro-Charged/Superconduct more likely to drop Electro particles; Hydro aura duration −40%'},
+  anemo :{zh:'体力消耗 −15%；移动速度 +10%；技能冷却 −5%', en:'Stamina −15%; Move SPD +10%; Skill CD −5%'},
+  geo  :{zh:'大幅提高抗打断；持有护盾时造成伤害 +15%、护盾强效 +15%', en:'Interrupt resist up; +15% DMG & +15% shield strength when shielded'},
+  dendro:{zh:'触发草元素反应时为全队提供元素精通加成', en:'Dendro reactions grant party-wide Elemental Mastery buffs'},
+  canopy:{zh:'全元素抗性 +15%，物理抗性 +15%', en:'All Elemental RES +15%, Physical RES +15%'}
+};
+const REACT = [
+  {need:['pyro','hydro'], zh:'蒸发 Vaporize', en:'Vaporize'},
+  {need:['pyro','cryo'], zh:'融化 Melt', en:'Melt'},
+  {need:['electro','hydro'], zh:'感电 Electro-Charged', en:'Electro-Charged'},
+  {need:['cryo','hydro'], zh:'冻结 Freeze', en:'Freeze'},
+  {need:['electro','dendro'], zh:'激化 Aggravate/Spread', en:'Aggravate / Spread'},
+  {need:['dendro','hydro'], zh:'绽放 Bloom', en:'Bloom'},
+  {need:['anemo'], any:true, zh:'扩散 Swirl', en:'Swirl'},
+  {need:['geo'], any:true, zh:'结晶 Crystallize', en:'Crystallize'}
+];
+// 角色 -> 元素 + 站内英文 build slug（有则内链）
+const CHAR = {
+  // pyro
+  'hu-tao':{el:'pyro',b:'hutao'}, 'diluc':{el:'pyro'}, 'klee':{el:'pyro'}, 'yoimiya':{el:'pyro'}, 'yanfei':{el:'pyro'},
+  'xiangling':{el:'pyro',b:'xiangling'}, 'bennett':{el:'pyro',b:'bennett'}, 'thoma':{el:'pyro'}, 'dehya':{el:'pyro'}, 'lyney':{el:'pyro'}, 'arlecchino':{el:'pyro'}, 'mavuika':{el:'pyro'}, 'xinyan':{el:'pyro'},
+  // hydro
+  'neuvillette':{el:'hydro',b:'neuvillette'}, 'furina':{el:'hydro',b:'furina'}, 'yelan':{el:'hydro',b:'yelan'}, 'xingqiu':{el:'hydro',b:'xingqiu'},
+  'kokomi':{el:'hydro'}, 'mona':{el:'hydro'}, 'barbara':{el:'hydro'}, 'tartaglia':{el:'hydro'}, 'ayato':{el:'hydro'}, 'nilou':{el:'hydro'}, 'candace':{el:'hydro'}, 'sigewinne':{el:'hydro'},
+  // cryo
+  'ganyu':{el:'cryo',b:'ganyu'}, 'ayaka':{el:'cryo',b:'ayaka'}, 'shenhe':{el:'cryo'}, 'diona':{el:'cryo'}, 'qiqi':{el:'cryo'}, 'chongyun':{el:'cryo'}, 'rosaria':{el:'cryo'}, 'eula':{el:'cryo'}, 'wriothesley':{el:'cryo'}, 'freminet':{el:'cryo'}, 'charlotte':{el:'cryo'}, 'layla':{el:'cryo'}, 'mika':{el:'cryo'}, 'kaeya':{el:'cryo'},
+  // electro
+  'raiden-shogun':{el:'electro',b:'raiden-shogun'}, 'yae-miko':{el:'electro',b:'yae-miko'}, 'fischl':{el:'electro',b:'fischl'}, 'keqing':{el:'electro'}, 'kuki-shinobu':{el:'electro'}, 'beidou':{el:'electro'}, 'lisa':{el:'electro'}, 'razor':{el:'electro'}, 'cyno':{el:'electro'}, 'clorinde':{el:'electro'}, 'sara':{el:'electro'}, 'dori':{el:'electro'}, 'ororon':{el:'electro'},
+  // anemo
+  'kazuha':{el:'anemo',b:'kazuha'}, 'xiao':{el:'anemo',b:'xiao'}, 'venti':{el:'anemo'}, 'jean':{el:'anemo'}, 'sucrose':{el:'anemo'}, 'sayu':{el:'anemo'}, 'heizou':{el:'anemo'}, 'wanderer':{el:'anemo'}, 'lynette':{el:'anemo'}, 'faruzan':{el:'anemo'}, 'xianyun':{el:'anemo'},
+  // geo
+  'zhongli':{el:'geo',b:'zhongli'}, 'albedo':{el:'geo',b:'albedo'}, 'itto':{el:'geo'}, 'ningguang':{el:'geo'}, 'noelle':{el:'geo'}, 'gorou':{el:'geo'}, 'yun-jin':{el:'geo'}, 'chiori':{el:'geo'}, 'navia':{el:'geo'}, 'xilonen':{el:'geo'},
+  // dendro
+  'nahida':{el:'dendro',b:'nahida'}, 'baizhu':{el:'dendro',b:'baizhu'}, 'tighnari':{el:'dendro'}, 'collei':{el:'dendro'}, 'yaoyao':{el:'dendro'}, 'kirara':{el:'dendro'}, 'kinich':{el:'dendro'}, 'emilie':{el:'dendro'}
+};
+const HEALERS = new Set(['bennett','jean','barbara','qiqi','kokomi','baizhu','noelle','diona','yaoyao','sayu','charlotte','mika','sigewinne','xianyun']);
+const SHIELDERS = new Set(['zhongli','noelle','diona','layla','thoma','kirara']);
+
+function renderTeamSlots(){
+  const wrap = document.getElementById('teamSlots');
+  const prevChars = Array.from(wrap.querySelectorAll('.char')).map(s=>s.value);
+  const prevEls = Array.from(wrap.querySelectorAll('.elsel')).map(s=>s.value);
+  wrap.innerHTML = '';
+  for(let i=0;i<4;i++){
+    const row = document.createElement('div'); row.className='field-row'; row.style.alignItems='center';
+    const f1 = document.createElement('div'); f1.className='field'; f1.style.marginBottom='10px';
+    const l1 = document.createElement('label'); l1.innerHTML = (curLang()==='en'?'Character ':'角色 ')+(i+1);
+    const cs = document.createElement('select'); cs.className='char'; cs.dataset.idx=i;
+    const blank = document.createElement('option'); blank.value=''; blank.textContent = curLang()==='en'?'— pick or leave blank —':'— 选角色或留空 —'; cs.appendChild(blank);
+    Object.keys(EL).forEach(ec=>{
+      const og = document.createElement('optgroup'); og.label = curLang()==='en'?EL[ec].en:EL[ec].zh;
+      Object.keys(CHAR).filter(k=>CHAR[k].el===ec).forEach(k=>{ const o=document.createElement('option'); o.value=k; o.textContent = k.replace(/-/g,' '); cs.appendChild(o); });
+    });
+    cs.addEventListener('change', ()=>{ const v=cs.value; const es=row.querySelector('.elsel'); es.value = v?CHAR[v].el:es.value; calcTeam(); });
+    f1.appendChild(l1); f1.appendChild(cs);
+
+    const f2 = document.createElement('div'); f2.className='field'; f2.style.marginBottom='10px';
+    const l2 = document.createElement('label'); l2.innerHTML = curLang()==='en'?'Element':'元素';
+    const es = document.createElement('select'); es.className='elsel'; es.dataset.idx=i;
+    Object.keys(EL).forEach(ec=>{ const o=document.createElement('option'); o.value=ec; o.textContent = curLang()==='en'?EL[ec].en:EL[ec].zh; es.appendChild(o); });
+    es.addEventListener('change', calcTeam);
+    f2.appendChild(l2); f2.appendChild(es);
+
+    if(prevChars[i]) cs.value = prevChars[i];
+    if(prevEls[i]) es.value = prevEls[i];
+    row.appendChild(f1); row.appendChild(f2); wrap.appendChild(row);
+  }
+}
+
+function calcTeam(){
+  const els = Array.from(document.querySelectorAll('.elsel')).map(s=>s.value);
+  const chars = Array.from(document.querySelectorAll('.char')).map(s=>s.value);
+  const L = curLang();
+  // resonances
+  const counts = {}; els.forEach(e=>{ if(e) counts[e]=(counts[e]||0)+1; });
+  const resOut = document.getElementById('resOut');
+  resOut.innerHTML = '';
+  let any=false;
+  Object.keys(counts).forEach(k=>{
+    if(counts[k]>=2){
+      const txt = RESO[k][L];
+      const t = document.createElement('div'); t.className='res-tag';
+      t.innerHTML = '<b>'+(L==='en'?EL[k].en+' ×'+counts[k]:EL[k].zh+'×'+counts[k])+'</b> · '+txt;
+      resOut.appendChild(t); any=true;
+    }
+  });
+  const distinct = Object.keys(counts).length;
+  if(distinct===4){
+    const t = document.createElement('div'); t.className='res-tag';
+    t.innerHTML = '<b>'+(L==='en'?'Protective Canopy (4 elements)':'四色共鸣 Protective Canopy')+'</b> · '+RESO.canopy[L];
+    resOut.appendChild(t); any=true;
+  }
+  if(!any) resOut.innerHTML = '<span class="res-none">'+(L==='en'?'No dual-element resonance yet — match two of the same element to activate one.':'暂无明显双元素共鸣 —— 凑两个同元素可激活共鸣。')+'</span>';
+
+  // coverage + reactions
+  const cov = document.getElementById('covOut'); cov.innerHTML='';
+  els.filter(e=>e).forEach(e=>{
+    const p = document.createElement('span'); p.className='el-pill';
+    p.innerHTML = '<i style="background:'+EL[e].color+'"></i>'+(L==='en'?EL[e].en:EL[e].zh);
+    cov.appendChild(p);
+  });
+  const reacts = [];
+  REACT.forEach(r=>{
+    if(r.any){ if(els.includes(r.need[0])) reacts.push(L==='en'?r.en:r.zh); }
+    else { if(r.need.every(x=>els.includes(x))) reacts.push(L==='en'?r.en:r.zh); }
+  });
+  if(reacts.length){
+    const d=document.createElement('div'); d.style.marginTop='8px'; d.style.fontSize='13.5px'; d.style.color='var(--txt-dim)';
+    d.innerHTML = (L==='en'?'Reactions available: ':'可触发反应：') + reacts.join('、');
+    cov.appendChild(d);
+  }
+
+  // sustain tip
+  const so = document.getElementById('sustainOut'); so.innerHTML='';
+  const hasHeal = chars.some(c=>c && HEALERS.has(c));
+  const hasShield = chars.some(c=>c && SHIELDERS.has(c));
+  if(!hasHeal && !hasShield){
+    so.innerHTML = '<div class="tip">'+(L==='en'?'No healer or shielder — in high-pressure content (Abyss) sustain is thin. Consider adding a shield or heal character.':'阵容暂无治疗与护盾，深渊等高压环境生存压力较大，建议补一个护盾或治疗角色。')+'</div>';
+  } else if(!hasHeal && hasShield){
+    so.innerHTML = '<div class="tip ok">'+(L==='en'?'Shield present, no healer — fine for burst windows, watch chip damage over time.':'有护盾但无治疗，爆发窗口够用，持续掉血环境注意走位。')+'</div>';
+  } else {
+    so.innerHTML = '<div class="tip ok">'+(L==='en'?'Sustain covered (healer / shielder present).':'生存位已覆盖（已有治疗或护盾）。')+'</div>';
+  }
+
+  // internal build links
+  const bl = document.getElementById('buildLinks'); bl.innerHTML='';
+  const linked = chars.filter(c=>c && CHAR[c].b);
+  if(linked.length){
+    bl.innerHTML = (L==='en'?'On-site builds: ':'站内攻略：');
+    linked.forEach(c=>{
+      const a=document.createElement('a'); a.href='/guides/'+CHAR[c].b+'-build-en.html';
+      a.textContent = (L==='en'?CHAR[c].b.replace(/-/g,' '):c.replace(/-/g,' ')) + ' →';
+      bl.appendChild(a);
+    });
+  }
+}
+
+/* ============ 初始化 ============ */
+(function init(){
+  let saved='zh';
+  try{ saved = localStorage.getItem('genshin_lang') || 'zh'; }catch(e){}
+  applyLang(saved);
+})();
+</script>
+</body>
+</html>
