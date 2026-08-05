@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>原神甘雨配装攻略 2026：武器、圣遗物、配队与霜华矢机制</title>
+<meta name="description" content="原神甘雨怎么养？2026完整配装：最佳弓（阿莫斯之弓、平民试作澹月/黑岩战弓）、流浪大地的乐团套装、蓄力霜华矢机制、班尼特/香菱/钟离的融化队与莫娜/万叶的永冻队。" />
+<meta name="keywords" content="原神甘雨,甘雨配装,甘雨武器,甘雨圣遗物,甘雨融化队,甘雨阿莫斯,甘雨霜华矢,甘雨永冻队" />
+<meta name="author" content="提瓦特开荒攻略站" />
+<meta name="theme-color" content="#0c0f16" />
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/ganyu-build.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/ganyu-build.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/ganyu-build-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/ganyu-build-en.html" />
+<meta property="og:title" content="原神甘雨配装攻略 2026：武器、圣遗物、配队" />
+<meta property="og:description" content="2026甘雨完整配装：武器、流浪大地的乐团、蓄力霜华矢机制、融化队与永冻队。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/ganyu-build.html" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"原神甘雨配装攻略 2026：武器、圣遗物、配队与霜华矢机制",
+  "description":"原神甘雨完整配装指南：武器、圣遗物、属性目标、配队与霜华矢机制。",
+  "author":{"@type":"Organization","name":"提瓦特开荒攻略站"},
+  "publisher":{"@type":"Organization","name":"提瓦特开荒攻略站"},
+  "datePublished":"2026-08-05",
+  "dateModified":"2026-08-05",
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://genshin-guide-one-five.vercel.app/guides/ganyu-build.html"}
+}
+</script>
+<style>
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff;
+    --fire:#ff6b4a; --water:#4aa8ff; --thunder:#b06bff; --grass:#7dd35f; --rock:#e0c068; --wind:#a8e6cf; --ice:#9fe3ff;
+    --r:14px; --maxw:920px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.8; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:14px; height:58px}
+  .brand{display:flex; align-items:center; gap:9px; font-weight:700; letter-spacing:.5px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+  .brand b{color:var(--gold)}
+  .lang{color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .lang:hover{color:var(--txt); background:var(--panel)}
+  .back{margin-left:auto; color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .back:hover{color:var(--txt); background:var(--panel)}
+  .crumb{font-size:13px; color:var(--txt-mute); margin:26px 0 4px}
+  .crumb a{color:var(--txt-dim)}
+  article{padding:8px 0 40px}
+  h1{font-size:clamp(26px,4.4vw,38px); line-height:1.25; margin:6px 0 14px; letter-spacing:.3px}
+  h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .lead{color:#cdd6e4; font-size:16px; margin:0 0 26px}
+  h2{font-size:clamp(20px,3vw,26px); margin:38px 0 12px; padding-left:14px; border-left:4px solid var(--gold)}
+  h3{font-size:18px; margin:22px 0 8px; color:#fff}
+  p{color:var(--txt-dim); margin:10px 0}
+  ul,ol{color:var(--txt-dim); padding-left:22px}
+  li{margin:6px 0}
+  .src-note{font-size:13px; color:var(--txt-mute); border-left:3px solid var(--line); padding:8px 14px; margin:18px 0; background:var(--panel); border-radius:0 8px 8px 0}
+  .grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; transition:.2s}
+  .card:hover{border-color:rgba(232,196,116,.4)}
+  .card h3{display:flex; align-items:center; gap:10px; margin-top:0}
+  .tag{font-size:12px; font-weight:700; color:#0c0f16; padding:3px 9px; border-radius:7px; white-space:nowrap}
+  .tag.fire{background:var(--fire)} .tag.water{background:var(--water)} .tag.thunder{background:var(--thunder)}
+  .tag.grass{background:var(--grass)} .tag.rock{background:var(--rock)} .tag.wind{background:var(--wind)} .tag.ice{background:var(--ice)}
+  .card .role{font-size:13px; color:var(--gold); font-weight:600; margin:2px 0 8px}
+  .card p{font-size:14px; margin:6px 0}
+  .mini{font-size:13px; color:var(--txt-mute); margin-top:8px; border-top:1px dashed var(--line); padding-top:8px}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; background:var(--panel); border-radius:var(--r); overflow:hidden}
+  th,td{padding:11px 13px; text-align:left; border-bottom:1px solid var(--line); color:var(--txt-dim)}
+  th{background:rgba(232,196,116,.08); color:var(--gold); font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .callout{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .callout b{color:var(--gold)}
+  .btn{padding:11px 18px; border-radius:12px; font-weight:700; font-size:14px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; border:1px solid transparent}
+  .btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--txt-mute); font-size:13px; text-align:center}
+  footer a{color:var(--txt-dim)}
+  .pairbox{display:flex; flex-wrap:wrap; gap:12px; margin:30px 0 6px}
+  .pairbox a{padding:10px 16px; border:1px solid var(--line); border-radius:12px; color:var(--txt-dim); font-size:14px; font-weight:600; transition:.2s}
+  .pairbox a:hover{border-color:rgba(232,196,116,.4); color:var(--txt)}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "甘雨最佳配装是什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "甘雨走冰系弓主C路线，融化队首选4件套流浪大地的乐团（直接加蓄力伤害），永冻队用4件套冰风迷途的勇士。主词条攻击沙、冰伤杯、双暴头，蓄力霜华矢是核心。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "甘雨最佳武器？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "阿莫斯之弓（Amos' Bow）是她的五星专武，箭飞得越久蓄力伤害越高。强力平民选择是锻造的试作澹月（命中弱点加攻击），以及黑岩战弓与破魔之弓。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "甘雨用什么圣遗物？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "融化/蓄力队用4件套流浪大地的乐团；永冻队用4件套冰风迷途的勇士（冻结时近乎满暴击）。主词条攻击%、冰伤%、暴击率/暴击伤害。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "甘雨值得抽吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "值得。作为标志性冰系弓主C，她同时精通融化（爆发单体）与永冻（舒适群控），是少数能在两种体系都表现出色的单位，投入低、上限高。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span><span>提瓦特<b>开荒攻略站</b></span></div>
+    <a class="lang" href="/guides/ganyu-build-en.html">EN</a>
+    <a class="back" href="/">← 返回首页</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumb"><a href="/">提瓦特开荒攻略站</a> › 甘雨配装</nav>
+  <article>
+    <h1>原神甘雨配装攻略 2026：<span class="grad">武器、圣遗物、配队与霜华矢机制</span></h1>
+    <p class="lead">甘雨——璃月仙鹤半蛟的使者，是原神标志性的<b>冰系弓主C</b>，以蓄力「霜华矢」炸开一朵范围冰爆闻名。她同时精通<b>融化</b>（爆炸单体爆发）与<b>永冻</b>（舒适群控）两类队伍。本篇讲清武器（阿莫斯之弓到平民选择）、流浪大地的乐团套装、她的蓄力霜华矢机制、班尼特 / 香菱 / <a href="/guides/zhongli-build.html">钟离</a> 的融化队，以及莫娜 / <a href="/guides/kazuha-build.html">万叶</a> 的永冻变体。</p>
+
+    <div class="src-note">说明：甘雨的技能机制、属性优先级、套装与武器排序属于长期稳定的核心玩法，不随版本大改。卡池安排会变，但下面这套培养思路一直成立。游戏内数据为准。</div>
+
+    <h2>为什么值得养甘雨</h2>
+    <p>她是远程冰系主C的标杆，也是少数能同时把融化和永冻都养得很好的单位。她的机制奖励耐心的蓄力瞄准，而非无脑循环。</p>
+    <ul>
+      <li><b>霜华矢（标志性）：</b>蓄力射击分裂出一朵霜华，造成范围冰伤。这是她的核心伤害，也是触发融化 / 永冻的媒介。</li>
+      <li><b>融化上限极高：</b>养好的融化甘雨能秒掉 boss——霜华炸开触发融化，享受 2× 冰元素倍率，是全游戏最高的单体数字之一。</li>
+      <li><b>舒适永冻：</b>永冻队里她站桩安全、稳定输出范围伤害，深渊和开荒清怪都舒服。</li>
+      <li><b>也有脱手价值：</b>元素爆发（降众天华）落下一片范围冰域，同时支撑两种反应和轻度控场。</li>
+    </ul>
+    <div class="callout">毕业融化甘雨的霜华炸开每发可打 <b>5 万–10 万+</b>，是冰系爆发伤害的黄金标准，代价是需要瞄准纪律。</div>
+
+    <h2>最佳武器</h2>
+    <p>甘雨要<b>攻击力</b>与<b>双暴</b>，用弓。蓄力加成最理想，但任何高双暴弓都行。</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag ice">5★ 专武</span>阿莫斯之弓</h3>
+        <div class="role">专武 · 蓄力伤害</div>
+        <p>为她量身定制：蓄力攻击伤害随箭飞行时间叠层——完美契合霜华玩法。毫无疑问的最强。</p>
+        <div class="mini">获取：武器池</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag ice">5★ 备选</span>飞雷之弦振 / 若水</h3>
+        <div class="role">双暴堆叠替代</div>
+        <p>两者都给大量暴击伤害/暴击率与条件攻击力，没有阿莫斯时让属性更顺。通用强弓，无需改配装即可接入。</p>
+        <div class="mini">获取：武器池</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag ice">平民 ★</span>试作澹月</h3>
+        <div class="role">顶级免费选择</div>
+        <p>锻造弓，命中弱点后给攻击力%——往往是蓄力甘雨最好的免费武器。精炼能带来可观伤害提升。</p>
+        <div class="mini">获取：铁匠铺（锻造）</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag ice">平民</span>黑岩战弓 / 破魔之弓</h3>
+        <div class="role">商店 / 活动替代</div>
+        <p><b>黑岩战弓</b>（星辉商店）给暴击伤害与击杀叠攻击；<b>破魔之弓</b>（稻妻锻造）在不放大招时加普攻/重击。都免费且扎实。</p>
+        <div class="mini">获取：商店 / 锻造</div>
+      </div>
+    </div>
+
+    <h2>最佳圣遗物</h2>
+    <p>选择取决于队伍。融化队<b>流浪大地的乐团是默认</b>，因为它直接加成蓄力伤害。</p>
+    <table>
+      <tr><th>套装</th><th>适用场景</th><th>原因</th></tr>
+      <tr><td><b>流浪大地的乐团</b>（4件）</td><td>融化 / 蓄力队</td><td>弓/法器蓄力攻击 +35% 伤害，外加精通——融化甘雨最佳，领先优势明显。</td></tr>
+      <tr><td><b>冰风迷途的勇士</b>（4件）</td><td>永冻队</td><td>敌人冻结/受冰影响时给大量暴击率——永冻下暴击率可逼近 100%，副词条腾给暴伤和攻击。</td></tr>
+      <tr><td><b>2 乐团 + 2 冰风 / 攻击%</b></td><td>过渡组合</td><td>任意两件蓄力或冰伤组合都是凑齐 4 件套前的好过渡。</td></tr>
+      <tr><td><b>2 攻击%（角斗士/追忆）+ 2 乐团</b></td><td>攻击流</td><td>保留蓄力加成同时补攻击%——武器/副词条攻击偏低时好用。</td></tr>
+    </table>
+
+    <h2>属性目标</h2>
+    <p>甘雨伤害吃<b>攻击力</b>与<b>双暴</b>，融化队元素精通也有用。平衡攻击、双暴与冰伤。</p>
+    <table>
+      <tr><th>位置</th><th>主词条</th><th>副词条优先级</th></tr>
+      <tr><td>时之沙</td><td>攻击力%</td><td rowspan="3">暴击率 ≈ 暴击伤害 &gt; 攻击力% &gt; 精通（融化约 80–150）&gt; 元素充能</td></tr>
+      <tr><td>空之杯</td><td>冰伤%</td></tr>
+      <tr><td>理之冠</td><td>暴击率 / 暴击伤害</td></tr>
+    </table>
+    <div class="callout"><b>参考数值：</b>攻击力 <b>1800–2400</b>，暴击率 <b>60–100%</b>（永冻靠冰风可逼近 100%），暴击伤害 <b>120–220%</b>，元素精通 <b>80–160</b>（融化）。永冻队所需暴击率低得多，因为套装直接供给。</div>
+
+    <h2>主流配队</h2>
+    <p>甘雨最佳队伍分<b>融化</b>（爆发）与<b>永冻</b>（舒适）两类。两者都要护盾和反应触发器。</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag fire">融化</span>甘雨融化（经典）</h3>
+        <div class="role">顶级单体 DPS</div>
+        <p>甘雨 + 班尼特 + 香菱 + <a href="/guides/zhongli-build.html">钟离</a>。班尼特 / 香菱挂火给霜华打融化；钟离护盾并减抗。旗舰爆发队。</p>
+        <div class="mini">融化最高 2× 冰倍率</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag ice">永冻</span>甘雨莫甘娜</h3>
+        <div class="role">舒适群控</div>
+        <p>甘雨 + 莫娜 + <a href="/guides/kazuha-build.html">万叶</a> + 迪奥娜。莫娜星异与万叶风套减抗放大冰伤；迪奥娜治疗/护盾。站桩安全、冻住全场。经典「莫甘娜」壳。</p>
+        <div class="mini">冰风迷途 → 近满暴击</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag rock">甘雨 + 钟离</span>舒适坦克</h3>
+        <div class="role">安全融化/永冻核心</div>
+        <p>甘雨 + <a href="/guides/zhongli-build.html">钟离</a> + 灵活 + 灵活。钟离护盾 + 减抗让她站桩瞄准零风险并增伤。最新手友好的壳。</p>
+        <div class="mini">第一个该养的甘雨队</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag wind">甘雨 + 万叶</span>风套永冻</h3>
+        <div class="role">群怪友好变体</div>
+        <p>甘雨 + <a href="/guides/kazuha-build.html">万叶</a> + 水（莫娜 / 行秋）+ 灵活。万叶翠绿之影扩散减冰/水抗并聚怪，大幅抬高永冻数字。</p>
+        <div class="mini">万叶风套放大冰伤</div>
+      </div>
+    </div>
+
+    <h2>天赋优先级</h2>
+    <p>按这个顺序升级——霜华矢来自蓄力攻击，受普攻等级管辖：</p>
+    <ol>
+      <li><b>普通攻击</b>（流天射术）→ 8–10。蓄力 / 霜华炸开吃普攻等级——几乎全是她的伤害。</li>
+      <li><b>元素爆发</b>（降众天华）→ 8–9。范围冰域触发反应并补可观爆发伤害。</li>
+      <li><b>元素战技</b>（冰莲）→ 6–8。主要是嘲讽（冰莲）帮你瞄准时引开敌人，伤害优先级低。</li>
+    </ol>
+
+    <h2>霜华矢与瞄准（她的核心）</h2>
+    <p>甘雨的伤害活在蓄力箭里。刻意练好这个循环：</p>
+    <ul>
+      <li><b>永远蓄到 2 级：</b>霜华炸开（第二发、范围冰）才是真伤害。1 级蓄力浪费大半机制。</li>
+      <li><b>瞄弱点 / 怪群中心：</b>试作澹月与爆头奖励精准瞄准——有盾站桩让这变得稳定。</li>
+      <li><b>卡反应顺序：</b>融化时让火留在敌人身上，再落霜华让冰触发融化（反过来火打冰只有 1.5×，冰打火是 2×）。</li>
+      <li><b>用嘲讽：</b>战技冰莲拉仇恨，让她安心瞄准。放在你与敌人之间。</li>
+    </ul>
+    <div class="callout"><b>关键规则：</b>甘雨是瞄准型主C，不是按键狂。有盾、站桩、精准 2 级霜华的甘雨，伤害远超慌乱的那位。</div>
+
+    <h2>常见误区</h2>
+    <ul>
+      <li><b>1 级蓄力就放。</b>霜华炸开（范围）只在满 2 级蓄力出现。短蓄力等于扔掉大半伤害。</li>
+      <li><b>融化顺序错。</b>甘雨必须让冰打到已有火上（2×）。若火先打她冰（1.5×），倍率少三分之一。</li>
+      <li><b>堆充能而非攻击/双暴。</b>她不依赖大招循环；过度投资充能饿死主属性。</li>
+      <li><b>无护盾。</b>没有钟离/迪奥娜，她瞄准中被打断、被近身秒。伤害直接崩。</li>
+      <li><b>融化忽视精通。</b>约 80–160 精通明显抬升融化伤害。零精通等于少打爆发。</li>
+    </ul>
+
+    <h2>还没抽到甘雨</h2>
+    <p>她是限定五星。冰系远程主C替代：<b>罗莎莉亚</b>（卡池与剧情四星，强枪冰C兼暴击辅助）与<b>凯亚</b>（免费开局）能覆盖后台挂冰。<b>莫娜</b> / <b>行秋</b>加护盾位（钟离 / 迪奥娜）能顶上甘雨多数壳。等她复刻前先养这些，它们能直接塞进同款队伍。</p>
+
+    <div class="pairbox">
+      <a href="/guides/hutao-build.html">← 胡桃配装（火C 参考）</a>
+      <a href="/guides/zhongli-build.html">钟离配装 →</a>
+      <a href="/guides/kazuha-build.html">枫原万叶配装 →</a>
+      <a href="/guides/furina-build.html">芙宁娜配装 →</a>
+      <a href="/guides/neuvillette-build.html">那维莱特配装 →</a>
+      <a href="/guides/xilonen-build.html">希诺宁配装 →</a>
+      <a href="/guides/raiden-shogun-build.html">雷电将军配装 →</a>
+      <a href="/guides/nahida-build.html">纳西妲配装 →</a>
+      <a href="/guides/yelan-build.html">夜兰配装 →</a>
+      <a href="/guides/bennett-build.html">班尼特配装 →</a>
+      <a href="/guides/xingqiu-build.html">行秋配装 →</a>
+      <a href="/guides/baizhu-build.html">白术配装 →</a>
+      <a href="/guides/fischl-build.html">菲谢尔配装 →</a>
+      <a href="/guides/ayaka-build.html">神里绫华配装 →</a>
+      <a href="/guides/artifact-farming-en.html">圣遗物刷取优先级（英文）</a>
+      <a href="/guides/albedo-build.html">阿贝多配装 →</a>
+      <a href="/guides/xiao-build.html">魈配装 →</a>
+      <a href="/guides/yae-miko-build.html">八重神子配装 →</a>
+      <a href="/guides/beginner-characters.html">新手必练角色清单</a>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    提瓦特开荒攻略站 · 原神新手到进阶一站式攻略 · <a href="/">返回首页</a> · <a href="/about.html">关于本站</a> · <a href="/privacy.html">隐私政策</a> · <a href="/contact.html">联系投稿</a><br/>
+    非 HoYoverse 官方站点，游戏内数据为准。
+  </div>
+</footer>
+</body>
+</html>
