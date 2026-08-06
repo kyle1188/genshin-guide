@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Genshin Lyney Build Guide 2026: Best Weapons, Artifacts, Teams & Mono-Pyro Mechanic</title>
+<meta name="description" content="How to build Lyney in Genshin Impact 2026: best weapons (The First Great Magic, Aqua Simulacra), Marechaussee Hunter artifacts, Mono-Pyro damage mechanic, talents, constellations and team comps." />
+<meta name="keywords" content="Genshin Lyney, Lyney build, Lyney weapon, Lyney artifacts, Lyney teams, Pyro bow DPS, Lyney guide" />
+<meta name="author" content="Teyvat Starter Guide" />
+<meta name="theme-color" content="#0c0f16" />
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/lyney-build-en.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/lyney-build.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/lyney-build-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/lyney-build-en.html" />
+<meta property="og:title" content="Genshin Lyney Build Guide 2026: Weapons, Artifacts, Teams" />
+<meta property="og:description" content="2026 Lyney build: weapons, Marechaussee Hunter artifacts, Mono-Pyro damage mechanic, talents, constellations and team comps." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/lyney-build-en.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Genshin Lyney Build Guide 2026: Best Weapons, Artifacts, Teams & Mono-Pyro Mechanic",
+  "description":"Complete Lyney build guide: weapons, artifacts, talent priority, Mono-Pyro damage mechanic and team comps.",
+  "author":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "publisher":{"@type":"Organization","name":"Teyvat Starter Guide"},
+  "datePublished":"2026-08-06",
+  "dateModified":"2026-08-06",
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://genshin-guide-one-five.vercel.app/guides/lyney-build-en.html"}
+}
+</script>
+<style>
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff;
+    --fire:#ff6b4a; --water:#4aa8ff; --thunder:#b06bff; --grass:#7dd35f; --rock:#e0c068; --wind:#a8e6cf;
+    --r:14px; --maxw:920px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,"PingFang SC","Microsoft YaHei",sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.8; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:14px; height:58px}
+  .brand{display:flex; align-items:center; gap:9px; font-weight:700; letter-spacing:.5px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+  .brand b{color:var(--gold)}
+  .lang{color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .lang:hover{color:var(--txt); background:var(--panel)}
+  .back{margin-left:auto; color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .back:hover{color:var(--txt); background:var(--panel)}
+  .crumb{font-size:13px; color:var(--txt-mute); margin:26px 0 4px}
+  .crumb a{color:var(--txt-dim)}
+  article{padding:8px 0 40px}
+  h1{font-size:clamp(26px,4.4vw,38px); line-height:1.25; margin:6px 0 14px; letter-spacing:.3px}
+  h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .lead{color:#cdd6e4; font-size:16px; margin:0 0 26px}
+  h2{font-size:clamp(20px,3vw,26px); margin:38px 0 12px; padding-left:14px; border-left:4px solid var(--gold)}
+  h3{font-size:18px; margin:22px 0 8px; color:#fff}
+  p{color:var(--txt-dim); margin:10px 0}
+  ul,ol{color:var(--txt-dim); padding-left:22px}
+  li{margin:6px 0}
+  .src-note{font-size:13px; color:var(--txt-mute); border-left:3px solid var(--line); padding:8px 14px; margin:18px 0; background:var(--panel); border-radius:0 8px 8px 0}
+  .grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; transition:.2s}
+  .card:hover{border-color:rgba(232,196,116,.4)}
+  .card h3{display:flex; align-items:center; gap:10px; margin-top:0}
+  .tag{font-size:12px; font-weight:700; color:#0c0f16; padding:3px 9px; border-radius:7px; white-space:nowrap}
+  .tag.fire{background:var(--fire)} .tag.water{background:var(--water)} .tag.thunder{background:var(--thunder)}
+  .tag.grass{background:var(--grass)} .tag.rock{background:var(--rock)} .tag.wind{background:var(--wind)}
+  .card .role{font-size:13px; color:var(--gold); font-weight:600; margin:2px 0 8px}
+  .card p{font-size:14px; margin:6px 0}
+  .mini{font-size:13px; color:var(--txt-mute); margin-top:8px; border-top:1px dashed var(--line); padding-top:8px}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; background:var(--panel); border-radius:var(--r); overflow:hidden}
+  th,td{padding:11px 13px; text-align:left; border-bottom:1px solid var(--line); color:var(--txt-dim)}
+  th{background:rgba(232,196,116,.08); color:var(--gold); font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .callout{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .callout b{color:var(--gold)}
+  .btn{padding:11px 18px; border-radius:12px; font-weight:700; font-size:14px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; border:1px solid transparent}
+  .btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--txt-mute); font-size:13px; text-align:center}
+  footer a{color:var(--txt-dim)}
+  .pairbox{display:flex; flex-wrap:wrap; gap:12px; margin:30px 0 6px}
+  .pairbox a{padding:10px 16px; border:1px solid var(--line); border-radius:12px; color:var(--txt-dim); font-size:14px; font-weight:600; transition:.2s}
+  .pairbox a:hover{border-color:rgba(232,196,116,.4); color:var(--txt)}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the best build for Lyney?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lyney is a Pyro charged-attack bow DPS. Use 4-piece Marechaussee Hunter, with ATK% sands, Pyro DMG goblet, and CRIT Rate/CRIT DMG circlet (aim 60-70% CRIT Rate, 150%+ CRIT DMG). Bis weapon is The First Great Magic; good 4-stars are Scion of the Blazing Sun and Song of Stillness."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is Lyney strong in a Mono-Pyro team?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lyney's passive gives 60% base DMG bonus against Pyro-affected enemies, plus another 20% for each Pyro teammate besides himself, capped at 100% with three Pyro characters. Bennett + Xiangling therefore max out his direct DMG, making Mono-Pyro his highest-ceiling comp."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What stats should I prioritize on Lyney?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prioritize ATK 2000+, 60-70% CRIT Rate (Marechaussee Hunter adds up to 36%), 150%+ CRIT DMG, and ~120% Energy Recharge for burst uptime. He deals direct DMG and does not rely on reactions, so Elemental Mastery is a low-priority substat."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span><span>Teyvat <b>Starter Guide</b></span></div>
+    <a class="lang" href="/guides/lyney-build.html">中文</a>
+    <a class="back" href="/">← Home</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumb"><a href="/">Teyvat Starter Guide</a> › Lyney Build</nav>
+  <article>
+    <h1>Genshin Lyney Build Guide 2026: <span class="grad">Weapons, Artifacts, Teams &amp; Mono-Pyro Mechanic</span></h1>
+    <p class="lead">Lyney — Fontaine's star magician — is a <b>Pyro charged-attack bow DPS</b>. His Level-2 aimed shot summons a Grin-Malkin Hat and stacks <b>Prop Surplus</b>, which powers up his Elemental Skill. Paired with two more Pyro teammates, his passive maxes out at +100% DMG. This guide covers weapons, artifacts, stat targets, team comps, and his unique <b>Mono-Pyro mechanic</b>.</p>
+
+    <div class="src-note">Note: Lyney's kit, Mono-Pyro damage logic and artifact choice are long-term stable core gameplay and do not change much across versions. Constellations and banner schedules shift, but the build below holds. In-game data is authoritative.</div>
+
+    <h2>Is Lyney worth building?</h2>
+    <p>Lyney stands out as the benchmark of Pyro charged-attack teams for four reasons:</p>
+    <ul>
+      <li><b>Highest direct Pyro DMG:</b> with three Pyro teammates his passive stacks to +100%, dealing huge single-target and AoE burst.</li>
+      <li><b>Smooth charged-attack loop:</b> the Level-2 shot summons a taunting hat and stacks Prop Surplus for Skill DMG, with a comfortable rotation.</li>
+      <li><b>Built-in HP management:</b> charged shots and the Skill cost HP but also heal, so with Bennett survival is rarely an issue.</li>
+      <li><b>Strong without reactions:</b> he relies on direct DMG, so he does not need a Hydro/Cryo applier — team building stays flexible.</li>
+    </ul>
+    <div class="callout">Lyney is <b>complete at C0</b> and very cost-effective. <b>C2</b> adds +20% Skill DMG per Prop Surplus stack (capped +100%) and is the best value investment; <b>C6</b> resets Skill cooldown on kill and adds +50% CRIT DMG to charged shots for a feel-changing spike. High constellations are not mandatory.</div>
+
+    <h2>Best weapons</h2>
+    <p>Lyney wants <b>CRIT, ATK and charged-attack bonuses</b>. Even 4-star options reach about 85% of his signature's output.</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag fire">5★ Signature</span>The First Great Magic</h3>
+        <div class="role">Highest ceiling</div>
+        <p>Made for Lyney: high CRIT DMG, charged-attack bonus, and ATK that scales with how many Pyro teammates he has. Best-in-slot, but the weapon banner is expensive — <b>do not force the weapon banner</b> unless you want it.</p>
+        <div class="mini">From: Lyney weapon banner</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">5★</span>Aqua Simulacra</h3>
+        <div class="role">High CRIT DMG general</div>
+        <p>Big CRIT DMG and a universal DMG bonus. The safest alternative when you lack The First Great Magic, and works fine in single-Pyro teams.</p>
+        <div class="mini">From: Standard / chronicled</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">5★</span>Amos' Bow</h3>
+        <div class="role">Charged-attack focused</div>
+        <p>Gives ATK and ramps DMG by arrow travel time — perfectly suited to Lyney's mid-range charged shots. A widely usable 5-star bow.</p>
+        <div class="mini">From: Standard / chronicled</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">Battle Pass</span>Scion of the Blazing Sun</h3>
+        <div class="role">Best 4-star</div>
+        <p>Battle Pass bow with CRIT Rate and a charged-attack buff. The <b>most recommended 4-star</b> and excellent value.</p>
+        <div class="mini">From: Gnostic Hymn</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">4★ ★</span>Song of Stillness / Prototype Crescent</h3>
+        <div class="role">BP / craftable</div>
+        <p><b>Song of Stillness</b> (BP) boosts DMG when healed — permanent with Bennett. <b>Prototype Crescent</b> (craftable) gives charged-attack and burst DMG at full HP, a great free option.</p>
+        <div class="mini">From: BP / blacksmith</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">Starter</span>Recurve Bow</h3>
+        <div class="role">3★ early-game</div>
+        <p>A 3-star with lots of CRIT Rate and a charged-attack buff at refine 5. Surprisingly strong for early open-world farming until you pull a better bow.</p>
+        <div class="mini">From: chests / wishes</div>
+      </div>
+    </div>
+
+    <h2>Best artifacts</h2>
+    <p>Lyney's default is <b>4-piece Marechaussee Hunter</b>; it is nearly mandatory when you need CRIT Rate. Choose by role:</p>
+    <table>
+      <tr><th>Artifact</th><th>Use case</th><th>Why</th></tr>
+      <tr><td><b>Marechaussee Hunter</b> (4pc)</td><td>Almost always</td><td>2pc +15% NA/CA DMG; 4pc stacks CRIT Rate on HP change (up to 36%). Lyney self-heals, so it stays near full — the best set.</td></tr>
+      <tr><td><b>Crimson Witch of Flames</b> (4pc)</td><td>Reaction teams</td><td>+15% Pyro DMG and reaction bonuses. Fine for Vaporize/Melt, but coverage is less stable than Marechaussee for direct DMG.</td></tr>
+      <tr><td><b>2 ATK + 2 Pyro / Wanderer</b></td><td>Transition</td><td>Gladiator/Shimenawa/Emblem mixes. Good stats are usable — a general bridge set.</td></tr>
+    </table>
+
+    <h2>Stat targets</h2>
+    <p>Lyney deals direct DMG, so ATK and dual-CRIT lead; Elemental Mastery is secondary.</p>
+    <table>
+      <tr><th>Slot</th><th>Main stat</th><th>Substat priority</th></tr>
+      <tr><td>Sands</td><td>ATK%</td><td rowspan="3">CRIT Rate ≈ CRIT DMG &gt; ATK% &gt; Energy Recharge &gt; Elemental Mastery</td></tr>
+      <tr><td>Goblet</td><td>Pyro DMG%</td></tr>
+      <tr><td>Circlet</td><td>CRIT Rate / CRIT DMG</td></tr>
+    </table>
+    <div class="callout"><b>Reference numbers:</b> ATK <b>2000+</b>, CRIT Rate <b>60-70%</b> (including Marechaussee), CRIT DMG <b>150%+</b>, Energy Recharge <b>~120%</b> for burst uptime. Build ATK first, then balance dual-CRIT.</div>
+
+    <h2>Best teams</h2>
+    <p>Lyney's <b>core is the Mono-Pyro damage bonus</b> — three Pyro characters max his passive. Bennett and Xiangling are the backbone. Recommended comps:</p>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag fire">Mono-Pyro</span>Lyney + Bennett + Xiangling + Kazuha</h3>
+        <div class="role">Highest ceiling</div>
+        <p>Bennett buffs ATK and heals, Xiangling adds off-field Pyro, Kazuha groups and shreds Pyro RES. Three Pyro maxes Lyney's passive — the best and most newbie-friendly Lyney team.</p>
+        <div class="mini">No Kazuha? Swap in Sucrose</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag water">Vaporize</span>Lyney + Yelan + Bennett + Kazuha</h3>
+        <div class="role">Stable Vape</div>
+        <p>Yelan applies Hydro consistently, Bennett buffs, Kazuha swirls and shreds. Lyney's charged shots trigger steady Vaporize — excellent single-target.</p>
+        <div class="mini">Yelan can be Xingqiu</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag rock">Shield</span>Lyney + Zhongli + Bennett + Xiangling</h3>
+        <div class="role">Comfort pick</div>
+        <p>Zhongli's shield keeps you safe, Bennett and Xiangling supply double Pyro. Smooth, forgiving, and great across Abyss floors.</p>
+        <div class="mini">Great for multi-floor Abyss</div>
+      </div>
+      <div class="card">
+        <h3><span class="tag fire">Double Pyro</span>Lyney + Bennett + Thoma + Sucrose</h3>
+        <div class="role">F2P friendly</div>
+        <p>Thoma shields and adds Pyro resonance, Sucrose swirls and shreds. A cheap triple-Pyro setup that works without Kazuha or Zhongli.</p>
+        <div class="mini">For accounts missing 5-star supports</div>
+      </div>
+    </div>
+
+    <h2>Talent priority</h2>
+    <p>Lyney's Level-2 charged shot is his main damage source — level it first:</p>
+    <ol>
+      <li><b>Normal Attack</b> (Card Force Translocation) → 9 or crown. The Level-2 shot summons the hat and stacks Prop Surplus — most of his damage.</li>
+      <li><b>Elemental Skill</b> (Bewildering Lights) → 8-9. Consumes Prop Surplus for AoE Pyro DMG and heals — key to burst and sustain.</li>
+      <li><b>Elemental Burst</b> (Wondrous Trick: Miracle Parade) → 8. Mobility and extra Pyro DMG; not the rotation core.</li>
+    </ol>
+
+    <h2>Prop Surplus & Mono-Pyro mechanic</h2>
+    <p>Lyney's core: the Level-2 shot summons a <b>Grin-Malkin Hat</b> and stacks <b>Prop Surplus</b> (max 5); the Skill consumes stacks for bonus DMG. Understand this and damage jumps.</p>
+    <ul>
+      <li><b>Level-2 charged shot:</b> summons a taunting hat and adds 1 Prop Surplus stack. Stacks only build above 60% HP, and HP never drops below 60% this way.</li>
+      <li><b>Passive "Finale of the Dawnsight":</b> +60% DMG vs Pyro-affected enemies, plus +20% per extra Pyro teammate (capped 100% at three Pyro). This is why Mono-Pyro is so strong.</li>
+      <li><b>HP management:</b> the Skill consumes Prop Surplus to heal; with Bennett survival is trivial. Keep HP above 60% to keep stacking.</li>
+    </ul>
+    <div class="callout"><b>Key rule:</b> Lyney's <b>Skill is weak without Prop Surplus</b> — keep stacking via charged shots and don't waste the Skill empty. Also, <b>Mono-Pyro wants three Pyro characters</b> (including Lyney); don't slot a Hydro/Cryo applier unless you deliberately switch to Vaporize/Melt.</div>
+
+    <h2>Common mistakes</h2>
+    <ul>
+      <li><b>Stacking CRIT DMG but not ATK.</b> Lyney scales on ATK%; 2000+ is the baseline or late-game damage feels flat.</li>
+      <li><b>Breaking the Mono-Pyro bonus with reactions.</b> Fewer than three Pyro leaves the passive uncapped. If you want Vape, drop a Pyro and use Yelan/Xingqiu with a clear plan.</li>
+      <li><b>Skipping Bennett / Xiangling.</b> Double Pyro is what maxes his passive; without them Lyney is just an average Pyro carry.</li>
+      <li><b>Letting HP drop too low.</b> Below 60% you stop gaining Prop Surplus, hurting both Skill DMG and healing — watch the HP line.</li>
+      <li><b>Ignoring Energy Recharge.</b> The burst costs 80 energy; single-Pyro teams strain, so aim ~120% or use Pyro resonance.</li>
+    </ul>
+
+    <h2>No Lyney yet?</h2>
+    <p>Lyney is a limited 5-star. To try a Pyro main DPS first, <a href="/guides/hutao-build.html">Hu Tao</a> is the burst benchmark, <a href="/guides/bennett-build.html">Bennett</a> is the universal Pyro support, and <a href="/guides/xiangling-build.html">Xiangling</a> gives off-field Pyro everyone wants — build the Pyro framework now and add Lyney on rerun. For another carry see <a href="/guides/arlecchino-build.html">Arlecchino</a>.</p>
+
+    <div class="pairbox">
+      <a href="/guides/bennett-build.html">← Bennett Build (Pyro support core)</a>
+      <a href="/guides/xiangling-build.html">Xiangling Build →</a>
+      <a href="/guides/hutao-build.html">Hu Tao Build →</a>
+      <a href="/guides/kazuha-build.html">Kazuha Build →</a>
+      <a href="/guides/zhongli-build.html">Zhongli Build →</a>
+      <a href="/guides/yelan-build.html">Yelan Build →</a>
+      <a href="/guides/arlecchino-build.html">Arlecchino Build →</a>
+      <a href="/guides/beginner-characters.html">Beginner Characters List</a>
+      <a href="/guides/artifact-farming.html">Artifact Farming Priority</a>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <div class="wrap">
+    Teyvat Starter Guide · Genshin beginner-to-advanced guides · <a href="/">Home</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a><br/>
+    Unofficial site, not affiliated with HoYoverse. In-game data is authoritative.
+  </div>
+</footer>
+</body>
+</html>
