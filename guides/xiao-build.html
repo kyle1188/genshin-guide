@@ -278,6 +278,10 @@
     <h2>还没抽到魈</h2>
     <p>他是<b>限定五星</b>，周期复刻，所以复刻时抽——而 7.0 至冬重塑阵容，现在锁一个<b>不挑队友的主C</b>是最安全的长期打法。等待期间，<b>枫原万叶</b>或某个下落友好的四星能解馋，但都没有魈的自洽主C力。把<a href="/guides/zhongli-build.html">钟离</a>与<a href="/guides/bennett-build.html">班尼特</a>和他一起养；三者风+岩+火是带多数账号过终局的耐久主C骨架，而现在正是 7.0 变动前最安全的常青抽取。</p>
 
+        <section class="faq">
+      <h2>快速问答</h2>
+      <div class="qa"><h3>原神魈最佳配装是什么？</h3><p>魈走风系下落主C，圣遗物首选4件套辰砂往生录（大招后叠攻击%），主词条攻击%、风伤%、双暴（配芙宁娜约120-130%充能，无则约140%）。他是风系版自私主C：有盾（钟离）+增伤（班尼特）就能清场，不依赖特定队友，永不过时。</p></div><div class="qa"><h3>魈最佳武器？</h3><p>和璞鸢·贯虹之槊是专武：高基础攻击+命中叠攻击%被动，长下落连段滚雪球。护摩之杖（生命转攻击+低血增伤）裸伤第二；平民最强是决斗之枪（暴击+被围攻击%）。免费白缨枪R5也意外地强——魈的下落算普攻。</p></div><div class="qa"><h3>魈充能需要多少？</h3><p>魈的命门是大招覆盖率。有芙宁娜 fanfare 或充能电池约 120% 充能；无则推到 140% 让下落窗口永远就绪。这是多数没养好的魈忽略的属性。</p></div><div class="qa"><h3>魈值得抽吗？</h3><p>值得。C0 已是顶级下落主C，C1/C2 是现实甜点。他是限定五星，复刻时抽；7.0 阵容变动下，一个不挑队友的主C是最安全的长期投资。</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/albedo-build.html">← 阿贝多配装（岩系副C）</a>
       <a href="/guides/yae-miko-build.html">八重神子配装 →</a>
@@ -327,7 +331,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！');f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试')}}).catch(function(){m.className='msg err';m.textContent='网络错误');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
 <footer>
   <div class="wrap">

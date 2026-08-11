@@ -243,6 +243,10 @@
     <h2>还没抽到希诺宁</h2>
     <p>她是限定五星。等待期间，类似后台功能可用<a href="/guides/zhongli-build.html">钟离</a>（千岩牢固护盾）或<a href="/guides/kazuha-build.html">万叶</a>（翠绿之影减抗）替代——但没人能像她一样又奶又减抗又增伤。无论如何，提前刷防御力圣遗物和西风剑都值得。</p>
 
+        <section class="faq">
+      <h2>快速问答</h2>
+      <div class="qa"><h3>希诺宁最佳配装是什么？</h3><p>希诺宁走岩系辅助路线，圣遗物首选4件套煅石之城的英雄诗篇，主词条堆防御力%。她提供通用元素减抗、治疗和随队伍元素变化的全队增伤，几乎能塞进任何队伍。</p></div><div class="qa"><h3>希诺宁最佳武器？</h3><p>峰峦巡歌（Peak Patrol Song）是她的五星专武。平民选择包括锻造的防御力长剑埃兹皮扎尔长笛（Flute of Ezpitzal）。优先堆防御力%与元素充能。</p></div><div class="qa"><h3>希诺宁用什么圣遗物？</h3><p>4件套煅石之城的英雄诗篇是她辅助位的最佳选择。主词条用防御力%时之沙、岩伤%或防御力%空之杯、暴击率或防御力%理之冠。</p></div><div class="qa"><h3>希诺宁值得抽吗？</h3><p>值得。她是顶级岩系辅助，提供通用元素减抗、治疗和灵活的元素增伤，能适配多种队伍体系，是2026年价值最高的抽取之一。</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/neuvillette-build.html">← 那维莱特配装（她的最佳水C）</a>
       <a href="/guides/furina-build.html">芙宁娜配装 →</a>
@@ -292,7 +296,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！');f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试')}}).catch(function(){m.className='msg err';m.textContent='网络错误');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
 <footer>
   <div class="wrap">

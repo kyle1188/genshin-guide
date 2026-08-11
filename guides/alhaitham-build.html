@@ -273,6 +273,10 @@
     <h2>还没抽到艾尔海森</h2>
     <p>艾尔海森是限定五星。如果先想体验草系反应，<a href="/guides/nahida-build.html">纳西妲</a>是草系体系的发动机、<a href="/guides/baizhu-build.html">白术</a>提供草护盾与治疗，都能先把草队框架搭起来，等艾尔海森复刻再补主C。需要雷系触发器也可以先看<a href="/guides/fischl-build.html">菲谢尔</a>。</p>
 
+        <section class="faq">
+      <h2>快速问答</h2>
+      <div class="qa"><h3>艾尔海森最佳配装是什么？</h3><p>艾尔海森走草系站场主C路线，圣遗物首选4件套黄金剧团，主词条元素精通沙、草伤杯、暴击/暴伤头，元素精通300-400、暴击率70%左右、暴击伤害140%以上。武器五星首选裁叶萃光，四星可用西福斯的月光、铁蜂刺（锻造），三星黎明神剑在保血队伍里也有奇效。</p></div><div class="qa"><h3>艾尔海森为什么需要纳西妲？</h3><p>纳西妲提供稳定的草元素附着与元素精通加成，既是艾尔海森的草底子（保证激化/超绽放稳定触发），又能补足他稀缺的精通。没有纳西妲时，艾尔海森的草反应节奏会断，伤害与反应覆盖率都明显下降。</p></div><div class="qa"><h3>艾尔海森需要堆多少元素精通？</h3><p>一般目标300-400点元素精通。他的第四命座被动「谜臻既明」让每点元素精通提升投影攻击与元素爆发伤害0.1%，上限100%（即约1000精通时满增益）。所以精通既是反应需求也是直伤乘区，但不必为了堆满而牺牲双暴平衡。</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/nahida-build.html">← 纳西妲配装（草系发动机）</a>
       <a href="/guides/baizhu-build.html">白术配装 →</a>
@@ -311,7 +315,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！');f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试')}}).catch(function(){m.className='msg err';m.textContent='网络错误');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
 <footer>
   <div class="wrap">

@@ -102,6 +102,7 @@
 <header class="topbar">
   <div class="wrap">
     <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+        <a class="lang" href="/guides/bennett-build.html">中文</a>
     <a class="back" href="/">← Back to Home</a>
   </div>
 </header>
@@ -238,6 +239,10 @@
     <h2>Don't Have Bennett Yet?</h2>
     <p>He is free: clear Spiral Abyss floor 3 (any half-decent team) and he is permanently yours. While you get there, <b>Xiangling</b> (free from the same floors) covers off-field Pyro, and <b>Thoma</b> / <b>Dehya</b> can substitute a Pyro circle in a pinch — but neither matches Bennett's ATK buff + heal combo. Build Bennett and Xiangling together; they are the foundation of the National shell that carries most accounts through endgame, and right now they're the backbone of every Raiden National clear during the 6.7 rerun.</p>
 
+        <section class="faq">
+      <h2>Quick Answers</h2>
+      <div class="qa"><h3>What is Bennett's best build?</h3><p>Bennett is the premier Pyro attack-buffer/healer. Use 4-piece Noblesse Oblige (HP%/ER sands, HP goblet, HP/CRIT circlet) - his burst buff scales on Base ATK, so weapon Base ATK matters more than substats. Aim Energy Recharge 200-250%. Signature is Aquila Favonia; best F2P is Sapwood Blade or Favonius Sword.</p></div><div class="qa"><h3>Why does Bennett need so much Energy Recharge?</h3><p>His burst is the core of nearly every team, but the ATK buff scales on Base ATK while ER drives uptime. At 200-250% ER he can burst every rotation even as the sole Pyro.</p></div><div class="qa"><h3>What weapon Base ATK should I look for?</h3><p>The ATK buff from Fantastic Voyage scales on Bennett's total Base ATK (weapon + character). High-Base-ATK swords like Aquila Favonia or Skyward Blade give bigger buffs; F2P Sapwood Blade and Favonius are efficient.</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/hutao-build-en.html">← Hu Tao Build (Pyro DPS reference)</a>
       <a href="/guides/ganyu-build-en.html">Ganyu Build →</a>
@@ -303,7 +308,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!');f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again')}}).catch(function(){m.className='msg err';m.textContent='Network error');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!';f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again';}}).catch(function(){m.className='msg err';m.textContent='Network error';});});})();
 </script>
 <footer>
   <div class="wrap">
@@ -311,5 +316,37 @@
     Not affiliated with HoYoverse. In-game data is always final.
   </div>
 </footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Bennett's best build?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bennett is the premier Pyro attack-buffer/healer. Use 4-piece Noblesse Oblige (HP%/ER sands, HP goblet, HP/CRIT circlet) - his burst buff scales on Base ATK, so weapon Base ATK matters more than substats. Aim Energy Recharge 200-250%. Signature is Aquila Favonia; best F2P is Sapwood Blade or Favonius Sword."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does Bennett need so much Energy Recharge?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "His burst is the core of nearly every team, but the ATK buff scales on Base ATK while ER drives uptime. At 200-250% ER he can burst every rotation even as the sole Pyro."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What weapon Base ATK should I look for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The ATK buff from Fantastic Voyage scales on Bennett's total Base ATK (weapon + character). High-Base-ATK swords like Aquila Favonia or Skyward Blade give bigger buffs; F2P Sapwood Blade and Favonius are efficient."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

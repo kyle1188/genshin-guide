@@ -278,6 +278,10 @@
     <h2>还没抽到菲谢尔</h2>
     <p>她是<b>常驻四星</b>，任何祈愿都会歪到——而 7.0 至冬借着免费阿廖沙与星绪传导把雷系推上风口，现在养雷系核心正当时。等待期间，<b>雷电将军</b> 或 <b>久岐忍</b> 能临时补脱手雷，但都没有菲谢尔免费、不切人的奥兹便利。把<a href="/guides/nahida-build.html">纳西妲</a>与<a href="/guides/raiden-shogun-build.html">雷电将军</a>和她一起养；三者组成带多数账号通关深渊的草雷核心，而现在正是 7.0 变动前最安全的常青抽取。</p>
 
+        <section class="faq">
+      <h2>快速问答</h2>
+      <div class="qa"><h3>菲谢尔最佳配装是什么？</h3><p>菲谢尔走脱手雷副C路线，圣遗物首选4件套黄金剧团（脱手战技伤害+70%），主词条堆攻击%，副词条双暴&gt;攻击%&gt;精通（激化/感电队）。她零站场、不抢循环秒数，是激化、感电、雷神国家队最轻松的雷系触发器。</p></div><div class="qa"><h3>菲谢尔最佳武器？</h3><p>绝弦（R5）是他的平民最优解：元素精通+战技/大招伤害提升，可精炼到R5且免费。追求裸伤害用天空之翼；暗巷猎手在脱手环境下叠满也极强。她不吃充能，武器选增伤/双暴的。</p></div><div class="qa"><h3>菲谢尔为什么值得养到 C6？</h3><p>菲谢尔是常驻祈愿四星，几期就能歪到C6。C6（至夜的真章）让奥兹在场时她所有攻击+60%伤害且普攻也能召奥兹——这是她从「触发器」跨到「真副C」的质变。C0 已顶级脱手雷，C6 封顶。</p></div><div class="qa"><h3>菲谢尔充能需要多少？</h3><p>菲谢尔几乎不需要元素充能：C1/C6 的奥兹重召与她低廉的大招成本让她攻击%/双暴赢。只有当大招真的频繁空窗（如无充能的纯感电队）才补少量充能词条。</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/ayaka-build.html">← 神里绫华配装（冰系主C）</a>
       <a href="/guides/xingqiu-build.html">行秋配装 →</a>
@@ -327,7 +331,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！');f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试')}}).catch(function(){m.className='msg err';m.textContent='网络错误');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
 <footer>
   <div class="wrap">

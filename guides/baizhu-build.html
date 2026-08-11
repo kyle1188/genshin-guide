@@ -279,6 +279,10 @@
     <h2>还没抽到白术</h2>
     <p>他是限定五星，要在复刻抽——而 6.7 下半窗口是 7.0 至冬重塑卡池日历前你最后的机会。等待期间，<b>瑶瑶</b> 或 <b>绮良良</b> 能临时补后台草 + 治疗，单<a href="/guides/nahida-build.html">纳西妲</a> 也能驱动绽放——但都没有白术的无缝护盾加免切便利。把<a href="/guides/nahida-build.html">纳西妲</a>与<a href="/guides/xingqiu-build.html">行秋</a>和他一起养；三者组成带多数账号通关深渊的草系核心，而现在正是 7.0 变动前最安全的常青抽取。</p>
 
+        <section class="faq">
+      <h2>快速问答</h2>
+      <div class="qa"><h3>白术最佳配装是什么？</h3><p>白术走草系盾奶路线，圣遗物首选4件套深林的记忆（草抗削减+2件套生命%），主词条堆生命%，充能达标约130%。他无需站场，是绽放、超绽放、激化队最轻松的生存位。</p></div><div class="qa"><h3>白术最佳武器？</h3><p>碧落之珑（Jadefall's Splendor）是他的五星专武，生命%主词条且放大技能与充能。最强国民选择是锻造的试作金珀（回能+治疗），以及讨龙英杰谭（R5 给下位攻击%buff）。</p></div><div class="qa"><h3>白术充能需要多少？</h3><p>用碧落之珑或试作金珀约 120–130% 充能足矣；用讨龙或无机充能武器需推到 140%+。没达标大招进冷却，协同草与全队治疗都断——这是白术头号失败原因。</p></div><div class="qa"><h3>白术值得抽吗？</h3><p>值得。他是唯一盾奶一体且零站场的草系辅助，纳西妲队默认舒适度首选。C0 已是顶级生存，C2 让他从好奶变成最强草系触发器。</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/xingqiu-build.html">← 行秋配装（绽放核心）</a>
       <a href="/guides/nahida-build.html">纳西妲配装 →</a>
@@ -328,7 +332,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！');f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试')}}).catch(function(){m.className='msg err';m.textContent='网络错误');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
 <footer>
   <div class="wrap">

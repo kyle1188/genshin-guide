@@ -273,6 +273,10 @@
     <h2>No Alhaitham Yet?</h2>
     <p>Alhaitham is a limited 5-star. To experience Dendro reactions first, <a href="/guides/nahida-build.html">Nahida</a> is the engine of any Dendro team and <a href="/guides/baizhu-build.html">Baizhu</a> provides a Dendro shield and healing — both let you build the Dendro framework first and add the main DPS when he reruns. For an Electro trigger, see <a href="/guides/fischl-build.html">Fischl</a>.</p>
 
+        <section class="faq">
+      <h2>Quick Answers</h2>
+      <div class="qa"><h3>What is the best Alhaitham build?</h3><p>Alhaitham plays as a Dendro on-field DPS. His best artifact set is 4-piece Gilded Dreams, with EM or ATK% sands, Dendro DMG goblet, and CRIT Rate / CRIT DMG circlet, aiming for 300-400 Elemental Mastery, around 70% CRIT Rate, and 140%+ CRIT DMG. For weapons, his signature Light of Foliar Incision is best, while the 4-star Xiphos' Moonlight and craftable Iron Sting work well, and the 3-star Harbinger of Dawn is surprisingly strong in a healthy team.</p></div><div class="qa"><h3>Why does Alhaitham need Nahida?</h3><p>Nahida provides steady Dendro application and an Elemental Mastery buff, serving both as Alhaitham's Dendro enabler (so Spread / Hyperbloom trigger reliably) and as the EM he lacks. Without Nahida, Alhaitham's Dendro-reaction rhythm breaks and both his damage and reaction coverage drop noticeably.</p></div><div class="qa"><h3>How much Elemental Mastery does Alhaitham need?</h3><p>A typical target is 300-400 Elemental Mastery. His A4 passive, Mysteries Laid Bare, converts each point of EM into +0.1% damage for his Projection Attacks and Elemental Burst, capped at 100% (reached at about 1000 EM). So EM is both a reaction requirement and a direct-damage multiplier, but do not sacrifice CRIT balance just to max it out.</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/nahida-build.html">← Nahida Build (Dendro engine)</a>
       <a href="/guides/baizhu-build.html">Baizhu Build →</a>
@@ -311,7 +315,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!');f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again')}}).catch(function(){m.className='msg err';m.textContent='Network error');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!';f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again';}}).catch(function(){m.className='msg err';m.textContent='Network error';});});})();
 </script>
 <footer>
   <div class="wrap">

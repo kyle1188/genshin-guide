@@ -133,6 +133,7 @@
 <header class="topbar">
   <div class="wrap">
     <div class="brand"><span class="dot"></span><span>Teyvat <b>Starter Guide</b></span></div>
+        <a class="lang" href="/guides/neuvillette-build.html">中文</a>
     <a class="back" href="/">← Home</a>
   </div>
 </header>
@@ -245,7 +246,11 @@
   <h2>Don't have Neuvillette yet?</h2>
   <p>He's a limited 5★. While you wait for a rerun, other strong on-field Hydro/HP-scaling options include Ayato, or building a reaction carry from our <a href="/guides/beginner-characters-en.html">beginner roster</a>. Prototype Amber and the Marechaussee domain are worth pre-farming either way, since they transfer to future HP-scalers.</p>
 
-  <div class="pairbox">
+      <section class="faq">
+      <h2>Quick Answers</h2>
+      <div class="qa"><h3>What is the best Neuvillette build?</h3><p>Build him as an on-field Hydro DPS with the 4-piece Marechaussee Hunter set and HP% main stats. His charged-attack water beam is his core damage source, and his kit is self-sufficient.</p></div><div class="qa"><h3>What are Neuvillette's best weapons?</h3><p>Tome of the Eternal Flow is his signature 5-star. The craftable F2P Prototype Amber is a strong free alternative that also helps team energy. Other HP-scaling catalysts work as budget picks.</p></div><div class="qa"><h3>What artifacts should Neuvillette use?</h3><p>4-piece Marechaussee Hunter is best-in-slot (its crit-rate bonus pairs with his HP-loss passive). Use HP% Sands, Hydro DMG Goblet, and a CRIT Rate or CRIT DMG Circlet.</p></div><div class="qa"><h3>Is Neuvillette worth pulling?</h3><p>Yes. He is a premier Hydro DPS with high personal damage and team-friendly Hydro application, and his kit is long-term stable, making him a strong late-game carry.</p></div>
+    </section>
+    <div class="pairbox">
     <a class="btn primary" href="/guides/furina-build-en.html">← Furina Build Guide (his best partner)</a>
     <a class="btn primary" href="/guides/xilonen-build-en.html">Xilonen Build Guide (RES-shred + heal) →</a>
     <a class="btn primary" href="/guides/kazuha-build-en.html">Kazuha Build Guide →</a>
@@ -312,7 +317,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!');f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again')}}).catch(function(){m.className='msg err';m.textContent='Network error');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!';f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again';}}).catch(function(){m.className='msg err';m.textContent='Network error';});});})();
 </script>
 <footer>
   <div class="wrap">

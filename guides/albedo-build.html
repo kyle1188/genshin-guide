@@ -278,6 +278,10 @@
     <h2>还没抽到阿贝多</h2>
     <p>他是<b>常驻五星</b>，与限定角色共享卡池，所以任何祈愿都会遇到——而 7.0 至冬重塑卡池日历，现在锁住你的<b>常青岩系核心</b>（阿贝多 + <a href="/guides/zhongli-build.html">钟离</a>）是最安全的长期打法。等待期间，<b>诺艾尔</b> 或 <b>凝光</b> 能临时补脱手岩，但都没有阿贝多干净、低投入的战技伤害。把<a href="/guides/nahida-build.html">纳西妲</a>与<a href="/guides/kazuha-build.html">枫原万叶</a>和他一起养；三者组成带多数账号通关深渊的岩草风骨架，而现在正是 7.0 变动前最安全的常青抽取。</p>
 
+        <section class="faq">
+      <h2>快速问答</h2>
+      <div class="qa"><h3>阿贝多最佳配装是什么？</h3><p>阿贝多走脱手岩副C，圣遗物首选4件套华馆梦醒形骸记（靠场上挂机叠防御%与战技增伤），主词条防御%、岩伤%、双暴。他的创生之花靠附近攻击触发、伤害吃防御，零站场永久后台岩伤，是钟离双岩核心最轻松的拼图。</p></div><div class="qa"><h3>阿贝多最佳武器？</h3><p>辰砂之纺锤（R5）是专武级：防御% 主词条 + 依防御% 增战技伤害，可从他的传说任务免费造到 R5。平民最强是黎明神剑（R5，满血巨额双暴）。缺充能的纯岩队用西风剑。</p></div><div class="qa"><h3>阿贝多为什么要用防御沙？</h3><p>阿贝多的创生之花伤害吃防御%，不是攻击%。攻击% 时之沙是废槽——永远选防御%。这是他最常被配错的点。</p></div><div class="qa"><h3>阿贝多值得抽吗？</h3><p>值得。他是常驻五星，偶尔复刻。C0 已是顶级脱手岩，C2（花开可暴击 + 战技增伤）是价值拐点。与钟离组成的双岩核心是最肉、最稳的副C壳，7.0 阵容变动前最安全的常青抽取。</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/ayaka-build.html">← 神里绫华配装（冰系主C）</a>
       <a href="/guides/yae-miko-build.html">八重神子配装 →</a>
@@ -327,7 +331,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！');f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试')}}).catch(function(){m.className='msg err';m.textContent='网络错误');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
 <footer>
   <div class="wrap">

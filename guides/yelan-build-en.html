@@ -99,6 +99,7 @@
 <header class="topbar">
   <div class="wrap">
     <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+        <a class="lang" href="/guides/yelan-build.html">中文</a>
     <a class="back" href="/">← Back to Home</a>
   </div>
 </header>
@@ -228,6 +229,10 @@
     <h2>Don't Have Yelan Yet?</h2>
     <p>She is a limited 5-star, so you may not own her. For off-field Hydro, <b>Xingqiu</b> (a free 4-star from Story Quests and the shop) is her best stand-in — he applies Hydro on-field and off, and pairs with the same Vape / Neuvillette teams. <b>Candace</b> (a 4-star on the beginner radar) is a weaker alternative who buffers Normal Attack Hydro DMG. Build either while you wait for her banner; they cover most Hydro teams until she arrives.</p>
 
+        <section class="faq">
+      <h2>Quick Answers</h2>
+      <div class="qa"><h3>What is Yelan's best build?</h3><p>Yelan is an off-field Hydro DPS (similar role to Xingqiu). Use 4-piece Emblem of Severed Fate or 4-piece Heart of Depth (HP%/ER sands, Hydro goblet, CRIT/HP circlet). HP 30000+, CRIT 60%+, ER 120-140%. Signature is Aqua Simulacra; best 4-stars are Fading Twilight and Favonius Warbow.</p></div><div class="qa"><h3>Why does Yelan scale on HP?</h3><p>Her burst's coordinated attacks and her skill damage both scale on Max HP, not ATK. Stacking HP raises both her personal damage and the coordinated hits that buff the on-field carry.</p></div><div class="qa"><h3>What stats should I prioritize on Yelan?</h3><p>HP 30000+ first, then CRIT (60%+/140%+) and Energy Recharge 120-140%. ATK is largely irrelevant; EM only matters in Vape teams.</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/furina-build-en.html">← Furina Build (HP-scaling partner)</a>
       <a href="/guides/neuvillette-build-en.html">Neuvillette Build →</a>
@@ -293,7 +298,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!');f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again')}}).catch(function(){m.className='msg err';m.textContent='Network error');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!';f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again';}}).catch(function(){m.className='msg err';m.textContent='Network error';});});})();
 </script>
 <footer>
   <div class="wrap">
@@ -301,5 +306,37 @@
     Not affiliated with HoYoverse. In-game data is always final.
   </div>
 </footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Yelan's best build?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yelan is an off-field Hydro DPS (similar role to Xingqiu). Use 4-piece Emblem of Severed Fate or 4-piece Heart of Depth (HP%/ER sands, Hydro goblet, CRIT/HP circlet). HP 30000+, CRIT 60%+, ER 120-140%. Signature is Aqua Simulacra; best 4-stars are Fading Twilight and Favonius Warbow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does Yelan scale on HP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Her burst's coordinated attacks and her skill damage both scale on Max HP, not ATK. Stacking HP raises both her personal damage and the coordinated hits that buff the on-field carry."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What stats should I prioritize on Yelan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HP 30000+ first, then CRIT (60%+/140%+) and Energy Recharge 120-140%. ATK is largely irrelevant; EM only matters in Vape teams."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

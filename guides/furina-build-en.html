@@ -140,6 +140,7 @@
 <header class="topbar">
   <div class="wrap">
     <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+        <a class="lang" href="/guides/furina-build.html">中文</a>
     <a class="back" href="/">← Back to Home</a>
   </div>
 </header>
@@ -275,6 +276,10 @@
     <h2>Don't Have Furina Yet?</h2>
     <p>She is a limited 5-star, so you may not own her. For off-field Hydro application, <a href="/guides/beginner-characters-en.html">Xingqiu and Yelan</a> (both on the beginner must-build list) cover most teams — they just don't bring her team-wide damage buff. Build them while you wait for her banner.</p>
 
+        <section class="faq">
+      <h2>Quick Answers</h2>
+      <div class="qa"><h3>What is the best Furina build in Genshin Impact?</h3><p>Build Furina as an off-field Hydro buffer using the 4-piece Golden Troupe artifact set with HP% main stats. Her kit centers on an HP-fluctuation (fanfare) mechanic that converts team HP changes into a team-wide damage bonus, making her one of the strongest 5-star buffers.</p></div><div class="qa"><h3>What are Furina's best weapons?</h3><p>Splendor of Tranquil Waters is her signature 5-star. Strong free-to-play options include Fleuve Cendre Ferryman and Festering Desire. Prioritize HP% and Energy Recharge substats since she needs to cast her Burst consistently.</p></div><div class="qa"><h3>What artifacts should Furina use?</h3><p>4-piece Golden Troupe is best-in-slot for her off-field Skill damage. A flexible alternative is 2pc HP% + 2pc Golden Troupe. Use HP% Sands, HP% Goblet, and a CRIT Rate or HP% Circlet depending on whether you need personal damage or pure support.</p></div><div class="qa"><h3>Is Furina worth pulling in 2026?</h3><p>Yes. As the Hydro Archon and a premier universal buffer with built-in healing from her companion, she boosts nearly every team archetype and remains a top priority pull.</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/neuvillette-build-en.html">← Neuvillette Build (her best partner)</a>
       <a href="/guides/xingqiu-build-en.html">Xingqiu Build →</a>
@@ -340,7 +345,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!');f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again')}}).catch(function(){m.className='msg err';m.textContent='Network error');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!';f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again';}}).catch(function(){m.className='msg err';m.textContent='Network error';});});})();
 </script>
 <footer>
   <div class="wrap">

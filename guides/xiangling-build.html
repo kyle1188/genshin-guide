@@ -263,6 +263,10 @@
     <h2>还没拿到香菱</h2>
     <p>她免费：通关深境螺旋 3 层（随便半成型队）就永久拥有。过渡期，<b>班尼特</b>（同样在螺旋层数免费获取）能顶替火系增益，<b>烟绯 / 托马 / 迪希雅</b>能临时补脱手火——但都没她这套免费的、靠大招的覆盖率。班尼特和香菱一起养，它们撑起国家队壳，带你打穿大多数后期内容。</p>
 
+        <section class="faq">
+      <h2>快速问答</h2>
+      <div class="qa"><h3>香菱最佳武器是什么？</h3><p>香菱的最佳武器是四星钓鱼武器渔获（R5），提供元素充能和爆发暴击率/爆伤，完全免费且强度接近专武。五星首选护摩之杖（生命转攻+暴伤）；平民可选决斗之枪（纪行）、龙脊长枪（锻造，蒸发/融化队吃元素精通），充能不够时用西风长枪或喜多院十文字补充能量。</p></div><div class="qa"><h3>香菱元素充能需要多少？</h3><p>香菱大招需要 80 点能量且几乎不自产球，充能是她第一属性。双火+班尼特（2火共鸣+班尼特圈内回能）约需 180%–200%；有雷神等电池时降到 160%–180%；没有班尼特也没有电池则需 220% 以上。先用渔获+绝缘套+班尼特把充能拉到拐点，再堆双暴和攻击。</p></div><div class="qa"><h3>香菱为什么必带班尼特？</h3><p>班尼特提供火元素共鸣、全队攻击力加成、治疗和圈内能量回复，几乎解决了香菱的全部短板——尤其是她高额的充能需求。没有班尼特的香菱需要堆到 220%+ 充能，否则开不出大招，输出直接崩塌。班尼特≈香菱一半的价值，二者是雷神国家队的核心。</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/hutao-build.html">← 胡桃配装（火 C 参考）</a>
       <a href="/guides/raiden-shogun-build.html">雷电将军配装 →</a>
@@ -302,7 +306,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！');f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试')}}).catch(function(){m.className='msg err';m.textContent='网络错误');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
 <footer>
   <div class="wrap">

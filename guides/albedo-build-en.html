@@ -102,6 +102,7 @@
 <header class="topbar">
   <div class="wrap">
     <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+        <a class="lang" href="/guides/albedo-build.html">中文</a>
     <a class="back" href="/">← Back to Home</a>
   </div>
 </header>
@@ -237,6 +238,10 @@
     <h2>Don't Have Albedo Yet?</h2>
     <p>He is a <b>standard 5★</b> who shares the banner with limited characters, so you will meet him on any wish — and with 7.0 Snezhnaya reshaping the roster, locking in your <b>evergreen Geo core now</b> (Albedo + <a href="/guides/zhongli-build-en.html">Zhongli</a>) is the safest long-term play. While you wait, <b>Noelle</b> or <b>Ningguang</b> can supply off-field Geo in a pinch, but neither gives Albedo's clean, investment-light Skill damage. Build him alongside <a href="/guides/nahida-build-en.html">Nahida</a> and <a href="/guides/kazuha-build-en.html">Kazuha</a>; together Geo + Dendro + Anemo is the durable backbone that carries most accounts through endgame, and right now they are the safest evergreen pickups before the 7.0 shift.</p>
 
+        <section class="faq">
+      <h2>Quick Answers</h2>
+      <div class="qa"><h3>What is Albedo's best build?</h3><p>Albedo is an off-field Geo sub-DPS. Run 4-piece Husk of Opulent Dreams (DEF% sands, Geo DMG goblet, CRIT/DEF circlet). His Transient Blossoms scale on DEF%, so DEF% is mandatory - never use an ATK% sands. Signature is Cinnabar Spindle (R5 from his quest); strong F2P picks are Favonius Sword and Harbinger of Dawn (R5).</p></div><div class="qa"><h3>Why does Albedo use a DEF sands?</h3><p>Albedo's Transient Blossoms and his burst's Rite of Progeniture scale on DEF%, not ATK%. An ATK% sands is a wasted slot - DEF% is always correct, and it is the most common misbuild on him.</p></div><div class="qa"><h3>Is Albedo worth pulling?</h3><p>Yes. He is a standard-banner 5-star who pairs with Zhongli for the easiest double-Geo core: permanent off-field Geo damage with zero field time, plus DEF-scaling and a C2 that lets blossoms CRIT. A safe evergreen pick.</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/ayaka-build-en.html">← Ayaka Build (Cryo DPS)</a>
       <a href="/guides/yae-miko-build-en.html">Yae Miko Build →</a>
@@ -302,7 +307,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!');f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again')}}).catch(function(){m.className='msg err';m.textContent='Network error');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!';f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again';}}).catch(function(){m.className='msg err';m.textContent='Network error';});});})();
 </script>
 <footer>
   <div class="wrap">
@@ -310,5 +315,37 @@
     Not affiliated with HoYoverse. In-game data is always final.
   </div>
 </footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Albedo's best build?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Albedo is an off-field Geo sub-DPS. Run 4-piece Husk of Opulent Dreams (DEF% sands, Geo DMG goblet, CRIT/DEF circlet). His Transient Blossoms scale on DEF%, so DEF% is mandatory - never use an ATK% sands. Signature is Cinnabar Spindle (R5 from his quest); strong F2P picks are Favonius Sword and Harbinger of Dawn (R5)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does Albedo use a DEF sands?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Albedo's Transient Blossoms and his burst's Rite of Progeniture scale on DEF%, not ATK%. An ATK% sands is a wasted slot - DEF% is always correct, and it is the most common misbuild on him."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Albedo worth pulling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. He is a standard-banner 5-star who pairs with Zhongli for the easiest double-Geo core: permanent off-field Geo damage with zero field time, plus DEF-scaling and a C2 that lets blossoms CRIT. A safe evergreen pick."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

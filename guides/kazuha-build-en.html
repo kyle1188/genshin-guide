@@ -140,6 +140,7 @@
 <header class="topbar">
   <div class="wrap">
     <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+        <a class="lang" href="/guides/kazuha-build.html">中文</a>
     <a class="back" href="/">← Back to Home</a>
   </div>
 </header>
@@ -269,6 +270,10 @@
     <h2>Don't Have Kazuha Yet?</h2>
     <p>He is a limited 5-star, so you may not own him. For grouping and Anemo utility, <a href="/guides/beginner-characters-en.html">Sucrose</a> (a 4-star on the beginner list) is the best F2P stand-in — she also shares EM and can hold Viridescent Venerer. Venti groups larger crowds but lacks the RES shred; Lynette is a budget third option. Build them while you wait for his banner.</p>
 
+        <section class="faq">
+      <h2>Quick Answers</h2>
+      <div class="qa"><h3>What is the best Kazuha build?</h3><p>Build Kazuha as an Anemo support with the 4-piece Viridescent Venerer set and Elemental Mastery (EM) or Energy Recharge main stats. He groups enemies and shreds enemy elemental RES via VV swirls.</p></div><div class="qa"><h3>What are Kazuha's best weapons?</h3><p>Freedom-Sworn is his signature 5-star. F2P options include the craftable Iron Sting (EM sword) and Xiphos' Moonlight. Prioritize EM for support.</p></div><div class="qa"><h3>What artifacts does Kazuha use?</h3><p>4-piece Viridescent Venerer is mandatory for support (it shreds the swirled element's RES). Use EM Sands, EM Goblet, and an EM or CRIT Circlet for support; use an Anemo DMG Goblet if building him for damage.</p></div><div class="qa"><h3>Is Kazuha worth pulling?</h3><p>Yes. He remains one of the best universal supports in the game, providing crowd control, an EM share for the team, and VV RES shred for nearly every team.</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/furina-build-en.html">← Furina Build (team buffer)</a>
       <a href="/guides/neuvillette-build-en.html">Neuvillette Build →</a>
@@ -333,7 +338,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!');f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again')}}).catch(function(){m.className='msg err';m.textContent='Network error');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!';f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again';}}).catch(function(){m.className='msg err';m.textContent='Network error';});});})();
 </script>
 <footer>
   <div class="wrap">

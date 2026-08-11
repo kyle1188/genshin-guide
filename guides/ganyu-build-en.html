@@ -99,6 +99,7 @@
 <header class="topbar">
   <div class="wrap">
     <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+        <a class="lang" href="/guides/ganyu-build.html">中文</a>
     <a class="back" href="/">← Back to Home</a>
   </div>
 </header>
@@ -229,6 +230,10 @@
     <h2>Don't Have Ganyu Yet?</h2>
     <p>She is a limited 5-star. For Cryo ranged DPS, <b>Rosaria</b> (a 4-star from banners and story) is a strong polearm Cryo carry and crit-support, and <b>Kaeya</b> (a free starter) covers off-field Cryo application. For Freeze enablement, <b>Mona</b> / <b>Xingqiu</b> and a shielder (Zhongli / Diona) cover most of Ganyu's shells. Build any of these while you wait for her banner; they slot into the same teams until she arrives.</p>
 
+        <section class="faq">
+      <h2>Quick Answers</h2>
+      <div class="qa"><h3>What is Ganyu's best build?</h3><p>Ganyu is a Cryo charged-attack bow DPS. Use 4-piece Wanderer's Troupe or 4-piece Blizzard Strayer (ATK%/EM sands, Cryo goblet, CRIT circlet). Aim CRIT Rate 40-50% (Blizzard vs Frozen) or 60%+ (mobile), and 200%+ CRIT DMG. Signature is Amos' Bow; strong 4-stars are Prototype Crescent and Hamayumi.</p></div><div class="qa"><h3>Why is Ganyu's charged attack so strong?</h3><p>Her Frostflake Arrow bloom deals AoE Cryo plus a damage-over-time, and her passive grants +20% CRIT Rate against enemies below 50% HP. Melt Ganyu (with Bennett/Xiangling) is among the highest-ceiling comps in the game.</p></div><div class="qa"><h3>What stats should I prioritize on Ganyu?</h3><p>CRIT DMG 200%+, ATK 2000+, CRIT Rate 40-60%, and EM 100-200 in Melt. Energy Recharge about 120% for burst uptime.</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/hutao-build-en.html">← Hu Tao Build (Pyro DPS reference)</a>
       <a href="/guides/zhongli-build-en.html">Zhongli Build →</a>
@@ -293,7 +298,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!');f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again')}}).catch(function(){m.className='msg err';m.textContent='Network error');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!';f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again';}}).catch(function(){m.className='msg err';m.textContent='Network error';});});})();
 </script>
 <footer>
   <div class="wrap">
@@ -301,5 +306,37 @@
     Not affiliated with HoYoverse. In-game data is always final.
   </div>
 </footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Ganyu's best build?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ganyu is a Cryo charged-attack bow DPS. Use 4-piece Wanderer's Troupe or 4-piece Blizzard Strayer (ATK%/EM sands, Cryo goblet, CRIT circlet). Aim CRIT Rate 40-50% (Blizzard vs Frozen) or 60%+ (mobile), and 200%+ CRIT DMG. Signature is Amos' Bow; strong 4-stars are Prototype Crescent and Hamayumi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is Ganyu's charged attack so strong?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Her Frostflake Arrow bloom deals AoE Cryo plus a damage-over-time, and her passive grants +20% CRIT Rate against enemies below 50% HP. Melt Ganyu (with Bennett/Xiangling) is among the highest-ceiling comps in the game."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What stats should I prioritize on Ganyu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CRIT DMG 200%+, ATK 2000+, CRIT Rate 40-60%, and EM 100-200 in Melt. Energy Recharge about 120% for burst uptime."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

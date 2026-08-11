@@ -274,6 +274,10 @@
     <h2>No Wanderer Yet?</h2>
     <p>Wanderer is a limited 5-star. If you need an Anemo on-field option, <a href="/guides/kazuha-build.html">Kazuha</a> is a top-tier Anemo support and <a href="/guides/xiao-build.html">Xiao</a> is another Anemo on-field DPS (scaling on attack speed and ER) covering different needs. Build Faruzan first and wait for his rerun.</p>
 
+        <section class="faq">
+      <h2>Quick Answers</h2>
+      <div class="qa"><h3>What is the best Wanderer build?</h3><p>Wanderer plays as an Anemo on-field DPS. His best artifact set is 4-piece Desert Pavilion Chronicle, with ATK% sands, Anemo DMG goblet, and CRIT Rate / CRIT DMG circlet, aiming for about 2000 ATK, 70-80% CRIT Rate, and 160%+ CRIT DMG. For weapons, his signature Tulaytullah's Remembrance is best, while the 4-star The Widsith is the top F2P pick and Mappa Mare is a craftable alternative.</p></div><div class="qa"><h3>Why does Wanderer need Faruzan?</h3><p>Faruzan is currently the only Anemo support who sharply lowers enemy Anemo RES and buffs Anemo DPS. Without her, a large chunk of Wanderer's Anemo damage is eaten by enemy resistance and he loses a key damage multiplier. At C6 Faruzan also adds CRIT DMG, making her the core piece of any Wanderer team.</p></div><div class="qa"><h3>How much Energy Recharge does Wanderer need?</h3><p>Wanderer is the on-field DPS and picks up most of the elemental particles himself, so his burst demand is low. Around 100%-130% Energy Recharge is enough to open his burst every rotation; if the team has no second Anemo character to share particles, push it closer to 130%.</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/kazuha-build.html">← Kazuha Build (Anemo support)</a>
       <a href="/guides/xiao-build.html">Xiao Build →</a>
@@ -312,7 +316,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!');f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again')}}).catch(function(){m.className='msg err';m.textContent='Network error');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!';f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again';}}).catch(function(){m.className='msg err';m.textContent='Network error';});});})();
 </script>
 <footer>
   <div class="wrap">

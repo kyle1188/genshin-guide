@@ -274,6 +274,10 @@
     <h2>还没抽到散兵</h2>
     <p>散兵是限定五星。如果缺风系站场主C，<a href="/guides/kazuha-build.html">枫原万叶</a>是顶尖的风系增伤辅助、<a href="/guides/xiao-build.html">魈</a>是另一名风系站场主C（吃攻速与充能），都能覆盖不同需求。先把珉林练起来，等散兵复刻再抽也不迟。</p>
 
+        <section class="faq">
+      <h2>快速问答</h2>
+      <div class="qa"><h3>散兵最佳配装是什么？</h3><p>散兵走风系站场主C路线，圣遗物首选4件套沙上楼阁史话，主词条攻击沙、风伤杯、暴击/暴伤头，攻击力约2000、暴击率70%–80%、暴击伤害160%以上。武器方面五星首选专武图莱杜拉的回忆，四星平民首选流浪乐章，锻造可用证誓之明瞳。</p></div><div class="qa"><h3>散兵为什么必须带珉林？</h3><p>珉林（Faruzan）是目前唯一能大幅削减敌人风抗并给风C加成的风系辅助。没有她，散兵的风伤会被敌方风抗吃掉一大截，且缺少关键的增伤乘区。珉林达到6命后还能额外提供暴击伤害，是散兵队的核心拼图。</p></div><div class="qa"><h3>散兵充能需要多少？</h3><p>散兵是站场主C，自身吃到的元素微粒多，元素爆发的需求不高。一般堆到100%–130%元素充能即可保证每轮循环开出大招；若队伍里没有第二个风系角色分担产球，可再提高到130%左右。</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/kazuha-build.html">← 枫原万叶配装（风系辅助）</a>
       <a href="/guides/xiao-build.html">魈配装 →</a>
@@ -312,7 +316,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！');f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试')}}).catch(function(){m.className='msg err';m.textContent='网络错误');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
 <footer>
   <div class="wrap">

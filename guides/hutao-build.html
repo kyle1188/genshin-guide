@@ -249,6 +249,10 @@
     <h2>没有胡桃怎么办</h2>
     <p>胡桃是限定五星。如果缺火C，可以先用<a href="/guides/xiangling-build.html">香菱</a>作为脱手火输出，她是深渊国家队核心，造价更低。</p>
 
+        <section class="faq">
+      <h2>快速问答</h2>
+      <div class="qa"><h3>胡桃用攻击沙还是生命沙？</h3><p>胡桃优先用生命沙。她的攻击力基础低，但元素战技按生命值上限提供大量攻击力加成，生命沙的收益远高于攻击沙。</p></div><div class="qa"><h3>胡桃四星武器选什么？</h3><p>四星首选匣里灭辰，提供精通和对水火附着敌人的增伤，完美契合蒸发玩法。没有的话可用决斗之枪或千岩长枪过渡。</p></div><div class="qa"><h3>胡桃为什么需要压血？</h3><p>胡桃天赋「血之灶火」在生命值低于50%时提供33%火伤加成；元素战技按生命值上限转化攻击力。半血以下伤害最高，所以通常配合护盾和治疗（控血）而不是一直满血。</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/xingqiu-build.html">← 行秋配装（蒸发核心）</a>
       <a href="/guides/yelan-build.html">夜兰配装 →</a>
@@ -288,7 +292,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！');f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试')}}).catch(function(){m.className='msg err';m.textContent='网络错误');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
 <footer>
   <div class="wrap">

@@ -249,6 +249,10 @@
     <h2>没有行秋怎么办</h2>
     <p>行秋是四星角色，但获取需要一定运气。如果暂时没有，可以用<a href="/guides/yelan-build.html">夜兰</a>作为上位替代（但生存稍弱），或用芭芭拉、莫娜临时过渡。</p>
 
+        <section class="faq">
+      <h2>快速问答</h2>
+      <div class="qa"><h3>行秋必须带祭礼剑吗？</h3><p>祭礼剑是行秋的最佳四星武器，重置战技 CD 能提供大量水元素微粒，大幅缓解充能压力。如果没有祭礼剑，可用西风剑或充能沙替代，但循环会更吃紧。</p></div><div class="qa"><h3>行秋充能需要多少？</h3><p>单水入队建议 200% 以上；双水队伍可降至 180% 左右。带祭礼剑时充能压力会小很多。</p></div><div class="qa"><h3>行秋圣遗物选什么？</h3><p>毕业首选绝缘之旗印4件套，提升大招伤害。也可以用2水伤+2攻击过渡。主词条：充能/攻击沙、水伤杯、暴击/暴伤头。</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/bennett-build.html">← 班尼特配装</a>
       <a href="/guides/xiangling-build.html">香菱配装 →</a>
@@ -288,7 +292,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！');f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试')}}).catch(function(){m.className='msg err';m.textContent='网络错误');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
 <footer>
   <div class="wrap">

@@ -248,6 +248,10 @@
     <h2>没有万叶怎么办</h2>
     <p>万叶是限定五星。下位替代可以用<a href="/guides/beginner-characters.html">砂糖</a>（聚怪加精通）或琳妮特（风套减抗），但增伤幅度不如万叶。</p>
 
+        <section class="faq">
+      <h2>快速问答</h2>
+      <div class="qa"><h3>枫原万叶需要多少精通？</h3><p>一般建议元素精通 800 以上，毕业向 900–1000+。精通直接提升扩散伤害和天赋的元素增伤加成，是万叶最核心的属性。</p></div><div class="qa"><h3>万叶四星武器用什么？</h3><p>四星首选铁峰刺，锻造武器造价低，提供精通和增伤被动。没有的话可用西风剑（团队充能）或祭礼剑（多次E聚怪）。</p></div><div class="qa"><h3>万叶为什么必须带风套？</h3><p>翠绿之影4件套在触发扩散后降低敌人对应元素抗性40%，持续10秒。这是万叶最核心的团队贡献，几乎所有配队都必带风套。</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/neuvillette-build.html">← 那维莱特配装</a>
       <a href="/guides/hutao-build.html">胡桃配装 →</a>
@@ -287,7 +291,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！');f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试')}}).catch(function(){m.className='msg err';m.textContent='网络错误');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
 <footer>
   <div class="wrap">

@@ -102,6 +102,7 @@
 <header class="topbar">
   <div class="wrap">
     <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+        <a class="lang" href="/guides/baizhu-build.html">中文</a>
     <a class="back" href="/">← Back to Home</a>
   </div>
 </header>
@@ -237,6 +238,10 @@
     <h2>Don't Have Baizhu Yet?</h2>
     <p>He is a limited 5★, so you pull him on a rerun — and the 6.7 Phase 2 window is your last chance before 7.0 Snezhnaya reshapes the banner calendar. While you wait, <b>Yaoyao</b> or <b>Kirara</b> can supply off-field Dendro + heal in a pinch, and <a href="/guides/nahida-build-en.html">Nahida</a> alone can still drive Bloom — but neither gives Baizhu's Seamless Shield plus his no-swap convenience. Build him alongside <a href="/guides/nahida-build-en.html">Nahida</a> and <a href="/guides/xingqiu-build-en.html">Xingqiu</a>; together they are the Dendro core that carries most accounts through endgame, and right now they are the safest evergreen pickup before the 7.0 shift.</p>
 
+        <section class="faq">
+      <h2>Quick Answers</h2>
+      <div class="qa"><h3>What is Baizhu's best build?</h3><p>Baizhu is a Dendro healer/support. Use 4-piece Deepwood Memories (HP% sands, Dendro DMG goblet, HP/CRIT circlet) to shred Dendro RES while healing. HP 40000+ and some CRIT if running a DMG build. Signature is Jadefall's Splendor; strong 4-stars are Prototype Amber and Sacrificial Fragments.</p></div><div class="qa"><h3>Why is Baizhu valuable in Dendro teams?</h3><p>He provides on-demand healing plus a burst buffer, and his Deepwood set shreds Dendro RES for the whole team. He enables comfort and survivability in Bloom/Hyperbloom where self-damage is a real risk.</p></div><div class="qa"><h3>What stats should I prioritize on Baizhu?</h3><p>HP 40000+ first, Energy Recharge 120-140% (he is burst-reliant), then HP% and a bit of CRIT if you want personal damage. Healing scales on HP, so HP is the core stat.</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/xingqiu-build-en.html">← Xingqiu Build (Bloom core)</a>
       <a href="/guides/nahida-build-en.html">Nahida Build →</a>
@@ -302,7 +307,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!');f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again')}}).catch(function(){m.className='msg err';m.textContent='Network error');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!';f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again';}}).catch(function(){m.className='msg err';m.textContent='Network error';});});})();
 </script>
 <footer>
   <div class="wrap">
@@ -310,5 +315,37 @@
     Not affiliated with HoYoverse. In-game data is always final.
   </div>
 </footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Baizhu's best build?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Baizhu is a Dendro healer/support. Use 4-piece Deepwood Memories (HP% sands, Dendro DMG goblet, HP/CRIT circlet) to shred Dendro RES while healing. HP 40000+ and some CRIT if running a DMG build. Signature is Jadefall's Splendor; strong 4-stars are Prototype Amber and Sacrificial Fragments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is Baizhu valuable in Dendro teams?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "He provides on-demand healing plus a burst buffer, and his Deepwood set shreds Dendro RES for the whole team. He enables comfort and survivability in Bloom/Hyperbloom where self-damage is a real risk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What stats should I prioritize on Baizhu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HP 40000+ first, Energy Recharge 120-140% (he is burst-reliant), then HP% and a bit of CRIT if you want personal damage. Healing scales on HP, so HP is the core stat."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

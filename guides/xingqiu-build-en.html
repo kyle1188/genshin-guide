@@ -102,6 +102,7 @@
 <header class="topbar">
   <div class="wrap">
     <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+        <a class="lang" href="/guides/xingqiu-build.html">中文</a>
     <a class="back" href="/">← Back to Home</a>
   </div>
 </header>
@@ -238,6 +239,10 @@
     <h2>Don't Have Xingqiu Yet?</h2>
     <p>He is permanent: pull him from any standard banner or grab copies via the Starglitter shop over time. While you wait, <b>Barbara</b> or <b>Candace</b> can supply off-field Hydro in a pinch, and <a href="/guides/yelan-build-en.html">Yelan</a> covers single-target Vape — but neither gives Xingqiu's rain of swords plus the 15% damage cut plus his own battery. Build him alongside <a href="/guides/bennett-build-en.html">Bennett</a> and <a href="/guides/xiangling-build-en.html">Xiangling</a>; together they are the National core that carries most accounts through endgame, and right now they're the backbone of every Raiden National clear during the 6.7 rerun.</p>
 
+        <section class="faq">
+      <h2>Quick Answers</h2>
+      <div class="qa"><h3>What is Xingqiu's best build?</h3><p>Xingqiu is the core Hydro enabler (off-field rain swords). Use 4-piece Emblem of Severed Fate (HP%/ER sands, Hydro goblet, CRIT circlet) with Energy Recharge 200-250%. Signature is Sacrificial Sword (R5, double skill); strong 5-stars are Skyward Blade and Freedom-Sworn.</p></div><div class="qa"><h3>Why is Sacrificial Sword so good on Xingqiu?</h3><p>His rain swords and burst depend on frequent skill casts, and Sacrificial Sword can reset his skill CD, generating extra Hydro particles to relieve his heavy ER demand. It is his best-in-slot for most teams.</p></div><div class="qa"><h3>What stats should I prioritize on Xingqiu?</h3><p>Energy Recharge 200-250% first (he is ER-hungry), then HP (scales his healing and swords) and CRIT for personal damage. ATK is secondary.</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/bennett-build-en.html">← Bennett Build (National core)</a>
       <a href="/guides/raiden-shogun-build-en.html">Raiden Shogun Build →</a>
@@ -303,7 +308,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!');f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again')}}).catch(function(){m.className='msg err';m.textContent='Network error');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!';f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again';}}).catch(function(){m.className='msg err';m.textContent='Network error';});});})();
 </script>
 <footer>
   <div class="wrap">
@@ -311,5 +316,37 @@
     Not affiliated with HoYoverse. In-game data is always final.
   </div>
 </footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Xingqiu's best build?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Xingqiu is the core Hydro enabler (off-field rain swords). Use 4-piece Emblem of Severed Fate (HP%/ER sands, Hydro goblet, CRIT circlet) with Energy Recharge 200-250%. Signature is Sacrificial Sword (R5, double skill); strong 5-stars are Skyward Blade and Freedom-Sworn."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is Sacrificial Sword so good on Xingqiu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "His rain swords and burst depend on frequent skill casts, and Sacrificial Sword can reset his skill CD, generating extra Hydro particles to relieve his heavy ER demand. It is his best-in-slot for most teams."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What stats should I prioritize on Xingqiu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Energy Recharge 200-250% first (he is ER-hungry), then HP (scales his healing and swords) and CRIT for personal damage. ATK is secondary."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

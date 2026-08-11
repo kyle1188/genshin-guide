@@ -270,6 +270,10 @@
     <h2>还没抽到纳西妲</h2>
     <p>她是限定五星，可能没抽到。草系替代：<a href="/guides/beginner-characters.html">草主</a>（免费，能稳带深林）或柯莱（四星，新手雷达上的角色）是最好的替身——两者都后台挂草且能穿深林的记忆。等她复刻前先养这两位，多数绽放 / 激化队都能顶上。</p>
 
+        <section class="faq">
+      <h2>快速问答</h2>
+      <div class="qa"><h3>纳西妲最佳配装是什么？</h3><p>纳西妲走草系触发器兼副C路线，圣遗物首选4件套饰金之梦或深林的记忆，主词条堆元素精通。她的战技后台挂草，是绝大多数绽放、超绽放、激化队伍的核心。</p></div><div class="qa"><h3>纳西妲最佳武器？</h3><p>赤沙之杖（Staff of the Scarlet Sands）是她的五星专武。强力平民选择包括锻造的魔导绪论（精通法器）和祭礼残章。优先堆元素精通。</p></div><div class="qa"><h3>纳西妲用什么圣遗物？</h3><p>4件套饰金之梦或4件套深林的记忆依队伍定位二选一（若无人提供草抗削减则用深林）。主词条用精通沙、草伤杯、精通或双暴头。</p></div><div class="qa"><h3>纳西妲值得抽吗？</h3><p>值得。作为草神，她是草系体系（绽放、超绽放、激化、蔓激化）的骨架，也是对反应队最通用、最有用的单位之一。</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/furina-build.html">← 芙宁娜配装（全队增伤）</a>
       <a href="/guides/neuvillette-build.html">那维莱特配装 →</a>
@@ -319,7 +323,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！');f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试')}}).catch(function(){m.className='msg err';m.textContent='网络错误');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
 <footer>
   <div class="wrap">

@@ -99,6 +99,7 @@
 <header class="topbar">
   <div class="wrap">
     <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+        <a class="lang" href="/guides/xiangling-build.html">中文</a>
     <a class="back" href="/">← Back to Home</a>
   </div>
 </header>
@@ -229,6 +230,10 @@
     <h2>Don't Have Xiangling Yet?</h2>
     <p>She is free: clear Spiral Abyss floor 3 (any half-decent team) and she is permanently yours. While you get there, <b>Bennett</b> (also free from the same Abyss floors) covers Pyro buffing, and <b>Yanfei</b> / <b>Thoma</b> / <b>Dehya</b> can substitute off-field Pyro application in a pinch — but none match her free, Burst-based uptime. Build Bennett and Xiangling together; they are the foundation of the National shell that carries most accounts through endgame.</p>
 
+        <section class="faq">
+      <h2>Quick Answers</h2>
+      <div class="qa"><h3>What is Xiangling's best build?</h3><p>Xiangling is an off-field Pyro driver (the core of national teams). Use 4-piece Emblem of Severed Fate (EM/ATK sands, Pyro goblet, CRIT circlet) with Energy Recharge 180-220%. Signature is Staff of Homa; strongest F2P is The Catch (R5, free) and Dragon's Bane.</p></div><div class="qa"><h3>Why is Xiangling so ER-hungry?</h3><p>Her Pyronado (burst) is a long-duration off-field Pyro that drives Vaporize/Melt, but costs 80 energy with no innate generation. At 180-220% ER she can burst every rotation even as the only Pyro.</p></div><div class="qa"><h3>What stats should I prioritize on Xiangling?</h3><p>Energy Recharge 180-220% first, then CRIT (60%/120%+) and EM 150-200 in Vape. ATK% and Pyro DMG come from substats and sets; weapon choice (The Catch) covers a lot.</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/hutao-build-en.html">← Hu Tao Build (Pyro DPS reference)</a>
       <a href="/guides/ganyu-build-en.html">Ganyu Build →</a>
@@ -295,7 +300,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!');f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again')}}).catch(function(){m.className='msg err';m.textContent='Network error');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!';f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again';}}).catch(function(){m.className='msg err';m.textContent='Network error';});});})();
 </script>
 <footer>
   <div class="wrap">
@@ -303,5 +308,37 @@
     Not affiliated with HoYoverse. In-game data is always final.
   </div>
 </footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Xiangling's best build?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Xiangling is an off-field Pyro driver (the core of national teams). Use 4-piece Emblem of Severed Fate (EM/ATK sands, Pyro goblet, CRIT circlet) with Energy Recharge 180-220%. Signature is Staff of Homa; strongest F2P is The Catch (R5, free) and Dragon's Bane."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is Xiangling so ER-hungry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Her Pyronado (burst) is a long-duration off-field Pyro that drives Vaporize/Melt, but costs 80 energy with no innate generation. At 180-220% ER she can burst every rotation even as the only Pyro."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What stats should I prioritize on Xiangling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Energy Recharge 180-220% first, then CRIT (60%/120%+) and EM 150-200 in Vape. ATK% and Pyro DMG come from substats and sets; weapon choice (The Catch) covers a lot."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

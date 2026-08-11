@@ -121,7 +121,7 @@
       "name": "班尼特1命为什么重要？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "1命解除了大招加攻的 70% 生命值限制，即使角色满血也能吃到完整攻击力加成。被称为"质变命座"。"
+        "text": "1命解除了大招加攻的 70% 生命值限制，即使角色满血也能吃到完整攻击力加成。被称为「质变命座」。"
       }
     }
   ]
@@ -249,6 +249,10 @@
     <h2>班尼特怎么配</h2>
     <p>如果你是新手，抽到班尼特后直接拉到 80 级突破，大招点满，配一把西风剑或腐殖之剑，圣遗物 4 宗室充能沙生命杯治疗头。然后把他放进<a href="/guides/raiden-shogun-build.html">雷神国家队</a>或任何你有的主C队伍。</p>
 
+        <section class="faq">
+      <h2>快速问答</h2>
+      <div class="qa"><h3>班尼特充能需要多少？</h3><p>班尼特建议元素充能效率 220% 以上，毕业向 240–260%。他是队伍循环的核心，大招必须无缝覆盖。</p></div><div class="qa"><h3>班尼特武器用什么？</h3><p>五星可选天空之刃或风鹰剑（白值高，加攻多）；四星平民首选西风剑（充能+产球）或腐殖之剑（充能+战技增伤）。</p></div><div class="qa"><h3>班尼特1命为什么重要？</h3><p>1命解除了大招加攻的 70% 生命值限制，即使角色满血也能吃到完整攻击力加成。被称为</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/xiangling-build.html">← 香菱配装（国家队搭档）</a>
       <a href="/guides/xingqiu-build.html">行秋配装 →</a>
@@ -288,7 +292,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！');f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试')}}).catch(function(){m.className='msg err';m.textContent='网络错误');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
 <footer>
   <div class="wrap">

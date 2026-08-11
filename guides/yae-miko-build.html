@@ -278,6 +278,10 @@
     <h2>还没抽到八重神子</h2>
     <p>她是<b>限定五星</b>，周期复刻，所以复刻时抽——而 7.0 至冬借着免费阿廖沙与星绪传导把雷系推上风口，现在养雷系核心立即见效。等待期间，<a href="/guides/fischl-build.html">菲谢尔</a> 或 <a href="/guides/raiden-shogun-build.html">雷电将军</a> 能临时补脱手雷，但都没有八重三株场控。把<a href="/guides/nahida-build.html">纳西妲</a>与<a href="/guides/raiden-shogun-build.html">雷电将军</a>和她一起养；三者组成带多数账号过终局的草雷核心，而现在正是 7.0 变动前最安全的常青抽取。</p>
 
+        <section class="faq">
+      <h2>快速问答</h2>
+      <div class="qa"><h3>八重神子最佳配装是什么？</h3><p>八重神子走脱手雷副C，圣遗物首选4件套黄金剧团（脱手战技增伤+70%，默认）或在激化/蔓生队换4件套乐园遗落之花；主词条攻击%、雷伤%、双暴，激化队补精通。她的杀生樱是全部机制——放下三株就后台铺雷，不抢站场。</p></div><div class="qa"><h3>八重神子最佳武器？</h3><p>神乐之真意是专武：每次用战技叠战技增伤，而她整套机制都是樱花。流浪乐章R5（随机巨额buff）是平民最强；证誓之明瞳（锻造，大招后增雷/草伤）适配激化/绽放。她不吃充能焦虑。</p></div><div class="qa"><h3>八重神子充能需要多少？</h3><p>八重大招贵但能重召樱花回能，所以很少需要充能。只有当大招真频繁掉时才补充能副词条。优先攻击%/双暴/精通。</p></div><div class="qa"><h3>八重神子值得抽吗？</h3><p>值得。她是顶级脱手雷副C：三株杀生樱铺场、不抢站场，进激化/感电/雷神双雷核心。C0 已顶级，C1/C2 是现实甜点。限定五星，复刻时抽；7.0 雷系重做（免费阿廖沙+星绪传导）让雷系核心现在养正当时。</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/xiao-build.html">← 魈配装（风系主C）</a>
       <a href="/guides/albedo-build.html">阿贝多配装 →</a>
@@ -327,7 +331,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！');f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试')}}).catch(function(){m.className='msg err';m.textContent='网络错误');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
 <footer>
   <div class="wrap">

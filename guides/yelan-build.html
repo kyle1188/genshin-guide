@@ -249,6 +249,10 @@
     <h2>没有夜兰怎么办</h2>
     <p>夜兰是限定五星。下位替代用<a href="/guides/xingqiu-build.html">行秋</a>，他能覆盖大部分挂水需求，生存能力还更强。</p>
 
+        <section class="faq">
+      <h2>快速问答</h2>
+      <div class="qa"><h3>夜兰生命值需要多少？</h3><p>夜兰伤害基于生命值上限，建议生命值 35000–40000 以上。她的天赋还会根据生命值给前台角色增伤，因此生命是最重要的属性。</p></div><div class="qa"><h3>夜兰四星武器选什么？</h3><p>四星首选西风猎弓，提供充能和团队产球，帮助循环。如果充能足够，可用绝弦（加精通和战技/爆发伤害）。</p></div><div class="qa"><h3>夜兰和行秋怎么选？</h3><p>两者都是后台挂水副C。行秋提供减伤、抗打断和治疗，生存能力更强；夜兰伤害更高、还有前台增伤。高压环境选行秋，追求伤害选夜兰，很多队伍可以一起上。</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/xingqiu-build.html">← 行秋配装</a>
       <a href="/guides/hutao-build.html">胡桃配装 →</a>
@@ -288,7 +292,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！');f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试')}}).catch(function(){m.className='msg err';m.textContent='网络错误');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
 <footer>
   <div class="wrap">

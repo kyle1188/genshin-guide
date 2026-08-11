@@ -278,6 +278,10 @@
     <h2>还没抽到神里绫华</h2>
     <p>她是限定五星，要在复刻抽——而 7.0 至冬借着星绪反应重做与奥黛特把冰系推上风口，现在养冰系核心正当时。等待期间，<b>甘雨</b> 能临时顶冰系主C（瞄准风格不同但有效），<b>凯亚</b> 是免费冰系超导选项。把<a href="/guides/kazuha-build.html">枫原万叶</a>与<a href="/guides/furina-build.html">芙宁娜</a>和她一起养；三者组成带多数账号通关深渊的冰系核心，而现在正是 7.0 变动前最安全的常青抽取。</p>
 
+        <section class="faq">
+      <h2>快速问答</h2>
+      <div class="qa"><h3>神里绫华最佳配装是什么？</h3><p>绫华走冰系站场主C，圣遗物首选4件套冰风迷途的勇士（冻结时+40%暴击率），主词条攻击%、冰伤%、双暴；她几乎必配水形成永冻，靠冻结把暴击率白送。是胡桃的冰系同位——专一挥砍、靠好圣遗物与紧凑循环起飞。</p></div><div class="qa"><h3>神里绫华最佳武器？</h3><p>雾切之回光是专武；平民最强是可锻造的天目影打刀（技能回能顺滑大招）。波乱月白经津、黑岩/深海系列也可。她不吃充能焦虑，天目+副词条基本够到 ~110-130% 充能。</p></div><div class="qa"><h3>神里绫华充能需要多少？</h3><p>绫华希望每轮都有大招。天目影打刀的回能通常让她舒服地 ~110–130% 充能；雾切则需副词条补一点。大招掉线，她的伤害下限会骤降。</p></div><div class="qa"><h3>神里绫华值得抽吗？</h3><p>值得。她是手感最顺的平民冰系主C，永冻壳在 7.0 冰系重做（星绪反应、新角色奥黛特）下只会更强。C0 已是顶级冰C，追到 C2（大招低血增伤+更大范围）停手即可。</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/fischl-build.html">← 菲谢尔配装（雷系副C）</a>
       <a href="/guides/ganyu-build.html">甘雨配装 →</a>
@@ -327,7 +331,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！');f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试')}}).catch(function(){m.className='msg err';m.textContent='网络错误');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
 <footer>
   <div class="wrap">

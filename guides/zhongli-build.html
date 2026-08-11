@@ -255,6 +255,10 @@
     <h2>没有钟离怎么办</h2>
     <p>钟离是限定五星，不一定人人都有。如果缺盾，可以用<a href="/guides/bennett-build.html">班尼特</a>（回血+加攻）或<a href="/guides/xingqiu-build.html">行秋</a>（减伤+抗打断）作为下位替代。诺艾尔也能提供护盾和治疗。</p>
 
+        <section class="faq">
+      <h2>快速问答</h2>
+      <div class="qa"><h3>钟离堆生命值还是攻击力？</h3><p>主流护盾流钟离主堆生命值。护盾吸收量基于生命值上限，生命越高护盾越厚。走武神/输出路线才堆攻击和双暴，一般玩家不推荐。</p></div><div class="qa"><h3>钟离用什么武器最好？</h3><p>护盾流平民毕业武器是三星黑缨枪，提供高额生命值且极易获取。需要团队充能可选西风长枪；玩输出流可用护摩之杖。</p></div><div class="qa"><h3>钟离圣遗物选什么？</h3><p>千岩牢固4件套是标准选择，战技命中后全队攻击力+20%、护盾强效+30%。如果刷不出好套装，也可用生命2+2散件过渡。</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/hutao-build.html">← 胡桃配装（经典搭档）</a>
       <a href="/guides/furina-build.html">芙宁娜配装 →</a>
@@ -294,7 +298,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！');f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试')}}).catch(function(){m.className='msg err';m.textContent='网络错误');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
 <footer>
   <div class="wrap">

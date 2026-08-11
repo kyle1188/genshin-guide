@@ -102,6 +102,7 @@
 <header class="topbar">
   <div class="wrap">
     <div class="brand"><span class="dot"></span><span>Teyvat<b> Starter Guide</b></span></div>
+        <a class="lang" href="/guides/yae-miko-build.html">中文</a>
     <a class="back" href="/">← Back to Home</a>
   </div>
 </header>
@@ -237,6 +238,10 @@
     <h2>Don't Have Yae Miko Yet?</h2>
     <p>She is a <b>limited 5★</b> who reruns periodically, so pull her when she returns — and with 7.0 Snezhnaya spotlighting Electro via the free Alyosha and Stellar Conduct, building your Electro core now pays off immediately. While you wait, <a href="/guides/fischl-build-en.html">Fischl</a> or <a href="/guides/raiden-shogun-build-en.html">Raiden</a> can supply off-field Electro in a pinch, but neither gives Yae's three-turret field control. Build her alongside <a href="/guides/nahida-build-en.html">Nahida</a> and <a href="/guides/raiden-shogun-build-en.html">Raiden</a>; together they are the Electro-Dendro core that carries most accounts through endgame, and right now they are the safest evergreen pickups before the 7.0 shift.</p>
 
+        <section class="faq">
+      <h2>Quick Answers</h2>
+      <div class="qa"><h3>What is Yae Miko's best build?</h3><p>Yae Miko is an off-field Electro turret DPS. Use 4-piece Golden Troupe (ATK%/EM sands, Electro goblet, CRIT circlet) for turret damage, or 2-piece EM + 2-piece Electro for Aggravate. CRIT 70%+, ATK 1800+. Signature is Kagura's Verity; best 4-stars are The Widsith and Sacrificial Fragments.</p></div><div class="qa"><h3>Why does Yae Miko fit Aggravate teams?</h3><p>Her three Sesshou Sakura totems provide steady off-field Electro that Quicken/Aggravate rewards, and her fast application suits Cyno/KeQing. She also self-buffs turret damage on burst cast.</p></div><div class="qa"><h3>What stats should I prioritize on Yae Miko?</h3><p>CRIT Rate/DMG (70%/140%+), ATK 1800+, and Elemental Mastery 100-200 in Aggravate. Energy Recharge 120-130% since her totems generate particles.</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/xiao-build-en.html">← Xiao Build (Anemo DPS)</a>
       <a href="/guides/albedo-build-en.html">Albedo Build →</a>
@@ -302,7 +307,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!');f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again')}}).catch(function(){m.className='msg err';m.textContent='Network error');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!';f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again';}}).catch(function(){m.className='msg err';m.textContent='Network error';});});})();
 </script>
 <footer>
   <div class="wrap">
@@ -310,5 +315,37 @@
     Not affiliated with HoYoverse. In-game data is always final.
   </div>
 </footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Yae Miko's best build?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yae Miko is an off-field Electro turret DPS. Use 4-piece Golden Troupe (ATK%/EM sands, Electro goblet, CRIT circlet) for turret damage, or 2-piece EM + 2-piece Electro for Aggravate. CRIT 70%+, ATK 1800+. Signature is Kagura's Verity; best 4-stars are The Widsith and Sacrificial Fragments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does Yae Miko fit Aggravate teams?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Her three Sesshou Sakura totems provide steady off-field Electro that Quicken/Aggravate rewards, and her fast application suits Cyno/KeQing. She also self-buffs turret damage on burst cast."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What stats should I prioritize on Yae Miko?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CRIT Rate/DMG (70%/140%+), ATK 1800+, and Elemental Mastery 100-200 in Aggravate. Energy Recharge 120-130% since her totems generate particles."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

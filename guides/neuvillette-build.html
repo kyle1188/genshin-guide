@@ -250,6 +250,10 @@
     <h2>还没抽到那维莱特</h2>
     <p>那维莱特是限定五星。如果缺强力水C，可以先养<a href="/guides/xingqiu-build.html">行秋</a>或<a href="/guides/yelan-build.html">夜兰</a>作为后台水伤核心，等资源充足后再抽他。</p>
 
+        <section class="faq">
+      <h2>快速问答</h2>
+      <div class="qa"><h3>那维莱特最佳武器是什么？</h3><p>五星首选万世流涌大典（专武），大幅提升重击伤害与生命值。四星平民推荐试作金珀（锻造），提供生命值与全队回能；没有锻造资源时可用魔导绪论或西风秘典过渡。</p></div><div class="qa"><h3>那维莱特圣遗物怎么选？</h3><p>主流选择4件套逐影猎人：重击命中后根据生命值变动提供暴击率，完美契合那维莱特蓄力重击输出。 Alternatively 可用2水伤+2生命过渡；毕业仍建议逐影猎人。</p></div><div class="qa"><h3>那维莱特需要多少生命值？</h3><p>生命值建议堆到40000以上。他的重击伤害几乎完全基于生命值上限，生命值是最优先属性；之后再平衡暴击率和暴击伤害。</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/furina-build.html">← 芙宁娜配装（最佳搭档）</a>
       <a href="/guides/kazuha-build.html">枫原万叶配装 →</a>
@@ -289,7 +293,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！');f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试')}}).catch(function(){m.className='msg err';m.textContent='网络错误');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
 <footer>
   <div class="wrap">

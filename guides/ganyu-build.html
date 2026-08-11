@@ -271,6 +271,10 @@
     <h2>还没抽到甘雨</h2>
     <p>她是限定五星。冰系远程主C替代：<b>罗莎莉亚</b>（卡池与剧情四星，强枪冰C兼暴击辅助）与<b>凯亚</b>（免费开局）能覆盖后台挂冰。<b>莫娜</b> / <b>行秋</b>加护盾位（钟离 / 迪奥娜）能顶上甘雨多数壳。等她复刻前先养这些，它们能直接塞进同款队伍。</p>
 
+        <section class="faq">
+      <h2>快速问答</h2>
+      <div class="qa"><h3>甘雨最佳配装是什么？</h3><p>甘雨走冰系弓主C路线，融化队首选4件套流浪大地的乐团（直接加蓄力伤害），永冻队用4件套冰风迷途的勇士。主词条攻击沙、冰伤杯、双暴头，蓄力霜华矢是核心。</p></div><div class="qa"><h3>甘雨最佳武器？</h3><p>阿莫斯之弓（Amos' Bow）是她的五星专武，箭飞得越久蓄力伤害越高。强力平民选择是锻造的试作澹月（命中弱点加攻击），以及黑岩战弓与破魔之弓。</p></div><div class="qa"><h3>甘雨用什么圣遗物？</h3><p>融化/蓄力队用4件套流浪大地的乐团；永冻队用4件套冰风迷途的勇士（冻结时近乎满暴击）。主词条攻击%、冰伤%、暴击率/暴击伤害。</p></div><div class="qa"><h3>甘雨值得抽吗？</h3><p>值得。作为标志性冰系弓主C，她同时精通融化（爆发单体）与永冻（舒适群控），是少数能在两种体系都表现出色的单位，投入低、上限高。</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/hutao-build.html">← 胡桃配装（火C 参考）</a>
       <a href="/guides/zhongli-build.html">钟离配装 →</a>
@@ -319,7 +323,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！');f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试')}}).catch(function(){m.className='msg err';m.textContent='网络错误');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
 <footer>
   <div class="wrap">

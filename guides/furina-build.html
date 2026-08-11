@@ -268,6 +268,10 @@
     <h2>还没抽到芙宁娜</h2>
     <p>芙宁娜是限定五星，不是所有人都有。如果缺后台挂水，<a href="/guides/xingqiu-build.html">行秋</a>和<a href="/guides/yelan-build.html">夜兰</a>（都在新手必练清单里）能覆盖大部分队伍——只是没有她那夸张的全队增伤。可以先养这两位，等芙宁娜复刻。</p>
 
+        <section class="faq">
+      <h2>快速问答</h2>
+      <div class="qa"><h3>芙宁娜最佳配装是什么？</h3><p>芙宁娜走后台增伤辅助兼副C路线，圣遗物首选4件套黄金剧团，主词条生命沙、生命杯、暴击/生命头，生命值36000以上、元素充能130%–180%。武器方面五星首选静水流涌之辉，四星平民首选枫丹钓鱼获得的船坞长剑。</p></div><div class="qa"><h3>芙宁娜为什么必须带治疗角色？</h3><p>芙宁娜的元素爆发通过记录全队生命值波动来叠气氛值，最高可为全队提供75%增伤。没有治疗角色持续回血，队伍血量会一直被技能压低，气氛值叠不起来，核心增伤效果就浪费了。</p></div><div class="qa"><h3>芙宁娜充能需要多少？</h3><p>芙宁娜的元素爆发能量需求为60点。单水入队或队伍产球少时建议180%左右；双水、有雷神或其他水元素队友时可降至130%–150%。优先保证每轮循环都能开出大招。</p></div>
+    </section>
     <div class="pairbox">
       <a href="/guides/neuvillette-build.html">← 那维莱特配装（她的最佳搭档）</a>
       <a href="/guides/xingqiu-build.html">行秋配装 →</a>
@@ -307,7 +311,7 @@
   <div class="msg" id="subMsg"></div>
 </section>
 <script>
-(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！');f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试')}}).catch(function(){m.className='msg err';m.textContent='网络错误');});})();
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
 <footer>
   <div class="wrap">
