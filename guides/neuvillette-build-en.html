@@ -288,6 +288,32 @@
 
 </article>
 
+<style>
+.sub-box{max-width:760px;margin:34px auto 10px;background:linear-gradient(135deg,rgba(232,196,116,.10),rgba(232,196,116,.03));border:1px solid rgba(232,196,116,.35);border-radius:16px;padding:26px 24px;text-align:center}
+.sub-box h3{margin:0 0 6px;font-size:19px;color:var(--gold)}
+.sub-box p{margin:0 0 16px;color:var(--txt-dim);font-size:14px;line-height:1.6}
+.sub-box form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.sub-box input{flex:1 1 260px;max-width:340px;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--txt);font-size:14px;outline:none}
+.sub-box input:focus{border-color:var(--gold)}
+.sub-box button{padding:12px 22px;border:none;border-radius:10px;background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#10141d;font-weight:700;font-size:14px;cursor:pointer;transition:.2s}
+.sub-box button:hover{filter:brightness(1.06)}
+.sub-box .msg{margin-top:12px;font-size:13px;min-height:18px}
+.sub-box .msg.ok{color:#7fd8a8}
+.sub-box .msg.err{color:#f0997b}
+@media(max-width:520px){.sub-box form{flex-direction:column}.sub-box input{max-width:none}}
+</style>
+<section class="sub-box" id="subscribe-box">
+  <h3>Get Genshin build updates</h3>
+  <p>New character builds, banner-time guides, and long-tail tips in your inbox. Free, unsubscribe anytime.</p>
+  <form id="subForm" action="/api/subscribe" method="POST">
+    <input type="email" name="email" placeholder="you@example.com" required aria-label="email">
+    <button type="submit">Subscribe</button>
+  </form>
+  <div class="msg" id="subMsg"></div>
+</section>
+<script>
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email');return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!');f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again')}}).catch(function(){m.className='msg err';m.textContent='Network error');});})();
+</script>
 <footer>
   <div class="wrap">
     Teyvat Starter Guide · Independent Genshin Impact build reference · <a href="/">Home</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a><br/>
