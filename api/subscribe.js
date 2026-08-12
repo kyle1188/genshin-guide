@@ -37,7 +37,11 @@ module.exports = async function handler(req, res) {
     try {
       await fetch(sheet, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          // Formspree/Cloudflare 对非浏览器 UA 直接 403，serverless fetch 默认 UA 会被拦
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36'
+        },
         body: JSON.stringify({ email: email, ts: new Date().toISOString() })
       });
     } catch (e) {
