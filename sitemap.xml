@@ -932,5 +932,41 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/best-f2p-weapons.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/best-f2p-weapons.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/best-f2p-weapons-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/best-f2p-weapons-en.html" />
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/best-f2p-weapons-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/best-f2p-weapons-en.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/best-f2p-weapons.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/best-f2p-weapons-en.html" />
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/gacha-strategy.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/gacha-strategy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/gacha-strategy-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/gacha-strategy-en.html" />
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/gacha-strategy-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/gacha-strategy-en.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/gacha-strategy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/gacha-strategy-en.html" />
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 <!-- LONGTAIL -->
 </urlset>
