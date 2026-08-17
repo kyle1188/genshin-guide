@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Genshin Elemental Mastery Guide 2026: What EM Does, Soft Caps & Who Should Build It</title>
+<meta name="description" content="What does Elemental Mastery (EM) actually do? The reaction damage formula, soft caps for amplifying/quicken/transformative, who should build EM (transformative triggers, Anemo supports), who shouldn't, the 2nd-applier rule, and the level-90 bonus. FAQ up front." />
+<meta name="keywords" content="elemental mastery, EM, reaction damage, amplifying reactions, transformative reactions, EM soft cap" />
+<meta name="author" content="Teyvat Starter Guide" />
+<meta name="theme-color" content="#0c0f16" />
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/elemental-mastery-guide-en.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/elemental-mastery-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/elemental-mastery-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/elemental-mastery-guide-en.html" />
+<meta property="og:title" content="Genshin Elemental Mastery Guide 2026: What EM Does, Soft Caps & Who Should Build It" />
+<meta property="og:description" content="What does Elemental Mastery (EM) actually do? The reaction damage formula, soft caps for amplifying/quicken/transformative, who should build EM (transformative triggers, Anemo supports), who shouldn't, the 2nd-applier rule, and the level-90 bonus. FAQ up front." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/elemental-mastery-guide-en.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png" />
+<meta name="twitter:title" content="Genshin Elemental Mastery Guide 2026: What EM Does, Soft Caps & Who Should Build It" />
+<meta name="twitter:description" content="What does Elemental Mastery (EM) actually do? The reaction damage formula, soft caps for amplifying/quicken/transformative, who should build EM (transformative triggers, Anemo supports), who shouldn't, the 2nd-applier rule, and the level-90 bonus. FAQ up front." />
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Elemental Mastery Guide 2026: What EM Does, Soft Caps & Who Should Build It", "description": "What does Elemental Mastery (EM) actually do? The reaction damage formula, soft caps for amplifying/quicken/transformative, who should build EM (transformative triggers, Anemo supports), who shouldn't, the 2nd-applier rule, and the level-90 bonus. FAQ up front.", "inLanguage": "en", "author": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-08-18", "dateModified": "2026-08-18", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://genshin-guide-one-five.vercel.app/guides/elemental-mastery-guide-en.html"}}
+</script><script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does Elemental Mastery do?", "acceptedAnswer": {"@type": "Answer", "text": "It only amplifies elemental reaction damage (Vaporize/Melt/Electro-charged/Bloom etc.) — zero effect on normal attack or skill damage. So EM is a reaction-only stat; a raw-DPS carry gets nothing from it."}}, {"@type": "Question", "name": "What is the EM soft cap?", "acceptedAnswer": {"@type": "Answer", "text": "By reaction: amplifying (Vape/Melt) 100-300, Quicken (Aggravate/Spread) 400-600, transformative (Bloom/Hyperbloom/Overload) 800-1000+. Beyond that returns diminish; past 1000 it's better to give the main-stat to Crit/ATK."}}, {"@type": "Question", "name": "Who should build EM hardest?", "acceptedAnswer": {"@type": "Answer", "text": "Transformative reaction triggers (Hyperbloom Kuki, Bloom Nilou/Kokomi) and Anemo VV supports (Kazuha, Sucrose) — the former scale reactions deep on EM, the latter convert EM into team-wide damage. Nahida also wants ~1000 EM."}}, {"@type": "Question", "name": "Why shouldn't a Vape carry build EM?", "acceptedAnswer": {"@type": "Answer", "text": "A Vape carry (e.g. Hu Tao) gets damage from Crit and ATK; an EM Sands sacrifices ATK and Crit for little gain. Keep only 100-200 EM from weapon/substats; don't force an EM Sands."}}, {"@type": "Question", "name": "What is the EM formula?", "acceptedAnswer": {"@type": "Answer", "text": "The reaction multiplier = (2.78×EM)/(EM+1400), a fixed ratio that rises with EM but with diminishing returns. No hard ceiling, but each point past 1000 clearly loses value."}}]}
+</script><header class="topbar"><div class="wrap"><div class="brand"><span class="dot"></span><span>Teyvat <b>Starter Guide</b></span></div><a class="lang" href="https://genshin-guide-one-five.vercel.app/guides/elemental-mastery-guide.html">中文</a><a class="back" href="/">← Back to Home</a></div></header><div class="wrap"><nav class="crumb"><a href="/">Teyvat Starter Guide</a> › Progression › Elemental Mastery</nav><article><h1>Genshin Elemental Mastery Guide 2026: <span class="grad">What EM Does, Soft Caps &amp; Who Should Build It</span></h1><p class="lead">Elemental Mastery only boosts reaction damage, not raw hit damage. Build it on the wrong unit and it's wasted. This guide covers the EM formula, per-reaction soft caps, and who should stack it.</p>
+<div class="callout"><b>EM only amplifies reaction damage</b> — zero effect on normal attack or skill damage. Transformative reactions (Bloom/Hyperbloom/Overload) love EM; amplifying reactions (Vape/Melt) want only a little; a pure raw-DPS carry gets nothing from it.</div>
+
+<h2>How EM scales reaction damage</h2>
+<p>The reaction multiplier follows <strong>(2.78×EM)/(EM+1400)</strong> — a fixed multiplier that rises with EM but with diminishing returns. No hard cap, but past 1000 EM the main-stat you give up (Crit/ATK) costs more than the EM gains.</p>
+
+<h2>Soft caps by reaction type</h2>
+<table>
+  <tr><th>Reaction</th><th>Recommended EM</th><th>Notes</th></tr>
+  <tr><td>Amplifying (Vape/Melt)</td><td>100-300</td><td>Carry needs only 100-200 from weapon/substats; don't force an EM Sands</td></tr>
+  <tr><td>Quicken (Aggravate/Spread)</td><td>400-600</td><td>Aggravate carries like Tighnari/Alhaitham peak here</td></tr>
+  <tr><td>Transformative (Bloom/Hyperbloom/Burgeon/Overload)</td><td>800-1000+</td><td>The trigger (Kuki/Nahida) stacks EM hard</td></tr>
+</table>
+
+<h2>Who should build EM</h2>
+<ul>
+  <li><b>Transformative triggers</b>: Hyperbloom (Kuki/Raiden), Bloom (Nilou/Kokomi), Burgeon (Thoma). These don't Crit — pure level + EM.</li>
+  <li><b>Anemo VV supports</b>: Kazuha converts each EM into 0.04% team elemental DMG (1000 EM = +40%); Sucrose shares 20% of her EM with the team. Both run full EM Sands/Goblet/Circlet.</li>
+  <li><b>Nahida</b>: her damage and team EM buff scale with her own EM; pushing to 1000 EM feeds both herself and the team.</li>
+</ul>
+
+<h2>Who should NOT build EM</h2>
+<ul>
+  <li><b>Amplifying carries</b> (Vape Hu Tao, Melt Ganyu): damage comes from Crit and ATK; an EM Sands loses ATK and Crit. Keep 100-200 from substats only.</li>
+  <li><b>Pure raw-DPS carries</b> (no reactions): EM gives literally zero — skip it.</li>
+</ul>
+
+<h2>Two key details</h2>
+<ul>
+  <li><b>2nd-applier rule</b>: amplifying reaction damage uses the EM of the unit that applies the SECOND element. Make your Main DPS the second applier so it gets the bonus.</li>
+  <li><b>Level-90 bonus</b>: transformative reaction damage scales with character level — L90 vs L80 is about +34.3%. Level the trigger to 90 before farming artifacts; it's a bigger gain.</li>
+</ul>
+
+<h2>Common traps</h2>
+<ul>
+  <li><b>EM Sands on a Vape carry</b>: loses ATK and Crit, damage flattens.</li>
+  <li><b>ATK Sands on a Hyperbloom trigger</b>: seed damage only reads level + EM; ATK/Crit are wasted.</li>
+  <li><b>EM past 1000</b>: main-stat opportunity cost, marginal returns drop fast.</li>
+  <li><b>Forgetting L90</b>: a trigger stuck at 80 throws away ~34% damage.</li>
+</ul>
+<section class="faq"><h2>Quick Answers</h2><div class="qa"><h3>What does Elemental Mastery do?</h3><p>It only amplifies elemental reaction damage (Vaporize/Melt/Electro-charged/Bloom etc.) — zero effect on normal attack or skill damage. So EM is a reaction-only stat; a raw-DPS carry gets nothing from it.</p></div><div class="qa"><h3>What is the EM soft cap?</h3><p>By reaction: amplifying (Vape/Melt) 100-300, Quicken (Aggravate/Spread) 400-600, transformative (Bloom/Hyperbloom/Overload) 800-1000+. Beyond that returns diminish; past 1000 it's better to give the main-stat to Crit/ATK.</p></div><div class="qa"><h3>Who should build EM hardest?</h3><p>Transformative reaction triggers (Hyperbloom Kuki, Bloom Nilou/Kokomi) and Anemo VV supports (Kazuha, Sucrose) — the former scale reactions deep on EM, the latter convert EM into team-wide damage. Nahida also wants ~1000 EM.</p></div><div class="qa"><h3>Why shouldn't a Vape carry build EM?</h3><p>A Vape carry (e.g. Hu Tao) gets damage from Crit and ATK; an EM Sands sacrifices ATK and Crit for little gain. Keep only 100-200 EM from weapon/substats; don't force an EM Sands.</p></div><div class="qa"><h3>What is the EM formula?</h3><p>The reaction multiplier = (2.78×EM)/(EM+1400), a fixed ratio that rises with EM but with diminishing returns. No hard ceiling, but each point past 1000 clearly loses value.</p></div></section><div class="pairbox"><a href="/guides/elemental-reactions-en.html">Elemental Reactions</a><a href="/guides/damage-formula-guide-en.html">Damage Formula</a><a href="/guides/crit-guide-en.html">Crit Rate vs DMG</a><a href="/guides/best-f2p-weapons-en.html">F2P Weapons</a></div></article></div><style>
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff;
+    --fire:#ff6b4a; --water:#4aa8ff; --thunder:#b06bff; --grass:#7dd35f; --rock:#e0c068; --wind:#a8e6cf; --ice:#7fd4ff; --grass:#7dd35f;
+    --r:14px; --maxw:920px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.8; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:14px; height:58px}
+  .brand{display:flex; align-items:center; gap:9px; font-weight:700; letter-spacing:.5px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+  .brand b{color:var(--gold)}
+  .lang{color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .lang:hover{color:var(--txt); background:var(--panel)}
+  .back{margin-left:auto; color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .back:hover{color:var(--txt); background:var(--panel)}
+  .crumb{font-size:13px; color:var(--txt-mute); margin:26px 0 4px}
+  .crumb a{color:var(--txt-dim)}
+  article{padding:8px 0 40px}
+  h1{font-size:clamp(26px,4.4vw,38px); line-height:1.25; margin:6px 0 14px; letter-spacing:.3px}
+  h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .lead{color:#cdd6e4; font-size:16px; margin:0 0 26px}
+  h2{font-size:clamp(20px,3vw,26px); margin:38px 0 12px; padding-left:14px; border-left:4px solid var(--gold); scroll-margin-top:72px}
+  h3{font-size:18px; margin:22px 0 8px; color:#fff}
+  p{color:var(--txt-dim); margin:10px 0}
+  ul,ol{color:var(--txt-dim); padding-left:22px}
+  li{margin:6px 0}
+  .src-note{font-size:13px; color:var(--txt-mute); border-left:3px solid var(--line); padding:8px 14px; margin:18px 0; background:var(--panel); border-radius:0 8px 8px 0}
+  .grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; transition:.2s}
+  .card:hover{border-color:rgba(232,196,116,.4)}
+  .card h3{display:flex; align-items:center; gap:10px; margin-top:0}
+  .tag{font-size:12px; font-weight:700; color:#0c0f16; padding:3px 9px; border-radius:7px; white-space:nowrap}
+  .tag.fire{background:var(--fire)} .tag.water{background:var(--water)} .tag.thunder{background:var(--thunder)}
+  .tag.grass{background:var(--grass)} .tag.rock{background:var(--rock)} .tag.wind{background:var(--wind)} .tag.ice{background:var(--ice)}
+  .card .role{font-size:13px; color:var(--gold); font-weight:600; margin:2px 0 8px}
+  .card p{font-size:14px; margin:6px 0}
+  .mini{font-size:13px; color:var(--txt-mute); margin-top:8px; border-top:1px dashed var(--line); padding-top:8px}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; background:var(--panel); border-radius:var(--r); overflow:hidden}
+  th,td{padding:11px 13px; text-align:left; border-bottom:1px solid var(--line); color:var(--txt-dim)}
+  th{background:rgba(232,196,116,.08); color:var(--gold); font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .callout{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .callout b{color:var(--gold)}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--txt-mute); font-size:13px; text-align:center}
+  footer a{color:var(--txt-dim)}
+  .pairbox{display:flex; flex-wrap:wrap; gap:12px; margin:30px 0 6px}
+  .pairbox a{padding:10px 16px; border:1px solid var(--line); border-radius:12px; color:var(--txt-dim); font-size:14px; font-weight:600; transition:.2s}
+  .pairbox a:hover{border-color:rgba(232,196,116,.4); color:var(--txt)}
+  .faq{margin:36px 0 10px; border-top:1px solid var(--line); padding-top:20px}
+  .faq .qa{border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin:12px 0; background:var(--panel-strong); transition:.2s}
+  .faq .qa:hover{border-color:rgba(232,196,116,.35)}
+  .faq .qa h3{margin:0 0 6px; font-size:16px; color:var(--txt)}
+  .faq .qa p{margin:0; color:var(--txt-dim); font-size:14.5px}
+  .sub-box{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:22px 20px; margin:34px 0; text-align:center}
+  .sub-box h3{margin:0 0 6px; color:#fff}
+  .sub-box p{font-size:14px; margin:0 0 14px}
+  .sub-box form{display:flex; gap:10px; justify-content:center; flex-wrap:wrap}
+  .sub-box input{flex:1; min-width:220px; max-width:340px; padding:11px 16px; border-radius:999px; border:1px solid var(--line); background:var(--bg); color:var(--txt); font-size:14px; outline:none}
+  .sub-box input:focus{border-color:var(--gold)}
+  .sub-box button{padding:11px 24px; border-radius:999px; border:none; background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d; font-weight:700; cursor:pointer; font-size:14px}
+  .sub-box button:hover{filter:brightness(1.08)}
+  .msg{margin-top:12px; font-size:14px; min-height:18px}
+  .msg.ok{color:var(--grass)} .msg.err{color:var(--fire)}
+</style></head>
+<body>
+<section class="sub-box" id="subscribe-box">
+  <h3>Get Genshin Build Updates</h3>
+  <p>New character builds, version banner tips and long-tail guides delivered to your inbox. Free, unsubscribe anytime.</p>
+  <form id="subForm" action="/api/subscribe" method="POST">
+    <input type="email" name="email" placeholder="you@example.com" required aria-label="Email">
+    <button type="submit">Subscribe</button>
+  </form>
+  <div class="msg" id="subMsg"></div>
+</section>
+<script>
+(function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed. Thank you!';f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again';}}).catch(function(){m.className='msg err';m.textContent='Network error';});});})();
+</script>
+<footer><div class="wrap">Teyvat Starter Guide · all-in-one Genshin starter guides · <a href="/">Home</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a><br/>Unofficial fan site. In-game data is final.</div></footer>
+</body>
+</html>
