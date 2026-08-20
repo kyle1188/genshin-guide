@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Genshin Impact Weekly Bosses Guide 2026 – Strategies, Drops & Farming Routes</title>
+<meta name="description" content="Complete walkthrough for every weekly boss in Genshin Impact: attack patterns, recommended elements, optimal team comps, drop materials, and how to farm efficiently.">
+<meta name="keywords" content="genshin impact weekly bosses guide, genshin boss strategy 2026, how to defeat stormterror genshin, genshin weekly boss drops">
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide-en.html">
+<meta property="og:title" content="Genshin Impact Weekly Bosses Guide 2026 – Strategies, Drops & Farming Routes">
+<meta property="og:description" content="Complete walkthrough for every weekly boss in Genshin Impact: attack patterns, recommended elements, optimal team comps, drop materials, and how to farm efficiently.">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide-en.html">
+<meta property="og:locale" content="zh_CN" if lang=="zh" else "en_US">
+<meta property="og:site_name" content="Teyvat Starter Guide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Genshin Impact Weekly Bosses Guide 2026 – Strategies, Drops & Farming Routes">
+<meta name="twitter:description" content="Complete walkthrough for every weekly boss in Genshin Impact: attack patterns, recommended elements, optimal team comps, drop materials, and how to farm efficiently.">
+<meta name="twitter:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide.html">
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide-en.html">
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide-en.html">
+<style>
+:root{--bg:#0c0f16;--bg2:#121723;--panel:rgba(255,255,255,.04);--panel-strong:rgba(255,255,255,.07);--line:rgba(255,255,255,.09);--txt:#e7ecf3;--txt-dim:#9aa6b8;--txt-mute:#6b7689;--gold:#e8c474;--blue:#5aa9ff;--r:14px;--maxw:920px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--txt);background:linear-gradient(180deg,var(--bg),var(--bg2));line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:var(--blue);text-decoration:none}::selection{background:rgba(232,196,116,.3)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+header.topbar{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(10,13,20,.72);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:14px;height:58px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:700;letter-spacing:.5px}
+.brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+.brand b{color:var(--gold)}
+.lang,.back{color:var(--txt-dim);font-size:14px;padding:7px 14px;border:1px solid var(--line);border-radius:999px;transition:.2s}
+.lang:hover,.back:hover{color:var(--txt);background:var(--panel)}
+.back{margin-left:auto}
+.crumb{font-size:13px;color:var(--txt-mute);margin:26px 0 4px}.crumb a{color:var(--txt-dim)}
+article{padding:8px 0 40px}
+h1{font-size:clamp(26px,4.4vw,38px);line-height:1.25;margin:6px 0 14px;letter-spacing:.3px}
+h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:#cdd6e4;font-size:16px;margin:0 0 26px}
+h2{font-size:clamp(20px,3vw,26px);margin:38px 0 12px;padding-left:14px;border-left:4px solid var(--gold);scroll-margin-top:72px}
+h3{font-size:18px;margin:22px 0 8px;color:#fff}
+p,li{color:var(--txt-dim);margin:10px 0}ul,ol{color:var(--txt-dim);padding-left:22px}li{margin:6px 0}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:rgba(232,196,116,.12);color:var(--gold);font-weight:600}
+.faq{margin:40px 0 24px}.faq h2{border-color:var(--blue);font-size:22px}
+.qa{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;margin:10px 0}
+.qa h3{font-size:15px;color:var(--gold);margin:0 0 6px}.qa p{font-size:14px;margin:0}
+.sub-box{background:linear-gradient(135deg,rgba(90,169,255,.12),rgba(232,196,116,.08));border:1px solid rgba(90,169,255,.25);border-radius:16px;padding:28px 24px;margin:32px 0;text-align:center}
+.sub-box h3{margin:0 0 8px;font-size:20px;color:#fff}.sub-box p{margin:0 0 16px;font-size:14px;color:var(--txt-dim)}
+.sub-box form{display:flex;gap:8px;max-width:400px;margin:0 auto}
+.sub-box input{flex:1;padding:10px 14px;border:1px solid var(--line);border-radius:8px;background:var(--panel-strong);color:var(--txt);font-size:14px}
+.sub-box button{padding:10px 20px;border:none;border-radius:8px;background:linear-gradient(135deg,var(--gold),var(--blue));color:#0c0f16;font-weight:700;cursor:pointer;font-size:14px}
+.pairbox{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}
+.pairbox a{padding:8px 16px;background:var(--panel);border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--txt-dim);transition:.2s}
+.pairbox a:hover{color:var(--txt);background:var(--panel-strong)}
+footer{margin-top:48px;padding:24px 0;border-top:1px solid var(--line);font-size:13px;color:var(--txt-mute);text-align:center}
+.hot-scarf{border-radius:var(--r);padding:14px 16px;margin:0 0 28px;font-size:14px}
+</style>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Impact Weekly Bosses Guide 2026 – Strategies, Drops & Farming Routes", "description": "Complete walkthrough for every weekly boss in Genshin Impact: attack patterns, recommended elements, optimal team comps, drop materials, and how to farm efficiently.", "author": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-08-20", "dateModified": "2026-08-20", "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide", "logo": {"@type": "ImageObject", "url": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png"}}, "inLanguage": "en"}</script>
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="/"><span class="dot"></span><b>Teyvat</b> Starter Guide</a>
+  <a class="lang" href="https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide.html">中文</a>
+  <a class="back" href="/">← ← Back to Home</a>
+</div></header>
+<div class="wrap"><nav class="crumb"><a href="/">Teyvat Starter Guide</a> › Guides</nav><article><h1>Genshin Impact Weekly Bosses Guide 2026 – Strategies, Drops & Farming Routes</h1><p class="lead">Weekly bosses drop the ascension materials for your 5★ characters and Northlander Billets for forging. This guide covers every weekly boss, their attack patterns, recommended elemental counters, and the most efficient farming routes.</p><section class="hot-scarf" style="background:rgba(176,107,255,.08);border:1px solid rgba(176,107,255,.25);border-radius:var(--r);padding:14px 16px;margin:0 0 28px;font-size:14px;">
+  <b>⚡ Version Note:</b> Weekly bosses updated for 7.0 Snezhnaya. New bosses may be added in future patches — check back for updates.
+</section>
+
+<h2>Weekly Boss Overview</h2>
+<table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;">
+<tr style="background:rgba(232,196,116,.12);"><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Boss</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Region</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Resin Cost</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Key Drops</th></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Stormterror Dvalin</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Mondstadt</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">30/60</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Dvalin's Plume, Vajrada Amethyst, Sword/Bow/Catalyst billets</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Andrius</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Dragonspine</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">30/60</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Adapted Scale, Crystalline Nectar, Claymore/Polearm billets</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Azhdaha</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Sumeru</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">30/60</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Sigil of Whispers, All billet types</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">La Signora</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Inazuma</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">30/60</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Hellfire Butterfly, Ashen Heart, transmutation materials</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Raiden Shogun (Musou)</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Inazuma</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">30/60</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Mudra of the Musoujin, Tears of the Calamitous God</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Scaramouche (Shouki no Kami)</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Inazuma</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">30/60</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Storm Beads, Puppet Strings, Mirror of Mushin</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">All-Devouring Narwhal</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Fontaine</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">30/60</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Seawrack Core, transmutation materials</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Maguu Kenki</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Inazuma</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">30/60</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);"> Martial Spirit, Marionette Core</td></tr>
+</table>
+
+<h2>Stormterror Dvalin (Mondstadt)</h2>
+<p><b>Recommended elements:</b> Pyro, Cryo, Geo (break shield) | <b>AR requirement:</b> 25+</p>
+<p><b>Phase 1 — Flight:</b> You'll fly behind Dvalin shooting cursed wounds. Use updrafts to catch up. Destroy two wounds to land for Phase 2.</p>
+<p><b>Phase 2 — Platform battle:</b></p>
+<ul>
+  <li><b>Breath attack</b>: Dvalin sweeps left-to-right or right-to-left. Attack the exposed claw during the wind-up.</li>
+  <li><b>Bite attack</b>: Dvalin lunges forward — his claws are exposed. Switch to heavy DPS characters.</li>
+  <li><b>Platform cracks</b>: Blue glowing areas deal Anemo DMG over time. Use wind currents to glide between safe platforms.</li>
+  <li><b>Meteor fall</b>: Run outside the blue circle indicator before it lands.</li>
+</ul>
+<p><b>F2P team:</b> Xiangling + Kaeya + Barbara + Amber (Anemo resonance from Amber's talent helps with flight).</p>
+<p><b>Premium team:</b> Diluc + Xiangling + Qiqi + Venti (Venti's burst breaks claws fast).</p>
+
+<h2>Andrius, Wolf of the North (Dragonspine)</h2>
+<p><b>Recommended elements:</b> Cryo, Pyro, Electro | <b>AR requirement:</b> 30+</p>
+<p><b>Key mechanics:</b></p>
+<ul>
+  <li>Phase 2: Andrius enters a <b>Cryo state</b> — attacks faster and more aggressively. Keep HP high.</li>
+  <li>Charge attacks sweep the platform. Dodge sideways, not backward.</li>
+  <li>A <b>healer is mandatory</b> — the multi-hit combos can one-shot unshielded characters.</li>
+</ul>
+<p><b>F2P team:</b> Kaeya + Amber + Barbara + any DPS. Pyro resonance from Amber boosts damage.</p>
+
+<h2>Azhdaha (Sumeru)</h2>
+<p><b>Recommended elements:</b> Pyro, Electro, Cryo | <b>AR requirement:</b> 40+</p>
+<p><b>Key mechanics:</b></p>
+<ul>
+  <li>Phase transition: Azhdaha burrows underground — wait for him to re-emerge.</li>
+  <li>Geo shields can be broken with <b>claymore or Geo</b> attacks.</li>
+  <li>The <b>Seismic Hammer</b> attack has a wide AoE — dodge sideways, not away.</li>
+  <li>Phase 2: Azhdaha gains a <b>Geo core</b> on his back. Destroy it to enter vulnerability phase.</li>
+</ul>
+<p><b>F2P team:</b> Xiangling + Bennett + Xingqiu + ANY geo/geo-free DPS. The National team works exceptionally well here.</p>
+
+<h2>La Signora (Inazuma)</h2>
+<p><b>Recommended elements:</b> Cryo (Phase 1) / Pyro (Phase 2) | <b>AR requirement:</b> 40+</p>
+<p><b>Key mechanics:</b></p>
+<ul>
+  <li><b>Phase 1 (Pyro form):</b> Use Cryo characters or Hydro to trigger evaporate. The heat gauge builds — stay mobile.</li>
+  <li><b>Phase 2 (Cryo form):</b> Use Pyro characters. Find and activate <b>Pyro devices</b> on the arena to warm up and break her ice shield.</li>
+  <li>She has <b>high defense</b> when her shield is up — wait for openings.</li>
+</ul>
+<p><b>Tip:</b> Bring a dedicated heater character (Diluc, Bennett) for Phase 2. Using the wrong element wastes time and risks a wipe.</p>
+
+<h2>Raiden Shogun (Musou Shinseki)</h2>
+<p><b>Recommended elements:</b> Cryo, Pyro, Geo | <b>AR requirement:</b> 45+</p>
+<p><b>Key mechanics:</b></p>
+<ul>
+  <li>Her <b>Musou no Hitotachi</b> is an unavoidable massive slash — bring a healer/shielder.</li>
+  <li>She has <b>very high Electro RES</b> — avoid using Electro DPS (it will do almost nothing).</li>
+  <li>Destroy the <b>Electro Eye</b> that appears during her burst to enter vulnerability.</li>
+</ul>
+<p><b>F2P team:</b> Xiangling + Bennett + Xingqiu + any non-Electro DPS. National team is ideal here.</p>
+
+<h2>Scaramouche (Wandering Soul)</h2>
+<p><b>Recommended elements:</b> Multiple elements needed | <b>AR requirement:</b> 45+</p>
+<p><b>Key mechanics:</b></p>
+<ul>
+  <li>Use <b>elemental matrices</b> on the arena to buff yourself and debuff Scaramouche.</li>
+  <li>Hydro matrix → increases your Hydro DMG. Pyro → Pyro DMG. etc.</li>
+  <li>Knock him off the platform during his wind attack to trigger a vulnerability window.</li>
+</ul>
+<p><b>Tip:</b> This fight rewards elemental awareness. Activate the matrix matching your main DPS element before engaging.</p>
+
+<h2>All-Devouring Narwhal (Fontaine)</h2>
+<p><b>Recommended elements:</b> Pyro, Cryo, Electro | <b>AR requirement:</b> 50+</p>
+<p><b>Key mechanics:</b></p>
+<ul>
+  <li>The Narwhal has a <b>parallel dimension phase</b> — you must defeat the <b>Devouring Energy</b> clone to damage the main boss.</li>
+  <li>Bring high survivability characters (Zhongli, Furina) for the AoE-heavy phases.</li>
+  <li>Dodge the massive water wave attacks — they cover most of the arena.</li>
+</ul>
+<p><b>F2P team:</b> Xiangling + Bennett + Xingqiu + Dendro Traveler (for Hyperbloom reactions during the clone phase).</p>
+
+<h2>F2P Farming Strategy</h2>
+<p>You can only claim weekly boss rewards <b>once per week</b> (Monday 4:00 AM server time). Plan your runs:</p>
+<ul>
+  <li><b>Week 1:</b> Stormterror (most accessible, good for beginners)</li>
+  <li><b>Week 2:</b> Azhdaha (drops all billet types — best efficiency)</li>
+  <li><b>Week 3:</b> Andrius (claymore/polearm billets)</li>
+  <li><b>Week 4:</b> La Signora or Raiden Shogun (depending on which weapon you need)</li>
+</ul>
+<p><b>Cost-saving tip:</b> The first 3 weekly boss claims per week cost only <b>30 Resin</b> instead of 60. Prioritize your most-needed bosses within that window.</p>
+
+<h2>Common Mistakes</h2>
+<ul>
+  <li><b>Using the wrong element</b>: Signora requires Cryo in Phase 1 and Pyro in Phase 2. Using Pyro in Phase 1 is almost useless.</li>
+  <li><b>Ignoring the healer</b>: Weekly bosses hit hard. A dead DPS deals zero damage. Bring a healer or shielder.</li>
+  <li><b>Running bosses without armor upgrades</b>: Equip the right artifact sets (Gladiator, Noblesse, etc.) before attempting weekly bosses — undergeared characters will struggle.</li>
+  <li><b>Skipping the vulnerability window</b>: Every boss has a period where they're stunned or exposed. Save your bursts for that window, not before.</li>
+</ul><section class="faq"><h2>Quick Answers</h2><div class="qa"><h3>What weekly boss should I farm first as a new player?</h3><p>Stormterror Dvalin — it's in Mondstadt (the first region), has the lowest AR requirement (25+), and drops valuable swords/bows/catalysts for early-game characters.</p></div><div class="qa"><h3>Can F2P players defeat all weekly bosses?</h3><p>Yes. While 5★ characters make fights easier, every weekly boss is cleable with well-built 4★ characters and proper elemental counters. National team (Xiangling+Bennett+Xingqiu) plus any DPS handles most bosses.</p></div><div class="qa"><h3>Why do some weekly bosses cost 30 resin and others 60?</h3><p>The first 3 weekly boss claims each week cost 30 resin. After that, it jumps to 60. Plan to run your highest-priority bosses within the 30-resin window.</p></div><div class="qa"><h3>How often do weekly bosses reset?</h3><p>Every Monday at 4:00 AM server time. You can challenge them as many times as you want, but rewards are only given once per reset cycle.</p></div><div class="qa"><h3>Which weekly boss drops the most useful materials?</h3><p>Azhdaha — he's the only boss that drops ALL Northlander Billet types (Sword, Bow, Claymore, Polearm, Catalyst), making him the most efficient for forgeable weapon farming.</p></div></section><div class="pairbox"><h3 style="font-size:15px;color:var(--txt-mute);margin:24px 0 10px;width:100%">Related Guides</h3><a href="https://genshin-guide-one-five.vercel.app/guides/weapon-forging-guide-en.html">Craftable Weapons</a><a href="https://genshin-guide-one-five.vercel.app/guides/spiral-abyss-guide-en.html">Spiral Abyss</a><a href="https://genshin-guide-one-five.vercel.app/guides/best-f2p-teams-en.html">F2P Teams</a><a href="https://genshin-guide-one-five.vercel.app/guides/resin-efficiency-en.html">Resin Efficiency</a></div></article></div><div class="sub-box">
+  <h3>📬 Get Updates</h3>
+  <p>Get the latest guides and patch notes first.</p>
+  <form onsubmit="event.preventDefault();this.innerHTML='<p style=&quot;color:var(--gold)&quot;>Subscribed! Thanks for following.</p>'">
+    <input type="email" placeholder="your@email.com" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</div>
+<footer><p>© 2026 Teyvat Starter Guide. All game content © miHoYo.</p></footer>
+<script>
+(function(){
+  var form = document.querySelector('.sub-box form');
+  if(!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var inp = form.querySelector('input');
+    var btn = form.querySelector('button');
+    if(!inp || !btn) return;
+    btn.disabled = true;
+    btn.textContent = 'Subscribed! Thanks for following.';
+    var email = inp.value.trim();
+    fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:email,ts:Date.now()})}).catch(function(){});
+  });
+})();
+</script>
+</body></html>
