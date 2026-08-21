@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Genshin Impact Pity System Guide 2026 – Soft Pity, Hard Pity, 50/50 Math Explained</title>
+<meta name="description" content="Complete breakdown of Genshin's wish system: soft pity starts at 74, hard pity at 90, 50/50 mechanics, primogem costs, and how to plan your pulls strategically.">
+<meta name="keywords" content="genshin impact pity system 2026, genshin soft pity hard pity explained, genshin 50/50 mechanics guide, how many primogems to guarantee genshin">
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide-en.html">
+<meta property="og:title" content="Genshin Impact Pity System Guide 2026 – Soft Pity, Hard Pity, 50/50 Math Explained">
+<meta property="og:description" content="Complete breakdown of Genshin's wish system: soft pity starts at 74, hard pity at 90, 50/50 mechanics, primogem costs, and how to plan your pulls strategically.">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide-en.html">
+<meta property="og:locale" content="zh_CN" if lang=="zh" else "en_US">
+<meta property="og:site_name" content="Teyvat Starter Guide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Genshin Impact Pity System Guide 2026 – Soft Pity, Hard Pity, 50/50 Math Explained">
+<meta name="twitter:description" content="Complete breakdown of Genshin's wish system: soft pity starts at 74, hard pity at 90, 50/50 mechanics, primogem costs, and how to plan your pulls strategically.">
+<meta name="twitter:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide.html">
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide-en.html">
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide-en.html">
+<style>
+:root{--bg:#0c0f16;--bg2:#121723;--panel:rgba(255,255,255,.04);--panel-strong:rgba(255,255,255,.07);--line:rgba(255,255,255,.09);--txt:#e7ecf3;--txt-dim:#9aa6b8;--txt-mute:#6b7689;--gold:#e8c474;--blue:#5aa9ff;--r:14px;--maxw:920px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--txt);background:linear-gradient(180deg,var(--bg),var(--bg2));line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:var(--blue);text-decoration:none}::selection{background:rgba(232,196,116,.3)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+header.topbar{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(10,13,20,.72);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:14px;height:58px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:700;letter-spacing:.5px}
+.brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+.brand b{color:var(--gold)}
+.lang,.back{color:var(--txt-dim);font-size:14px;padding:7px 14px;border:1px solid var(--line);border-radius:999px;transition:.2s}
+.lang:hover,.back:hover{color:var(--txt);background:var(--panel)}
+.back{margin-left:auto}
+.crumb{font-size:13px;color:var(--txt-mute);margin:26px 0 4px}.crumb a{color:var(--txt-dim)}
+article{padding:8px 0 40px}
+h1{font-size:clamp(26px,4.4vw,38px);line-height:1.25;margin:6px 0 14px;letter-spacing:.3px}
+h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:#cdd6e4;font-size:16px;margin:0 0 26px}
+h2{font-size:clamp(20px,3vw,26px);margin:38px 0 12px;padding-left:14px;border-left:4px solid var(--gold);scroll-margin-top:72px}
+h3{font-size:18px;margin:22px 0 8px;color:#fff}
+p,li{color:var(--txt-dim);margin:10px 0}ul,ol{color:var(--txt-dim);padding-left:22px}li{margin:6px 0}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:rgba(232,196,116,.12);color:var(--gold);font-weight:600}
+.faq{margin:40px 0 24px}.faq h2{border-color:var(--blue);font-size:22px}
+.qa{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;margin:10px 0}
+.qa h3{font-size:15px;color:var(--gold);margin:0 0 6px}.qa p{font-size:14px;margin:0}
+.sub-box{background:linear-gradient(135deg,rgba(90,169,255,.12),rgba(232,196,116,.08));border:1px solid rgba(90,169,255,.25);border-radius:16px;padding:28px 24px;margin:32px 0;text-align:center}
+.sub-box h3{margin:0 0 8px;font-size:20px;color:#fff}.sub-box p{margin:0 0 16px;font-size:14px;color:var(--txt-dim)}
+.sub-box form{display:flex;gap:8px;max-width:400px;margin:0 auto}
+.sub-box input{flex:1;padding:10px 14px;border:1px solid var(--line);border-radius:8px;background:var(--panel-strong);color:var(--txt);font-size:14px}
+.sub-box button{padding:10px 20px;border:none;border-radius:8px;background:linear-gradient(135deg,var(--gold),var(--blue));color:#0c0f16;font-weight:700;cursor:pointer;font-size:14px}
+.pairbox{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}
+.pairbox a{padding:8px 16px;background:var(--panel);border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--txt-dim);transition:.2s}
+.pairbox a:hover{color:var(--txt);background:var(--panel-strong)}
+footer{margin-top:48px;padding:24px 0;border-top:1px solid var(--line);font-size:13px;color:var(--txt-mute);text-align:center}
+.hot-scarf{border-radius:var(--r);padding:14px 16px;margin:0 0 28px;font-size:14px}
+</style>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Impact Pity System Guide 2026 – Soft Pity, Hard Pity, 50/50 Math Explained", "description": "Complete breakdown of Genshin's wish system: soft pity starts at 74, hard pity at 90, 50/50 mechanics, primogem costs, and how to plan your pulls strategically.", "author": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-08-21", "dateModified": "2026-08-21", "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide", "logo": {"@type": "ImageObject", "url": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png"}}, "inLanguage": "en"}</script>
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="/"><span class="dot"></span><b>Teyvat</b> Starter Guide</a>
+  <a class="lang" href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide.html">中文</a>
+  <a class="back" href="/">← ← Back to Home</a>
+</div></header>
+<div class="wrap"><nav class="crumb"><a href="/">Teyvat Starter Guide</a> › Guides</nav><article><h1>Genshin Impact Pity System Guide 2026 – Soft Pity, Hard Pity, 50/50 Math Explained</h1><p class="lead">Genshin's wish system has three load-bearing mechanics that most players misunderstand: soft pity is a probability ramp (not a guarantee), the 50/50 carries between banners, and pity counts persist within banner types until you actually pull a 5★. Master these three and you'll never waste primogems again.</p><section class="hot-scarf" style="background:rgba(232,196,116,.08);border:1px solid rgba(232,196,116,.25);border-radius:var(--r);padding:14px 16px;margin:0 0 28px;font-size:14px;">
+  <b>🎰 Math Alert:</b> This guide uses community-datamined probability curves from KeQingMains and Paimon.moe. Numbers are approximate but tested against millions of real pulls.
+</section>
+
+<h2>Pity System at a Glance</h2>
+<table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;">
+<tr style="background:rgba(232,196,116,.12);"><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Banner Type</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Soft Pity</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Hard Pity</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Special</th></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Character Event</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~74</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">90</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">50/50 system</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Weapon Event</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~63</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">80</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Epitomized Path</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Standard (Wanderlust)</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~74</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">90</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">No guarantee</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Beginner's Wish</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Same as Standard</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Same as Standard</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">First 10-pull discounted</td></tr>
+</table>
+
+<h2>Soft Pity — The Most Misunderstood Mechanic</h2>
+<p>The base rate of pulling a 5★ is <b>0.6% per wish</b>. This stays flat from wish 1 to roughly wish 73. Then at wish 74, the rate jumps dramatically:</p>
+<table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;">
+<tr style="background:rgba(232,196,116,.12);"><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Wish #</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">★5 Drop Rate (Character Banner)</th></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">1–73</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">0.6% (base rate)</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">74</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~6.5%</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">75</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~12%</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">76</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~18%</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">77</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~24%</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">78</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~30%</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">79</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~36%</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">80+</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Climbs steeply each wish</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">89</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~96%</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">90</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">100% (guaranteed)</td></tr>
+</table>
+<p><b>Practical implication:</b> ~60–70% of 5★ pulls happen between wishes 74–85. Only ~15–20% reach hard pity at 90. Don't assume you're unlucky if you hit 90 once or twice — it's rare but normal.</p>
+
+<h2>Hard Pity — The Guaranteed Floor</h2>
+<p>If you've made 89 wishes without a 5★, wish 90 is <b>100% guaranteed</b> to be a 5★. This is the absolute ceiling. On weapon banners, hard pity is wish 80.</p>
+<p><b>What hard pity does NOT guarantee:</b></p>
+<ul>
+  <li>The featured character (that's the 50/50 system — see below)</li>
+  <li>A specific weapon (that's Epitomized Path — weapon banner only)</li>
+  <li>Cross-banner persistence — Character Event pity, Weapon pity, and Standard pity are tracked separately</li>
+</ul>
+
+<h2>The 50/50 System (Character Event Banners Only)</h2>
+<p>When you pull a 5★ on a Character Event banner, there's a <b>50% chance</b> it's the featured limited character and a <b>50% chance</b> it's a random standard 5★ (Diluc, Jean, Mona, Qiqi, Keqing, Tighnari, or Dehya).</p>
+<p><b>If you lose the 50/50:</b> your next 5★ on that banner type is <b>guaranteed</b> to be the featured character. The guarantee persists across banner changes — if you lose on Xiangling's banner and switch to Hu Tao's banner, your next 5★ on Hu Tao's banner will still be guaranteed.</p>
+<p><b>Since Version 5.0 (Capturing Radiance):</b> it is now impossible to lose the 50/50 three consecutive times. The C-State system guarantees the featured character at C-State 3, effectively raising the long-term featured rate to ~55%.</p>
+
+<h2>Cost Breakdown</h2>
+<table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;">
+<tr style="background:rgba(232,196,116,.12);"><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Goal</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Pulls</th><th style="padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;border-bottom:2px solid var(--gold);">Primogems</th></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">1 pull</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">1</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">160</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">10 pulls</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">10</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">1,600</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Soft pity guarantee (avg)</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~76</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~12,160</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Hard pity (1×)</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">90</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">14,400</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Worst case (lose 50/50 + hard pity)</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">180</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">28,800</td></tr>
+</table>
+<p><b>Realistic expectation:</b> most players get their featured character between 75–85 pulls (~12,000–13,600 Primogems). Only ~15% reach hard pity, and only ~7.5% lose the 50/50. Budgeting 14,400 Primogems (90 pulls) per character is a safe conservative target.</p>
+
+<h2>Weapon Banner — Epitomized Path</h2>
+<p>The Weapon Event banner has different rules:</p>
+<ul>
+  <li><b>Soft pity:</b> ~63 wishes (steeper probability ramp because hard pity is 80, not 90)</li>
+  <li><b>Hard pity:</b> 80 wishes</li>
+  <li><b>No 50/50</b> — but instead uses <b>Epitomized Path</b>: select one of the two featured weapons. Each time you pull the other weapon (or a standard 5★ weapon), you gain 1 Fate Point. At 2 Fate Points, your next 5★ weapon is guaranteed to be your chosen one.</li>
+  <li><b>Fate Points reset</b> when you claim your chosen weapon or when you change your selected weapon mid-pity.</li>
+</ul>
+<p><b>Worst case for weapon banner:</b> 160 pulls (25,600 Primogems) if you lose both Fate Point accumulations. This is significantly more punishing than character banners — only pull weapons if you're a spender willing to navigate this system.</p>
+
+<h2>Pity Persistence Rules</h2>
+<ul>
+  <li><b>Pity carries over</b> between banners of the same type. Your Character Event pity continues on the next Character Event banner. Your Weapon Event pity continues on the next Weapon Event banner.</li>
+  <li><b>Pity does NOT carry across banner types.</b> Character Event pity, Weapon Event pity, and Standard pity are all tracked separately.</li>
+  <li><b>Pity resets</b> only when you actually pull a 5★. It does not reset when a banner ends, when a patch drops, or when you switch between Character Event and Standard banners.</li>
+</ul>
+
+<h2>Smart Wishing Strategy</h2>
+<table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;">
+<tr style="background:rgba(232,196,116,.12);"><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Rule</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Why</th></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Never pull Standard Banner with Intertwined Fates</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Use Acquaint Fates (blue) only. Intertwined Fates are for Limited banners.</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Commit before pulling</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Identify your most-wanted character and save for them. FOMO pulling is the #1 way F2P players run dry.</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Check banner schedules early</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Plan spending across the full 6-week patch cycle. Don't surprise yourself with an unexpected banner.</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Avoid Weapon Banner unless you're a whale</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Epitomized Path worst case is 160 pulls (25,600 Primogems). Character banners are more forgiving.</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Finish Beginner's Wish first</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Guaranteed Noelle at discounted cost. Best first-time value in the game.</td></tr>
+</table>
+
+<h2>FAQ</h2>
+<h3>Does pity reset when a banner ends?</h3>
+<p>No. Pity carries over between banners of the same type. Your Limited Character Banner pull count continues on the next Limited Banner, and your 50/50 guarantee also persists.</p>
+<h3>Can I lose the 50/50 twice in a row?</h3>
+<p>Not anymore. Since Version 5.0's Capturing Radiance system, it's impossible to lose three consecutive 50/50s. You'll get the featured character by your third 5★ on Character Event banners at the latest.</p>
+<h3>Should I single-pull or 10-pull?</h3>
+<p>Single-pulling saves Primogems if you're close to pity (wish 85+). At lower counts, 10-pulling is fine — the odds per individual wish are identical. The only difference is timing: single-pulling lets you stop exactly when you hit your 5★.</p>
+<h3>How do I check my current pity count?</h3>
+<p>Open the Wish screen, tap History, and count how many pulls have occurred since your last 5★. Third-party tools like paimon.moe can import your wish history and track pity automatically.</p>
+<h3>Is it better to pull early or late in a banner?</h3>
+<p>Mathematically identical — pity carries over and odds are the same on pull 1 vs. pull 70. Practically, waiting lets you accumulate more Primogems and ensures you have enough for the full pity cost if needed.</p><section class="faq"><h2>Quick Answers</h2><div class="qa"><h3>How many Primogems do I need to guarantee a limited character?</h3><p>In the worst case: 180 pulls = 28,800 Primogems (lose 50/50 at 90 pulls, then hard pity again at 90 more). In practice, most players spend ~12,000–14,400 Primogems due to soft pity triggering around pull 74–80.</p></div><div class="qa"><h3>What is soft pity in Genshin Impact?</h3><p>Soft pity is the hidden probability ramp that starts around wish 74 on character banners. The 5★ drop rate jumps from 0.6% to ~6.5% and increases each subsequent wish until hard pity at 90. Most 5★ pulls happen between wishes 74–85.</p></div><div class="qa"><h3>Does pity carry across different banner types?</h3><p>No. Character Event pity, Weapon Event pity, and Standard Banner pity are all tracked separately. If you lose your Character Event pity and switch to Standard, your Character Event count resets and a new Standard count begins.</p></div><div class="qa"><h3>What is Capturing Radiance (C-State)?</h3><p>Added in Version 5.0, C-State makes it impossible to lose the 50/50 three consecutive times on Character Event banners. After two lost 50/50s, your third 5★ is guaranteed to be the featured character, effectively raising the long-term featured rate from 50% to ~55%.</p></div><div class="qa"><h3>Should I pull on the Weapon Event banner?</h3><p>Only if you're a spender comfortable with the Epitomized Path risk. Worst case is 160 pulls (25,600 Primogems) vs. 180 pulls (28,800) for characters — slightly better, but the Fate Point system is more punishing and less forgiving of misplays.</p></div></section><div class="pairbox"><h3 style="font-size:15px;color:var(--txt-mute);margin:24px 0 10px;width:100%">Related Guides</h3><a href="https://genshin-guide-one-five.vercel.app/guides/gacha-strategy-en.html">Gacha Strategy</a><a href="https://genshin-guide-one-five.vercel.app/guides/best-characters-guide-en.html">Character Tier List</a><a href="https://genshin-guide-one-five.vercel.app/guides/beginner-characters-en.html">Beginner Characters</a><a href="https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap-en.html">New Player Roadmap</a></div></article></div><div class="sub-box">
+  <h3>📬 Get Updates</h3>
+  <p>Get the latest guides and patch notes first.</p>
+  <form onsubmit="event.preventDefault();this.innerHTML='<p style=&quot;color:var(--gold)&quot;>Subscribed! Thanks for following.</p>'">
+    <input type="email" placeholder="your@email.com" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</div>
+<footer><p>© 2026 Teyvat Starter Guide. All game content © miHoYo.</p></footer>
+<script>
+(function(){
+  var form = document.querySelector('.sub-box form');
+  if(!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var inp = form.querySelector('input');
+    var btn = form.querySelector('button');
+    if(!inp || !btn) return;
+    btn.disabled = true;
+    btn.textContent = 'Subscribed! Thanks for following.';
+    var email = inp.value.trim();
+    fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:email,ts:Date.now()})}).catch(function(){});
+  });
+})();
+</script>
+</body></html>

@@ -1232,5 +1232,29 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide-en.html" />
     <lastmod>2026-08-20</lastmod>
   </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap-en.html" />
+    <lastmod>2026-08-21</lastmod>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap-en.html" />
+    <lastmod>2026-08-21</lastmod>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/pity-system-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide-en.html" />
+    <lastmod>2026-08-21</lastmod>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/pity-system-guide-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide-en.html" />
+    <lastmod>2026-08-21</lastmod>
+  </url>
 <!-- LONGTAIL -->
 </urlset>
