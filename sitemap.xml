@@ -1403,35 +1403,17 @@
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/boss-weaknesses-guide.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/boss-weaknesses-guide.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="2026-08-31" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="2026-08-31" />
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>2026-08-31</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="2026-08-31" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/boss-weaknesses-guide.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="2026-08-31" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/boss-weaknesses-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/boss-weaknesses-guide-en.html" />
     <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/boss-weaknesses-guide-en.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/boss-weaknesses-guide-en.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="2026-08-31" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="2026-08-31" />
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>2026-08-31</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="2026-08-31" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/boss-weaknesses-guide-en.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="2026-08-31" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/boss-weaknesses-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/boss-weaknesses-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/boss-weaknesses-guide-en.html" />
     <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1439,39 +1421,20 @@
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/stat-priority-guide.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/stat-priority-guide.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="2026-08-31" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="2026-08-31" />
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>2026-08-31</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="2026-08-31" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/stat-priority-guide.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="2026-08-31" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/stat-priority-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/stat-priority-guide-en.html" />
     <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/stat-priority-guide-en.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/stat-priority-guide-en.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="2026-08-31" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="2026-08-31" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/stat-priority-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/stat-priority-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/stat-priority-guide-en.html" />
     <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>2026-08-31</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="2026-08-31" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/stat-priority-guide-en.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="2026-08-31" />
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
 <!-- LONGTAIL -->
 </urlset>
