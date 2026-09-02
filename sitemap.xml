@@ -1544,5 +1544,41 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/character-building-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/character-building-guide.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/character-building-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/character-building-guide-en.html" />
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/character-building-guide-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/character-building-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/character-building-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/character-building-guide-en.html" />
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/spiral-abyss-rotation-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/spiral-abyss-rotation-guide.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/spiral-abyss-rotation-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/spiral-abyss-rotation-guide-en.html" />
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/spiral-abyss-rotation-guide-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/spiral-abyss-rotation-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/spiral-abyss-rotation-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/spiral-abyss-rotation-guide-en.html" />
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 <!-- LONGTAIL -->
 </urlset>
