@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神料理增益指南：叠加规则、推荐料理与使用时机 | Teyvat Starter Guide</title>
+<meta name="description" content="原神料理增益怎么叠加？攻击、防御、体力料理与药剂能同时吃吗？一文讲清料理 buff 分类与覆盖规则，附仙跳墙等数值梯队与实战推荐。">
+<meta name="keywords" content="原神料理增益,食物buff叠加,仙跳墙,原神料理推荐,元素精油,料理buff分类">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/food-buff-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/food-buff-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/food-buff-guide-en.html" />
+<meta property="og:title" content="原神料理增益指南：叠加规则、推荐料理与使用时机">
+<meta property="og:description" content="原神料理增益怎么叠加？攻击、防御、体力料理与药剂能同时吃吗？一文讲清料理 buff 分类与覆盖规则，附仙跳墙等数值梯队与实战推荐。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/food-buff-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.backlink{display:block;text-align:center;color:var(--muted);text-decoration:none;margin-top:10px;font-size:13px}
+.backlink:hover{color:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神料理增益指南：叠加规则、推荐料理与使用时机", "description": "原神料理增益怎么叠加？攻击、防御、体力料理与药剂能同时吃吗？一文讲清料理 buff 分类与覆盖规则，附仙跳墙等数值梯队与实战推荐。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-09-05", "dateModified": "2026-09-05", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/food-buff-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "原神食物增益能叠加吗？", "acceptedAnswer": {"@type": "Answer", "text": "能，但按类别限制：进攻、防御、体力三类食物增益可各生效一个，同类别只能存在一个，再吃同类的会直接覆盖旧的。"}}, {"@type": "Question", "name": "吃低星级料理会顶掉高星级料理吗？", "acceptedAnswer": {"@type": "Answer", "text": "会。同类食物遵循「后吃覆盖先吃」，与星级无关——吃完仙跳墙再吃一个二星汤，仙跳墙的加成也会被顶掉。"}}, {"@type": "Question", "name": "食物和药剂能同时使用吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以。药剂（元素精油、抗性药剂）与食物走不同增益轨道，吃攻击料理的同时喝对应元素精油，二者加成可叠加。"}}, {"@type": "Question", "name": "仙跳墙的效果和持续时间是多少？", "acceptedAnswer": {"@type": "Answer", "text": "「美味」品质的仙跳墙为全队提供 +372 攻击力与 +12% 暴击率，持续 300 秒（5 分钟），是游戏里最强的攻击料理之一。"}}, {"@type": "Question", "name": "深境螺旋里能吃料理吗？", "acceptedAnswer": {"@type": "Answer", "text": "进入挑战后无法再食用料理或药剂，但进层前吃下的增益会带着生效并持续计时，所以打深渊前记得先吃好。"}}, {"@type": "Question", "name": "角色特色料理更好吗？", "acceptedAnswer": {"@type": "Answer", "text": "会更好。角色特色料理（如班尼特的提瓦特焦蛋）比普通料理的「美味」品质数值更高，常用来复活的角色优先用特色料理。"}}]}</script>
+</head>
+<body>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/food-buff-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神料理增益指南：叠加规则、推荐料理与使用时机</h1>
+<p>吃料理是提瓦特冒险中最被低估的提升手段：成本几乎为零，却能给全队加几百点攻击力。但很多玩家不知道增益的「覆盖规则」，辛辛苦苦做的仙跳墙，被一盘随手点的二星菜顶掉。这篇指南把料理 buff 的分类、叠加、数值梯队和食用时机一次讲清。</p>
+<h2>快速答案</h2>
+<ul><li><strong>食物增益能叠几个？</strong> 进攻、防御、体力三类食物各 1 个，外加药剂独立 1 轨，可同时生效。</li><li><strong>同类料理能叠吗？</strong> 不能。同类别后吃覆盖先吃，星级高低不影响覆盖。</li><li><strong>进深渊前怎么吃？</strong> 挑战内禁食，进层前吃好，300 秒增益会带着生效。</li></ul>
+<h2>料理增益的四大分类</h2>
+<p>所有料理增益按图标分为三类战斗/探索增益，外加一类恢复效果：</p>
+<table><tr><th>类别</th><th>图标</th><th>覆盖效果</th><th>典型料理</th></tr><tr><td>进攻类</td><td>红色剑</td><td>攻击力、暴击率、暴击伤害、物伤/元素增伤</td><td>仙跳墙、满足沙拉、天枢肉</td></tr><tr><td>防御类</td><td>蓝色盾</td><td>防御力、护盾强效、治疗加成</td><td>月亮派、蒙德土豆饼</td></tr><tr><td>体力类</td><td>黄色小人</td><td>冲刺/攀爬/滑翔/游泳体力消耗降低</td><td>各类体力料理</td></tr><tr><td>恢复类</td><td>无图标</td><td>生命值恢复、复活</td><td>甜甜花酿鸡、提瓦特煎蛋</td></tr></table>
+<h2>叠加三原则（记牢这三点就够了）</h2>
+<p><strong>原则一：同类只生效一个。</strong> 进攻类只能存在一个，再吃进攻类料理，无论星级，直接顶掉前一个。仙跳墙 +372 攻击，随后吃个二星汤，攻击加成立刻变成汤的数值——这是最常见的浪费。</p>
+<p><strong>原则二：不同类别可以并存。</strong> 进攻料理 + 防御料理 + 体力料理可以同时亮三个增益图标，互不冲突。</p>
+<p><strong>原则三：药剂是独立轨道。</strong> 元素精油（对应元素伤害 +25%）和抗性药剂与食物互不冲突，吃攻击料理的同时喝精油，两者全都要。</p>
+<p>另外，料理增益和角色技能（班尼特大招、九条的鸦羽）、武器被动、圣遗物套装加成<strong>全部独立叠加</strong>，不存在冲突。</p>
+<h2>进攻料理数值梯队</h2>
+<p>攻击类料理按星级存在稳定档位，「美味」品质的数值规律：</p>
+<table><tr><th>星级</th><th>攻击力</th><th>暴击率</th><th>代表料理</th></tr><tr><td>3★</td><td>+224</td><td>+6%</td><td>各类三星攻击料理</td></tr><tr><td>4★</td><td>+320</td><td>+10%</td><td>金玉满堂等四星攻击料理</td></tr><tr><td>5★</td><td>+372</td><td>+12%</td><td>仙跳墙（全队，300 秒）</td></tr></table>
+<p>补充两点：</p>
+<ul><li><strong>物理主C</strong> 优先考虑天枢肉等物理增伤料理，对物理角色的提升通常大于通用攻击料理。</li><li>料理有三个品质档（奇怪/普通/美味），「美味」数值最高；角色特色料理则比「美味」再高一档，是毕业选择。</li></ul>
+<h2>防御与恢复料理</h2>
+<ul><li>打高伤害首领（如若陀龙王、周本）时，防御料理（如月亮派的护盾强效）能显著降低暴毙风险。</li><li>恢复类有独立的「饱腹度」限制：短时间内连续吃治疗料理，恢复效果会递减，别把治疗料理当血药连按。</li><li>复活料理对同一角色有约 120 秒冷却，全队倒下后建议用特色料理拉起主C。</li></ul>
+<h2>什么场合值得吃高级料理</h2>
+<table><tr><th>场合</th><th>推荐</th><th>理由</th></tr><tr><td>周本/首领挑战</td><td>仙跳墙 + 元素精油</td><td>次数有限、奖励稳定，值得上最高档</td></tr><tr><td>深境螺旋进层前</td><td>进攻料理 + 精油</td><td>挑战内禁食，300 秒足够覆盖一层</td></tr><tr><td>普通圣遗物/天赋本</td><td>三星料理即可</td><td>高频重复刷本，用低星控制成本</td></tr><tr><td>大世界探索</td><td>体力料理</td><td>攀爬赶路更顺滑</td></tr></table>
+<h2>联机与队伍注意</h2>
+<ul><li>联机时料理增益<strong>只对自己队伍的角色生效</strong>，队友吃不到你的仙跳墙，各吃各的。</li><li>增益对「全队」生效的料理，切换角色不影响已生效的 buff，放心切人输出。</li></ul>
+<h2>相关阅读</h2>
+<ul><li>[原神伤害计算与六乘区详解]({BASE}/guides/damage-formula-guide.html)</li><li>[双爆属性怎么堆：CV 与 1:2 法则]({BASE}/guides/crit-guide.html)</li><li>[配队原理与角色定位]({BASE}/guides/team-building-guide.html)</li></ul>
+<h2>小结</h2>
+<p>料理系统的核心就一句话：<strong>同类不叠、异类并存、药剂另算</strong>。摸清三类增益槽之后，打周本前吃一份仙跳墙加对应精油，是零抽卡成本就能换来的稳定伤害提升，别再把高星料理浪费在被覆盖上了。</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/food-buff-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div>
+<div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('订阅成功！');
+    } catch(err) {
+      alert('订阅失败，请稍后再试。');
+    }
+  });
+});
+</script>
+</body>
+</html>
