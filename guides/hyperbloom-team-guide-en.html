@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genshin Hyperbloom Team Guide: Mechanics, Core Units &amp; F2P Teams | Teyvat Starter Guide</title>
+<meta name="description" content="How does Hyperbloom trigger? Whose stats decide the damage? Can you play it without Nahida? Full guide to Hyperbloom mechanics, unit roles, F2P teams, artifacts and weapons.">
+<meta name="keywords" content="genshin hyperbloom, hyperbloom team, kuki shinobu, nahida, dendro core, hyperbloom guide, f2p hyperbloom">
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide-en.html" />
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide-en.html" />
+<meta property="og:title" content="Genshin Hyperbloom Team Guide: Mechanics, Core Units &amp; F2P Teams">
+<meta property="og:description" content="How does Hyperbloom trigger? Whose stats decide the damage? Can you play it without Nahida? Full guide to Hyperbloom mechanics, unit roles, F2P teams, artifacts and weapons.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide-en.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Hyperbloom Team Guide: Mechanics, Core Units & F2P Teams", "description": "How does Hyperbloom trigger? Whose stats decide the damage? Can you play it without Nahida? Full guide to Hyperbloom mechanics, unit roles, F2P teams, artifacts and weapons.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-09-06", "dateModified": "2026-09-06", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide-en.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do you trigger Hyperbloom?", "acceptedAnswer": {"@type": "Answer", "text": "Put an enemy under both Dendro and Hydro to spawn Dendro Cores (seeds), then hit a seed with Electro. The seed turns into a homing Sprawling Shot that strikes the nearest enemy."}}, {"@type": "Question", "name": "Whose stats decide Hyperbloom damage?", "acceptedAnswer": {"@type": "Answer", "text": "Only the Electro character that triggers the reaction: damage scales with that character's level and Elemental Mastery. ATK, CRIT, Electro DMG% do nothing; enemy DEF is ignored (Dendro RES still applies) and it cannot crit."}}, {"@type": "Question", "name": "Why is Kuki Shinobu the Hyperbloom core?", "acceptedAnswer": {"@type": "Answer", "text": "Her Skill creates an Electro ring that pulses every 1.5s, automatically triggering seeds around the active character while healing the team — one unit covers both triggering and survival at minimal cost."}}, {"@type": "Question", "name": "How much Elemental Mastery do I need?", "acceptedAnswer": {"@type": "Answer", "text": "Aim for level 90 and 800–1000+ EM on the trigger. Stack EM on every artifact main stat and use Gilded Dreams or Flower of Paradise Lost."}}, {"@type": "Question", "name": "Can I play Hyperbloom without Nahida?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Dendro Traveler plus Collei as a double-Dendro pair works fine — the damage is lower but the engine is complete and can clear mid Spiral Abyss floors."}}, {"@type": "Question", "name": "Is Hyperbloom good in Spiral Abyss?", "acceptedAnswer": {"@type": "Answer", "text": "Very. It ignores CRIT and ATK building, so its gear floor is far lower than conventional teams. It is one of the most accessible Abyss archetypes and all-4-star versions have full-clear runs."}}]}</script>
+</head>
+<body>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide.html">中文</a>
+</div>
+<div class="container">
+<h1>Genshin Hyperbloom Team Guide: Mechanics, Core Units &amp; F2P Teams</h1>
+<p>Hyperbloom is the friendliest damage archetype added with Dendro: no CRIT, no ATK stacking, no demanding rotations, and Kuki Shinobu single-handedly covers both triggering and healing. For low-investment and low-spender accounts it is one of the best returns in the game. This guide covers the reaction logic, damage scaling, unit roles, and two ready-to-copy teams.</p>
+<h2>Quick Answers</h2>
+<ul><li><strong>How it triggers:</strong> Dendro + Hydro make seeds, Electro hits a seed, a homing shot hits the enemy.</li><li><strong>Damage source:</strong> only the Electro trigger's level and EM — ATK and CRIT do nothing.</li><li><strong>Cheapest team:</strong> Kuki Shinobu + Xingqiu + Dendro Traveler + Collei, all 4-star.</li></ul>
+<h2>Hyperbloom Mechanics in Brief</h2>
+<p>The reaction chain:</p>
+<ol><li>An enemy under <strong>Dendro + Hydro</strong> triggers Bloom and spawns Dendro Cores (seeds);</li><li>Up to <strong>5 seeds</strong> can exist at once; the oldest detonates when the cap is hit, dealing small AoE Dendro damage to everyone nearby;</li><li>Hitting a seed with <strong>Electro</strong> triggers Hyperbloom: the seed turns into a Sprawling Shot that homes in on the nearest enemy.</li></ol>
+<p>Hyperbloom damage has three properties that define how you build:</p>
+<ul><li><strong>Scales only with the trigger's level and Elemental Mastery</strong> — base reaction damage grows with character level, multiplied by an EM factor;</li><li><strong>Ignores</strong> ATK, CRIT Rate/DMG and Electro DMG Bonus, and <strong>cannot crit</strong>;</li><li>Ignores enemy DEF but is reduced by the target's <strong>Dendro RES</strong>.</li></ul>
+<p>The takeaway: <strong>pour every resource into the Electro trigger — level 90, EM 800+ — and stop.</strong> Everyone else just applies Dendro, applies Hydro, and keeps the team alive.</p>
+<h2>The Three Team Roles</h2>
+<p>Hyperbloom teams follow a strict three-part structure:</p>
+<table><tr><th>Role</th><th>Job</th><th>Recommended units</th></tr><tr><td>Dendro applier</td><td>Keep Dendro on enemies</td><td>Nahida (best), Dendro Traveler, Collei, Baizhu (survivability)</td></tr><tr><td>Hydro applier</td><td>Make seeds with Dendro</td><td>Xingqiu (most reliable), Yelan, Kokomi (AoE + heal), Barbara (free), Ayato</td></tr><tr><td>Electro trigger</td><td>Zap the seeds</td><td>Kuki Shinobu (best 4★), Raiden Shogun (auto E), Fischl, Dori, Cyno (on-field)</td></tr><tr><td>Flex slot</td><td>Shield / buff / extra aura</td><td>Zhongli, shielder, second Hydro or Dendro, Kazuha/Sucrose (CC)</td></tr></table>
+<p>Key point: <strong>the Electro unit is the one whose EM matters</strong>, because seed damage belongs to whoever triggers it. With two Electro units, make sure the high-EM one goes first (e.g., Raiden's coordinated attacks usually win the trigger).</p>
+<h2>Ready-to-Copy F2P Teams</h2>
+<p>Formula: <strong>Electro trigger + Hydro applier + double Dendro + survival</strong>.</p>
+<p><strong>Team 1: Ultra-budget (all 4-star)</strong></p>
+<ul><li>Kuki Shinobu (trigger + heals), Xingqiu (Hydro), Dendro Traveler + Collei (Dendro)</li><li>Double-Dendro resonance adds EM; put 4-piece Deepwood Memories on Traveler/Collei to shred Dendro RES and push seed damage;</li><li>Works for both single-target and multi-wave fights — the classic budget Abyss team.</li></ul>
+<p><strong>Team 2: Premium Hyperbloom (5-star core)</strong></p>
+<ul><li>Kuki Shinobu + Xingqiu/Yelan + Nahida + Zhongli/Kokomi</li><li>Nahida's application and teamwide EM buff far outclass Dendro Traveler;</li><li>For an on-field driver style, swap Kuki for EM Raiden — her E coordinated attack triggers roughly every 0.9s for much higher seed frequency.</li></ul>
+<p><strong>Rotation (Team 1 example):</strong></p>
+<ol><li>Apply Dendro with Nahida/Traveler's Skill or Burst;</li><li>Cast Xingqiu's Burst — rain swords keep applying Hydro and spawn seeds;</li><li>Activate Kuki's Skill — the ring converts seeds into Sprawling Shots;</li><li>Swap back to the Hydro driver and normal-attack to keep the aura going.</li></ol>
+<p>The mantra: <strong>Dendro first, Hydro second, Electro last</strong> — never let Electro hit the enemy body first (that becomes Quicken/Overloaded instead of Hyperbloom). Save the Electro for the seeds.</p>
+<h2>Artifacts &amp; Weapons</h2>
+<p><strong>Kuki Shinobu (trigger) — all EM, all day:</strong></p>
+<ul><li>Artifacts: 4-piece Gilded Dreams (consistent) or 4-piece Flower of Paradise Lost (highest ceiling for Bloom-line reactions, but needs ramp-up);</li><li>Main stats: EM / EM / EM on Sands, Goblet, Circlet;</li><li>Weapon: Iron Sting (craftable) is the best budget pick; Sapwood Blade works as an alternative;</li><li>Substats: EM &gt; ER &gt; HP.</li></ul>
+<p><strong>Nahida</strong> — 4-piece Deepwood Memories (−30% Dendro RES helps both seeds and her own damage). No Nahida? Let Dendro Traveler or Collei wear the Deepwood set.</p>
+<p><strong>Xingqiu / Yelan</strong> — normal damage build; Xingqiu wants Sacrificial Sword for burst uptime. No EM needed here.</p>
+<h2>Common Questions</h2>
+<ul><li><strong>Do the seeds hurt me?</strong> Naturally detonated seeds damage everyone. Converting them with Electro on time turns them into homing shots — damage dealt, self-damage avoided.</li><li><strong>How does the Raiden driver version play?</strong> Full-EM Raiden triggers seeds via her Skill's coordinated attacks while you normal-attack on field — stable and strong in Abyss.</li><li><strong>Why is my Hyperbloom damage low?</strong> Check three things: is the trigger level 90, is EM above 800, and are enough seeds actually being hit by Electro?</li></ul>
+<h2>Related Guides</h2>
+<ul><li>[Dendro Reactions &amp; Bloom Explained]({BASE}/guides/dendro-reactions-guide-en.html)</li><li>[Elemental Mastery Mechanics]({BASE}/guides/elemental-mastery-guide-en.html)</li><li>[Nahida Build Guide]({BASE}/guides/nahida-build-en.html)</li><li>[Xingqiu Build Guide]({BASE}/guides/xingqiu-build-en.html)</li></ul>
+<h2>Summary</h2>
+<p>Hyperbloom's biggest advantage is that it needs <strong>one well-built character, not a whole hyper-invested team</strong>: a level-90 full-EM Kuki Shinobu with Xingqiu, Dendro Traveler and Collei clears Abyss-ready content. When resources are tight, maxing Kuki first is one of the highest-return investments you can make.</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide.html">查看中文版</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>Subscribe for Genshin Guides</h3>
+<p>Get new character builds and tips in your inbox. No spam.</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">Subscribe</button>
+</form>
+</div>
+<div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('Subscribed! Check your inbox.');
+    } catch(err) {
+      alert('Sorry, try again later.');
+    }
+  });
+});
+</script>
+</body>
+</html>

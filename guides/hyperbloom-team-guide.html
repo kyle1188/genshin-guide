@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神超绽放配队指南：机制、核心角色与平民阵容 | Teyvat Starter Guide</title>
+<meta name="description" content="超绽放怎么触发？伤害吃谁的面板？没有纳西妲能玩吗？久岐忍精通堆多少？一文讲清超绽放机制、角色分工、平民配队与圣遗物武器选择。">
+<meta name="keywords" content="原神超绽放,超绽放配队,久岐忍,纳西妲,草原核,超绽放圣遗物,平民超绽放,超绽放伤害">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide-en.html" />
+<meta property="og:title" content="原神超绽放配队指南：机制、核心角色与平民阵容">
+<meta property="og:description" content="超绽放怎么触发？伤害吃谁的面板？没有纳西妲能玩吗？久岐忍精通堆多少？一文讲清超绽放机制、角色分工、平民配队与圣遗物武器选择。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神超绽放配队指南：机制、核心角色与平民阵容", "description": "超绽放怎么触发？伤害吃谁的面板？没有纳西妲能玩吗？久岐忍精通堆多少？一文讲清超绽放机制、角色分工、平民配队与圣遗物武器选择。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-09-06", "dateModified": "2026-09-06", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "超绽放怎么触发？", "acceptedAnswer": {"@type": "Answer", "text": "先让敌人同时处于草元素与水元素影响下，生成草原核（种子）；再用雷元素命中种子，种子就会变成追踪弹攻击最近敌人，这就是超绽放。"}}, {"@type": "Question", "name": "超绽放伤害看谁的面板？", "acceptedAnswer": {"@type": "Answer", "text": "只看最后触发雷的那个角色：伤害由该角色的等级与元素精通决定，不吃攻击力、暴击、雷伤加成，无视敌人防御（但受敌人草抗影响），也无法暴击。"}}, {"@type": "Question", "name": "为什么久岐忍是超绽放核心？", "acceptedAnswer": {"@type": "Answer", "text": "久岐忍的元素战技在身边形成雷环，每 1.5 秒脉冲一次，自动给场上种子触发超绽放，同时还提供全队治疗——一个角色同时解决触发和生存，是成本最低的选择。"}}, {"@type": "Question", "name": "触发者精通要堆多少？", "acceptedAnswer": {"@type": "Answer", "text": "建议拉到 90 级、精通 800–1000 以上，越高越好；圣遗物主词条全堆精通，配饰金之梦或乐园遗落之花。"}}, {"@type": "Question", "name": "没有纳西妲能玩超绽放吗？", "acceptedAnswer": {"@type": "Answer", "text": "能。用草主与柯莱双草代替，机制完整，伤害低一些但同样能打通深渊中低层，属于标准的平民阵容。"}}, {"@type": "Question", "name": "超绽放打深渊表现如何？", "acceptedAnswer": {"@type": "Answer", "text": "很好。它不吃双暴、不吃攻击力，成型门槛远低于传统直伤队，是当前最亲民的深渊体系之一，全四星阵容也有满星记录。"}}]}</script>
+</head>
+<body>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神超绽放配队指南：机制、核心角色与平民阵容</h1>
+<p>超绽放是草元素实装后最亲民的输出体系：不吃双暴、不吃攻击力、不需要复杂的手法，久岐忍一个人就能把触发和回血全包了。对低练度、低氪号来说，它是投入产出比最高的深渊答案之一。这篇指南讲清超绽放的触发逻辑、伤害结算、角色分工和两套能直接抄的阵容。</p>
+<h2>快速答案</h2>
+<ul><li><strong>触发方式：</strong> 草 + 水生成种子 → 雷打中种子 → 追踪弹自动打怪。</li><li><strong>伤害来源：</strong> 只看雷触发者的等级与精通，堆攻击和暴击完全无用。</li><li><strong>最省钱阵容：</strong> 久岐忍 + 行秋 + 草主 + 柯莱，全四星成型。</li></ul>
+<h2>超绽放机制速览</h2>
+<p>先把反应链拆开：</p>
+<ol><li>敌人同时处于<strong>草 + 水</strong>影响 → 产生绽放反应，生成草原核（种子）；</li><li>场上的种子最多同时存在 5 个，超出后最旧的一颗会自动引爆，造成小范围草伤（敌我都会受伤）；</li><li>用<strong>雷元素命中种子</strong> → 触发超绽放：种子化作追踪弹，自动锁定并命中最近的敌人。</li></ol>
+<p>超绽放伤害有三个关键性质，直接决定怎么配装：</p>
+<ul><li><strong>只看触发者的等级与元素精通</strong>——伤害 = 反应基础值（随角色等级提升）× 精通加成；</li><li><strong>不吃</strong> 攻击力、暴击率/暴伤、雷元素伤害加成，<strong>无法暴击</strong>；</li><li>无视敌人防御，但会被敌人的<strong>草元素抗性</strong>减免。</li></ul>
+<p>结论很直白：<strong>把资源全砸给负责点雷的角色——拉到 90 级、精通往 800+ 堆，就完事了。</strong> 其他三个人只需要做好挂草、挂水和保命。</p>
+<h2>三个角色位怎么分工</h2>
+<p>超绽放队是标准的「三要素」结构：</p>
+<table><tr><th>位置</th><th>职责</th><th>推荐角色</th></tr><tr><td>挂草</td><td>持续提供草元素</td><td>纳西妲（最优）、草主、柯莱、白术（兼顾生存）</td></tr><tr><td>挂水</td><td>与草反应产种子</td><td>行秋（最稳）、夜兰、珊瑚宫心海（群水+治疗）、芭芭拉（免费）、神里绫人</td></tr><tr><td>雷触发</td><td>高频点雷种子</td><td>久岐忍（四星之王）、雷电将军（E 全自动）、菲谢尔、多莉、赛诺（站场）</td></tr><tr><td>灵活位</td><td>生存/增益/补元素</td><td>钟离、护盾位、第二水或第二草、枫原万叶/砂糖（聚怪）</td></tr></table>
+<p>要点：<strong>种子伤害的触发者必须是雷角色</strong>，所以队里雷角色的精通最重要；如果带两个雷，务必让高精通的哪个负责触发（例如雷神 E 的协同攻击会稳定先手）。</p>
+<h2>平民全四星阵容（可直接抄）</h2>
+<p>公式：<strong>雷触发 + 挂水 + 双草 + 生存位</strong>。</p>
+<p><strong>阵容一：超低配超绽放（全四星）</strong></p>
+<ul><li>久岐忍（触发+治疗）、行秋（挂水）、草主（挂草）、柯莱（挂草）</li><li>双草共鸣加精通，草主/柯莱穿「深林的记忆」4 件减草抗，种子的伤害上限更高；</li><li>打单体与打群都成立，是典型的平民深渊队。</li></ul>
+<p><strong>阵容二：进阶超绽放（五星星核）</strong></p>
+<ul><li>久岐忍 + 行秋/夜兰 + 纳西妲 + 钟离/心海</li><li>纳西妲挂草效率与全队精通拐碾压草主，整体伤害提升明显；</li><li>想站场驾驶，可把久岐忍换雷电将军（E 协同每 0.9 秒自动触发一次），种子频率更高。</li></ul>
+<p><strong>手法循环（以阵容一为例）：</strong></p>
+<ol><li>纳西妲/草主先开元素战技或爆发挂草；</li><li>行秋开元素爆发，雨帘剑持续挂水 → 开始产种子；</li><li>久岐忍开元素战技，雷环转起来 → 种子不断变成追踪弹；</li><li>切回挂水位平 A 续水，保持循环。</li></ol>
+<p>口诀：<strong>先草、再水、后雷</strong>——别让雷先打中敌人本体抢走反应（会变成激化/超载），雷要留给种子。</p>
+<h2>圣遗物与武器怎么配</h2>
+<p><strong>久岐忍（触发者）</strong> —— 全精通就对了：</p>
+<ul><li>圣遗物：饰金之梦 4 件（通用稳定）或乐园遗落之花 4 件（对绽放类加成上限最高，但要叠层预热）；</li><li>主词条：时之沙/空之杯/理之冠全部选元素精通；</li><li>武器：铁蜂刺（锻造）是最佳四星平民选择，原木刀可作替代；</li><li>副词条：精通 &gt; 充能 &gt; 生命值。</li></ul>
+<p><strong>纳西妲</strong> —— 深林的记忆 4 件（-30% 草抗，种子和自身草伤一起吃）；没有纳西妲时由草主或柯莱穿草套。</p>
+<p><strong>行秋/夜兰</strong> —— 常规输出装，行秋优先祭礼剑保证大招循环；这位置不需要任何精通。</p>
+<h2>常见疑问</h2>
+<ul><li><strong>种子会炸到自己吗？</strong> 自然引爆的种子敌我不分。及时用雷把种子转成超绽放追踪弹，既出伤害又避免种子在脚下自爆。</li><li><strong>雷神流怎么玩？</strong> 雷神全精通配装，靠 E 的协同攻击自动点种子，适合想站场普攻输出的驾驶员玩法，深渊表现也很稳定。</li><li><strong>为什么我的超绽放伤害很低？</strong> 先查三件事：触发者是不是 90 级、精通有没有 800+、以及雷是否每次都打中种子（种子数量不足时伤害自然上不去）。</li></ul>
+<h2>相关阅读</h2>
+<ul><li>[草元素反应与绽放详解]({BASE}/guides/dendro-reactions-guide.html)</li><li>[元素精通机制全解]({BASE}/guides/elemental-mastery-guide.html)</li><li>[纳西妲培养攻略]({BASE}/guides/nahida-build.html)</li><li>[行秋培养攻略]({BASE}/guides/xingqiu-build.html)</li></ul>
+<h2>小结</h2>
+<p>超绽放队最大的优点是<strong>不吃练度上限、只吃一个角色的面板</strong>：90 级全精通的久岐忍，配行秋、草主和柯莱，就能撑起一支深渊能用的队伍。新手资源有限时，优先把久岐忍拉满，是回报率最高的投资之一。</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div>
+<div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('订阅成功！');
+    } catch(err) {
+      alert('订阅失败，请稍后再试。');
+    }
+  });
+});
+</script>
+</body>
+</html>
