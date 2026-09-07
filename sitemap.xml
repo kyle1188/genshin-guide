@@ -1742,5 +1742,29 @@
 <lastmod>2026-09-06</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
-</url><!-- LONGTAIL -->
+</url><url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/fishing-guide.html</loc>
+<lastmod>2026-09-07</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/fishing-guide-en.html</loc>
+<lastmod>2026-09-07</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/serenitea-pot-guide.html</loc>
+<lastmod>2026-09-07</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/serenitea-pot-guide-en.html</loc>
+<lastmod>2026-09-07</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<!-- LONGTAIL -->
 </urlset>
