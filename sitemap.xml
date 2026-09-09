@@ -1790,5 +1790,27 @@
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
-<!-- LONGTAIL -->
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/paimon-shop-guide.html</loc>
+<lastmod>2026-09-09</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/paimon-shop-guide.html</loc>
+<lastmod>2026-09-09</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url><url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/story-quest-guide.html</loc>
+<lastmod>2026-09-09</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/story-quest-guide.html</loc>
+<lastmod>2026-09-09</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url><!-- LONGTAIL -->
 </urlset>
