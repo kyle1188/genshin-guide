@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神集录祈愿攻略：机制、命定值与抽取策略全解析</title>
+<meta name="description" content="集录祈愿怎么玩？命定值会继承吗？自选五星值得抽吗？完整解析集录祈愿的自选机制、50/50 与 1 命定值保底、与大保底池的区别及抽取建议。">
+<meta name="keywords" content="原神集录祈愿,集录祈愿机制,命定值,自选五星,集录祈愿值得抽吗,老角色复刻,星辉兑换">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/chronicled-wish-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/chronicled-wish-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/chronicled-wish-guide-en.html" />
+<meta property="og:title" content="原神集录祈愿攻略：机制、命定值与抽取策略全解析">
+<meta property="og:description" content="集录祈愿怎么玩？命定值会继承吗？自选五星值得抽吗？完整解析集录祈愿的自选机制、50/50 与 1 命定值保底、与大保底池的区别及抽取建议。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/chronicled-wish-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神集录祈愿攻略：机制、命定值与抽取策略全解析", "description": "集录祈愿怎么玩？命定值会继承吗？自选五星值得抽吗？完整解析集录祈愿的自选机制、50/50 与 1 命定值保底、与大保底池的区别及抽取建议。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-09-13", "dateModified": "2026-09-13", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/chronicled-wish-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "集录祈愿和限定池有什么区别？", "acceptedAnswer": {"@type": "Answer", "text": "两者都是 50/50，但集录祈愿多一层命定值：歪了之后下一个五星必出所选目标（1 命定值保底），且可以从池中自选目标角色或武器，而限定池只能抽当期 UP。"}},{"@type": "Question", "name": "命定值会继承到下一期吗？", "acceptedAnswer": {"@type": "Answer", "text": "不会。抽数保底进度会继承到下一期集录祈愿，但命定值在卡池结束时清空——歪了却没抽到第二个五星，命定值就浪费了。"}},{"@type": "Question", "name": "集录祈愿最坏要多少抽？", "acceptedAnswer": {"@type": "Answer", "text": "最多两个五星保底，最坏 90+90=180 抽（约 2.88 万原石）；考虑软保底实际通常 150-160 抽。"}},{"@type": "Question", "name": "集录祈愿有角色和武器混池吗？", "acceptedAnswer": {"@type": "Answer", "text": "池内同时有角色与武器，但你只能选一个作为目标；选角色则歪了只出角色，选武器则歪了只出武器，不会跨类型出。"}},{"@type": "Question", "name": "集录祈愿多久开一次？", "acceptedAnswer": {"@type": "Answer", "text": "不定期开放，并非每个版本都有（例如 4.5 首开、5.3、5.6 等），且一次持续整个版本、不分成上下半场。"}},{"@type": "Question", "name": "自选五星值得抽吗？", "acceptedAnswer": {"@type": "Answer", "text": "如果你确实需要这个老角色且能攒够 160-180 抽，值得；如果资源不足或正在攒新角色，建议跳过，把原石留给限定池。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/chronicled-wish-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神集录祈愿攻略：机制、命定值与抽取策略全解析</h1>
+<p>集录祈愿（Chronicled Wish）是原神的<strong>第三种卡池</strong>：从一批老角色/老武器里自选一个目标，用「50/50 + 1 命定值」的保底机制去抽。它解决的是「想补老角色但限定池排不上」的痛点。这篇指南讲清机制、命定值继承规则与值不值得抽。</p>
+<div class="quick"><ul><li><strong>和限定池什么区别？</strong> 同样是 50/50，但额外有「命定值」保底：歪了之后下一个五星<b>必出所选目标</b>，最多两个五星保底（武器池要三个）。</li><li><strong>命定值会继承吗？</strong> <strong>抽数（保底进度）继承，命定值不继承</strong>。如果你歪了拿到 1 命定值却没抽到第二个五星，卡池结束命定值清空——这是最容易翻车的地方。</li><li><strong>目标池有什么？</strong> 每个周期包含一批 5★ 角色与 5★ 武器（角色通常为复刻多次、近期未上架的老角色），你只能选其中一个作为目标。</li><li><strong>值得抽吗？</strong> 想补老角色命座/老专武，且能攒够 160-180 抽时值得；如果资源只够半个保底，风险很高，不如等限定池。</li></ul></div>
+<h2>集录祈愿是什么</h2>
+<p>集录祈愿是 4.5 版本加入的<strong>限时卡池类型</strong>，介于「角色活动祈愿」与「武器活动祈愿」之间：</p><ul><li><strong>自选目标</strong>：从当期池子里挑 1 个 5★ 角色<b>或</b> 1 个 5★ 武器作为目标。</li><li><strong>角色/武器互不混淆</strong>：选了角色，歪了只会给角色；选了武器，歪了只会给武器——不会出现「抽角色歪出武器」的惨案。</li><li><strong>消耗纠缠之缘</strong>：与限定池共用同一种抽卡道具，所以它直接与限定池争夺你的原石预算。</li></ul><p>目标池的入选标准早期是「在限定池出现 ≥3 次且近期未复刻」的老角色，后来官方放宽，把一些久未复刻的人气角色（如申鹤一类）也放了进来。已上过集录祈愿的角色，之后仍可能出现在限定复刻或下一期集录祈愿中。</p>
+<h2>保底机制：50/50 + 1 命定值</h2>
+<p>机制是限定角色池与武器池的混合体，规则如下：</p><table><tr><th>项目</th><th>规则</th></tr><tr><td>硬保底</td><td>90 抽必出五星（软保底约 73-75 抽后概率大幅提升）</td></tr><tr><td>第一次五星</td><td>50% 概率是所选目标</td></tr><tr><td>歪了怎么办</td><td>获得 1 点命定值，<strong>下一个五星 100% 是所选目标</strong></td></tr><tr><td>最多几个五星保底</td><td>2 个（对比：武器池需 3 个）</td></tr><tr><td>抽数继承</td><td>✅ 继承到下一期集录祈愿</td></tr><tr><td>命定值继承</td><td>❌ 不继承，卡池结束即清空</td></tr></table><p>最坏情况：90 抽歪 + 90 抽保底 = <strong>180 抽</strong>；考虑软保底实际多为 150-160 抽。相比武器定轨的最坏 240 抽，集录祈愿的保底成本更可控。</p>
+<h2>命定值不继承：最容易踩的坑</h2>
+<p>这是集录祈愿最需要盯紧的规则，用一个例子说清：</p><ul><li>你选了「目标 A」开抽，<strong>第 78 抽歪了</strong>（出了别的 5★）→ 获得 1 命定值。</li><li>此时你只剩 30 抽，抽完还是没出五星 → 卡池结束。</li><li>结果：<strong>命定值清空</strong>，下一期集录祈愿你回到 50/50；但<strong>抽数保底保留</strong>（下期从第 78 抽开始算，还差 12 抽到硬保底）。</li></ul><p>所以抽集录祈愿有一条铁律：<strong>要么攒够「歪了也能继续抽到第二个五星」的抽数再进场，要么就别开始</strong>。半途而废等于白送命定值。</p>
+<h2>三池对比：该抽哪个</h2>
+<table><tr><th>对比项</th><th>限定角色池</th><th>武器池</th><th>集录祈愿</th></tr><tr><td>50/50</td><td>✅</td><td>—（定轨）</td><td>✅</td></tr><tr><td>保底机制</td><td>歪了下次必中当期 UP</td><td>定轨值 2 点</td><td>命定值 1 点</td></tr><tr><td>最坏抽数</td><td>约 180</td><td>约 240</td><td>约 180</td></tr><tr><td>目标范围</td><td>当期 UP 角色</td><td>当期 UP 武器</td><td>自选池内任一</td></tr><tr><td>保底继承</td><td>✅ 跨期继承</td><td>✅ 抽数继承、定轨不继承</td><td>✅ 抽数继承、命定不继承</td></tr></table><p>简化决策：<strong>想要全新角色 → 限定池；想要现阶段专属武器 → 武器池；想补老角色本体/命座或老专武 → 集录祈愿</strong>。</p>
+<h2>谁该抽、谁别碰</h2>
+<p><b>适合抽的情况</b>：</p><ul><li>错过了某个老角色，且短期看不到复刻排期（集录祈愿往往是唯一确定渠道）。</li><li>想给老角色补关键命座（如某些角色 C1、C2 质变）。</li><li>想要老专武但不接受武器池 240 抽的最坏成本。</li><li>已有 160-180 抽预算，且能接受「歪了也继续抽」。</li></ul><p><b>不建议抽的情况</b>：</p><ul><li>正在攒下一版本的新角色——集录祈愿与限定池抢同一份原石。</li><li>资源不足以覆盖最坏情况（半投入 = 命定值打水漂）。</li><li>目标角色/武器在当前版本强度已明显落后且不是真爱。</li><li>冲着「顺便歪到别的五星也不亏」去抽——歪了会给同类型但不是你想要的东西，通常不赚。</li></ul>
+<h2>抽取策略</h2>
+<ol><li><strong>先定预算</strong>：按 180 抽（约 2.88 万原石）算最坏情况，软保底按 150-160 抽准备。</li><li><strong>确认期数</strong>：集录祈愿不是每个版本都有（4.5、5.3、5.6……间隔不固定），先确认本期池子里有没有你真想要的东西。</li><li><strong>进场就抽到底</strong>：一旦开抽并歪了，务必把第二个五星抽出来；否则及时止损在歪之前（也就是别开始）。</li><li><strong>抽到目标后立刻停手</strong>：命定值在拿到目标后即清除，继续抽会重新回到 50/50，想再要命座需重新规划。</li><li><strong>别与其他池子混着抽</strong>：集录祈愿的抽数独立继承，但预算共享——把原石拆成两半抽两个池，往往两边都保不住。</li></ol>
+<h2>相关阅读</h2>
+<ul><li><a href="https://genshin-guide-one-five.vercel.app/guides/gacha-strategy.html">抽卡原石规划</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide.html">保底机制详解</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/primogem-earning-guide.html">原石获取全渠道</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/paimon-shop-guide.html">星辉商店攻略</a></li></ul>
+<h2>小结</h2>
+<p><strong>集录祈愿是一张「自选老角色」的定向票，但不是慈善池</strong>：1 命定值保底比武器池更友好，抽数还能继承，可命定值不继承这一条足以吃掉马虎玩家的所有投入。规则就一句话——<strong>要么攒够 180 抽抽到底，要么一分不投</strong>。想清楚了再进场，它是补老角色最靠谱的渠道；想不清楚，它就是个昂贵的教训。</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/chronicled-wish-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('订阅成功！');
+    } catch(err) {
+      alert('订阅失败，请稍后再试。');
+    }
+  });
+});
+</script>
+</body>
+</html>
