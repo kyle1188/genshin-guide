@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genshin Impact Shield Breaking Guide: Elemental Counter Chart and Gauge Units</title>
+<meta name="description" content="Shield breaking ignores damage and runs on Gauge Units. Full breakdown of elemental shields vs elemental armor vs physical shields, the 2x/1x/0.5x efficiency rule, enemy shield values, ICD tricks and the fastest shield breakers.">
+<meta name="keywords" content="genshin shield breaking, elemental shield counter, abyss mage shield, fatui shield, gauge units, shield breaking characters, elemental armor">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide-en.html" />
+<meta property="og:title" content="Genshin Impact Shield Breaking Guide: Elemental Counter Chart and Gauge Units">
+<meta property="og:description" content="Shield breaking ignores damage and runs on Gauge Units. Full breakdown of elemental shields vs elemental armor vs physical shields, the 2x/1x/0.5x efficiency rule, enemy shield values, ICD tricks and the fastest shield breakers.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide-en.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Impact Shield Breaking Guide: Elemental Counter Chart and Gauge Units", "description": "Shield breaking ignores damage and runs on Gauge Units. Full breakdown of elemental shields vs elemental armor vs physical shields, the 2x/1x/0.5x efficiency rule, enemy shield values, ICD tricks and the fastest shield breakers.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-09-16", "dateModified": "2026-09-16", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide-en.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does shield breaking depend on character investment?", "acceptedAnswer": {"@type": "Answer", "text": "Barely at all. Elemental shields, elemental armor and physical shields only care about element type and gauge units, so an un-invested character breaks them just as fast as a fully built one."}}, {"@type": "Question", "name": "Does Elemental Mastery speed up shield breaking?", "acceptedAnswer": {"@type": "Answer", "text": "No. EM has no effect on shield-breaking speed; only the correct element and application frequency matter."}}, {"@type": "Question", "name": "What breaks Pyro and Cryo shields?", "acceptedAnswer": {"@type": "Answer", "text": "Hydro via Vaporize for Pyro shields and Pyro via Melt for Cryo shields, both at 2x efficiency."}}, {"@type": "Question", "name": "Why do Fatui shields barely take damage?", "acceptedAnswer": {"@type": "Answer", "text": "Fatui carry elemental armor rather than elemental shields, so only their single most effective element works and everything else is heavily reduced. The Hydrogunner is the exception with no countering element."}}, {"@type": "Question", "name": "Why does swapping characters break shields faster?", "acceptedAnswer": {"@type": "Answer", "text": "Elemental application has an internal cooldown (ICD), usually one application every 2.5 seconds or every 3 hits. Switching characters resets that timer, so rotating beats one character attacking non-stop."}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide.html">中文</a>
+</div>
+<div class="container">
+<h1>Genshin Shield Breaking Guide: Counter Chart and Gauge Units</h1>
+<p>What actually stalls an Abyss run is rarely low damage — it is an enemy parked behind a shield. Shield breaking runs on element type and gauge units, not on your stats: a completely un-invested character breaks shields exactly as fast as a fully built main DPS. This guide covers the mechanics, the full counter chart, and the best breakers per element.</p><div class="quick"><ul><li><strong>Does shield breaking need damage?</strong> No. Elemental shields, elemental armor and physical shields all ignore your stats — only the element type and gauge units matter, so a completely un-invested character breaks them just as fast.</li><li><strong>How does elemental efficiency work?</strong> Three tiers: the countering element runs at 2x, the same element or a transformative reaction at 1x, and any other element at 0.5x.</li><li><strong>Does Elemental Mastery help?</strong> No. EM does not affect shield-breaking speed, so never build EM for shields.</li><li><strong>Which element for which shield?</strong> Hydro for Pyro (Vaporize), Pyro for Cryo (Melt), Cryo or Pyro or Dendro for Electro, Dendro or Cryo or Electro for Hydro, and Geo attacks or claymore hits for Geo.</li></ul></div>
+<h2>Three different things called a shield</h2><p>Not every shield works the same way, and the correct response differs completely:</p><table><tr><th>Type</th><th>Behaviour</th><th>Examples</th><th>How to handle</th></tr><tr><td>Elemental Shield</td><td>Blocks all damage until destroyed</td><td>Abyss Mages, Heralds and Lectors, Cicin Mages, Slimes</td><td>Trigger the countering reaction to drain the gauge</td></tr><tr><td>Elemental Armor</td><td>Reduces damage instead of blocking (+100% all RES for Fatui)</td><td>Fatui Skirmishers</td><td>Only the most effective element works; everything else is heavily reduced</td></tr><tr><td>Physical Shield</td><td>Blocks damage from the facing direction only</td><td>Wooden, Geo and Ice Shield Hilichurls, Mitachurls</td><td>Go behind them, Freeze, taunt, or use claymore poise damage</td></tr></table><h2>The three-tier efficiency rule</h2><p>Shield-breaking speed is governed by elemental efficiency, which comes in three tiers:</p><ul><li><strong>Countering element — 2x</strong>: the opposing element on the wheel, such as Hydro against Pyro (Vaporize) or Pyro against Cryo (Melt).</li><li><strong>Same element or transformative reaction — 1x</strong>: same-attribute hits, Swirl, Crystallize.</li><li><strong>Any other element — 0.5x</strong>: the slow fallback.</li></ul><p>Against a Cryo Abyss Mage, a Pyro character therefore breaks the shield twice as fast as Electro or Geo.</p><h2>Full weakness chart</h2><table><tr><th>Shield</th><th>Best</th><th>Workable</th><th>Notes</th></tr><tr><td>Pyro</td><td>Hydro (Vaporize)</td><td>Electro / Cryo / Geo</td><td>Consistent Hydro application is the most reliable</td></tr><tr><td>Cryo</td><td>Pyro (Melt)</td><td>Electro / Geo</td><td>Cryo shields regenerate over time</td></tr><tr><td>Hydro</td><td>Dendro / Cryo / Electro</td><td>—</td><td>Dendro has been excellent since 3.0</td></tr><tr><td>Electro</td><td>Cryo / Pyro / Dendro</td><td>—</td><td>Superconduct also cuts Physical RES by 40% for 12s</td></tr><tr><td>Geo</td><td>Geo attacks / claymore strikes / Crystallize / Overload</td><td>—</td><td>Poise-damage route</td></tr><tr><td>Dendro / Wooden</td><td>Pyro (Burning)</td><td>—</td><td>Repeated application does not speed it up</td></tr></table><p>Two exceptions you must remember: <strong>Abyss Lector shields ignore the efficiency table</strong> (Cryo and Hydro are equally effective), and <strong>Fatui armor only takes its single most effective element</strong> (the Hydrogunner is unique in having no countering element at all).</p><h2>Enemy shield values (Gauge Units)</h2><table><tr><th>Enemy</th><th>Shield GU</th></tr><tr><td>Pyro / Hydro / Cryo Abyss Mage</td><td>12</td></tr><tr><td>Electro Abyss Mage</td><td>8</td></tr><tr><td>Abyss Herald / Lector</td><td>36</td></tr><tr><td>Electro / Cryo Cicin Mage</td><td>8 / 4–12</td></tr><tr><td>Fatui Skirmishers</td><td>4–8</td></tr><tr><td>Frostarm Lawachurl</td><td>30</td></tr><tr><td>Cryo Slime</td><td>8</td></tr></table><p>The higher the gauge, the more you need frequent repeat application rather than one big hit.</p><h2>Internal Cooldown: fast hits are not fast breaks</h2><p>Elemental application runs on a hidden timer: <strong>most abilities apply their element only once every 2.5 seconds or every 3 hits</strong>. Fast Normal Attacks therefore do not necessarily break faster. Ways around it:</p><ul><li><strong>Swap characters</strong> — switching resets the ICD, so rotating through your team beats one character mashing.</li><li><strong>Charged and Plunging Attacks</strong> — these have no ICD and apply directly.</li><li><strong>High-gauge skills</strong> — Bennett’s tapped Skill applies 2U while the held version applies only 1U, so the tap is the better shield-breaker.</li></ul><h2>Fastest shield breakers</h2><table><tr><th>Element</th><th>Recommended</th></tr><tr><td>Hydro</td><td>Neuvillette, Kokomi, Xingqiu, Yelan</td></tr><tr><td>Pyro</td><td>Xiangling, Bennett, Arlecchino</td></tr><tr><td>Cryo</td><td>Ganyu, Ayaka, Rosaria, Kaeya, Diona</td></tr><tr><td>Dendro</td><td>Nahida, Alhaitham, Tighnari, Collei</td></tr><tr><td>Geo</td><td>Navia, Zhongli, Itto, Noelle</td></tr></table><p>A special combination: <strong>Jean plus Bennett (“Sunfire”)</strong> keeps swirling Pyro through the field and bypasses ICD entirely, shredding Cryo and Electro shields.</p><h2>Practical tips</h2><ol><li><strong>Do not burn your Bursts on the shield</strong> — save them for the damage window once it is down.</li><li>Cover at least two elements in your team so no single shield type walls you out.</li><li>Kill <strong>Fatui and Abyss Mages first</strong>; their shields are the most disruptive.</li><li>Shield breaking is pure mechanics, so <strong>un-invested characters are fine</strong> as long as they survive.</li></ol><h2>Related guides</h2>
+<ul><li><a href="https://genshin-guide-one-five.vercel.app/guides/combat-mechanics-guide-en.html">Combat Mechanics Guide</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-reactions-detailed-en.html">Elemental Reactions Explained</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/boss-weaknesses-guide-en.html">Boss Weaknesses Guide</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/spiral-abyss-guide-en.html">Spiral Abyss Guide</a></li></ul>
+<h2>Bottom line</h2>
+<p>Shield breaking is a <strong>gauge-unit race, not a damage race</strong>. Learn the three efficiency tiers (2x / 1x / 0.5x), bring the right elements, and use swaps and Charged Attacks to bypass ICD — and Abyss shield enemies go from a slog to a free win. Under-geared? Bring a dedicated breaker anyway; their stats do not matter.</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide.html">查看中文版</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>Get new Genshin guides by email</h3>
+<p>One weekly email with new builds and version guides. No spam.</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">Subscribe</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('Subscribed! Check your inbox.');
+    } catch(err) {
+      alert('Sorry, try again later.');
+    }
+  });
+});
+</script>
+</body>
+</html>
