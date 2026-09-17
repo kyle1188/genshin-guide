@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genshin Impact Healer Guide: Healing Formula, Scaling Stats and Best Healers</title>
+<meta name="description" content="What stat does healing scale with? HP or Healing Bonus circlet? Full breakdown of the healing formula, 12 healer characters and their scaling stats, best artifact sets, Furina team logic and a practical checklist.">
+<meta name="keywords" content="genshin healer guide, best healer, healing bonus, ocean-hued clam, baizhu, kokomi, sigewinne, bennett, furina healer, healing formula">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/healer-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/healer-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/healer-guide-en.html" />
+<meta property="og:title" content="Genshin Impact Healer Guide: Healing Formula, Scaling Stats and Best Healers">
+<meta property="og:description" content="What stat does healing scale with? HP or Healing Bonus circlet? Full breakdown of the healing formula, 12 healer characters and their scaling stats, best artifact sets, Furina team logic and a practical checklist.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/healer-guide-en.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Impact Healer Guide: Healing Formula, Scaling Stats and Best Healers", "description": "What stat does healing scale with? HP or Healing Bonus circlet? Full breakdown of the healing formula, 12 healer characters and their scaling stats, best artifact sets, Furina team logic and a practical checklist.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-09-17", "dateModified": "2026-09-17", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/healer-guide-en.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What stat does healing scale with?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the character. HP: Kokomi, Baizhu, Sigewinne, Yaoyao, Diona, Bennett. ATK: Jean, Qiqi, Xianyun, Charlotte. DEF: Xilonen, Noelle. Kuki Shinobu heals off HP but her Hyperbloom damage scales with Elemental Mastery."}}, {"@type": "Question", "name": "Should I use an HP or Healing Bonus circlet?", "acceptedAnswer": {"@type": "Answer", "text": "Almost always Healing Bonus. It is a separate multiplier, while HP% suffers diminishing relative returns once you already stack it. Only special cases such as Nilou and Zhongli should take HP instead."}}, {"@type": "Question", "name": "Who is the best healer in Genshin Impact?", "acceptedAnswer": {"@type": "Answer", "text": "On combined output and comfort, Baizhu, Kokomi and Sigewinne rank at the top, while Bennett from C1 is the strongest single-target healer and buffer in the game."}}, {"@type": "Question", "name": "Which healer should I pair with Furina?", "acceptedAnswer": {"@type": "Answer", "text": "Favour instant party healers such as Jean and Charlotte, who can top up the whole team in one Burst and immediately max Furina's Fanfare. Active-character-only healers like Bennett and Kuki slow the stacking down badly."}}, {"@type": "Question", "name": "How do I heal teammates in co-op?", "acceptedAnswer": {"@type": "Answer", "text": "Only the host can use food to heal the party, so teammates rely on character healing. That makes bringing a dedicated healer far more valuable in co-op than in single player."}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/healer-guide.html">中文</a>
+</div>
+<div class="container">
+<h1>Genshin Healer Guide: Healing Formula and Best Healers</h1>
+<p>Healing looks simple until you ask why your healer does nothing. The answer is almost never investment — it is the <strong>scaling stat</strong>: HP on Jean or ATK on Kokomi will gut your output. This guide covers the healing formula, each healer’s scaling stat, gear choices, and the specific logic of healing for Furina.</p><div class="quick"><ul><li><strong>What stat does healing scale with?</strong> It depends on the character: Kokomi, Baizhu and Sigewinne scale on <strong>HP</strong>, Jean, Qiqi, Xianyun and Charlotte on <strong>ATK</strong>, and Xilonen and Noelle on <strong>DEF</strong>. Building the wrong stat halves your output.</li><li><strong>HP or Healing Bonus circlet?</strong> Almost always <strong>Healing Bonus</strong>. It is a separate multiplier from HP%, so once you already stack 100% HP the extra 46.6% HP is diluted, while 35.9% Healing Bonus is pure gain.</li><li><strong>Who are the best healers?</strong> Baizhu (party heal plus shield, HP-scaled), Kokomi (constant party healing) and Sigewinne (party heal on a Skill) lead the pack; Bennett from C1 is the strongest single-target healer.</li><li><strong>Which healer fits Furina?</strong> Pick an <strong>instant party healer</strong> such as Jean or Charlotte. Furina’s Fanfare stacks need the whole party topped up, and single-target healers force you to swap through every character, costing real DPS.</li></ul></div>
+<h2>How healing is calculated</h2><p>Healing has fewer multipliers than damage. The core formula simplifies to:</p><p><strong>Final healing = base healing × (1 + Healing Bonus) × (1 + Incoming Healing Bonus) × scaling stat</strong></p><p>Three things follow from this:</p><ul><li><strong>Healing Bonus</strong> is its own multiplier, coming from the circlet main stat, 2-piece set bonuses, weapons and some passives.</li><li><strong>Incoming Healing Bonus</strong> belongs to the person being healed. It only helps that one character and is a poor investment for a team-wide healer.</li><li><strong>The scaling stat</strong> is fixed per character, and building the wrong one is the most common cause of terrible healing numbers.</li></ul><h2>Healer roster and what each one is for</h2><table><tr><th>Character</th><th>Scaling</th><th>Coverage</th><th>Role</th></tr><tr><td>Baizhu</td><td>HP</td><td>Party (Skill)</td><td>Heal plus shield plus Dendro application; the most comfortable all-rounder</td></tr><tr><td>Kokomi</td><td>HP</td><td>Party (Burst) / active (Skill)</td><td>Healing and damage from the same stat; Freeze and Bloom staple</td></tr><tr><td>Sigewinne</td><td>HP</td><td>Party (Skill)</td><td>Party heal on the Skill, so your Burst rotation is untouched</td></tr><tr><td>Xianyun</td><td>ATK</td><td>Party (Burst)</td><td>Party heal plus Plunging Attack support</td></tr><tr><td>Yaoyao</td><td>HP</td><td>Active (Skill) / party (Burst)</td><td>Four-star Dendro healer, great in Aggravate and Bloom</td></tr><tr><td>Jean</td><td>ATK</td><td>Party (Burst)</td><td>Instant party heal plus Swirl cleansing</td></tr><tr><td>Xilonen</td><td>DEF</td><td>Active (Burst)</td><td>Top single-target healing on a full-DEF build, but conditional</td></tr><tr><td>Bennett</td><td>HP (heal) / Base ATK (buff)</td><td>Active only (Burst)</td><td>Best single-target healer from C1, with a huge ATK buff attached</td></tr><tr><td>Qiqi</td><td>ATK</td><td>Party / active</td><td>Enormous healing potential, crippled by energy problems and low utility</td></tr><tr><td>Charlotte</td><td>ATK</td><td>Party (Burst)</td><td>Instant party heal; excellent partner for Furina</td></tr><tr><td>Diona</td><td>HP</td><td>Active (Burst)</td><td>Heal and shield in one; common in Cryo teams</td></tr><tr><td>Kuki Shinobu</td><td>EM (Hyperbloom) / HP (heal)</td><td>Active only (Skill)</td><td>Hyperbloom trigger; the healing is a bonus</td></tr></table><p>A few characters only heal once a constellation is unlocked, notably <strong>Gorou (C4), Zhongli (C6) and Noelle</strong> via her own kit.</p><h2>Gear: the circlet is the dividing line</h2><p>"HP or Healing Bonus circlet" is the most searched support-build question, and the answer is almost always <strong>Healing Bonus</strong>:</p><ul><li>If you already have 100% HP bonus, adding 46.6% more HP is only about a 23% relative gain.</li><li>35.9% Healing Bonus is a <strong>completely separate multiplier</strong>, so it multiplies straight through.</li><li>Exceptions: Nilou wants pure HP for her passive, and Zhongli wants HP for shields — neither should run a Healing Bonus circlet.</li></ul><table><tr><th>Set</th><th>Effect</th><th>Who</th></tr><tr><td>Ocean-Hued Clam</td><td>+15% Healing Bonus (2pc); 4pc converts recorded healing including overflow into physical damage at 90%, capped at 30,000 recorded (roughly a 27k hit)</td><td>Kokomi, Barbara, Qiqi</td></tr><tr><td>Maiden Beloved</td><td>+15% Healing Bonus (2pc); 4pc grants the party +20% healing received for 10s after a Skill or Burst</td><td>Generalist healers</td></tr><tr><td>Song of Days Past</td><td>+15% Healing Bonus (2pc); 4pc records healing and converts it into bonus damage</td><td>Support-leaning healers</td></tr><tr><td>Deepwood Memories</td><td>Dendro RES shred</td><td>Dendro healers such as Baizhu and Yaoyao</td></tr></table><p>Main stats in practice: <strong>Energy Recharge (or the scaling stat) on the sands, the scaling stat on the goblet, Healing Bonus on the circlet</strong>. Energy Recharge is the hidden stat that matters — an 80-cost Burst at 100% ER means zero healing for half the fight.</p><h2>Healing for Furina specifically</h2><p>Furina’s Fanfare scales with party HP changes and needs <strong>cumulative healing equal to 100% of the party’s combined HP</strong> to max out. That dictates who you bring:</p><ul><li><strong>Best</strong>: instant party healers such as Jean and Charlotte — one Burst takes everyone from 50% to 100% and grants max stacks immediately.</li><li><strong>Good</strong>: continuous party healers such as Kokomi, Baizhu and Sigewinne.</li><li><strong>Worst</strong>: active-character-only healers such as Bennett and Kuki, which force you to cycle every character through the field and bleed DPS.</li></ul><h2>Practical checklist</h2><ol><li><strong>Do not blindly stack HP</strong> — confirm the scaling stat first; HP on Jean does nothing.</li><li><strong>Energy Recharge beats raw healing</strong>: a healer who cannot cast is not a healer.</li><li><strong>In co-op only the host can use food</strong>, so teammates depend entirely on character healing — bringing one matters more there.</li><li><strong>Overflow is not wasted</strong> with Ocean-Hued Clam, which is exactly how Kokomi contributes damage.</li><li><strong>Statues of The Seven heal you</strong>, but not during combat, so never count on them as an emergency button.</li></ol><h2>Related guides</h2>
+<ul><li><a href="https://genshin-guide-one-five.vercel.app/guides/support-character-guide-en.html">Support Character Guide</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/character-building-guide-en.html">Character Building Guide</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/stat-priority-guide-en.html">Stat Priority Guide</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/energy-recharge-en.html">Energy Recharge Guide</a></li></ul>
+<h2>Bottom line</h2>
+<p>Three things decide a healer: <strong>the right scaling stat, a Healing Bonus circlet, and enough Energy Recharge</strong>. The rest is matchup choice — Baizhu for comfort, Kokomi for sustained party healing, Jean or Charlotte for instant party heals that max Furina. Raw healing numbers are not the goal; healing when it matters is.</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/healer-guide.html">查看中文版</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>Get new Genshin guides by email</h3>
+<p>One weekly email with new builds and version guides. No spam.</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">Subscribe</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('Subscribed! Check your inbox.');
+    } catch(err) {
+      alert('Sorry, try again later.');
+    }
+  });
+});
+</script>
+</body>
+</html>
