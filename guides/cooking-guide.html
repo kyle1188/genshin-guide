@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神烹饪攻略：熟练度、特色料理与自动烹饪完全指南</title>
+<meta name="description" content="烹饪怎么才能出美味？熟练度多少解锁自动烹饪？特色料理概率多高？一次讲清指针判定、熟练度门槛、烹饪加成角色与食材加工效率技巧。">
+<meta name="keywords" content="原神烹饪,烹饪熟练度,自动烹饪,特色料理,完美烹饪,食材加工,烹饪加成角色">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/cooking-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/cooking-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/cooking-guide-en.html" />
+<meta property="og:title" content="原神烹饪攻略：熟练度、特色料理与自动烹饪完全指南">
+<meta property="og:description" content="烹饪怎么才能出美味？熟练度多少解锁自动烹饪？特色料理概率多高？一次讲清指针判定、熟练度门槛、烹饪加成角色与食材加工效率技巧。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/cooking-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神烹饪攻略：熟练度、特色料理与自动烹饪完全指南", "description": "烹饪怎么才能出美味？熟练度多少解锁自动烹饪？特色料理概率多高？一次讲清指针判定、熟练度门槛、烹饪加成角色与食材加工效率技巧。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-09-18", "dateModified": "2026-09-18", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/cooking-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "原神烹饪怎么做出美味？", "acceptedAnswer": {"@type": "Answer", "text": "手动烹饪时把指针停在橙色区域即为美味，效果最强且正常积累熟练度；黄色为普通，灰色为失败品。指针未停好前退出不消耗食材。"}}, {"@type": "Question", "name": "熟练度多少才能自动烹饪？", "acceptedAnswer": {"@type": "Answer", "text": "按料理星级决定：1★ 需 5 次、2★ 10 次、3★ 15 次、4★ 20 次、5★ 25 次完美烹饪。满熟练度后解锁自动烹饪，一次最多做 99 份且必出美味，不能取消。"}}, {"@type": "Question", "name": "特色料理的概率是多少？", "acceptedAnswer": {"@type": "Answer", "text": "用对应角色烹饪才会触发。美味品质下：1★ 20%、2★ 15%、3★ 15%、4★ 10%；普通品质与失败品品质概率更低。星级越低越容易出。"}}, {"@type": "Question", "name": "哪些角色烹饪有加成？", "acceptedAnswer": {"@type": "Answer", "text": "香菱（攻击类）、辛焱（防御类）、迪奥娜与琴（恢复类）、云堇（冒险类）在完美烹饪时各有 12% 概率双倍产出；神里绫人完美烹饪时有 18% 概率额外产出一份失败品。"}}, {"@type": "Question", "name": "食材加工要多久？", "acceptedAnswer": {"@type": "Answer", "text": "视数量与种类而定，少量只要几秒，大批量接近一小时。建议提前排队加工面粉、奶酪、奶油、糖这类基础加工品。"}}, {"@type": "Question", "name": "联机时料理增益能共享吗？", "acceptedAnswer": {"@type": "Answer", "text": "不能。单人时料理增益覆盖全队出战角色，联机时只对食用者自己生效，队友需要各自食用自己的那份。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/cooking-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神烹饪攻略：熟练度、特色料理与自动烹饪完全指南</h1>
+<p>烹饪是提瓦特最容易被忽略的效率系统——平时嫌麻烦，深渊前又临时抱佛脚。这篇指南讲清指针判定、熟练度门槛、特色料理概率与烹饪加成角色，附食材加工与批量备餐的实战建议。</p>
+<div class="quick"><ul><li><strong>怎么才算「美味」？</strong> 手动烹饪时指针停在橙色区=美味（效果最强、正常涨熟练度），黄色=普通（效果一般），灰色=失败品（效果最低）。指针没停好之前直接退出<strong>不消耗食材</strong>。</li><li><strong>熟练度要多少？</strong> 按料理星级：1★=5、2★=10、3★=15、4★=20、5★=25，满了自动解锁「自动烹饪」。</li><li><strong>自动烹饪什么效果？</strong> 一次最多 <strong>99 份</strong>，全部产出美味品质，且<strong>不能中途取消</strong>。</li><li><strong>特色料理怎么出？</strong> 必须用对应角色烹饪才有概率触发，星级越低的料理概率越高（4★ 仍有 5%–10%）。</li><li><strong>谁能让产出翻倍？</strong> 香菱（攻击类）、辛焱（防御类）、迪奥娜/琴（恢复类）、云堇（冒险类）等有 12% 概率双倍产出。</li></ul></div>
+<h2>烹饪基础：指针判定与三种品质</h2>
+
+<p>烹饪是游戏内的一种制作方式，用来制造料理与加工食材。第一次学会一道菜时，必须先<strong>手动完美烹饪若干次</strong>，才能解锁自动烹饪。</p>
+<p>手动烹饪的判定就是一个节奏小游戏：指针扫过时在正确区间点击或松手。</p>
+<ul><li><strong>橙色区 → 美味</strong>：效果最强，正常积累熟练度。</li><li><strong>黄色区 → 普通</strong>：效果中等。</li><li><strong>灰色区 → 失败品</strong>：效果最低。</li><li><strong>中途退出</strong>：食材不消耗，可以反复练习。</li></ul>
+<p>一个冷知识：<strong>雷电将军不能做饭</strong>——选她烹饪会直接提示「该角色无法烹饪」。</p>
+
+<h2>熟练度与自动烹饪</h2>
+
+<p>每道菜有独立熟练度，完美烹饪到上限后解锁自动烹饪，从此告别指针小游戏。</p>
+<table><tr><th>料理星级</th><th>熟练度上限</th><th>解锁后</th></tr>
+<tr><td>1★</td><td>5</td><td>自动烹饪</td></tr>
+<tr><td>2★</td><td>10</td><td>自动烹饪</td></tr>
+<tr><td>3★</td><td>15</td><td>自动烹饪</td></tr>
+<tr><td>4★</td><td>20</td><td>自动烹饪</td></tr>
+<tr><td>5★</td><td>25</td><td>自动烹饪</td></tr></table>
+<p>自动烹饪一次最多 99 份、必出美味、不可取消；熟练度满了之后手动烹饪依然保留，想手动做特定品质（比如刻意做失败品）时仍可用。</p>
+
+<h2>特色料理：概率与触发条件</h2>
+
+<p>特色料理（Special Dish）是某些角色的专属版本，效果强于同款美味料理，还带独立图标与名字。触发条件是<strong>用对应角色烹饪对应料理</strong>，且有概率，星级越低越容易出。</p>
+<table><tr><th>料理星级</th><th>失败品时</th><th>普通时</th><th>美味时</th></tr>
+<tr><td>1★</td><td>10%</td><td>15%</td><td>20%</td></tr>
+<tr><td>2★</td><td>10%</td><td>10%</td><td>15%</td></tr>
+<tr><td>3★</td><td>5%</td><td>10%</td><td>15%</td></tr>
+<tr><td>4★</td><td>5%</td><td>5%</td><td>10%</td></tr></table>
+<p>结论：<strong>用美味品质去搏特色料理最划算</strong>，同时熟练度也在涨；想刷某道特色料理就固定用那个角色批量做。</p>
+
+<h2>烹饪加成角色一览</h2>
+
+<p>部分角色拥有改变产出结果的烹饪天赋，共 10 个天赋与料理分类对应。常用的几个：</p>
+<table><tr><th>角色</th><th>加成</th><th>料理类型</th></tr>
+<tr><td>香菱</td><td>完美烹饪时有 12% 概率双倍产出</td><td>攻击类</td></tr>
+<tr><td>辛焱</td><td>完美烹饪时有 12% 概率双倍产出</td><td>防御类</td></tr>
+<tr><td>迪奥娜</td><td>完美烹饪时有 12% 概率双倍产出</td><td>恢复类</td></tr>
+<tr><td>琴</td><td>完美烹饪时有 12% 概率双倍产出</td><td>恢复类</td></tr>
+<tr><td>云堇</td><td>完美烹饪时有 12% 概率双倍产出</td><td>冒险类</td></tr>
+<tr><td>神里绫人</td><td>完美烹饪时 18% 概率额外产出一份失败品</td><td>全部</td></tr></table>
+<p>批量做增益料理前记得换人：用香菱做攻击料理、用辛焱做防御料理，长期能省下可观的食材。</p>
+
+<h2>食材从哪来：采集、商店与加工</h2>
+
+<ul><li><strong>野外采集</strong>：蘑菇、甜甜花、胡萝卜、树莓等大部分食材直接在地图上捡；击杀野猪、禽类获得肉类。</li><li><strong>商店购买</strong>：各主城杂货铺与餐馆每日刷新基础食材与调味料，上线顺手清空货架。</li><li><strong>食材加工</strong>：面粉、奶酪、奶油、糖、火腿等只能通过烹饪界面的「加工」标签制作，需要等待时间——少量几秒，大批量接近一小时，所以要提前排队加工。</li><li><strong>日常派遣</strong>：把探索派遣派去产出类委托，稳定白拿肉类与谷物。</li></ul>
+
+<h2>在哪烹饪：炉灶、篝火与便携锅</h2>
+
+<ul><li><strong>主城炉灶</strong>：每个地区主城都有户外炉灶，通常紧挨食材商贩，购物后直接开做。</li><li><strong>野外篝火</strong>：需要先用<strong>火元素</strong>点燃；风/冰/雷/岩/水元素会把火扑灭，下雨也会浇灭露天篝火，注意别在雨天白跑。</li><li><strong>便携锅</strong>：锻造耐久式便携烹饪道具，野外随时开灶。</li><li><strong>尘歌壶</strong>：洞天里可摆放多处烹饪摆设（室外 4 种、室内 5 种），回家就能批量做。</li></ul>
+
+<h2>批量备餐的实战建议</h2>
+
+<ul><li><strong>深渊前统一备餐</strong>：进去之前一次做满一轮攻击/防御/恢复料理，别在层间临时找锅。</li><li><strong>纪行周任务要烹饪 20 道</strong>：随便做 20 份最便宜的料理即可，别用高阶食材。</li><li><strong>联机要各吃各的</strong>：单人时料理增益覆盖全队出战角色；联机时增益<strong>只对食用者自己生效</strong>，队友需要自己吃一份。</li><li><strong>先刷熟练度再囤货</strong>：同一种料理集中批量做，快速刷满熟练度解锁自动烹饪，之后备餐是几秒钟的事。</li><li><strong>按用途分类囤</strong>：恢复类留一份应急、增益类留给深渊、体力类留给跑图，避免背包一堆食材却做不出能用的菜。</li></ul>
+
+<h2>Related Guides</h2>
+<ul><li><a href="https://genshin-guide-one-five.vercel.app/guides/food-buff-guide.html">料理增益与叠加规则</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/spiral-abyss-guide.html">深境螺旋攻略</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/battle-pass-guide.html">珍珠纪行指南</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/local-specialty-guide.html">地方特产采集</a></li></ul>
+<h2>小结</h2>
+<p><strong>烹饪的核心是「用对角色 + 批量刷熟练度」</strong>：先用手动烹饪把常用菜刷到满熟练度解锁自动烹饪，之后备餐就是点两下的事；做攻击/防御/恢复料理时换上香菱、辛焱、迪奥娜这类加成角色，长期省下的食材非常可观。别忘了纪行每周要烹饪 20 道。</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/cooking-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em})});
+      var j = await r.json();
+      alert('订阅成功！');
+    } catch(err) {
+      alert('订阅失败，请稍后再试。');
+    }
+  });
+});
+</script>
+</body>
+</html>

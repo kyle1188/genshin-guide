@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神元素附着机制攻略：GU 元素量、ICD 与反应消耗完全解析</title>
+<meta name="description" content="为什么同样队伍有人次次蒸发、有人一直在空反应？元素量 1U/2U/4U、20% 附着衰减、持续时间公式与 ICD 2.5 秒/3 次规则一次讲清。">
+<meta name="keywords" content="原神元素附着,元素量,GU,ICD,内置冷却,元素附着论,反应消耗,附着时长,底与触发">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide-en.html" />
+<meta property="og:title" content="原神元素附着机制攻略：GU 元素量、ICD 与反应消耗完全解析">
+<meta property="og:description" content="为什么同样队伍有人次次蒸发、有人一直在空反应？元素量 1U/2U/4U、20% 附着衰减、持续时间公式与 ICD 2.5 秒/3 次规则一次讲清。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神元素附着机制攻略：GU 元素量、ICD 与反应消耗完全解析", "description": "为什么同样队伍有人次次蒸发、有人一直在空反应？元素量 1U/2U/4U、20% 附着衰减、持续时间公式与 ICD 2.5 秒/3 次规则一次讲清。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-09-18", "dateModified": "2026-09-18", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "元素量 GU 是什么？", "acceptedAnswer": {"@type": "Answer", "text": "GU（Gauge Unit，元素量单位）衡量每次元素附着的强度，分为 1U、2U、4U，1 GU 等于 25 点元素耐久。落在敌人身上时会先扣 20%：1U 变成 0.8U，2U 变成 1.6U，4U 变成 3.2U。"}}, {"@type": "Question", "name": "元素附着能持续多久？", "acceptedAnswer": {"@type": "Answer", "text": "按公式 (2.5 × 附着量 + 7) 秒计算：0.8U 约 9.5 秒，1.6U 约 12 秒，3.2U 约 17 秒。同种元素叠加时新值取较高者、衰减速率继承先附着的那层，因此 1U 接 2U 可得到约 19 秒的 1.6U 附着（火元素自 3.0 版本起除外）。"}}, {"@type": "Question", "name": "ICD 的 2.5 秒 / 3 次规则怎么理解？", "acceptedAnswer": {"@type": "Answer", "text": "标准 ICD 下，命中第 1 次时附着，之后要等 2.5 秒过去或累计第 4 次命中（先到者算）才能再次附着。2.5 秒计时器走满会同时清零计时器与命中计数（硬重置），靠第 4 次命中触发则只清命中计数、计时器继续走（软重置）。"}}, {"@type": "Question", "name": "哪些角色没有 ICD？", "acceptedAnswer": {"@type": "Answer", "text": "常见的有香菱的旋火轮与锅巴（1U 火）、行秋元素战技、心海元素战技、枫原万叶元素爆发、甘雨霜华矢等。此外所有角色的下落攻击都零 ICD。"}}, {"@type": "Question", "name": "为什么我的蒸发有时不触发？", "acceptedAnswer": {"@type": "Answer", "text": "多半是「底」被吃光了或 ICD 没转好。增幅反应会消耗底上的元素量：逆向增幅每次只吃 0.5× 触发器元素量，正向增幅吃 2.0×。若底太薄或触发顺序颠倒，就会出现空反应。"}}, {"@type": "Question", "name": "剧变反应吃双爆吗？", "acceptedAnswer": {"@type": "Answer", "text": "不吃。超载、超导、超绽放、扩散等剧变反应只受触发者的等级与元素精通影响，不可暴击、无视防御，但仍受对应元素抗性影响。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神元素附着机制攻略：GU、ICD 与反应消耗完全解析</h1>
+<p>元素附着是《原神》战斗背后真正在跑的数学。为什么同一套队伍有人每次都能蒸发、有人却一直在空反应？答案不在面板，而在<strong>元素量（GU）</strong>与<strong>内置冷却（ICD）</strong>。这篇把两个隐藏系统一次讲透。</p>
+<div class="quick"><ul><li><strong>元素量是什么？</strong> 每次元素附着都有强度，用 GU（Gauge Unit）表示：1U、2U、4U。1 GU = 25 点元素耐久。</li><li><strong>为什么要打八折？</strong> 附着落地瞬间有 20% 的「附着衰减」：1U→0.8U，2U→1.6U，4U→3.2U。</li><li><strong>能挂多久？</strong> 时长公式 <strong>(2.5 × GU + 7)</strong> 秒：0.8U=9.5 秒、1.6U=12 秒、3.2U=17 秒。</li><li><strong>ICD 怎么算？</strong> 标准规则：附着一层后，直到<strong>过去 2.5 秒</strong>或<strong>再命中 3 次</strong>（先到者算）才能再次附着。</li><li><strong>下落攻击有 ICD 吗？</strong> 没有。所有角色的下落攻击元素附着<strong>零 ICD</strong>，每次都能挂元素。</li></ul></div>
+<h2>元素量（GU）与 20% 衰减</h2>
+
+<p>任何元素伤害在代码层面都带着一个隐形数字：<strong>元素量</strong>。大多数普通攻击与元素战技是 <strong>1U</strong>，元素爆发与部分重击常为 <strong>2U</strong>，少数独立附着为 4U。</p>
+<table><tr><th>攻击元素量</th><th>落地后附着量</th><th>附着时长</th></tr>
+<tr><td>1U</td><td>0.8U</td><td>9.5 秒</td></tr>
+<tr><td>2U</td><td>1.6U</td><td>12 秒</td></tr>
+<tr><td>4U</td><td>3.2U</td><td>17 秒</td></tr></table>
+<p>公式是 <strong>(2.5 × 附着量 + 7) 秒</strong>。注意 20% 的衰减（俗称「附着税」）是在附着瞬间就扣掉的——所以 1U 的攻击实际只留下 0.8U 的底。</p>
+
+<h2>衰减继承：为什么叠附着能挂更久</h2>
+
+<p>同种元素叠加时有一条<strong>衰减继承</strong>规则：新附着的强度取「新旧两者中较高值」，但衰减速率继承<strong>先附着</strong>的那一层。</p>
+<ul><li>先挂 1U、再挂 2U → 得到 <strong>1.6U 的附着，按 1U 的慢速率衰减</strong>，最长可以撑到约 19 秒，比单独挂 2U（12 秒）更久。</li><li><strong>火元素是例外</strong>：自 3.0 版本起，火附着不再继承之前那层的衰减速率，新附着有多快衰减就多快，所以火底没法靠叠层「续杯」。</li></ul>
+<p>这也是为什么懂机制的人能用 1U 起手把底铺得更久，而只按一次 2U 反而更短。</p>
+
+<h2>ICD：2.5 秒计时器与 3 次命中</h2>
+
+<p>ICD（Internal Cooldown，内置冷却）限制的是「多久能再挂一次元素」，而不是伤害频率。</p>
+<ul><li><strong>标准规则</strong>：命中第 1 次时附着，之后要等<strong>2.5 秒过去</strong>或<strong>累计第 4 次命中</strong>，先到者生效。</li><li><strong>硬重置 vs 软重置</strong>：2.5 秒计时器走满触发时，计时器与命中计数<strong>一起清零（硬重置）</strong>；靠第 4 次命中触发时，只清命中计数，<strong>计时器继续走（软重置）</strong>。</li><li><strong>典型序列</strong>：宵宫普攻在同一个 2.5 秒窗口内是第 1、4、7 段附着，即 (1,0,0,1,0,0…)。</li><li><strong>武器类型共享</strong>：双手剑与单手剑的普攻/重击共享 ICD；长柄、弓、法器则是每种攻击类型各自独立——这就是胡桃（长柄）能靠普攻与重击交替挂火的原因。</li><li><strong>下落攻击零 ICD</strong>：每次下落都能挂元素，魈这类打桩角色因此受益。</li></ul>
+
+<h2>有 ICD 与无 ICD 的角色</h2>
+
+<p>机制的价值在于选人。下表是常被引用的典型（同角色不同技能可能不同）：</p>
+<table><tr><th>类型</th><th>角色 / 技能</th><th>参数</th></tr>
+<tr><td rowspan="4">无 ICD（每段都能挂）</td><td>香菱 · 旋火轮 / 锅巴</td><td>1U 火，无 ICD</td></tr>
+<tr><td>行秋 · 元素战技</td><td>1U 水，无 ICD</td></tr>
+<tr><td>心海 · 元素战技</td><td>水，无 ICD</td></tr>
+<tr><td>枫原万叶 · 元素爆发 / 甘雨 · 霜华矢</td><td>风 / 冰，无 ICD</td></tr>
+<tr><td rowspan="4">有 ICD（注意节奏）</td><td>雷电将军 · 元素战技</td><td>0.9 秒计时器</td></tr>
+<tr><td>夜兰 · 元素爆发</td><td>2 秒 / 3 次</td></tr>
+<tr><td>菲谢尔 · 奥兹</td><td>5 秒 / 4 次</td></tr>
+<tr><td>胡桃 · 重击</td><td>0.5 秒</td></tr></table>
+<p>读法：无 ICD 的角色是「反应发动机」，负责稳定铺底或稳定触发；ICD 长的角色不能指望它每一下都触发，要围绕它的节奏排轴。</p>
+
+<h2>反应消耗系数：谁是底、谁是触发器</h2>
+
+<p>反应的本质是：敌人身上先有一个元素（<strong>底/Aura</strong>），第二个元素打上去（<strong>触发器/Trigger</strong>），按固定的系数吃掉底上的元素量。</p>
+<table><tr><th>反应类型</th><th>消耗系数</th></tr>
+<tr><td>正向增幅（正向蒸发 / 正向融化）</td><td>2.0× 触发器元素量</td></tr>
+<tr><td>逆向增幅（逆向蒸发 / 逆向融化）</td><td>0.5× 触发器元素量</td></tr>
+<tr><td>剧变反应（超载、超导、超绽放等）</td><td>1.0×</td></tr>
+<tr><td>扩散 / 结晶</td><td>0.5×</td></tr></table>
+<p>这就是为什么<strong>逆向蒸发能靠少量水底撑住多次火触发</strong>（每次只吃 0.5×），而正向反应需要更厚的底。谁先附着，谁就是底，也决定了伤害归谁。</p>
+
+<h2>增幅反应倍率与配比</h2>
+
+<table><tr><th>反应</th><th>触发方式</th><th>倍率</th></tr>
+<tr><td>正向蒸发</td><td>火打水底</td><td>1.5×</td></tr>
+<tr><td>逆向蒸发</td><td>水打火底</td><td>2.0×</td></tr>
+<tr><td>正向融化</td><td>火打冰底</td><td>2.0×</td></tr>
+<tr><td>逆向融化</td><td>冰打火底</td><td>1.5×</td></tr></table>
+<p>顺序决定收益：胡桃蒸发队里行秋先挂水（底），胡桃重击触发的是<strong>正向蒸发 1.5×</strong>；如果把顺序反过来让胡桃先挂火，行秋打上去就是<strong>逆向蒸发 2.0×</strong>，但吃倍率的人变成了行秋。排轴时先想清楚「我要谁的伤害被放大」。</p>
+
+<h2>共存与特殊规则：激化、感电、燃烧</h2>
+
+<ul><li><strong>激化（草+雷）</strong>：两者会形成独立的「激化底」并长期共存，之后雷打上去触发<strong>超激化</strong>、草打上去触发<strong>蔓激化</strong>，且底不会按常规被吃光——这是须弥之后战斗模型的根本变化。</li><li><strong>感电（水+雷）</strong>：按秒跳的持续反应，每秒消耗约 0.4U，<strong>同时消耗水与雷两层的元素量</strong>。</li><li><strong>扩散</strong>：伤害侧有约 0.5 秒 ICD，所以万叶爆发的高频判定不会每跳都出伤。</li><li><strong>燃烧（火+草）</strong>：每 2 秒重新挂 1U 火，形成自维持的火底，容易干扰其他反应——双草队里要留意。</li><li><strong>剧变反应不看双爆与增伤</strong>：超载、超导、超绽放、扩散等只吃角色<strong>等级与元素精通</strong>，且无视防御（但仍受对应元素抗性影响）。</li></ul>
+
+<h2>实战结论</h2>
+
+<ul><li><strong>先想底、再想触发</strong>：确定谁是底、谁吃倍率，再去排技能顺序，比堆面板有效得多。</li><li><strong>用无 ICD 角色铺底</strong>：香菱、行秋、心海这类角色能稳定维持元素底。</li><li><strong>别指望长 ICD 技能每段触发</strong>：夜兰、奥兹要按它们的计时器排轴。</li><li><strong>下落攻击是免费的附着</strong>：需要快速挂元素时，下落攻击没有 ICD 限制。</li><li><strong>火底不能叠层续杯</strong>：3.0 之后火附着不继承衰减速率，融化队的火底要按新规则维护。</li></ul>
+
+<h2>Related Guides</h2>
+<ul><li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-reactions.html">元素反应完全指南</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-reaction-teams.html">元素反应配队</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/dendro-reactions-guide.html">草元素反应攻略</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/damage-formula-guide.html">伤害计算公式</a></li></ul>
+<h2>小结</h2>
+<p><strong>元素附着机制可以压缩成三句话</strong>：一是看元素量（1U/2U/4U，落地打八折，时长按 2.5×GU+7 算）；二是看 ICD（2.5 秒或 3 次命中，下落攻击除外）；三是看谁先附着决定谁是底、谁吃倍率。把这三条用在配队与排轴上，反应稳定性会有肉眼可见的提升。</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em})});
+      var j = await r.json();
+      alert('订阅成功！');
+    } catch(err) {
+      alert('订阅失败，请稍后再试。');
+    }
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genshin Elemental Application Guide: GU, ICD & Aura Consumption Explained</title>
+<meta name="description" content="Why does one team land Vaporize every time while another keeps whiffing? Elemental Gauge Units (1U/2U/4U), the 20% aura tax, the duration formula and the 2.5s / 3-hit ICD rule, all explained.">
+<meta name="keywords" content="genshin elemental application,gauge units,GU,ICD,aura tax,elemental gauge theory,aura consumption,2.5s rule,plunge attack ICD">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide-en.html" />
+<meta property="og:title" content="Genshin Elemental Application Guide: GU, ICD & Aura Consumption Explained">
+<meta property="og:description" content="Why does one team land Vaporize every time while another keeps whiffing? Elemental Gauge Units (1U/2U/4U), the 20% aura tax, the duration formula and the 2.5s / 3-hit ICD rule, all explained.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide-en.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Elemental Application Guide: GU, ICD & Aura Consumption Explained", "description": "Why does one team land Vaporize every time while another keeps whiffing? Elemental Gauge Units (1U/2U/4U), the 20% aura tax, the duration formula and the 2.5s / 3-hit ICD rule, all explained.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-09-18", "dateModified": "2026-09-18", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide-en.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What are Gauge Units (GU)?", "acceptedAnswer": {"@type": "Answer", "text": "GU measures the strength of each elemental application: 1U, 2U or 4U, where 1 GU equals 25 units of Element Durability. A 20% aura tax applies on landing, so 1U creates a 0.8U aura, 2U a 1.6U aura and 4U a 3.2U aura."}}, {"@type": "Question", "name": "How long does an elemental aura last?", "acceptedAnswer": {"@type": "Answer", "text": "Duration follows (2.5 × aura GU + 7) seconds: 0.8U lasts about 9.5s, 1.6U about 12s and 3.2U about 17s. When reapplying the same element the new aura takes the higher GU but inherits the initial decay rate, so 1U then 2U can yield a 1.6U aura lasting around 19s — except Pyro, which since Version 3.0 does not inherit decay."}}, {"@type": "Question", "name": "How does the 2.5s / 3-hit ICD rule work?", "acceptedAnswer": {"@type": "Answer", "text": "Under standard ICD the element applies on hit 1, then cannot apply again until 2.5 seconds pass or the 4th hit lands, whichever comes first. A timer expiry clears both the timer and hit counter (hard reset); a 4th-hit trigger clears only the hit counter while the timer keeps running (soft reset)."}}, {"@type": "Question", "name": "Which characters have no ICD?", "acceptedAnswer": {"@type": "Answer", "text": "Common examples include Xiangling Pyronado and Guoba (1U Pyro), Xingqiu Elemental Skill, Kokomi Elemental Skill, Kazuha Burst and Ganyu Frostflake Arrows. On top of that, plunging attacks have zero ICD for every character."}}, {"@type": "Question", "name": "Why does my Vaporize sometimes fail?", "acceptedAnswer": {"@type": "Answer", "text": "Usually the aura ran out or ICD had not reset. Amplifying reactions consume aura: reverse amplifying eats 0.5× the trigger GU while forward amplifying eats 2.0×. If the aura is thin or the trigger order is flipped, you get a missed reaction."}}, {"@type": "Question", "name": "Do transformative reactions benefit from crit?", "acceptedAnswer": {"@type": "Answer", "text": "No. Overloaded, Superconduct, Hyperbloom, Swirl and other transformative reactions scale only with the trigger character level and Elemental Mastery. They cannot crit and ignore defence, but are still affected by the matching elemental resistance."}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide.html">中文</a>
+</div>
+<div class="container">
+<h1>Genshin Elemental Application Guide: GU, ICD & Aura Consumption Explained</h1>
+<p>Elemental application is the math actually running under every fight in Genshin. Why does the same team Vaporize every rotation for one player and whiff for another? The answer is not your stats — it is <strong>Gauge Units (GU)</strong> and <strong>Internal Cooldown (ICD)</strong>. Here is both systems, end to end.</p>
+<div class="quick"><ul><li><strong>What is a Gauge Unit?</strong> Every elemental application carries a strength value in GU: 1U, 2U or 4U. 1 GU equals 25 units of Element Durability.</li><li><strong>Why the 20% cut?</strong> An aura is taxed 20% the moment it lands: 1U becomes 0.8U, 2U becomes 1.6U, 4U becomes 3.2U.</li><li><strong>How long does an aura last?</strong> Duration is <strong>(2.5 × GU + 7)</strong> seconds: 0.8U = 9.5s, 1.6U = 12s, 3.2U = 17s.</li><li><strong>How does ICD work?</strong> Standard rule: after an application, no reapplication until <strong>2.5 seconds</strong> pass or <strong>3 more hits</strong> land — whichever comes first.</li><li><strong>Do plunge attacks have ICD?</strong> No. Plunging attacks have <strong>zero ICD</strong>, so every single plunge applies its element.</li></ul></div>
+<h2>Gauge Units and the 20% Aura Tax</h2>
+
+<p>Every elemental hit carries an invisible number: its <strong>Gauge Unit</strong> value. Most normal attacks and elemental skills apply <strong>1U</strong>; elemental bursts and some charged attacks often apply <strong>2U</strong>, with a few standalone applications at 4U.</p>
+<table><tr><th>Application</th><th>Aura Created</th><th>Aura Duration</th></tr>
+<tr><td>1U</td><td>0.8U</td><td>9.5 seconds</td></tr>
+<tr><td>2U</td><td>1.6U</td><td>12 seconds</td></tr>
+<tr><td>4U</td><td>3.2U</td><td>17 seconds</td></tr></table>
+<p>The formula is <strong>(2.5 × aura GU + 7) seconds</strong>. Note the 20% tax is deducted the instant the aura is created — so a 1U hit really only leaves a 0.8U aura behind.</p>
+
+<h2>Decay Rate Inheritance: Why Stacking Lasts Longer</h2>
+
+<p>When you reapply the same element, <strong>decay rate inheritance</strong> kicks in: the new aura keeps the higher GU value of the two, but inherits the decay rate of the <strong>initial</strong> application.</p>
+<ul><li>Apply 1U, then 2U → you get a <strong>1.6U aura decaying at the slower 1U rate</strong>, lasting roughly 19 seconds — longer than a clean 2U application (12s).</li><li><strong>Pyro is the exception</strong>: since Version 3.0, Pyro no longer inherits decay from previous stacks, so a new Pyro application decays at its own rate. You cannot extend a Pyro aura by layering.</li></ul>
+<p>This is why players who understand the system open with a 1U application to build a longer-lasting aura, while a single 2U hit can actually end up shorter.</p>
+
+<h2>ICD: The 2.5-Second Timer and 3-Hit Rule</h2>
+
+<p>ICD (Internal Cooldown) limits how often you can <em>apply</em> an element — not how often you deal damage.</p>
+<ul><li><strong>Standard rule</strong>: the element applies on hit 1, then cannot apply again until <strong>2.5 seconds</strong> pass or the <strong>4th hit</strong> lands, whichever comes first.</li><li><strong>Hard vs soft reset</strong>: when the 2.5s timer expires it clears both the timer and the hit counter (hard reset). When the 4th hit triggers it, only the hit counter clears — the timer keeps ticking (soft reset).</li><li><strong>Worked example</strong>: Yoimiya's normal attacks apply Pyro on hits 1, 4 and 7 within one 2.5s window, i.e. the sequence (1, 0, 0, 1, 0, 0...).</li><li><strong>Weapon type sharing</strong>: Claymore and Sword users share ICD between normal and charged attacks; Polearm, Bow and Catalyst users keep separate ICDs per attack type — which is how Hu Tao (polearm) alternates normals and charged attacks to maximise Pyro application.</li><li><strong>Plunge attacks have zero ICD</strong>: every plunge applies its element, a big deal for plunge-heavy carries.</li></ul>
+
+<h2>Characters With and Without ICD</h2>
+
+<p>The mechanics matter because they decide who you field. Commonly cited examples (values can differ per ability on the same character):</p>
+<table><tr><th>Type</th><th>Character / Ability</th><th>Parameter</th></tr>
+<tr><td rowspan="4">No ICD (every tick applies)</td><td>Xiangling · Pyronado / Guoba</td><td>1U Pyro, no ICD</td></tr>
+<tr><td>Xingqiu · Elemental Skill</td><td>1U Hydro, no ICD</td></tr>
+<tr><td>Kokomi · Elemental Skill</td><td>Hydro, no ICD</td></tr>
+<tr><td>Kazuha · Burst / Ganyu · Frostflake Arrow</td><td>Anemo / Cryo, no ICD</td></tr>
+<tr><td rowspan="4">Has ICD (mind the rhythm)</td><td>Raiden Shogun · Elemental Skill</td><td>0.9s timer</td></tr>
+<tr><td>Yelan · Burst</td><td>2s / 3 hits</td></tr>
+<tr><td>Fischl · Oz</td><td>5s / 4 hits</td></tr>
+<tr><td>Hu Tao · Charged Attack</td><td>0.5s</td></tr></table>
+<p>Read it this way: no-ICD characters are your reaction engines — they set auras or trigger reactions reliably. Long-ICD abilities should never be expected to apply on every hit, so build rotations around their rhythm.</p>
+
+<h2>Aura vs Trigger: How Reactions Eat Gauges</h2>
+
+<p>Every reaction needs an element already on the enemy (the <strong>aura</strong>) and a second element landing on it (the <strong>trigger</strong>). Fixed coefficients decide how much of the aura is consumed.</p>
+<table><tr><th>Reaction</th><th>Gauge Consumption</th></tr>
+<tr><td>Forward amplifying (Forward Vaporize / Forward Melt)</td><td>2.0× the trigger's GU</td></tr>
+<tr><td>Reverse amplifying (Reverse Vaporize / Reverse Melt)</td><td>0.5× the trigger's GU</td></tr>
+<tr><td>Transformative (Overloaded, Superconduct, Hyperbloom, etc.)</td><td>1.0×</td></tr>
+<tr><td>Swirl / Crystallize</td><td>0.5×</td></tr></table>
+<p>This is why <strong>reverse Vaporize can sustain multiple Pyro triggers on a thin Hydro aura</strong> — each trigger only eats 0.5× — while forward reactions demand a thicker aura. Whoever applies first owns the aura, and that order decides who gets the multiplier.</p>
+
+<h2>Amplifying Multipliers and Ratios</h2>
+
+<table><tr><th>Reaction</th><th>Trigger Setup</th><th>Multiplier</th></tr>
+<tr><td>Forward Vaporize</td><td>Pyro onto Hydro aura</td><td>1.5×</td></tr>
+<tr><td>Reverse Vaporize</td><td>Hydro onto Pyro aura</td><td>2.0×</td></tr>
+<tr><td>Forward Melt</td><td>Pyro onto Cryo aura</td><td>2.0×</td></tr>
+<tr><td>Reverse Melt</td><td>Cryo onto Pyro aura</td><td>1.5×</td></tr></table>
+<p>Order decides the payoff. In a Hu Tao Vaporize team, Xingqiu applies Hydro first (aura), so Hu Tao's charged attacks land <strong>Forward Vaporize at 1.5×</strong>. Flip the order so Hu Tao applies Pyro first and Xingqiu's Hydro triggers <strong>Reverse Vaporize at 2.0×</strong> — but now the multiplier belongs to Xingqiu. Decide whose damage you are amplifying before you script the rotation.</p>
+
+<h2>Coexisting Auras and Special Cases</h2>
+
+<ul><li><strong>Quicken (Dendro + Electro)</strong>: the two form a persistent Quicken aura that coexists independently. Later Electro hits trigger Aggravate, Dendro hits trigger Spread, and the aura is not consumed the usual way — the core shift in post-Sumeru combat.</li><li><strong>Electro-Charged (Hydro + Electro)</strong>: a per-second tick reaction consuming roughly 0.4U per second and <strong>draining both the Hydro and Electro auras</strong> at once.</li><li><strong>Swirl</strong>: has a ~0.5 second ICD on its damage, so rapid Kazuha burst ticks do not all deal damage.</li><li><strong>Burning (Pyro + Dendro)</strong>: reapplies 1U Pyro every 2 seconds, creating a self-sustaining Pyro aura that can interfere with other setups.</li><li><strong>Transformative reactions ignore crit and DMG bonus</strong>: Overloaded, Superconduct, Hyperbloom, Swirl and friends scale only with the trigger's <strong>level and Elemental Mastery</strong>, ignore defence, but are still affected by the matching elemental resistance.</li></ul>
+
+<h2>Practical Takeaways</h2>
+
+<ul><li><strong>Decide aura and trigger first</strong>: settle who owns the aura and who eats the multiplier before arranging skills. It beats stat stacking.</li><li><strong>Set auras with no-ICD characters</strong>: Xiangling, Xingqiu and Kokomi keep an aura up reliably.</li><li><strong>Do not expect long-ICD abilities to apply on every hit</strong>: build around Yelan's and Oz's timers.</li><li><strong>Plunge attacks are free application</strong>: when you need an element fast, plunging has no ICD.</li><li><strong>Pyro auras cannot be extended</strong>: since 3.0, Pyro does not inherit decay, so Melt teams maintain the Pyro aura under the new rules.</li></ul>
+
+<h2>Related Guides</h2>
+<ul><li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-reactions.html">Elemental Reactions Guide</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-reaction-teams.html">Reaction Team Building</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/dendro-reactions-guide.html">Dendro Reactions Guide</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/damage-formula-guide.html">Damage Formula Explained</a></li></ul>
+<h2>Bottom Line</h2>
+<p><strong>The whole system compresses into three rules.</strong> First, gauge units: 1U/2U/4U, taxed 20% on landing, lasting (2.5 × GU + 7) seconds. Second, ICD: 2.5 seconds or 3 hits, whichever comes first, with plunge attacks exempt. Third, whoever applies first owns the aura and the multiplier. Apply those three to team building and rotations and your reaction consistency improves immediately.</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide.html">查看中文版</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>Subscribe for Genshin Tips</h3>
+<p>Weekly character builds and version guides, no spam.</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">Subscribe</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em})});
+      var j = await r.json();
+      alert('Subscribed!');
+    } catch(err) {
+      alert('Sorry, please try again later.');
+    }
+  });
+});
+</script>
+</body>
+</html>
