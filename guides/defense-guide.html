@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神防御与抗性机制详解：减防、减抗与伤害乘区</title>
+<meta name="description" content="为什么同样面板打不出伤害？防御乘区与抗性三层公式全解析，减防上限 90%、减抗负值只算一半、风套/钟离/超导减抗来源与配队选择。">
+<meta name="keywords" content="原神防御乘区,原神减防,原神抗性,减抗公式,风套减抗,超导物抗,伤害计算">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/defense-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/defense-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/defense-guide-en.html" />
+<meta property="og:title" content="原神防御与抗性机制详解：减防、减抗与伤害乘区">
+<meta property="og:description" content="为什么同样面板打不出伤害？防御乘区与抗性三层公式全解析，减防上限 90%、减抗负值只算一半、风套/钟离/超导减抗来源与配队选择。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/defense-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神防御与抗性机制详解：减防、减抗与伤害乘区", "description": "为什么同样面板打不出伤害？防御乘区与抗性三层公式全解析，减防上限 90%、减抗负值只算一半、风套/钟离/超导减抗来源与配队选择。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-09-19", "dateModified": "2026-09-19", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/defense-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "防御乘区怎么计算？", "acceptedAnswer": {"@type": "Answer", "text": "（角色等级+100）÷（角色等级+100 + （敌人等级+100）×（1−减防）×（1−无视防御））。敌人防御值 = 5×等级+500。"}},{"@type": "Question", "name": "减防最高能到多少？", "acceptedAnswer": {"@type": "Answer", "text": "硬上限 90%，多个来源相加后不再增长。无视防御是独立另一层，与减防相乘。"}},{"@type": "Question", "name": "抗性负值怎么算？", "acceptedAnswer": {"@type": "Answer", "text": "RES<0 时伤害乘数 = 1−RES/2，只按一半效果。例如 10% 物抗遇上超导 −40% 后为 −30%，乘数 1.15。"}},{"@type": "Question", "name": "风套减抗多少？", "acceptedAnswer": {"@type": "Answer", "text": "翠纾森林之烏 4 件套在触发扩散后，对被扩散元素减 40% 抗性，持续 10 秒。"}},{"@type": "Question", "name": "剧变反应受减防影响吗？", "acceptedAnswer": {"@type": "Answer", "text": "不受。剧变反应无视防御，但仍受目标抗性影响，所以反应队减抗优先级更高。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/defense-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神防御与抗性机制详解：为什么你的伤害被吃掉一半</h1>
+<p>很多人花一周刷圣遗物拉双暴，却发现伤害没长多少——因为真正吃伤害的是<strong>防御与抗性</strong>这两个你从来不看的数字。这篇讲清两个乘区的公式、减防与减抗的来源、上限与怪物基础抗性，以及配队时该选哪一个。</p>
+<div class="quick"><ul><li><strong>防御乘区怎么算？</strong> （角色等级+100）÷（角色等级+100 + （敌人等级+100）×（1−减防）×（1−无视防御））。</li><li><strong>同等级下打多少折？</strong> 对同等级敌人，无减防时只有约 <strong>16.7%</strong>的伤害系数（Lv90 敌人 DEF 约 950）。</li><li><strong>减防上限？</strong> 硬上限 <strong>90%</strong>，堆再多也不多算。</li><li><strong>抗性怎么算？</strong> 三层：RES<0 时 1−RES/2；0≤RES<75% 时 1−RES；RES≥75% 时 1÷（4×RES+1）。</li><li><strong>减抗越多越好吗？</strong> 负值区只按<strong>一半</strong>效果算，例如 10% 物抗遇上超导−40%，最终只提升约 27.8% 伤害。</li></ul></div>
+<h2>防御乘区：你的伤害先被砍掉八成</h2>
+<p>伤害公式里，防御乘区（DEF Multiplier）是独立一块，公式为：</p><p><strong>防御乘区 = （角色等级+100）÷ [ （角色等级+100） + （敌人等级+100）× k ]</strong>，其中 <strong>k = (1−减防) × (1−无视防御)</strong>。</p><ul><li><strong>敌人防御值 = 5 × 敌人等级 + 500</strong>；Lv90 敌人防御约 <strong>950</strong>。</li><li>无任何减防时，Lv90 打 Lv90：190 ÷ (190+950) ≈ <strong>16.7%</strong>——即你的理论伤害先被砍到不到两成。</li><li>防御乘区跟<strong>等级</strong>相关而非血量，所以高难内容等级压制非常明显。</li></ul><p>关键理解：减防把 k 变小，从而提高伤害；而<strong>无视防御是另一层，与减防相乘而非相加</strong>，两者叠加效果更好。</p>
+<h2>减防来源与 90% 上限</h2>
+<p>多个减防来源<strong>相加</strong>，但总额硬封顶 90%：</p><table><tr><th>来源</th><th>减防</th><th>类型</th></tr><tr><td>丽莎 A4 被动</td><td>−15%</td><td>减防</td></tr><tr><td>雷泽 C4</td><td>−15%</td><td>减防</td></tr><tr><td>可莱 C2</td><td>−23%</td><td>减防</td></tr><tr><td>神里绫华 C4</td><td>−30%</td><td>减防</td></tr><tr><td>纳西妲 C2</td><td>−30%</td><td>减防</td></tr><tr><td>部分武器/圣遗物</td><td>−定额</td><td>减防 / 无视防御</td></tr></table><p>例：丽莎 15% + 可莱 23% + 雷泽 15% = 53%，远未触顶。实测多个减防叠满后伤害不再增长，所以不要为了堆减防而放弃更好的搅局角色。</p>
+<h2>抗性（RES）：三层公式与负值陷阱</h2>
+<p>抗性独立按伤害类型（物理/火/水/雷/冰/岩/风/草）分别计算：</p><p><strong>总 RES = 基础 RES + 额外 RES − 减抗</strong></p><table><tr><th>区间</th><th>伤害乘数</th><th>说明</th></tr><tr><td>RES &lt; 0</td><td>1 − RES/2</td><td>负抗仍加伤，但只按<strong>一半</strong>算</td></tr><tr><td>0 ≤ RES &lt; 75%</td><td>1 − RES</td><td>常规区间，一分抗性换一分伤害</td></tr><tr><td>RES ≥ 75%</td><td>1 ÷ (4×RES + 1)</td><td>严重递减，堆再高收益溡薄</td></tr></table><p><strong>经典例子：</strong>10% 物抗敌人遇上超导（−40% 物抗）→ 最终 −30% → 乘数 = 1−(−0.30/2) = <strong>1.15</strong>。原本是 0.90，实际提升约 <strong>27.8%</strong>，而不是看起来的 40%。</p><p>这就是“负抗性只算一半”的实际含义：减抗仍值得堆，但越接近负区边界边际收益越低。</p>
+<h2>减抗来源：哪些角色与圣遗物真正值钱</h2>
+<table><tr><th>来源</th><th>减抗</th><th>范围</th><th>备注</th></tr><tr><td>翡翠森林之炯 4 件套</td><td>−40%</td><td>扩散的元素</td><td>10 秒，全游最重要减抗</td></tr><tr><td>钟离 玉璋盾</td><td>−20%</td><td>全元素+物理</td><td>常驻、全类型，与风套叠加</td></tr><tr><td>超导反应</td><td>−40%</td><td>仅物理抗性</td><td>冰+雷，最容易获得的减抗</td></tr><tr><td>万叶/温迪/绋人系风系辅助</td><td>带70%以上</td><td>触发元素</td><td>靠风系扩散触发</td></tr><tr><td>双岩共鸣</td><td>减岩抗/加伤</td><td>岩系</td><td>队伍层面收益</td></tr></table><p>实战组合示例（物理队）：超导 −40% 物抗 + 钟离盾 −20% 全抗 → 对 10% 物抗敌人最终 −50%，乘数 1.25。这就是为什么物理 DPS 队里几乎必带冰雷一人 + 钟离。</p>
+<h2>怪物基础抗性速查</h2>
+<ul><li><strong>大多数普通怪：单元素约 10%</strong>（例如普通丘丘人）。</li><li><strong>丘丘暴徒：物抗约 30%，元素抗仅约 10%</strong>——物理队打丘丘暴徒会明显发虚。</li><li><strong>深渊使徒 / 传令官：对自身元素抗性极高</strong>（常 50%+ ），盾在时甚至免疫，先破盾再说。</li><li><strong>无相之物 / 史莱姆 / 漂浮灵：对本元素免疫或高抗</strong>，别用同元素硬打。</li><li><strong>古岩龙晰：</strong>开战时随机锁定一种元素抗性，被击倒后解除。</li><li><strong>深渊与活动 Boss：</strong>在基础抗性上额外叠加，这是减抗角色在高难环境价值暴涨的原因。</li></ul><p>经验法则：<strong>目标越“肉”，说明你正在被隐藏抗性吃伤害，一个减抗工具人的价值就越高。</strong></p>
+<h2>减防 vs 减抗：配队该选哪个</h2>
+<table><tr><th>维度</th><th>减防（DEF Shred）</th><th>减抗（RES Shred）</th></tr><tr><td>作用范围</td><td>全类型通用</td><td>指定伤害类型</td></tr><tr><td>上限</td><td>90% 硬封顶</td><td>无上限，但负区只算一半</td></tr><tr><td>叠加方式</td><td>同类相加</td><td>同类相加</td></tr><tr><td>与其他乘区</td><td>乘算（独立乘区）</td><td>乘算（独立乘区）</td></tr><tr><td>典型使用</td><td>高练度队、周本、深渊 12 层</td><td>单元素队、反应队、物理队</td></tr></table><p><strong>实用建议：</strong></p><ul><li>一般队伍只需<strong>一个强力减抗工具人</strong>（风系 40% 或钟离 20%）就够。</li><li><strong>单元素主 C 队：优先风套 4 件套</strong>（凯亚/万叶/绋人），免费 40% 是全游性价比最高的减抗。</li><li><strong>物理队：</strong>超导几乎必备，再搭钟离盾叠到 −50%。</li><li><strong>反应队：</strong>剧变反应（超激化/燃烧等）只受抗性影响、不吃减防，减抗优先级更高。</li><li><strong>高难深渊：</strong>防御与抗性双高，两类减益叠加性价最高。</li></ul>
+<h2>常见坑</h2>
+<ul><li><strong>以为减抗按字面加伤</strong>：负区只算一半，−40% 物抗实际只提升 27.8%。</li><li><strong>对已高抗目标堆减抗</strong>：甲级不按比例，高抗性时每点减抗收益更大。</li><li><strong>忽视无视防御</strong>：它与减防相乘，两者都有时收益更高。</li><li><strong>用同元素打免疫怪</strong>：无相之物、漂浮灵对本元素免疫，换元素或换人。</li><li><strong>只堆减防不堆减抗</strong>：单元素队对高抗怪物时，减抗比减防更立竿见影。</li></ul>
+<h2>相关阅读</h2>
+<ul><li><a href="https://genshin-guide-one-five.vercel.app/guides/damage-formula-guide.html">伤害公式详解</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/crit-guide.html">双暴词条指南</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-reactions.html">元素反应机制</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide.html">元素附着机制</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide.html">破盾机制指南</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/team-building-guide.html">配队构筑指南</a></li></ul>
+<h2>小结</h2>
+<p><strong>伤害不够不一定是圣遗物不行，很可能是你在向防御与抗性交税。</strong>同等级下防御先吃掉八成，减防上限 90%，减抗负值只按一半算。一般队伍带一个风套 4 件套或钟离就够；物理队加超导；反应队优先减抗。把这两个乘区理清，你会发现同一套面板能打出完全不同的伤害。</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/defense-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('订阅成功！');
+    } catch(err) {
+      alert('订阅失败，请稍后再试。');
+    }
+  });
+});
+</script>
+</body>
+</html>

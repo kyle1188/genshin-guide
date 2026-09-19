@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神敌人素材刷取攻略：普通、精英、Boss 掉落与每日上限</title>
+<meta name="description" content="敌人素材怎么刷最快？普通、精英、Boss 三类掉落差在哪？精英每日 400 上限、刷新时间、一个角色满突破 18/30/36 与天赋 6/22/31，附高效路线与联机技巧。">
+<meta name="keywords" content="原神敌人刷取,原神怪物掉落,精英敌人上限,突破素材刷取,原神刷材料,怪物刷新时间,原神联机刷怪">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/enemy-farming-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/enemy-farming-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/enemy-farming-guide-en.html" />
+<meta property="og:title" content="原神敌人素材刷取攻略：普通、精英、Boss 掉落与每日上限">
+<meta property="og:description" content="敌人素材怎么刷最快？普通、精英、Boss 三类掉落差在哪？精英每日 400 上限、刷新时间、一个角色满突破 18/30/36 与天赋 6/22/31，附高效路线与联机技巧。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/enemy-farming-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神敌人素材刷取攻略：普通、精英、Boss 掉落与每日上限", "description": "敌人素材怎么刷最快？普通、精英、Boss 三类掉落差在哪？精英每日 400 上限、刷新时间、一个角色满突破 18/30/36 与天赋 6/22/31，附高效路线与联机技巧。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-09-19", "dateModified": "2026-09-19", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/enemy-farming-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "精英敌人掉落有上限吗？", "acceptedAnswer": {"@type": "Answer", "text": "有，每日 400 份。超出后再杀精英不会给任何经验与掉落，按服务器每日刷新时间重置（国服凌晨 4:00）。"}},{"@type": "Question", "name": "刷普通敌人要树脂吗？", "acceptedAnswer": {"@type": "Answer", "text": "不要。普通与精英敌人掉落完全不消耗树脂，只有世界 Boss（40）与周本 Boss（30/60）才需要。"}},{"@type": "Question", "name": "角色满突破要多少普通素材？", "acceptedAnswer": {"@type": "Answer", "text": "1→90 共需 18 个 1 阶、30 个 2 阶、36 个 3 阶，另加 420,000 摩拉。"}},{"@type": "Question", "name": "刷敌人会刷到上限吗？", "acceptedAnswer": {"@type": "Answer", "text": "正常玩不会。400 份封顶需要大量高级精英，日常清任务+8 条路线远达不到。"}},{"@type": "Question", "name": "可以去好友世界刷吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以。联机刷普通与精英敌人各自计算掉落与上限，不消耗对方资源。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/enemy-farming-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神敌人素材刷取攻略：掉落表、每日上限与高效路线</h1>
+<p>角色突破与天赋升级需要大量<strong>敌人掉落素材</strong>，但很多人到现在还以为“刷怪就完事”。实际上普通敌人、精英敌人、Boss 三类的掉落机制、刷新时间与每日上限完全不同。这篇把三类敌人的掉落规则、实际需求量与省时路线讲透。</p>
+<div class="quick"><ul><li><strong>敌人分几类？</strong> 普通（史莱姆、丘丘人、盗宝团）、精英（高血量掉稀有素材）、Boss（消耗树脂的世界 Boss 与周本 Boss）。</li><li><strong>精英有上限吗？</strong> 有。精英敌人掉落每天上限 <strong>400 份</strong>，按服务器每日重置时间刷新；超出后再杀不给经验也不给掉落。</li><li><strong>满突破要多少？</strong> 1→90 共需普通敌人素材 <strong>18 / 30 / 36</strong>（三个品阶各计）；三个天赋各升到 10 级另需 6 / 22 / 31。</li><li><strong>刷怪要树脂吗？</strong> 不要。普通与精英敌人掉落<strong>完全不消耗树脂</strong>，只有世界 Boss 与周本 Boss 才需要。</li><li><strong>能去好友世界刷吗？</strong> 能。联机进入他人世界刷普通/精英敌人各自计算掉落与上限，不占用对方任何资源。</li></ul></div>
+<h2>三类敌人的核心区别</h2>
+<p>先把概念分清，不然刷错对象白费时间：</p><table><tr><th>类型</th><th>代表</th><th>树脂</th><th>刷新/限制</th><th>主要产出</th></tr><tr><td>普通敌人</td><td>史莱姆、丘丘人、盗宝团、愚人众杂兵</td><td>无</td><td>约 12–24 小时刷新</td><td>三品阶普通素材（面具/箭头/徽记）</td></tr><tr><td>精英敌人</td><td>丘丘暴徒、深渊法师、兽境猎犬、遗迹守卫</td><td>无</td><td>每日掉落上限 400</td><td>武器突破素材 + 圣遗物</td></tr><tr><td>Boss</td><td>无相之雷、纯水精灵、周本</td><td>40（周本 30/60）</td><td>领奖后立即重生</td><td>角色突破素材 + 宝石</td></tr></table><p>关键区别：<strong>普通与精英敌人不吃树脂</strong>，只是有刷新与每日上限；Boss 才是树脂大户。所以“缺普通素材”和“缺 Boss 素材”是两回事，前者靠路线，后者靠规划。</p>
+<h2>精英敌人：每日 400 份上限是关键</h2>
+<p>精英敌人是武器突破素材的主要来源，也是最容易被浪费的部分：</p><ul><li><strong>每日上限 400 份</strong>：超出后继续杀精英将<strong>不给任何经验和掉落</strong>，与世界等级无关。</li><li><strong>每日重置</strong>：按服务器的每日刷新时间（国服凌晨 4:00）重置，不是 48 小时周期。</li><li><strong>摩拉产出</strong>：精英每级约 5 摩拉，弱精英（丘丘暴徒）封顶 200，中等（成年兽境猎犬）封顶 400，强精英（丘丘王）封顶 600。</li><li><strong>角色经验</strong>：同等级段下精英给的角色经验约为普通敌人的 <strong>3 倍</strong>，刷精英本身也在练级。</li></ul><p>实操建议：把精英路线当作“每日任务”的附带，不要为了刷稀有素材而反复跑同一个点位——超过 400 份后确实不再产出。</p>
+<h2>掉落速查：哪个敌人掉什么</h2>
+<table><tr><th>敌人家族</th><th>1 阶</th><th>2 阶</th><th>3 阶</th></tr><tr><td>丘丘人（含暴徒）</td><td>损坏的面具</td><td>脏污的面具</td><td>不祥的面具</td></tr><tr><td>丘丘暴徒（斧/盾）</td><td>重型角</td><td>黑铜角</td><td>黑晶角</td></tr><tr><td>史莱姆</td><td>史莱姆凝胶</td><td>史莱姆涌涋物</td><td>史莱姆浓缩体</td></tr><tr><td>盗宝团</td><td>寻宝鸦印</td><td>银鸦印</td><td>金鸦印</td></tr><tr><td>愚人众</td><td>新兵徽记</td><td>士官徽记</td><td>尉官徽记</td></tr><tr><td>深渊法师 / 使徒</td><td>死域枝条</td><td>死域叶片</td><td>死域新芽</td></tr><tr><td>兽境猎犬</td><td>隐匿爪</td><td>隐匿足齿</td><td>隐匿利爪</td></tr><tr><td>野伏众（黑色蛇众）</td><td>阴郁小像</td><td>黑暗小像</td><td>死亡小像</td></tr></table><p><strong>掉落数量参考（满世界等级）：</strong>大史莱姆每只约 1.68 个 1 阶 + 0.45 个 2 阶 + 0.11 个 3 阶；遗迹守卫约 2.63 个 2 阶 + 0.70 个 3 阶 + 0.18 个 4 阶，遗迹重型（Ruin Grader）基本是翻倍。</p><p>品阶越高越稀缺，所以<strong>不要只刷高等级敌人</strong>——低品阶可以用合成台向上合成，但逆向拆解不可行。</p>
+<h2>一个角色到底需要多少</h2>
+<table><tr><th>用途</th><th>1 阶</th><th>2 阶</th><th>3 阶</th><th>摩拉</th></tr><tr><td>角色突破 1→90</td><td>18</td><td>30</td><td>36</td><td>420,000</td></tr><tr><td>单个天赋 1→10</td><td>6</td><td>22</td><td>31</td><td>1,652,500</td></tr></table><p>也就是说：<strong>只突破</strong>需 18/30/36；若三个天赋全升到 10 级，共计 36/96/129（含突破部分）。千万别以为突破完了就不需要普通素材了——天赋才是真正的无底洞。</p>
+<h2>高效刷取路线与方法</h2>
+<ul><li><strong>先把需求汇总</strong>：同一个敌人家族的素材通常被多个角色共用，一趟刷完能同时养好几个。</li><li><strong>用互动地图装路线</strong>：按“密集点位”而非“路过点”规划，单趟精英路线能抿到 20+。</li><li><strong>带上位移与清怪队</strong>：万叶/夜兰/散兵提速，群伤角色一波清。</li><li><strong>联机补差</strong>：自己世界每日上限到了，去好友世界继续刷，互不影响。</li><li><strong>顺路刷</strong>：做每日委托、地脉花、圣遗物时顺手清掉路边精英，零额外时间。</li><li><strong>不要用树脂刷普通素材</strong>：突破之后多余的低阶素材可合成，比反复刷高效。</li></ul>
+<h2>常见坑</h2>
+<ul><li><strong>以为精英无限刷</strong>：400 份/天封顶后白刷，先确认今日剩余。</li><li><strong>只刷高品阶敌人</strong>：低阶素材才是缺口，合成上行、向下不行。</li><li><strong>混淆素材类型</strong>：普通掉落、专属 Boss 掉落、圣遗物是三条独立线。</li><li><strong>忘记联机</strong>：缺几十个时，进好友世界比等刷新快得多。</li><li><strong>把 Boss 当普通怪刷</strong>：Boss 要树脂，先规划再刷，不然压缩其他培养。</li></ul>
+<h2>相关阅读</h2>
+<ul><li><a href="https://genshin-guide-one-five.vercel.app/guides/character-building-guide.html">角色养成优先级</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/ley-line-guide.html">地脉花刷取指南</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/world-boss-guide.html">世界 Boss 刷取指南</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide.html">周本 Boss 攻略</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/local-specialty-guide.html">地方特产采集</a></li><li><a href="https://genshin-guide-one-five.vercel.app/guides/co-op-guide.html">联机玩法攻略</a></li></ul>
+<h2>小结</h2>
+<p><strong>刷敌人素材的核心是“分清三类、用好上限”</strong>：普通与精英敌人不吃树脂、精英每日 400 份封顶，Boss 才是树脂大户。满突破只要 18/30/36，但三个天赋全升会把需求拉到 36/96/129——先把实际需求汇总好，再按路线一趟清完，不够就联机补差。</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/enemy-farming-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('订阅成功！');
+    } catch(err) {
+      alert('订阅失败，请稍后再试。');
+    }
+  });
+});
+</script>
+</body>
+</html>
