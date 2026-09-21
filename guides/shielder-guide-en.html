@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genshin Impact Shielder Guide: Shield Formula, Absorption and Character Comparison</title>
+<meta name="description" content="How is shield durability calculated? Why are Geo shields tankier? Who does Shield Strength actually buff? Full breakdown of the shield formula, absorption multipliers, Shield Strength sources and every shielder compared.">
+<meta name="keywords" content="genshin shielder guide,shield strength,shield formula,zhongli shield,layla,diona,noelle,geo shield,elemental shield,absorption">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/shielder-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/shielder-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/shielder-guide-en.html" />
+<meta property="og:title" content="Genshin Impact Shielder Guide: Shield Formula, Absorption and Character Comparison">
+<meta property="og:description" content="How is shield durability calculated? Why are Geo shields tankier? Who does Shield Strength actually buff? Full breakdown of the shield formula, absorption multipliers, Shield Strength sources and every shielder compared.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/shielder-guide-en.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Impact Shielder Guide: Shield Formula, Absorption and Character Comparison", "description": "How is shield durability calculated? Why are Geo shields tankier? Who does Shield Strength actually buff? Full breakdown of the shield formula, absorption multipliers, Shield Strength sources and every shielder compared.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-09-21", "dateModified": "2026-09-21", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/shielder-guide-en.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does Shield Strength stack?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Bonuses from different sources are additive (e.g. Geo Resonance 15% + Tenacity 4pc 30% = 45%). There is no hard cap, but returns diminish noticeably once the shield is already unbreakable."}}, {"@type": "Question", "name": "Why does my shield break so fast?", "acceptedAnswer": {"@type": "Answer", "text": "Two usual reasons: the active character has low DEF, so more damage reaches the shield, or your Shield Strength is not on the character currently on field — it does not carry over after swapping."}}, {"@type": "Question", "name": "Can two shields stack?", "acceptedAnswer": {"@type": "Answer", "text": "No. Only one shield can exist on field at a time; casting a second overwrites the first, so running two shielders wastes a slot."}}, {"@type": "Question", "name": "Geo shield or elemental shield?", "acceptedAnswer": {"@type": "Answer", "text": "Geo for general use (150% against everything). If you know you are tanking one specific element, a matching elemental shield absorbs at 250% and performs better."}}, {"@type": "Question", "name": "What can shields not block?", "acceptedAnswer": {"@type": "Answer", "text": "Shields absorb physical and elemental damage and provide interruption resistance, but some mechanics (corrosion, certain Abyssal debuffs and some fall damage) bypass them entirely."}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/shielder-guide.html">中文</a>
+</div>
+<div class="container">
+<h1>Genshin Impact Shielder Guide: Shield Formula, Absorption and Character Comparison</h1>
+<p>Shields are the most comfortable survival tool in Genshin Impact — and one of the most misunderstood. Why does a 50,000 HP Zhongli feel like a wall while another HP-stacking shielder breaks instantly? This guide breaks down the shield formula, absorption multipliers and exactly who benefits from Shield Strength, plus a full comparison of every shielder.</p>
+<div class="quick"><ul><li><strong>How is shield HP calculated?</strong> Base = flat value + (scaling stat x percentage); final HP then multiplies by (1 + Shield Strength) and the absorption multiplier.</li><li><strong>Why are Geo shields tankier?</strong> Geo shields have a universal 150% absorption; elemental shields get 250% against their own element but only 100% against everything else.</li><li><strong>Who gets Shield Strength?</strong> Only the <strong>active character on field</strong> — it does not follow the character who cast the shield.</li><li><strong>Who is the best shielder?</strong> Zhongli: HP scaling, 150% universal absorption, and a 20% RES shred aura from the Jade Shield.</li></ul></div>
+<h2>How shield durability is actually calculated</h2>
+<p>A shield is not a second health bar — it is a separate damage pool. Its final durability comes from three multiplied layers:</p>
+<p><strong>Final Shield HP = Base Shield HP x (1 + Shield Strength) x Absorption Multiplier</strong></p>
+<p>Base Shield HP itself has two parts, both listed on the talent screen:</p>
+<p><strong>Base Shield HP = Flat Value + (Scaling Stat x Scaling %)</strong></p>
+<ul>
+<li><strong>Flat value</strong>: a constant that grows with talent level.</li>
+<li><strong>Scaling stat</strong>: most shielders scale off <strong>Max HP</strong> (Zhongli, Layla, Diona, Thoma, Kirara); a few scale off <strong>DEF</strong> (Noelle, Xinyan).</li>
+<li><strong>Shield Strength</strong>: a separate multiplier; sources are listed below.</li>
+<li><strong>Absorption multiplier</strong>: different for Geo and elemental shields.</li>
+</ul>
+<p>Take a 50,000 HP Zhongli at talent level 10: the Jade Shield grants <strong>2,712 + 23.04% Max HP</strong>, so base = 2,712 + 50,000 x 0.2304 = about <strong>14,232</strong>. Multiply by the Geo shield's 150% universal absorption and the effective pool is roughly <strong>21,348</strong> — before any Shield Strength bonus.</p>
+
+<h2>Absorption: why Geo shields are tankier</h2>
+<p>Every shield absorbs physical and normal elemental damage at 100% base, with two exceptions:</p>
+<table>
+<thead><tr><th>Shield type</th><th>Own element</th><th>Other damage</th><th>Examples</th></tr></thead>
+<tbody>
+<tr><td>Elemental shield</td><td><strong>250%</strong></td><td>100%</td><td>Diona (Cryo), Thoma (Pyro), Kirara (Dendro)</td></tr>
+<tr><td>Geo shield</td><td colspan="2"><strong>150% against everything</strong></td><td>Zhongli, Noelle</td></tr>
+</tbody>
+</table>
+<p>The takeaway: <strong>Geo shields are not better because of bigger numbers, but because they are universal</strong>. In the Spiral Abyss, where enemies mix multiple elements, a Geo shield never has a sudden weak spot. Elemental shields are extremely tanky against their own element (250%) but drop to 100% against anything else.</p>
+
+<h2>Where Shield Strength comes from</h2>
+<p>This is the most commonly misunderstood part: <strong>Shield Strength only applies to the character currently on field</strong>, not to whoever cast the shield.</p>
+<table>
+<thead><tr><th>Source</th><th>Bonus</th><th>Applies to</th></tr></thead>
+<tbody>
+<tr><td>Geo Resonance (Enduring Rock)</td><td>+15%</td><td>The shielded active character</td></tr>
+<tr><td>Tenacity of the Millelith (4pc)</td><td>+30% for 3s after an Elemental Skill hits</td><td>Whole party</td></tr>
+<tr><td>Retracing Bolide (2pc)</td><td>+35%</td><td>Wearer only</td></tr>
+<tr><td>Zhongli passive (Resonant Waves)</td><td>+5% per hit taken, up to 5 stacks (+25%)</td><td>While the Jade Shield lasts</td></tr>
+<tr><td>Weapon passives (e.g. Memory of Dust)</td><td>Varies</td><td>Wearer only</td></tr>
+</tbody>
+</table>
+<p>So the classic mistake — putting Retracing Bolide on Diona and expecting your DPS to inherit 35% Shield Strength — is <strong>wrong</strong>. That bonus belongs to Diona alone. To buff the whole team you need <strong>Tenacity of the Millelith 4pc</strong> or <strong>Geo Resonance</strong>.</p>
+
+<h2>Shielder comparison</h2>
+<table>
+<thead><tr><th>Character</th><th>Scales off</th><th>Element</th><th>Strengths</th><th>Weaknesses</th></tr></thead>
+<tbody>
+<tr><td>Zhongli</td><td>Max HP</td><td>Geo</td><td>150% universal absorption, 20s duration, 20% RES shred, stacking Shield Strength passive</td><td>5-star; low personal damage</td></tr>
+<tr><td>Layla</td><td>Max HP</td><td>Cryo</td><td>High HP scaling; with investment her shield rivals Zhongli's and applies Cryo</td><td>Longer cooldown; needs decent investment</td></tr>
+<tr><td>Diona</td><td>Max HP</td><td>Cryo</td><td>Shield + healing + stamina reduction + particles: the most complete kit</td><td>Lower base shield; needs HP and talent levels</td></tr>
+<tr><td>Thoma</td><td>Max HP</td><td>Pyro</td><td>Stacking shield that refreshes; excellent for normal-attack teams</td><td>Needs normal attacks to maintain; poor off-meta value</td></tr>
+<tr><td>Noelle</td><td>DEF</td><td>Geo</td><td>150% universal absorption, very high shield at high investment, also heals</td><td>Cooldown exceeds duration: roughly 50% uptime</td></tr>
+<tr><td>Kirara</td><td>Max HP</td><td>Dendro</td><td>Stackable, survives Bloom/Burgeon self-damage, great for exploration</td><td>Shield tied to investment; utility is mostly defensive</td></tr>
+</tbody>
+</table>
+
+<h2>The hidden variable: the active character's DEF</h2>
+<p>Players often ask: my Zhongli has 50,000 HP, so why does the shield still break instantly? The answer is usually the <strong>active character's Defense</strong> — incoming damage is reduced by the on-field character's DEF before it ever touches the shield.</p>
+<p>Against the same shield, a 2,500 DEF character may only lose a few hundred points per hit, while a 500 DEF character can shatter it in a couple of hits. That is why a <strong>low-investment main DPS makes your shield feel paper-thin</strong>, and why the same shield can feel different from one team to the next.</p>
+
+<h2>Four common mistakes</h2>
+<ul>
+<li><strong>Assuming Shield Strength carries across characters</strong>: it does not — only the active character benefits.</li>
+<li><strong>Running two shielders for "double protection"</strong>: only one shield can exist at a time. The newer one overwrites the older one.</li>
+<li><strong>Stacking HP but ignoring talent levels</strong>: shield HP is very sensitive to talent level, so do not skip your Elemental Skill.</li>
+<li><strong>Overlooking the RES shred</strong>: the Jade Shield's 20% resistance reduction is a pure damage buff for the whole team.</li>
+</ul>
+
+<h2>Which shielder should you pick?</h2>
+<table>
+<thead><tr><th>What you need</th><th>First pick</th><th>Alternative</th></tr></thead>
+<tbody>
+<tr><td>The strongest, most convenient shield</td><td>Zhongli</td><td>Noelle (invested)</td></tr>
+<tr><td>F2P / first shielder</td><td>Diona</td><td>Noelle</td></tr>
+<tr><td>Normal-attack carry teams</td><td>Thoma</td><td>Zhongli</td></tr>
+<tr><td>Bloom / Hyperbloom teams</td><td>Kirara</td><td>Zhongli</td></tr>
+<tr><td>Cryo team wanting extra application</td><td>Layla</td><td>Diona</td></tr>
+</tbody>
+</table>
+
+<h2>Related guides</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/healer-guide-en.html">Healer Guide</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/defense-guide-en.html">Defense &amp; Resistance Explained</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide-en.html">Shield Breaking Guide</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/zhongli-build-en.html">Zhongli Build Guide</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-resonance-en.html">Elemental Resonance Guide</a></li>
+</ul>
+
+<h2>Summary</h2>
+<p>Shields come down to three steps: <strong>check the scaling stat, check the absorption multiplier, then add Shield Strength</strong>. Zhongli stays on top not because of raw numbers but because HP scaling, 150% universal absorption and a 20% RES shred happen to stack perfectly. No Zhongli? Diona brings utility, Layla brings raw shield, and Noelle brings universal 150% absorption — pick whichever gap your team actually has.</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/shielder-guide.html">查看中文版</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>Subscribe for Genshin Updates</h3>
+<p>Weekly character and version guides. No spam.</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">Subscribe</button>
+</form>
+</div>
+<div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('Subscribed! Check your inbox.');
+    } catch(err) {
+      alert('Sorry, try again later.');
+    }
+  });
+});
+</script>
+</body>
+</html>

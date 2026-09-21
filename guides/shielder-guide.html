@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神护盾角色攻略：盾量公式、吸收倍率与护盾角色排行</title>
+<meta name="description" content="护盾耐久怎么算？为什么岩盾比元素盾硬？护盾强效到底作用于谁？完整拆解盾量公式、吸收倍率、盾强效来源与钟离、莱依拉、迪奥娜等护盾角色对比。">
+<meta name="keywords" content="原神护盾,盾量公式,护盾强效,钟离盾,莱依拉,迪奥娜,诺艾尔,岩盾,元素盾,吸收倍率">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/shielder-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/shielder-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/shielder-guide-en.html" />
+<meta property="og:title" content="原神护盾角色攻略：盾量公式、吸收倍率与护盾角色排行">
+<meta property="og:description" content="护盾耐久怎么算？为什么岩盾比元素盾硬？护盾强效到底作用于谁？完整拆解盾量公式、吸收倍率、盾强效来源与钟离、莱依拉、迪奥娜等护盾角色对比。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/shielder-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神护盾角色攻略：盾量公式、吸收倍率与护盾角色排行", "description": "护盾耐久怎么算？为什么岩盾比元素盾硬？护盾强效到底作用于谁？完整拆解盾量公式、吸收倍率、盾强效来源与钟离、莱依拉、迪奥娜等护盾角色对比。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-09-21", "dateModified": "2026-09-21", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/shielder-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "护盾强效能叠加吗？", "acceptedAnswer": {"@type": "Answer", "text": "不同来源的护盾强效可以叠加，且是加法叠加（如双岩共鸣 15% + 千岩 4 件 30% = 45%）。目前没有硬上限，但堆到很高之后收益会明显递减。"}}, {"@type": "Question", "name": "为什么我的盾一下就破？", "acceptedAnswer": {"@type": "Answer", "text": "两个常见原因：一是当前场上角色防御力太低，敌人伤害先被他的防御削减后才作用于盾；二是护盾强效没给到「当前站在场上的角色」，切人之后原来的加成失效。"}}, {"@type": "Question", "name": "两个盾角色能叠加护盾吗？", "acceptedAnswer": {"@type": "Answer", "text": "不能。场上同时只能存在一个护盾，后释放的会直接覆盖先释放的，两个盾角色放一队属于浪费位置。"}}, {"@type": "Question", "name": "岩盾和元素盾哪个更好？", "acceptedAnswer": {"@type": "Answer", "text": "追求通用选岩盾（150% 对所有伤害）；如果明确知道要扛某一种元素（如打冰系敌人），对应元素盾的 250% 吸收会更高效。"}}, {"@type": "Question", "name": "护盾能挡哪些伤害？", "acceptedAnswer": {"@type": "Answer", "text": "护盾可以吸收物理与元素伤害，并提供抗打断。但注意：部分机制伤害（如腐蚀、深渊的特殊减益、部分掉落伤害）无法被护盾抵挡。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/shielder-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神护盾角色攻略：盾量公式、吸收倍率与护盾角色排行</h1>
+<p>护盾是原神里最省心的生存手段——但它也是被误解最多的机制之一。为什么 5 万血的钟离盾硬得像墙，而同样堆生命的角色盾一碰就碎？这篇指南把盾量公式、吸收倍率、护盾强效的作用范围彻底讲清，并给出当前版本护盾角色对照表。</p>
+<div class="quick"><ul><li><strong>盾量怎么算？</strong> 基础盾量 = 固定值 + 缩放属性 × 百分比；最终盾量再乘 (1 + 护盾强效) 与吸收倍率。</li><li><strong>为什么岩盾更硬？</strong> 岩盾有 150% 全能吸收；元素盾只对自身元素有 250%，对其他伤害仅 100%。</li><li><strong>护盾强效给谁？</strong> 只作用于<strong>当前场上角色</strong>，不会跟着放盾的人走，切人就换乘区。</li><li><strong>谁是最强盾？</strong> 钟离：生命缩放 + 150% 全能吸收 + 玉璋护盾 20% 减抗，目前仍是唯一标准答案。</li></ul></div>
+<h2>盾量到底怎么算</h2>
+<p>护盾不是第二条血条，而是一个独立的伤害池。它的最终耐久由三层相乘决定：</p>
+<p><strong>最终盾量 = 基础盾量 × (1 + 护盾强效) × 吸收倍率</strong></p>
+<p>其中「基础盾量」再拆成两项，数值直接写在角色天赋里：</p>
+<p><strong>基础盾量 = 固定值 + (缩放属性 × 缩放百分比)</strong></p>
+<ul>
+<li><strong>固定值</strong>：随天赋等级提升的一个常数。</li>
+<li><strong>缩放属性</strong>：多数盾角色吃<strong>最大生命值</strong>（钟离、莱依拉、迪奥娜、托马、绮良良），少数吃<strong>防御力</strong>（诺艾尔、辛焱）。</li>
+<li><strong>护盾强效</strong>：一个独立乘区，来源见下文。</li>
+<li><strong>吸收倍率</strong>：岩盾与元素盾规则不同，见下一节。</li>
+</ul>
+<p>以 5 万血的钟离为例：天赋 10 级的玉璋护盾为 <strong>2,712 + 23.04% 最大生命值</strong>，基础盾量 = 2,712 + 50,000 × 0.2304 ≈ <strong>14,232</strong>。再乘岩盾的 150% 全能吸收，等效耐久约 <strong>21,348</strong>——这还没算护盾强效加成。</p>
+
+<h2>吸收倍率：为什么岩盾更硬</h2>
+<p>所有护盾对物理与普通元素伤害的基础吸收都是 100%，但有两条例外：</p>
+<table>
+<thead><tr><th>护盾类型</th><th>对自身元素</th><th>对其他元素/物理</th><th>代表角色</th></tr></thead>
+<tbody>
+<tr><td>元素护盾</td><td><strong>250%</strong></td><td>100%</td><td>迪奥娜（冰）、托马（火）、绮良良（草）</td></tr>
+<tr><td>岩元素护盾</td><td colspan="2"><strong>150%（对所有伤害）</strong></td><td>钟离、诺艾尔</td></tr>
+</tbody>
+</table>
+<p>结论：<strong>岩盾贵的不是数值，而是「全能」</strong>。在深渊这种敌人混搭多种元素的场景里，岩盾不会出现「被某一种元素瞬间打穿」的短板；而元素盾面对同元素伤害极其抗打（250%），换个元素就只剩 100%。</p>
+
+<h2>护盾强效从哪来</h2>
+<p>这是最容易搞错的一环：<strong>护盾强效只作用于「当前站在场上的角色」</strong>，不会跟着放盾的人走。</p>
+<table>
+<thead><tr><th>来源</th><th>加成</th><th>作用对象</th></tr></thead>
+<tbody>
+<tr><td>双岩共鸣（坚定之岩）</td><td>+15%</td><td>受护盾保护的当前角色</td></tr>
+<tr><td>千岩牢固 4 件套</td><td>+30%（元素战技命中后 3 秒）</td><td>全队</td></tr>
+<tr><td>逆飞的流星 2 件套</td><td>+35%</td><td>仅佩戴者自身</td></tr>
+<tr><td>钟离天赋「共鸣波动」</td><td>盾受击叠层，每层 +5%，最多 5 层（+25%）</td><td>玉璋护盾存续期间</td></tr>
+<tr><td>武器被动（如尘世之锁）</td><td>视武器而定</td><td>仅佩戴者自身</td></tr>
+</tbody>
+</table>
+<p>所以经典误区「给迪奥娜穿逆飞 2 件套，切输出位就能吃到 35% 盾强效」是<strong>错的</strong>——那 35% 只归迪奥娜自己。想让全队都吃到，就得靠<strong>千岩牢固 4 件套</strong>或<strong>双岩共鸣</strong>。</p>
+
+<h2>护盾角色对照表</h2>
+<table>
+<thead><tr><th>角色</th><th>缩放属性</th><th>盾元素</th><th>亮点</th><th>短板</th></tr></thead>
+<tbody>
+<tr><td>钟离</td><td>生命值</td><td>岩</td><td>150% 全能吸收、20 秒持续、玉璋护盾减抗 20%、被动叠盾强效</td><td>五星；本体输出贡献低</td></tr>
+<tr><td>莱依拉</td><td>生命值</td><td>冰</td><td>生命缩放高，盾量堆起来可逼近钟离，附带冰附着</td><td>盾冷却较长，需较高练度</td></tr>
+<tr><td>迪奥娜</td><td>生命值</td><td>冰</td><td>盾 + 奶 + 减体力消耗 + 产球，功能最全</td><td>基础盾量偏低，需要堆生命与天赋</td></tr>
+<tr><td>托马</td><td>生命值</td><td>火</td><td>可叠层刷新，普攻队续航极强</td><td>依赖普攻维持，非普攻队收益低</td></tr>
+<tr><td>诺艾尔</td><td>防御力</td><td>岩</td><td>150% 全能吸收、高练度盾量极高、兼治疗</td><td>冷却长于持续，覆盖率只有约一半</td></tr>
+<tr><td>绮良良</td><td>生命值</td><td>草</td><td>可叠层、能扛绽放与超绽放自伤、探索便利</td><td>盾量与练度绑定，功能偏生存</td></tr>
+</tbody>
+</table>
+
+<h2>被忽略的变量：场上角色的防御力</h2>
+<p>很多人问：我钟离 5 万血，为什么盾还是秒破？答案往往在<strong>当前场上角色的防御力</strong>上——敌人打到盾上的伤害，会先被场上角色自身的防御削减。</p>
+<p>同样一块盾，2,500 防御的角色可能每次只让盾掉几百点，500 防御的角色几下就能打碎。这就是为什么<strong>低练度的主 C 会让你的盾显得特别脆</strong>，也是「盾没变、手感却变差了」的真正原因。</p>
+
+<h2>四个常见误区</h2>
+<ul>
+<li><strong>以为盾强效可以跨角色继承</strong>：不继承，只作用于当前场上角色。</li>
+<li><strong>把两个盾角色放一队做「双保险」</strong>：场上同时只能存在一个护盾，后放的会覆盖先放的，不会叠加。</li>
+<li><strong>只堆生命不看天赋等级</strong>：盾量对天赋等级非常敏感，该升的元素战技别省。</li>
+<li><strong>忽略减抗的额外价值</strong>：玉璋护盾的 20% 减抗是纯输出增益，等于给全队白加一段伤害。</li>
+</ul>
+
+<h2>怎么选：按需求对号入座</h2>
+<table>
+<thead><tr><th>你的需求</th><th>首选</th><th>次选</th></tr></thead>
+<tbody>
+<tr><td>最强最省心的盾</td><td>钟离</td><td>诺艾尔（有练度）</td></tr>
+<tr><td>零氪 / 平民首盾</td><td>迪奥娜</td><td>诺艾尔</td></tr>
+<tr><td>普攻主 C 队</td><td>托马</td><td>钟离</td></tr>
+<tr><td>绽放 / 超绽放队</td><td>绮良良</td><td>钟离</td></tr>
+<tr><td>冰队顺带冰附着</td><td>莱依拉</td><td>迪奥娜</td></tr>
+</tbody>
+</table>
+
+<h2>相关阅读</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/healer-guide.html">治疗角色攻略</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/defense-guide.html">防御与抗性机制详解</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide.html">元素盾破盾指南</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/zhongli-build.html">钟离养成攻略</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-resonance.html">元素共鸣详解</a></li>
+</ul>
+
+<h2>小结</h2>
+<p>护盾的核心只有三步：<strong>先看缩放属性，再看吸收倍率，最后补护盾强效</strong>。钟离之所以常年霸榜，不是数值碾压，而是「生命缩放 + 150% 全能吸收 + 20% 减抗」这三项刚好互相加成。没有钟离也不必焦虑——迪奥娜提供功能、莱依拉提供高盾量、诺艾尔提供 150% 全能，按队伍缺什么补什么就好。</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/shielder-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div>
+<div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('订阅成功！');
+    } catch(err) {
+      alert('订阅失败，请稍后再试。');
+    }
+  });
+});
+</script>
+</body>
+</html>
