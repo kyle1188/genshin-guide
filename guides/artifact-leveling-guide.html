@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神圣遗物强化攻略：升级成本、狗粮效率与强化技巧</title>
+<meta name="description" content="一件五星圣遗物升满要多少经验和摩拉？完整解析 0 到 20 的分段经验表、狗粮经验值、2x/5x 强化倍率、回收 80% 规则与免树脂刷经验路线。">
+<meta name="keywords" content="原神圣遗物强化,圣遗物升级成本,圣遗物狗粮,祝圣油膏,祝圣精华,强化倍率,圣遗物经验,升满多少摩拉">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/artifact-leveling-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/artifact-leveling-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/artifact-leveling-guide-en.html" />
+<meta property="og:title" content="原神圣遗物强化攻略：升级成本、狗粮效率与强化技巧">
+<meta property="og:description" content="一件五星圣遗物升满要多少经验和摩拉？完整解析 0 到 20 的分段经验表、狗粮经验值、2x/5x 强化倍率、回收 80% 规则与免树脂刷经验路线。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/artifact-leveling-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神圣遗物强化攻略：升级成本、狗粮效率与强化技巧", "description": "一件五星圣遗物升满要多少经验和摩拉？完整解析 0 到 20 的分段经验表、狗粮经验值、2x/5x 强化倍率、回收 80% 规则与免树脂刷经验路线。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-12", "dateModified": "2026-10-12", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/artifact-leveling-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "一件五星圣遗物升满要多少经验？", "acceptedAnswer": {"@type": "Answer", "text": "从 0 级升到 20 级共需 270,475 点强化经验，同时消耗等量的摩拉（1 点经验 = 1 摩拉）。也就是说，单件满级约烧掉 27 万摩拉。"}}, {"@type": "Question", "name": "圣遗物狗粮各给多少经验？", "acceptedAnswer": {"@type": "Answer", "text": "基础值：1 星 420、2 星 840、3 星 1260、4 星 2520、5 星 3780。强化素材里，祝圣精华给 2500，祝圣油膏给 10000。"}}, {"@type": "Question", "name": "强化时出现 2 倍 5 倍是怎么回事？", "acceptedAnswer": {"@type": "Answer", "text": "每次强化有 90% 概率 1 倍、9% 概率 2 倍、1% 概率 5 倍经验，长期平均约为 1.13 倍，且倍率不额外收费。"}}, {"@type": "Question", "name": "已经强化过的圣遗物能当狗粮吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以，而且回收率很高：被吞的圣遗物会返还「基础值 + 已投入经验的 80%」，摩拉按基础值算，不再为返还的经验付钱。"}}, {"@type": "Question", "name": "不花树脂怎么攒圣遗物经验？", "acceptedAnswer": {"@type": "Answer", "text": "每天清日常调查点，一圈约等于 2 万经验（折合 4 次秘境）；每周还能在商店买 40 个 2 星圣遗物，以及在洞天百宝兑换祝圣精华与祝圣油膏。"}}, {"@type": "Question", "name": "优先把哪些圣遗物升满？", "acceptedAnswer": {"@type": "Answer", "text": "先满足主 C 的杯、头、沙主词条正确，再考虑副词条。副词条在 +4 与 +8 各揭示一次，双暴没中就直接回收，别硬升到 20。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/artifact-leveling-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神圣遗物强化攻略：升级成本、狗粮效率与强化技巧</h1>
+<div class="quick">
+<strong>快速答案</strong>
+<ul>
+<li>五星圣遗物 0 → 20 共需 <strong>270,475 经验</strong>，同时消耗等量摩拉（1 点经验 = 1 摩拉）。</li>
+<li>关键节点：+4 需 3,300、+8 需 11,425、+12 需 34,625、+16 需 100,675；<strong>最后 +16 → +20 一段就吃掉 169,800</strong>。</li>
+<li>狗粮基础经验：1 星 420 / 2 星 840 / 3 星 1260 / 4 星 2520 / 5 星 3780；强化素材：祝圣精华 2,500、祝圣油膏 10,000。</li>
+<li>强化倍率：<strong>1 倍 90%、2 倍 9%、5 倍 1%</strong>，平均约 1.13 倍，倍率不额外收费。</li>
+<li>吞掉已强化圣遗物可回收「基础值 + 已投入经验 × 80%」，且只为基础值付摩拉。</li>
+</ul>
+</div>
+<h2>一、升满一件要多少经验</h2>
+<p>圣遗物强化的成本结构很简单也很残酷：<strong>经验与摩拉 1:1 同步消耗</strong>。你喂进去多少经验，就同时扣掉多少摩拉——这也是为什么很多玩家满级了一件圣遗物，钱包也空了一半。</p>
+<table>
+<tr><th>里程碑</th><th>累计经验</th><th>说明</th></tr>
+<tr><td>+4</td><td>3,300</td><td>三副词条圣遗物在此揭示第 4 条</td></tr>
+<tr><td>+8</td><td>11,425</td><td>第二次副词条强化，判断是否继续</td></tr>
+<tr><td>+12</td><td>34,625</td><td>中期决策点（三星圣遗物上限）</td></tr>
+<tr><td>+16</td><td>100,675</td><td>四星圣遗物上限</td></tr>
+<tr><td>+20</td><td>270,475</td><td>五星满级，最后一段独占 169,800 经验</td></tr>
+</table>
+<p>换个角度看得更清楚：<strong>+16 到 +20 这一段（169,800）比前面 +0 到 +16 的全部加起来（100,675）还多近七成</strong>。所以「先全队 +16 再逐个 +20」几乎总是比「先堆满一件」更划算。</p>
+<h2>二、狗粮经验值对照</h2>
+<table>
+<tr><th>强化材料</th><th>提供经验</th></tr>
+<tr><td>1 星圣遗物</td><td>420</td></tr>
+<tr><td>2 星圣遗物</td><td>840</td></tr>
+<tr><td>3 星圣遗物</td><td>1,260</td></tr>
+<tr><td>4 星圣遗物</td><td>2,520</td></tr>
+<tr><td>5 星圣遗物</td><td>3,780</td></tr>
+<tr><td>祝圣精华</td><td>2,500</td></tr>
+<tr><td>祝圣油膏</td><td>10,000</td></tr>
+</table>
+<p>按这个比例，<strong>升满一件五星圣遗物大约需要 72 件未强化的五星狗粮</strong>，或者 5 星狗粮与低星材料混着喂。低星圣遗物单个经验少，但数量庞大，实际使用中它们才是主力。</p>
+<h2>三、强化倍率与「分批强化」</h2>
+<p>每次点击强化都有概率触发经验倍率：<strong>90% 概率 1 倍、9% 概率 2 倍、1% 概率 5 倍</strong>，长期平均约 1.13 倍，且倍率不会额外收摩拉。</p>
+<p>倍率的副作用是<strong>溢出浪费</strong>：经验一旦超过当前等级上限就直接蒸发，不会有任何补偿。用一件 +16 的成品去喂新圣遗物时，一旦触发 5 倍，超出 +20 的部分全部白费。所以稳妥的做法是<strong>分批喂</strong>：</p>
+<ul>
+<li>先喂到 +4 看第四条副词条，不理想就停手，别一路喂到 20。</li>
+<li>想冲 +20 时，先喂到 +12 左右，再分两三次补足，减少一次触发 5 倍导致的大额溢出。</li>
+<li>接近满级时改用祝圣精华这类小额素材微调，避免最后一步过量。</li>
+</ul>
+<h2>四、回收已强化圣遗物：80% 规则</h2>
+<p>被当作狗粮吞掉的圣遗物，返还公式是：<strong>基础经验 + 已投入经验 × 80%</strong>。也就是说，一件喂了 100,675 经验（+16）的五星圣遗物，被回收时能提供 3,780 + 80,560 ≈ 84,340 经验，只损失约 20%。</p>
+<p>更关键的是<strong>摩拉规则</strong>：强化时只为「基础值」付摩拉，返还的那 80% 经验不再收取强化费用。所以回收一件已强化圣遗物来升级新圣遗物，比重新用一堆零散狗粮更省摩拉。这条规则让「升错了再重来」的代价远低于直觉。</p>
+<h2>五、免树脂刷经验的四条路</h2>
+<table>
+<tr><th>来源</th><th>可获得经验</th><th>成本</th></tr>
+<tr><td>秘境（20 树脂）</td><td>平均约 14,767</td><td>树脂，满级一件约需 19 次（或 7 次浓缩树脂）</td></tr>
+<tr><td>周本（60 树脂，每周 6 次）</td><td>平均约 17,098</td><td>树脂，约合 380 经验 / 树脂</td></tr>
+<tr><td>每日调查点（低级圣遗物）</td><td>约 60,000 / 天</td><td><strong>零树脂</strong>，折合 4 次秘境 ≈ 省下 80 树脂</td></tr>
+<tr><td>NPC 商店（每周 40 个 2 星）</td><td>33,600</td><td>80,000 摩拉（每个 2,000）</td></tr>
+<tr><td>洞天百宝（每周）</td><td>约 100,000</td><td>5,400 洞天宝钱（祝圣油膏 5 个 + 祝圣精华 20 个）</td></tr>
+</table>
+<p>其中收益最高的是<strong>每天清调查点</strong>：不花一滴树脂，一天就能拿到约 6 万圣遗物经验，相当于白嫖四次秘境。坚持做日常调查、顺手开箱，长期差距比多刷几次秘境明显得多。</p>
+<p>洞天百宝需要<strong>信任等阶 8</strong>才能兑换祝圣素材。每周洞天宝钱上限为 5,040，建议优先换須臾树脂（1,200），剩下的再买祝圣精华与祝圣油膏。</p>
+<h2>六、摩拉与分解</h2>
+<p>未强化的 1 到 4 星圣遗物可以<strong>销毁换摩拉</strong>：1 星 420、2 星 840、3 星 1,260、4 星 2,520（一次最多 100 件）。但要注意两点：</p>
+<ul>
+<li>五星圣遗物<strong>不能销毁</strong>，只能继续当狗粮或用于圣遗物转换。</li>
+<li>销毁换摩拉的经验效率远低于当狗粮，只有在你摩拉严重短缺、狗粮已经溢出时才考虑。</li>
+</ul>
+<h2>七、分阶段强化策略</h2>
+<ul>
+<li><strong>新手期</strong>：别碰五星。用四星战狂、教官这类套装先凑到 +12，把有限资源留给角色等级与天赋。</li>
+<li><strong>中期</strong>：两队主力先做到「全套 +16」，此时副词条比星级更重要，垃圾五星继续拿去转换而非硬升。</li>
+<li><strong>末期</strong>：只对「双暴潜力」的词条动手——升到 +4 或 +8，两次副词条都没中就直接回收喂下一件，用这种链式翻滚快速筛出真正的好货。</li>
+</ul>
+<h2>八、常见错误</h2>
+<ul>
+<li><strong>一次性把材料全塞进去</strong>：触发 5 倍倍率时溢出全部浪费，越是接近满级越要分批。</li>
+<li><strong>忽略副词条节奏</strong>：不看 +4 / +8 的揭示结果就一路升到 20，等于把狗粮倒进没有前途的圣遗物。</li>
+<li><strong>把五星圣遗物销毁换摩拉</strong>：五星无法销毁，而且它当狗粮的价值远高于摩拉。</li>
+<li><strong>只靠树脂刷经验</strong>：不做每日调查点，等于每天主动放弃约 80 树脂的等价收益。</li>
+</ul>
+<h2>相关阅读</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/artifact-farming.html">圣遗物刷取指南</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/artifact-substats-guide.html">圣遗物副词条详解</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/artifact-sets-guide.html">圣遗物套装选择</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/mora-guide.html">摩拉获取指南</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/resin-efficiency.html">树脂效率指南</a></li>
+</ul>
+<h2>小结</h2>
+<p><strong>圣遗物强化的核心是「分批 + 筛选」</strong>：记住 270,475 这个总数、最后一段独占 169,800、以及回收返还 80% 这三条，就不会把狗粮和摩拉倒进错的方向。日常靠调查点攒经验、只对双暴词条升级，长期效率远高于无脑刷秘境。</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/artifact-leveling-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert("\u8ba2\u9605\u6210\u529f\uff01");
+    } catch(err) {
+      alert("\u8ba2\u9605\u5931\u8d25\uff0c\u8bf7\u7a0d\u540e\u518d\u8bd5\u3002");
+    }
+  });
+});
+</script>
+</body>
+</html>
