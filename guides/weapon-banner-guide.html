@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神武器池攻略：定轨机制、命定值与保底全解析</title>
+<meta name="description" content="武器池保底多少抽？定轨怎么用？命定值会不会继承？完整解析武器活动祈愿的 75/25 机制、80 抽硬保底、定轨 1 命定值锁定与最坏 160 抽成本，附抽卡决策建议。">
+<meta name="keywords" content="原神武器池,定轨,命定值,武器活动祈愿,武器池保底,武器池攻略,定轨机制,原神抽卡">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide-en.html" />
+<meta property="og:title" content="原神武器池攻略：定轨机制、命定值与保底全解析">
+<meta property="og:description" content="武器池保底多少抽？定轨怎么用？命定值会不会继承？完整解析武器活动祈愿的 75/25 机制、80 抽硬保底、定轨 1 命定值锁定与最坏 160 抽成本，附抽卡决策建议。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神武器池攻略：定轨机制、命定值与保底全解析", "description": "武器池保底多少抽？定轨怎么用？命定值会不会继承？完整解析武器活动祈愿的 75/25 机制、80 抽硬保底、定轨 1 命定值锁定与最坏 160 抽成本，附抽卡决策建议。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-14", "dateModified": "2026-10-14", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "武器池保底多少抽？", "acceptedAnswer": {"@type": "Answer", "text": "80 抽硬保底，软保底约 62–65 抽起。保底抽数跨武器池继承，即上个池攒的抽数会带到下个武器池。"}}, {"@type": "Question", "name": "定轨需要几个命定值？", "acceptedAnswer": {"@type": "Answer", "text": "5.0 版本起只需 1 个。抽到另一把 UP 武器即得 1 点，此后下一次 5★ 必定是选定武器。5.0 前需要 2 点，最坏成本为 240 抽。"}}, {"@type": "Question", "name": "命定值会继承到下一个武器池吗？", "acceptedAnswer": {"@type": "Answer", "text": "不会。武器池结束时命定值归零，中途更换或取消定轨也归零；但抽数保底会继承。"}}, {"@type": "Question", "name": "歪到常驻武器算命定值吗？", "acceptedAnswer": {"@type": "Answer", "text": "不算。只有抽到另一把 UP 武器才给命定值；抽到 25% 池的常驻 5★武器，命定值既不增加也不清零。"}}, {"@type": "Question", "name": "最坏要花多少原石？", "acceptedAnswer": {"@type": "Answer", "text": "160 抽，即 25,600 原石（两次硬保底）。这是绝对上限，实际多落在软保底区间，成本更低。"}}, {"@type": "Question", "name": "F2P 该抽武器池吗？", "acceptedAnswer": {"@type": "Answer", "text": "一般不建议。除非已攒够 160 抽，或已持有 1 命定值待补，否则资源应优先投给角色池。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神武器池攻略：定轨机制、命定值与保底全解析</h1>
+<p>武器活动祈愿（Epitome Invocation）是原神里成本最高、也最容易被误解的一个池子。它没有角色池的 50/50，改成 75/25；保底从 90 抽降到 80 抽；真正决定你能不能拿到「那一把武器」的，是<strong>定轨（Epitomized Path）</strong>。这篇把机制、命定值和最坏成本一次讲清。</p>
+
+<div class="quick">
+<strong>快速答案</strong>
+<ul>
+<li>武器池硬保底 <strong>80 抽</strong>（角色池 90 抽），5★ 基础概率 0.7%</li>
+<li>出 5★ 时 <strong>75%</strong> 是两把 UP 之一，25% 是常驻武器</li>
+<li>定轨：先选定期望武器，抽到「非选定的 5★」得 <strong>1 命定值</strong>；<strong>5.0 起 1 点即锁定</strong>——下一次 5★ 必为选定武器</li>
+<li>最坏 <strong>160 抽 = 25,600 原石</strong>（5.0 前是 240 抽 / 38,400）</li>
+<li>抽卡保底跨池继承，<strong>命定值不跨池</strong>：换池、换定轨、取消定轨一律归零</li>
+<li>手上到不了 160 抽，就别开定轨</li>
+</ul>
+</div>
+
+<h2>武器池和角色池，到底差在哪</h2>
+<p>两者最容易被混淆，是因为它们都靠「抽卡次数累积」来保底，但规则完全不同。下表一次对照：</p>
+<table>
+<tr><th>项目</th><th>角色活动祈愿</th><th>武器活动祈愿</th></tr>
+<tr><td>硬保底</td><td>90 抽</td><td><strong>80 抽</strong></td></tr>
+<tr><td>软保底起点</td><td>约 74 抽</td><td>约 62–65 抽</td></tr>
+<tr><td>5★ 基础概率</td><td>0.6%</td><td>0.7%</td></tr>
+<tr><td>UP 机制</td><td>50/50 + 捕获明光</td><td><strong>75/25 + 定轨</strong></td></tr>
+<tr><td>最坏成本</td><td>180 抽</td><td><strong>160 抽</strong></td></tr>
+<tr><td>大保底是否跨池</td><td>跨池继承</td><td>跨池继承（命定值除外）</td></tr>
+</table>
+<p>简单记：武器池每次出 5★ 都是 75/25，你可能抽到另一把 UP，也可能抽到常驻——而<strong>定轨就是专门用来把「另一把 UP」变成「下一次必中」的保险</strong>。</p>
+
+<h2>定轨（Epitomized Path）怎么运作</h2>
+<ol>
+<li>打开武器池，点界面上的 <strong>定轨</strong> 按钮（位于两把 UP 武器之间）。</li>
+<li>选定你想要的那把并确认。<strong>不定轨就没有任何保证</strong>，命定值也不会累积。</li>
+<li>正常抽卡：任何「不是选定武器」的 5★ 给你 <strong>1 命定值</strong>。</li>
+<li>持有 1 命定值后，<strong>下一次 5★ 100% 是选定武器</strong>。</li>
+</ol>
+<p>关键细节：只有抽到<strong>另一把 UP 武器</strong>才给命定值。抽到 25% 池里的常驻 5★武器，命定值<strong>不变</strong>（不增加，也不清零）。很多人以为「歪了就算数」，其实只有歪到另一把 UP 才算。</p>
+<table>
+<tr><th>状态</th><th>命定值</th><th>下一次 5★ 结果</th></tr>
+<tr><td>未定轨</td><td>—</td><td>不追踪，无任何保证</td></tr>
+<tr><td>定轨后抽到另一把 UP 武器</td><td>1</td><td>100% 选定武器</td></tr>
+<tr><td>定轨后抽到常驻 5★武器</td><td>0（不增加）</td><td>不锁定；抽数继续按保底累积</td></tr>
+<tr><td>抽到选定武器</td><td>归零</td><td>重新开始</td></tr>
+<tr><td>中途更换 / 取消定轨</td><td>归零</td><td>重新开始</td></tr>
+<tr><td>本池结束</td><td>归零</td><td>下个武器池从 0 开始</td></tr>
+</table>
+
+<h2>命定值 ≠ 保底：最容易搞混的一点</h2>
+<p>这是<strong>两套独立计数</strong>：</p>
+<ul>
+<li><strong>抽数保底</strong>：距上次出 5★ 抽了多少抽。跨池继承，换池也不清零。</li>
+<li><strong>命定值</strong>：只在本池有效，用来锁定「哪一把」。<strong>池子一结束就归零。</strong></li>
+</ul>
+<p>所以会出现「保底还在、命定值没了」的情况：你在 A 池攒了 1 命定值但没抽出结果，池子一换，命定值清零，可你攒的抽数依旧保留。这也是武器池最大的坑——攒了命定值却没钱抽出第二把，等于白攒。</p>
+
+<h2>最坏要多少抽</h2>
+<table>
+<tr><th>场景</th><th>抽数</th><th>原石</th></tr>
+<tr><td>最坏：两次硬保底（先歪一把，再由定轨锁定）</td><td>160</td><td>25,600</td></tr>
+<tr><td>常见：两次软保底（约 65 抽 × 2）</td><td>约 130</td><td>约 20,800</td></tr>
+<tr><td>已有 1 命定值，只差最后一次 5★</td><td>≤ 80</td><td>≤ 12,800</td></tr>
+</table>
+<p>对照一下就明白为什么它被叫「最贵的池子」：160 抽约等于一名角色的<strong>大保底全款</strong>（180 抽）。</p>
+
+<h2>该抽还是该跳过</h2>
+<h3>可以抽的情况</h3>
+<ul>
+<li>你已攒够 <strong>160 抽以上</strong>，且这就是你要的那把武器；</li>
+<li>你已持有 1 命定值，且本池还没结束——此时补齐通常是对的；</li>
+<li>主 C 的专武对伤害提升明显（被动/主词条与角色高度契合）。</li>
+</ul>
+<h3>建议跳过的情况</h3>
+<ul>
+<li>原石不足以走完 160 抽——半途而废 = 命定值白扔；</li>
+<li>F2P 新号：先用锻造 / 纪行 / 活动的 4★武器，把资源投给角色池；</li>
+<li>「只想试两下」——软保底约 62 抽就起，很容易在非预期时触发 5★。</li>
+</ul>
+<p>参考经验：专武相对免费 4★武器通常是个位数到十几个百分点的总伤害差距，而一把专武的成本接近一名角色。<strong>角色池永远优先于武器池。</strong></p>
+
+<h2>怎么查自己的抽数和定轨状态</h2>
+<ul>
+<li>游戏内：祈愿 → 历史记录，按卡池筛选后手动数（游戏不显示计数器）。</li>
+<li>第三方：paimon.moe 等可导入历史，自动统计抽数与命定值。</li>
+<li>定轨界面会直接显示当前命定值，抽前扫一眼即可。</li>
+</ul><div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div>
+
+<div class="footer"><p>&copy; 2026 Teyvat Starter Guide &middot; Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('订阅成功！');
+    } catch(err) {
+      alert('订阅失败，请稍后再试。');
+    }
+  });
+});
+</script>
+</body>
+</html>

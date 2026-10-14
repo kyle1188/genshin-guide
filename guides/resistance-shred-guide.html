@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神减抗机制攻略：元素抗性公式、减抗来源与增伤收益</title>
+<meta name="description" content="敌人抗性怎么算？减抗为什么有时只增伤 15% 而不是 40%？完整解析抗性倍率三档公式、负抗性半效规则、风套/钟离/希诺宁等减抗来源清单，以及减抗与减防的叠加关系。">
+<meta name="keywords" content="原神减抗,元素抗性,减抗来源,风套减抗,钟离减抗,希诺宁减抗,抗性公式,减抗叠加">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html" />
+<meta property="og:title" content="原神减抗机制攻略：元素抗性公式、减抗来源与增伤收益">
+<meta property="og:description" content="敌人抗性怎么算？减抗为什么有时只增伤 15% 而不是 40%？完整解析抗性倍率三档公式、负抗性半效规则、风套/钟离/希诺宁等减抗来源清单，以及减抗与减防的叠加关系。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神减抗机制攻略：元素抗性公式、减抗来源与增伤收益", "description": "敌人抗性怎么算？减抗为什么有时只增伤 15% 而不是 40%？完整解析抗性倍率三档公式、负抗性半效规则、风套/钟离/希诺宁等减抗来源清单，以及减抗与减防的叠加关系。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-14", "dateModified": "2026-10-14", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "敌人抗性一般是多少？", "acceptedAnswer": {"@type": "Answer", "text": "绝大多数普通敌人对每种伤害的基础抗性为 10%，但部分敌人例外：如遗迹系列物理抗性很高（可达 70%），某些 BOSS 自身元素抗性也更高。每种伤害类型分别计算。"}}, {"@type": "Question", "name": "减抗 40% 就是增伤 40% 吗？", "acceptedAnswer": {"@type": "Answer", "text": "不是。当抗性被减为负数时进入半效区，倍率公式变为 1 − RES/2。对 10% 基础抗性的敌人，−40% 后最终抗性为 −30%，伤害倍率 1.15，相对无减抗约 +27.8%。"}}, {"@type": "Question", "name": "减抗对高抗性敌人更有效吗？", "acceptedAnswer": {"@type": "Answer", "text": "是。敌人抗性越高，减抗的相对收益越大。例如 70% 物理抗性的敌人，−40% 后倍率从 0.30 升到 0.70，伤害提升约 133%。"}}, {"@type": "Question", "name": "风套减抗能作用于岩元素或物理吗？", "acceptedAnswer": {"@type": "Answer", "text": "不能。翠绿之影 4 件套只减「被扩散的元素」的抗性，无法作用于岩、风与物理伤害；且两套风套只生效一次。"}}, {"@type": "Question", "name": "减抗和减防能同时叠加吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以，且分属两层乘区（抗性倍率与防御倍率），相乘生效。减防总上限为 90%，超过部分无效。"}}, {"@type": "Question", "name": "希诺宁和风套能一起用吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以。希诺宁战技减火 / 水 / 冰 / 雷 / 岩抗性，风套减被扩散元素抗性，二者来源不同可叠加。全元素队伍里两者叠加可把抗性压到 −60% 以下。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神减抗机制攻略：元素抗性公式、减抗来源与增伤收益</h1>
+<p>为什么风套明明写着「减 40% 抗性」，伤害却只涨了不到三成？砍在遗迹守卫身上时，同样的减抗又突然翻倍？答案全在<strong>抗性倍率的三档公式</strong>里。这篇把减抗的算法、来源和实战用法一次讲清。</p>
+
+<div class="quick">
+<strong>快速答案</strong>
+<ul>
+<li>每个敌人对每种伤害类型有<strong>独立的基础抗性</strong>，绝大多数小怪为 <strong>10%</strong></li>
+<li>抗性倍率三档：<strong>RES &lt; 0</strong> → 1 − RES/2（半效）；<strong>0 ≤ RES &lt; 75%</strong> → 1 − RES；<strong>RES ≥ 75%</strong> → 1 ÷ (4 × RES + 1)</li>
+<li>因为负区间半效，−40% 减抗打 10% 抗性的敌人，最终抗性 −30%，实际增伤约 <strong>+27.8%</strong>，而不是 40%</li>
+<li>主要来源：<strong>翠绿之影（风套）40%</strong>、<strong>钟离玉璋护盾 20%</strong>（全元素 + 物理）、<strong>希诺宁战技 36%</strong>（火水冰雷 + 岩）、<strong>超导 40%</strong>（物理）、<strong>深林的记忆 30%</strong>（草）</li>
+<li>同名效果<strong>不叠加</strong>，取最高；不同来源可以叠加</li>
+<li>减抗与减防是<strong>两层独立乘区</strong>，可以同时吃满</li>
+</ul>
+</div>
+
+<h2>抗性怎么换算成伤害</h2>
+<p>抗性（RES）不是直接扣伤害，而是先换算成一个伤害倍率。按最终抗性落在哪一档，公式不同：</p>
+<table>
+<tr><th>最终抗性 RES</th><th>伤害倍率</th><th>说明</th></tr>
+<tr><td>&lt; 0%（负抗性）</td><td>1 − RES / 2</td><td>仍有收益，但<strong>只有一半效率</strong></td></tr>
+<tr><td>0% ~ 75%</td><td>1 − RES</td><td>线性区，减抗在这里最值钱</td></tr>
+<tr><td>≥ 75%</td><td>1 ÷ (4 × RES + 1)</td><td>高抗性区，收益急剧递减</td></tr>
+</table>
+<p>最终抗性 = 基础抗性 + 增益抗性 − 减抗。也就是说减抗是<strong>直接减数字</strong>，不是按比例打折。</p>
+
+<h2>为什么「减 40%」常常只增伤约 28%</h2>
+<p>因为抗性一旦被减成负数，就进入<strong>半效区</strong>。以最常见的 10% 基础抗性为例：</p>
+<table>
+<tr><th>减抗幅度</th><th>最终抗性</th><th>伤害倍率</th><th>相对无减抗的增伤</th></tr>
+<tr><td>不减</td><td>10%</td><td>0.90</td><td>—</td></tr>
+<tr><td>−20%（钟离盾）</td><td>−10%</td><td>1.05</td><td>+16.7%</td></tr>
+<tr><td>−30%（深林的记忆）</td><td>−20%</td><td>1.10</td><td>+22.2%</td></tr>
+<tr><td>−36%（希诺宁战技）</td><td>−26%</td><td>1.13</td><td>+25.6%</td></tr>
+<tr><td>−40%（风套）</td><td>−30%</td><td>1.15</td><td><strong>+27.8%</strong></td></tr>
+<tr><td>−76%（风套 40 + 希诺宁 36）</td><td>−66%</td><td>1.33</td><td>+47.8%</td></tr>
+</table>
+<p>所以纸面的「−40%」并不等于 40% 增伤；但请注意，这仍是「从 0.90 涨到 1.15」的 <strong>+27.8% 总伤害提升</strong>，在乘区里已经非常高——比大多数攻击力或增伤词条都划算。</p>
+
+<h2>对高抗敌人，减抗收益成倍放大</h2>
+<p>减抗的价值随敌人抗性上升而上升。以 70% 物理抗性的敌人为例：</p>
+<table>
+<tr><th>状态</th><th>最终抗性</th><th>伤害倍率</th><th>相对无减抗</th></tr>
+<tr><td>不减</td><td>70%</td><td>0.30</td><td>—</td></tr>
+<tr><td>−40%（超导对物理）</td><td>30%</td><td>0.70</td><td><strong>+133%</strong></td></tr>
+</table>
+<p>这就是为什么在高抗性 BOSS 战里，减抗角色比继续堆攻击力划算得多——纸面 40% 的数字，落在 70% 抗性的敌人身上可以翻倍伤害。</p>
+
+<h2>减抗来源清单</h2>
+<table>
+<tr><th>来源</th><th>减抗幅度</th><th>作用元素</th><th>触发条件 / 限制</th></tr>
+<tr><td>翠绿之影 4 件套（风套）</td><td>−40%</td><td>被扩散的元素</td><td>需风元素扩散对应元素；<strong>无法作用于岩、风、物理</strong></td></tr>
+<tr><td>钟离 · 玉璋护盾</td><td>−20%</td><td>全部元素 + 物理</td><td>处于护盾范围内</td></tr>
+<tr><td>希诺宁 · 战技（天赋 10）</td><td>−36%</td><td>火 / 水 / 冰 / 雷 + 岩</td><td>战技后 2 次普攻激活源音采样，持续 15 秒；不可作用于风、草</td></tr>
+<tr><td>超导反应</td><td>−40%</td><td>物理</td><td>冰 + 雷 触发</td></tr>
+<tr><td>深林的记忆 4 件套</td><td>−30%</td><td>草</td><td>攻击命中后触发；同名不自叠加</td></tr>
+<tr><td>双岩共鸣（队伍 2 名岩元素）</td><td>−20%</td><td>岩</td><td>常驻生效</td></tr>
+<tr><td>琴 · 命座 4</td><td>−40%</td><td>风</td><td>蒲公英之风的领域内</td></tr>
+<tr><td>罗莎莉亚 · 命座 6</td><td>−20%</td><td>物理</td><td>战技命中</td></tr>
+<tr><td>行秋 · 命座 2</td><td>−15%</td><td>水</td><td>剑雨命中，持续 4 秒</td></tr>
+<tr><td>温迪 · 命座 6</td><td>−20%</td><td>风 + 被吸收的元素</td><td>风神之诗命中</td></tr>
+<tr><td>妮露 · 命座 2</td><td>−35%</td><td>水 / 草</td><td>需解锁「舞步之庭」天赋</td></tr>
+<tr><td>希格雯 · 命座 2</td><td>−35%</td><td>水</td><td>战技 / 爆发命中，持续 8 秒</td></tr>
+<tr><td>茜特菈莉 · 命座 2</td><td>−20%</td><td>火 / 水</td><td>触发冻结或融化后，持续 12 秒</td></tr>
+<tr><td>旅行者（风）· 命座 6</td><td>−20%</td><td>风 + 被吸收的元素</td><td>风息激荡命中</td></tr>
+</table>
+
+<h2>哪些减抗不能叠加</h2>
+<ul>
+<li><strong>同名效果不叠加，取最高。</strong>例如两名角色都戴风套，只有一次 −40% 生效。</li>
+<li><strong>深林的记忆不自叠加。</strong>多名角色佩戴也只有一次 −30%。</li>
+<li><strong>不同来源可以叠加</strong>，且直接加到同一个「最终抗性」上（如风套 40 + 希诺宁 36 = −76%）。</li>
+<li>注意元素限制：风套不能减岩 / 风 / 物理；希诺宁不能减风 / 草。配队时优先让减抗覆盖你主 C 的伤害类型。</li>
+</ul>
+
+<h2>减抗 vs 减防：两层独立乘区</h2>
+<table>
+<tr><th>项目</th><th>减抗（RES shred）</th><th>减防（DEF shred）</th></tr>
+<tr><td>作用位置</td><td>抗性倍率</td><td>防御倍率</td></tr>
+<tr><td>公式影响</td><td>最终抗性 → 三档倍率</td><td>与双方等级相关，直接压缩防御</td></tr>
+<tr><td>能否叠加</td><td>不同来源可叠加</td><td>可叠加，总减防上限 90%</td></tr>
+<tr><td>代表性来源</td><td>风套、钟离盾、希诺宁、超导</td><td>丽莎天赋、雷泽 C4、可莉 C2、绫华 C4、纳西妲 C2</td></tr>
+<tr><td>关系</td><td>两者<strong>相乘</strong>生效</td><td>同时具备时收益叠加</td></tr>
+</table>
+
+<h2>实战怎么用</h2>
+<ol>
+<li><strong>让减抗覆盖主 C 的伤害类型。</strong>火系主 C 就配风套扩散火，别指望风套去减岩。</li>
+<li><strong>高抗性敌人优先上减抗。</strong>BOSS 与深渊高血怪的收益远高于再堆一层攻击力。</li>
+<li><strong>别重复投资同名效果。</strong>两个风套只有一个生效，另一个位置留给增伤、充能或治疗。</li>
+</ol><div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div>
+
+<div class="footer"><p>&copy; 2026 Teyvat Starter Guide &middot; Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('订阅成功！');
+    } catch(err) {
+      alert('订阅失败，请稍后再试。');
+    }
+  });
+});
+</script>
+</body>
+</html>

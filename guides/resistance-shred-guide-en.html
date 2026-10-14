@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genshin Resistance Shred Guide: RES Formula, Sources & Damage Gain</title>
+<meta name="description" content="How is enemy RES calculated? Why does 40% shred only add ~28% damage? Full breakdown of the 3-tier RES multiplier, the negative-RES half-effect rule, and every RES shred source from Viridescent Venerer to Xilonen.">
+<meta name="keywords" content="genshin resistance shred, res shred, viridescent venerer, zhongli res shred, xilonen res shred, res formula">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html" />
+<meta property="og:title" content="Genshin Resistance Shred Guide: RES Formula, Sources & Damage Gain">
+<meta property="og:description" content="How is enemy RES calculated? Why does 40% shred only add ~28% damage? Full breakdown of the 3-tier RES multiplier, the negative-RES half-effect rule, and every RES shred source from Viridescent Venerer to Xilonen.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Resistance Shred Guide: RES Formula, Sources & Damage Gain", "description": "How is enemy RES calculated? Why does 40% shred only add ~28% damage? Full breakdown of the 3-tier RES multiplier, the negative-RES half-effect rule, and every RES shred source from Viridescent Venerer to Xilonen.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-14", "dateModified": "2026-10-14", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the typical enemy RES?", "acceptedAnswer": {"@type": "Answer", "text": "Most common enemies have 10% base RES per damage type, but there are exceptions: Ruin enemies have very high Physical RES (up to 70%), and some bosses have elevated RES in their own element. Each damage type is tracked separately."}}, {"@type": "Question", "name": "Does 40% shred mean 40% more damage?", "acceptedAnswer": {"@type": "Answer", "text": "No. Once RES goes negative it enters the half-effect zone where the multiplier is 1 - RES/2. Against a 10% base RES enemy, -40% leaves -30% RES, a 1.15 multiplier, or about +27.8% versus no shred."}}, {"@type": "Question", "name": "Is shred better against high-RES enemies?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The higher the enemy RES, the greater the relative gain. Against a 70% Physical RES enemy, -40% raises the multiplier from 0.30 to 0.70, roughly +133% damage."}}, {"@type": "Question", "name": "Can Viridescent Venerer shred Geo or Physical?", "acceptedAnswer": {"@type": "Answer", "text": "No. VV 4pc only shreds the swirled element, so it cannot affect Geo, Anemo, or Physical damage. Two VV sets also only apply one -40%."}}, {"@type": "Question", "name": "Do RES shred and DEF shred stack?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. They sit in two separate brackets (resistance multiplier and defense multiplier) and multiply together. Total DEF reduction is capped at 90%."}}, {"@type": "Question", "name": "Can Xilonen and Viridescent Venerer be used together?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Xilonen&rsquo;s Skill shreds Pyro/Hydro/Cryo/Electro/Geo RES while VV shrinks the swirled element&rsquo;s RES; being different sources they stack, pushing RES below -60% in multi-element teams."}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide.html">中文</a>
+</div>
+<div class="container">
+<h1>Genshin Resistance Shred Guide: RES Formula, Sources &amp; Damage Gain</h1>
+<p>Why does 4-piece Viridescent Venerer say &ldquo;&minus;40% RES&rdquo; yet only add around 28% damage? And why does the same shred suddenly double your numbers against a Ruin Guard? The answer is the <strong>three-tier resistance multiplier</strong>. Here is the math, every source, and how to use it.</p>
+
+<div class="quick">
+<strong>Quick answer</strong>
+<ul>
+<li>Every enemy has an <strong>independent base RES per damage type</strong>; the standard value is <strong>10%</strong></li>
+<li>Three-tier multiplier: <strong>RES &lt; 0</strong> &rarr; 1 &minus; RES/2 (half effect); <strong>0 &le; RES &lt; 75%</strong> &rarr; 1 &minus; RES; <strong>RES &ge; 75%</strong> &rarr; 1 &divide; (4 &times; RES + 1)</li>
+<li>Because negative RES only counts at half strength, &minus;40% against a 10%-RES enemy ends at &minus;30% and gives roughly <strong>+27.8%</strong> damage, not 40%</li>
+<li>Main sources: <strong>VV 4pc 40%</strong>, <strong>Zhongli Jade Shield 20%</strong> (all elements + Physical), <strong>Xilonen Skill 36%</strong> (PECH + Geo), <strong>Superconduct 40%</strong> (Physical), <strong>Deepwood Memories 30%</strong> (Dendro)</li>
+<li>Same-name effects <strong>do not stack</strong> &mdash; only the highest applies; different sources do stack</li>
+<li>RES shred and DEF shred are <strong>two independent brackets</strong> and can both be maxed out</li>
+</ul>
+</div>
+
+<h2>How RES converts to damage</h2>
+<p>Resistance does not subtract damage directly &mdash; it converts into a damage multiplier, and the formula depends on which tier the final RES lands in:</p>
+<table>
+<tr><th>Final RES</th><th>Damage multiplier</th><th>Note</th></tr>
+<tr><td>&lt; 0% (negative)</td><td>1 &minus; RES / 2</td><td>Still helps, but at <strong>half efficiency</strong></td></tr>
+<tr><td>0% &ndash; 75%</td><td>1 &minus; RES</td><td>Linear zone, where shred is most valuable</td></tr>
+<tr><td>&ge; 75%</td><td>1 &divide; (4 &times; RES + 1)</td><td>High-RES zone, sharply diminishing</td></tr>
+</table>
+<p>Final RES = base RES + bonus RES &minus; shred. In other words, shred <strong>subtracts from the number</strong>; it is not a proportional discount.</p>
+
+<h2>Why &ldquo;&minus;40%&rdquo; often only adds ~28%</h2>
+<p>Once RES is pushed below zero it enters the <strong>half-effect zone</strong>. Take the standard 10% base RES:</p>
+<table>
+<tr><th>Shred</th><th>Final RES</th><th>Multiplier</th><th>Gain vs no shred</th></tr>
+<tr><td>None</td><td>10%</td><td>0.90</td><td>&mdash;</td></tr>
+<tr><td>&minus;20% (Zhongli shield)</td><td>&minus;10%</td><td>1.05</td><td>+16.7%</td></tr>
+<tr><td>&minus;30% (Deepwood Memories)</td><td>&minus;20%</td><td>1.10</td><td>+22.2%</td></tr>
+<tr><td>&minus;36% (Xilonen Skill)</td><td>&minus;26%</td><td>1.13</td><td>+25.6%</td></tr>
+<tr><td>&minus;40% (Viridescent Venerer)</td><td>&minus;30%</td><td>1.15</td><td><strong>+27.8%</strong></td></tr>
+<tr><td>&minus;76% (VV 40 + Xilonen 36)</td><td>&minus;66%</td><td>1.33</td><td>+47.8%</td></tr>
+</table>
+<p>So the panel number &ldquo;&minus;40%&rdquo; is not a 40% damage gain. But note it is still a <strong>+27.8% total damage increase</strong> (0.90 &rarr; 1.15) &mdash; a very high-value bracket, better than most ATK% or DMG Bonus stats.</p>
+
+<h2>Shred scales with enemy RES</h2>
+<p>The higher the enemy&rsquo;s RES, the more a shred is worth. Against a 70% Physical RES enemy:</p>
+<table>
+<tr><th>State</th><th>Final RES</th><th>Multiplier</th><th>Gain vs no shred</th></tr>
+<tr><td>None</td><td>70%</td><td>0.30</td><td>&mdash;</td></tr>
+<tr><td>&minus;40% (Superconduct vs Physical)</td><td>30%</td><td>0.70</td><td><strong>+133%</strong></td></tr>
+</table>
+<p>That is why against high-RES bosses a shred support beats stacking more ATK &mdash; a printed 40% can double your damage on a 70%-RES target.</p>
+
+<h2>RES shred sources</h2>
+<table>
+<tr><th>Source</th><th>Shred</th><th>Elements</th><th>Condition / limit</th></tr>
+<tr><td>Viridescent Venerer 4pc</td><td>&minus;40%</td><td>Swirled element</td><td>Requires Swirl of that element; <strong>cannot affect Geo, Anemo, or Physical</strong></td></tr>
+<tr><td>Zhongli &middot; Jade Shield</td><td>&minus;20%</td><td>All elements + Physical</td><td>While inside the shield&rsquo;s range</td></tr>
+<tr><td>Xilonen &middot; Skill (talent 10)</td><td>&minus;36%</td><td>Pyro / Hydro / Cryo / Electro + Geo</td><td>2 Normal Attacks after Skill to activate Source Samples; 15s; not Anemo or Dendro</td></tr>
+<tr><td>Superconduct reaction</td><td>&minus;40%</td><td>Physical</td><td>Triggered by Cryo + Electro</td></tr>
+<tr><td>Deepwood Memories 4pc</td><td>&minus;30%</td><td>Dendro</td><td>On hit; does not stack with itself</td></tr>
+<tr><td>Geo Resonance (2 Geo)</td><td>&minus;20%</td><td>Geo</td><td>Always on</td></tr>
+<tr><td>Jean &middot; C4</td><td>&minus;40%</td><td>Anemo</td><td>Inside the Dandelion Breeze field</td></tr>
+<tr><td>Rosaria &middot; C6</td><td>&minus;20%</td><td>Physical</td><td>On Elemental Skill hit</td></tr>
+<tr><td>Xingqiu &middot; C2</td><td>&minus;15%</td><td>Hydro</td><td>On sword rain hit, 4s</td></tr>
+<tr><td>Venti &middot; C6</td><td>&minus;20%</td><td>Anemo + absorbed element</td><td>On Wind&rsquo;s Grand Ode hit</td></tr>
+<tr><td>Nilou &middot; C2</td><td>&minus;35%</td><td>Hydro / Dendro</td><td>Requires the Court of Dancing Petals talent</td></tr>
+<tr><td>Sigewinne &middot; C2</td><td>&minus;35%</td><td>Hydro</td><td>On Skill / Burst hit, 8s</td></tr>
+<tr><td>Citlali &middot; C2</td><td>&minus;20%</td><td>Pyro / Hydro</td><td>After Frozen or Melt, 12s</td></tr>
+<tr><td>Traveler (Anemo) &middot; C6</td><td>&minus;20%</td><td>Anemo + absorbed element</td><td>On Gust Surge hit</td></tr>
+</table>
+
+<h2>What does not stack</h2>
+<ul>
+<li><strong>Same-name effects do not stack; only the highest applies.</strong> Two VV holders still give one &minus;40%.</li>
+<li><strong>Deepwood Memories does not stack with itself</strong> &mdash; multiple wearers still give one &minus;30%.</li>
+<li><strong>Different sources do stack</strong>, added into the same final-RES pool (e.g. VV 40 + Xilonen 36 = &minus;76%).</li>
+<li>Watch the element limits: VV cannot shred Geo / Anemo / Physical, and Xilonen cannot shred Anemo / Dendro. Match your shred to your main DPS&rsquo;s damage type.</li>
+</ul>
+
+<h2>RES shred vs DEF shred</h2>
+<table>
+<tr><th>Item</th><th>RES shred</th><th>DEF shred</th></tr>
+<tr><td>Applies to</td><td>Resistance multiplier</td><td>Defense multiplier</td></tr>
+<tr><td>Formula effect</td><td>Final RES &rarr; three-tier multiplier</td><td>Level-based; directly cuts enemy DEF</td></tr>
+<tr><td>Stacking</td><td>Different sources stack</td><td>Stacks, capped at 90% total</td></tr>
+<tr><td>Typical sources</td><td>VV, Zhongli shield, Xilonen, Superconduct</td><td>Lisa passive, Razor C4, Klee C2, Ayaka C4, Nahida C2</td></tr>
+<tr><td>Relationship</td><td colspan="2">The two <strong>multiply</strong> together &mdash; having both compounds your gain</td></tr>
+</table>
+
+<h2>Using shred in practice</h2>
+<ol>
+<li><strong>Match the shred to your main DPS.</strong> A Pyro carry wants VV swirling Pyro &mdash; VV will never shred Geo.</li>
+<li><strong>Prioritise shred against high-RES enemies.</strong> Far better value on bosses and tanky Abyss floors than another ATK layer.</li>
+<li><strong>Do not double up on the same effect.</strong> One VV is enough; use the second slot for DMG bonus, Energy, or healing.</li>
+</ol><div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide.html">查看中文版</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>Subscribe for Genshin Tips</h3>
+<p>Weekly character builds and version guides, no spam.</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">Subscribe</button>
+</form>
+</div>
+
+<div class="footer"><p>&copy; 2026 Teyvat Starter Guide &middot; Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('Subscribed!');
+    } catch(err) {
+      alert('Something went wrong, please try again.');
+    }
+  });
+});
+</script>
+</body>
+</html>
