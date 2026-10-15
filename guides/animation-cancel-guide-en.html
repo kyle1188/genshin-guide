@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genshin Animation Cancel Guide: Dash, Jump, Swap and Aim Cancel Timing</title>
+<meta name="description" content="How to animation cancel in Genshin Impact: dash, jump, walk, swap and aim cancel timing, stamina costs, which characters benefit most, and the mistakes that delete your damage.">
+<meta name="keywords" content="genshin animation cancel, dash cancel, jump cancel, swap cancel, hu tao jump cancel, ningguang walk cancel, combat tips">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/animation-cancel-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/animation-cancel-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/animation-cancel-guide-en.html" />
+<meta property="og:title" content="Genshin Animation Cancel Guide: Dash, Jump, Swap and Aim Cancel Timing">
+<meta property="og:description" content="How to animation cancel in Genshin Impact: dash, jump, walk, swap and aim cancel timing, stamina costs, which characters benefit most, and the mistakes that delete your damage.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/animation-cancel-guide-en.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Animation Cancel Guide: Dash, Jump, Swap and Aim Cancel Timing", "description": "How to animation cancel in Genshin Impact: dash, jump, walk, swap and aim cancel timing, stamina costs, which characters benefit most, and the mistakes that delete your damage.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-16", "dateModified": "2026-10-16", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/animation-cancel-guide-en.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does animation canceling reduce my damage?", "acceptedAnswer": {"@type": "Answer", "text": "No. You are cutting animation that happens after damage is calculated. However, inputting before the active frames cancels the hit itself, and that is a real loss."}}, {"@type": "Question", "name": "Can you animation cancel on mobile?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, all five types work. Swap cancel is the most convenient because of the dedicated button next to the character portraits; aim and jump cancels demand the most precision."}}, {"@type": "Question", "name": "Dash cancel or jump cancel?", "acceptedAnswer": {"@type": "Answer", "text": "Dash when you have stamina and want the invincibility frames, jump when you rely on charged attacks and stamina is tight. C0 Hu Tao is the classic jump-cancel character."}}, {"@type": "Question", "name": "Should I use a macro?", "acceptedAnswer": {"@type": "Answer", "text": "Third-party macros modify client input timing, carry account risk, and cannot adapt to varying latency, enemy positions or frame rates. Manual timing is usually better anyway."}}, {"@type": "Question", "name": "How much DPS does canceling add?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the character. Normal-attack and charged-attack carries typically see 15%-25% effective gains, while burst-focused teams gain little."}}, {"@type": "Question", "name": "Does high ping affect canceling?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Input latency shifts where the active frames appear, so calibrate against your own damage numbers instead of copying someone else's timings."}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/animation-cancel-guide.html">中文</a>
+</div>
+<div class="container">
+<h1>Genshin Animation Cancel Guide: Dash, Jump, Swap and Aim Cancel Timing</h1>
+<p>Same team, same artifacts, yet someone else clears faster. The gap is often not stats but <strong>wasted recovery frames</strong>. Every attack in Genshin Impact has three parts: startup, active frames, and recovery. Once the damage is calculated, the character still plays out a recovery animation that produces nothing. Animation canceling replaces that dead time with your next action.</p>
+<div class="quick">
+<p><strong>Quick answer</strong></p>
+<ul>
+<li><strong>Five cancel types</strong>: dash, jump, walk, swap, and skill/burst cancel.</li>
+<li><strong>One timing rule</strong>: input right when the damage number appears. Too early cancels the damage itself.</li>
+<li><strong>Dash cancel is fastest but costs stamina.</strong> Jump cancel is free but slower. Bow aim cancel is nearly as fast as dash cancel and costs no stamina.</li>
+<li><strong>Everything works on mobile</strong>, where swap cancel is the easiest thanks to the dedicated button next to each character portrait.</li>
+<li><strong>Upside</strong>: normal-attack and charged-attack carries typically gain 15%-25% effective DPS with no change to their stats.</li>
+</ul>
+</div>
+
+<h2>What recovery frames actually are</h2>
+<p>Break one attack into three parts:</p>
+<ul>
+<li><strong>Startup</strong>: wind-up, charge, or draw. No damage yet, and you cannot cancel it.</li>
+<li><strong>Active frames</strong>: the moment damage is calculated and the number pops up.</li>
+<li><strong>Recovery</strong>: the follow-through. Damage is already done, but your character is still locked in animation.</li>
+</ul>
+<p>Canceling means overriding the remaining recovery with a new action. This has existed since launch, is used by every high-level rotation guide, and is a legitimate mechanic rather than an exploit.</p>
+
+<h2>The five cancel types compared</h2>
+<table>
+<tr><th>Type</th><th>Input</th><th>Stamina</th><th>Speed</th><th>Best for</th><th>Risk</th></tr>
+<tr><td>Dash cancel</td><td>Tap dash right after the damage registers (PC default: Shift or right-click)</td><td>Costs</td><td>Fastest</td><td>Claymores, polearms, charged-attack carries</td><td>Runs your stamina bar dry; too early and you delete the hit</td></tr>
+<tr><td>Jump cancel</td><td>Press jump after the damage registers</td><td>Free</td><td>Medium</td><td>Charged-attack carries with low stamina</td><td>You lose ground-based buffs mid-air; can clip into huge enemy hitboxes</td></tr>
+<tr><td>Walk cancel</td><td>Keep holding a movement direction while attacking</td><td>Free</td><td>Slower</td><td>Catalyst and bow normal-attack chains</td><td>Moves your position, so you must steer it</td></tr>
+<tr><td>Swap cancel</td><td>Switch character right after the damage registers (PC keys 1-4)</td><td>Free</td><td>Fast</td><td>Quickswap sub-DPS, leaving after a skill cast</td><td>Swapping too early drops lingering damage or buff coverage</td></tr>
+<tr><td>Skill / burst cancel</td><td>Chain a skill or burst after the damage registers</td><td>Free</td><td>Fast (has its own animation)</td><td>Rotation hand-offs and free energy generation</td><td>Order matters; on some characters a burst cancels a skill, not the other way around</td></tr>
+</table>
+
+<h2>Input buffering will not save you</h2>
+<p>Genshin buffers some inputs but not all:</p>
+<ul>
+<li>The next normal attack in a chain <strong>can be buffered</strong>, so mashing does not drop hits.</li>
+<li><strong>Dash, jump, skill and burst are not buffered after a normal attack.</strong> They fire immediately and interrupt. There is no safety net that waits for the damage to land.</li>
+<li>Correct rhythm: hit connects, damage number appears, then dash.</li>
+<li>Too early deletes the hit. Too late means the recovery already finished and your input did nothing.</li>
+</ul>
+<p>Practice on an enemy that will not hit back. Watch the damage numbers rather than the animation, and repeat twenty times until the timing is muscle memory.</p>
+
+<h2>The five types in detail</h2>
+<h3>Dash cancel</h3>
+<p>The fastest option, and it comes with invincibility frames on the dash startup, so it also doubles as a dodge. The cost is stamina. Charged-attack carries such as Klee, Ningguang and C0 Hu Tao will burn through a full stamina bar in two rotations if they dash cancel everything. Hu Tao at C1 no longer spends stamina on charged attacks, which is why dash canceling suddenly becomes the correct answer for her.</p>
+<h3>Jump cancel</h3>
+<p>Free, but a longer animation with a tighter window, and jumping too early cancels the damage outright. Against very large enemies such as the Perpetual Mechanical Array, you can also get stuck inside the hitbox, which is slower than not canceling at all.</p>
+<h3>Walk cancel</h3>
+<p>Hold or tap a movement direction to break the normal-attack chain. Ningguang is the classic case: keep the forward key down during normal attacks and stop only for the charged attack, preserving spacing while raising attack frequency. Melee characters usually need a small wiggle back and forth to trigger it.</p>
+<h3>Swap cancel</h3>
+<p>Switch characters right after the damage registers. It shortens the time a sub-DPS stands on field and lets lingering damage start ticking sooner. Direction matters: swapping too early can cut the final hit of a multi-part or delayed attack.</p>
+<h3>Skill and burst cancel</h3>
+<p>Use a higher-priority action to cut a normal attack. One useful detail: <strong>game time keeps running during a burst animation</strong>, so elemental particles spawn and get absorbed by your on-field character before the animation ends. Casting skill then burst is therefore both a cancel and a free energy funnel. The reverse does not work - a skill will not cancel a burst animation.</p>
+
+<h2>Character quick reference</h2>
+<table>
+<tr><th>Character</th><th>Recommended cancel</th><th>Why</th></tr>
+<tr><td>Hu Tao</td><td>C0: charged attack into jump cancel. C1: charged attack into dash cancel</td><td>C0 spends stamina on charged attacks, so save it; C1 removes that cost and lets you dash cancel freely for the i-frames</td></tr>
+<tr><td>Ningguang</td><td>Walk cancel during normal attacks, stop for the charged attack</td><td>Keeps distance while raising attack rate; re-enter through the Jade Screen to keep the passive bonus</td></tr>
+<tr><td>Diluc</td><td>Skill into dash cancel, repeat</td><td>Trims skill recovery and raises Pyro application frequency</td></tr>
+<tr><td>Klee</td><td>Charged attack into jump cancel</td><td>Stamina free, removes the charged-attack end lag</td></tr>
+<tr><td>Yoimiya</td><td>Aim cancel after the last normal attack</td><td>Double-tap aim; faster than jumping and free</td></tr>
+<tr><td>Ganyu</td><td>Dash cancel after the charged shot connects</td><td>Skips the bow-lowering animation, raising shots per second</td></tr>
+<tr><td>Xiao</td><td>Jump cancel after a plunge, then jump again</td><td>Shortens landing lag and keeps the aerial loop going</td></tr>
+<tr><td>Eula</td><td>Dash cancel after normal attacks or skill</td><td>Combines repositioning with a steady physical damage rhythm</td></tr>
+<tr><td>Neuvillette</td><td>Hold attack briefly and release instead of full charge</td><td>Skips the absorption animation, provided Sourcewater Droplets are on field</td></tr>
+</table>
+<p>Recovery length differs a lot between individual polearm and claymore users, so treat this as a starting point and tune to your own rhythm.</p>
+
+<h2>PC, mobile and controller differences</h2>
+<table>
+<tr><th>Platform</th><th>Availability</th><th>Notes</th></tr>
+<tr><td>PC</td><td>All five</td><td>Most precise input: dash on Shift or right-click, jump on space, aim on R, swap on 1-4</td></tr>
+<tr><td>Mobile</td><td>All five, varying difficulty</td><td>Swap cancel is easiest thanks to the dedicated button beside the character portraits; aim and jump cancels are the hardest</td></tr>
+<tr><td>Controller</td><td>All five</td><td>Dash cancel has a relatively forgiving window; jump cancel suffers because the stick does not recenter precisely</td></tr>
+</table>
+
+<h2>Common mistakes and fixes</h2>
+<table>
+<tr><th>Symptom</th><th>Cause</th><th>Fix</th></tr>
+<tr><td>Dashed but the damage vanished</td><td>Input landed before the active frames</td><td>Delay by half a beat and key off the damage number</td></tr>
+<tr><td>Feels like nothing improved</td><td>Input came after recovery already ended</td><td>Input during the first half of the recovery animation, not after it</td></tr>
+<tr><td>Stamina gone after two rotations</td><td>Dash canceling everything</td><td>Switch to jump or walk cancels, or use an attack pattern that does not spend stamina</td></tr>
+<tr><td>Stuck inside the boss after a jump</td><td>Huge collision hitboxes</td><td>Use dash cancel instead, or skip canceling against those enemies</td></tr>
+<tr><td>Success rate fluctuates wildly on high ping</td><td>Input latency shifts the window</td><td>Single-player worlds are more consistent; re-learn the rhythm after joining co-op</td></tr>
+</table>
+
+<h2>Where it matters most: Spiral Abyss</h2>
+<ul>
+<li>The Abyss is on a hard timer, so every second saved by canceling shows up directly in your clear time - often the difference between three stars and two.</li>
+<li>Against multiple targets, prefer swap cancels to cut on-field time on your carry and keep burst rotations running.</li>
+<li>Against high-damage attacks, dash cancel lets you keep dealing damage while dodging, which is its biggest advantage over jump cancel.</li>
+</ul>
+
+<h2>Bottom line</h2>
+<p>Animation canceling changes no stats and costs no resources - it is purely about input timing. Get the one rule right first (input after the damage number appears), then pick dash or jump cancel based on your stamina budget.</p>
+
+<h2>Related guides</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/combat-mechanics-guide-en.html">Genshin Combat Mechanics Explained</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/stamina-recovery-guide-en.html">Stamina System and Recovery Guide</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/damage-formula-guide-en.html">Damage Formula Explained</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/spiral-abyss-floor12-guide-en.html">Spiral Abyss Floor 12 Guide</a></li>
+</ul>
+
+<h2>FAQ</h2>
+<h3>Does animation canceling reduce my damage?</h3>
+<p>No. You are cutting animation that happens after damage is calculated. However, inputting before the active frames cancels the hit itself, and that is a real loss.</p>
+<h3>Can you animation cancel on mobile?</h3>
+<p>Yes, all five types work. Swap cancel is the most convenient because of the dedicated button next to the character portraits; aim and jump cancels demand the most precision.</p>
+<h3>Dash cancel or jump cancel?</h3>
+<p>Dash when you have stamina and want the invincibility frames, jump when you rely on charged attacks and stamina is tight. C0 Hu Tao is the classic jump-cancel character; C1 Hu Tao can switch to dash canceling freely.</p>
+<h3>Should I use a macro?</h3>
+<p>Third-party macros modify client input timing, carry account risk, and cannot adapt to varying latency, enemy positions or frame rates. Manual timing is usually better anyway.</p>
+<h3>How much DPS does canceling add?</h3>
+<p>It depends on the character. Normal-attack and charged-attack carries typically see 15%-25% effective gains, while burst-focused teams gain little.</p>
+<h3>Does high ping affect canceling?</h3>
+<p>Yes. Input latency shifts where the active frames appear, so calibrate against your own damage numbers instead of copying someone else's timings.</p>
+
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/animation-cancel-guide.html">查看中文版</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>Subscribe for Genshin Tips</h3>
+<p>Weekly character builds and version guides, no spam.</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">Subscribe</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('Submitted successfully!');
+    } catch(err) {
+      alert('Something went wrong. Please try again later.');
+    }
+  });
+});
+</script>
+</body>
+</html>

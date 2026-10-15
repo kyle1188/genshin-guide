@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神画质设置优化攻略：PC 与手机端帧数与画质选项详解</title>
+<meta name="description" content="原神怎么设置最流畅？逐项解析渲染精度、阴影质量、体积雾、反射等画质选项的性能开销，附低中高三档推荐配置、掉帧排查清单与手机端降温省电设置。">
+<meta name="keywords" content="原神画质设置,原神帧数优化,原神设置推荐,渲染精度,体积雾,原神掉帧怎么办,手机原神设置,原神配置要求">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/graphics-settings-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/graphics-settings-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/graphics-settings-guide-en.html" />
+<meta property="og:title" content="原神画质设置优化攻略：PC 与手机端帧数与画质选项详解">
+<meta property="og:description" content="原神怎么设置最流畅？逐项解析渲染精度、阴影质量、体积雾、反射等画质选项的性能开销，附低中高三档推荐配置、掉帧排查清单与手机端降温省电设置。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/graphics-settings-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神画质设置优化攻略：PC 与手机端帧数与画质选项详解", "description": "原神怎么设置最流畅？逐项解析渲染精度、阴影质量、体积雾、反射等画质选项的性能开销，附低中高三档推荐配置、掉帧排查清单与手机端降温省电设置。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-16", "dateModified": "2026-10-16", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/graphics-settings-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "原神帧数多少算够？", "acceptedAnswer": {"@type": "Answer", "text": "探索与大世界 30 帧可用，战斗与深境螺旋建议 60 帧。真正影响手感的是帧生成是否平稳，而不是峰值有多高。"}}, {"@type": "Question", "name": "降低渲染精度和降低分辨率有什么区别？", "acceptedAnswer": {"@type": "Answer", "text": "两者都降低 GPU 负载，但渲染精度是内部倍率，界面文字与 UI 仍按原分辨率渲染，所以画面看起来比直接降分辨率更清楚。"}}, {"@type": "Question", "name": "动态模糊该开吗？", "acceptedAnswer": {"@type": "Answer", "text": "建议关闭。它属于口味选项，关掉之后转视角更清晰，对配置较低的机器还能省一点性能。"}}, {"@type": "Question", "name": "为什么在城里卡、野外不卡？", "acceptedAnswer": {"@type": "Answer", "text": "主城同时渲染大量 NPC 与光照，吃的是 CPU 与显存。降低人群密度或环境细节，效果比调整显卡相关选项更直接。"}}, {"@type": "Question", "name": "手机玩多久需要歇一下？", "acceptedAnswer": {"@type": "Answer", "text": "建议连续游玩 40 到 60 分钟后让设备降温一次。长时间高温不仅掉帧，还会加速电池老化。"}}, {"@type": "Question", "name": "云原神适合什么情况？", "acceptedAnswer": {"@type": "Answer", "text": "硬件达不到最低配置、或是低配笔记本与老手机时，云游戏可以直接跑满画质，代价是依赖网络质量与延迟。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/graphics-settings-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神画质设置优化攻略：PC 与手机端帧数与画质选项详解</h1>
+<p>原神的画面选项有十几个，但真正决定帧数的只有四个：<strong>渲染精度、阴影质量、体积雾、反射</strong>。其余大多是「视觉提升明显、性能开销温和」的选项。这篇按开销从大到小排一遍，给出可以直接照抄的三档配置，并附上掉帧排查顺序。</p>
+<div class="quick">
+<p><strong>快速答案</strong></p>
+<ul>
+<li><strong>先定目标</strong>：稳定 60 帧比波动的 90 帧体验更好，帧数目标永远优先于画质档位。</li>
+<li><strong>最吃性能四项</strong>：渲染精度 → 阴影质量 → 体积雾 → 反射。掉帧先动这四个。</li>
+<li><strong>性价比最高两项</strong>：抗锯齿与泛光。视觉提升明显，开销可控。</li>
+<li><strong>中端配置一句话</strong>：显示模式全屏、渲染精度 1.0、阴影中、体积雾关、反射低、抗锯齿开、动态模糊关。</li>
+<li><strong>手机端关键</strong>：先降渲染精度与阴影，关体积雾与反射，再考虑把帧率从 60 降到 45 或 30 换取稳定与低温。</li>
+</ul>
+</div>
+
+<h2>先看官方配置要求</h2>
+<table>
+<tr><th>档位</th><th>CPU</th><th>内存</th><th>显卡</th><th>体验预期</th></tr>
+<tr><td>最低配置</td><td>Intel Core i5 级别</td><td>8 GB</td><td>GeForce GT 1030 级别（2 GB 显存）</td><td>720p 低画质 30 帧左右</td></tr>
+<tr><td>推荐配置</td><td>Intel Core i7 级别</td><td>16 GB</td><td>GeForce GTX 1060 6 GB 级别</td><td>1080p 中高画质 60 帧</td></tr>
+</table>
+<p>存储方面：安装体积随版本持续增长，目前已经是百 GB 量级，建议预留 150 GB 以上并放在 SSD 上——放在 SSD 能显著缩短地区切换与副本加载时间，也基本消除大世界跑图时的贴图延迟加载。</p>
+
+<h2>画质选项逐项解析</h2>
+<table>
+<tr><th>选项</th><th>作用</th><th>性能开销</th><th>建议</th></tr>
+<tr><td>渲染精度</td><td>内部渲染分辨率倍率，决定画面的锐利度与锯齿</td><td>极高，几乎线性影响帧数</td><td>默认 1.0；掉帧先降到 0.9 或 0.8，不建议低于 0.6</td></tr>
+<tr><td>阴影质量</td><td>角色与场景阴影的精度、范围</td><td>高</td><td>中档即可，低档与中档的观感差距远小于性能差距</td></tr>
+<tr><td>体积雾</td><td>雾、雨、灰尘等大气效果</td><td>高，雨天场景尤其明显</td><td>默认关闭；确认帧数稳定再逐级开启</td></tr>
+<tr><td>反射</td><td>水面与地面的倒影</td><td>高</td><td>低档；只有在需要拍水景时才临时开高</td></tr>
+<tr><td>环境细节</td><td>植被密度、远景物体数量</td><td>中高，吃显存</td><td>中档；低档会让地面显得空旷</td></tr>
+<tr><td>特效质量</td><td>技能特效的粒子数量与复杂度</td><td>中，战斗时峰值明显</td><td>保持中或高——调太低会看不清队友技能范围</td></tr>
+<tr><td>抗锯齿</td><td>消除物体边缘锯齿</td><td>中（性价比高）</td><td>开启；有 FSR2 选项时优先选它，兼顾清晰与性能</td></tr>
+<tr><td>泛光</td><td>亮部溢出的光晕</td><td>低到中（性价比高）</td><td>开启，是画面观感提升最明显的一项</td></tr>
+<tr><td>动态模糊</td><td>镜头移动时的拖影</td><td>低</td><td>关闭。这是口味选项而非画质选项，关闭后画面更干净、转视角更清晰</td></tr>
+<tr><td>人群密度</td><td>城镇中 NPC 数量</td><td>中，只在主城明显</td><td>不常进城可调低，常进城建议中或高</td></tr>
+<tr><td>队友特效</td><td>联机时其他玩家技能特效</td><td>中</td><td>设为「部分关闭」，联机打本帧数更稳</td></tr>
+<tr><td>次表面散射</td><td>角色皮肤的通透感</td><td>低</td><td>开启，开销很小</td></tr>
+<tr><td>各向异性过滤</td><td>斜视角下的地面纹理清晰度</td><td>低</td><td>8 倍或 16 倍，基本无损性能</td></tr>
+</table>
+<p>部分版本新增的全局光照类选项同样属于高开销项，低配机上优先关掉。</p>
+
+<h2>三档推荐配置（可直接照抄）</h2>
+<table>
+<tr><th>选项</th><th>低端机（核显/老笔记本）</th><th>中端机（GTX 1060 / RX 580 级别）</th><th>高端机（RTX 3060 及以上）</th></tr>
+<tr><td>显示模式</td><td>全屏</td><td>全屏</td><td>全屏</td></tr>
+<tr><td>分辨率</td><td>1600×900，必要时 1280×720</td><td>1920×1080</td><td>原生分辨率，1440p 或 4K</td></tr>
+<tr><td>帧率上限</td><td>30</td><td>60</td><td>60（显示器支持且显卡有余量时可更高）</td></tr>
+<tr><td>渲染精度</td><td>0.8</td><td>1.0</td><td>1.0</td></tr>
+<tr><td>阴影质量</td><td>低</td><td>中</td><td>高</td></tr>
+<tr><td>体积雾</td><td>关</td><td>关或低</td><td>中或高</td></tr>
+<tr><td>反射</td><td>关</td><td>低</td><td>高</td></tr>
+<tr><td>环境细节</td><td>低</td><td>中</td><td>高</td></tr>
+<tr><td>特效质量</td><td>中</td><td>高</td><td>高</td></tr>
+<tr><td>抗锯齿</td><td>开启（有 FSR2 则选 FSR2）</td><td>开启</td><td>开启</td></tr>
+<tr><td>泛光</td><td>可关</td><td>开</td><td>开</td></tr>
+<tr><td>动态模糊</td><td>关</td><td>关</td><td>关</td></tr>
+<tr><td>人群密度</td><td>低</td><td>中</td><td>高</td></tr>
+<tr><td>队友特效</td><td>关或部分关闭</td><td>部分关闭</td><td>开</td></tr>
+</table>
+<p>原则：<strong>先保证帧数目标的稳定，再回填画质</strong>。如果帧数在 35 到 60 之间反复跳动，直接把上限降到 45 或 30 的体验会明显好于继续追 60。</p>
+
+<h2>显示模式、帧率与垂直同步</h2>
+<ul>
+<li><strong>全屏</strong>性能最好；无边框窗口化适合多显示器场景，但一般会损失少量帧数。</li>
+<li><strong>帧率上限</strong>：官方提供 30 / 60 两档，PC 端在硬件支持时可开启更高档位。上限不要设成显卡无法长期维持的数值。</li>
+<li><strong>垂直同步</strong>：显示器支持可变刷新率（G-Sync / FreeSync）时关闭垂直同步；否则开启以避免画面撕裂。</li>
+<li>有可变刷新率时，把帧率上限设为略低于刷新率的位置，帧生成时间更平稳。</li>
+</ul>
+
+<h2>系统与驱动层面的优化</h2>
+<ul>
+<li><strong>显卡控制面板</strong>（对着游戏单独建配置，不要改全局）：电源管理模式设为「最高性能优先」，低延迟模式开启，垂直同步交给游戏内设置，不要强制覆盖抗锯齿与各向异性过滤。</li>
+<li><strong>笔记本双显卡</strong>：在 Windows 的图形设置里把游戏指定给独立显卡，否则可能在用核显跑。</li>
+<li><strong>插电运行</strong>：笔记本不插电时会大幅限制显卡功耗，同一套画质设置帧数可能腰斩。</li>
+<li><strong>把游戏装在 SSD 上</strong>：主要改善加载与贴图延迟，对帧数影响有限。</li>
+<li><strong>关闭后台程序与录制软件</strong>：浏览器多标签、录屏、直播推流都会抢占用 CPU 与显存。</li>
+<li><strong>更新显卡驱动</strong>：多数闪退、黑屏与贴图错误都能靠更新驱动解决。</li>
+</ul>
+
+<h2>手机端设置与降温</h2>
+<table>
+<tr><th>项目</th><th>建议</th></tr>
+<tr><td>帧率</td><td>手机发烫或掉帧时，从 60 降到 45 或 30，稳定性提升明显</td></tr>
+<tr><td>渲染精度</td><td>降一档，是移动端最有效的降负载手段</td></tr>
+<tr><td>阴影质量 / 环境细节</td><td>各降一档</td></tr>
+<tr><td>体积雾 / 反射</td><td>有开关就关掉</td></tr>
+<tr><td>特效质量</td><td>尽量保持中档，太低会看不清战斗信息</td></tr>
+</table>
+<p>测试方法很重要：不要站在安静的场景里看帧数，进战斗跑满 15 到 20 分钟再看——手机性能衰减大多发生在发热之后。此外，摘掉手机壳、避免阳光直射、不要边充电边玩，这三条对稳定帧数的帮助往往比改设置还大。</p>
+
+<h2>掉帧排查清单（按顺序做）</h2>
+<table>
+<tr><th>顺序</th><th>动作</th><th>说明</th></tr>
+<tr><td>1</td><td>确认笔记本在用独显、且已插电</td><td>最常见的原因</td></tr>
+<tr><td>2</td><td>降低渲染精度到 0.9 / 0.8</td><td>单项收益最大</td></tr>
+<tr><td>3</td><td>关闭体积雾与反射</td><td>雨天与水面场景收益最明显</td></tr>
+<tr><td>4</td><td>阴影质量降到中或低</td><td>观感损失最小的高收益项</td></tr>
+<tr><td>5</td><td>把帧率上限降到能稳定维持的档位</td><td>波动 60 不如稳定 45</td></tr>
+<tr><td>6</td><td>关闭后台程序与录制软件</td><td>排除软件抢占</td></tr>
+<tr><td>7</td><td>更新显卡驱动、检查散热与灰尘</td><td>解决长期性能衰减</td></tr>
+</table>
+
+<h2>一句话总结</h2>
+<p>先用渲染精度、阴影、体积雾、反射四项把帧数目标稳住，再用抗锯齿与泛光把画面补回来；设置之外，独显、插电与散热才是笔记本体验的下限。</p>
+
+<h2>相关阅读</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/exploration-efficiency-guide.html">探索度效率攻略</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/domain-guide.html">秘境完全指南</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap.html">新手指南开荒路线</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/daily-routine-guide.html">每日必做清单</a></li>
+</ul>
+
+<h2>常见问题</h2>
+<h3>原神帧数多少算够？</h3>
+<p>探索与大世界 30 帧可用，战斗与深境螺旋建议 60 帧。真正影响手感的是帧生成是否平稳，而不是峰值有多高。</p>
+<h3>降低渲染精度和降低分辨率有什么区别？</h3>
+<p>两者都降低 GPU 负载，但渲染精度是内部倍率，界面文字与 UI 仍然按原分辨率渲染，所以画面看起来比直接降分辨率更清楚。</p>
+<h3>动态模糊该开吗？</h3>
+<p>建议关闭。它属于口味选项，关掉之后转视角更清晰、快速位移时画面更干净，对配置较低的机器还能省一点性能。</p>
+<h3>为什么在城里卡、野外不卡？</h3>
+<p>主城同时渲染大量 NPC 与光照，吃的是 CPU 与显存。降低人群密度，或降低环境细节，效果比提升显卡设置更直接。</p>
+<h3>手机玩多久需要歇一下？</h3>
+<p>建议连续游玩 40 到 60 分钟后让设备降温一次。长时间高温不仅掉帧，还会加速电池老化。</p>
+<h3>云原神适合什么情况？</h3>
+<p>硬件达不到最低配置、或是低配笔记本与老手机时，云游戏可以直接跑满画质，代价是依赖网络质量与延迟。</p>
+
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/graphics-settings-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('订阅成功！');
+    } catch(err) {
+      alert('订阅失败，请稍后再试。');
+    }
+  });
+});
+</script>
+</body>
+</html>
