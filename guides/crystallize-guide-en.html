@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genshin Crystallize Guide: Shield HP Formula, Absorption & How to Use It</title>
+<meta name="description" content="How strong is a Crystallize shield? How much does EM actually add? Why do Geo shields block every damage type? Full breakdown of Crystallize triggers, the shield HP formula with level and EM tables, and 250%/150% absorption.">
+<meta name="keywords" content="genshin crystallize, crystallize shield, shield hp formula, geo reaction, shield strength, elemental mastery shield">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/crystallize-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/crystallize-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/crystallize-guide-en.html" />
+<meta property="og:title" content="Genshin Crystallize Guide: Shield HP Formula, Absorption & How to Use It">
+<meta property="og:description" content="How strong is a Crystallize shield? How much does EM actually add? Why do Geo shields block every damage type? Full breakdown of Crystallize triggers, the shield HP formula with level and EM tables, and 250%/150% absorption.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/crystallize-guide-en.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Crystallize Guide: Shield HP Formula, Absorption & How to Use It", "description": "How strong is a Crystallize shield? How much does EM actually add? Why do Geo shields block every damage type? Full breakdown of Crystallize triggers, the shield HP formula with level and EM tables, and 250%/150% absorption.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-15", "dateModified": "2026-10-15", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/crystallize-guide-en.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How is Crystallize triggered?", "acceptedAnswer": {"@type": "Answer", "text": "When a Geo attack hits a target already affected by Pyro, Hydro, Cryo or Electro. Geo cannot attach auras, so it is always the trigger element and Geo plus Geo never Crystallizes. Attacking environmental elements such as open water or burning grass produces nothing."}}, {"@type": "Question", "name": "How strong is a Crystallize shield?", "acceptedAnswer": {"@type": "Answer", "text": "Shield HP = base HP (by the triggering Geo character level) x (1 + EM bonus). Base is 1,851 at level 90, 1,597 at 80 and 1,315 at 70. If the triggerer is not max level, the shield is much thinner."}}, {"@type": "Question", "name": "How much does Elemental Mastery add?", "acceptedAnswer": {"@type": "Answer", "text": "The bonus is 4.44 x EM / (EM + 1400): +29.6% at 100 EM, +55.5% at 200, +78.4% at 300 and +185% at 1000. Value peaks under 300 EM, after which returns flatten noticeably."}}, {"@type": "Question", "name": "Why do Geo shields block all damage types?", "acceptedAnswer": {"@type": "Answer", "text": "Geo shields (from Geovishap Hatchlings and similar) have a 150% absorption bonus against every damage type, whereas elemental Crystallize shields only reach 250% against their own element and stay at 100% otherwise. They are separate shield systems and can be active at the same time."}}, {"@type": "Question", "name": "Does Shield Strength add shield HP?", "acceptedAnswer": {"@type": "Answer", "text": "No. Shield Strength reduces the damage taken by shields on the active character; the shield HP itself is unchanged. Under 21% damage reduction, a 1,000-damage shield only loses 790 shield HP. It applies only to the active character."}}, {"@type": "Question", "name": "Do multiple shields stack?", "acceptedAnswer": {"@type": "Answer", "text": "They can all be active, but any hit is deducted from every shield at once, so effective protection equals the thickest single shield rather than their sum. Crystallize and talent shields coexist as a two-layer safety net."}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/crystallize-guide.html">中文</a>
+</div>
+<div class="container">
+<h1>Genshin Crystallize Guide: Shield HP Formula, Absorption &amp; How to Use It</h1>
+<p>Crystallize is the only reaction in Genshin that drops loot instead of damage &mdash; it drops a shield. Yet almost nobody explains what its shield HP depends on, how much EM really adds, or why Geo shields absorb every damage type. Here is the whole picture.</p>
+
+<div class="quick">
+<strong>Quick answer</strong>
+<ul>
+<li>Crystallize = <strong>Geo + Pyro / Hydro / Cryo / Electro</strong> (Geo cannot attach, so it is always the trigger element) and <strong>deals no damage</strong></li>
+<li>It drops an elemental <strong>shard</strong>; picking it up grants a shield of that element &mdash; <strong>both shard and shield last 15 seconds</strong></li>
+<li><strong>Only one Crystallize shield can be active</strong> at a time; picking up another overwrites it</li>
+<li>Shield HP = <strong>base HP (set by the triggering Geo character&rsquo;s level) &times; (1 + EM bonus)</strong>; level 90 base is <strong>1,851</strong>, and 200 EM adds <strong>55.5%</strong></li>
+<li>Elemental Crystallize shields absorb their <strong>own element at 250%</strong> (taking only 40%); <strong>Geo shields absorb everything at 150%</strong></li>
+<li><strong>Shield Strength</strong> (e.g. Geo Resonance +15%) reduces damage taken <em>by</em> a shield &mdash; it does not add shield HP</li>
+<li>With multiple shields active, incoming damage is deducted from <strong>every</strong> shield at once</li>
+</ul>
+</div>
+
+<h2>Crystallize: Geo plus one of four elements</h2>
+<p>Crystallize triggers when a <strong>Geo attack</strong> hits a target already affected by <strong>Pyro, Hydro, Cryo or Electro</strong>. Geo itself cannot attach auras, so it is always the trigger element &mdash; which means <strong>Geo + Geo can never Crystallize</strong>.</p>
+<p>The reaction deals no damage. Instead it spawns a matching elemental shard on the ground, which can be picked up for a shield of that element.</p>
+<table>
+<tr><th>Item</th><th>Value / rule</th></tr>
+<tr><td>Trigger</td><td>Geo attack on a Pyro / Hydro / Cryo / Electro affected target</td></tr>
+<tr><td>Reaction damage</td><td>None</td></tr>
+<tr><td>Shard lifetime</td><td>15s (max 3 on field; older ones vanish ~2s after a 4th spawns)</td></tr>
+<tr><td>Shield duration</td><td>15s</td></tr>
+<tr><td>Concurrent shields</td><td>1 Crystallize shield (a new pickup overwrites it)</td></tr>
+<tr><td>Trigger cooldown</td><td>At most once per second on the same target</td></tr>
+<tr><td>Gauge cost</td><td>1 unit of Geo reacts with up to 0.5 units of the attached element</td></tr>
+</table>
+<p>Two limits matter: <strong>attacking environmental elements produces nothing</strong> (open water, Electro-Charged water or burning grass do not count, because the Geo attack never hits a body), and enemies cannot pick up shards.</p>
+
+<h2>How shield HP is calculated</h2>
+<p><strong>Shield HP = base HP (by the triggering Geo character&rsquo;s level) &times; (1 + EM bonus)</strong></p>
+<p>Base HP depends <em>only</em> on the level of the Geo character that triggered the reaction &mdash; not ATK, DEF or HP:</p>
+<table>
+<tr><th>Triggerer level</th><th>Base shield HP (0 EM)</th></tr>
+<tr><td>50</td><td>786.79</td></tr>
+<tr><td>70</td><td>1,314.75</td></tr>
+<tr><td>80</td><td>1,596.81</td></tr>
+<tr><td>90</td><td><strong>1,851.06</strong></td></tr>
+<tr><td>95</td><td>2,041.57</td></tr>
+<tr><td>100</td><td>2,198.81</td></tr>
+</table>
+<p>So a shield triggered by a level-60 Geo character is less than half as strong as one from a level-90. If you want Crystallize shields to actually protect you, <strong>max the triggerer&rsquo;s level</strong>.</p>
+
+<h2>What Elemental Mastery actually adds</h2>
+<p>The bonus follows <strong>4.44 &times; EM &divide; (EM + 1400)</strong>, which saturates fairly early:</p>
+<table>
+<tr><th>Elemental Mastery</th><th>Shield HP bonus</th><th>Effective HP at level 90</th></tr>
+<tr><td>0</td><td>+0%</td><td>1,851</td></tr>
+<tr><td>100</td><td>+29.6%</td><td>2,399</td></tr>
+<tr><td>200</td><td>+55.5%</td><td>2,878</td></tr>
+<tr><td>300</td><td>+78.4%</td><td>3,302</td></tr>
+<tr><td>500</td><td>+116.8%</td><td>4,013</td></tr>
+<tr><td>1000</td><td>+185.0%</td><td>5,276</td></tr>
+</table>
+<p>Verdict: <strong>up to 300 EM is excellent value</strong> (+78% shield HP), after which returns flatten sharply. Around 300 EM is a comfortable target for teams using Crystallize as a support tool; do not chase 800+ just for shield HP.</p>
+
+<h2>250% and 150%: absorption is the real multiplier</h2>
+<p>Shield HP is only the &ldquo;health bar.&rdquo; What decides how much you actually tank is <strong>absorption efficiency</strong>:</p>
+<table>
+<tr><th>Shield type</th><th>Vs own element</th><th>Vs everything else</th></tr>
+<tr><td>Elemental Crystallize shield (Pyro / Hydro / Cryo / Electro)</td><td><strong>250%</strong> (takes only 40%)</td><td>100%</td></tr>
+<tr><td>Geo shield (Geovishap Hatchling shard)</td><td><strong>150%</strong></td><td><strong>150%</strong></td></tr>
+<tr><td>Character talent shield (Zhongli, Diona, Noelle, etc.)</td><td colspan="2">Defined by the talent; usually &ldquo;250% vs own element&rdquo; or &ldquo;150% vs all&rdquo;</td></tr>
+</table>
+<p>So against a <strong>Pyro-damage enemy</strong>, grabbing a Pyro shard effectively multiplies your shield HP by 2.5 &mdash; that is the correct way to use Crystallize. Grab the wrong element and you are stuck at 100%.</p>
+<p>Geo shields (from Geovishap Hatchlings, the Pure Geo Hypostasis and similar) belong to a separate system and <strong>do not overwrite Crystallize shields</strong> &mdash; both can be active together.</p>
+
+<h2>What happens with multiple shields</h2>
+<p>Many players assume stacking shields adds up. The actual rule:</p>
+<ul>
+<li>When you take a hit, <strong>every active shield is reduced by the same damage value</strong>.</li>
+<li>Your effective protection is roughly the <strong>thickest single shield</strong>, not the sum.</li>
+<li>So stacking shields buys you a second layer of insurance, not double the health.</li>
+</ul>
+<p>It still has real value: Crystallize shields are thin and break easily while talent shields sit on cooldown, so a second layer meaningfully cuts your vulnerable windows.</p>
+
+<h2>What Shield Strength really does</h2>
+<p>This is the most misunderstood part: <strong>Shield Strength does not increase shield HP</strong>.</p>
+<p>It <strong>reduces the damage taken by shields currently on the active character</strong>. The shield has the same HP; it simply loses less per hit. Example: a shield that can absorb 1,000 damage only loses 790 shield HP under a 21% damage reduction effect (such as Xingqiu&rsquo;s Rain Swords).</p>
+<ul>
+<li>Shield Strength only applies to the <strong>active character</strong> &mdash; it disappears when you swap.</li>
+<li>Geo Resonance provides roughly +15% Shield Strength, which matters for the whole team&rsquo;s shields.</li>
+<li>Because it is damage reduction, it helps thin shields the most &mdash; exactly Crystallize&rsquo;s weakness.</li>
+</ul>
+
+<h2>Crystallize shields vs talent shields</h2>
+<table>
+<tr><th>Item</th><th>Crystallize shield</th><th>Talent shield</th></tr>
+<tr><td>HP source</td><td>Triggerer level + Elemental Mastery</td><td>Usually DEF / HP / ATK &times; talent scaling</td></tr>
+<tr><td>How to get it</td><td>Pick up a shard (needs Geo + an aura)</td><td>Just cast the skill</td></tr>
+<tr><td>Element</td><td>Single element (Pyro/Hydro/Cryo/Electro)</td><td>Depends on the skill</td></tr>
+<tr><td>Duration</td><td>Fixed 15s</td><td>Per skill, typically 12&ndash;20s</td></tr>
+<tr><td>Absorption</td><td>250% vs own element</td><td>Defined by the talent</td></tr>
+<tr><td>Can coexist?</td><td colspan="2">Yes, but incoming damage is deducted from both at once</td></tr>
+</table>
+<p>Practical framing: treat Crystallize as a <strong>free extra layer</strong> whenever a Geo character is on the team facing an aura-ed enemy &mdash; not as a replacement for a dedicated shielder.</p>
+
+<h2>When it is worth actively using</h2>
+<ol>
+<li><strong>When the enemy&rsquo;s damage type is known.</strong> Against Pyro/ Hydro/ Electro-focused enemies, the matching shard gives you 250% efficiency.</li>
+<li><strong>Whenever a Geo character is already on the field.</strong> No need to rebuild the team &mdash; shards drop naturally.</li>
+<li><strong>As an anti-burst buffer.</strong> In high Abyss floors, one thin Crystallize shield is often the difference between surviving a combo and dying.</li>
+<li><strong>Stacked with Shield Strength.</strong> Geo Resonance plus a Crystallize shield lifts a thin shield a full tier.</li>
+</ol>
+
+<h2>Cold fact: freeze interaction priority</h2>
+<p>When a frozen target is hit by Geo, <strong>Shatter takes priority over Crystallize</strong>. If hidden elements remain under the Freeze Aura (unconsumed Hydro or Cryo), the leftover element reacts with the Geo after Shatter breaks the freeze, dropping a matching shard. That is why hitting a frozen Hydro-aura enemy with Geo frequently hands you a Hydro shield.</p>
+<p>Under Electro-Charged (Electro + Hydro coexisting), element priority is Electro &gt; Hydro, so <strong>only an Electro shard is produced</strong>, with Hydro remaining on the target.</p>
+
+<h2>Related guides</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide.html">Frozen &amp; Shatter Mechanics</a>: freeze duration and Shatter damage</li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-reactions-detailed.html">Elemental Reactions Explained</a>: the full amplifying vs transformative breakdown</li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/shielder-guide.html">Shielder Guide</a>: Zhongli, Diona, Noelle and more compared</li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide.html">Shield Breaking Guide</a>: enemy shields and efficiency</li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-mastery-guide.html">Elemental Mastery Guide</a>: how EM scales each reaction</li>
+</ul><div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/crystallize-guide.html">查看中文版</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>Subscribe for Genshin Tips</h3>
+<p>Weekly character builds and version guides, no spam.</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">Subscribe</button>
+</form>
+</div>
+
+<div class="footer"><p>&copy; 2026 Teyvat Starter Guide &middot; Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('Subscribed!');
+    } catch(err) {
+      alert('Something went wrong, please try again.');
+    }
+  });
+});
+</script>
+</body>
+</html>

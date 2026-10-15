@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神冻结与碎冰机制攻略：冻结时长、碎冰伤害与永冻队原理</title>
+<meta name="description" content="冻结多久取决于什么？碎冰伤害怎么算？为什么大剑砍冰史莱姆不算碎冰？完整解析冻结反应的元素量机制、碎冰触发条件与伤害公式、冻结抗性敌人清单，以及永冻队的运作原理。">
+<meta name="keywords" content="原神冻结,碎冰,永冻队,冻结时长,碎冰伤害,冻结反应,碎冰触发条件,原神冰系">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide-en.html" />
+<meta property="og:title" content="原神冻结与碎冰机制攻略：冻结时长、碎冰伤害与永冻队原理">
+<meta property="og:description" content="冻结多久取决于什么？碎冰伤害怎么算？为什么大剑砍冰史莱姆不算碎冰？完整解析冻结反应的元素量机制、碎冰触发条件与伤害公式、冻结抗性敌人清单，以及永冻队的运作原理。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神冻结与碎冰机制攻略：冻结时长、碎冰伤害与永冻队原理", "description": "冻结多久取决于什么？碎冰伤害怎么算？为什么大剑砍冰史莱姆不算碎冰？完整解析冻结反应的元素量机制、碎冰触发条件与伤害公式、冻结抗性敌人清单，以及永冻队的运作原理。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-15", "dateModified": "2026-10-15", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "冻结持续多久？", "acceptedAnswer": {"@type": "Answer", "text": "不是固定值。冻结时长取决于水、冰两侧中元素量较弱的一方：1 单位约 3.5 秒，2 单位约 5.8 秒，4 单位约 9.3 秒。单边堆元素量无效，两侧都要够。"}}, {"@type": "Question", "name": "碎冰伤害怎么算？", "acceptedAnswer": {"@type": "Answer", "text": "碎冰基础伤害 = 3 × 等级倍率，90 级约 4,341。只受触发者等级、元素精通与敌人物理抗性影响，不吃暴击、无视防御。200 精通时约 10,656。"}}, {"@type": "Question", "name": "什么攻击能触发碎冰？", "acceptedAnswer": {"@type": "Answer", "text": "钝击与岩元素攻击：大剑普攻、双手剑重击、下落攻击、岩系技能。且冻元素量需 ≥ 0.5 单位，钝击削韧消耗完后仍有剩余冻元素才会触发。"}}, {"@type": "Question", "name": "为什么大剑砍冰史莱姆不算碎冰？", "acceptedAnswer": {"@type": "Answer", "text": "因为那是物理削盾，不是元素反应。碎冰只对「被冻结的目标」生效，属于剧变反应、吃等级与精通；打冰史莱姆的护盾属于护盾量消耗，两者机制完全独立。"}}, {"@type": "Question", "name": "哪些敌人冻不住？", "acceptedAnswer": {"@type": "Answer", "text": "绝大多数 BOSS 完全免疫冻结；冰史莱姆与冰深渊法师免疫；深渊使徒护盾状态约 80% 冻结抗性，圣骸兽约 50%，地图地方传奇约 90%。体型巨大的敌人冻结时长会明显缩短。"}}, {"@type": "Question", "name": "永冻队为什么不能带火？", "acceptedAnswer": {"@type": "Answer", "text": "火元素命中冻结目标会消耗冻元素并触发融化，直接解冻、断掉控制链。雷元素同理，会触发超导解冻。永冻队的输出环境建立在持续冻结上，解冻等于失去全部优势。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神冻结与碎冰机制攻略：冻结时长、碎冰伤害与永冻队原理</h1>
+<p>冻结是原神里唯一的强控制反应，碎冰则是它唯一的「输出出口」。但这两个机制都被误解得很厉害：冻结时长不是固定秒数，碎冰也不是「拿大剑砍冰」那么简单。这篇一次讲清。</p>
+
+<div class="quick">
+<strong>快速答案</strong>
+<ul>
+<li>冻结 = <strong>水 + 冰</strong>（无先后手），<strong>本身不造成伤害</strong>，只把目标定身</li>
+<li><strong>冻结时长取决于两种元素中较弱那一方的元素量</strong>，不是固定值；1 单位水冰约冻 <strong>3.5 秒</strong>，2 单位约 <strong>5.8 秒</strong></li>
+<li><strong>碎冰</strong>：冻结目标被<strong>钝击（大剑、下落攻击）或岩元素攻击</strong>命中时触发，造成<strong>物理伤害</strong></li>
+<li>碎冰基础伤害 = <strong>3 × 等级倍率</strong>，90 级约 <strong>4,340</strong>；只受触发者等级、元素精通、敌人物理抗性影响，<strong>不吃暴击、无视防御</strong></li>
+<li>碎冰会<strong>立刻解除冻结</strong>——控制与伤害不可兼得</li>
+<li>多数 BOSS 与冰系自身（冰史莱姆、冰深渊法师）<strong>无法被冻结</strong></li>
+</ul>
+</div>
+
+<h2>冻结反应：水 + 冰，只控不打</h2>
+<p>冻结由<strong>水元素与冰元素接触</strong>触发，没有先后手之分。它属于剧变反应，但<strong>不造成任何伤害</strong>，只生成一层「冻元素」把目标定身：无法移动、无法攻击、无法释放技能。</p>
+<p>控制期间敌人仍会承受你的伤害，这是永冻队的核心——把敌人按在原地，让输出环境变得绝对安全。</p>
+
+<h2>冻结时长由什么决定</h2>
+<p><strong>不是固定秒数</strong>，而是取决于参与反应的两个元素里<strong>元素量（Gauge）较弱的一方</strong>。元素量越大，冻得越久，但增长是非线性的：</p>
+<table>
+<tr><th>参与反应的元素量</th><th>冻元素量</th><th>大致冻结时长</th></tr>
+<tr><td>1 单位 + 1 单位</td><td>2</td><td>约 3.5 秒</td></tr>
+<tr><td>2 单位 + 2 单位</td><td>4</td><td>约 5.8 秒</td></tr>
+<tr><td>4 单位 + 4 单位</td><td>8</td><td>约 9.3 秒</td></tr>
+<tr><td>水多冰少</td><td>取「冰」的值</td><td>按弱的一方算</td></tr>
+</table>
+<p>注意关键点：<strong>1 单位水 + 2 单位冰，结果和 1 + 1 一样</strong>，因为公式取两者最小值。所以想要长冻结，水冰两侧的元素量都要高，单边堆没用。这也是为什么强元素附着的水系角色（如心海、莫娜）对永冻队特别重要。</p>
+<p>另外，冻结时长会被敌人的<strong>冻结抗性</strong>直接削减，公式里是乘算，抗性越高冻得越短。</p>
+
+<h2>冻结状态下还能触发什么</h2>
+<p>冻元素是「可以被后续元素消耗」的，所以冻结目标不是只能等它自然解冻：</p>
+<table>
+<tr><th>命中冻结目标</th><th>结果</th></tr>
+<tr><td>火元素</td><td>消耗冻元素，触发<strong>融化</strong></td></tr>
+<tr><td>雷元素</td><td>消耗冻元素，触发<strong>超导</strong></td></tr>
+<tr><td>风元素</td><td>消耗冻元素，触发<strong>扩散</strong></td></tr>
+<tr><td>岩元素 / 钝击（大剑、下落攻击）</td><td>触发<strong>碎冰</strong>，造成物理伤害并解除冻结</td></tr>
+<tr><td>水 / 冰元素</td><td>不破冻，继续维持或延长冻结</td></tr>
+</table>
+<p>这解释了永冻队最怕什么：<strong>队伍里带火</strong>。一个火元素招式就能解冻，把控制链断掉。同理，雷也会解冻并顺带触发超导。</p>
+
+<h2>碎冰：冻结唯一的输出出口</h2>
+<p>碎冰的触发条件比想象中严格：</p>
+<ol>
+<li>目标必须<strong>处于冻结状态</strong>，且冻元素量需 <strong>≥ 0.5 单位</strong>（冰快化完了就打不出碎冰）。</li>
+<li>命中必须是<strong>钝击（Blunt）或岩元素攻击</strong>——大剑普攻、双手剑重击、下落攻击、岩系技能都算。</li>
+<li>钝击会先用「削韧值」消耗一部分冻元素，<strong>只有剩余冻元素还够，才会触发碎冰</strong>。</li>
+</ol>
+<p>碎冰造成<strong>物理伤害</strong>，属于剧变反应。它的特点很特别：</p>
+<ul>
+<li><strong>不吃暴击</strong>，<strong>无视敌人防御</strong>（只吃物理抗性）</li>
+<li>只受<strong>触发者的等级</strong>和<strong>元素精通</strong>影响</li>
+<li>会<strong>立刻解除冻结</strong>，换取一次瞬时伤害</li>
+<li>附带 90 点钝击削韧，可用于打断敌人动作</li>
+</ul>
+
+<h2>碎冰伤害有多少</h2>
+<p>碎冰基础伤害 = 3 × 等级倍率，随触发者等级提升：</p>
+<table>
+<tr><th>触发者等级</th><th>碎冰基础伤害（0 精通）</th><th>200 精通时</th><th>500 精通时</th></tr>
+<tr><td>70</td><td>2,297</td><td>5,636</td><td>9,646</td></tr>
+<tr><td>80</td><td>3,232</td><td>7,932</td><td>13,575</td></tr>
+<tr><td>90</td><td><strong>4,341</strong></td><td><strong>10,656</strong></td><td><strong>18,231</strong></td></tr>
+<tr><td>100</td><td>5,024</td><td>12,334</td><td>21,102</td></tr>
+</table>
+<p>精通加成按剧变反应公式 <strong>16 × EM ÷ (EM + 2000)</strong> 计算，收益远高于增幅反应：</p>
+<table>
+<tr><th>元素精通</th><th>碎冰伤害提升</th></tr>
+<tr><td>0</td><td>+0%</td></tr>
+<tr><td>100</td><td>+76%</td></tr>
+<tr><td>200</td><td>+145%</td></tr>
+<tr><td>400</td><td>+267%</td></tr>
+<tr><td>800</td><td>+457%</td></tr>
+</table>
+<p>结论很直接：<strong>碎冰流必须堆精通，且等级必须满</strong>。攻击力、暴击、爆伤对碎冰<strong>完全无用</strong>——这是很多人做碎冰流却打不出伤害的根本原因。</p>
+
+<h2>碎冰 ≠ 打冰史莱姆（最容易搞错的一点）</h2>
+<p>两件事经常被混为一谈，实际机制完全无关：</p>
+<table>
+<tr><th>项目</th><th>碎冰反应</th><th>破坏冰元素护盾</th></tr>
+<tr><td>对象</td><td>被冻结的角色/敌人</td><td>冰史莱姆、冰深渊法师的护盾</td></tr>
+<tr><td>本质</td><td>元素反应（剧变）</td><td>护盾量消耗</td></tr>
+<tr><td>受益属性</td><td>等级 + 元素精通</td><td>元素量 / 破盾效率</td></tr>
+<tr><td>是否解除冻结</td><td>是</td><td>不适用</td></tr>
+</table>
+<p>简单说：打冻结的敌人出的是<strong>碎冰</strong>，打冰史莱姆出的是<strong>纯物理削盾</strong>，别指望用碎冰去刷冰史莱姆。</p>
+
+<h2>哪些敌人冻不住</h2>
+<table>
+<tr><th>敌人</th><th>情况</th></tr>
+<tr><td>绝大多数 BOSS（周本、世界 BOSS）</td><td>完全免疫冻结，只吃水冰附着</td></tr>
+<tr><td>冰史莱姆、冰深渊法师</td><td>免疫（自身即冰元素）</td></tr>
+<tr><td>深渊使徒（护盾状态）</td><td>冻结抗性约 80%</td></tr>
+<tr><td>秘源机兵 / 分身类</td><td>冻结抗性约 80%</td></tr>
+<tr><td>圣骸兽</td><td>冻结抗性约 50%</td></tr>
+<tr><td>地方传奇（地图精英）</td><td>冻结抗性约 90%，几乎冻不住</td></tr>
+</table>
+<p>另外，体型巨大的敌人（丘丘王、遗迹守卫一类）<strong>冻结时长明显缩短</strong>，实战手感上基本只能打断一次动作。</p>
+
+<h2>永冻队怎么运作</h2>
+<ol>
+<li><strong>双水源源不断挂水。</strong>冻结时长取水冰中较弱的一方，水侧元素量必须够。</li>
+<li><strong>冰系提供冻结与输出。</strong>冰系主 C 在敌人被冻住时吃满暴击收益（如冰套对冻结目标额外暴击率）。</li>
+<li><strong>不带火、不带雷。</strong>火会融化解冻，雷会超导解冻，都会断掉控制链。</li>
+<li><strong>要碎冰伤害就加钝击手。</strong>碎冰流需要大剑/岩系角色专门负责打碎冰，且触发者要堆精通、满等级。</li>
+<li><strong>BOSS 战换思路。</strong>无法冻结的敌人面前，永冻队失去控制优势，需要换队伍或改打纯冰伤。</li>
+</ol>
+
+<h2>水面结冰小知识</h2>
+<p>用冰元素攻击可以在原神的水面上<strong>造冰</strong>并站上去：结冰时长 = 冰元素量（上限 3.2）× 2.5 秒。1 单位冰约 2.5 秒、2 单位约 5 秒，凯亚的霜袭（4 单位）能造出 8 秒的冰面。冰史莱姆与冰深渊法师也会给附近水面施加 3.2 单位冰，同样持续 8 秒。</p>
+
+<h2>相关阅读</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-reactions-detailed.html">元素反应详细机制</a>：增幅 vs 剧变的完整分类</li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide.html">元素附着与元素量</a>：单位、衰减与 ICD</li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide.html">破盾指南</a>：敌人护盾的元素量与效率</li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/crystallize-guide.html">结晶反应与护盾</a>：岩系的护盾机制</li>
+</ul><div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div>
+
+<div class="footer"><p>&copy; 2026 Teyvat Starter Guide &middot; Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('订阅成功！');
+    } catch(err) {
+      alert('订阅失败，请稍后再试。');
+    }
+  });
+});
+</script>
+</body>
+</html>

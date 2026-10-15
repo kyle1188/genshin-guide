@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genshin Frozen & Shatter Guide: Freeze Duration, Shatter Damage & Freeze Teams</title>
+<meta name="description" content="What decides how long a freeze lasts? How is Shatter damage calculated? Why does a claymore on a Cryo Slime not count as Shatter? Full breakdown of the Frozen reaction, Shatter triggers and formula, and freeze-resistant enemies.">
+<meta name="keywords" content="genshin frozen, shatter, freeze team, freeze duration, shatter damage, frozen reaction, genshin cryo">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide-en.html" />
+<meta property="og:title" content="Genshin Frozen & Shatter Guide: Freeze Duration, Shatter Damage & Freeze Teams">
+<meta property="og:description" content="What decides how long a freeze lasts? How is Shatter damage calculated? Why does a claymore on a Cryo Slime not count as Shatter? Full breakdown of the Frozen reaction, Shatter triggers and formula, and freeze-resistant enemies.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide-en.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Frozen & Shatter Guide: Freeze Duration, Shatter Damage & Freeze Teams", "description": "What decides how long a freeze lasts? How is Shatter damage calculated? Why does a claymore on a Cryo Slime not count as Shatter? Full breakdown of the Frozen reaction, Shatter triggers and formula, and freeze-resistant enemies.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-15", "dateModified": "2026-10-15", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide-en.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How long does a freeze last?", "acceptedAnswer": {"@type": "Answer", "text": "It is not fixed. Duration follows the weaker of the Hydro and Cryo gauges: about 3.5s for 1 unit each, 5.8s for 2 units, and 9.3s for 4 units. Stacking only one side does nothing because the formula takes the minimum."}}, {"@type": "Question", "name": "How is Shatter damage calculated?", "acceptedAnswer": {"@type": "Answer", "text": "Shatter base DMG is 3 x Level Multiplier, about 4,341 at level 90. It is scaled only by the triggerer level, Elemental Mastery and the target Physical RES; it cannot crit and ignores DEF. At 200 EM it reaches roughly 10,656."}}, {"@type": "Question", "name": "What attacks trigger Shatter?", "acceptedAnswer": {"@type": "Answer", "text": "Blunt and Geo attacks: claymore normal and charged attacks, plunging attacks, and Geo skills. The Freeze Aura must also be at least 0.5 units, and it must survive the blunt attack poise consumption."}}, {"@type": "Question", "name": "Why does a claymore on a Cryo Slime not count as Shatter?", "acceptedAnswer": {"@type": "Answer", "text": "Because that is physical shield damage, not an elemental reaction. Shatter only applies to frozen targets and scales with level and EM, while hitting a Cryo Slime shield is pure gauge consumption. The two systems are independent."}}, {"@type": "Question", "name": "Which enemies cannot be frozen?", "acceptedAnswer": {"@type": "Answer", "text": "Nearly all bosses are fully immune; Cryo Slimes and Cryo Abyss Mages are immune; Abyss Heralds while shielded sit near 80% Freeze Resistance, Consecrated Beasts around 50%, and overworld Local Legends around 90%. Large enemies also freeze for noticeably less time."}}, {"@type": "Question", "name": "Why can freeze teams not run Pyro?", "acceptedAnswer": {"@type": "Answer", "text": "Pyro hitting a frozen target consumes the Freeze Aura and triggers Melt, instantly ending the freeze; Electro does the same via Superconduct. A freeze team&rsquo;s entire output depends on the enemy staying frozen."}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide.html">中文</a>
+</div>
+<div class="container">
+<h1>Genshin Frozen &amp; Shatter Guide: Freeze Duration, Shatter Damage &amp; Freeze Teams</h1>
+<p>Frozen is the only hard crowd control reaction in Genshin, and Shatter is its only damage outlet. Both are widely misunderstood: freeze duration is not a fixed number of seconds, and Shatter is not simply &ldquo;hit ice with a claymore.&rdquo; Here is the whole system.</p>
+
+<div class="quick">
+<strong>Quick answer</strong>
+<ul>
+<li>Frozen = <strong>Hydro + Cryo</strong> (either order) and <strong>deals no damage</strong> &mdash; it only immobilises the target</li>
+<li><strong>Duration depends on the weaker of the two elements&rsquo; gauge</strong>, not a fixed value; 1 unit of each freezes for roughly <strong>3.5s</strong>, 2 units for about <strong>5.8s</strong></li>
+<li><strong>Shatter</strong> triggers when a Frozen target is hit by a <strong>Blunt attack (claymore, plunge) or a Geo attack</strong>, dealing <strong>Physical DMG</strong></li>
+<li>Shatter base DMG = <strong>3 &times; Level Multiplier</strong>, about <strong>4,341 at level 90</strong>; scaled only by the triggerer&rsquo;s level, Elemental Mastery and the target&rsquo;s Physical RES &mdash; <strong>it cannot crit and ignores DEF</strong></li>
+<li>Shatter <strong>immediately ends the freeze</strong> &mdash; control and damage are mutually exclusive</li>
+<li>Most bosses and Cryo-native enemies (Cryo Slimes, Cryo Abyss Mages) <strong>cannot be frozen</strong></li>
+</ul>
+</div>
+
+<h2>Frozen: Hydro + Cryo, control only</h2>
+<p>Frozen is triggered when <strong>Hydro meets Cryo</strong> on a target, in either order. It is classed as a transformative reaction but <strong>deals no damage at all</strong>. Instead it applies a Freeze Aura that immobilises the target: no movement, no attacks, no skills.</p>
+<p>The enemy still takes your damage while frozen, which is the entire point of a freeze team &mdash; pin the target down and turn the fight into a safe, stationary training dummy.</p>
+
+<h2>What decides freeze duration</h2>
+<p><strong>Not a fixed number of seconds.</strong> The duration is set by the <strong>weaker of the two elements&rsquo; gauge units</strong>. More gauge means longer freeze, but growth is non-linear:</p>
+<table>
+<tr><th>Gauge involved</th><th>Freeze Aura</th><th>Approx. duration</th></tr>
+<tr><td>1 unit + 1 unit</td><td>2</td><td>~3.5s</td></tr>
+<tr><td>2 units + 2 units</td><td>4</td><td>~5.8s</td></tr>
+<tr><td>4 units + 4 units</td><td>8</td><td>~9.3s</td></tr>
+<tr><td>Lots of Hydro, little Cryo</td><td>Takes the Cryo value</td><td>Set by the weak side</td></tr>
+</table>
+<p>The key takeaway: <strong>1 unit of Hydro plus 2 units of Cryo behaves like 1 + 1</strong>, because the formula takes the minimum. To freeze longer you need strong gauges on <em>both</em> sides &mdash; stacking one is useless. That is why strong Hydro appliers (Kokomi, Mona) matter so much to freeze teams.</p>
+<p>Freeze duration is also cut by the target&rsquo;s <strong>Freeze Resistance</strong>, applied multiplicatively in the duration formula.</p>
+
+<h2>What can still react on a frozen target</h2>
+<p>The Freeze Aura can be consumed by a follow-up element, so a frozen target is not simply waiting out the timer:</p>
+<table>
+<tr><th>Hit on a Frozen target</th><th>Result</th></tr>
+<tr><td>Pyro</td><td>Consumes the aura, triggers <strong>Melt</strong></td></tr>
+<tr><td>Electro</td><td>Consumes the aura, triggers <strong>Superconduct</strong></td></tr>
+<tr><td>Anemo</td><td>Consumes the aura, triggers <strong>Swirl</strong></td></tr>
+<tr><td>Geo / Blunt (claymore, plunge)</td><td>Triggers <strong>Shatter</strong> for Physical DMG and ends the freeze</td></tr>
+<tr><td>Hydro / Cryo</td><td>Does not break it; keeps the freeze going</td></tr>
+</table>
+<p>This is why freeze teams avoid Pyro above all: one Pyro hit melts the aura and the control chain collapses. Electro breaks it too, via Superconduct.</p>
+
+<h2>Shatter: the only damage outlet</h2>
+<p>The trigger conditions are stricter than most players assume:</p>
+<ol>
+<li>The target must be <strong>frozen</strong>, with at least <strong>0.5 units</strong> of Freeze Aura remaining (a nearly-expired freeze cannot Shatter).</li>
+<li>The hit must be a <strong>Blunt (claymore swings, plunging attacks) or Geo attack</strong>.</li>
+<li>A blunt attack first consumes Freeze Aura according to its <strong>poise damage</strong>; <strong>Shatter only triggers if aura remains afterwards</strong>.</li>
+</ol>
+<p>Shatter deals <strong>Physical DMG</strong> as a transformative reaction, with unusual rules:</p>
+<ul>
+<li><strong>Cannot crit</strong> and <strong>ignores enemy DEF</strong> (only Physical RES applies)</li>
+<li>Scaled purely by the <strong>triggerer&rsquo;s level</strong> and <strong>Elemental Mastery</strong></li>
+<li><strong>Immediately ends the freeze</strong> in exchange for one burst of damage</li>
+<li>Carries 90 poise damage, useful for interrupting enemy actions</li>
+</ul>
+
+<h2>How much does Shatter hit for</h2>
+<p>Shatter base DMG = 3 &times; Level Multiplier, rising with the triggerer&rsquo;s level:</p>
+<table>
+<tr><th>Triggerer level</th><th>Shatter base (0 EM)</th><th>At 200 EM</th><th>At 500 EM</th></tr>
+<tr><td>70</td><td>2,297</td><td>5,636</td><td>9,646</td></tr>
+<tr><td>80</td><td>3,232</td><td>7,932</td><td>13,575</td></tr>
+<tr><td>90</td><td><strong>4,341</strong></td><td><strong>10,656</strong></td><td><strong>18,231</strong></td></tr>
+<tr><td>100</td><td>5,024</td><td>12,334</td><td>21,102</td></tr>
+</table>
+<p>The EM bonus follows the transformative formula <strong>16 &times; EM &divide; (EM + 2000)</strong>, far steeper than amplifying reactions:</p>
+<table>
+<tr><th>Elemental Mastery</th><th>Shatter DMG bonus</th></tr>
+<tr><td>0</td><td>+0%</td></tr>
+<tr><td>100</td><td>+76%</td></tr>
+<tr><td>200</td><td>+145%</td></tr>
+<tr><td>400</td><td>+267%</td></tr>
+<tr><td>800</td><td>+457%</td></tr>
+</table>
+<p>The conclusion is blunt: <strong>Shatter builds must stack EM and must be max level</strong>. ATK, CRIT Rate and CRIT DMG do <strong>nothing</strong> for Shatter &mdash; which is exactly why many &ldquo;Shatter builds&rdquo; hit like wet noodles.</p>
+
+<h2>Shatter is not &ldquo;breaking a Cryo Slime&rdquo;</h2>
+<p>These two get conflated constantly, but share no mechanics:</p>
+<table>
+<tr><th>Item</th><th>Shatter reaction</th><th>Breaking a Cryo shield</th></tr>
+<tr><td>Target</td><td>A frozen character or enemy</td><td>Cryo Slime / Cryo Abyss Mage shield</td></tr>
+<tr><td>Nature</td><td>Elemental reaction (transformative)</td><td>Shield gauge consumption</td></tr>
+<tr><td>Scales with</td><td>Level + Elemental Mastery</td><td>Elemental gauge / break efficiency</td></tr>
+<tr><td>Ends the freeze?</td><td>Yes</td><td>Not applicable</td></tr>
+</table>
+<p>Simply put: hitting a <em>frozen</em> enemy produces Shatter; hitting a Cryo Slime produces plain physical shield damage. Do not expect Shatter to farm Cryo Slimes.</p>
+
+<h2>What cannot be frozen</h2>
+<table>
+<tr><th>Enemy</th><th>Situation</th></tr>
+<tr><td>Almost all bosses (weekly, world)</td><td>Fully immune &mdash; only take Hydro/Cryo aura</td></tr>
+<tr><td>Cryo Slimes, Cryo Abyss Mages</td><td>Immune (Cryo-native)</td></tr>
+<tr><td>Abyss Heralds (while shielded)</td><td>~80% Freeze Resistance</td></tr>
+<tr><td>Bunshin-type enemies</td><td>~80% Freeze Resistance</td></tr>
+<tr><td>Consecrated Beasts</td><td>~50% Freeze Resistance</td></tr>
+<tr><td>Local Legends (overworld elites)</td><td>~90% Freeze Resistance, effectively unfreezable</td></tr>
+</table>
+<p>Large enemies (Mitachurls, Ruin Guards and similar) also <strong>freeze for noticeably less time</strong> &mdash; in practice you get one interrupt out of it.</p>
+
+<h2>How freeze teams work</h2>
+<ol>
+<li><strong>Two Hydro appliers.</strong> Since duration is capped by the weaker gauge, the Hydro side must be strong.</li>
+<li><strong>A Cryo carry for damage.</strong> While the target is frozen, a Cryo DPS cashes in on the CRIT Rate bonuses freeze-oriented sets provide.</li>
+<li><strong>No Pyro, no Electro.</strong> Pyro Melts the aura, Electro Superconducts it &mdash; both break the chain.</li>
+<li><strong>Add a blunt user for Shatter.</strong> A Shatter build needs a claymore or Geo character dedicated to cracking ice, with EM and max level.</li>
+<li><strong>Rethink for boss fights.</strong> Against unfreezable enemies the control advantage disappears &mdash; swap teams or pivot to raw Cryo damage.</li>
+</ol>
+
+<h2>Freezing water</h2>
+<p>Cryo attacks can freeze open water so you can stand on it: duration = Cryo gauge (capped at 3.2) &times; 2.5s. 1 unit gives ~2.5s, 2 units ~5s, and Kaeya&rsquo;s Frostgnaw (4 units) makes an 8-second ice bridge. Cryo Slimes and Cryo Abyss Mages apply 3.2 units to nearby water, also producing 8 seconds of ice.</p>
+
+<h2>Related guides</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-reactions-detailed.html">Elemental Reactions Explained</a>: the full amplifying vs transformative breakdown</li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide.html">Elemental Application &amp; Gauge</a>: units, decay and ICD</li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide.html">Shield Breaking Guide</a>: enemy shields, gauge and efficiency</li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/crystallize-guide.html">Crystallize &amp; Shields</a>: the Geo shield mechanics</li>
+</ul><div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide.html">查看中文版</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>Subscribe for Genshin Tips</h3>
+<p>Weekly character builds and version guides, no spam.</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">Subscribe</button>
+</form>
+</div>
+
+<div class="footer"><p>&copy; 2026 Teyvat Starter Guide &middot; Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('Subscribed!');
+    } catch(err) {
+      alert('Something went wrong, please try again.');
+    }
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神结晶反应攻略：结晶护盾盾量公式、吸收效率与实战用法</title>
+<meta name="description" content="结晶护盾有多厚？精通加多少？为什么岩盾能挡所有伤害？完整解析结晶反应触发条件、盾量公式与等级/精通对照表、250%/150% 吸收效率、多盾共存规则，以及结晶盾与角色护盾的区别。">
+<meta name="keywords" content="原神结晶反应,结晶护盾,盾量计算,护盾强效,岩元素反应,结晶盾,元素精通,岩系护盾">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/crystallize-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/crystallize-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/crystallize-guide-en.html" />
+<meta property="og:title" content="原神结晶反应攻略：结晶护盾盾量公式、吸收效率与实战用法">
+<meta property="og:description" content="结晶护盾有多厚？精通加多少？为什么岩盾能挡所有伤害？完整解析结晶反应触发条件、盾量公式与等级/精通对照表、250%/150% 吸收效率、多盾共存规则，以及结晶盾与角色护盾的区别。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/crystallize-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神结晶反应攻略：结晶护盾盾量公式、吸收效率与实战用法", "description": "结晶护盾有多厚？精通加多少？为什么岩盾能挡所有伤害？完整解析结晶反应触发条件、盾量公式与等级/精通对照表、250%/150% 吸收效率、多盾共存规则，以及结晶盾与角色护盾的区别。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-15", "dateModified": "2026-10-15", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/crystallize-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "结晶反应怎么触发？", "acceptedAnswer": {"@type": "Answer", "text": "岩元素攻击命中已附着火、水、冰或雷的目标时触发。岩元素自身不能附着，只能作为触发元素，因此岩+岩不会产生结晶。攻击水面、感电水、燃烧草地等环境元素也不会生成晶片。"}}, {"@type": "Question", "name": "结晶护盾有多厚？", "acceptedAnswer": {"@type": "Answer", "text": "盾量 = 基础盾量（按触发岩角色的等级）×（1 + 精通加成）。90 级基础为 1,851，80 级 1,597，70 级 1,315。等级不拉满，盾量会薄很多。"}}, {"@type": "Question", "name": "元素精通对结晶盾加多少？", "acceptedAnswer": {"@type": "Answer", "text": "按 4.44 × EM ÷ (EM + 1400) 计算。100 精通 +29.6%，200 精通 +55.5%，300 精通 +78.4%，1000 精通 +185%。300 精通以内性价比最高，再往上收益明显变缓。"}}, {"@type": "Question", "name": "为什么说岩盾能挡所有伤害？", "acceptedAnswer": {"@type": "Answer", "text": "岩系护盾（由幼岩龙蜥等产出）对全部伤害类型都有 150% 吸收效率；而元素结晶盾只对「同元素」伤害有 250% 吸收，其他元素为 100%。两者是不同的护盾体系，可以同时存在。"}}, {"@type": "Question", "name": "护盾强效是加盾量吗？", "acceptedAnswer": {"@type": "Answer", "text": "不是。护盾强效减少的是「当前场上角色所持护盾受到的伤害」，盾量本身不变。例如 21% 减伤下，能抗 1000 伤害的盾只会被扣 790 点。它只对当前场上角色生效。"}}, {"@type": "Question", "name": "多个护盾能叠加吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以同时存在，但受击时每个护盾会被扣除相同的伤害值，实际保护量约等于最厚的那一个盾，而不是相加。结晶盾与角色技能护盾可以共存，形成双层保险。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/crystallize-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神结晶反应攻略：结晶护盾盾量公式、吸收效率与实战用法</h1>
+<p>结晶是原神里唯一会「掉东西」的元素反应：它不掉血，掉的是护盾。但它的盾量由谁决定、精通到底加多少、为什么它可以和角色护盾共存——这些细节几乎没人讲清。这篇一次说明白。</p>
+
+<div class="quick">
+<strong>快速答案</strong>
+<ul>
+<li>结晶 = <strong>岩元素 + 火 / 水 / 冰 / 雷</strong>（岩不能附着，只能当触发元素），<strong>本身不造成伤害</strong></li>
+<li>掉落对应元素的<strong>晶片</strong>，拾取后获得同元素护盾；<strong>晶片与护盾各存在 15 秒</strong></li>
+<li>同一时刻<strong>只能存在一个结晶护盾</strong>，再拾取会覆盖旧的</li>
+<li>盾量 = <strong>基础盾量（由触发岩角色的等级决定）×（1 + 精通加成）</strong>；90 级基础 <strong>1,851</strong>，精通 200 加 <strong>55.5%</strong></li>
+<li>元素结晶盾对<strong>同元素伤害有 250% 吸收</strong>（只吃 40%）；岩系护盾对<strong>所有伤害 150%</strong></li>
+<li><strong>护盾强效</strong>（如双岩共鸣 +15%）减的是「护盾受到的伤害」，不是加盾量</li>
+<li>多个护盾共存时，伤害会<strong>同时</strong>扣每一个盾</li>
+</ul>
+</div>
+
+<h2>结晶反应：岩 + 四大元素，掉盾不掉血</h2>
+<p>当<strong>岩元素攻击</strong>命中已经附着<strong>火、水、冰、雷</strong>的目标时触发结晶。岩元素本身无法附着在敌人身上，所以它永远只能当「触发元素」，不能当「被触发元素」——这也意味着<strong>结晶不能由岩 + 岩产生</strong>。</p>
+<p>反应不造成任何伤害，而是在目标脚下掉出一枚对应元素的晶片。拾取后获得一层同元素护盾。</p>
+<table>
+<tr><th>项目</th><th>数值 / 规则</th></tr>
+<tr><td>触发条件</td><td>岩元素命中附着了火 / 水 / 冰 / 雷的目标</td></tr>
+<tr><td>反应伤害</td><td>无</td></tr>
+<tr><td>晶片持续</td><td>15 秒（场上最多 3 枚，超出后最旧的约 2 秒后消失）</td></tr>
+<tr><td>护盾持续</td><td>15 秒</td></tr>
+<tr><td>同时可持有</td><td>1 个结晶护盾（再拾取覆盖）</td></tr>
+<tr><td>触发冷却</td><td>同一目标每秒最多触发 1 次</td></tr>
+<tr><td>元素消耗</td><td>1 单位岩最多反应掉 0.5 单位附着元素</td></tr>
+</table>
+<p>注意两个限制：<strong>攻击「环境元素」不会产生结晶</strong>（打水面、感电水、燃烧的草堆都不行，因为岩元素没打到实体）；另外晶片不能被敌人拾取。</p>
+
+<h2>盾量怎么算</h2>
+<p>结晶盾的盾量由两部分决定：</p>
+<p><strong>盾量 = 基础盾量（按触发岩角色的等级）×（1 + 精通加成）</strong></p>
+<p>基础盾量只看<strong>触发结晶的那名岩系角色的等级</strong>，与攻击力、防御力、生命值都无关：</p>
+<table>
+<tr><th>触发者等级</th><th>基础盾量（0 精通）</th></tr>
+<tr><td>50</td><td>786.79</td></tr>
+<tr><td>70</td><td>1,314.75</td></tr>
+<tr><td>80</td><td>1,596.81</td></tr>
+<tr><td>90</td><td><strong>1,851.06</strong></td></tr>
+<tr><td>95</td><td>2,041.57</td></tr>
+<tr><td>100</td><td>2,198.81</td></tr>
+</table>
+<p>所以一个 60 级岩角色触发的结晶盾，比 90 级的薄一半以上。想靠结晶盾保命，<strong>触发者等级必须拉满</strong>。</p>
+
+<h2>元素精通对结晶盾的价值</h2>
+<p>精通加成按公式 <strong>4.44 × EM ÷ (EM + 1400)</strong> 计算，收益很快饱和：</p>
+<table>
+<tr><th>元素精通</th><th>盾量提升</th><th>90 级实际盾量</th></tr>
+<tr><td>0</td><td>+0%</td><td>1,851</td></tr>
+<tr><td>100</td><td>+29.6%</td><td>2,399</td></tr>
+<tr><td>200</td><td>+55.5%</td><td>2,878</td></tr>
+<tr><td>300</td><td>+78.4%</td><td>3,302</td></tr>
+<tr><td>500</td><td>+116.8%</td><td>4,013</td></tr>
+<tr><td>1000</td><td>+185.0%</td><td>5,276</td></tr>
+</table>
+<p>结论：<strong>300 精通以内性价比很高（盾量已 +78%）</strong>，再往上收益明显变缓。对以结晶盾为辅助手段的队伍，300 精通左右是比较舒服的目标；不建议为了盾量硬堆到 800+。</p>
+
+<h2>250% 与 150%：吸收效率才是关键</h2>
+<p>盾量只是「血量」，真正决定能抗多少的是<strong>吸收效率</strong>：</p>
+<table>
+<tr><th>护盾类型</th><th>对同元素伤害</th><th>对其他伤害</th></tr>
+<tr><td>元素结晶盾（火 / 水 / 冰 / 雷）</td><td><strong>250%</strong>（只吃 40%）</td><td>100%</td></tr>
+<tr><td>岩系护盾（幼岩龙蜥晶片）</td><td><strong>150%</strong></td><td><strong>150%</strong></td></tr>
+<tr><td>角色技能护盾（钟离、迪奥娜、诺艾尔等）</td><td colspan="2">由技能定义，多为「对应元素 250%」或「全伤害 150%」</td></tr>
+</table>
+<p>所以面对<strong>火伤敌人</strong>时，捡一枚火结晶盾，等于盾量凭空变成 2.5 倍——这才是结晶盾的正确用法。反过来，捡错元素的盾去打对应敌人，效率就是 100%，非常吃亏。</p>
+<p>岩系护盾（由幼岩龙蜥、纯岩原盘等产出）属于独立体系，<strong>不与结晶盾互相覆盖</strong>，可以同时存在。</p>
+
+<h2>多盾共存会怎样</h2>
+<p>很多人以为「多套盾叠加 = 盾更厚」，其实机制是：</p>
+<ul>
+<li>受到伤害时，<strong>每一个护盾会被同时扣除相同的伤害值</strong>；</li>
+<li>实际保护量约等于<strong>最厚的那一个盾</strong>，而不是相加；</li>
+<li>所以叠盾的真实收益是「多一层保险」，而不是「血量翻倍」。</li>
+</ul>
+<p>不过多盾确实有实用价值：结晶盾薄、容易碎，但角色技能盾通常在冷却中；两层盾能显著减少空窗期。</p>
+
+<h2>护盾强效到底加什么</h2>
+<p>这是最常被误解的一条：<strong>护盾强效不是加盾量</strong>。</p>
+<p>它的作用是：<strong>减少「当前场上角色身上的护盾」所受到的伤害</strong>。也就是说，盾量还是那么多，只是每次挨打扣得更少。例子：一个能抗 1000 伤害的盾，在 21% 减伤（如行秋雨帘剑）加持下，只被扣 790 点盾值。</p>
+<ul>
+<li>护盾强效只对<strong>当前场上角色</strong>生效，换人即失效；</li>
+<li>双岩共鸣提供约 +15% 护盾强效，对全队护盾都有意义；</li>
+<li>因为它是减伤性质，越薄的盾收益越明显——正好补结晶盾「薄」的短板。</li>
+</ul>
+
+<h2>结晶盾 vs 角色技能护盾</h2>
+<table>
+<tr><th>项目</th><th>结晶护盾</th><th>角色技能护盾</th></tr>
+<tr><td>盾量来源</td><td>触发者等级 + 元素精通</td><td>通常为 DEF / HP / ATK × 技能倍率</td></tr>
+<tr><td>获取方式</td><td>捡晶片（需岩角色 + 附着元素）</td><td>释放技能即可</td></tr>
+<tr><td>元素类型</td><td>单一元素（火/水/冰/雷）</td><td>视技能而定</td></tr>
+<tr><td>持续时间</td><td>固定 15 秒</td><td>随技能，通常 12–20 秒</td></tr>
+<tr><td>吸收效率</td><td>同元素 250%</td><td>依技能定义</td></tr>
+<tr><td>是否可共存</td><td colspan="2">可以共存，但受击时同时扣减</td></tr>
+</table>
+<p>实战定位：结晶盾更适合当<strong>「顺手的额外一层」</strong>——队伍里有岩系角色时，打附着元素敌人就能顺手捡盾；但不要指望它替代专职护盾角色。</p>
+
+<h2>什么时候值得专门吃结晶盾</h2>
+<ol>
+<li><strong>敌人伤害类型明确时。</strong>面对火法、水法、雷史莱姆这类单一元素输出，捡对应元素盾效率是 250%。</li>
+<li><strong>岩系角色在场时顺路捡。</strong>不必刻意改配队，岩系打反应顺手会掉晶片。</li>
+<li><strong>缺一个「防秒杀」缓冲。</strong>在深渊高层被一套连招压血线时，一层结晶盾常常就是生与死的差别。</li>
+<li><strong>配合护盾强效。</strong>双岩共鸣 + 结晶盾的组合能把一层薄盾的实际承伤能力拉高一个档次。</li>
+</ol>
+
+<h2>冷知识：冻结状态的结晶优先级</h2>
+<p>被冻结的目标吃到岩元素攻击时，<strong>碎冰的优先级高于结晶</strong>。如果冻结状态下还有「藏元素」（未完全消耗的水/冰），碎冰解除冻结后剩余藏元素才会与岩形成结晶，掉出对应元素的盾。所以「岩打冻住的水环境敌人」经常能顺手拿到一枚水结晶盾。</p>
+<p>另外，感电状态（雷水共存）下，元素优先级为雷 &gt; 水，因此<strong>只会与雷反应生成雷结晶盾</strong>，水元素会残留在敌人头上。</p>
+
+<h2>相关阅读</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide.html">冻结与碎冰机制</a>：冻结时长与碎冰伤害</li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-reactions-detailed.html">元素反应详细机制</a>：增幅 vs 剧变的完整分类</li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/shielder-guide.html">护盾角色指南</a>：钟离、迪奥娜、诺艾尔等对比</li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide.html">破盾指南</a>：敌人护盾的效率机制</li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-mastery-guide.html">元素精通指南</a>：精通对各反应的加成</li>
+</ul><div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/crystallize-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div>
+
+<div class="footer"><p>&copy; 2026 Teyvat Starter Guide &middot; Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('订阅成功！');
+    } catch(err) {
+      alert('订阅失败，请稍后再试。');
+    }
+  });
+});
+</script>
+</body>
+</html>
