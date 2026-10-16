@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genshin Elemental Particles and Energy Guide: Orbs, On-Field vs Off-Field, ER Math</title>
+<meta name="description" content="How much energy do elemental particles give? Full breakdown of the same-element 300% rule, clear particle 200%, off-field 60%, plus a particle generation table and ER conversion examples.">
+<meta name="keywords" content="genshin elemental particles, energy orb, energy recharge mechanics, off-field energy, battery, funneling, particle generation">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/elemental-particle-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/elemental-particle-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/elemental-particle-guide-en.html" />
+<meta property="og:title" content="Genshin Elemental Particles and Energy Guide: Orbs, On-Field vs Off-Field, ER Math">
+<meta property="og:description" content="How much energy do elemental particles give? Full breakdown of the same-element 300% rule, clear particle 200%, off-field 60%, plus a particle generation table and ER conversion examples.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/elemental-particle-guide-en.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Elemental Particles and Energy Guide: Orbs, On-Field vs Off-Field, ER Math", "description": "How much energy do elemental particles give? Full breakdown of the same-element 300% rule, clear particle 200%, off-field 60%, plus a particle generation table and ER conversion examples.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-17", "dateModified": "2026-10-17", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/elemental-particle-guide-en.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the difference between an elemental particle and an orb?", "acceptedAnswer": {"@type": "Answer", "text": "An orb is worth three times a particle (3 base energy versus 1). Particles come mainly from Elemental Skills, while orbs only drop when an enemy crosses specific HP thresholds."}}, {"@type": "Question", "name": "Why is my carry always short on energy?", "acceptedAnswer": {"@type": "Answer", "text": "Check whether it is catching particles off-field. Off-field characters receive only 60% in a four-man party, so swapping your carry in to catch them is worth 1.67x."}}, {"@type": "Question", "name": "How much ER should I build?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the character and the team. Rough brackets: zero-generation sustained damage dealers often need 200% or more, carries with a same-element battery usually sit at 120%-150%, and cheap-Burst supports are often fine at 100%-120%."}}, {"@type": "Question", "name": "What is flat energy?", "acceptedAnswer": {"@type": "Answer", "text": "Energy that goes straight into the Burst meter and is not affected by Energy Recharge. Common sources are certain weapon passives, the Scholar and Exile sets, and Raiden Shogun's Burst."}}, {"@type": "Question", "name": "Does party size affect energy gain?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Off-field returns scale from 60% in a four-character party to 70% at three and 80% at two."}}, {"@type": "Question", "name": "Why funnel particles to your carry?", "acceptedAnswer": {"@type": "Answer", "text": "Because on-field is worth 1.67x off-field. Casting a support skill and immediately swapping to your carry is the cheapest way to reduce ER requirements."}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/elemental-particle-guide.html">中文</a>
+</div>
+<div class="container">
+<h1>Genshin Elemental Particles and Energy Guide: Orbs, On-Field vs Off-Field, ER Math</h1>
+<p>Why does someone else's Burst always come back on cooldown while yours lags behind? Stacking Energy Recharge (ER) is only half the story. The deeper reason is <strong>where particles come from, who catches them, and whether they match the element</strong>. Three particles can be worth 9 energy on-field on the same element, or 1.8 energy off-field on a different element - a five-fold difference.</p>
+<div class="quick">
+<p><strong>Quick answer</strong></p>
+<ul>
+<li><strong>Base values</strong>: 1 elemental particle = 1 base energy, 1 elemental orb = 3 (three times a particle).</li>
+<li><strong>Element match</strong>: same element pays <strong>300%</strong> of base, a clear (elementless) particle pays <strong>200%</strong>, a different element pays only <strong>100%</strong>.</li>
+<li><strong>On-field vs off-field</strong>: off-field characters only receive <strong>60%</strong> in a 4-character party, 70% in a 3-character party and 80% in a 2-character party.</li>
+<li><strong>What ER does</strong>: it multiplies the energy you receive - it <strong>never makes you generate more particles</strong>. Tested up to 300% with no soft cap.</li>
+<li><strong>Cheapest fix</strong>: keep your battery on the same element as your carry, and let the carry be on-field to catch the particles.</li>
+</ul>
+</div>
+
+<h2>Particles, orbs and flat energy are three different things</h2>
+<ul>
+<li><strong>Elemental particles</strong>: generated when an Elemental Skill hits an enemy; 1 base energy each.</li>
+<li><strong>Elemental orbs</strong>: only dropped when an enemy crosses an HP threshold; 3 base energy each, three times a particle.</li>
+<li><strong>Flat energy</strong>: energy injected straight into the Burst meter, <strong>unaffected by Energy Recharge</strong>. Sources include certain weapon passives, the Scholar and Exile artifact sets, and Raiden Shogun's Burst.</li>
+</ul>
+<p>Colour matters too. Characters can only generate particles of their own element, so skill particles always match the caster. <strong>Clear (elementless) particles</strong> come mainly from the Favonius weapon passive and some enemy drops, and they pay 200% to everyone regardless of element.</p>
+
+<h2>Full energy conversion table</h2>
+<table>
+<tr><th>Pickup</th><th>On-field</th><th>Off-field (4-man)</th><th>Off-field (3-man)</th><th>Off-field (2-man)</th></tr>
+<tr><td>Same-element particle</td><td>3.0</td><td>1.8</td><td>2.1</td><td>2.4</td></tr>
+<tr><td>Same-element orb</td><td>9.0</td><td>5.4</td><td>6.3</td><td>7.2</td></tr>
+<tr><td>Clear particle</td><td>2.0</td><td>1.2</td><td>1.4</td><td>1.6</td></tr>
+<tr><td>Clear orb</td><td>6.0</td><td>3.6</td><td>4.2</td><td>4.8</td></tr>
+<tr><td>Different-element particle</td><td>1.0</td><td>0.6</td><td>0.7</td><td>0.8</td></tr>
+<tr><td>Different-element orb</td><td>3.0</td><td>1.8</td><td>2.1</td><td>2.4</td></tr>
+</table>
+<p>None of these numbers include Energy Recharge yet. A worked example: Xiangling's Guoba produces one Pyro particle. On-field Hu Tao (Pyro) catches it at 3 base energy; at 150% ER she actually receives 4.5.</p>
+<p>Now stack ER on top:</p>
+<table>
+<tr><th>Base energy</th><th>100% ER</th><th>150% ER</th><th>200% ER</th><th>250% ER</th></tr>
+<tr><td>3 (same element, on-field)</td><td>3.0</td><td>4.5</td><td>6.0</td><td>7.5</td></tr>
+<tr><td>1.8 (same element, off-field)</td><td>1.8</td><td>2.7</td><td>3.6</td><td>4.5</td></tr>
+<tr><td>1 (different element, on-field)</td><td>1.0</td><td>1.5</td><td>2.0</td><td>2.5</td></tr>
+</table>
+
+<h2>Three rules that save a lot of ER</h2>
+<ol>
+<li><strong>Funnel to your carry.</strong> The same particle is worth 1.67x more on-field than off-field. Cast a support's skill, then swap to your carry so the particles land on them.</li>
+<li><strong>Match the battery's element to your carry's.</strong> Same element is 300% versus 100% for a mismatch. This is exactly why Xiangling pairs with Bennett, Xiao with Sucrose, and Eula with Diona.</li>
+<li><strong>Smaller parties refund more per character.</strong> Off-field returns are 60% at four members but 80% at two - which is why duo runs often have no energy problems while full four-man teams stall.</li>
+</ol>
+
+<h2>Who generates particles: skill generation table</h2>
+<p>Average particles per Elemental Skill cast. The spread is huge - from 0 to 5.</p>
+<table>
+<tr><th>Character</th><th>Element</th><th>Average particles</th><th>Notes</th></tr>
+<tr><td>Xingqiu</td><td>Hydro</td><td>5</td><td>Highest single-skill generation in the game</td></tr>
+<tr><td>Kamisato Ayaka</td><td>Cryo</td><td>4.5</td><td>Dash into skill is the standard opener</td></tr>
+<tr><td>Chongyun / Klee / Sucrose / Xinyan</td><td>Cryo / Pyro / Anemo / Pyro</td><td>4</td><td>Consistently high output</td></tr>
+<tr><td>Venti</td><td>Anemo</td><td>3 tap / 4 hold</td><td>Hold is better for energy</td></tr>
+<tr><td>Kazuha</td><td>Anemo</td><td>3 tap / 4 hold</td><td>C1 shortens the skill cooldown</td></tr>
+<tr><td>Ningguang / Geo Traveler / Mona</td><td>Geo / Geo / Hydro</td><td>3.33</td><td>-</td></tr>
+<tr><td>Yanfei / Rosaria / Razor / Xiao</td><td>Pyro / Cryo / Electro / Anemo</td><td>3</td><td>Xiao generates none during his Burst state</td></tr>
+<tr><td>Keqing</td><td>Electro</td><td>2.5</td><td>Triggers on hit</td></tr>
+<tr><td>Bennett</td><td>Pyro</td><td>2.25 tap / 3 hold</td><td>The classic healer plus battery</td></tr>
+<tr><td>Kaeya</td><td>Cryo</td><td>2.67</td><td>His passive adds particles when enemies are frozen</td></tr>
+<tr><td>Xiangling</td><td>Pyro</td><td>1 (per Guoba hit)</td><td>The skill itself generates nothing</td></tr>
+<tr><td>Fischl</td><td>Electro</td><td>0.67 (per Oz hit)</td><td>Slow but steady, decent total</td></tr>
+<tr><td>Zhongli</td><td>Geo</td><td>0.5 (resonance hit)</td><td>1.5s cooldown makes it reliable long-term</td></tr>
+<tr><td>Barbara / Noelle / Qiqi / Lisa (tap)</td><td>Hydro / Geo / Cryo / Electro</td><td>0</td><td>Skills generate nothing at all - they need teammates to feed them</td></tr>
+</table>
+<p>The practical takeaway: pairing zero-generation characters with high-generation ones changes your ER requirements completely. Characters that must rely on normal attacks to recharge usually need 200% ER or more.</p>
+
+<h2>Every other energy source</h2>
+<table>
+<tr><th>Source</th><th>Type</th><th>Scaled by ER?</th></tr>
+<tr><td>Elemental Skill hits</td><td>Elemental particles</td><td>Yes</td></tr>
+<tr><td>Enemy HP thresholds</td><td>Particles / orbs, including clear</td><td>Yes</td></tr>
+<tr><td>Normal and Charged Attack hits (chance based)</td><td>About 1 flat energy, on-field character only</td><td>No</td></tr>
+<tr><td>Favonius weapon passives</td><td>3 clear particles</td><td>Yes (refinement only raises trigger frequency)</td></tr>
+<tr><td>Prototype Amber, Amenoma Kageuchi, Katsuragikiri Nagamasa, Kitain Cross Spear</td><td>Flat energy to the wielder only</td><td>No</td></tr>
+<tr><td>Scholar 4-piece / Exile 4-piece</td><td>Flat energy</td><td>No</td></tr>
+<tr><td>Raiden Shogun's Burst</td><td>Flat energy shared with the whole team</td><td>No</td></tr>
+</table>
+<p>One key point: <strong>flat energy ignores Energy Recharge</strong>. Teams built around Prototype Amber or Raiden get less value from pushing ER further than teams that live on particles.</p>
+
+<h2>Where Energy Recharge comes from</h2>
+<ul>
+<li><strong>Sands main stat</strong>: about 51.8% ER at +20 on a 5-star piece - the single largest, most reliable source.</li>
+<li><strong>Substats</strong>: roughly 4.5%-6.5% per roll depending on quality.</li>
+<li><strong>Weapons</strong>: several weapons carry ER as a substat or in their passive (Sacrificial and Favonius lines, The Catch, and others).</li>
+<li><strong>Artifact sets</strong>: Emblem of Severed Fate converts excess ER into damage, making it the best home for overflow.</li>
+<li><strong>Ascension and passives</strong>: some characters gain ER on ascension or refund energy through their kit.</li>
+<li><strong>Elemental resonance</strong>: matching resonance can improve cooldowns and energy flow.</li>
+</ul>
+<p>There is no known ER soft cap - community testing shows it still scaling linearly at 300%. But ER competes with crit and attack rolls, so the goal is "just enough", not maximum.</p>
+
+<h2>Four common misconceptions</h2>
+<table>
+<tr><th>Misconception</th><th>Reality</th></tr>
+<tr><td>Higher ER means more particles</td><td>ER only multiplies incoming energy; generation depends purely on which skill was cast</td></tr>
+<tr><td>You always catch particles you generate</td><td>Particles must actually reach the character; swapping at the wrong moment or standing too far wastes them</td></tr>
+<tr><td>A full four-man party charges faster</td><td>Off-field returns are only 60% at four members, versus 80% at two</td></tr>
+<tr><td>Flat energy benefits from ER</td><td>Flat energy goes straight to the Burst meter and ignores ER entirely</td></tr>
+</table>
+
+<h2>Bottom line</h2>
+<p>Energy problems are really about who generates, who catches, and whether the element matches. Matching your battery's element to your carry and funneling particles on-field beats adding another 20% ER.</p>
+
+<h2>Related guides</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/energy-recharge-en.html">Energy Recharge Requirements Guide</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/team-building-guide-en.html">Team Building Guide</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-mastery-guide-en.html">Elemental Mastery Guide</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/raiden-shogun-build-en.html">Raiden Shogun Build Guide</a></li>
+</ul>
+
+<h2>FAQ</h2>
+<h3>What is the difference between an elemental particle and an orb?</h3>
+<p>An orb is worth three times a particle (3 base energy versus 1). Particles come mainly from Elemental Skills, while orbs only drop when an enemy crosses specific HP thresholds.</p>
+<h3>Why is my carry always short on energy?</h3>
+<p>Check whether it is catching particles off-field. Off-field characters receive only 60% in a four-man party, so swapping your carry in to catch them is worth 1.67x.</p>
+<h3>How much ER should I build?</h3>
+<p>It depends on the character and the team. Rough brackets: zero-generation sustained damage dealers often need 200% or more, carries with a same-element battery usually sit at 120%-150%, and cheap-Burst supports are often fine at 100%-120%.</p>
+<h3>What is flat energy?</h3>
+<p>Energy that goes straight into the Burst meter and is not affected by Energy Recharge. Common sources are certain weapon passives, the Scholar and Exile sets, and Raiden Shogun's Burst.</p>
+<h3>Does party size affect energy gain?</h3>
+<p>Yes. Off-field returns scale from 60% in a four-character party to 70% at three and 80% at two.</p>
+<h3>Why funnel particles to your carry?</h3>
+<p>Because on-field is worth 1.67x off-field. Casting a support skill and immediately swapping to your carry is the cheapest way to reduce ER requirements.</p>
+
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/elemental-particle-guide.html">查看中文版</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>Subscribe for Genshin Tips</h3>
+<p>Weekly character builds and version guides, no spam.</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">Subscribe</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('Submitted successfully!');
+    } catch(err) {
+      alert('Something went wrong. Please try again later.');
+    }
+  });
+});
+</script>
+</body>
+</html>
