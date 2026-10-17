@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神扩散反应全解：伤害公式、双扩散与翠绿之影减抗</title>
+<meta name="description" content="扩散伤害为什么只有几百点？它到底吃不吃暴击和精通？完整解析扩散触发条件、伤害公式与等级表、6 米传播范围、双扩散两套操作、翠绿之影减抗与万叶砂糖加成，附常见误区排查。">
+<meta name="keywords" content="原神扩散反应,扩散伤害公式,双扩散,翠绿之影,万叶精通加成,砂糖扩散,风元素反应">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/swirl-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/swirl-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/swirl-guide-en.html" />
+<meta property="og:title" content="原神扩散反应全解：伤害公式、双扩散与翠绿之影减抗">
+<meta property="og:description" content="扩散伤害为什么只有几百点？它到底吃不吃暴击和精通？完整解析扩散触发条件、伤害公式与等级表、6 米传播范围、双扩散两套操作、翠绿之影减抗与万叶砂糖加成，附常见误区排查。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/swirl-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神扩散反应全解：伤害公式、双扩散与翠绿之影减抗", "description": "扩散伤害为什么只有几百点？它到底吃不吃暴击和精通？完整解析扩散触发条件、伤害公式与等级表、6 米传播范围、双扩散两套操作、翠绿之影减抗与万叶砂糖加成，附常见误区排查。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-18", "dateModified": "2026-10-18", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/swirl-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "扩散伤害吃暴击吗？", "acceptedAnswer": {"@type": "Answer", "text": "不吃。扩散属于剧变反应，不能暴击、不吃元素伤害加成、无视防御，只吃触发者的等级和元素精通，以及目标的对应元素抗性。"}}, {"@type": "Question", "name": "扩散和风系染色是一回事吗？", "acceptedAnswer": {"@type": "Answer", "text": "不是。扩散是元素反应，伤害固定为 0.6 乘等级系数；染色（元素吸收）是技能自带的附加伤害，按正常公式结算，吃攻击力、暴击与元素伤害加成。"}}, {"@type": "Question", "name": "风系角色为什么要练到 90 级？", "acceptedAnswer": {"@type": "Answer", "text": "因为扩散伤害与等级系数直接挂钩，80 级系数 1077，90 级 1447，扩散伤害涨约 34%。这是少数等级直接决定伤害的位置。"}}, {"@type": "Question", "name": "翠绿之影的减抗能叠加吗？", "acceptedAnswer": {"@type": "Answer", "text": "同一个敌人身上同名效果不叠加，只刷新持续时间。两个风角色都带四件套也不会变成减 80%。"}}, {"@type": "Question", "name": "双扩散总是失败是什么原因？", "acceptedAnswer": {"@type": "Answer", "text": "多半是用了短按风战技（1U 风）去扩强附着，元素量不足；也可能被班尼特火圈或环境元素提前改了元素场。改用长按，并先确认两种元素都在。"}}, {"@type": "Question", "name": "没有万叶用什么替代？", "acceptedAnswer": {"@type": "Answer", "text": "砂糖最直接（精通加成 + 翠绿之影），其次是带翠绿之影的早柚、琳妮特。关键不是角色，而是有人穿着四件套并亲自触发扩散。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/swirl-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神扩散反应全解：伤害公式、双扩散与翠绿之影减抗</h1>
+
+<div class="quick"><strong>快速答案</strong>
+<ul>
+<li>扩散 = 风元素打到<strong>已附着水 / 火 / 冰 / 雷</strong>的敌人。伤害固定 = <strong>0.6 × 等级系数</strong>，90 级 0 精通约 <strong>868</strong>。</li>
+<li>只吃「触发扩散的风角色」的<strong>等级、元素精通</strong>，以及目标的<strong>对应元素抗性</strong>；不吃攻击力、不吃暴击、不吃元素伤害加成，也<strong>无视防御</strong>。</li>
+<li>扩散把元素附着传播到 <strong>6 米</strong>范围内除触发目标以外的所有敌人 —— 这才是它真正的价值，不是那 868 点伤害。</li>
+<li>扩散属于弱交互，只消耗约一半元素量，原附着通常保留，可以继续反应。</li>
+</ul></div>
+
+<h2>一、触发条件与传播范围</h2>
+
+<p>扩散只有一种触发方式：<strong>风元素伤害命中一个已经附着水、火、冰、雷之一的敌人</strong>。风本身不能作为附着存在，所以不存在「敌人身上挂风」这种事。</p>
+
+<table>
+<thead><tr><th>被扩散元素</th><th>伤害范围</th><th>附着传播</th></tr></thead>
+<tbody>
+<tr><td>火</td><td>6 米内全体</td><td>给范围内除触发目标外的敌人上火</td></tr>
+<tr><td>雷</td><td>6 米内全体</td><td>同上，上雷</td></tr>
+<tr><td>冰</td><td>6 米内全体</td><td>同上，上冰</td></tr>
+<tr><td>水</td><td><strong>仅触发目标</strong></td><td>只传播「潮湿」状态，不造成范围水伤</td></tr>
+</tbody>
+</table>
+
+<p><strong>水扩散是唯一的例外</strong>：它照样把潮湿传给周围敌人（所以能配冰队打冻结），但范围伤害只对触发扩散的那一个目标结算。这也是「水龙卷看起来没伤害」的原因 —— 不是 bug，是规则。</p>
+
+<p>另外要注意区分两件事：<strong>扩散伤害</strong>和<strong>染色伤害</strong>是两套东西。万叶大招吸收火之后打出的那段火伤属于染色（Elemental Absorption），吃攻击力、暴击、元素伤害加成、天赋等级；而扩散那一下才吃等级和精通。攻略里常把两者混着说，实际结算完全不同。</p>
+
+<h2>二、伤害公式与等级对照表</h2>
+
+<p>扩散伤害 = <strong>0.6 × 等级系数 × (1 + 精通加成) × 抗性倍率</strong></p>
+
+<p>其中精通加成为 <strong>16 × 精通 ÷ (精通 + 2000)</strong>。注意这个公式<strong>收益递减</strong>：200 精通给 +145%，1000 精通给 +533%，再往上堆就慢了。</p>
+
+<table>
+<thead><tr><th>角色等级</th><th>等级系数</th><th>0 精通</th><th>200 精通</th><th>1000 精通</th></tr></thead>
+<tbody>
+<tr><td>50</td><td>323.6</td><td>194</td><td>477</td><td>1,230</td></tr>
+<tr><td>60</td><td>492.9</td><td>296</td><td>726</td><td>1,873</td></tr>
+<tr><td>70</td><td>765.6</td><td>459</td><td>1,128</td><td>2,909</td></tr>
+<tr><td>80</td><td>1,077.4</td><td>646</td><td>1,587</td><td>4,094</td></tr>
+<tr><td>90</td><td>1,446.9</td><td><strong>868</strong></td><td>2,131</td><td><strong>5,498</strong></td></tr>
+</tbody>
+</table>
+
+<p>这张表说明一件事：<strong>风系辅助必须练到 90 级</strong>。80 → 90 级扩散伤害直接涨 34%，这是全游戏少数「等级就是伤害」的场景，比给风角色堆一套暴击圣遗物有用得多。</p>
+
+<h2>三、扩散的四条隐藏规则</h2>
+
+<h3>1. 只消耗约一半元素量</h3>
+<p>扩散的反应系数是 <strong>0.5</strong>（部分测量体系折算为 0.625），属于弱交互。意思是：敌人身上 1U 的火，被 1U 风扩散后还剩约 0.5U 火，<strong>火没被吃干净</strong>。所以风角色插进队里不会「打乱」原有的元素节奏，反而能延展它。</p>
+
+<h3>2. 同一目标有伤害上限</h3>
+<p>同一个攻击者对同一目标，<strong>每 0.5 秒最多承受 2 次扩散伤害</strong>；而且同一目标在 <strong>0.1 秒内</strong>触发的多次扩散，只会产生一次伤害和一次附着。所以多段风伤不是「每段都扩散一遍」，别指望靠攻速刷扩散伤害。不同元素类型的扩散分开计数。</p>
+
+<h3>3. 扩散会引发次级反应</h3>
+<p>扩散过去的元素碰到别的附着，会立刻再反应一次，而且<strong>这次反应的伤害按「风角色的等级 + 精通」算</strong>。举例：敌人 A 挂火，敌人 B 挂雷，风打 A 触发火扩散，火传到 B 上引发超载 —— 超载伤害吃的是风角色的面板，不是火角色的。</p>
+
+<h3>4. 扩散的附着比原附着更「厚」</h3>
+<p>扩散施加的元素量不是简单复制，而是按风元素量与原有元素量中较小的一方换算后放大（1U 风扩散出的附着约等于 2.25U 的衰减规格）。所以扩散打出来的元素往往能撑更久，这也是风系能稳住多元素场面的底层原因。</p>
+
+<h2>四、双扩散：为什么它是风系辅助的必修课</h2>
+
+<p>双扩散指的是<strong>在一次技能循环里，对两种不同元素各触发一次扩散</strong>，让翠绿之影的 −40% 抗性同时覆盖两个元素。收益很直接：主 C 的元素和副 C 的元素都被减抗，全队输出抬一档。</p>
+
+<table>
+<thead><tr><th>路线</th><th>操作要点</th><th>适用队伍</th></tr></thead>
+<tbody>
+<tr><td>双元素路线</td><td>先给敌人挂元素 A → 站到带元素 B 的位置（如班尼特火圈）→ 用风战技/大招吸收 B → 落地或持续风伤再扩 A</td><td>国际队（达达利亚 + 香菱 + 班尼特 + 万叶）</td></tr>
+<tr><td>感电路线</td><td>敌人同时挂水 + 雷时，用<strong>长按</strong>战技（2U 风）一次把两种元素都扩掉</td><td>武装队（雷神 + 行秋 + 万叶）</td></tr>
+</tbody>
+</table>
+
+<p>两条路线里，<strong>感电路线成功率高得多</strong>，因为感电本身就让水雷共存，不需要精确控制元素量；双元素路线要求「原始附着足够强、吸收时机足够准」，一旦班尼特的火圈先把火贴上，就变成单扩散了。</p>
+
+<p>三个常见失败原因：</p>
+<ul>
+<li><strong>用短按（1U 风）去扩 2U 附着</strong> —— 元素量不够，第二种元素没被扩到。改成长按。</li>
+<li><strong>染色抢了扩散的优先级</strong> —— 吸收的元素命中已有附着的敌人时，非扩散反应优先结算，扩散可能被跳过。</li>
+<li><strong>环境元素干扰</strong> —— 燃烧的草地、水边、冰花都会自带附着，把元素场搞乱。开打前先清场。</li>
+</ul>
+
+<h2>五、翠绿之影为什么不可替代</h2>
+
+<p>翠绿之影 4 件套：<strong>扩散伤害 +60%</strong>，且被扩散元素的<strong>抗性 −40%，持续 10 秒</strong>。抗性削减和「增伤」是两个独立乘区，这是它强的原因。</p>
+
+<table>
+<thead><tr><th>敌人基础抗性</th><th>−40% 之后</th><th>实际等效增伤</th></tr></thead>
+<tbody>
+<tr><td>10%（普通怪）</td><td>−30%</td><td>约 +27.8%</td></tr>
+<tr><td>30%（精英怪）</td><td>−10%</td><td>约 +53%</td></tr>
+<tr><td>50%（高抗 BOSS）</td><td>10%</td><td>约 +80%</td></tr>
+</tbody>
+</table>
+
+<p>注意第一行：抗性变成负数后进入<strong>半效区间</strong>，所以对普通怪是 27.8% 而不是 40%。但越硬的敌人收益越大 —— 这就是深境螺旋里风系辅助地位牢固的原因。</p>
+
+<h2>六、谁适合带扩散</h2>
+
+<table>
+<thead><tr><th>角色</th><th>核心机制</th><th>实用提示</th></tr></thead>
+<tbody>
+<tr><td>枫原万叶</td><td>固有天赋「风物之诗咏」：扩散后，每点精通给全队 <strong>0.04%</strong> 对应元素伤害加成，持续 8 秒，不同元素可叠加共存</td><td>1000 精通 = 全队 +40% 对应元素伤害；可后台触发</td></tr>
+<tr><td>砂糖</td><td>「触媒置换术」：扩散后队伍中对应元素角色精通 <strong>+50</strong>，8 秒；「触媒之力」：全队精通 += 自身精通的 <strong>20%</strong></td><td>平民替代位，同时是精通拐</td></tr>
+<tr><td>温迪</td><td>大招持续风伤，多段扩散 + 聚怪</td><td>对单目标扩散次数受 0.5 秒上限约束</td></tr>
+<tr><td>早柚 / 闲云 / 琳妮特</td><td>风系治疗或机动位，可兼职带翠绿之影</td><td>队里已有万叶时不重复带</td></tr>
+</tbody>
+</table>
+
+<p>万叶的天赋有一个容易忽略的细节：它<strong>不吃别人给的百分比精通加成</strong>（例如砂糖的「触媒之力」不计入万叶的换算），避免无限叠乘。砂糖的「触媒置换术」给的固定值 50 精通则有效。</p>
+
+<h2>七、常见问题排查</h2>
+
+<table>
+<thead><tr><th>现象</th><th>原因</th><th>怎么改</th></tr></thead>
+<tbody>
+<tr><td>扩散只打出几百伤害</td><td>正常。扩散基础值就是 868（90 级 0 精通）</td><td>别用扩散伤害当输出，用它做减抗和传播</td></tr>
+<tr><td>减抗没生效</td><td>翠绿之影要求<strong>佩戴者本人</strong>触发扩散</td><td>确认 4 件套在风角色身上，且是他在场上触发</td></tr>
+<tr><td>水龙卷没范围伤害</td><td>水扩散的规则特例</td><td>正常现象，只对被触发目标结算</td></tr>
+<tr><td>双扩散总是失败</td><td>短按风元素量不足，或附着被提前吃掉</td><td>改长按，并先确认两种元素都在场</td></tr>
+<tr><td>换人后加成消失了</td><td>加成只持续 8–10 秒</td><td>把扩散放在主 C 爆发前 1–2 秒</td></tr>
+</tbody>
+</table>
+
+<p>想进一步理解抗性是怎么算的，可以看<a href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide.html">元素减抗攻略</a>；元素附着量与 ICD 的基础规则在<a href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide.html">元素附着机制</a>里；配队思路见<a href="https://genshin-guide-one-five.vercel.app/guides/team-building-guide.html">配队指南</a>。</p>
+
+<h2>常见问题</h2>
+
+<h3>扩散伤害吃暴击吗？</h3>
+<p>不吃。剧变反应一律不能暴击、不吃元素伤害加成、无视防御，只吃等级、精通和目标抗性。</p>
+
+<h3>扩散和风系染色是一回事吗？</h3>
+<p>不是。扩散是反应，伤害固定；染色（元素吸收）是技能效果，伤害按正常公式结算，吃攻击力和暴击。</p>
+
+<h3>为什么风角色要练到 90 级？</h3>
+<p>因为扩散伤害 = 0.6 × 等级系数，80 到 90 级系数从 1,077 涨到 1,447，扩散伤害涨约 34%。这是唯一一个「等级直接等于伤害」的位置。</p>
+
+<h3>翠绿之影的减抗能叠加吗？</h3>
+<p>同一个敌人身上，同名效果不叠加，只刷新持续时间。两个风角色都带翠绿之影不会变成 −80%。</p>
+
+<h3>扩散能触发超绽放吗？</h3>
+<p>不能直接触发。但扩散可以把水或雷传到草原核附近，由扩散出来的元素间接引爆，此时爆炸伤害按引爆者的面板结算。</p>
+
+<h3>没有万叶用什么替代？</h3>
+<p>砂糖是最直接的替代（精通拐 + 翠绿之影），其次是带翠绿之影的早柚或琳妮特。核心不是角色，是「有人穿着 4 件套并触发扩散」。</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/swirl-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('订阅成功！');
+    } catch(err) {
+      alert('订阅失败，请稍后再试。');
+    }
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genshin Swirl Reaction Explained: Damage Formula, Double Swirl & 4VV</title>
+<meta name="description" content="Why does Swirl only hit for a few hundred? Full breakdown of Swirl trigger rules, the damage formula and level table, the 6 m spread radius, two double-swirl routes, and Viridescent Venerer shred.">
+<meta name="keywords" content="genshin swirl reaction, swirl damage formula, double swirl, viridescent venerer, kazuha em buff, anemo reaction">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/swirl-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/swirl-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/swirl-guide-en.html" />
+<meta property="og:title" content="Genshin Swirl Reaction Explained: Damage Formula, Double Swirl & 4VV">
+<meta property="og:description" content="Why does Swirl only hit for a few hundred? Full breakdown of Swirl trigger rules, the damage formula and level table, the 6 m spread radius, two double-swirl routes, and Viridescent Venerer shred.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/swirl-guide-en.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Swirl Reaction Explained: Damage Formula, Double Swirl & 4VV", "description": "Why does Swirl only hit for a few hundred? Full breakdown of Swirl trigger rules, the damage formula and level table, the 6 m spread radius, two double-swirl routes, and Viridescent Venerer shred.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-18", "dateModified": "2026-10-18", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/swirl-guide-en.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can Swirl crit?", "acceptedAnswer": {"@type": "Answer", "text": "No. Swirl is a transformative reaction: it cannot crit, gains no elemental DMG bonus, and ignores DEF. It scales with the trigger's level and Elemental Mastery plus the target's matching elemental RES."}}, {"@type": "Question", "name": "Is Swirl the same as Anemo infusion?", "acceptedAnswer": {"@type": "Answer", "text": "No. Swirl is an elemental reaction with fixed damage equal to 0.6 times the level multiplier. Elemental absorption is a skill effect that deals normal damage and scales with ATK, CRIT and DMG bonuses."}}, {"@type": "Question", "name": "Why level an Anemo support to 90?", "acceptedAnswer": {"@type": "Answer", "text": "Because Swirl damage is tied to the level multiplier: 1,077 at level 80 versus 1,447 at level 90, roughly 34% more Swirl damage. It is one of the few places where level directly equals damage."}}, {"@type": "Question", "name": "Do two 4VV users stack the resistance shred?", "acceptedAnswer": {"@type": "Answer", "text": "No. Same-named effects do not stack on a single enemy, the duration only refreshes. Two Anemo characters in 4-piece Viridescent Venerer is still minus 40%."}}, {"@type": "Question", "name": "Why does my double Swirl keep failing?", "acceptedAnswer": {"@type": "Answer", "text": "Usually because a tap skill (1U Anemo) was used against a strong aura, or because Bennett's field or environmental elements changed the aura first. Use the held version and confirm both auras are present."}}, {"@type": "Question", "name": "What is the best replacement for Kazuha?", "acceptedAnswer": {"@type": "Answer", "text": "Sucrose is the closest (EM buff plus 4VV), followed by Sayu or Lynette holding 4VV. The key is not the character but having someone in the 4-piece set trigger the Swirl themselves."}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/swirl-guide.html">中文</a>
+</div>
+<div class="container">
+<h1>Genshin Swirl Reaction Explained: Damage Formula, Double Swirl &amp; 4VV</h1>
+
+<div class="quick"><strong>Quick answer</strong>
+<ul>
+<li>Swirl happens when <strong>Anemo hits an enemy already affected by Hydro, Pyro, Cryo or Electro</strong>. The damage is fixed: <strong>0.6 &times; level multiplier</strong>, about <strong>868</strong> at level 90 with 0 EM.</li>
+<li>It scales only with the <strong>Anemo trigger's level and Elemental Mastery</strong>, plus the target's <strong>matching elemental RES</strong>. It ignores ATK, cannot crit, gets no elemental DMG bonus, and ignores DEF.</li>
+<li>Swirl spreads the aura to every enemy within <strong>6 m</strong> except the one that triggered it. That spread, not the 868 damage, is the real value.</li>
+<li>Swirl is a weak interaction: it consumes roughly half the aura, so the original element usually survives and can react again.</li>
+</ul></div>
+
+<h2>1. Trigger rules and spread radius</h2>
+
+<p>There is exactly one way to trigger Swirl: <strong>deal Anemo damage to an enemy with a Hydro, Pyro, Cryo or Electro aura</strong>. Anemo cannot exist as an aura, so nothing ever "has Anemo on it".</p>
+
+<table>
+<thead><tr><th>Swirled element</th><th>Damage area</th><th>Aura spread</th></tr></thead>
+<tbody>
+<tr><td>Pyro</td><td>All enemies within 6 m</td><td>Applies Pyro to everything except the trigger target</td></tr>
+<tr><td>Electro</td><td>All enemies within 6 m</td><td>Applies Electro the same way</td></tr>
+<tr><td>Cryo</td><td>All enemies within 6 m</td><td>Applies Cryo the same way</td></tr>
+<tr><td>Hydro</td><td><strong>Trigger target only</strong></td><td>Spreads the Wet status, no AoE Hydro damage</td></tr>
+</tbody>
+</table>
+
+<p><strong>Hydro is the sole exception.</strong> It still spreads Wet (which is why Hydro Swirl sets up Freeze), but the damage only lands on the enemy that triggered it. This is why Hydro-infused Anemo bursts feel like they do nothing.</p>
+
+<p>Keep two things separate: <strong>Swirl damage</strong> and <strong>elemental absorption (infusion) damage</strong> are different pipelines. Kazuha's absorbed Pyro damage from his burst is normal damage &mdash; it crits, scales with ATK and DMG bonus. Only the Swirl tick itself runs on level and EM.</p>
+
+<h2>2. The damage formula and level table</h2>
+
+<p>Swirl DMG = <strong>0.6 &times; Level Multiplier &times; (1 + EM Bonus) &times; RES Multiplier</strong></p>
+
+<p>The EM bonus is <strong>16 &times; EM &divide; (EM + 2000)</strong>, which has heavy diminishing returns: 200 EM gives +145%, 1000 EM gives +533%, and it flattens after that.</p>
+
+<table>
+<thead><tr><th>Character level</th><th>Level multiplier</th><th>0 EM</th><th>200 EM</th><th>1000 EM</th></tr></thead>
+<tbody>
+<tr><td>50</td><td>323.6</td><td>194</td><td>477</td><td>1,230</td></tr>
+<tr><td>60</td><td>492.9</td><td>296</td><td>726</td><td>1,873</td></tr>
+<tr><td>70</td><td>765.6</td><td>459</td><td>1,128</td><td>2,909</td></tr>
+<tr><td>80</td><td>1,077.4</td><td>646</td><td>1,587</td><td>4,094</td></tr>
+<tr><td>90</td><td>1,446.9</td><td><strong>868</strong></td><td>2,131</td><td><strong>5,498</strong></td></tr>
+</tbody>
+</table>
+
+<p>One practical conclusion: <strong>level your Anemo support to 90</strong>. Going from 80 to 90 raises Swirl damage by about 34%. This is one of the few places in the game where character level is literally damage.</p>
+
+<h2>3. Four hidden Swirl rules</h2>
+
+<h3>It only consumes about half the aura</h3>
+<p>Swirl's reaction coefficient is <strong>0.5</strong> (some measurement frameworks use 0.625). It is a weak interaction, so 1U of Pyro hit by 1U of Anemo keeps roughly 0.5U Pyro afterwards. Anemo does not wreck your elemental setup &mdash; it extends and copies it.</p>
+
+<h3>The same target has a damage ceiling</h3>
+<p>One attacker can only deal <strong>2 Swirl instances per 0.5 s</strong> to the same target, and multiple Swirls triggered on one target within <strong>0.1 s</strong> produce only one instance of damage and one application. Fast multi-hit Anemo skills do not mean one Swirl per hit.</p>
+
+<h3>Swirl triggers secondary reactions</h3>
+<p>The spread element reacts again on contact, and <strong>that reaction's damage is calculated from the Anemo character's level and EM</strong>. Enemy A has Pyro, enemy B has Electro: Anemo on A swirls Pyro onto B, triggering Overload &mdash; and the Overload damage uses the Anemo character's stats, not a Pyro character's.</p>
+
+<h3>Swirled auras are thicker than the original</h3>
+<p>The applied aura is not a copy. It is recalculated from the smaller of the Anemo gauge and the existing aura, then scaled up (1U of Anemo produces an aura with roughly a 2.25U decay profile). Swirled elements therefore last longer than you would expect.</p>
+
+<h2>4. Double Swirl and why it matters</h2>
+
+<p>Double Swirl means <strong>triggering Swirl on two different elements inside one rotation</strong>, so Viridescent Venerer's &minus;40% RES covers both. Your main DPS element and your sub-DPS element both get shredded.</p>
+
+<table>
+<thead><tr><th>Route</th><th>Execution</th><th>Best for</th></tr></thead>
+<tbody>
+<tr><td>Two-element route</td><td>Apply element A &rarr; stand in element B (Bennett burst field) &rarr; skill/burst absorbs B &rarr; plunging or lingering Anemo swirls A</td><td>International (Tartaglia / Xiangling / Bennett / Kazuha)</td></tr>
+<tr><td>Electro-Charged route</td><td>With Hydro and Electro coexisting, use a <strong>held</strong> skill (2U Anemo) to swirl both at once</td><td>Taser (Raiden / Xingqiu / Kazuha)</td></tr>
+</tbody>
+</table>
+
+<p>The Electro-Charged route is far more reliable because both auras already coexist. The two-element route requires a strong original aura and precise absorption timing &mdash; one early Bennett field and it collapses into a single Swirl.</p>
+
+<p>Three common failures:</p>
+<ul>
+<li><strong>Using tap skill (1U Anemo) on a 2U aura</strong> &mdash; not enough gauge, the second element never gets swirled. Use the held version.</li>
+<li><strong>Elemental absorption stealing priority</strong> &mdash; when the absorbed element hits an enemy with an existing aura, non-Swirl reactions resolve first and Swirl can be skipped.</li>
+<li><strong>Environmental auras</strong> &mdash; burning grass, water, Cryo flowers. Clear the field before you start the setup.</li>
+</ul>
+
+<h2>5. Why 4-piece Viridescent Venerer is non-negotiable</h2>
+
+<p>4VV gives <strong>+60% Swirl DMG</strong> and <strong>&minus;40% elemental RES to the swirled element for 10 s</strong>. Resistance shred is a separate multiplier from DMG bonus, which is exactly why it is so strong.</p>
+
+<table>
+<thead><tr><th>Base enemy RES</th><th>After &minus;40%</th><th>Effective damage gain</th></tr></thead>
+<tbody>
+<tr><td>10% (normal enemies)</td><td>&minus;30%</td><td>About +27.8%</td></tr>
+<tr><td>30% (elites)</td><td>&minus;10%</td><td>About +53%</td></tr>
+<tr><td>50% (tanky bosses)</td><td>10%</td><td>About +80%</td></tr>
+</tbody>
+</table>
+
+<p>Note the first row: once RES goes negative it enters the half-effectiveness zone, so normal enemies see 27.8%, not 40%. The harder the target, the better the value.</p>
+
+<h2>6. Who should carry it</h2>
+
+<table>
+<thead><tr><th>Character</th><th>Core mechanic</th><th>Practical note</th></tr></thead>
+<tbody>
+<tr><td>Kazuha</td><td>Poetics of Fuubutsu: after Swirl, every point of EM gives the party <strong>0.04%</strong> DMG bonus to the swirled element for 8 s; different elements stack</td><td>1000 EM = +40% party elemental DMG; works off-field</td></tr>
+<tr><td>Sucrose</td><td>Catalyst Conversion: after Swirl, matching-element party members gain <strong>+50 EM</strong> for 8 s; Mollis Favonius adds <strong>20%</strong> of her EM to the party</td><td>Best budget option, doubles as an EM battery</td></tr>
+<tr><td>Venti</td><td>Lingering Anemo burst, multi-hit Swirl plus grouping</td><td>Single-target Swirl count is capped by the 0.5 s rule</td></tr>
+<tr><td>Sayu / Xianyun / Lynette</td><td>Anemo healer or mobility slot that can hold 4VV</td><td>Do not double up if Kazuha is already on the team</td></tr>
+</tbody>
+</table>
+
+<p>One easily missed detail: Kazuha's passive <strong>ignores percentage-based EM buffs from other characters</strong> (Sucrose's Mollis Favonius does not feed it) to prevent infinite scaling. Flat EM like Sucrose's +50 does count.</p>
+
+<h2>7. Troubleshooting</h2>
+
+<table>
+<thead><tr><th>Symptom</th><th>Cause</th><th>Fix</th></tr></thead>
+<tbody>
+<tr><td>Swirl hits for only a few hundred</td><td>Normal. The base value really is 868 at level 90 with 0 EM</td><td>Stop treating Swirl as damage; treat it as shred and spread</td></tr>
+<tr><td>RES shred not applying</td><td>4VV requires the <strong>wearer</strong> to trigger the Swirl</td><td>Confirm the set is on your Anemo unit and they are on-field</td></tr>
+<tr><td>Hydro Swirl deals no AoE</td><td>Documented exception</td><td>Expected behaviour, damage stays on the trigger target</td></tr>
+<tr><td>Double Swirl keeps failing</td><td>Tap skill gauge too low, or the aura got eaten early</td><td>Use held skill and verify both auras first</td></tr>
+<tr><td>Buff vanishes after swapping</td><td>It only lasts 8&ndash;10 s</td><td>Swirl 1&ndash;2 s before your DPS burst window</td></tr>
+</tbody>
+</table>
+
+<p>For the resistance math itself see the <a href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html">RES shred guide</a>; aura gauge and ICD basics are in <a href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide-en.html">Elemental Application</a>; team structure is covered in the <a href="https://genshin-guide-one-five.vercel.app/guides/team-building-guide-en.html">team building guide</a>.</p>
+
+<h2>FAQ</h2>
+
+<h3>Can Swirl crit?</h3>
+<p>No. Transformative reactions cannot crit, gain no elemental DMG bonus and ignore DEF. They scale with level, EM and the target's RES only.</p>
+
+<h3>Is Swirl the same as Anemo infusion?</h3>
+<p>No. Swirl is a reaction with fixed damage. Elemental absorption is a skill effect that deals normal damage, crits, and scales with ATK.</p>
+
+<h3>Why level an Anemo support to 90?</h3>
+<p>Swirl = 0.6 &times; level multiplier. The multiplier goes from 1,077 at 80 to 1,447 at 90 &mdash; roughly 34% more Swirl damage, for free.</p>
+
+<h3>Do two 4VV users stack the shred?</h3>
+<p>No. Same-named effects do not stack on one enemy; the duration just refreshes. Two Anemo units in 4VV is still &minus;40%.</p>
+
+<h3>Can Swirl trigger Hyperbloom?</h3>
+<p>Not directly. Swirl can carry Hydro or Electro onto a Dendro Core's vicinity and set off the explosion indirectly, and that explosion uses the triggering character's stats.</p>
+
+<h3>What if I do not have Kazuha?</h3>
+<p>Sucrose is the direct replacement (EM buff plus 4VV), followed by Sayu or Lynette in 4VV. What matters is that someone wears the 4-piece set and personally triggers the Swirl.</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/swirl-guide.html">查看中文版</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>Get Weekly Genshin Updates</h3>
+<p>Build guides and version tips, once a week. No spam.</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">Subscribe</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('Subscribed!');
+    } catch(err) {
+      alert('Something went wrong, please try again.');
+    }
+  });
+});
+</script>
+</body>
+</html>
