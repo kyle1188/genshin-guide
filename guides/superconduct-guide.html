@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神超导反应全解：40% 物抗削减与物理流配队</title>
+<meta name="description" content="超导为什么是物理流的核心？完整解析超导触发条件、5 米范围、伤害公式与等级表、40% 物抗 −12 秒的实际增伤换算、物理伤害加成来源与优菈菲米尼雷泽配队，附常见误区。">
+<meta name="keywords" content="原神超导反应,超导减抗,物理流配队,物理伤害加成,优菈配队,菲米尼物理,雷泽超导">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/superconduct-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/superconduct-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/superconduct-guide-en.html" />
+<meta property="og:title" content="原神超导反应全解：40% 物抗削减与物理流配队">
+<meta property="og:description" content="超导为什么是物理流的核心？完整解析超导触发条件、5 米范围、伤害公式与等级表、40% 物抗 −12 秒的实际增伤换算、物理伤害加成来源与优菈菲米尼雷泽配队，附常见误区。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/superconduct-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神超导反应全解：40% 物抗削减与物理流配队", "description": "超导为什么是物理流的核心？完整解析超导触发条件、5 米范围、伤害公式与等级表、40% 物抗 −12 秒的实际增伤换算、物理伤害加成来源与优菈菲米尼雷泽配队，附常见误区。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-19", "dateModified": "2026-10-19", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/superconduct-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "超导是谁触发的，伤害就算谁的吗？", "acceptedAnswer": {"@type": "Answer", "text": "是的。以后手触发反应的角色为准，用他的等级与元素精通结算，和先前挂元素的角色无关。"}}, {"@type": "Question", "name": "为什么超导打遗迹守卫伤害提升特别明显？", "acceptedAnswer": {"@type": "Answer", "text": "因为自律机关类敌人的物理抗性普遍在 70% 左右。超导把 70% 削到 30%，等效增伤约 133%，所以体感远强于打普通怪。"}}, {"@type": "Question", "name": "物理流需要元素伤害加成吗？", "acceptedAnswer": {"@type": "Answer", "text": "不需要。物理伤害加成与元素伤害加成是并列的两类加成，物理角色只吃前者，空之杯应选物理伤害加成。"}}, {"@type": "Question", "name": "两个冰雷角色能让减抗叠到 80% 吗？", "acceptedAnswer": {"@type": "Answer", "text": "不能。同名减抗效果不叠加，只会刷新 12 秒持续时间，最终还是 40%。"}}, {"@type": "Question", "name": "超导对冻结中的敌人有用吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以触发，但会打断冻结状态。永冻队里应避免冰雷同时出现，否则控制链会断。"}}, {"@type": "Question", "name": "没有优菈还能玩物理流吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以。菲米尼、雷泽、物理钟离都能作为物理主 C，米卡是最关键的专属辅助。物理流上限不如元素队，但通关大世界和深渊前半足够。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/superconduct-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神超导反应全解：40% 物抗削减与物理流配队</h1>
+
+<div class="quick"><strong>快速答案</strong>
+<ul>
+<li>超导 = <strong>冰 + 雷</strong>，任意顺序都能触发。造成 5 米范围冰伤，并让范围内所有敌人<strong>物理抗性 −40%，持续 12 秒</strong>。</li>
+<li>伤害 = <strong>1.5 × 等级系数</strong>，90 级 0 精通约 <strong>2,170</strong>。只吃触发者等级与精通，不吃冰伤加成、不吃暴击。</li>
+<li>超导<strong>不附着冰</strong>，所以它不会引发后续反应 —— 这是它和扩散最大的区别。</li>
+<li>减抗<strong>不叠加，只刷新时间</strong>。两个冰雷角色轮着触发，仍然是 −40%。</li>
+</ul></div>
+
+<h2>一、触发条件与作用范围</h2>
+
+<p>超导是冰元素与雷元素接触时触发的剧变反应，<strong>没有先后顺序要求</strong>：先冰后雷、先雷后冰都成立。触发后在 <strong>5 米</strong>范围内造成一次冰元素伤害，并给范围内所有敌人挂上「物理抗性 −40%」的状态。</p>
+
+<table>
+<thead><tr><th>属性</th><th>数值</th></tr></thead>
+<tbody>
+<tr><td>触发元素</td><td>冰 + 雷（双向）</td></tr>
+<tr><td>作用半径</td><td>5 米</td></tr>
+<tr><td>伤害倍率</td><td>1.5 × 等级系数</td></tr>
+<tr><td>减抗效果</td><td>物理抗性 −40%</td></tr>
+<tr><td>持续时间</td><td>12 秒</td></tr>
+<tr><td>是否附着冰</td><td><strong>否</strong></td></tr>
+<tr><td>是否可叠加</td><td><strong>否</strong>，只刷新</td></tr>
+</tbody>
+</table>
+
+<p>「不附着冰」这一条很关键。它意味着超导<strong>不会连锁</strong>：打完就结束，不会把冰传给旁边的人，也不会再引发冻结或融化。所以超导的定位非常纯粹 —— <strong>它就是一个物理减抗开关</strong>，别指望它做别的。</p>
+
+<h2>二、伤害公式与等级表</h2>
+
+<p>超导伤害 = <strong>1.5 × 等级系数 × (1 + 精通加成) × 冰抗倍率</strong>，精通加成同样是 <strong>16 × 精通 ÷ (精通 + 2000)</strong>。</p>
+
+<table>
+<thead><tr><th>角色等级</th><th>0 精通</th><th>200 精通</th><th>500 精通</th><th>1000 精通</th></tr></thead>
+<tbody>
+<tr><td>50</td><td>485</td><td>1,191</td><td>2,038</td><td>3,073</td></tr>
+<tr><td>70</td><td>1,148</td><td>2,818</td><td>4,823</td><td>7,272</td></tr>
+<tr><td>80</td><td>1,616</td><td>3,967</td><td>6,789</td><td>10,236</td></tr>
+<tr><td>90</td><td><strong>2,170</strong></td><td>5,327</td><td>9,115</td><td>13,745</td></tr>
+</tbody>
+</table>
+
+<p>数字看着不小，但要注意：<strong>物理流不该为超导堆精通</strong>。超导那一下的伤害，在整套物理输出里通常只占 3–8%；把精通堆上去牺牲的是主 C 的双爆和攻击。触发位保持 0 精通完全没问题。</p>
+
+<h2>三、−40% 物抗到底等于多少增伤</h2>
+
+<p>这是全网最容易算错的一项。抗性转负后进入<strong>半效区间</strong>，所以「−40% 物抗」不等于「+40% 伤害」。</p>
+
+<table>
+<thead><tr><th>敌人物理抗性</th><th>减抗后</th><th>实际等效增伤</th></tr></thead>
+<tbody>
+<tr><td>0%</td><td>−40%</td><td>+20%</td></tr>
+<tr><td>10%（普通怪）</td><td>−30%</td><td>+27.8%</td></tr>
+<tr><td>30%（精英怪）</td><td>−10%</td><td>+50%</td></tr>
+<tr><td>50%</td><td>10%</td><td>+80%</td></tr>
+<tr><td>70%（自律机关 / 部分 BOSS）</td><td>30%</td><td><strong>+133%</strong></td></tr>
+</tbody>
+</table>
+
+<p>规律很清楚：<strong>敌人越硬，超导越值钱</strong>。打 70% 物抗的遗迹守卫，超导直接把伤害翻 2.33 倍；打 0% 物抗的软目标，只有 20%。这也解释了为什么物理流在深渊里必须绑定冰雷。</p>
+
+<h2>四、物理伤害的四层来源</h2>
+
+<table>
+<thead><tr><th>层级</th><th>来源</th><th>说明</th></tr></thead>
+<tbody>
+<tr><td>基础</td><td>普攻 / 重击 / 下落攻击倍率</td><td>吃天赋等级，白字伤害</td></tr>
+<tr><td>加成</td><td>物理伤害加成（物伤杯、套装、角色天赋）</td><td>与元素伤害加成同一乘区，但只作用于物理</td></tr>
+<tr><td>减抗</td><td>超导 −40%、优菈战技、部分专武</td><td>独立乘区，收益看敌人抗性</td></tr>
+<tr><td>减防</td><td>雷泽 4 命、部分圣遗物与队伍效果</td><td>又一个独立乘区</td></tr>
+</tbody>
+</table>
+
+<p>常见的物理伤害加成来源：</p>
+<ul>
+<li><strong>空之杯主词条</strong>：物理伤害加成 58.3%（20 级五星）。</li>
+<li><strong>苍白之火 2 件</strong>：物理伤害 +25%；4 件在叠满两层时额外 +50% 攻击力。</li>
+<li><strong>染血的骑士道 2 件</strong>：物理伤害 +25%。</li>
+<li><strong>米卡</strong>：技能提供物理伤害加成与攻击速度，是物理队的专属辅助。</li>
+<li><strong>角色自带</strong>：优菈、雷泽、辛焱的突破或天赋自带物理加成。</li>
+</ul>
+
+<h2>五、物理流配队模板</h2>
+
+<table>
+<thead><tr><th>位置</th><th>人选</th><th>职责</th></tr></thead>
+<tbody>
+<tr><td>物理主 C</td><td>优菈 / 菲米尼 / 雷泽 / 物理钟离</td><td>站场打白字，吃满减抗窗口</td></tr>
+<tr><td>冰触发位</td><td>莱依拉 / 迪奥娜 / 罗莎莉亚 / 米卡</td><td>提供冰附着 + 护盾或治疗</td></tr>
+<tr><td>雷触发位</td><td>菲谢尔 / 北斗 / 雷神 / 八重神子</td><td>后台持续雷伤，顺便产球</td></tr>
+<tr><td>增益位</td><td>米卡 / 班尼特</td><td>物理伤害加成、攻击力、攻速</td></tr>
+</tbody>
+</table>
+
+<p>两个实操要点：</p>
+<ul>
+<li><strong>减抗窗口是 12 秒</strong>，主 C 的爆发要压在窗口里。优菈的大招从释放到结算约 7 秒，起手前 1–2 秒补超导最稳。</li>
+<li><strong>冰雷都要有后台覆盖</strong>，否则窗口一过就断。菲谢尔的奥兹是物理队最省心的雷源。</li>
+</ul>
+
+<h2>六、五个常见误区</h2>
+
+<table>
+<thead><tr><th>说法</th><th>实际</th></tr></thead>
+<tbody>
+<tr><td>超导伤害吃冰伤加成</td><td>不吃。剧变反应只吃等级、精通、目标冰抗</td></tr>
+<tr><td>两个冰雷角色能叠到 −80%</td><td>不能。同名效果不叠加，只刷新 12 秒</td></tr>
+<tr><td>超导会传染给旁边敌人</td><td>不会。伤害是范围的，但减抗只作用于被触发范围内的敌人，且不附着冰</td></tr>
+<tr><td>超导能帮冻结队</td><td>不能。超导消耗掉冰雷，反而会破坏冻结循环</td></tr>
+<tr><td>物理流一定要堆精通</td><td>不需要。精通只提升超导那一下，收益远低于双爆</td></tr>
+</tbody>
+</table>
+
+<p>关于抗性与减防的完整算法，见<a href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide.html">元素减抗攻略</a>；冻结与碎冰的机制在<a href="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide.html">冻结碎冰攻略</a>；队伍结构参考<a href="https://genshin-guide-one-five.vercel.app/guides/team-building-guide.html">配队指南</a>。</p>
+
+<h2>常见问题</h2>
+
+<h3>超导是谁触发的，伤害就算谁的吗？</h3>
+<p>是的。以后手触发反应的角色为准，用他的等级和精通结算，与前一个元素是谁挂的无关。</p>
+
+<h3>为什么打遗迹守卫伤害突然变高？</h3>
+<p>因为自律机关类敌人物理抗性普遍在 70% 左右。超导把 70% 削到 30%，等效增伤 +133%，所以体感非常明显。</p>
+
+<h3>物理流还需要元素伤害加成吗？</h3>
+<p>不需要。物理伤害加成与元素伤害加成是并列的，物理角色只吃前者。物伤杯是唯一正确的主词条选择。</p>
+
+<h3>超导对冻结中的敌人有用吗？</h3>
+<p>有用但代价高。冻结中的敌人带冻结附着，冰或雷打上去会先结算冻结相关反应，超导仍可触发，但会打断冻结状态。</p>
+
+<h3>没有优菈还能玩物理流吗？</h3>
+<p>可以。菲米尼、雷泽、物理钟离都能打，米卡是关键辅助。物理流的上限低于主流元素队，但打通大世界与深渊前半完全够用。</p>
+
+<h3>超导和减防能叠加吗？</h3>
+<p>可以，而且应该叠。减抗与减防是两个独立乘区，同时生效时收益相乘，不是相加。</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/superconduct-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('订阅成功！');
+    } catch(err) {
+      alert('订阅失败，请稍后再试。');
+    }
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genshin Electro-Charged Guide: 0.4U Ticks and Taser Team Setup</title>
+<meta name="description" content="How Electro-Charged really works: coexisting Hydro and Electro auras, one tick per second at 0.4U each, the damage formula and EM table, 5 m arcing, and why a third element triggers two reactions at once.">
+<meta name="keywords" content="genshin electro-charged, electro-charged damage, taser team, hydro electro coexist, electro-charged em, genshin reaction mechanics">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide-en.html" />
+<meta property="og:title" content="Genshin Electro-Charged Guide: 0.4U Ticks and Taser Team Setup">
+<meta property="og:description" content="How Electro-Charged really works: coexisting Hydro and Electro auras, one tick per second at 0.4U each, the damage formula and EM table, 5 m arcing, and why a third element triggers two reactions at once.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide-en.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Electro-Charged Guide: 0.4U Ticks and Taser Team Setup", "description": "How Electro-Charged really works: coexisting Hydro and Electro auras, one tick per second at 0.4U each, the damage formula and EM table, 5 m arcing, and why a third element triggers two reactions at once.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-19", "dateModified": "2026-10-19", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide-en.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Whose damage is Electro-Charged?", "acceptedAnswer": {"@type": "Answer", "text": "The character who triggers the reaction. Build Elemental Mastery on whoever applies the second element, usually the off-field Electro or Hydro unit."}}, {"@type": "Question", "name": "Why does my Electro-Charged only tick once or twice?", "acceptedAnswer": {"@type": "Answer", "text": "One of the auras is too weak. Each tick drains 0.4U from both auras, so a weak application cannot sustain many ticks. Apply Hydro more frequently or open with a stronger application."}}, {"@type": "Question", "name": "Can I run Electro-Charged and Hyperbloom together?", "acceptedAnswer": {"@type": "Answer", "text": "You can, but it is not recommended. Dendro competes for both Bloom and Quicken, making the reaction chain unpredictable and shrinking the Electro-Charged window."}}, {"@type": "Question", "name": "How much Elemental Mastery does a Taser team need?", "acceptedAnswer": {"@type": "Answer", "text": "600 to 1000 EM on the trigger unit. At level 90, 0 EM ticks for about 2,894 while 1000 EM ticks for about 18,327, more than six times as much."}}, {"@type": "Question", "name": "Does a shield block Electro-Charged?", "acceptedAnswer": {"@type": "Answer", "text": "No. Transformative reactions bypass shields, but enemy elemental resistance still applies, so high Electro RES noticeably reduces the damage."}}, {"@type": "Question", "name": "Can I play Taser without Raiden?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Beidou, Fischl, Xingqiu and Kazuha is a well-established budget version. Damage is lower but the mechanics are intact, and the key is uninterrupted Hydro and Electro coverage."}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide.html">中文</a>
+</div>
+<div class="container">
+<h1>Genshin Electro-Charged Guide: 0.4U Ticks and Taser Team Setup</h1>
+
+<div class="quick"><strong>Quick answer</strong>
+<ul>
+<li>Electro-Charged = <strong>Hydro + Electro</strong>, either order. <strong>Both auras coexist</strong> on the target &mdash; the only regular dual-aura state in the game.</li>
+<li>Damage = <strong>2 &times; level multiplier</strong>, about <strong>2,894</strong> at level 90 with 0 EM. It ticks once per second until either aura runs out.</li>
+<li>Each tick drains <strong>0.4U of Hydro and 0.4U of Electro</strong> while natural decay continues &mdash; so duration is decided by <strong>whichever aura is weaker</strong>.</li>
+<li>A third element can trigger <strong>two reactions at once</strong> (Pyro &rarr; Overload + Vaporize; Cryo &rarr; Superconduct + Freeze), with the Electro reaction resolved first.</li>
+</ul></div>
+
+<h2>1. Why Hydro and Electro coexist</h2>
+
+<p>Most elements either react away or overwrite each other. Electro-Charged is the exception: once triggered, <strong>Hydro and Electro both remain as auras</strong>. Neither is consumed as "the trigger". The state persists until one gauge empties.</p>
+
+<table>
+<thead><tr><th>Property</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>Trigger elements</td><td>Hydro + Electro (either order)</td></tr>
+<tr><td>Tick rate</td><td>Once per second</td></tr>
+<tr><td>Drain per tick</td><td>0.4U Hydro + 0.4U Electro</td></tr>
+<tr><td>Damage multiplier</td><td>2 &times; level multiplier</td></tr>
+<tr><td>Arc radius</td><td>One Wet target within 5 m</td></tr>
+<tr><td>Applies Electro to neighbours?</td><td><strong>No</strong>, damage only</td></tr>
+</tbody>
+</table>
+
+<p>Because both elements are present, an Electro-Charged target can benefit from both damage types at once and can still receive a third element. That is the mechanical foundation of Taser teams.</p>
+
+<h2>2. Damage formula and EM scaling</h2>
+
+<p>Electro-Charged DMG = <strong>2 &times; Level Multiplier &times; (1 + EM Bonus) &times; Electro RES Multiplier</strong>, with the EM bonus at <strong>16 &times; EM &divide; (EM + 2000)</strong>.</p>
+
+<table>
+<thead><tr><th>Level</th><th>0 EM</th><th>200 EM</th><th>500 EM</th><th>1000 EM</th></tr></thead>
+<tbody>
+<tr><td>50</td><td>647</td><td>1,588</td><td>2,717</td><td>4,098</td></tr>
+<tr><td>70</td><td>1,531</td><td>3,758</td><td>6,430</td><td>9,697</td></tr>
+<tr><td>80</td><td>2,155</td><td>5,289</td><td>9,051</td><td>13,648</td></tr>
+<tr><td>90</td><td><strong>2,894</strong></td><td>7,102</td><td>12,154</td><td>18,327</td></tr>
+</tbody>
+</table>
+
+<p>The key is that this is <strong>per tick</strong>. At 2,894 a tick over eight seconds you are looking at roughly 23,000 damage, in an area. That makes Electro-Charged excellent in multi-target fights and unremarkable on a single boss.</p>
+
+<p>Whichever character triggers the reaction owns the numbers &mdash; <strong>the one who applies the second element</strong>. That is why Taser teams put EM on the Electro or Hydro unit that closes the reaction.</p>
+
+<h2>3. What 0.4U per tick actually means</h2>
+
+<p>Every tick drains 0.4U from each aura while natural decay keeps running. Consequences:</p>
+<ul>
+<li><strong>Duration is set by the weaker aura.</strong> 1U Hydro with 2U Electro ends when the Hydro does, roughly two ticks.</li>
+<li><strong>Strong application extends it.</strong> 2U Hydro plus continuous off-field Electro reliably holds four to six ticks.</li>
+<li><strong>Frequent weak application beats one huge application.</strong> A 1U refresh every two seconds wastes less to decay than a single 4U dump.</li>
+</ul>
+
+<p>Two details people miss:</p>
+<ul>
+<li>If Electro-Charged ends because an aura expired and <strong>more than 0.5 s</strong> has passed since the last tick, one extra tick is dealt.</li>
+<li>Switching characters <strong>pauses</strong> Electro-Charged on that character; it resumes if they return while both auras remain. Off-field characters cannot be killed by it.</li>
+</ul>
+
+<h2>4. Third element: two reactions in one hit</h2>
+
+<p>Because both auras are present, a third element can resolve <strong>two reactions simultaneously</strong>. This is Electro-Charged's most distinctive property.</p>
+
+<table>
+<thead><tr><th>Third element</th><th>Triggers at once</th><th>Practical value</th></tr></thead>
+<tbody>
+<tr><td>Pyro</td><td>Overload + Vaporize</td><td>Xiangling in a Taser team gets both, roughly doubling her contribution</td></tr>
+<tr><td>Cryo</td><td>Superconduct + Freeze</td><td>Control and physical shred together, but it breaks Electro-Charged</td></tr>
+<tr><td>Anemo</td><td>Hydro Swirl + Electro Swirl</td><td>The easiest double Swirl setup in the game</td></tr>
+<tr><td>Dendro</td><td>Bloom + Quicken</td><td>Can pivot into Hyperbloom, but the reaction chain gets messy</td></tr>
+</tbody>
+</table>
+
+<p><strong>Priority rule:</strong> the Electro reaction resolves first. The Hydro reaction only happens if gauge remains after the Electro aura is consumed. So Pyro on an Electro-Charged target always gets Overload; whether Vaporize also lands depends on leftover gauge.</p>
+
+<h2>5. The arc mechanic</h2>
+
+<p>Electro-Charged damage also arcs to <strong>one Wet target within 5 m</strong>, calculated against <strong>that target's own Electro RES</strong>. Two limits:</p>
+<ul>
+<li><strong>It does not apply Electro</strong> to the arced target, only damage. Electro-Charged does not spread the element the way Swirl does.</li>
+<li>It does not consume the target's Wet status, so a wet enemy can keep getting zapped.</li>
+</ul>
+
+<p>Practical takeaway: <strong>wet the field first, then apply Electro</strong>. High-frequency Hydro from Xingqiu, Yelan or Kokomi is the foundation of any Taser team.</p>
+
+<h2>6. Taser team template</h2>
+
+<table>
+<thead><tr><th>Slot</th><th>Options</th><th>Job</th></tr></thead>
+<tbody>
+<tr><td>Electro on-field / burst</td><td>Raiden / Beidou / Yae</td><td>Main damage, build EM and ER</td></tr>
+<tr><td>Hydro off-field</td><td>Xingqiu / Yelan / Kokomi</td><td>High-frequency Hydro to sustain Electro-Charged</td></tr>
+<tr><td>Electro off-field</td><td>Fischl / Beidou</td><td>Continuous Electro and particles</td></tr>
+<tr><td>Anemo shred</td><td>Kazuha / Sucrose</td><td>4VV shred; one held skill can swirl both elements</td></tr>
+</tbody>
+</table>
+
+<p>Classic Raiden Taser rotation: Raiden skill to seed Electro &rarr; Xingqiu burst and skill for Hydro &rarr; Kazuha swirls both for double shred &rarr; Raiden burst to finish. Electro-Charged stays up through the whole loop, and Kazuha's held skill swirls Hydro and Electro in a single cast.</p>
+
+<p>Build notes:</p>
+<ul>
+<li><strong>Raiden</strong>: EM sands / EM goblet / EM circlet for reaction builds, or the classic ER sands with Electro goblet and CRIT for personal damage.</li>
+<li><strong>Beidou</strong>: 4-piece Emblem of Severed Fate, Energy Recharge first.</li>
+<li><strong>Xingqiu</strong>: 4-piece Emblem, 200%+ Energy Recharge.</li>
+</ul>
+
+<h2>7. Common misconceptions</h2>
+
+<table>
+<thead><tr><th>Claim</th><th>Reality</th></tr></thead>
+<tbody>
+<tr><td>Electro-Charged scales with Electro DMG bonus</td><td>It does not. Transformative reactions use level, EM and target Electro RES only</td></tr>
+<tr><td>It applies Electro to nearby enemies</td><td>It does not. Only damage arcs, never the aura</td></tr>
+<tr><td>Electro-Charged stacks multiple times</td><td>No. One state per target; reapplying only refreshes the auras</td></tr>
+<tr><td>It only works in AoE</td><td>AoE is where it shines, but single-target output is still steady</td></tr>
+<tr><td>It can kill off-field characters</td><td>No. It cannot damage off-field characters, and switching pauses the ticks</td></tr>
+</tbody>
+</table>
+
+<p>For aura and gauge rules see <a href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide-en.html">Elemental Application</a>; Swirl and double Swirl are in the <a href="https://genshin-guide-one-five.vercel.app/guides/swirl-guide-en.html">Swirl guide</a>; energy planning is in <a href="https://genshin-guide-one-five.vercel.app/guides/elemental-particle-guide-en.html">Elemental Particles</a>; the Hyperbloom variant is covered in the <a href="https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide-en.html">Hyperbloom team guide</a>.</p>
+
+<h2>FAQ</h2>
+
+<h3>Whose damage is Electro-Charged?</h3>
+<p>The character who triggers the reaction. Build EM on whoever applies the second element, usually the off-field Electro or Hydro unit.</p>
+
+<h3>Why does my Electro-Charged only tick once or twice?</h3>
+<p>One of the auras is too weak. Each tick drains 0.4U from both, so a weak application cannot sustain many ticks. Apply Hydro more often or open with a strong application.</p>
+
+<h3>Can I run Electro-Charged and Hyperbloom together?</h3>
+<p>You can, but it is not recommended. Dendro competes for both Bloom and Quicken, the reaction chain becomes unpredictable, and the Electro-Charged window shrinks.</p>
+
+<h3>How much EM does a Taser team need?</h3>
+<p>600 to 1000 EM on the trigger unit. At level 90, 0 EM ticks for 2,894 while 1000 EM ticks for 18,327 &mdash; more than six times the damage.</p>
+
+<h3>Does a shield block Electro-Charged?</h3>
+<p>No. Transformative reactions bypass shields entirely, but enemy elemental RES still applies. High Electro RES noticeably reduces the damage.</p>
+
+<h3>Can I play Taser without Raiden?</h3>
+<p>Yes. Beidou, Fischl, Xingqiu and Kazuha is a well-established budget version. Damage is lower but the mechanics are intact &mdash; the key is uninterrupted Hydro and Electro coverage.</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide.html">查看中文版</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>Get Weekly Genshin Updates</h3>
+<p>Build guides and version tips, once a week. No spam.</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">Subscribe</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('Subscribed!');
+    } catch(err) {
+      alert('Something went wrong, please try again.');
+    }
+  });
+});
+</script>
+</body>
+</html>

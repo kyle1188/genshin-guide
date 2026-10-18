@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神感电反应全解：0.4U 结算机制与武装队配队</title>
+<meta name="description" content="感电伤害怎么算？为什么水雷能共存？完整解析感电触发、每秒 1 跳与 0.4U 双元素消耗、5 米传导、第三元素同时触发两个反应的优先级，附武装队配队与精通收益表。">
+<meta name="keywords" content="原神感电反应,感电伤害,武装队配队,水雷共存,感电精通,感电传导,原神反应机制">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide-en.html" />
+<meta property="og:title" content="原神感电反应全解：0.4U 结算机制与武装队配队">
+<meta property="og:description" content="感电伤害怎么算？为什么水雷能共存？完整解析感电触发、每秒 1 跳与 0.4U 双元素消耗、5 米传导、第三元素同时触发两个反应的优先级，附武装队配队与精通收益表。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神感电反应全解：0.4U 结算机制与武装队配队", "description": "感电伤害怎么算？为什么水雷能共存？完整解析感电触发、每秒 1 跳与 0.4U 双元素消耗、5 米传导、第三元素同时触发两个反应的优先级，附武装队配队与精通收益表。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-19", "dateModified": "2026-10-19", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "感电的伤害算谁的？", "acceptedAnswer": {"@type": "Answer", "text": "算最后触发反应的那个角色。所以感电队的元素精通应堆在负责挂第二种元素的人身上，通常是雷位或水位的后台角色。"}}, {"@type": "Question", "name": "为什么我的感电只跳一两下就没了？", "acceptedAnswer": {"@type": "Answer", "text": "因为水或雷有一方的元素量太低。每跳要同时消耗双方各 0.4U，弱附着维持不了几跳。提高水附着频率或用强附着技能开局可以延长。"}}, {"@type": "Question", "name": "感电和超绽放能一起玩吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以但不推荐。草元素会同时参与绽放与激化，反应链变得不可控，感电窗口被压缩。想稳定输出建议专精一条路线。"}}, {"@type": "Question", "name": "感电队需要堆多少精通？", "acceptedAnswer": {"@type": "Answer", "text": "触发位 600 到 1000 精通收益最好。90 级时 0 精通一跳约 2894，1000 精通一跳约 18327，差距超过六倍。"}}, {"@type": "Question", "name": "感电会被护盾挡住吗？", "acceptedAnswer": {"@type": "Answer", "text": "不会。剧变反应无视护盾直接结算伤害，但敌人的元素抗性依然生效，雷抗高的敌人会明显削弱感电。"}}, {"@type": "Question", "name": "武装队没有雷神能玩吗？", "acceptedAnswer": {"@type": "Answer", "text": "能。北斗加菲谢尔加行秋加万叶是很成熟的平民版本，输出略低但机制完整，关键是水雷覆盖不能断。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神感电反应全解：0.4U 结算机制与武装队配队</h1>
+
+<div class="quick"><strong>快速答案</strong>
+<ul>
+<li>感电 = <strong>水 + 雷</strong>，双向触发。<strong>两种元素会同时共存</strong>在敌人身上，这是全游戏唯一的常规双附着状态。</li>
+<li>伤害 = <strong>2 × 等级系数</strong>，90 级 0 精通约 <strong>2,894</strong>，每秒结算 1 次，直到水或雷任意一方耗尽。</li>
+<li>每跳同时扣掉<strong>水 0.4U + 雷 0.4U</strong>，自然衰减照常进行 —— 所以感电的持续时间由<strong>元素量少的那一方</strong>决定。</li>
+<li>第三元素打上去可以<strong>同时触发两个反应</strong>（火 → 超载 + 蒸发；冰 → 超导 + 冻结），雷反应优先结算。</li>
+</ul></div>
+
+<h2>一、为什么水雷能共存</h2>
+
+<p>绝大多数元素碰到一起，要么反应掉、要么互相覆盖。感电是例外：触发后<strong>水与雷同时作为附着存在</strong>，谁都不是「被消耗掉的那一方」。这个状态在元素量耗尽前会一直维持。</p>
+
+<table>
+<thead><tr><th>项目</th><th>数值</th></tr></thead>
+<tbody>
+<tr><td>触发元素</td><td>水 + 雷（双向）</td></tr>
+<tr><td>结算频率</td><td>每秒 1 跳</td></tr>
+<tr><td>每跳消耗</td><td>水 0.4U + 雷 0.4U</td></tr>
+<tr><td>伤害倍率</td><td>2 × 等级系数</td></tr>
+<tr><td>传导范围</td><td>5 米内 1 个潮湿目标</td></tr>
+<tr><td>是否给周围挂雷</td><td><strong>否</strong>，只传伤害</td></tr>
+</tbody>
+</table>
+
+<p>因为两种元素都在，感电目标可以<strong>同时吃两套增伤</strong>，也能在感电期间继续被挂上第三种元素。这是武装队能成立的根本原因。</p>
+
+<h2>二、伤害公式与精通收益</h2>
+
+<p>感电伤害 = <strong>2 × 等级系数 × (1 + 精通加成) × 雷抗倍率</strong>，精通加成同样是 <strong>16 × 精通 ÷ (精通 + 2000)</strong>。</p>
+
+<table>
+<thead><tr><th>角色等级</th><th>0 精通</th><th>200 精通</th><th>500 精通</th><th>1000 精通</th></tr></thead>
+<tbody>
+<tr><td>50</td><td>647</td><td>1,588</td><td>2,717</td><td>4,098</td></tr>
+<tr><td>70</td><td>1,531</td><td>3,758</td><td>6,430</td><td>9,697</td></tr>
+<tr><td>80</td><td>2,155</td><td>5,289</td><td>9,051</td><td>13,648</td></tr>
+<tr><td>90</td><td><strong>2,894</strong></td><td>7,102</td><td>12,154</td><td>18,327</td></tr>
+</tbody>
+</table>
+
+<p>关键点：<strong>感电是按跳结算的</strong>。一跳 2,894，持续 8 秒就是约 23,000 点伤害，而且是范围伤害。这让感电在<strong>群怪场景</strong>里的总伤害非常可观 —— 单体反而不突出。</p>
+
+<p>但注意，触发那条感电的角色决定数值。<strong>谁最后挂的元素，就用谁的精通</strong>。这就是武装队要给雷神或北斗堆精通的原因。</p>
+
+<h2>三、0.4U 消耗意味着什么</h2>
+
+<p>感电每跳同时扣水雷各 0.4U，而元素本身还在自然衰减。所以：</p>
+<ul>
+<li><strong>持续时间看短板</strong>。水 1U 雷 2U，感电只能撑到水耗尽，大约 2 跳左右。</li>
+<li><strong>强附着能延长感电</strong>。2U 水（如行秋雨帘剑）配合后台持续挂雷，能稳定维持 4–6 跳。</li>
+<li><strong>高频弱附着反而更好</strong>。与其一次性挂 4U，不如每 2 秒补 1U，因为自然衰减不会浪费。</li>
+</ul>
+
+<p>另外两个容易忽略的细节：</p>
+<ul>
+<li>如果感电因为某一方耗尽而结束，且距上次结算<strong>已超过 0.5 秒</strong>，会补一跳伤害。</li>
+<li>切换角色会<strong>暂停</strong>自己身上的感电跳伤，切回来且水雷仍在时恢复。所以感电不会把后台角色打死。</li>
+</ul>
+
+<h2>四、第三元素：同时触发两个反应</h2>
+
+<p>因为水雷共存，第三个元素打上去可能<strong>一次结算两个反应</strong>。这是感电最独特的机制。</p>
+
+<table>
+<thead><tr><th>第三元素</th><th>同时触发</th><th>实用价值</th></tr></thead>
+<tbody>
+<tr><td>火</td><td>超载 + 蒸发</td><td>香菱在感电队里既能蒸发又能超载，伤害翻倍</td></tr>
+<tr><td>冰</td><td>超导 + 冻结</td><td>控制与减抗同时到手，但会打断感电</td></tr>
+<tr><td>风</td><td>水扩散 + 雷扩散</td><td>一次减抗两个元素，双扩散的最简路线</td></tr>
+<tr><td>草</td><td>绽放 + 原激化</td><td>可转超绽放体系，但反应链复杂</td></tr>
+</tbody>
+</table>
+
+<p><strong>优先级规则</strong>：同时结算时<strong>雷反应优先</strong>。只有当触发元素在消耗完雷附着后还有剩余，水反应才会成立。这意味着火元素打感电目标时，超载一定成立，蒸发则取决于剩余元素量。</p>
+
+<h2>五、传导机制</h2>
+
+<p>感电伤害会额外传导给 <strong>5 米内一个处于潮湿状态</strong>的目标，按<strong>被传导者自己的雷抗</strong>结算。两个限制：</p>
+<ul>
+<li><strong>不会给周围挂雷附着</strong>，只传伤害。所以感电不能像扩散那样把雷「传开」。</li>
+<li>不会消耗被传导者的潮湿状态。所以湿身敌人可以持续被电。</li>
+</ul>
+
+<p>实战含义：<strong>先让水面或水元素把敌人打湿，再挂雷</strong>，传导链才成立。行秋、夜兰、心海这类高频水附着是感电队的地基。</p>
+
+<h2>六、武装队配队模板</h2>
+
+<table>
+<thead><tr><th>位置</th><th>人选</th><th>职责</th></tr></thead>
+<tbody>
+<tr><td>雷站场/爆发</td><td>雷神 / 北斗 / 八重神子</td><td>主输出，堆精通与充能</td></tr>
+<tr><td>水后台</td><td>行秋 / 夜兰 / 心海</td><td>高频水附着，维持感电</td></tr>
+<tr><td>雷后台</td><td>菲谢尔 / 北斗</td><td>持续补雷，产球</td></tr>
+<tr><td>风减抗</td><td>万叶 / 砂糖</td><td>翠绿之影减抗，双扩散两个元素</td></tr>
+</tbody>
+</table>
+
+<p>经典「雷神武装」循环：雷神战技铺雷 → 行秋爆发 + 战技挂水 → 万叶扩散双减抗 → 雷神爆发收尾。整套循环里感电持续不断，万叶一次长按战技可以同时扩散水雷两个元素。</p>
+
+<p>配装方向：</p>
+<ul>
+<li><strong>雷神</strong>：精通沙 + 精通杯 + 精通冠（超绽放/感电向），或传统的充能沙 + 雷伤杯 + 双爆冠（直伤向）。</li>
+<li><strong>北斗</strong>：绝缘之旗印 4 件，充能优先。</li>
+<li><strong>行秋</strong>：绝缘之旗印 4 件，充能 200% 以上。</li>
+</ul>
+
+<h2>七、常见误区</h2>
+
+<table>
+<thead><tr><th>说法</th><th>实际</th></tr></thead>
+<tbody>
+<tr><td>感电伤害吃雷伤加成</td><td>不吃。剧变反应只吃等级、精通、目标雷抗</td></tr>
+<tr><td>感电会给周围敌人挂雷</td><td>不会。只传导伤害，不传导附着</td></tr>
+<tr><td>感电可以叠加多层</td><td>不能。同一目标只有一个感电状态，重复触发只刷新元素量</td></tr>
+<tr><td>感电只适合打群怪</td><td>群怪收益最高，但单体也能稳定输出，只是总伤害占比下降</td></tr>
+<tr><td>感电会杀死后台角色</td><td>不会。感电不能伤害后台角色，切换角色还会暂停跳伤</td></tr>
+</tbody>
+</table>
+
+<p>想理解元素量与附着规则，见<a href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide.html">元素附着机制</a>；扩散与双扩散见<a href="https://genshin-guide-one-five.vercel.app/guides/swirl-guide.html">扩散反应攻略</a>；充能规划见<a href="https://genshin-guide-one-five.vercel.app/guides/elemental-particle-guide.html">元素微粒机制</a>；超绽放体系见<a href="https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide.html">超绽放配队</a>。</p>
+
+<h2>常见问题</h2>
+
+<h3>感电的伤害算谁的？</h3>
+<p>算最后触发反应的那个角色。所以感电队的精通应该堆在<strong>负责挂第二种元素</strong>的人身上，通常是雷位或水位的后台。</p>
+
+<h3>为什么我的感电只跳一两下就没了？</h3>
+<p>因为水或雷有一方元素量太低。每跳要消耗双方各 0.4U，弱附着撑不了多久。解决办法是提高水附着频率，或改用强附着技能开局。</p>
+
+<h3>感电和超绽放能一起玩吗？</h3>
+<p>可以但不推荐。草元素会同时参与绽放与激化，反应链变得不可控，感电窗口被压缩。想要稳定输出，选一条路线专精更好。</p>
+
+<h3>感电队需要堆多少精通？</h3>
+<p>触发位 600–1000 精通收益最好。以 90 级为例，0 精通一跳 2,894，1000 精通一跳 18,327，差距超过 6 倍。</p>
+
+<h3>感电会被护盾挡住吗？</h3>
+<p>不会。剧变反应无视护盾直接结算伤害，但敌人的元素抗性仍然生效。雷抗高的敌人会明显削弱感电。</p>
+
+<h3>武装队没有雷神能玩吗？</h3>
+<p>能。北斗 + 菲谢尔 + 行秋 + 万叶是很成熟的平民版本，输出略低但机制完整。关键是水雷覆盖不断。</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('订阅成功！');
+    } catch(err) {
+      alert('订阅失败，请稍后再试。');
+    }
+  });
+});
+</script>
+</body>
+</html>
