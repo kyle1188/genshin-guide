@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genshin Overloaded Reaction Guide: 2.75x Scaling, 5m AoE & Knockback</title>
+<meta name="description" content="How Overloaded works: 2.75x level multiplier, 3,979 base at level 90, EM conversion table, 90 poise damage, knockback trade-offs, the 5.2 buff and Chevreuse teams.">
+<meta name="keywords" content="genshin overloaded reaction,overload damage,overload multiplier,overload poise damage,chevreuse,transformative reaction">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/overload-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/overload-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/overload-guide-en.html" />
+<meta property="og:title" content="Genshin Overloaded Reaction Guide: 2.75x Scaling, 5m AoE & Knockback">
+<meta property="og:description" content="How Overloaded works: 2.75x level multiplier, 3,979 base at level 90, EM conversion table, 90 poise damage, knockback trade-offs, the 5.2 buff and Chevreuse teams.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/overload-guide-en.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Overloaded Reaction Guide: 2.75x Scaling, 5m AoE & Knockback", "description": "How Overloaded works: 2.75x level multiplier, 3,979 base at level 90, EM conversion table, 90 poise damage, knockback trade-offs, the 5.2 buff and Chevreuse teams.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-20", "dateModified": "2026-10-20", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/overload-guide-en.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How is Overloaded damage calculated?", "acceptedAnswer": {"@type": "Answer", "text": "2.75 x Level Multiplier x (1 + EM bonus) x target Pyro RES. At level 90 with 0 EM the base is 3,979; it ignores DEF, cannot crit and ignores ATK."}}, {"@type": "Question", "name": "Why does Overload only trigger once?", "acceptedAnswer": {"@type": "Answer", "text": "The explosion does not apply Pyro, so no aura remains on the target. You must re-apply Pyro or Electro for another trigger."}}, {"@type": "Question", "name": "Does Overload use crit or ATK?", "acceptedAnswer": {"@type": "Answer", "text": "Neither. Transformative reactions scale only with the trigger's level, Elemental Mastery and the target's Pyro RES."}}, {"@type": "Question", "name": "How much poise damage does Overload deal?", "acceptedAnswer": {"@type": "Answer", "text": "90 poise damage, and it counts as a Blunt Attack, so it can Shatter frozen targets and breaks physical shields efficiently."}}, {"@type": "Question", "name": "What changed for Overload in 5.2?", "acceptedAnswer": {"@type": "Answer", "text": "The multiplier went from 2.0 to 2.75, alongside Electro-Charged 1.2 to 2.0, Superconduct 0.5 to 1.5 and Shatter 1.5 to 3.0."}}, {"@type": "Question", "name": "Do Overload teams need Chevreuse?", "acceptedAnswer": {"@type": "Answer", "text": "Not strictly, but she is the core: with an all-Pyro/Electro party she shreds 40% Pyro and Electro RES after an Overload and heals."}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/overload-guide.html">中文</a>
+</div>
+<div class="container">
+<h1>Genshin Overloaded Reaction Guide: 2.75x Scaling, 5m AoE and Knockback</h1>
+<p>Overloaded triggers when Pyro meets Electro. It has the second-highest multiplier of any transformative reaction (2.75), yet it is still called "big numbers, slow clears". This guide covers the scaling, the EM conversion, the 90 poise damage, the knockback problem, and why the 5.2 rebalance made Overload teams actually viable.</p>
+<div class="quick"><strong>Quick Answer</strong>
+<ul>
+<li>Pyro on Electro or Electro on Pyro both trigger it, dealing Pyro DMG in a <strong>5 m</strong> radius.</li>
+<li>Damage = <strong>2.75 x Level Multiplier</strong>. At level 90 the base is <strong>3,979</strong>. It scales only with level, EM and the target's Pyro RES — <strong>it ignores DEF, cannot crit, and ignores ATK</strong>.</li>
+<li>It also deals <strong>90 poise damage plus heavy knockback</strong>, and counts as a <strong>Blunt Attack</strong> — so it can Shatter and breaks certain shields well.</li>
+<li>The explosion <strong>does not apply Pyro</strong>, so it cannot chain by itself; you must re-apply an aura each time.</li>
+<li>Version 5.2 raised the multiplier from 2.0 to 2.75, turning Overload from a meme into a real archetype.</li>
+</ul></div>
+
+<h2>Trigger Rules: Order Does Not Matter</h2>
+<ul>
+<li>Hit a <strong>Pyro-affected</strong> target with Electro, or</li>
+<li>hit an <strong>Electro-affected</strong> target with Pyro.</li>
+</ul>
+<p>Both directions deal identical damage, so build the rotation around whichever side is easier to apply. The reaction consumes both auras, which is why Overload teams need high-frequency application rather than two big hits.</p>
+
+<h2>Damage Formula and Level Table</h2>
+<p>Overloaded DMG = <strong>2.75 x Level Multiplier x (1 + EM bonus) x target Pyro RES multiplier</strong>. The Level Multiplier follows the <strong>triggering character's level</strong>, so a level 90 trigger versus a level 70 trigger can more than double the output.</p>
+<table>
+<thead><tr><th>Trigger level</th><th>Base DMG (character)</th><th>Base DMG (enemy)</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>47</td><td>47</td></tr>
+<tr><td>20</td><td>222</td><td>222</td></tr>
+<tr><td>40</td><td>570</td><td>570</td></tr>
+<tr><td>60</td><td>1,355</td><td>1,349</td></tr>
+<tr><td>70</td><td>2,106</td><td>1,980</td></tr>
+<tr><td>80</td><td>2,963</td><td>2,603</td></tr>
+<tr><td><strong>90</strong></td><td><strong>3,979</strong></td><td>3,308</td></tr>
+<tr><td>100</td><td>4,606</td><td>4,606</td></tr>
+</tbody>
+</table>
+<p>Note the third column: the same explosion hits for 3,308 when an enemy triggers it, versus 3,979 for the player. That gap is level suppression — and it also applies to you if your trigger is underleveled. It is the single most common reason a player sees "only a few thousand" per Overload.</p>
+<p>Overload also <strong>ignores DEF, cannot crit, and ignores ATK and Pyro DMG Bonus</strong>. Only the target's <strong>Pyro RES</strong> modifies it. Crit stats do nothing for the reaction itself; they only serve the character's direct damage.</p>
+
+<h2>Elemental Mastery Conversion (Level 90)</h2>
+<p>Transformative reactions use <strong>16 x EM / (EM + 2000)</strong>:</p>
+<table>
+<thead><tr><th>EM</th><th>DMG bonus</th><th>Overload per hit</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>+0%</td><td>3,979</td></tr>
+<tr><td>100</td><td>+76.2%</td><td>7,011</td></tr>
+<tr><td>200</td><td>+145.5%</td><td>9,767</td></tr>
+<tr><td>400</td><td>+266.7%</td><td>14,589</td></tr>
+<tr><td>600</td><td>+369.2%</td><td>18,671</td></tr>
+<tr><td>800</td><td>+457.1%</td><td>22,168</td></tr>
+<tr><td>1000</td><td>+533.3%</td><td>25,199</td></tr>
+</tbody>
+</table>
+<p>The first 200 EM buys +145%, then returns flatten fast. For a pure reaction team, roughly 400 EM is usually the sweet spot; leftover substats are better spent on the trigger's own direct damage.</p>
+<p>Do not forget RES: most enemies sit at 10% Pyro RES, so a level 90 zero-EM Overload realistically lands around <strong>3,581</strong>. Against higher-RES targets it drops further, which is exactly why RES shred is so valuable here.</p>
+
+<h2>90 Poise Damage and Heavy Knockback</h2>
+<p>Overload is not just damage — it is a Blunt hit with <strong>90 poise damage</strong> and strong knockback. For comparison:</p>
+<table>
+<thead><tr><th>Reaction</th><th>Poise damage</th></tr></thead>
+<tbody>
+<tr><td>Electro-Charged (per tick)</td><td>130</td></tr>
+<tr><td>Swirl (primary target)</td><td>130</td></tr>
+<tr><td><strong>Overloaded</strong></td><td><strong>90</strong></td></tr>
+<tr><td>Hyperbloom / Burgeon (vs enemies)</td><td>50</td></tr>
+<tr><td>Superconduct / Burning / Shatter / Unfreeze</td><td>30</td></tr>
+<tr><td>Swirl (AoE)</td><td>30</td></tr>
+<tr><td>Bloom (vs enemies)</td><td>25</td></tr>
+</tbody>
+</table>
+<p>The knockback cost is concrete: enemies get pushed out of your AoE, grouping is wasted, melee carries have to chase, and skills whiff. So "big numbers, slow clears" is not a myth — knockback converts damage into repositioning time.</p>
+<p>Four ways to mitigate it:</p>
+<ul>
+<li><strong>Fight against walls</strong> — terrain eats the knockback distance.</li>
+<li><strong>Bring grouping</strong> — Kazuha, Venti or Sucrose pull enemies back after the explosion.</li>
+<li><strong>Play ranged or wide AoE</strong> — catalysts, bows and large burst zones do not care about scatter.</li>
+<li><strong>Run Chevreuse</strong> — her RES shred and healing make the scatter tolerable, which is the current standard fix.</li>
+</ul>
+
+<h2>What Overload Is Actually Good At</h2>
+<h3>1. Interrupting</h3>
+<p>90 poise damage is mid-to-high among reactions, and high trigger frequency equals sustained suppression. Against Abyss Mage chants and Fatui charge-ups, Overload reliably cancels the animation — often worth more than the damage itself.</p>
+<h3>2. Breaking shields</h3>
+<p>Because it is a Blunt Attack, Overload handles Geo shields and most physical shields well; being Pyro damage, it also has an edge against Cryo shields. Against shielded elites, Overload teams often advance faster than raw damage teams.</p>
+<h3>3. Shatter and chain reactions</h3>
+<p>As a Blunt hit it can Shatter frozen targets, and it detonates explosive barrels in the world — both genuinely useful while exploring and clearing camps.</p>
+
+<h2>The 5.2 Rebalance: Why Overload Works Now</h2>
+<table>
+<thead><tr><th>Reaction</th><th>Old multiplier</th><th>Since 5.2</th></tr></thead>
+<tbody>
+<tr><td>Overloaded</td><td>2.0</td><td><strong>2.75</strong></td></tr>
+<tr><td>Electro-Charged</td><td>1.2</td><td>2.0</td></tr>
+<tr><td>Superconduct</td><td>0.5</td><td>1.5</td></tr>
+<tr><td>Shatter</td><td>1.5</td><td>3.0</td></tr>
+<tr><td>Swirl</td><td>0.6</td><td>0.6</td></tr>
+</tbody>
+</table>
+<p>Overload gained 37.5%, and Chevreuse simultaneously provided "40% Pyro and Electro RES shred for all-Pyro/Electro teams". Together those two changes turned "not enough damage, plus it scatters enemies" into a working AoE archetype. Any guide older than 5.2 telling you Overload is useless is simply outdated.</p>
+
+<h2>Team and Build</h2>
+<ul>
+<li><strong>Core support: Chevreuse.</strong> Your party must contain only Pyro and Electro characters; after an Overload she shreds the team's targets' Pyro and Electro RES and heals. She is the entry ticket — without her the team still functions, but pays full price for the scatter.</li>
+<li><strong>On-field:</strong> Raiden Shogun, Arlecchino, Lyney, Clorinde — characters that keep an aura up while attacking.</li>
+<li><strong>Off-field:</strong> Xiangling, Beidou, Yae Miko, Fischl for application and sub-DPS.</li>
+<li><strong>Artifacts:</strong> 4-piece Thundering Fury or 4-piece Crimson Witch of Flames. Both give +40% Overloaded DMG; choose by the carry's direct damage type.</li>
+<li><strong>Stats:</strong> pure reaction teams prefer EM sands and goblet; hybrid teams keep an ATK sands and pick up EM from substats.</li>
+</ul>
+<p>One rule decides everything: <strong>Overload damage uses the EM of the character who triggered it</strong>. Let your highest-EM unit trigger instead of letting the carry do it incidentally. Get this backwards and you lose roughly half your output.</p>
+
+<h2>Overload vs Vaporize vs Hyperbloom</h2>
+<table>
+<thead><tr><th></th><th>Overloaded</th><th>Vaporize</th><th>Hyperbloom</th></tr></thead>
+<tbody>
+<tr><td>Level 90 base</td><td>3,979</td><td>Carry hit x1.5 or x2</td><td>4,341</td></tr>
+<tr><td>Uses crit / ATK</td><td>Neither</td><td>Both</td><td>Neither</td></tr>
+<tr><td>Main cost</td><td>EM + Chevreuse</td><td>Crit + EM + high multipliers</td><td>EM + an Electro trigger</td></tr>
+<tr><td>Extra effect</td><td>Knockback, interrupt, shield break</td><td>None</td><td>None</td></tr>
+<tr><td>Best for</td><td>Groups, shielded elites, cancels</td><td>Single-target bosses</td><td>Low investment, high floor</td></tr>
+</tbody>
+</table>
+<p>They are not substitutes. Overload wins on control and shields, Vaporize wins on scaling with the character sheet, Hyperbloom wins on investment cost. Pick based on whether you lack damage or lack smoothness.</p>
+
+<h2>FAQ</h2>
+<h3>Why does Overload only happen once?</h3>
+<p>Because the explosion does not re-apply Pyro, the target is left with no usable aura. High-frequency appliers (Xiangling, Beidou, Fischl) therefore fit Overload far better than slow, high-multiplier units.</p>
+<h3>Can one target take repeated Overloads?</h3>
+<p>With limits: the same attacker can only deal Overload DMG to the same target once every 0.5 seconds, and multiple Overloads on one target within 0.1 seconds resolve only once regardless of source. Stacking trigger frequency has diminishing returns.</p>
+<h3>Does Overload benefit from Pyro DMG Bonus?</h3>
+<p>No. Elemental DMG Bonus only affects the character's own skills. Transformative reactions scale with level, EM and RES shred only — so upgrade the trigger, stack EM, or shred Pyro RES.</p>
+<h3>Can Overload Shatter a frozen enemy?</h3>
+<p>Yes. It is classified as a Blunt Attack, so it Shatters frozen targets and damages Geo shields efficiently.</p>
+<h3>Is Overload playable without Chevreuse?</h3>
+<p>Yes, but noticeably worse: you lose the 40% RES shred and nobody compensates for the scatter. Bring a reliable shielder or strong grouping first.</p>
+
+<h2>Bottom Line</h2>
+<p>Overload trades control for damage: a solid 2.75 multiplier on one side, 90 poise damage and knockback on the other. It is worth running when your enemies can be interrupted and your team can survive the scatter. If both answers are yes, it is the most cost-efficient AoE option in the game.</p>
+<h2>Related Guides</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide-en.html">Electro-Charged Reaction</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/superconduct-guide-en.html">Superconduct and Physical Teams</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/swirl-guide-en.html">Swirl Reaction Mechanics</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html">RES Shred Guide</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-reactions-detailed-en.html">All Elemental Reactions</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/poise-guide-en.html">Poise and Stagger Mechanics</a></li>
+</ul>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/overload-guide.html">查看中文版</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>Subscribe for Genshin Tips</h3>
+<p>Weekly character builds and version guides, no spam.</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">Subscribe</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em})});
+      await r.json();
+      alert('Subscribed!');
+    } catch(err) { alert('Subscription failed, please try again.'); }
+  });
+});
+</script>
+</body>
+</html>

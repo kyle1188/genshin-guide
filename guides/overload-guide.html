@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神超载反应详解：2.75 倍系数、5 米爆炸与击退机制</title>
+<meta name="description" content="超载反应伤害怎么算？2.75 倍系数、90 级 3,979 基础值、精通换算表、90 点削韧与强击退的代价、5.2 版本改动与夏沃蕾配队，一次讲清。">
+<meta name="keywords" content="原神超载,超载反应,超载伤害,超载系数,超载削韧,夏沃蕾,剧变反应,超载配队">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/overload-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/overload-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/overload-guide-en.html" />
+<meta property="og:title" content="原神超载反应详解：2.75 倍系数、5 米爆炸与击退机制">
+<meta property="og:description" content="超载反应伤害怎么算？2.75 倍系数、90 级 3,979 基础值、精通换算表、90 点削韧与强击退的代价、5.2 版本改动与夏沃蕾配队，一次讲清。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/overload-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神超载反应详解：2.75 倍系数、5 米爆炸与击退机制", "description": "超载反应伤害怎么算？2.75 倍系数、90 级 3,979 基础值、精通换算表、90 点削韧与强击退的代价、5.2 版本改动与夏沃蕾配队，一次讲清。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-20", "dateModified": "2026-10-20", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/overload-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "超载反应伤害怎么算？", "acceptedAnswer": {"@type": "Answer", "text": "2.75 × 等级系数 ×（1 + 精通加成）× 目标火抗倍率。90 级零精通基础为 3,979，无视防御、不能暴击、不吃攻击力。"}}, {"@type": "Question", "name": "超载为什么炸一次就没了？", "acceptedAnswer": {"@type": "Answer", "text": "爆炸不会给目标附着火元素，反应后目标身上没有可用元素，必须重新挂火或挂雷才能触发第二次。"}}, {"@type": "Question", "name": "超载吃暴击和攻击力吗？", "acceptedAnswer": {"@type": "Answer", "text": "都不吃。剧变反应只受触发者等级、元素精通和目标火抗影响，双爆与攻击力只作用于角色自己的直伤。"}}, {"@type": "Question", "name": "超载的削韧值是多少？", "acceptedAnswer": {"@type": "Answer", "text": "90 点，并且算钝击，因此可以碎冰、对岩盾等实体护盾效率较高；击退效果很强。"}}, {"@type": "Question", "name": "5.2 版本超载改了什么？", "acceptedAnswer": {"@type": "Answer", "text": "基础系数从 2.0 上调到 2.75，同时感电 1.2→2.0、超导 0.5→1.5、碎冰 1.5→3.0。"}}, {"@type": "Question", "name": "超载队必须带夏沃蕾吗？", "acceptedAnswer": {"@type": "Answer", "text": "不是必须，但她是核心：队伍仅含雷火角色时，超载后可为全队降低 40% 火雷抗并提供治疗，同时缓解分散问题。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/overload-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神超载反应详解：2.75 倍系数、5 米爆炸与击退怎么用</h1>
+<p>超载是火与雷相遇时的剧变反应。它是所有剧变反应里基础系数第二高的一档（2.75），却常年被评为"伤害高但打不快"。这篇把系数、精通换算、90 点削韧、击退副作用和 5.2 版本后的可用配队一次讲清。</p>
+<div class="quick"><strong>快速答案</strong>
+<ul>
+<li>火打雷、雷打火都触发，在 <strong>5 米</strong>范围内造成火元素伤害。</li>
+<li>伤害 = <strong>2.75 × 等级系数</strong>，90 级基础 <strong>3,979</strong>；只看等级、精通、目标火抗，<strong>无视防御、不能暴击、不吃攻击力</strong>。</li>
+<li>附带 <strong>90 点削韧 + 强击退</strong>，并且算<strong>钝击</strong>，所以能碎冰、能高效破某些护盾。</li>
+<li>爆炸<strong>不会给目标附着火元素</strong>，因此无法靠自己连锁，必须重新补附着。</li>
+<li>5.2 版本把系数从 2.0 上调到 2.75，超载队从"娱乐玩法"变成能打的流派。</li>
+</ul></div>
+
+<h2>一、触发条件：谁先谁后都一样</h2>
+<p>超载的触发不区分顺序：</p>
+<ul>
+<li>对<strong>已附着火</strong>的目标打雷；</li>
+<li>对<strong>已附着雷</strong>的目标打火。</li>
+</ul>
+<p>两种方式伤害完全一致，配队时按技能轴方便的那一侧安排即可。触发后两种元素都被消耗，需要重新挂元素才能触发第二次——这就是超载队必须"高频附着"的原因，而不是随便两下就能连炸。</p>
+
+<h2>二、伤害公式与等级对照</h2>
+<p>超载伤害 = <strong>2.75 × 等级系数 ×（1 + 精通加成）× 目标火抗倍率</strong>。等级系数只跟<strong>触发者等级</strong>走，所以让 90 级角色当触发者，和让 70 级角色当触发者，能差出一倍以上。</p>
+<table>
+<thead><tr><th>触发者等级</th><th>角色触发基础伤害</th><th>敌人/环境触发</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>47</td><td>47</td></tr>
+<tr><td>20</td><td>222</td><td>222</td></tr>
+<tr><td>40</td><td>570</td><td>570</td></tr>
+<tr><td>60</td><td>1,355</td><td>1,349</td></tr>
+<tr><td>70</td><td>2,106</td><td>1,980</td></tr>
+<tr><td>80</td><td>2,963</td><td>2,603</td></tr>
+<tr><td><strong>90</strong></td><td><strong>3,979</strong></td><td>3,308</td></tr>
+<tr><td>100</td><td>4,606</td><td>4,606</td></tr>
+</tbody>
+</table>
+<p>注意最后一列：同一场爆炸，怪打怪只有 3,308，玩家打怪是 3,979 —— 差的那部分是等级压制。反过来说，如果你的角色等级落后于敌人，超载伤害会被压掉一大截，这是"为什么我的超载只有几千"最常见的原因。</p>
+<p>另外：超载<strong>无视防御、不吃暴击、不吃攻击力与火元素伤害加成</strong>，只受目标<strong>火抗</strong>影响。所以堆双爆对超载本身一点用都没有，爆伤头只服务角色自己的直伤部分。</p>
+
+<h2>三、元素精通换算（90 级触发）</h2>
+<p>剧变反应的精通加成公式是 <strong>16 × 精通 ÷（精通 + 2000）</strong>，超载走这一套：</p>
+<table>
+<thead><tr><th>元素精通</th><th>伤害加成</th><th>单次超载伤害</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>+0%</td><td>3,979</td></tr>
+<tr><td>100</td><td>+76.2%</td><td>7,011</td></tr>
+<tr><td>200</td><td>+145.5%</td><td>9,767</td></tr>
+<tr><td>400</td><td>+266.7%</td><td>14,589</td></tr>
+<tr><td>600</td><td>+369.2%</td><td>18,671</td></tr>
+<tr><td>800</td><td>+457.1%</td><td>22,168</td></tr>
+<tr><td>1000</td><td>+533.3%</td><td>25,199</td></tr>
+</tbody>
+</table>
+<p>前 200 点精通就换来 +145%，之后收益明显放缓。所以纯反应队把精通堆到 400 左右通常比硬拉到 1000 更划算；超出部分留给触发角色的直伤更实际。</p>
+<p>别忘了抗性：常见敌人火抗 10%，伤害 ×0.9，90 级零精通实际打出约 <strong>3,581</strong>。打抗性更高的目标要再打折，这也是减抗辅助在超载队里价值很大的原因。</p>
+
+<h2>四、90 点削韧与强击退：超载最大的副作用</h2>
+<p>超载不只是伤害，它同时是一次<strong>削韧 90 的钝击</strong>，并附带很强的击退。作为对比，各反应的削韧值是：</p>
+<table>
+<thead><tr><th>反应</th><th>削韧值</th></tr></thead>
+<tbody>
+<tr><td>感电（每跳）</td><td>130</td></tr>
+<tr><td>扩散（主目标）</td><td>130</td></tr>
+<tr><td><strong>超载</strong></td><td><strong>90</strong></td></tr>
+<tr><td>超绽放 / 烈绽放（对敌）</td><td>50</td></tr>
+<tr><td>超导 / 燃烧 / 碎冰 / 冻结解除</td><td>30</td></tr>
+<tr><td>扩散（范围）</td><td>30</td></tr>
+<tr><td>绽放（对敌）</td><td>25</td></tr>
+</tbody>
+</table>
+<p>击退带来的问题很具体：怪被炸出攻击范围、聚怪白做、近战要追出去、AoE 技能打空。所以老玩家的评价"超载伤害高但打不快"并不是错觉，而是击退把伤害换成了位移成本。</p>
+<p>四条缓解办法：</p>
+<ul>
+<li><strong>贴墙打</strong>：把怪顶到墙边，击退距离被地形吃掉。</li>
+<li><strong>风系聚怪</strong>：万叶、温迪、砂糖在爆发窗口先聚，超载后仍有二次吸附。</li>
+<li><strong>换远程或大范围</strong>：法器、弓、大范围爆发本身不怕分散。</li>
+<li><strong>夏沃蕾队</strong>：她的减抗与治疗让雷火队能接受一定的分散代价，这是目前最主流的解法。</li>
+</ul>
+
+<h2>五、超载真正的三个用处</h2>
+<h3>1. 打断</h3>
+<p>90 点削韧在反应里属于中上，高频触发等于持续压制。对深渊法师吟唱、愚人众蓄力这类有明显前摇的动作，超载能稳定把动作打断，实战价值常常高于那几千点伤害。</p>
+<h3>2. 破盾</h3>
+<p>超载被判定为<strong>钝击</strong>，对岩元素护盾与多数实体护盾效率不错；同时它本身是火元素伤害，对冰盾天然占优。遇到带盾精英，超载队的推进速度往往比纯直伤队快。</p>
+<h3>3. 碎冰与引爆</h3>
+<p>因为算钝击，超载可以触发对冻结目标的碎冰；也能引爆场景里的炸药桶，做连锁清场。这两点在探索和清怪里很实用。</p>
+
+<h2>六、5.2 版本改动：为什么超载突然能打了</h2>
+<table>
+<thead><tr><th>反应</th><th>旧系数</th><th>5.2 起系数</th></tr></thead>
+<tbody>
+<tr><td>超载</td><td>2.0</td><td><strong>2.75</strong></td></tr>
+<tr><td>感电</td><td>1.2</td><td>2.0</td></tr>
+<tr><td>超导</td><td>0.5</td><td>1.5</td></tr>
+<tr><td>碎冰</td><td>1.5</td><td>3.0</td></tr>
+<tr><td>扩散</td><td>0.6</td><td>0.6</td></tr>
+</tbody>
+</table>
+<p>超载的系数涨了 37.5%，同时夏沃蕾提供了"纯雷火队 −40% 火雷抗"的机制，两件事叠加，才让超载从"数值不够，机制还添乱"变成可用的群体流派。查旧攻略时看到"超载没用"，那是 5.2 之前的结论。</p>
+
+<h2>七、配队与配装</h2>
+<ul>
+<li><strong>核心辅助：夏沃蕾</strong>。队伍里只能有雷、火角色，触发超载后给全队降火雷抗并治疗。她是超载队的门槛，没有她也能玩，但要接受更纯粹的"反应伤害 + 分散"。</li>
+<li><strong>前台：</strong>雷电将军、阿蕾奇诺、林尼、克洛琳德这类能持续站场附着的角色。</li>
+<li><strong>后台：</strong>香菱、北斗、八重神子、菲谢尔，负责补附着与副输出。</li>
+<li><strong>圣遗物：</strong>如雷的盛怒 4 件（超载伤害 +40%）或炽烈的炎之魔女 4 件（超载伤害 +40%），两者对反应本身加成相同，按角色直伤类型选。</li>
+<li><strong>词条：</strong>纯反应队优先精通沙 / 精通杯；混合直伤队保留攻击沙，靠副词条补精通。</li>
+</ul>
+<p>关键规则只有一条：<strong>超载伤害只吃"触发那一下的角色"的精通</strong>。所以要让队里精通最高的人去触发，而不是让主 C 顺便触发。这一点搞反，伤害会掉一半。</p>
+
+<h2>八、超载 vs 蒸发 vs 超绽放</h2>
+<table>
+<thead><tr><th>维度</th><th>超载</th><th>蒸发</th><th>超绽放</th></tr></thead>
+<tbody>
+<tr><td>90 级基础值</td><td>3,979</td><td>按角色直伤 ×1.5 或 ×2</td><td>4,341</td></tr>
+<tr><td>吃暴击 / 攻击力</td><td>都不吃</td><td>都吃</td><td>都不吃</td></tr>
+<tr><td>主要成本</td><td>精通 + 夏沃蕾</td><td>双爆 + 精通 + 高倍率角色</td><td>精通 + 雷系触发者</td></tr>
+<tr><td>附带效果</td><td>击退、打断、破盾</td><td>无</td><td>无</td></tr>
+<tr><td>适合场景</td><td>群体、带盾精英、需要打断</td><td>单体高血量 BOSS</td><td>低成本高下限</td></tr>
+</tbody>
+</table>
+<p>三者不是替代关系：超载赢在控制和破盾，蒸发赢在吃满角色面板，超绽放赢在养成成本。选哪个取决于你缺的是"打得动"还是"打得顺"。</p>
+
+<h2>九、常见问题</h2>
+<h3>为什么超载炸一次就没了？</h3>
+<p>因为爆炸不对目标附着火元素，反应结束后目标身上没有可用的火或雷，必须重新挂元素。高频附着角色（香菱、北斗、菲谢尔）因此比低频高倍率角色更适合超载队。</p>
+<h3>同一个目标能连续吃超载吗？</h3>
+<p>有频率上限：同一攻击者对同一目标每 0.5 秒只能造成 1 次超载伤害；不同来源在同一目标 0.1 秒内触发的多次超载，也只结算 1 次。所以堆到极高触发频率并没有线性收益。</p>
+<h3>超载吃火元素伤害加成吗？</h3>
+<p>不吃。元素伤害加成只作用于角色自己的技能直伤，剧变反应只吃等级、精通和减抗。想提升超载只有三条路：升级触发者、堆精通、降目标火抗。</p>
+<h3>超载能打碎冻结的怪吗？</h3>
+<p>能。超载被判定为钝击，可以触发碎冰；同理它也能破岩盾。</p>
+<h3>没有夏沃蕾还能玩超载吗？</h3>
+<p>能，但体验会明显下降：少了 −40% 火雷抗，伤害下一个台阶，且击退没人为你兜底。建议至少有稳定盾位或强聚怪再组。</p>
+
+<h2>小结</h2>
+<p>超载是一条"用伤害换控制"的反应线：系数 2.75 不低，90 削韧和击退是双刃剑。判断它值不值得用，只看两个问题——你的敌人怕不怕被打断，以及你的队伍扛不扛得住怪被炸散。两个答案都是"是"，超载就是性价比最高的群体方案。</p>
+<h2>相关阅读</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide.html">感电反应详解</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/superconduct-guide.html">超导反应与物理流</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/swirl-guide.html">扩散反应机制</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide.html">元素减抗全解</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-reactions-detailed.html">元素反应总览</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/poise-guide.html">韧性与削韧机制</a></li>
+</ul>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/overload-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em})});
+      await r.json();
+      alert('订阅成功！');
+    } catch(err) { alert('订阅失败，请稍后再试。'); }
+  });
+});
+</script>
+</body>
+</html>
