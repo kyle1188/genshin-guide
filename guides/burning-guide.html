@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神燃烧反应详解：0.25 倍系数、DoT 持续伤害与真实用途</title>
+<meta name="description" content="燃烧反应到底有没有用？0.25 倍系数、每 0.27 秒一跳、90 级 361 伤害、精通换算表、持续挂火与破盾的真实定位，一次讲清。">
+<meta name="keywords" content="原神燃烧,燃烧反应,草火反应,燃烧伤害,燃烧配队,DoT,持续挂火">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/burning-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/burning-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/burning-guide-en.html" />
+<meta property="og:title" content="原神燃烧反应详解：0.25 倍系数、DoT 持续伤害与真实用途">
+<meta property="og:description" content="燃烧反应到底有没有用？0.25 倍系数、每 0.27 秒一跳、90 级 361 伤害、精通换算表、持续挂火与破盾的真实定位，一次讲清。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/burning-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神燃烧反应详解：0.25 倍系数、DoT 持续伤害与真实用途", "description": "燃烧反应到底有没有用？0.25 倍系数、每 0.27 秒一跳、90 级 361 伤害、精通换算表、持续挂火与破盾的真实定位，一次讲清。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-23", "dateModified": "2026-10-23", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/burning-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "燃烧反应伤害高吗？", "acceptedAnswer": {"@type": "Answer", "text": "不高。0.25 倍是所有剧变反应里最低的，90 级零精通单跳 361。价值在持续挂火与磨血，不在单次数值。"}}, {"@type": "Question", "name": "燃烧持续多久？", "acceptedAnswer": {"@type": "Answer", "text": "取决于草元素附着量，烧完即停，补草可续，没有固定 8 秒上限。"}}, {"@type": "Question", "name": "燃烧能吃暴击和攻击力吗？", "acceptedAnswer": {"@type": "Answer", "text": "不能。剧变反应只受触发者等级、元素精通和目标火抗影响，不吃双爆与攻击力，无视防御。"}}, {"@type": "Question", "name": "燃烧最强的用途是什么？", "acceptedAnswer": {"@type": "Answer", "text": "持续给目标挂火，让水/冰主 C 全程能触发蒸发融化，顺带磨血破盾。"}}, {"@type": "Question", "name": "燃烧吃减抗吗？", "acceptedAnswer": {"@type": "Answer", "text": "吃。燃烧是火元素反应，火元素减抗会放大它。"}}, {"@type": "Question", "name": "配队怎么选？", "acceptedAnswer": {"@type": "Answer", "text": "纳西妲/柯莱挂草 + 香菱/班尼特挂火 + 水或冰主 C 吃增幅，燃烧本身提供稳定火附着层。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/burning-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神燃烧反应详解：0.25 倍系数、DoT 持续伤害与真实用途</h1>
+<p>燃烧是草与火相遇时的剧变反应，也是所有剧变反应里系数最低的一档（0.25）。它伤害不高，却被反复问"到底有没有用"。这篇把触发、DoT 节奏、精通换算和它真正的三个用途讲清楚。</p>
+<div class="quick"><strong>快速答案</strong>
+<ul>
+<li>草打火、火打草都能触发，目标进入<strong>燃烧状态</strong>，持续掉火元素血。</li>
+<li>每 <strong>0.27 秒</strong>结算一次（约每秒 3-4 跳），伤害 = <strong>0.25 × 等级系数 ×（1 + 精通加成）</strong>，90 级零精通单跳 <strong>361</strong>。</li>
+<li>持续时间取决于<strong>草元素附着量</strong>——草烧完就停，补草能续。</li>
+<li>目标燃烧期间<strong>一直带火元素</strong>，可以顺手触发蒸发、融化。</li>
+<li>只吃等级、精通、目标火抗；<strong>不吃暴击、不吃攻击力、无视防御</strong>。</li>
+<li>真实定位不是输出，而是<strong>持续挂火 + 磨血 + 破盾</strong>的辅助手段。</li>
+</ul></div>
+
+<h2>一、触发与持续：谁烧谁</h2>
+<p>草与火相遇即燃烧，顺序无关：</p>
+<ul>
+<li>火打已附着草的目标；</li>
+<li>草打已附着火的目标。</li>
+</ul>
+<p>触发后目标进入<strong>燃烧状态</strong>，每 <strong>0.27 秒</strong>结算一次火元素 DoT。状态靠"燃元素"维持，只消耗草的附着量——草烧完状态即消失，重新补草可以立刻续上。所以持续时长不看你挂火多快，看的是草元素还能撑多久。</p>
+
+<h2>二、伤害公式与等级系数</h2>
+<p>燃烧伤害 = <strong>0.25 × 等级系数 ×（1 + 精通加成）× 目标火抗倍率</strong>。90 级等级系数约 <strong>1446</strong>，所以零精通单跳就是 0.25 × 1446 ≈ <strong>361</strong>。</p>
+<table>
+<thead><tr><th>元素精通</th><th>伤害加成</th><th>单跳伤害（90 级）</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>+0%</td><td>361</td></tr>
+<tr><td>100</td><td>+50.8%</td><td>503</td></tr>
+<tr><td>200</td><td>+96.5%</td><td>637</td></tr>
+<tr><td>400</td><td>+171.1%</td><td>888</td></tr>
+<tr><td>600</td><td>+234.5%</td><td>1,050</td></tr>
+<tr><td>1000</td><td>+346.4%</td><td>1,490</td></tr>
+</tbody>
+</table>
+<p>注意这是<strong>单跳</strong>数字。燃烧大约每秒 3-4 跳，所以 400 精通下每秒约 <strong>2,700-3,500</strong> 火元素伤害（未算火抗）。打 10% 火抗的怪再乘 0.9。对比一下：单跳 361 跟超载 3,979、超绽放 4,341 差一个数量级，这就是"燃烧伤害低"的来源。</p>
+
+<h2>三、精通加成走哪套公式</h2>
+<p>燃烧是剧变反应，精通加成用 <strong>16 × 精通 ÷（精通 + 2000）</strong> 这一套。前 200 点精通就拿到约 +96%，性价比很高；往上收益放缓。所以纯燃烧流把精通堆到 400 左右通常够用，再高就边际递减。</p>
+<p>要特别区分：燃烧吃的精通加成和增幅反应（蒸发/融化）吃的不是一套系数。增幅走的是 <strong>2.78 × 精通 ÷（精通 + 1400）</strong>。同一层精通，喂给燃烧和喂给蒸发，涨幅不一样。</p>
+
+<h2>四、燃烧的三个真实用途</h2>
+<h3>1. 持续挂火</h3>
+<p>目标在燃烧期间<strong>一直带火元素附着</strong>。这对水、冰主 C 很关键：随时能吃到蒸发、融化。它相当于一个"挂火 buff"，比单个火技能更稳定。这是燃烧最实用的价值。</p>
+<h3>2. 磨血与清杂</h3>
+<p>虽然单跳低，但燃烧是 <strong>持续、对群、无冷却</strong> 的。清理成堆小怪或在 BOSS 战里叠火抗窗口时，它提供的是"顺便掉血"，不是主力。多目标场景下，燃烧同时点多个怪，总伤才显出价值。</p>
+<h3>3. 破盾</h3>
+<p>火元素对冰盾有克制，持续燃烧能慢慢磨掉冰盾。遇到冰盾精英，让目标保持燃烧比硬砸一下更快磨盾。</p>
+
+<h2>五、常见误区</h2>
+<h3>误区一：燃烧是输出主力</h3>
+<p>不是。0.25 倍系数是所有剧变里最低的，堆到 1000 精通单跳也就 1,490。它做不了主 C 的伤害来源，定位是辅助。</p>
+<h3>误区二：燃烧需要堆双爆</h3>
+<p>完全无效。剧变反应不吃暴击率、暴击伤害、攻击力。给燃烧触发者堆双爆是白养。</p>
+<h3>误区三：断火就永远停了</h3>
+<p>不会。只要目标身上还有草（或重新补草），补一次火就能重新点燃。真正停掉的时机是草的附着量耗尽且没补。</p>
+
+<h2>六、配队思路</h2>
+<ul>
+<li><strong>主 C 是水或冰</strong>：燃烧持续挂火，主 C 全程能吃蒸发/融化，这是燃烧队最常见形态。</li>
+<li><strong>高频挂草</strong>：纳西妲、柯莱、提纳里这类后台稳定挂草的角色，能保证燃烧不断档。</li>
+<li><strong>高频挂火</strong>：香菱、班尼特、宵宫，负责持续点火。</li>
+<li>组合起来就是"草火双挂 + 水/冰主 C 吃增幅"，燃烧本身提供稳定的火附着层。</li>
+</ul>
+
+<h2>七、常见问题</h2>
+<h3>燃烧伤害高吗？</h3>
+<p>不高，是所有剧变里最低的（0.25×）。它的价值在持续挂火和磨血，不在单次数值。</p>
+<h3>燃烧持续多久？</h3>
+<p>取决于草元素附着量。烧完即停，补草可续。没有固定 8 秒上限，别被"燃烧 8 秒"的说法带偏。</p>
+<h3>燃烧吃减抗吗？</h3>
+<p>吃。燃烧是火元素反应，任何火元素减抗都会放大它，和所有火系反应一样。</p>
+<h3>燃烧能不能暴击？</h3>
+<p>不能。剧变反应一律不暴击，只看等级、精通、减抗。</p>
+<h3>燃烧对群划算吗？</h3>
+<p>划算。同时对多个目标挂火掉血，是它少数能打的场景；对单目标基本可以忽略。</p>
+
+<h2>小结</h2>
+<p>燃烧是"系数最低、用途最多"的反应。别指望它的伤害，要它的<strong>稳定挂火层</strong>：让水冰主 C 白捡蒸发融化，顺带磨血破盾。想打高反应伤害，去看超绽放和超载；想挂火配合增幅，燃烧才是对的工具。</p>
+<h2>相关阅读</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/dendro-reactions-guide.html">草系元素反应</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide.html">蒸发与熔化（增幅）</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-mastery-guide.html">元素精通全解</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide.html">破盾机制</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-reaction-teams.html">反应配队</a></li>
+</ul>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/burning-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em})});
+      await r.json();
+      alert('订阅成功！');
+    } catch(err) { alert('订阅失败，请稍后再试。'); }
+  });
+});
+</script>
+</body>
+</html>

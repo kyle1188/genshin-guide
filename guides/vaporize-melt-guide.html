@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神蒸发与融化详解：2 倍还是 1.5 倍，触发顺序决定一切</title>
+<meta name="description" content="蒸发融化 2 倍与 1.5 倍怎么分？触发顺序表、强元素规则、增幅精通加成公式 2.78/1400、弱版元素量消耗、主 C 词条与套装，一次讲透。">
+<meta name="keywords" content="原神蒸发,融化,2倍,1.5倍,增幅反应,触发顺序,蒸发配队,融化配队">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide-en.html" />
+<meta property="og:title" content="原神蒸发与融化详解：2 倍还是 1.5 倍，触发顺序决定一切">
+<meta property="og:description" content="蒸发融化 2 倍与 1.5 倍怎么分？触发顺序表、强元素规则、增幅精通加成公式 2.78/1400、弱版元素量消耗、主 C 词条与套装，一次讲透。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神蒸发与融化详解：2 倍还是 1.5 倍，触发顺序决定一切", "description": "蒸发融化 2 倍与 1.5 倍怎么分？触发顺序表、强元素规则、增幅精通加成公式 2.78/1400、弱版元素量消耗、主 C 词条与套装，一次讲透。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-23", "dateModified": "2026-10-23", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "蒸发融化 2 倍怎么触发？", "acceptedAnswer": {"@type": "Answer", "text": "让强元素后落：水打火附着是 2 倍蒸发，火打冰附着是 2 倍融化。火打水、冰打火则只有 1.5 倍。"}}, {"@type": "Question", "name": "蒸发融化吃主 C 面板吗？", "acceptedAnswer": {"@type": "Answer", "text": "吃。增幅反应放大的是触发那一击，主 C 的攻击力、双暴、元素伤、精通都算数，且能暴击。"}}, {"@type": "Question", "name": "增幅反应精通加成公式？", "acceptedAnswer": {"@type": "Answer", "text": "2.78 × 精通 ÷（精通 + 1400）。200 精通约 +35%，和剧变那套 16/(+2000) 不同。"}}, {"@type": "Question", "name": "为什么顺序错了伤害少一截？", "acceptedAnswer": {"@type": "Answer", "text": "本可以吃的 2 倍变成 1.5 倍，等于凭空丢掉 25%。"}}, {"@type": "Question", "name": "强版和弱版还有别的差别吗？", "acceptedAnswer": {"@type": "Answer", "text": "有。2 倍强版消耗更多附着、容易清空元素；1.5 弱版消耗少、常留一层可连吃，总收益有时反超。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神蒸发与融化详解：2 倍还是 1.5 倍，触发顺序决定一切</h1>
+<p>蒸发和融化是原神里最强的两个单段伤害倍率，但它们吃的是你主 C 的面板，不是反应本身。最容易被搞错的是<strong>触发顺序</strong>：顺序错了，倍率从 2 直接掉到 1.5，伤害砍掉三分之一。这篇把 2×/1.5×、精通加成、弱/强版本一次讲清。</p>
+<div class="quick"><strong>快速答案</strong>
+<ul>
+<li>蒸发 = 水 + 火；融化 = 冰 + 火。都是<strong>增幅反应</strong>，放大的是<strong>触发那一击</strong>的伤害。</li>
+<li><strong>2 倍</strong>：水打蒸发（火附着上）、火打融化（冰附着上）。叫"强版"。</li>
+<li><strong>1.5 倍</strong>：火打蒸发（水附着上）、冰打融化（火附着上）。叫"弱版"。</li>
+<li>吃主 C 的<strong>攻击力、暴击、元素伤加成、精通</strong> —— 和剧变反应完全不同。</li>
+<li>精通加成公式：<strong>2.78 × 精通 ÷（精通 + 1400）</strong>，200 精通 ≈ +35%。</li>
+</ul></div>
+
+<h2>一、增幅 vs 剧变：完全不同的两套结算</h2>
+<p>这是理解蒸发融化的前提。原神反应分两类：</p>
+<table>
+<thead><tr><th></th><th>增幅反应（蒸发/融化）</th><th>剧变反应（燃烧/超载/超绽放…）</th></tr></thead>
+<tbody>
+<tr><td>伤害来自</td><td><strong>放大触发的那一击</strong></td><td>反应本身另算一段伤害</td></tr>
+<tr><td>吃面板</td><td>攻击力、双暴、元素伤、精通</td><td>只看等级、精通、减抗</td></tr>
+<tr><td>能吃暴击</td><td>能</td><td>不能</td></tr>
+<tr><td>代表角色</td><td>胡桃、宵宫、雷电、可莉</td><td>纳西妲、香菱（副）</td></tr>
+</tbody>
+</table>
+<p>所以蒸发融化<strong>喂给你的主 C</strong>才有意义：它是把主 C 那一下高倍率攻击再乘 2。剧变反应则只跟触发者的等级、精通有关，主 C 面板越高它本身伤害越大。两条路是并列的配队哲学，不是谁替代谁。</p>
+
+<h2>二、2 倍 vs 1.5 倍：触发顺序表</h2>
+<p>关键只有一条：<strong>后落的那个元素决定倍率，且"强元素"给 2 倍。</strong></p>
+<table>
+<thead><tr><th>反应</th><th>触发顺序</th><th>倍率</th><th>版本</th></tr></thead>
+<tbody>
+<tr><td rowspan="2">蒸发（水+火）</td><td>火打水附着</td><td>1.5×</td><td>弱版</td></tr>
+<tr><td>水打火附着</td><td>2×</td><td>强版</td></tr>
+<tr><td rowspan="2">融化（冰+火）</td><td>冰打火附着</td><td>1.5×</td><td>弱版</td></tr>
+<tr><td>火打冰附着</td><td>2×</td><td>强版</td></tr>
+</tbody>
+</table>
+<p>规律：蒸发里<strong>水</strong>是强元素，融化里<strong>火</strong>是强元素。强元素去触发的版本给 2 倍。所以：</p>
+<ul>
+<li>让<strong>火主 C</strong>打在水/冰挂好的目标上 → 2 倍（宵宫、胡桃的常规玩法）。</li>
+<li>让<strong>水主 C</strong>打在火挂好的目标上 → 2 倍（雷电、夜兰配火辅助的路子）。</li>
+</ul>
+<p>这就是"顺序错了少三分之一"的准确含义：你本可以吃 2× 却吃了 1.5×，等于凭空丢掉 25%。</p>
+
+<h2>三、精通加成：增幅走单独公式</h2>
+<p>增幅反应的精通加成 = <strong>2.78 × 精通 ÷（精通 + 1400）</strong>，和剧变那套（16×精通/(精通+2000)）不一样：</p>
+<table>
+<thead><tr><th>元素精通</th><th>增幅加成</th><th>举例：1,000 基础伤 × 2 倍</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>+0%</td><td>2,000</td></tr>
+<tr><td>100</td><td>+18.7%</td><td>2,374</td></tr>
+<tr><td>200</td><td>+35.0%</td><td>2,700</td></tr>
+<tr><td>400</td><td>+64.3%</td><td>3,286</td></tr>
+<tr><td>600</td><td>+83.5%</td><td>3,670</td></tr>
+<tr><td>1000</td><td>+113.5%</td><td>4,270</td></tr>
+</tbody>
+</table>
+<p>增幅反应既吃主 C 面板、又额外吃精通加成，所以它是"双料"：面板越高、精通越高，数字越大。这也是蒸发融化主 C 普遍要留一部分词条给精通的原因——它乘在整段伤害上，不白给。</p>
+
+<h2>四、强版和弱版的隐藏差别：元素量消耗</h2>
+<p>除了倍率，版本还决定<strong>消耗多少附着量</strong>：</p>
+<ul>
+<li><strong>2 倍（强版）消耗更多附着</strong>，容易把目标身上的元素清空，之后要重新挂才能再触发。</li>
+<li><strong>1.5 倍（弱版）消耗较少</strong>，常留一层元素，可能紧接着再触发一次反应。</li>
+</ul>
+<p>所以有时候"吃 1.5 的弱版"反而比"吃 2 的强版"总收益高——因为它不消耗尽元素，能连吃。这是进阶配队时才会精算的点，日常不用逐帧算，但要知道它存在。</p>
+
+<h2>五、给蒸发融化主 C 配词条</h2>
+<table>
+<thead><tr><th>部位</th><th>推荐</th></tr></thead>
+<tbody>
+<tr><td>武器</td><td>高倍率武器 + 双爆副词条</td></tr>
+<tr><td>头</td><td>暴击率 / 暴击伤害</td></tr>
+<tr><td>沙</td><td>攻击力%</td></tr>
+<tr><td>杯</td><td>对应元素伤（火 C 用火杯、水 C 用水杯）</td></tr>
+<tr><td>副词条</td><td>双爆 + 留一部分精通（增幅乘区）</td></tr>
+<tr><td>套装</td><td>如雷的盛怒 4 / 炽烈的炎之魔女 4（提升反应伤害 +40%）</td></tr>
+</tbody>
+</table>
+<p>炽烈的炎之魔女对蒸发融化额外 +40% 反应伤害，是增幅流首选套装；如雷的盛怒走另一条反应加成。主 C 本身还是老老实实堆双爆，精通只作为副词条补一点点。</p>
+
+<h2>六、常见问题</h2>
+<h3>蒸发融化的伤害是主 C 的吗？</h3>
+<p>是。增幅反应放大的是触发那一击，吃主 C 的攻击、暴击、元素伤。它不是独立一段反应伤害，这点和剧变完全不同。</p>
+<h3>为什么我堆了精通数字没涨多少？</h3>
+<p>精通加成是乘区，且增幅公式（2.78/1400）在低精通段涨幅平缓。主 C 主要收益还是双爆和攻击力，精通是锦上添花。</p>
+<h3>融化只能火主 C 打吗？</h3>
+<p>不是。火打冰是 2 倍（胡桃），冰打火是 1.5 倍。想让谁吃 2 倍，就按"火打冰"的顺序安排。</p>
+<h3>蒸发融化能暴击吗？</h3>
+<p>能。这是它和剧变最直观的区别——剧变一律不暴击，增幅可以。</p>
+
+<h2>小结</h2>
+<p>蒸发融化是给<strong>高面板主 C</strong>用的最强单段倍率：2 倍版本喂主 C 一次高倍攻击，再吃一层精通乘区。记住两件事就够——<strong>强元素触发给 2 倍</strong>，以及<strong>它吃的是主 C 面板、可以暴击</strong>。配队时把顺序摆对，数字差 25%。</p>
+<h2>相关阅读</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/burning-guide.html">燃烧反应</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide.html">冻结与碎冰</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-mastery-guide.html">元素精通全解</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/damage-formula-guide.html">伤害公式解析</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/stat-priority-guide.html">词条优先级</a></li>
+</ul>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em})});
+      await r.json();
+      alert('订阅成功！');
+    } catch(err) { alert('订阅失败，请稍后再试。'); }
+  });
+});
+</script>
+</body>
+</html>

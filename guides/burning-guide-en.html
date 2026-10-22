@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genshin Burning Reaction Guide: 0.25x Coefficient, DoT & Real Uses</title>
+<meta name="description" content="Is the Burning reaction actually useful? 0.25x coefficient, tick every 0.27s, 361 damage at level 90, EM conversion table, and its real jobs as a constant Pyro layer.">
+<meta name="keywords" content="genshin burning reaction,pyro dendro,dot,burning team,burning multiplier">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/burning-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/burning-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/burning-guide-en.html" />
+<meta property="og:title" content="Genshin Burning Reaction Guide: 0.25x Coefficient, DoT & Real Uses">
+<meta property="og:description" content="Is the Burning reaction actually useful? 0.25x coefficient, tick every 0.27s, 361 damage at level 90, EM conversion table, and its real jobs as a constant Pyro layer.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/burning-guide-en.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Burning Reaction Guide: 0.25x Coefficient, DoT & Real Uses", "description": "Is the Burning reaction actually useful? 0.25x coefficient, tick every 0.27s, 361 damage at level 90, EM conversion table, and its real jobs as a constant Pyro layer.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-23", "dateModified": "2026-10-23", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/burning-guide-en.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is Burning strong in Genshin?", "acceptedAnswer": {"@type": "Answer", "text": "No. Its 0.25x is the lowest transformative coefficient; a level 90 zero-EM tick is 361. Its value is constant Pyro application and chip, not raw numbers."}}, {"@type": "Question", "name": "How long does Burning last?", "acceptedAnswer": {"@type": "Answer", "text": "As long as the Dendro aura lasts; it ends when the Dendro runs out and re-ignites when you add more. There is no fixed 8-second cap."}}, {"@type": "Question", "name": "Does Burning benefit from crit or ATK?", "acceptedAnswer": {"@type": "Answer", "text": "No. Transformative reactions scale only with the trigger's level, Elemental Mastery and target Pyro RES; they never crit."}}, {"@type": "Question", "name": "What is Burning actually good for?", "acceptedAnswer": {"@type": "Answer", "text": "Keeping a target Pyro-affected so a Hydro/Cryo carry can trigger Vaporize and Melt for free, plus chip damage and shield grinding."}}, {"@type": "Question", "name": "Does Burning benefit from RES shred?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is a Pyro reaction, so any Pyro RES shred scales it."}}, {"@type": "Question", "name": "What team composition fits Burning?", "acceptedAnswer": {"@type": "Answer", "text": "A Dendro applier (Nahida, Collei) plus a Pyro applier (Xiangling, Bennett) plus a Hydro or Cryo carry that eats the free amplifying reactions."}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/burning-guide.html">中文</a>
+</div>
+<div class="container">
+<h1>Genshin Burning Reaction Guide: 0.25x Coefficient, DoT and Real Uses</h1>
+<p>Burning is the Pyro-Dendro transformative reaction and the lowest-coefficient one in the game (0.25x). It is not big damage, yet it keeps getting asked whether it is useful. This page covers the trigger, the DoT rhythm, the EM math, and its three real jobs.</p>
+<div class="quick"><strong>Quick Answer</strong>
+<ul>
+<li>Pyro on Dendro or Dendro on Pyro triggers it; the target enters a <strong>Burning state</strong> and takes Pyro DoT.</li>
+<li>It ticks every <strong>0.27s</strong> (about 3-4 hits/s). Damage = <strong>0.25 x Level Multiplier x (1 + EM bonus)</strong>; level 90 zero-EM is <strong>361</strong> per tick.</li>
+<li>Duration is set by the <strong>Dendro aura amount</strong> — it ends when the Dendro runs out, and feeding more Dendro extends it.</li>
+<li>While burning, the target <strong>stays Pyro-affected</strong>, so you can set up Vaporize and Melt for free.</li>
+<li>It scales with level, EM and target Pyro RES only; <strong>no crit, no ATK, ignores DEF</strong>.</li>
+<li>Its real role is not damage — it is <strong>constant Pyro application + chip + shield grinding</strong>.</li>
+</ul></div>
+
+<h2>Trigger and Duration</h2>
+<p>Any order works:</p>
+<ul>
+<li>Pyro on a Dendro-affected target, or</li>
+<li>Dendro on a Pyro-affected target.</li>
+</ul>
+<p>Once triggered the target is Burning, ticking Pyro DoT every <strong>0.27s</strong>. The state is maintained by the "burning" gauge, which consumes only the Dendro aura — when the Dendro runs out the state ends; add more Dendro and it re-ignites. So duration is not about how fast you apply Pyro, it is about how long the Dendro aura lasts.</p>
+
+<h2>Damage Formula and Level Multiplier</h2>
+<p>Burning DMG = <strong>0.25 x Level Multiplier x (1 + EM bonus) x target Pyro RES multiplier</strong>. The level 90 multiplier is about <strong>1446</strong>, so zero-EM lands 0.25 x 1446, roughly <strong>361</strong> per tick.</p>
+<table>
+<thead><tr><th>EM</th><th>DMG bonus</th><th>DMG per tick (Lv 90)</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>+0%</td><td>361</td></tr>
+<tr><td>100</td><td>+50.8%</td><td>503</td></tr>
+<tr><td>200</td><td>+96.5%</td><td>637</td></tr>
+<tr><td>400</td><td>+171.1%</td><td>888</td></tr>
+<tr><td>600</td><td>+234.5%</td><td>1,050</td></tr>
+<tr><td>1000</td><td>+346.4%</td><td>1,490</td></tr>
+</tbody>
+</table>
+<p>Remember these are <strong>per tick</strong>. At roughly 3-4 ticks per second, 400 EM gives about <strong>2,700-3,500</strong> Pyro per second before RES. Against a 10% Pyro RES enemy multiply by 0.9. Compared with Overloaded at 3,979 or Hyperbloom at 4,341, one Burning tick is an order of magnitude smaller — that is the "Burning does low damage" line, quantified.</p>
+
+<h2>Which EM Formula Burning Uses</h2>
+<p>Burning is a transformative reaction, so its EM bonus follows <strong>16 x EM / (EM + 2000)</strong>. The first 200 EM buys about +96%, which is efficient; beyond that it tapers. So a pure Burning build usually stops around 400 EM.</p>
+<p>Do not confuse this with the amplifying reactions (Vaporize/Melt), which use <strong>2.78 x EM / (EM + 1400)</strong>. The same EM stack produces different percentages depending on which reaction you feed it.</p>
+
+<h2>Three Real Uses</h2>
+<h3>1. Constant Pyro application</h3>
+<p>A burning target <strong>stays Pyro-affected</strong>. For Hydro and Cryo carries that is the whole point: they get free Vaporize and Melt the entire time. It is essentially a "Pyro-up buff" that is more stable than any single Pyro skill.</p>
+<h3>2. Chip and camp clearing</h3>
+<p>Per tick it is low, but it is <strong>continuous, AoE and on no cooldown</strong>. While clearing swarms or stacking a RES-shred window on a boss, it is free background damage. Against multiple targets at once, its total output finally shows.</p>
+<h3>3. Shield grinding</h3>
+<p>Pyro counters Cryo shields, so a persistent Burn slowly chews through a Cryo shield. Against Cryo-shielded elites, keeping the target burning beats spamming one big hit.</p>
+
+<h2>Common Mistakes</h2>
+<h3>1. Burning as a main DPS source</h3>
+<p>It is not. The 0.25x coefficient is the lowest of all transformative reactions; even at 1,000 EM a single tick is only 1,490. It cannot be a carry.</p>
+<h3>2. Stacking crit on the Burning trigger</h3>
+<p>Waste. Transformative reactions ignore Crit Rate, Crit DMG and ATK. Building a crit circle for a Burning trigger does nothing.</p>
+<h3>3. Thinking a lapse is permanent</h3>
+<p>It is not. As long as some Dendro remains on the target (or you re-apply it), one Pyro hit re-ignites the burn. It only truly ends when the Dendro aura is gone and not refreshed.</p>
+
+<h2>Team Building</h2>
+<ul>
+<li><strong>Carry is Hydro or Cryo</strong> — the constant Pyro layer lets them eat Vaporize/Melt all rotation; this is the most common Burning setup.</li>
+<li><strong>High-frequency Dendro</strong> — Nahida, Collei, Tighnari keep Dendro up so the burn never gaps.</li>
+<li><strong>High-frequency Pyro</strong> — Xiangling, Bennett, Yoimiya keep re-igniting.</li>
+<li>The shape is "double Dendro+Pyro appliers plus a Hydro/Cryo carry"; the Burn itself provides the steady Pyro layer.</li>
+</ul>
+
+<h2>FAQ</h2>
+<h3>Is Burning strong?</h3>
+<p>No. Its 0.25x is the weakest transformative coefficient. The value is constant Pyro application and chip, not raw numbers.</p>
+<h3>How long does Burning last?</h3>
+<p>As long as the Dendro aura lasts; it ends when the Dendro runs out and re-ignites if you add more. There is no fixed 8-second cap — ignore that number.</p>
+<h3>Does Burning benefit from RES shred?</h3>
+<p>Yes. It is a Pyro reaction, so any Pyro RES shred scales it, exactly like every other Pyro reaction.</p>
+<h3>Can Burning crit?</h3>
+<p>No. Transformative reactions never crit; only level, EM and RES matter.</p>
+<h3>Is it worth it on crowds?</h3>
+<p>Yes — it hits multiple targets at once, which is one of the few places its total damage actually matters. Against a single target you can ignore it.</p>
+
+<h2>Bottom Line</h2>
+<p>Burning is the "lowest coefficient, most uses" reaction. Stop expecting its damage; use its <strong>steady Pyro layer</strong> — it hands your Hydro/Cryo carry free Vaporize and Melt while it chips and grinds shields. If you want high reaction damage, look at Hyperbloom and Overloaded; if you want a Pyro layer for amplifying, Burning is the right tool.</p>
+<h2>Related Guides</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/dendro-reactions-guide-en.html">All Dendro Reactions</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide-en.html">Vaporize and Melt (Amplifying)</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-mastery-guide-en.html">Elemental Mastery Guide</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide-en.html">Shield Breaking</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-reaction-teams-en.html">Reaction Team Building</a></li>
+</ul>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/burning-guide.html">查看中文版</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>Subscribe for Genshin Tips</h3>
+<p>Weekly character builds and version guides, no spam.</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">Subscribe</button>
+</form>
+</div><div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em})});
+      await r.json();
+      alert('Subscribed!');
+    } catch(err) { alert('Subscription failed, please try again.'); }
+  });
+});
+</script>
+</body>
+</html>
