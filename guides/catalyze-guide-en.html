@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalyze Reactions: Quicken, Aggravate & Spread Explained</title>
+<meta name="description" content="How the Catalyze group works: Quicken aura mechanics, Aggravate (1.15x) and Spread (1.25x) flat DMG formulas, Level 90 = 1664/1809 base values, 5xEM/(1200+EM) scaling, and why neither reaction consumes the aura.">
+<meta name="keywords" content="genshin impact catalyze reaction,quicken,aggravate,spread,dendro electro team,aggravate damage formula,spread level 90">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/catalyze-guide.html"/>
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/catalyze-guide-en.html"/>
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/catalyze-guide-en.html"/>
+<meta property="og:title" content="Catalyze Reactions: Quicken, Aggravate & Spread Explained">
+<meta property="og:description" content="How the Catalyze group works: Quicken aura mechanics, Aggravate (1.15x) and Spread (1.25x) flat DMG formulas, Level 90 = 1664/1809 base values, 5xEM/(1200+EM) scaling, and why neither reaction consumes the aura.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/catalyze-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Catalyze Reactions: Quicken, Aggravate & Spread Explained", "description": "How the Catalyze group works: Quicken aura mechanics, Aggravate (1.15x) and Spread (1.25x) flat DMG formulas, Level 90 = 1664/1809 base values, 5xEM/(1200+EM) scaling, and why neither reaction consumes the aura.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-24", "dateModified": "2026-10-24", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/catalyze-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much damage does Aggravate add at level 90?", "acceptedAnswer": {"@type": "Answer", "text": "1664 flat DMG at zero EM. With 300 EM it rises to ~1940. Diminishing returns kick in fast beyond 300 EM."}}, {"@type": "Question", "name": "Does Catalyze scale with Elemental Mastery?", "acceptedAnswer": {"@type": "Answer", "text": "Yes: 5×EM/(1200+EM). 300 EM = +16.7%, 400 EM = +19.4%. Most players cap at 300 EM for additive reactions."}}, {"@type": "Question", "name": "How long does the Quicken Aura last?", "acceptedAnswer": {"@type": "Answer", "text": "~4 s base, refreshed by new applications. Aggravate/Spread don't consume it, so fast application can sustain 8–10 s of Quicken uptime."}}, {"@type": "Question", "name": "Does Catalyze benefit from resistance shreds?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The flat bonus sits in the base DMG bracket, so Kazuha/Zhongli shreds multiply the full value."}}, {"@type": "Question", "name": "Can Catalyze crit?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The bonus is added before crit rolls, so a crit still multiplies (base + Catalyze bonus) by 1 + Crit DMG."}}, {"@type": "Question", "name": "Best artifact set for Aggravate?", "acceptedAnswer": {"@type": "Answer", "text": "Thundering Fury 4pc (+20% Aggravate DMG) for Electro carries. Deep Tangle 4pc for Dendro carries."}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/catalyze-guide.html">中文</a>
+</div>
+<div class="container">
+<h1>Catalyze Reactions Explained: Quicken, Aggravate &amp; Spread</h1>
+<div class="quick">
+<h3>Quick Answer</h3>
+<ul>
+<li>Catalyze group = Quicken (Dendro+Electro, non-damaging aura) → Aggravate (Electro hits Quicken'd target) / Spread (Dendro hits Quicken'd target).</li>
+<li>Level 90, zero EM: Aggravate adds 1664 flat DMG, Spread adds 1809.</li>
+<li>EM formula: <code>5×EM/(1200+EM)</code>. Additive to base DMG bracket (scales with crit/hurt bonus).</li>
+<li>Aggravate/Spread do <b>NOT</b> consume the Quicken aura — can trigger repeatedly within 8–10 s.</li>
+<li>Thundering Fury 4pc = +20% Aggravate DMG.</li>
+<li>Top beneficiaries: Fischl, Keqing (Aggravate); Tighnari, Alhaitham (Spread).</li>
+</ul>
+</div>
+
+<h2>The Three Reactions</h2>
+<table>
+<thead><tr><th>Reaction</th><th>Trigger</th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td>Quicken</td><td>Dendro or Electro hits target carrying the other element</td><td>Applies Quicken Aura (purple), no direct DMG, lasts ~4 s</td></tr>
+<tr><td>Aggravate</td><td>Electro DMG hits a Quicken-affected target</td><td>Adds 1.15× Level Multiplier to base DMG (L90 zero-EM = 1664)</td></tr>
+<tr><td>Spread</td><td>Dendro DMG hits a Quicken-affected target</td><td>Adds 1.25× Level Multiplier to base DMG (L90 zero-EM = 1809)</td></tr>
+</tbody>
+</table>
+
+<h2>Damage Formula</h2>
+<p>Aggravate/Spread are <em>additive</em> reactions — the bonus is added to the base DMG bracket, not a separate multiplier:</p>
+<p><strong>Final DMG = (ATK × Skill Multiplier + Catalyze Bonus) × (1 + DMG Bonus) × (1 + Crit DMG) × Resistance × DEF Reduction</strong></p>
+<p>Where: Catalyze Bonus = Level Base × Reaction Multiplier × [1 + (5×EM)/(EM+1200)]</p>
+<table>
+<thead><tr><td>Level</td><td>Level Base</td><td>Aggravate (0 EM)</td><td>Spread (0 EM)</td></tr></thead>
+<tbody>
+<tr><td>80</td><td>1344</td><td>1546</td><td>1680</td></tr>
+<tr><td>90</td><td>1447</td><td>1664</td><td>1809</td></tr>
+</tbody>
+</table>
+<p>EM has steep diminishing returns: 300 EM = +16.7%, 400 EM = +19.4%, 500 EM = +20.8%. 300 EM is the sweet spot.</p>
+
+<h2>Why the Aura Persists</h2>
+<p>Aggravate and Spread consume only the incoming elemental application, <b>not</b> the Quicken Aura. With fast enough application, Quicken can persist 8–10+ seconds on a target, allowing repeated triggers.</p>
+
+<h2>Artifact Sets</h2>
+<table>
+<thead><tr><td>Set</td><td>4pc Bonus</td><td>Best For</td></tr></thead>
+<tbody>
+<tr><td>Thundering Fury</td><td>+20% Aggravate DMG</td><td>Fischl, Keqing (Electro carries)</td></tr>
+<tr><td>Deep Tangle (4pc)</td><td>+40% DMG vs Quicken/Electro-Charged/Bloom targets</td><td>Alhaitham, Tighnari (Dendro carries)</td></tr>
+<tr><td>Honor of King 4pc</td><td>Team DMG +20% for 40 s after E</td><td>Wriothesley / Bennett support slots</td></tr>
+</tbody>
+</table>
+
+<h2>Team Compositions</h2>
+<h3>Aggravate Team (Electro carry)</h3>
+<p><strong>Fischl (Aggravate main) + Nahida (Dendro appl. + EM convert) + Xingqiu/Kazuha + Zhongli/Kokomi</strong></p>
+<ul>
+<li>Fischl's Oz ticks Electro constantly — every tick on a Quicken'd target triggers Aggravate.</li>
+<li>Nahida applies Dendro (opens Quicken) and converts her own EM to the whole team.</li>
+</ul>
+<h3>Spread Team (Dendro carry)</h3>
+<p><strong>Alhaitham (Spread main) + Fischl/Yae (Electro appl.) + Kazuha + Kokomi/Zhongli</strong></p>
+<ul>
+<li>Alhaitham's fast E-rotation + Normal Attack frequency = high Spread trigger rate.</li>
+<li>Fischl's Oz maintains the Quicken Aura off-field.</li>
+</ul>
+
+<h2>FAQ</h2>
+<details><summary>What is the difference between Aggravate and Spread?</summary><p>Aggravate is triggered by Electro DMG on a Quicken target (+1.15×). Spread is triggered by Dendro DMG on a Quicken target (+1.25×). Spread has a higher base multiplier but fewer strong Dendro carries.</p></details>
+<details><summary>Does Catalyze scale with Elemental Mastery?</summary><p>Yes. The formula is 5×EM/(1200+EM). At 300 EM you get +16.7%, at 400 EM +19.4%. Diminishing returns are steep — 300 EM is usually the cap.</p></details>
+<details><summary>How long does the Quicken Aura last?</summary><p>Base duration is ~4 s, refreshed by new Dendro/Electro applications. Because Aggravate/Spread do not consume it, a fast-application team can keep Quicken up for 8–10+ seconds.</p></details>
+<details><summary>Does Catalyze benefit from resistance shreds?</summary><p>Yes. The flat bonus enters the base DMG bracket, so Kazuha's shred or Zhongli's C6 shred applies to the full value.</p></details>
+<details><summary>Does Catalyze benefit from Crit?</summary><p>Yes. Since the bonus is added to the base bracket before crit is rolled, a critical hit still multiplies the full (base + Catalyze bonus) by 1 + Crit DMG.</p></details>
+
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/catalyze-guide.html">查看中文版</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>Subscribe for Genshin Guides</h3>
+<p>Weekly character builds and version guides. No spam.</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">Subscribe</button>
+</form>
+</div>
+<div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit',async function(e){
+    e.preventDefault();
+    var em=form.querySelector('input').value;
+    try{var r=await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em})});await r.json();alert('Subscribed!');}
+    catch(err){alert('Subscription failed. Try again later.');}
+  });
+});
+</script>
+</body>
+</html>

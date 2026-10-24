@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神物理伤害配队：超导破物抗、优菈与雷泽完整体系</title>
+<meta name="description" content="物理主C 到底怎么配？超导削 40% 物抗原理、优菈爆发体系、雷泽高频普攻体系、米卡/云堇/罗莎莉亚 C6 辅助机制、苍白之火套装与词条优先级，全解析。">
+<meta name="keywords" content="原神物理伤害配队,优菈配队,雷泽配队,超导,物理减抗,苍白之火,物理主C">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/physical-damage-guide.html"/>
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/physical-damage-guide-en.html"/>
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/physical-damage-guide-en.html"/>
+<meta property="og:title" content="原神物理伤害配队：超导破物抗、优菈与雷泽完整体系">
+<meta property="og:description" content="物理主C 到底怎么配？超导削 40% 物抗原理、优菈爆发体系、雷泽高频普攻体系、米卡/云堇/罗莎莉亚 C6 辅助机制、苍白之火套装与词条优先级，全解析。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/physical-damage-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神物理伤害配队：超导破物抗、优菈与雷泽完整体系", "description": "物理主C 到底怎么配？超导削 40% 物抗原理、优菈爆发体系、雷泽高频普攻体系、米卡/云堇/罗莎莉亚 C6 辅助机制、苍白之火套装与词条优先级，全解析。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-24", "dateModified": "2026-10-24", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/physical-damage-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "超导持续多久？", "acceptedAnswer": {"@type": "Answer", "text": "12 秒。刷新重置计时器，不叠层。"}}, {"@type": "Question", "name": "超导和钟离 C6 物抗削能叠吗？", "acceptedAnswer": {"@type": "Answer", "text": "能。超导 40% + 钟离 C6 20% 可叠加，最高约 60% 物抗削（实际有效上限约 40–50%）。"}}, {"@type": "Question", "name": "物理元素共鸣怎么触发？", "acceptedAnswer": {"@type": "Answer", "text": "队伍含物理属性（优菈/雷泽）或岩属性（钟离）角色，全队伤害 +15%。"}}, {"@type": "Question", "name": "米卡 C6 没有怎么办？", "acceptedAnswer": {"@type": "Answer", "text": "无 C6 米卡依然强（E 后物伤+25% + 挂冰），只是少攻速。用云堇 C6 补攻速或钟离 C6 补物抗削。"}}, {"@type": "Question", "name": "物理主C 能配水/冰触发蒸发融化吗？", "acceptedAnswer": {"@type": "Answer", "text": "不能。物理伤害走普攻/重击，非元素伤害，无法触发增幅反应。物理队核心是超导减抗+攻速+物伤杯。"}}, {"@type": "Question", "name": "雷泽用什么套装？", "acceptedAnswer": {"@type": "Answer", "text": "苍白之火 4pc（物抗<20% 时物伤+40%），或如雷之盛怒 4pc（走雷系超激化路线）。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/physical-damage-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>物理伤害配队：超导破物抗、优菈与雷泽完整体系</h1>
+<div class="quick">
+<h3>快速答案</h3>
+<ul>
+<li>超导（冰+雷）削 40% 物理抗性，持续 12 秒，是物理主C 的必备减抗手段。</li>
+<li>游戏内顶尖物理主C 仅两位：<b>优菈</b>（重击爆发型）和<b>雷泽</b>（高频普攻型）。</li>
+<li>核心辅助：<b>米卡 C6</b>（暴击伤害 + 物伤 + 最多 25% 攻速）、<b>云堇 C6</b>（+12% 攻速）、<b>罗莎莉亚 C6</b>（20% 物抗削，与钟离 C6 叠到 40%）。</li>
+<li>苍白之火 4pc：目标物抗 <20% 时物伤 +40%，物理主C 核心套装。</li>
+<li>物理元素共鸣：队伍 +15% 伤害。</li>
+</ul>
+</div>
+
+<h2>为什么需要超导</h2>
+<p>物理伤害走普攻/重击/元素爆发，受「物理抗性」乘区影响。敌人物理抗越高，你的伤害越低。超导是<b>唯一</b>系统性地削物理抗的机制：</p>
+<ul>
+<li>冰元素 + 雷元素同时命中 → 触发超导</li>
+<li>受影响敌人物理抗性 <b>−40%</b>（持续 12 秒，可刷新不叠层）</li>
+<li>超导本身不产伤，纯减抗</li>
+</ul>
+<p>没有超导，物理主C 面对高物抗敌人（如深境螺旋深层、周本）伤害会大打折扣。</p>
+
+<h2>最佳物理主C</h2>
+<table>
+<thead><tr><td>角色</td><td>伤害模式</td><td>强度定位</td></tr></thead>
+<tbody>
+<tr><td>优菈</td><td>重击「断罪之永歌」大爆发，E 后持续叠层</td><td>当前版本最强单体物理 DPS，爆发窗口极短但天花板极高</td></tr>
+<tr><td>雷泽</td><td>高频普攻/E 持续输出</td><td>稳定流物理 DPS，不依赖爆发窗口，配合攻速辅助收益极大</td></tr>
+</tbody>
+</table>
+
+<h2>核心辅助角色</h2>
+<h3>米卡（Mika）</h3>
+<ul>
+<li>元素爆发后普攻/重击物伤 +25%</li>
+<li><b>C6</b>：额外 +暴击伤害 +攻速（最多 25% 攻速加成）</li>
+<li>冰元素挂层，可触发超导，身兼辅助+挂冰双重职责</li>
+<li>有护盾 + 治疗，提供生存能力</li>
+</ul>
+<h3>云堇（Yun Jin）</h3>
+<ul>
+<li>普攻/重击伤害加成（岩元素基础伤害加算）</li>
+<li><b>C6</b>：全队 +12% 攻速，对雷泽高频普攻收益极大</li>
+<li>非物理伤害角色，但增伤范围覆盖全队</li>
+</ul>
+<h3>罗莎莉亚（Rosaria）</h3>
+<ul>
+<li>雷系后台挂层，触发超导</li>
+<li><b>C6</b>：物抗削 +20%（与钟离 C6 叠到 40%）</li>
+<li>持续回血，提升全队续航</li>
+</ul>
+<h3>钟离（Zhongli）</h3>
+<ul>
+<li>岩共鸣 +15% 伤害（被护盾时）</li>
+<li><b>C6</b>：物抗削 +20%</li>
+<li>最强护盾，物理主C 站场生存保障</li>
+</ul>
+
+<h2>套装推荐</h2>
+<table>
+<thead><tr><td>角色</td><td>推荐套装</td><td>效果</td></tr></thead>
+<tbody>
+<tr><td>优菈</td><td>苍白之火 4pc</td><td>物抗<20% 时物伤 +40%</td></tr>
+<tr><td>雷泽</td><td>苍白之火 4pc / 如雷之盛怒 4pc（雷泽走雷系触发）</td><td>物伤+40% / 超激化+20%</td></tr>
+<tr><td>米卡</td><td>昔日宗室之仪 4pc / 来歆 4pc</td><td>E 后队友+20% / 冰反应增伤</td></tr>
+<tr><td>钟离</td><td>千岩 4pc / 来歆 4pc</td><td>全队增伤+20% / 冰反应增伤</td></tr>
+</tbody>
+</table>
+
+<h2>配队示例</h2>
+<h3>优菈顶级配队</h3>
+<p><strong>优菈（主C）+ 雷电将军（挂雷+充能）+ 米卡 C6（物伤+攻速）+ 钟离（护盾+物抗削）</strong></p>
+<ul>
+<li>钟离 E 挂盾 → 将军 E 挂雷 → 米卡 E 挂冰+开物伤 buff → 优菈站场 E+爆发</li>
+<li>将军+米卡触发超导削 40% 物抗，钟离 C6 再削 20%（与超导可叠）</li>
+<li>物理共鸣 +15%（全物/岩角色时）</li>
+</ul>
+<h3>雷泽稳定配队</h3>
+<p><strong>雷泽（主C）+ 罗莎莉亚 C6（挂雷+物抗削）+ 云堇 C6（攻速+增伤）+ 钟离（护盾+物抗削）</strong></p>
+<ul>
+<li>雷泽 E 高频普攻 → 罗莎莉亚 Q 持续挂雷 → 触发超导</li>
+<li>云堇 C6 攻速 +12%，罗莎莉亚/钟离 C6 物抗削 +40%</li>
+<li>雷泽普攻频率越高，收益越大（攻速词条优先）</li>
+</ul>
+
+<h2>词条优先级</h2>
+<table>
+<thead><tr><td>位置</td><td>优菈（爆发型）</td><td>雷泽（高频普攻型）</td></tr></thead>
+<tbody>
+<tr><td>沙漏</td><td>暴击率/暴击伤害（50/50 起步）</td><td>暴击率（70% 前优先）</td></tr>
+<tr><td>杯子</td><td>物理伤害加成</td><td>物理伤害加成</td></tr>
+<tr><td>头冠</td><td>暴击伤害/暴击率</td><td>暴击伤害（攻速词条次优）</td></tr>
+<tr><td>副词条</td><td>暴击/攻击/物伤</td><td>攻速（最多 25%）> 暴击 > 攻击</td></tr>
+</tbody>
+</table>
+
+<h2>FAQ</h2>
+<details><summary>超导持续多久？</summary><p>12 秒。刷新会重置计时器，不叠层。队伍挂冰/雷频率决定 uptime。</p></details>
+<details><summary>超导和钟离 C6 物抗削能叠吗？</summary><p>能。超导 40% + 钟离 C6 20% = 最高 60% 物抗削（实际有上限，通常约 40–50% 有效区间）。</p></details>
+<details><summary>物理元素共鸣怎么触发？</summary><p>队伍含物理属性角色（优菈/雷泽）或岩属性角色（钟离）+ 物理主C，触发全队伤害 +15%。</p></details>
+<details><summary>米卡 C6 没有怎么办？</summary><p>没有 C6 米卡依然很强（E 后物伤+25% + 冰挂层），只是少了攻速。用云堇 C6 补攻速，或用钟离 C6 补物抗削。</p></details>
+<details><summary>物理主C 配水/冰触发蒸发/融化吗？</summary><p>不配。物理伤害走普攻/重击，不是元素伤害，无法触发增幅反应。物理队的核心增益来自超导减抗+攻速+物伤杯。</p></details>
+
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/physical-damage-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div>
+<div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit',async function(e){
+    e.preventDefault();
+    var em=form.querySelector('input').value;
+    try{var r=await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em})});await r.json();alert('订阅成功！');}
+    catch(err){alert('订阅失败，请稍后再试。');}
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神激化反应详解：原激化、超激化与蔓激化机制</title>
+<meta name="description" content="激化体系到底怎么运作？原激化→超激化/蔓激化完整公式、90 级 1664/1809 伤害基数、精通 5EM/(1200+EM) 换算、不消耗激化状态的核心机制与套装选择，一次讲清。">
+<meta name="keywords" content="原神激化反应,超激化,蔓激化,Quicken,Aggravate,Spread,草雷反应,激化配队,激化伤害公式">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/catalyze-guide.html"/>
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/catalyze-guide-en.html"/>
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/catalyze-guide-en.html"/>
+<meta property="og:title" content="原神激化反应详解：原激化、超激化与蔓激化机制">
+<meta property="og:description" content="激化体系到底怎么运作？原激化→超激化/蔓激化完整公式、90 级 1664/1809 伤害基数、精通 5EM/(1200+EM) 换算、不消耗激化状态的核心机制与套装选择，一次讲清。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/catalyze-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神激化反应详解：原激化、超激化与蔓激化机制", "description": "激化体系到底怎么运作？原激化→超激化/蔓激化完整公式、90 级 1664/1809 伤害基数、精通 5EM/(1200+EM) 换算、不消耗激化状态的核心机制与套装选择，一次讲清。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-24", "dateModified": "2026-10-24", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/catalyze-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "超激化伤害多少？", "acceptedAnswer": {"@type": "Answer", "text": "90 级零精通加 1664 点基础伤害。堆到 300 精通约加到 1940+，边际递减快。"}}, {"@type": "Question", "name": "激化吃精通吗？", "acceptedAnswer": {"@type": "Answer", "text": "吃。公式 5×EM/(1200+EM)，300 EM +16.7%，400 EM +19.4%，堆 300 够。"}}, {"@type": "Question", "name": "激化状态持续多久？", "acceptedAnswer": {"@type": "Answer", "text": "原激化约 4 秒，刷新延续。超/蔓激化不消耗它，高频挂雷/草可维持 8–10 秒。"}}, {"@type": "Question", "name": "激化吃减抗吗？", "acceptedAnswer": {"@type": "Answer", "text": "吃。激化加成进入基础伤害区后，后续所有乘区（万叶减抗/钟离减抗）都放大最终值。"}}, {"@type": "Question", "name": "激化能吃暴击吗？", "acceptedAnswer": {"@type": "Answer", "text": "能。加算到基础区后仍走 (1+暴伤) 乘区，双暴词条有效。"}}, {"@type": "Question", "name": "超激化最强套装？", "acceptedAnswer": {"@type": "Answer", "text": "如雷之盛怒 4pc（超激化伤害+20%），雷主C核心。草主C可走深境·逐影。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/catalyze-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>激化反应详解：原激化、超激化与蔓激化机制</h1>
+<div class="quick">
+<h3>快速答案</h3>
+<ul>
+<li>激化体系 = 原激化（Quicken，草+雷，不产伤）→ 超激化（Aggravate，雷攻激化目标）/ 蔓激化（Spread，草攻激化目标）。</li>
+<li>90 级零精通：超激化加 1664 点基础伤害，蔓激化加 1809 点。</li>
+<li>精通公式 <code>5×EM/(1200+EM)</code>，属于加算类反应，叠加到基础伤害区（吃双暴/增伤/减抗）。</li>
+<li>超/蔓激化<b>不消耗</b>激化状态，同一目标上可反复触发，持续 8–10 秒内多次生效。</li>
+<li>如雷之盛怒 4pc = 超激化伤害 +20%，雷主C 核心套装。</li>
+<li>受益主C：菲谢尔、刻晴（超激化）；提纳里、艾尔海森（蔓激化）。</li>
+</ul>
+</div>
+
+<h2>激化体系三个反应</h2>
+<p>激化是草系（Dendro）与雷系（Electro）专属的反应族，分三步：</p>
+<table>
+<thead><tr><th>反应</th><th>触发</th><th>效果</th></tr></thead>
+<tbody>
+<tr><td>原激化 Quicken</td><td>草 或 雷 命中带另一元素的目标</td><td>产生「激化」buff 状态（紫色），无直接伤害，持续 4s 左右</td></tr>
+<tr><td>超激化 Aggravate</td><td>雷元素攻击命中已处激化状态的目标</td><td>本次攻击基础伤害 +1.15× 等级系数（90级零EM=1664）</td></tr>
+<tr><td>蔓激化 Spread</td><td>草元素攻击命中已处激化状态的目标</td><td>本次攻击基础伤害 +1.25× 等级系数（90级零EM=1809）</td></tr>
+</tbody>
+</table>
+
+<h2>伤害公式</h2>
+<p>超/蔓激化属于「加算类反应」（Additive），加成值加入基础伤害区，不是独立乘区：</p>
+<p><strong>最终伤害 = (ATK × 技能倍率 + 激化加成值) × (1 + 增伤) × (1 + 暴伤) × 抗减 × 防御减免</strong></p>
+<p>其中：</p>
+<p>激化加成值 = 等级基础系数 × 反应倍率 × [1 + (5×EM)/(EM+1200)]</p>
+<table>
+<thead><tr><th>等级</th><th>等级基础系数</th><th>超激化（零EM）</th><th>蔓激化（零EM）</th></tr></thead>
+<tbody>
+<tr><td>80</td><td>1344</td><td>1546</td><td>1680</td></tr>
+<tr><td>90</td><td>1447</td><td>1664</td><td>1809</td></tr>
+</tbody>
+</table>
+<p>EM 收益边际递减明显：300 EM 时 +16.7%，400 EM 时 +19.4%，500 EM 时 +20.8%——堆精通到 300 足够，继续堆收益极低。</p>
+
+<h2>不消耗激化状态的核心机制</h2>
+<p>超/蔓激化触发时只消耗「攻击所带元素量」，<b>不消耗</b>目标身上的激化 buff。这意味着同一目标上的激化状态可以支持 8–10 秒内被反复触发。只要你的输出角色攻击频率够高，激化几乎全程存在。</p>
+
+<h2>套装选择</h2>
+<table>
+<thead><tr><td>套装</td><td>效果</td><td>适用</td></tr></thead>
+<tbody>
+<tr><td>如雷之盛怒 4pc</td><td>超激化伤害 +20%</td><td>菲谢尔、刻晴等雷主C</td></tr>
+<tr><td>昔日宗室之仪 4pc</td><td>E 后 40s 内队友伤害 +20%</td><td>万叶/班尼特辅助位</td></tr>
+<tr><td>深境·逐影 4pc</td><td>对激化/感电/绽放目标伤害 +40%</td><td>艾尔海森、提纳里草主C</td></tr>
+</tbody>
+</table>
+
+<h2>最佳配队</h2>
+<h3>超激化队（雷主C）</h3>
+<p><strong>菲谢尔（超激化主C）+ 纳西妲（挂草+充能）+ 行秋/万叶（挂水/聚怪）+ 钟离/心海（护盾/生存）</strong></p>
+<ul>
+<li>菲谢尔奥兹持续挂雷，每次命中处激化目标即触发超激化。</li>
+<li>纳西妲挂草开激化 + 自身精通转化给队友。</li>
+<li>行秋提供水挂层（可叠感电）、万叶聚怪减抗。</li>
+</ul>
+<h3>蔓激化队（草主C）</h3>
+<p><strong>艾尔海森（蔓激化主C）+ 菲谢尔/八重（挂雷）+ 万叶（聚怪）+ 心海/钟离（生存）</strong></p>
+<ul>
+<li>艾尔海森 E 后攻速快、普攻频率高，每次命中激化目标触发蔓激化。</li>
+<li>菲谢尔奥兹持续挂雷维持激化状态。</li>
+</ul>
+
+<h2>FAQ</h2>
+<details><summary>超激化和蔓激化区别？</summary><p>触发元素不同：雷攻触发超激化（+1.15×），草攻触发蔓激化（+1.25×）。蔓激化倍率更高但草主C相对更少。</p></details>
+<details><summary>激化吃精通吗？</summary><p>吃。公式 5×EM/(1200+EM)，300 EM 时 +16.7%。但边际递减快，堆到 300 足够。</p></details>
+<details><summary>激化状态持续多久？</summary><p>原激化状态约 4 秒（被刷新则延续）。超/蔓激化不消耗它，所以只要挂雷/草够快，激化可维持 8–10 秒以上。</p></details>
+<details><summary>激化吃减抗吗？</summary><p>吃。激化加成值进入基础伤害区后，后续乘区（万叶减抗、钟离减抗）都会放大最终伤害。</p></details>
+<details><summary>激化能吃暴击吗？</summary><p>能。加算到基础伤害区后，最终伤害仍走 (1+暴伤) 乘区，所以双暴词条依然有效。</p></details>
+
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/catalyze-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div>
+<div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit',async function(e){
+    e.preventDefault();
+    var em=form.querySelector('input').value;
+    try{var r=await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em})});await r.json();alert('订阅成功！');}
+    catch(err){alert('订阅失败，请稍后再试。');}
+  });
+});
+</script>
+</body>
+</html>

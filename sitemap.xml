@@ -2096,5 +2096,21 @@
   <url><loc>https://genshin-guide-one-five.vercel.app/guides/burning-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/catalyze-guide.html</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/catalyze-guide-en.html</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/physical-damage-guide.html</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/physical-damage-guide-en.html</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
 <!-- LONGTAIL -->
 </urlset>
