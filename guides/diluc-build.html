@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神迪卢克（Diluc）配队与圣遗物：5 星火系双手剑主C·炽烈魔女增伤机制</title>
+<meta name="description" content="迪卢克到底怎么用？炽烈魔女 4pc、火伤杯、蒸发/融化配队、登龙斩（下落攻击）与 C1 常驻火伤，一次讲清。">
+<meta name="keywords" content="原神迪卢克配队,迪卢克圣遗物,迪卢克武器,迪卢克蒸发,迪卢克融化,迪卢克命座">
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/diluc-build.html"/>
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/diluc-build-en.html"/>
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/diluc-build-en.html"/>
+<meta property="og:title" content="原神迪卢克（Diluc）配队与圣遗物：5 星火系双手剑主C·炽烈魔女增伤机制">
+<meta property="og:description" content="迪卢克到底怎么用？炽烈魔女 4pc、火伤杯、蒸发/融化配队、登龙斩（下落攻击）与 C1 常驻火伤，一次讲清。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/diluc-build.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神迪卢克（Diluc）配队与圣遗物：5 星火系双手剑主C·炽烈魔女增伤机制", "description": "迪卢克到底怎么用？炽烈魔女 4pc、火伤杯、蒸发/融化配队、登龙斩（下落攻击）与 C1 常驻火伤，一次讲清。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-27", "dateModified": "2026-10-27", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/diluc-build.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "迪卢克现在版本还强吗？", "acceptedAnswer": {"@type": "Answer", "text": "强。蒸发队依然是 T0 稳定输出，登龙斩（下落攻击）吃万叶/闲云增伤后上限更高，机制简单直接。"}}, {"@type": "Question", "name": "迪卢克毕业武器是哪把？", "acceptedAnswer": {"@type": "Answer", "text": "最稳狼的末路；没有 5 星就锻造试作古华过渡，BP 螭骨剑（配钟离护盾防掉层）也很好。"}}, {"@type": "Question", "name": "迪卢克走蒸发还是融化？", "acceptedAnswer": {"@type": "Answer", "text": "蒸发更稳定（行秋或夜兰持续挂水），融化倍率高但依赖凯亚或罗莎莉亚挂冰。"}}, {"@type": "Question", "name": "迪卢克充能要多少？", "acceptedAnswer": {"@type": "Answer", "text": "元素爆发 80 点。有班尼特 100-115%，无班尼特 120-130%。"}}, {"@type": "Question", "name": "迪卢克 C1 值得追吗？", "acceptedAnswer": {"@type": "Answer", "text": "值得。C1 对 50% 以上血量的敌人 +15% 火伤是常驻增伤，比 C4 条件增伤实用。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/diluc-build-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神迪卢克（Diluc）配队与圣遗物：5 星火系双手剑主C·炽烈魔女增伤机制</h1>
+<div class="quick"><h3>快速答案</h3><ul>
+<li>迪卢克是 5 星<b>火系双手剑</b>（蒙德晨曦酒庄主人「暗火骑士」），站场主C，核心输出 = 元素爆发「黎明」火附魔 + 三段战技 + 普攻/下落。</li>
+<li>核心圣遗物：<b>炽烈的炎之魔女 4pc</b>（2pc 火伤 +15%，4pc 施放元素战技后火伤 +37.5% 叠 3 层 10s，几乎常驻）。</li>
+<li>主词条：<b>攻击力沙</b> / <b>火伤杯</b> / 双爆头。</li>
+<li>副词条：双爆 &gt; 攻击 &gt; 精通（蒸发队保留 1–2 条）&gt; 充能（无班尼特 120–130%，有班尼特 100–115%）。</li>
+<li>特点：爆发火附魔期内所有普攻/重击/下落都变火伤；<b>蒸发队（水主挂水）＞融化队（冰）</b>，登龙斩（下落）吃万叶/闲云增伤。</li>
+<li>最佳配队：迪卢克+行秋/夜兰+班尼特+万叶（蒸发）、迪卢克+凯亚/罗莎莉亚+班尼特+钟离（融化）。</li>
+<li>武器「狼的末路」最稳；F2P 锻造「试作古华」，4 星「螭骨剑」（需护盾角色保层）。</li>
+</ul></div>
+
+<h2>角色机制</h2>
+<p>迪卢克的核心循环是「爆发挂火 → 附魔期高倍率输出」：</p>
+<ul>
+<li><b>元素爆发「黎明」</b>：范围火伤 + 烈焰附魔（固有天赋 A4 延长 4s 并加 <b>20% 火伤</b>），附魔期普攻/重击/下落全部变火伤。</li>
+<li><b>元素战技「逆焰之刃」</b>：可连续施放 <b>3 次</b>，高倍率短冷却，是炽烈魔女 4pc 叠层核心（每段叠 +12.5% 火伤）。</li>
+<li><b>下落攻击</b>（登龙斩：普攻/战技命中瞬间冲刺跳）：大倍率单体，配合万叶扩散减抗 / 闲云下落增伤，是近年迪卢克输出大头。</li>
+<li>因此主堆攻击 + 双爆、火伤杯；蒸发队补少量精通（80–120）即可。</li>
+</ul>
+
+<h2>圣遗物</h2>
+<table><thead><tr><td>套装</td><td>2pc</td><td>4pc</td></tr></thead><tbody>
+<tr><td>炽烈的炎之魔女 (Crimson Witch of Flames)</td><td>火伤 +15%</td><td>施放元素战技后火伤 +37.5%（叠 3 层 10s）——毕业首选，三段 E 轻松叠满</td></tr>
+<tr><td>角斗士的终幕礼 (Gladiator's Finale)</td><td>攻击 +18%</td><td>普攻伤害 +35%——物理向/低火套过渡</td></tr>
+<tr><td>逐影猎人 (Marechaussee Hunter)</td><td>火伤 +18%</td><td>生命波动时叠暴击率——专配芙宁娜体系</td></tr>
+</tbody></table>
+
+<h2>主词条与副词条</h2>
+<table><thead><tr><td>位置</td><td>主词条</td></tr></thead><tbody>
+<tr><td>沙漏</td><td>攻击力%（主）/ 元素精通（纯反应队）</td></tr>
+<tr><td>杯子</td><td>火元素伤害（唯一正确选择）</td></tr>
+<tr><td>头冠</td><td>暴击率 / 暴击伤害（暴击率≥50% 选爆伤头）</td></tr>
+</tbody></table>
+<p>副词条优先级：<b>双爆 &gt; 攻击 &gt; 精通（蒸发队）&gt; 充能</b>。毕业面板约 2000–2400 攻击、暴击 70% / 暴伤 140%+、充能 120–130%（无班尼特）。</p>
+
+<h2>武器</h2>
+<table><thead><tr><td>武器</td><td>稀有度</td><td>说明</td></tr></thead><tbody>
+<tr><td>狼的末路 (Wolf's Gravestone)</td><td>5★</td><td>高基础攻击+低血全队加攻，最稳毕业</td></tr>
+<tr><td>苇海信标 (Beacon of the Reed Sea)</td><td>5★</td><td>暴击率副词条+受伤/命中加攻，单兵作战好</td></tr>
+<tr><td>螭骨剑 (Serpent Spine)</td><td>4★</td><td>BP 获取；高双爆，需护盾角色防掉层，精 5 强</td></tr>
+<tr><td>试作古华 (Prototype Archaic)</td><td>4★</td><td>锻造免费，F2P 首选过渡</td></tr>
+</tbody></table>
+
+<h2>配队</h2>
+<h3>蒸发队（最稳定）</h3>
+<p><strong>迪卢克 + 行秋/夜兰（挂水）+ 班尼特（加攻回血）+ 万叶（聚怪减抗）</strong></p>
+<ul>
+<li>行秋 Q 持续挂水 + 迪卢克 E 三段 + 下落 → 高频<b>蒸发</b>，万叶减火/水抗放大反应。</li>
+<li>班尼特 Q 铺火领域加攻，迪卢克站场吃满。</li>
+</ul>
+<h3>融化队（高倍率单体）</h3>
+<p><strong>迪卢克 + 凯亚/罗莎莉亚（挂冰）+ 班尼特 + 钟离（护盾/减物抗）</strong></p>
+<ul>
+<li>凯亚后台挂冰 + 迪卢克打<b>融化</b>，钟离护盾保站场环境。</li>
+<li>适合深渊特定层 / 单体 Boss。</li>
+</ul>
+
+<h2>命座优先级</h2>
+<ul>
+<li><b>C1</b>：对 50% 血量以上敌人火伤 +15%——常驻增伤，性价比最高。</li>
+<li><b>C4</b>：战技后 25% 概率追加一段额外火伤（条件触发，不追）。</li>
+<li><b>C6</b>：施放战技后普攻攻速提升、下落/普攻增伤——输出质变，真爱目标。</li>
+</ul>
+
+<h2>相关攻略</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide.html">蒸发融化反应详解</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/xingqiu-build.html">行秋配队</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/bennett-build.html">班尼特配队</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/kazuha-build.html">万叶配队</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/yelan-build.html">夜兰配队</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/chongyun-build.html">重云配队（融化辅助）</a></li>
+</ul>
+
+<h2>FAQ</h2>
+<details><summary>迪卢克现在版本还强吗？</summary><p>强。蒸发队依然是 T0 稳定输出，登龙斩（下落）吃万叶/闲云增伤后上限更高，不靠机制花活，吃的是双爆与反应。</p></details>
+<details><summary>迪卢克毕业武器是哪把？</summary><p>最稳「狼的末路」；没 5 星就锻造「试作古华」过渡、有 BP 拿「螭骨剑」（配钟离护盾防掉层）。</p></details>
+<details><summary>迪卢克走蒸发还是融化？</summary><p><b>蒸发更稳</b>（行秋/夜兰持续挂水，蒸发系数高）；融化倍率高但吃拐冰附着，适合凯亚/罗莎莉亚+钟离。</p></details>
+<details><summary>迪卢克充能要多少？</summary><p>爆发 80 点。有班尼特 100–115%，无班尼特 120–130%。</p></details>
+<details><summary>迪卢克 C1 值得追吗？</summary><p>值得。C1 对 50% 血量以上敌人 +15% 火伤是常驻增伤，比 C4 的条件增伤实用得多。</p></details><div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/diluc-build-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div>
+<div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll("[data-email-form]").forEach(function(f){f.addEventListener("submit",function(e){e.preventDefault();var em=f.querySelector("input").value;fetch("https://genshin-guide-one-five.vercel.app/api/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:em})}).then(function(r){return r.json()}).then(function(){alert("订阅成功！")}).catch(function(){alert("订阅失败，请稍后再试。")});});});</script>
+</body>
+</html>
