@@ -2248,5 +2248,9 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+<url><loc>https://genshin-guide-one-five.vercel.app/guides/kokomi-build.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://genshin-guide-one-five.vercel.app/guides/kokomi-build-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://genshin-guide-one-five.vercel.app/guides/tighnari-build.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://genshin-guide-one-five.vercel.app/guides/tighnari-build-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <!-- LONGTAIL -->
 </urlset>
