@@ -1797,12 +1797,7 @@
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://genshin-guide-one-five.vercel.app/guides/paimon-shop-guide.html</loc>
-<lastmod>2026-09-09</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url><url>
-<loc>https://genshin-guide-one-five.vercel.app/guides/story-quest-guide.html</loc>
+<loc>https://genshin-guide-one-five.vercel.app/guides/paimon-shop-guide-en.html</loc>
 <lastmod>2026-09-09</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
@@ -1812,7 +1807,14 @@
 <lastmod>2026-09-09</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
-</url><url>
+</url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/story-quest-guide-en.html</loc>
+<lastmod>2026-11-08</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/daily-commission-guide.html</loc>
 <lastmod>2026-09-10</lastmod>
 <changefreq>weekly</changefreq>
@@ -2218,16 +2220,8 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://genshin-guide-one-five.vercel.app/guides/venti-build.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://genshin-guide-one-five.vercel.app/guides/venti-build-en.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  
+  
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/childe-build.html</loc>
     <changefreq>weekly</changefreq>
@@ -2238,16 +2232,8 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://genshin-guide-one-five.vercel.app/guides/childe-build.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://genshin-guide-one-five.vercel.app/guides/childe-build-en.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  
+  
 <url><loc>https://genshin-guide-one-five.vercel.app/guides/kokomi-build.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://genshin-guide-one-five.vercel.app/guides/kokomi-build-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://genshin-guide-one-five.vercel.app/guides/tighnari-build.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
