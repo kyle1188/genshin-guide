@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神夏洛蒂治疗量公式与配队：4 星冰系法器·试作金珀毕业装</title>
+<meta name="description" content="夏洛蒂治疗量怎么算？大招施放治疗 =（攻击力 × 461.8% + 3539）×（1 + 治疗加成），天赋 10 级实测约 1.3–2.7 万。附昔时之歌 4pc、试作金珀、充能需求与芙宁娜配队全解。">
+<meta name="keywords" content="夏洛蒂治疗量公式,夏洛蒂治疗量,原神夏洛蒂配队,夏洛蒂圣遗物,夏洛蒂武器,夏洛蒂充能,夏洛蒂毕业">
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/charlotte-build.html"/>
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/charlotte-build.html"/>
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/charlotte-build-en.html"/>
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/charlotte-build-en.html"/>
+<meta property="og:title" content="原神夏洛蒂治疗量公式与配队：4 星冰系法器·试作金珀毕业装">
+<meta property="og:description" content="夏洛蒂治疗量怎么算？大招施放治疗 =（攻击力 × 461.8% + 3539）×（1 + 治疗加成），天赋 10 级实测约 1.3–2.7 万。附昔时之歌 4pc、试作金珀、充能需求与芙宁娜配队全解。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/charlotte-build.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+
+</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神夏洛蒂治疗量公式与配队：4 星冰系法器·试作金珀毕业装", "description": "夏洛蒂治疗量怎么算？大招施放治疗 =（攻击力 × 461.8% + 3539）×（1 + 治疗加成），天赋 10 级实测约 1.3–2.7 万。附昔时之歌 4pc、试作金珀、充能需求与芙宁娜配队全解。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-11-08", "dateModified": "2026-11-08", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/charlotte-build.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "夏洛蒂治疗量怎么算？", "acceptedAnswer": {"@type": "Answer", "text": "公式是「治疗量 =（攻击力 × 天赋倍率 + 固定值）×（1 + 治疗加成）」。元素爆发 10 级时，施放治疗量为 461.8% 攻击力 + 3539，并对全队 4 人同时生效。以攻击力 1,800、治疗加成 65.9% 计算，每人约回 19,700 点。"}}, {"@type": "Question", "name": "夏洛蒂应该堆攻击力还是生命值？", "acceptedAnswer": {"@type": "Answer", "text": "堆攻击力。她的治疗量完全基于攻击力，突破加成也是攻击力 +24%。堆生命值不会提升治疗量，这是最常见的误区。"}}, {"@type": "Question", "name": "夏洛蒂元素爆发要多少充能？", "acceptedAnswer": {"@type": "Answer", "text": "大招需要 80 点能量。用试作金珀时，单冰队约 185%、双冰约 160%、三冰约 150%；换成其他武器要在此基础上再加 30–45%，即约 200–230%。建议先按 200% 堆。"}}, {"@type": "Question", "name": "夏洛蒂要升哪些天赋？", "acceptedAnswer": {"@type": "Answer", "text": "只升元素爆发。她的治疗量只跟大招等级挂钩，元素战技只影响自身冰伤与标记频率，普通攻击几乎用不到，资源紧张时都可以停在 1 级。"}}, {"@type": "Question", "name": "夏洛蒂值得练吗？和心海、白术怎么选？", "acceptedAnswer": {"@type": "Answer", "text": "值得，尤其在你练芙宁娜队时——芙宁娜要一个「一次奶满全队」的治疗，夏洛蒂是四星里最省的选择，0 命即可用。若需要长时间站场持续治疗，心海或白术更合适。"}}, {"@type": "Question", "name": "夏洛蒂毕业圣遗物和武器是什么？", "acceptedAnswer": {"@type": "Answer", "text": "圣遗物首选昔时之歌 4 件套（治疗加成 + 把溢出治疗转成伤害），纯奶可用海染砗磲 4 件套，队里缺宗室时用昔日宗室之仪 4 件套。武器首选锻造的试作金珀，其次西风秘典，主 C 爆发队可用讨龙英杰谭。"}}]}</script>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/charlotte-build-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神夏洛蒂治疗量公式与配队：4 星冰系法器·试作金珀毕业装</h1>
+<div class="quick"><h3>快速答案</h3><ul>
+<li>定位：4★ 冰系法器·<strong>元素爆发启动的全队治疗</strong>，治疗量吃<strong>攻击力</strong>，不吃生命值——这是查公式的人最常搞错的一点。</li>
+<li>治疗公式：<strong>施放治疗 =（攻击力 × 天赋倍率 + 固定值）×（1 + 治疗加成）</strong>；大招 10 级 = 461.8% 攻击力 + 3539。</li>
+<li>毕业武器：<strong>试作金珀</strong>（锻造，大招后全队回血 + 回能）＞ 西风秘典 ＞ 讨龙英杰谭。</li>
+<li>圣遗物：<strong>昔时之歌 4pc</strong>（通用最优）/ 海染砗磲 4pc / 昔日宗室之仪 4pc；主词条 充能沙 + 攻击杯 + 治疗冠。</li>
+<li>充能：大招要 <strong>80 点能量</strong>，试作金珀约 150–185%，其他武器需 200–230%，循环才能不断。</li>
+<li>核心价值：<strong>芙宁娜队专职治疗</strong>——一次大招给全队 4 人同时满血，最快叠满气氛值。</li>
+</ul></div>
+
+<h2>夏洛蒂是谁：4★ 冰系法器治疗</h2>
+<p>夏洛蒂是枫丹《蒸汽鸟报》的记者，在战斗里是一名<strong>元素爆发启动的冰元素全队治疗</strong>。她不是「站场慢慢喂血」的传统奶妈，而是靠开大瞬间给全队一次性大量回血，再用 4 秒的「临事场域」持续挂冰与补血。</p>
+<table>
+<tr><th>项目</th><th>数值 / 说明</th></tr>
+<tr><td>稀有度 / 元素 / 武器</td><td>4★ · 冰元素 · <strong>法器</strong></td></tr>
+<tr><td>基础生命值</td><td>10,766</td></tr>
+<tr><td>基础攻击力</td><td>173</td></tr>
+<tr><td>基础防御力</td><td>546</td></tr>
+<tr><td>突破加成</td><td><strong>攻击力 +24%</strong>（不是生命值，再次印证她是攻击力治疗）</td></tr>
+<tr><td>元素能量 / 冷却</td><td>80 点 / 20 秒（能量需求在四星里偏高）</td></tr>
+</table>
+<p>她的技能组很干净：</p>
+<ul>
+<li><strong>元素战技「取景·冰点构图法」</strong>：点按给最多 5 名敌人挂「瞬时剪影」，每 1.5 秒一次冰伤、共 4 次；长按进入构图模式，满帧释放则挂更久的「聚焦印象」（每 1.5 秒一次、共 8 次）。<strong>不提供任何治疗</strong>。</li>
+<li><strong>元素爆发「定格·全方位确证」</strong>：建立「临事场域」，造成范围冰伤，并<strong>为附近所有队伍成员回血</strong>，回复量基于夏洛蒂的攻击力；场域持续 4 秒，期间相机持续攻击敌人并为场上角色补血。这是她<strong>唯一的治疗来源</strong>。</li>
+<li><strong>固有天赋「多样性调查」</strong>：队中除自己外每有 1/2/3 名枫丹角色，自身获得 5%/10%/15% <strong>治疗加成</strong>；每有 1/2/3 名非枫丹角色，获得 5%/10%/15% 冰元素伤害加成。</li>
+</ul>
+
+<h2>夏洛蒂治疗量公式（核心）</h2>
+<p>这是本站专门为「夏洛蒂治疗量公式」写的一节。她的治疗量完整计算式是：</p>
+<p><strong>治疗量 =（攻击力 × 天赋倍率 + 固定值）×（1 + 治疗加成）</strong></p>
+<p>三项分别来自：</p>
+<ul>
+<li><strong>攻击力</strong> = 角色基础 173 + 武器基础攻击 + 攻击力%加成 + 固定攻击力。注意：<strong>不是生命值</strong>。</li>
+<li><strong>天赋倍率与固定值</strong>：只随<strong>元素爆发</strong>等级提升，元素战技和普通攻击完全无关。</li>
+<li><strong>治疗加成</strong>：来自理之冠主词条、圣遗物 2 件套、固有天赋「多样性调查」等，全部<strong>相加</strong>后作为独立乘区。</li>
+</ul>
+
+<h3>1. 大招治疗系数表（查表即用）</h3>
+<table>
+<tr><th>天赋等级</th><th>施放治疗量（全队 4 人同时）</th><th>相机持续治疗（仅场上）</th><th>解锁条件</th></tr>
+<tr><td>Lv.1</td><td>256.6% 攻击力 + 1608</td><td>9.2% 攻击力 + 57</td><td>初始</td></tr>
+<tr><td>Lv.4</td><td>320.7% 攻击力 + 2131</td><td>11.5% 攻击力 + 76</td><td>突破 2（40 级）</td></tr>
+<tr><td>Lv.7</td><td>384.9% 攻击力 + 2775</td><td>13.8% 攻击力 + 99</td><td>突破 4（60 级）</td></tr>
+<tr><td><strong>Lv.10</strong></td><td><strong>461.8% 攻击力 + 3539</strong></td><td>16.6% 攻击力 + 126</td><td>突破 6（80 级）+ 天赋书</td></tr>
+<tr><td>Lv.13</td><td>545.2% 攻击力 + 4424</td><td>19.6% 攻击力 + 158</td><td>命座 C3（+3 级）</td></tr>
+</table>
+<p>关键点：<strong>施放治疗量对全队 4 人同时生效</strong>，所以表格里的数字要乘以 4 才是「一次大招的总回复量」；而相机持续治疗只喂当前场上角色。</p>
+
+<h3>2. 治疗加成从哪里来</h3>
+<table>
+<tr><th>来源</th><th>数值</th><th>备注</th></tr>
+<tr><td>理之冠主词条（五星 +20）</td><td>35.9%</td><td>最稳的一块，优先保证</td></tr>
+<tr><td>昔时之歌 / 海染砗磲 2 件套</td><td>15%</td><td>四件套同时给治疗加成与额外效果</td></tr>
+<tr><td>昔时之歌 / 海染砗磲 4 件套</td><td>再按套装效果结算</td><td>昔时之歌转伤害加成，海染砗磲转水泡伤害</td></tr>
+<tr><td>固有天赋「多样性调查」</td><td>5% / 10% / 15%</td><td>按队内枫丹角色数量（不含自己）递增</td></tr>
+</table>
+<p>所以治疗位的常见总计是：15%（二件套）+ 35.9%（治疗冠）= <strong>50.9%</strong>；若队里再带 3 名枫丹角色（如芙宁娜 + 那维莱特 + 莱欧斯利），再加 15% 达到 <strong>65.9%</strong>。</p>
+
+<h3>3. 三档实测治疗量（含计算过程）</h3>
+<table>
+<tr><th>档位</th><th>攻击力</th><th>大招等级</th><th>治疗加成</th><th>施放治疗量（每人）</th><th>计算式</th></tr>
+<tr><td>入门（0 命四星）</td><td>1,400</td><td>Lv.8</td><td>50.9%</td><td><strong>≈ 13,200</strong></td><td>(1400×4.105+3016)×1.509</td></tr>
+<tr><td>中等（推荐）</td><td>1,800</td><td>Lv.10</td><td>65.9%</td><td><strong>≈ 19,700</strong></td><td>(1800×4.618+3539)×1.659</td></tr>
+<tr><td>毕业（C3）</td><td>2,200</td><td>Lv.13</td><td>65.9%</td><td><strong>≈ 27,200</strong></td><td>(2200×5.452+4424)×1.659</td></tr>
+</table>
+<p>对照一下：五星输出角色的生命值通常在 14,000–20,000 之间。也就是说<strong>中等配置下一次大招就足以把全队从残血拉满</strong>，这正是她在芙宁娜队的核心价值。</p>
+
+<h3>4. 相机持续治疗</h3>
+<p>「临事场域」持续 4 秒，期间相机对场上角色持续回血，10 级系数为 <strong>16.6% 攻击力 + 126</strong>。按上面中等配置（攻击 1,800 / 治疗加成 65.9%）算，每次约 <strong>705</strong> 点。这个数字不高，说明不要指望它顶住持续伤害——<strong>她靠的是开大瞬间那一口大奶，不是持续回复</strong>。</p>
+
+<h2>圣遗物推荐</h2>
+<table>
+<tr><th>套装</th><th>效果要点</th><th>适用场景</th></tr>
+<tr><td><strong>昔时之歌 4pc</strong></td><td>2pc 治疗加成 15%；4pc 记录治疗量转为「昔时之波」，为场上角色的攻击附加固定伤害</td><td><strong>通用最优</strong>，治疗溢出也能转成输出</td></tr>
+<tr><td>海染砗磲 4pc</td><td>2pc 治疗加成 15%；4pc 治疗量转化水泡造成物理伤害</td><td>纯奶兼一点输出，大世界舒适</td></tr>
+<tr><td>昔日宗室之仪 4pc</td><td>2pc 治疗加成 15%；4pc 大招后全队攻击力 +20%</td><td>队里没人穿宗室时由她承担</td></tr>
+<tr><td>千岩牢固 4pc</td><td>2pc 生命值；4pc 战技命中后全队攻击 +20%</td><td>不推荐——需要长按 E 维持，夏洛蒂通常点按</td></tr>
+<tr><td>黄金剧团 4pc / 冰风迷途的勇士 4pc</td><td>偏输出</td><td>仅副 C 玩法，治疗位不用</td></tr>
+</table>
+<h3>主词条与副词条</h3>
+<table>
+<tr><th>部位</th><th>首选</th><th>次选</th></tr>
+<tr><td>时之沙</td><td><strong>元素充能效率</strong></td><td>攻击力%</td></tr>
+<tr><td>空之杯</td><td><strong>攻击力%</strong></td><td>冰元素伤害加成（仅副 C）</td></tr>
+<tr><td>理之冠</td><td><strong>治疗加成</strong></td><td>暴击率（带西风秘典时）</td></tr>
+</table>
+<p>副词条优先级：<strong>元素充能效率（先达标）＞ 攻击力% ＞ 固定攻击力</strong>；若带西风秘典，暴击率的优先级提到充能之后的第一位。</p>
+
+<h2>充能需求：80 点大招怎么不断</h2>
+<p>她的大招要 80 点能量，而本体只靠点按 E 产球，是四星里比较吃充能的类型。</p>
+<table>
+<tr><th>武器</th><th>单冰队</th><th>双冰队</th><th>三冰队</th></tr>
+<tr><td>试作金珀</td><td>约 185%</td><td>约 160%</td><td>约 150%</td></tr>
+<tr><td>其他武器</td><td>再加 30–45%</td><td>再加 30–45%</td><td>再加 30–45%</td></tr>
+</table>
+<p>实战建议：<strong>先盯着 200% 这个门槛堆</strong>，超过后再考虑换攻击沙。若队伍里有西风系角色或雷主/雷神队充能辅助，可以适当降低。试作金珀精炼 5 的返还能显著缓解压力，这也是它成为首选的原因之一。</p>
+
+<h2>武器推荐</h2>
+<table>
+<tr><th>武器</th><th>稀有度</th><th>作用</th></tr>
+<tr><td><strong>试作金珀</strong>（Prototype Amber）</td><td>4★ 锻造</td><td>生命值% 副词条；施放大招后按自身生命值比例回能 + 全队回血。<strong>首选</strong>，人人可做</td></tr>
+<tr><td>西风秘典（Favonius Codex）</td><td>4★ 祈愿</td><td>充能效率副词条；暴击产球给全队回能，充能吃紧时的好选择</td></tr>
+<tr><td>讨龙英杰谭（Thrilling Tales of Dragon Slayers）</td><td>3★ 祈愿</td><td>切人给下一位出场角色高额攻击力加成，主 C 爆发队常备</td></tr>
+<tr><td>证誓之明瞳（Oathsworn Eye）</td><td>4★ 活动</td><td>攻击力% 副词条 + 施放战技后回能，免费的合格替代</td></tr>
+<tr><td>祭礼残章（Sacrificial Fragments）</td><td>4★ 祈愿</td><td>战技有概率重置，等于多一次产球（需高精炼）</td></tr>
+<tr><td>神乐之真意（Kagura's Verity）</td><td>5★ 限定</td><td>偏副 C 输出向，纯治疗位性价比低</td></tr>
+</table>
+
+<h2>配队推荐</h2>
+<table>
+<tr><th>队伍</th><th>成员</th><th>说明</th></tr>
+<tr><td><strong>芙宁娜队（首选）</strong></td><td>芙宁娜 + 那维莱特 / 莱欧斯利 + 夏洛蒂 + 枫原万叶</td><td>芙宁娜持续扣全队血换增益，需要「一次奶满全队」的治疗——夏洛蒂的大招正对这项需求，能最快叠满气氛值；且芙宁娜等枫丹角色还能触发她的「多样性调查」加治疗加成</td></tr>
+<tr><td>永冻队</td><td>神里绫华 + 行秋 / 夜兰 + 枫原万叶 + 夏洛蒂</td><td>后台持续挂冰维持冻结，同时兼顾治疗</td></tr>
+<tr><td>纯冰队</td><td>甘雨 + 申鹤 + 枫原万叶 + 夏洛蒂</td><td>三冰队充能压力最低（约 150%），申鹤冰翎抬冰伤</td></tr>
+<tr><td>超绽放 / 冻结碎冰</td><td>草系 + 水系 + 雷系核心 + 夏洛蒂</td><td>她的冰附着频率低，不容易抢反应，可作治疗位补位</td></tr>
+</table>
+<p>一句话选队原则：<strong>只要队伍需要一个「开大就把全队奶满」的位置，夏洛蒂就是四星里最省心的选择；要持续站场奶，请换心海或白术。</strong></p>
+
+<h2>天赋与命座</h2>
+<p><strong>天赋加点：只升元素爆发。</strong>治疗量完全由大招等级决定；元素战技只影响她自己的冰伤与标记频率，普通攻击更是用不上。资源紧张时，E 和普攻可以停在 1 级。</p>
+<table>
+<tr><th>命座</th><th>名称</th><th>对治疗/循环的意义</th></tr>
+<tr><td>C1</td><td>以核实为约束</td><td>大招治疗过的角色挂「核实」，每 2 秒回复 80% 攻击力、持续 6 秒（共 3 跳）。按攻击 1,800 / 治疗加成 65.9% 算，约每次 2,390，合计多回约 7,200</td></tr>
+<tr><td>C2</td><td>以求真为职守</td><td>E 命中 1/2/3 名及以上敌人时，自身攻击力 +10%/20%/30%、持续 12 秒——间接抬高治疗量</td></tr>
+<tr><td><strong>C3</strong></td><td>以独立为先决</td><td>大招等级 +3（上限 15）——<strong>对治疗量最直接的一档</strong></td></tr>
+<tr><td><strong>C4</strong></td><td>以督促为责任</td><td>关键命座：大招命中带标记敌人时伤害 +10% 并回复 2 点能量，每 20 秒最多 5 次（共 10 点），明显缓解充能</td></tr>
+<tr><td>C5</td><td>以良知为原则</td><td>战技等级 +3，主要是标记与冰伤，不提升治疗</td></tr>
+<tr><td>C6</td><td>以有趣相关为要义</td><td>场上角色普攻/重击命中「聚焦印象」敌人时协同攻击（180% 攻击力冰伤）并回复 42% 攻击力生命，每 6 秒一次</td></tr>
+</table>
+<p>结论：<strong>0 命即可用</strong>，四星角色里属于「抽到就能练」的类型；C1 / C3 / C4 是治疗量与循环收益最大的三档。</p>
+
+<h2>五个常见误区</h2>
+<ol>
+<li><strong>给她堆生命值</strong>——错。她的治疗吃<strong>攻击力</strong>，堆生命只会让她奶不动。</li>
+<li><strong>升元素战技</strong>——错。E 不提供任何治疗，治疗量只跟大招等级挂钩。</li>
+<li><strong>戴冰伤杯</strong>——除非走副 C，治疗位请戴攻击杯。</li>
+<li><strong>当持续治疗用</strong>——「临事场域」只有 4 秒，相机每次才几百点；她的强项是开大瞬间的全队大奶。</li>
+<li><strong>忽略充能</strong>——80 点能量门槛不低，充能不够会整轮开不出大招，治疗量再高也等于零。</li>
+</ol>
+
+<h2>相关攻略</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/furina-build.html">芙宁娜配队</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/neuvillette-build.html">那维莱特配队</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/ayaka-build.html">神里绫华配队</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/wriothesley-build.html">莱欧斯利配队</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/healer-guide.html">治疗角色怎么选</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/energy-recharge.html">元素充能效率详解</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/xingqiu-build.html">行秋配队</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/kazuha-build.html">枫原万叶配队</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/artifact-leveling-guide.html">圣遗物强化</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/stat-priority-guide.html">属性优先级</a></li>
+</ul>
+<h2>FAQ</h2>
+<details><summary>夏洛蒂治疗量怎么算？</summary><p>公式是「治疗量 =（攻击力 × 天赋倍率 + 固定值）×（1 + 治疗加成）」。元素爆发 10 级时，施放治疗量为 461.8% 攻击力 + 3539，并对全队 4 人同时生效。以攻击力 1,800、治疗加成 65.9% 计算，每人约回 19,700 点。</p></details>
+<details><summary>夏洛蒂应该堆攻击力还是生命值？</summary><p>堆攻击力。她的治疗量完全基于攻击力，突破加成也是攻击力 +24%。堆生命值不会提升治疗量，这是最常见的误区。</p></details>
+<details><summary>夏洛蒂元素爆发要多少充能？</summary><p>大招需要 80 点能量。用试作金珀时，单冰队约 185%、双冰约 160%、三冰约 150%；换成其他武器要在此基础上再加 30–45%，即约 200–230%。建议先按 200% 堆。</p></details>
+<details><summary>夏洛蒂要升哪些天赋？</summary><p>只升元素爆发。她的治疗量只跟大招等级挂钩，元素战技只影响自身冰伤与标记频率，普通攻击几乎用不到，资源紧张时都可以停在 1 级。</p></details>
+<details><summary>夏洛蒂值得练吗？和心海、白术怎么选？</summary><p>值得，尤其在你练芙宁娜队时——芙宁娜要一个「一次奶满全队」的治疗，夏洛蒂是四星里最省的选择，0 命即可用。若需要长时间站场持续治疗，心海或白术更合适。</p></details>
+<details><summary>夏洛蒂毕业圣遗物和武器是什么？</summary><p>圣遗物首选昔时之歌 4 件套（治疗加成 + 把溢出治疗转成伤害），纯奶可用海染砗磲 4 件套，队里缺宗室时用昔日宗室之仪 4 件套。武器首选锻造的试作金珀，其次西风秘典，主 C 爆发队可用讨龙英杰谭。</p></details>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/charlotte-build-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">返回首页</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div>
+<div class="footer"><p>&copy; 2026 Teyvat Starter Guide &middot; Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll("[data-email-form]").forEach(function(f){f.addEventListener("submit",function(e){e.preventDefault();var em=f.querySelector("input").value;fetch("https://genshin-guide-one-five.vercel.app/api/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:em})}).then(function(r){return r.json()}).then(function(){alert("订阅成功！")}).catch(function(){alert("订阅失败，请稍后再试。")});});});
+</script>
+</body>
+</html>

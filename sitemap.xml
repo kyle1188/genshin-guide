@@ -2276,5 +2276,17 @@
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/charlotte-build.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/charlotte-build-en.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 <!-- LONGTAIL -->
 </urlset>
