@@ -424,6 +424,8 @@
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/tools/calculators.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/tools/calculators.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/tools/calculators.html" />
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1188,72 +1190,84 @@
     <loc>https://genshin-guide-one-five.vercel.app/guides/best-characters-guide.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/best-characters-guide.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/best-characters-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/best-characters-guide-en.html" />
     <lastmod>2026-08-19</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/best-characters-guide-en.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/best-characters-guide.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/best-characters-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/best-characters-guide-en.html" />
     <lastmod>2026-08-19</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/best-weapons-guide.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/best-weapons-guide.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/best-weapons-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/best-weapons-guide-en.html" />
     <lastmod>2026-08-19</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/best-weapons-guide-en.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/best-weapons-guide.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/best-weapons-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/best-weapons-guide-en.html" />
     <lastmod>2026-08-19</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/weapon-forging-guide.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/weapon-forging-guide.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/weapon-forging-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/weapon-forging-guide-en.html" />
     <lastmod>2026-08-20</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/weapon-forging-guide-en.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/weapon-forging-guide.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/weapon-forging-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/weapon-forging-guide-en.html" />
     <lastmod>2026-08-20</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide-en.html" />
     <lastmod>2026-08-20</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide-en.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide-en.html" />
     <lastmod>2026-08-20</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap-en.html" />
     <lastmod>2026-08-21</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap-en.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap-en.html" />
     <lastmod>2026-08-21</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/pity-system-guide.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide-en.html" />
     <lastmod>2026-08-21</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/pity-system-guide-en.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide-en.html" />
     <lastmod>2026-08-21</lastmod>
   </url>
   <url>
@@ -1673,550 +1687,1104 @@
 
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/stamina-recovery-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/stamina-recovery-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/stamina-recovery-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/stamina-recovery-guide-en.html" />
 <lastmod>2026-08-31</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/stamina-recovery-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/stamina-recovery-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/stamina-recovery-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/stamina-recovery-guide-en.html" />
 <lastmod>2026-08-31</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/character-progress-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/character-progress-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/character-progress-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/character-progress-guide-en.html" />
 <lastmod>2026-08-31</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/character-progress-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/character-progress-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/character-progress-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/character-progress-guide-en.html" />
 <lastmod>2026-08-31</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/food-buff-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/food-buff-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/food-buff-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/food-buff-guide-en.html" />
 <lastmod>2026-09-05</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/food-buff-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/food-buff-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/food-buff-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/food-buff-guide-en.html" />
 <lastmod>2026-09-05</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/battle-pass-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/battle-pass-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/battle-pass-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/battle-pass-guide-en.html" />
 <lastmod>2026-09-05</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/battle-pass-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/battle-pass-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/battle-pass-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/battle-pass-guide-en.html" />
 <lastmod>2026-09-05</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide-en.html" />
 <lastmod>2026-09-06</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide-en.html" />
 <lastmod>2026-09-06</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/co-op-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/co-op-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/co-op-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/co-op-guide-en.html" />
 <lastmod>2026-09-06</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/co-op-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/co-op-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/co-op-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/co-op-guide-en.html" />
 <lastmod>2026-09-06</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url><url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/fishing-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/fishing-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/fishing-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/fishing-guide-en.html" />
 <lastmod>2026-09-07</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/fishing-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/fishing-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/fishing-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/fishing-guide-en.html" />
 <lastmod>2026-09-07</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/serenitea-pot-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/serenitea-pot-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/serenitea-pot-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/serenitea-pot-guide-en.html" />
 <lastmod>2026-09-07</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/serenitea-pot-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/serenitea-pot-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/serenitea-pot-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/serenitea-pot-guide-en.html" />
 <lastmod>2026-09-07</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/reputation-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/reputation-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/reputation-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/reputation-guide-en.html" />
 <lastmod>2026-09-08</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/reputation-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/reputation-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/reputation-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/reputation-guide-en.html" />
 <lastmod>2026-09-08</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/hangout-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/hangout-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/hangout-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/hangout-guide-en.html" />
 <lastmod>2026-09-08</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/hangout-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/hangout-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/hangout-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/hangout-guide-en.html" />
 <lastmod>2026-09-08</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/paimon-shop-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/paimon-shop-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/paimon-shop-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/paimon-shop-guide-en.html" />
 <lastmod>2026-09-09</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/paimon-shop-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/paimon-shop-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/paimon-shop-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/paimon-shop-guide-en.html" />
 <lastmod>2026-09-09</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/story-quest-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/story-quest-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/story-quest-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/story-quest-guide-en.html" />
 <lastmod>2026-09-09</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/story-quest-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/story-quest-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/story-quest-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/story-quest-guide-en.html" />
 <lastmod>2026-11-08</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/daily-commission-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/daily-commission-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/daily-commission-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/daily-commission-guide-en.html" />
 <lastmod>2026-09-10</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/daily-commission-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/daily-commission-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/daily-commission-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/daily-commission-guide-en.html" />
 <lastmod>2026-09-10</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/oculus-collection-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/oculus-collection-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/oculus-collection-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/oculus-collection-guide-en.html" />
 <lastmod>2026-09-10</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/oculus-collection-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/oculus-collection-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/oculus-collection-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/oculus-collection-guide-en.html" />
 <lastmod>2026-09-10</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/achievement-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/achievement-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/achievement-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/achievement-guide-en.html" />
 <lastmod>2026-09-11</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/achievement-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/achievement-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/achievement-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/achievement-guide-en.html" />
 <lastmod>2026-09-11</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/gadget-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/gadget-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/gadget-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/gadget-guide-en.html" />
 <lastmod>2026-09-11</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/gadget-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/gadget-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/gadget-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/gadget-guide-en.html" />
 <lastmod>2026-09-11</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/shrine-of-depths-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/shrine-of-depths-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/shrine-of-depths-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/shrine-of-depths-guide-en.html" />
 <lastmod>2026-09-12</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/shrine-of-depths-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/shrine-of-depths-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/shrine-of-depths-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/shrine-of-depths-guide-en.html" />
 <lastmod>2026-09-12</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/friendship-level-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/friendship-level-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/friendship-level-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/friendship-level-guide-en.html" />
 <lastmod>2026-09-12</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/friendship-level-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/friendship-level-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/friendship-level-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/friendship-level-guide-en.html" />
 <lastmod>2026-09-12</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/local-specialty-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/local-specialty-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/local-specialty-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/local-specialty-guide-en.html" />
 <lastmod>2026-09-13</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/local-specialty-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/local-specialty-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/local-specialty-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/local-specialty-guide-en.html" />
 <lastmod>2026-09-13</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/chronicled-wish-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/chronicled-wish-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/chronicled-wish-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/chronicled-wish-guide-en.html" />
 <lastmod>2026-09-13</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/chronicled-wish-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/chronicled-wish-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/chronicled-wish-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/chronicled-wish-guide-en.html" />
 <lastmod>2026-09-13</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/ley-line-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/ley-line-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/ley-line-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/ley-line-guide-en.html" />
 <lastmod>2026-09-14</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/ley-line-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/ley-line-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/ley-line-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/ley-line-guide-en.html" />
 <lastmod>2026-09-14</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/world-boss-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/world-boss-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/world-boss-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/world-boss-guide-en.html" />
 <lastmod>2026-09-14</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/world-boss-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/world-boss-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/world-boss-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/world-boss-guide-en.html" />
 <lastmod>2026-09-14</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/archon-quest-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/archon-quest-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/archon-quest-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/archon-quest-guide-en.html" />
 <lastmod>2026-09-15</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/archon-quest-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/archon-quest-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/archon-quest-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/archon-quest-guide-en.html" />
 <lastmod>2026-09-15</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/tcg-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/tcg-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/tcg-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/tcg-guide-en.html" />
 <lastmod>2026-09-15</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/tcg-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/tcg-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/tcg-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/tcg-guide-en.html" />
 <lastmod>2026-09-15</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/chest-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/chest-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/chest-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/chest-guide-en.html" />
 <lastmod>2026-09-16</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/chest-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/chest-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/chest-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/chest-guide-en.html" />
 <lastmod>2026-09-16</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide-en.html" />
 <lastmod>2026-09-16</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide-en.html" />
 <lastmod>2026-09-16</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/healer-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/healer-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/healer-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/healer-guide-en.html" />
 <lastmod>2026-09-17</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/healer-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/healer-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/healer-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/healer-guide-en.html" />
 <lastmod>2026-09-17</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/namecard-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/namecard-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/namecard-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/namecard-guide-en.html" />
 <lastmod>2026-09-17</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/namecard-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/namecard-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/namecard-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/namecard-guide-en.html" />
 <lastmod>2026-09-17</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/cooking-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/cooking-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/cooking-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/cooking-guide-en.html" />
 <lastmod>2026-09-18</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/cooking-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/cooking-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/cooking-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/cooking-guide-en.html" />
 <lastmod>2026-09-18</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide-en.html" />
 <lastmod>2026-09-18</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide-en.html" />
 <lastmod>2026-09-18</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
-<url><loc>https://genshin-guide-one-five.vercel.app/guides/enemy-farming-guide.html</loc></url>
-<url><loc>https://genshin-guide-one-five.vercel.app/guides/enemy-farming-guide-en.html</loc></url>
-<url><loc>https://genshin-guide-one-five.vercel.app/guides/defense-guide.html</loc></url>
-<url><loc>https://genshin-guide-one-five.vercel.app/guides/defense-guide-en.html</loc></url>
-<url><loc>https://genshin-guide-one-five.vercel.app/guides/world-quest-guide.html</loc></url>
-<url><loc>https://genshin-guide-one-five.vercel.app/guides/world-quest-guide-en.html</loc></url>
-<url><loc>https://genshin-guide-one-five.vercel.app/guides/event-guide.html</loc></url>
-<url><loc>https://genshin-guide-one-five.vercel.app/guides/event-guide-en.html</loc></url>
-<url><loc>https://genshin-guide-one-five.vercel.app/guides/shielder-guide.html</loc></url>
-<url><loc>https://genshin-guide-one-five.vercel.app/guides/shielder-guide-en.html</loc></url>
-<url><loc>https://genshin-guide-one-five.vercel.app/guides/daily-routine-guide.html</loc></url>
-<url><loc>https://genshin-guide-one-five.vercel.app/guides/daily-routine-guide-en.html</loc></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/ascension-materials-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/ascension-materials-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/adventure-rank-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/adventure-rank-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/talent-book-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/talent-book-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/mora-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/mora-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/weapon-ascension-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/weapon-ascension-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/character-exp-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/character-exp-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/ore-farming-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/ore-farming-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/welkin-moon-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/welkin-moon-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/artifact-leveling-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/artifact-leveling-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/foraging-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/foraging-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/expedition-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/expedition-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/crafting-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/crafting-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/crystallize-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/crystallize-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/animation-cancel-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/animation-cancel-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/graphics-settings-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/graphics-settings-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/elemental-particle-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/elemental-particle-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/glossary-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/glossary-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/swirl-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/swirl-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/beginner-mistakes-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/beginner-mistakes-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/superconduct-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/superconduct-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/overload-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/overload-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/poise-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/poise-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/burning-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/burning-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/enemy-farming-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/enemy-farming-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/enemy-farming-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/enemy-farming-guide-en.html" />
+</url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/enemy-farming-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/enemy-farming-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/enemy-farming-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/enemy-farming-guide-en.html" />
+</url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/defense-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/defense-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/defense-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/defense-guide-en.html" />
+</url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/defense-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/defense-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/defense-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/defense-guide-en.html" />
+</url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/world-quest-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/world-quest-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/world-quest-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/world-quest-guide-en.html" />
+</url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/world-quest-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/world-quest-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/world-quest-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/world-quest-guide-en.html" />
+</url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/event-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/event-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/event-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/event-guide-en.html" />
+</url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/event-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/event-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/event-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/event-guide-en.html" />
+</url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/shielder-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/shielder-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/shielder-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/shielder-guide-en.html" />
+</url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/shielder-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/shielder-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/shielder-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/shielder-guide-en.html" />
+</url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/daily-routine-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/daily-routine-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/daily-routine-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/daily-routine-guide-en.html" />
+</url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/daily-routine-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/daily-routine-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/daily-routine-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/daily-routine-guide-en.html" />
+</url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/ascension-materials-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/ascension-materials-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/ascension-materials-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/ascension-materials-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/ascension-materials-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/ascension-materials-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/ascension-materials-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/ascension-materials-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/adventure-rank-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/adventure-rank-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/adventure-rank-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/adventure-rank-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/adventure-rank-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/adventure-rank-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/adventure-rank-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/adventure-rank-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/talent-book-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/talent-book-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/talent-book-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/talent-book-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/talent-book-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/talent-book-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/talent-book-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/talent-book-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/mora-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/mora-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/mora-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/mora-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/mora-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/mora-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/mora-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/mora-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/weapon-ascension-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/weapon-ascension-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/weapon-ascension-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/weapon-ascension-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/weapon-ascension-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/weapon-ascension-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/weapon-ascension-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/weapon-ascension-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/character-exp-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/character-exp-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/character-exp-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/character-exp-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/character-exp-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/character-exp-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/character-exp-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/character-exp-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/ore-farming-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/ore-farming-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/ore-farming-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/ore-farming-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/ore-farming-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/ore-farming-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/ore-farming-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/ore-farming-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/welkin-moon-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/welkin-moon-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/welkin-moon-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/welkin-moon-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/welkin-moon-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/welkin-moon-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/welkin-moon-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/welkin-moon-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/artifact-leveling-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/artifact-leveling-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/artifact-leveling-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/artifact-leveling-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/artifact-leveling-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/artifact-leveling-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/artifact-leveling-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/artifact-leveling-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/foraging-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/foraging-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/foraging-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/foraging-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/foraging-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/foraging-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/foraging-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/foraging-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/expedition-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/expedition-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/expedition-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/expedition-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/expedition-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/expedition-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/expedition-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/expedition-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/crafting-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/crafting-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/crafting-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/crafting-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/crafting-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/crafting-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/crafting-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/crafting-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/crystallize-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/crystallize-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/crystallize-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/crystallize-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/crystallize-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/crystallize-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/crystallize-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/crystallize-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/animation-cancel-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/animation-cancel-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/animation-cancel-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/animation-cancel-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/animation-cancel-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/animation-cancel-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/animation-cancel-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/animation-cancel-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/graphics-settings-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/graphics-settings-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/graphics-settings-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/graphics-settings-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/graphics-settings-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/graphics-settings-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/graphics-settings-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/graphics-settings-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/elemental-particle-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/elemental-particle-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/elemental-particle-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/elemental-particle-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/elemental-particle-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/elemental-particle-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/elemental-particle-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/elemental-particle-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/glossary-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/glossary-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/glossary-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/glossary-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/glossary-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/glossary-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/glossary-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/glossary-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/swirl-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/swirl-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/swirl-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/swirl-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/swirl-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/swirl-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/swirl-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/swirl-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/beginner-mistakes-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/beginner-mistakes-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/beginner-mistakes-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/beginner-mistakes-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/beginner-mistakes-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/beginner-mistakes-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/beginner-mistakes-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/beginner-mistakes-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/superconduct-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/superconduct-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/superconduct-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/superconduct-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/superconduct-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/superconduct-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/superconduct-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/superconduct-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/overload-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/overload-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/overload-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/overload-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/overload-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/overload-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/overload-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/overload-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/poise-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/poise-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/poise-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/poise-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/poise-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/poise-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/poise-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/poise-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/burning-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/burning-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/burning-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/burning-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/burning-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/burning-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/burning-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/burning-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/catalyze-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/catalyze-guide.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/catalyze-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/catalyze-guide-en.html" />
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/catalyze-guide-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/catalyze-guide.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/catalyze-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/catalyze-guide-en.html" />
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/physical-damage-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/physical-damage-guide.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/physical-damage-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/physical-damage-guide-en.html" />
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/physical-damage-guide-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/physical-damage-guide.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/physical-damage-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/physical-damage-guide-en.html" />
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/kaveh-build.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/kaveh-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/kaveh-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/kaveh-build-en.html" />
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/kaveh-build-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/kaveh-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/kaveh-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/kaveh-build-en.html" />
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/keqing-build.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/keqing-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/keqing-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/keqing-build-en.html" />
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/keqing-build-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/keqing-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/keqing-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/keqing-build-en.html" />
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/collei-build.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/collei-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/collei-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/collei-build-en.html" />
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/collei-build-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/collei-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/collei-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/collei-build-en.html" />
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/beidou-build.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/beidou-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/beidou-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/beidou-build-en.html" />
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/beidou-build-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/beidou-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/beidou-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/beidou-build-en.html" />
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/cyno-build.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/cyno-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/cyno-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/cyno-build-en.html" />
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/cyno-build-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/cyno-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/cyno-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/cyno-build-en.html" />
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/clorinde-build.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/clorinde-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/clorinde-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/clorinde-build-en.html" />
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/clorinde-build-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/clorinde-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/clorinde-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/clorinde-build-en.html" />
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/eula-build.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/eula-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/eula-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/eula-build-en.html" />
     <lastmod>2026-10-26</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/eula-build-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/eula-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/eula-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/eula-build-en.html" />
     <lastmod>2026-10-26</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/mona-build.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/mona-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/mona-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/mona-build-en.html" />
     <lastmod>2026-10-26</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/mona-build-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/mona-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/mona-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/mona-build-en.html" />
     <lastmod>2026-10-26</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/diluc-build.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/diluc-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/diluc-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/diluc-build-en.html" />
     <lastmod>2026-10-27</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/diluc-build-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/diluc-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/diluc-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/diluc-build-en.html" />
     <lastmod>2026-10-27</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/chongyun-build.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/chongyun-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/chongyun-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/chongyun-build-en.html" />
     <lastmod>2026-10-27</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/chongyun-build-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/chongyun-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/chongyun-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/chongyun-build-en.html" />
     <lastmod>2026-10-27</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/klee-build.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/klee-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/klee-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/klee-build-en.html" />
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/klee-build-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/klee-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/klee-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/klee-build-en.html" />
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/ayato-build.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/ayato-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/ayato-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/ayato-build-en.html" />
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/ayato-build-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/ayato-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/ayato-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/ayato-build-en.html" />
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/venti-build.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/venti-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/venti-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/venti-build-en.html" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/venti-build-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/venti-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/venti-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/venti-build-en.html" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -2224,52 +2792,92 @@
   
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/childe-build.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/childe-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/childe-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/childe-build-en.html" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/childe-build-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/childe-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/childe-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/childe-build-en.html" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   
-<url><loc>https://genshin-guide-one-five.vercel.app/guides/kokomi-build.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://genshin-guide-one-five.vercel.app/guides/kokomi-build-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://genshin-guide-one-five.vercel.app/guides/tighnari-build.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://genshin-guide-one-five.vercel.app/guides/tighnari-build-en.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/kokomi-build.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/kokomi-build.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/kokomi-build-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/kokomi-build-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/kokomi-build-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/kokomi-build.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/kokomi-build-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/kokomi-build-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/tighnari-build.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/tighnari-build.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/tighnari-build-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/tighnari-build-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url>
+<loc>https://genshin-guide-one-five.vercel.app/guides/tighnari-build-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/tighnari-build.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/tighnari-build-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/tighnari-build-en.html" /><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/nilou-build.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/nilou-build.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/nilou-build-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/nilou-build-en.html" />
 <lastmod>2026-11-08</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/nilou-build-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/nilou-build.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/nilou-build-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/nilou-build-en.html" />
 <lastmod>2026-11-08</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/shenhe-build.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/shenhe-build.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/shenhe-build-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/shenhe-build-en.html" />
 <lastmod>2026-11-08</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://genshin-guide-one-five.vercel.app/guides/shenhe-build-en.html</loc>
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/shenhe-build.html" />
+<xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/shenhe-build-en.html" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/shenhe-build-en.html" />
 <lastmod>2026-11-08</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/charlotte-build.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/charlotte-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/charlotte-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/charlotte-build-en.html" />
     <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/charlotte-build-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/charlotte-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/charlotte-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/charlotte-build-en.html" />
     <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
