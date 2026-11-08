@@ -1,0 +1,39 @@
+# ============================================================
+# Vercel 部署排除清单
+# 作用：以下文件不参与部署，线上不可访问（不会 404 前先被上传）
+# 站点本体（html / assets / guides / images / tools / api）不受影响
+# 修改后需 git push 才会生效
+# ============================================================
+
+# --- 内部脚本：批量覆盖生成与卡片生成逻辑，不可外泄 ---
+add_share_buttons.py
+gen_twitter_card.py
+overlay_en.py
+overlay_longtail.py
+overlay_pinterest.py
+
+# --- 内部教程与方案（md / docx 双份） ---
+GIT自动部署步骤.md
+Google自然排名零成本指南.md
+实战教程-从零搭建原神攻略互动站.md
+实战教程-从零搭建原神攻略互动站.docx
+教程-Google收录与GSC.md
+教程-Google收录与GSC.docx
+部署教程-Git到GitHub到Vercel.md
+部署教程-Git到GitHub到Vercel.docx
+
+# --- 推广文案 ---
+推广文案包.md
+推特推广文案.md
+
+# --- 兜底：根目录其余 md / docx / py 一律不上线 ---
+# 站点是纯静态 HTML，不需要这三类文件
+*.md
+*.docx
+*.py
+
+# --- 系统与开发文件 ---
+.git
+.gitignore
+.vercel
+node_modules
