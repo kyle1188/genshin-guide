@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Genshin Resistance Shred Guide: RES Formula, Sources & Damage Gain</title>
-<meta name="description" content="How is enemy RES calculated? Why does 40% shred only add ~28% damage? Full breakdown of the 3-tier RES multiplier, the negative-RES half-effect rule, and every RES shred source from Viridescent Venerer to Xilonen.">
+<title>Does RES Shred Stack in Genshin Impact? Full Guide</title>
+<meta name="description" content="RES shred stacks across different sources but never from the same one. The 3-tier RES multiplier, the half-value rule below 0%, and every shred source ranked.">
 <meta name="keywords" content="genshin resistance shred, res shred, viridescent venerer, zhongli res shred, xilonen res shred, res formula">
 <link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide.html" />
 <link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html" />
 <link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html" />
-<meta property="og:title" content="Genshin Resistance Shred Guide: RES Formula, Sources & Damage Gain">
-<meta property="og:description" content="How is enemy RES calculated? Why does 40% shred only add ~28% damage? Full breakdown of the 3-tier RES multiplier, the negative-RES half-effect rule, and every RES shred source from Viridescent Venerer to Xilonen.">
+<meta property="og:title" content="Does RES Shred Stack in Genshin Impact? Full Guide">
+<meta property="og:description" content="RES shred stacks across different sources but never from the same one. The 3-tier RES multiplier, the half-value rule below 0%, and every shred source ranked.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html">
 <meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
@@ -54,7 +54,7 @@ a{color:#b9a8ff}
 </style>
 </head>
 <body>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Resistance Shred Guide: RES Formula, Sources & Damage Gain", "description": "How is enemy RES calculated? Why does 40% shred only add ~28% damage? Full breakdown of the 3-tier RES multiplier, the negative-RES half-effect rule, and every RES shred source from Viridescent Venerer to Xilonen.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-14", "dateModified": "2026-10-14", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Does RES Shred Stack in Genshin Impact? Full Guide", "description": "RES shred stacks across different sources but never from the same one. The 3-tier RES multiplier, the half-value rule below 0%, and every shred source ranked.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-10-14", "dateModified": "2026-10-14", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the typical enemy RES?", "acceptedAnswer": {"@type": "Answer", "text": "Most common enemies have 10% base RES per damage type, but there are exceptions: Ruin enemies have very high Physical RES (up to 70%), and some bosses have elevated RES in their own element. Each damage type is tracked separately."}}, {"@type": "Question", "name": "Does 40% shred mean 40% more damage?", "acceptedAnswer": {"@type": "Answer", "text": "No. Once RES goes negative it enters the half-effect zone where the multiplier is 1 - RES/2. Against a 10% base RES enemy, -40% leaves -30% RES, a 1.15 multiplier, or about +27.8% versus no shred."}}, {"@type": "Question", "name": "Is shred better against high-RES enemies?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The higher the enemy RES, the greater the relative gain. Against a 70% Physical RES enemy, -40% raises the multiplier from 0.30 to 0.70, roughly +133% damage."}}, {"@type": "Question", "name": "Can Viridescent Venerer shred Geo or Physical?", "acceptedAnswer": {"@type": "Answer", "text": "No. VV 4pc only shreds the swirled element, so it cannot affect Geo, Anemo, or Physical damage. Two VV sets also only apply one -40%."}}, {"@type": "Question", "name": "Do RES shred and DEF shred stack?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. They sit in two separate brackets (resistance multiplier and defense multiplier) and multiply together. Total DEF reduction is capped at 90%."}}, {"@type": "Question", "name": "Can Xilonen and Viridescent Venerer be used together?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Xilonen&rsquo;s Skill shreds Pyro/Hydro/Cryo/Electro/Geo RES while VV shrinks the swirled element&rsquo;s RES; being different sources they stack, pushing RES below -60% in multi-element teams."}}]}</script>
 <div class="topbar">
 <a href="https://genshin-guide-one-five.vercel.app/">Home</a>
@@ -64,6 +64,8 @@ a{color:#b9a8ff}
 <h1>Genshin Resistance Shred Guide: RES Formula, Sources &amp; Damage Gain</h1>
 <p>Why does 4-piece Viridescent Venerer say &ldquo;&minus;40% RES&rdquo; yet only add around 28% damage? And why does the same shred suddenly double your numbers against a Ruin Guard? The answer is the <strong>three-tier resistance multiplier</strong>. Here is the math, every source, and how to use it.</p>
 
+<h2>Does RES Shred Stack in Genshin Impact?</h2>
+<p>Across <strong>different</strong> sources yes, within the <strong>same</strong> source no. Two separate debuffs add together, but the same effect never stacks with itself or refreshes on top of itself. Past zero the value is also halved, which is why a -40% shred often lands as only about 28% more damage.</p>
 <div class="quick">
 <strong>Quick answer</strong>
 <ul>
