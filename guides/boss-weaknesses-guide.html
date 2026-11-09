@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>原神Boss弱点与机制详解：周本/世界Boss打法全攻略</title>
-<meta name="description" content="原神Boss弱点与机制详解：周本/世界Boss元素克制/护盾破解/攻击模式/配队推荐全攻略。" />
+<meta name="description" content="原神没有全局元素克制表，只有每个Boss各自的抗性与机制。无相系列/急冻树/爆炎树/魔偶剑鬼/若陀龙王/北风狼抗性对照与护盾破解规则全解析。" />
 <meta name="keywords" content="genshin impact boss guide,boss weakness elements,weekly boss strategies,原神周本打法,世界Boss攻略" />
 <meta name="author" content="提瓦特开荒攻略站" />
 <meta name="theme-color" content="#0c0f16" />
@@ -13,7 +13,7 @@
 <link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/boss-weaknesses-guide-en.html" />
 <link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/boss-weaknesses-guide-en.html" />
 <meta property="og:title" content="原神Boss弱点与机制详解：周本/世界Boss打法全攻略" />
-<meta property="og:description" content="原神Boss弱点与机制详解：周本/世界Boss元素克制/护盾破解/攻击模式/配队推荐全攻略。" />
+<meta property="og:description" content="原神没有全局元素克制表，只有每个Boss各自的抗性与机制。无相系列/急冻树/爆炎树/魔偶剑鬼/若陀龙王/北风狼抗性对照与护盾破解规则全解析。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/boss-weaknesses-guide.html" />
 <meta property="og:locale" content="zh_CN" />
@@ -21,81 +21,73 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png" />
 <meta name="twitter:title" content="原神Boss弱点与机制详解：周本/世界Boss打法全攻略" />
-<meta name="twitter:description" content="原神Boss弱点与机制详解：周本/世界Boss元素克制/护盾破解/攻击模式/配队推荐全攻略。" />
+<meta name="twitter:description" content="原神没有全局元素克制表，只有每个Boss各自的抗性与机制。无相系列/急冻树/爆炎树/魔偶剑鬼/若陀龙王/北风狼抗性对照与护盾破解规则全解析。" />
 <header class="topbar"><div class="wrap"><div class="brand"><span class="dot"></span><span>提瓦特<b>开荒攻略站</b></span></div><a class="lang" href="https://genshin-guide-one-five.vercel.app/guides/boss-weaknesses-guide-en.html">EN</a><a class="back" href="/">Back</a></div></header>
 <main class="article">
   <div class="container">
 <nav class="crumb">攻略 › Boss弱点</nav>
 <h1>原神Boss弱点完全指南：元素克制/护盾机制/攻击模式破解</h1>
 <p class="lead">每个Boss都有独特的元素弱点和护盾机制。理解这些机制能帮你选出最优配队，大幅缩短刷材料的时间。</p>
-<section class="body"><h2>Boss分类</h2>
+<section class="body">
+<h2>原神有没有元素克制表？</h2>
+<p><strong>没有全局克制表。</strong>原神不像宝可梦那样有「水克火」的固定关系，每个 Boss 只有自己的抗性档位外加一套机制。所以「这个 Boss 怕什么」必须逐个 Boss 回答，不能套公式。</p>
+<p>唯一的通用规律是：<b>元素生物免疫自身元素</b>。无相之雷免疫雷、无相之冰免疫冰、急冻树免疫冰、爆炎树免疫火——用同元素打基本是零收益。</p>
 
-<p>原神中的Boss分为两大类：<b>世界Boss</b>（野外可无限挑战）和<b>周本</b>（每周限次，产出突破素材）。</p>
-
+<h2>Boss 分类与掉落</h2>
+<p>三类 Boss 掉的东西几乎不重叠，混着刷是体力最大的浪费。</p>
 <table class="t">
-  <tr><td>类型</td><td>刷新频率</td><td>产出</td><td>示例</td></tr>
-  <tr><td>世界Boss</td><td>随时</td><td>天赋素材/武器素材</td><td>急冻树/爆炎树</td></tr>
-  <tr><td>周本</td><td>每周一重置</td><td>角色突破素材</td><td>若陀龙王/北风狼</td></tr>
-  <tr><td>秘境Boss</td><td>一次性</td><td>武器突破素材</td><td>遗迹守卫</td></tr>
+<tr><th>类型</th><th>刷新</th><th>体力</th><th>掉落</th></tr>
+<tr><td>世界 Boss</td><td>约 3 分钟</td><td>40</td><td>角色突破素材（专属核心 + 元素晶球）、圣遗物</td></tr>
+<tr><td>周本</td><td>每周一 04:00 重置</td><td>前 3 次 30，之后 60</td><td>天赋 7 级以上材料、武器胚、异梦溶媒、圣遗物</td></tr>
+<tr><td>秘境 Boss</td><td>重进秘境</td><td>20 / 40</td><td>武器突破素材</td></tr>
+</table>
+<p class="src-note">一句话记法：<b>世界 Boss 管角色突破，周本管天赋 6 级以上，秘境管武器。</b>无相系列不掉天赋书，周本的主产出也不是角色突破晶球。</p>
+
+<h2>Boss 抗性与机制对照表</h2>
+<p>先看第三列——大多数 Boss 的击杀速度由机制决定，而不是由你带什么元素决定。</p>
+<table class="t">
+<tr><th>Boss</th><th>免疫 / 高抗</th><th>真正决定怎么打</th><th>推荐元素</th></tr>
+<tr><td>无相之冰</td><td>免疫冰，其余 10%</td><td>复苏阶段发射冰果，用<b>重击</b>把 3 个冰果打回去；冰甲最怕火</td><td>火（融化）</td></tr>
+<tr><td>无相之火</td><td>免疫火</td><td>开局带盾，水一击熄火；复苏阶段生成 3 个火种，同样用水秒掉</td><td>水</td></tr>
+<tr><td>无相之水</td><td>免疫水</td><td>先清它召唤的水史莱姆，再打本体；复苏水泡需要雷或冰</td><td>雷 / 冰</td></tr>
+<tr><td>无相之风</td><td>免疫风，其余 10%</td><td>复苏阶段用风元素角色收集 4 个风之印；它本身没有元素弱点</td><td>任意非风主C</td></tr>
+<tr><td>无相之雷</td><td>免疫雷</td><td>复苏阶段三个棱镜，<b>任何非雷伤害</b>都能打碎；岩只会结晶，打不掉</td><td>火 / 冰</td></tr>
+<tr><td>无相之岩</td><td>免疫岩</td><td>打碎它停留并用来回血的岩柱——大剑、弓、下落攻击都有效</td><td>大剑 / 弓</td></tr>
+<tr><td>急冻树</td><td>免疫冰</td><td>先打根部冰核让花冠垂下，再全力输出花冠</td><td>火</td></tr>
+<tr><td>爆炎树</td><td>免疫火</td><td>打根部发光的花蕊核心</td><td>水</td></tr>
+<tr><td>纯水精灵</td><td>免疫水</td><td>打她召唤的水幻形，本体基本打不到；每波幻形弱点不同</td><td>雷 / 火 / 冰</td></tr>
+<tr><td>魔偶剑鬼</td><td><b>没有弱点，全抗性 10%</b></td><td>鬼面会挡远程，必须贴脸打；血量约 70% 时会短暂无敌</td><td>任意近战主C</td></tr>
+<tr><td>若陀龙王（周本）</td><td>每周吸收火 / 雷 / 冰 / 水之一</td><td>护盾阶段靠高频元素附着 + 元素反应破得最快</td><td>避开它本周吸收的元素</td></tr>
+<tr><td>北风狼（周本）</td><td><b>免疫冰与风</b></td><td>没有护盾，纯输出检定；第二阶段会铺冰霜地面，必须走出去</td><td>火 / 雷</td></tr>
 </table>
 
-<h2>元素克制表</h2>
-
-<p>每个Boss都有元素弱点，对弱点元素造成反应伤害更高。</p>
-
+<h2>护盾破解规则</h2>
+<p>护盾不是一个机制，是四类，破解手段完全不同。</p>
 <table class="t">
-  <tr><td>Boss</td><td>弱点元素</td><td>推荐反应</td><td>备注</td></tr>
-  <tr><td>急冻树</td><td>火</td><td>融化</td><td>第二阶段需火破解</td></tr>
-  <tr><td>爆炎树</td><td>水</td><td>蒸发</td><td>火抗极高</td></tr>
-  <tr><td>北风狼</td><td>火（免疫冰、风）</td><td>融化</td><td>免疫冰/风，无护盾</td></tr>
-  <tr><td>若陀龙王</td><td>草/雷</td><td>超绽放/激化</td><td>岩盾需草雷破</td></tr>
-  <tr><td>魔偶剑鬼</td><td>雷</td><td>感电/超导</td><td>须佐之男需雷破解</td></tr>
-  <tr><td>散骨男爵</td><td>火</td><td>蒸发</td><td>火附魔免疫</td></tr>
-  <tr><td>无相之火</td><td>水</td><td>蒸发</td><td>核心需水破解</td></tr>
-  <tr><td>无相之水</td><td>雷</td><td>感电/超导</td><td>核心需雷破解</td></tr>
-  <tr><td>无相之风</td><td>geo</td><td>岩</td><td>风元素护盾</td></tr>
-  <tr><td>无相之雷</td><td>火/冰</td><td>超载/超导</td><td>免疫雷，岩只能结晶</td></tr>
+<tr><th>护盾类型</th><th>用什么破</th><th>纯属浪费时间</th></tr>
+<tr><td>元素护盾（深渊法师 / 使徒）</td><td>对应克制元素——冰盾用火化，火盾用水灭</td><td>物理攻击、错误元素</td></tr>
+<tr><td>岩盾 / 岩造物</td><td>大剑、下落攻击、岩元素伤害</td><td>单点弓射</td></tr>
+<tr><td>无相系列护盾</td><td>复苏阶段的小游戏：冰果、火种、棱镜、风之印</td><td>对着壳硬堆输出</td></tr>
+<tr><td>若陀龙王吸收壳</td><td>高频多段元素附着 + 元素反应</td><td>慢速单发大伤害、以及它吸收的元素</td></tr>
 </table>
+<p class="callout"><b>重点：</b>岩元素永远打不掉雷棱镜，只会结晶。所有非岩护盾都是同一个坑——「带把大剑」不是万能答案。</p>
 
-<h2>护盾破解机制</h2>
-
-<p>不同颜色的护盾需要对应元素破解：</p>
-
-<p>- <b>物理护盾</b>：用重击或元素攻击破解</p>
-<p>- <b>元素护盾</b>：用克制元素快速破解</p>
-<p>- <b>岩元素护盾（若陀）</b>：草元素或雷元素可穿透</p>
-<p>- <b>雷元素护盾（无相之雷）</b>：火元素或冰元素最有效</p>
-<p>- <b>火元素护盾（无相之火）</b>：水元素最有效</p>
-
-<h2>每周必打Boss优先级</h2>
-
-<p>F2P玩家树脂有限，建议按以下优先级打周本：</p>
-
-<p>1. <b>若陀龙王</b> — 岩属性角色突破材料</p>
-<p>2. <b>北风狼</b> — 冰属性角色突破材料</p>
-<p>3. <b>急冻树</b> — 冰天赋素材</p>
-<p>4. <b>爆炎树</b> — 火天赋素材</p>
-<p>5. <b>魔偶剑鬼</b> — 雷天赋素材</p>
-<p>6. <b>无相系列</b> — 根据当前所需材料选择</p>
-
-<h2>FAQ</h2>
-
-<p><b>Q：为什么我的元素攻击打Boss不掉血？</b></p>
-<p>A：Boss可能处于免疫状态（如火树点火阶段）。观察Boss状态，用克制元素破解护盾后再输出。</p>
-
-<p><b>Q：周本材料不够用怎么办？</b></p>
-<p>A：优先打你当前培养角色的突破材料Boss。树脂有限时，不要雨露均沾。</p>
-
-<p><b>Q：世界Boss和周本有什么区别？</b></p>
-<p>A：世界Boss无限次挑战，产出天赋/武器素材；周本每周限次，产出角色突破素材。</p></section>
+<h2>体力该花在哪个 Boss 上</h2>
+<ul>
+<li><b>周本优先，但只刷前三次半价。</b>每周前三次领奖 30 体力，之后 60。三次全砸在主力角色需要的那个周本上。</li>
+<li><b>世界 Boss 只为今天真的要突破的角色刷。</b>一次 40 体力，每次领奖 2-3 个专属核心，一个角色从零到满突破大约需要 46 个。</li>
+<li><b>异梦溶媒专治歪掉落。</b>一个溶媒把同一个周本掉错的材料转成你需要的种类，不用再等一周。</li>
+<li><b>不要「为以后」提前刷。</b>Boss 素材与角色绑定，多刷的核心只会在背包里积灰。</li>
+</ul>
+</section>
 <section class="faq">
       <h2>常见问题</h2>
-      <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "为什么我的元素攻击打Boss不掉血？", "acceptedAnswer": {"@type": "Answer", "text": "Boss可能处于免疫状态，观察状态用克制元素破解护盾后再输出。"}}, {"@type": "Question", "name": "周本材料不够用怎么办？", "acceptedAnswer": {"@type": "Answer", "text": "优先打当前培养角色的突破材料Boss，树脂有限不要雨露均沾。"}}, {"@type": "Question", "name": "世界Boss和周本有什么区别？", "acceptedAnswer": {"@type": "Answer", "text": "世界Boss无限次挑战产出天赋/武器素材；周本每周限次产出角色突破素材。"}}]}
-</script>
-      <details><summary>为什么我的元素攻击打Boss不掉血？</summary><p>Boss可能处于免疫状态，观察状态用克制元素破解护盾后再输出。</p></details>
-<details><summary>周本材料不够用怎么办？</summary><p>优先打当前培养角色的突破材料Boss，树脂有限不要雨露均沾。</p></details>
-<details><summary>世界Boss和周本有什么区别？</summary><p>世界Boss无限次挑战产出天赋/武器素材；周本每周限次产出角色突破素材。</p></details>
+      <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神Boss弱点与机制详解：周本/世界Boss打法全攻略", "description": "原神没有全局元素克制表，只有每个Boss各自的抗性与机制。无相系列/急冻树/爆炎树/魔偶剑鬼/若陀龙王/北风狼抗性对照与护盾破解规则全解析。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "提瓦特攻略组"}, "publisher": {"@type": "Organization", "name": "提瓦特开荒攻略站"}, "datePublished": "2026-09-19", "dateModified": "2026-11-09", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/boss-weaknesses-guide.html", "inLanguage": "zh-CN"}</script>
+      <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "原神有元素克制表吗？", "acceptedAnswer": {"@type": "Answer", "text": "没有。原神没有元素之间的固定克制关系，只有每个 Boss 各自的抗性档位和机制。唯一的通用规律是元素生物免疫自身元素。"}}, {"@type": "Question", "name": "为什么我的攻击打 Boss 完全不掉血？", "acceptedAnswer": {"@type": "Answer", "text": "要么它免疫这个元素，要么护盾还没破。无相之火免疫火且开局带盾，无相之雷免疫雷——它的棱镜只能用非雷伤害打碎。"}}, {"@type": "Question", "name": "岩元素能破雷盾吗？", "acceptedAnswer": {"@type": "Answer", "text": "不能。岩打雷棱镜只会触发结晶，棱镜原地不动。任何非雷元素攻击都能打碎它。"}}, {"@type": "Question", "name": "周本每周刷几次合适？", "acceptedAnswer": {"@type": "Answer", "text": "前三次领奖各 30 体力，全部用在角色需要的那个周本上，之后停手。额外次数要 60 体力，除非用异梦溶媒转换，否则不划算。"}}]}</script>
+      <details><summary>原神有元素克制表吗？</summary><p>没有。原神没有元素之间的固定克制关系，只有每个 Boss 各自的抗性档位和机制。唯一的通用规律是元素生物免疫自身元素。</p></details>
+      <details><summary>为什么我的攻击打 Boss 完全不掉血？</summary><p>要么它免疫这个元素，要么护盾还没破。无相之火免疫火且开局带盾，无相之雷免疫雷——它的棱镜只能用非雷伤害打碎。</p></details>
+      <details><summary>岩元素能破雷盾吗？</summary><p>不能。岩打雷棱镜只会触发结晶，棱镜原地不动。任何非雷元素攻击都能打碎它。</p></details>
+      <details><summary>周本每周刷几次合适？</summary><p>前三次领奖各 30 体力，全部用在角色需要的那个周本上，之后停手。额外次数要 60 体力，除非用异梦溶媒转换，否则不划算。</p></details>
     </section>
 <div class="pairbox">
       <h3>相关攻略</h3>
