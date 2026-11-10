@@ -28,7 +28,8 @@
 <nav class="crumb">Guides › Stat Priority</nav>
 <h1>Complete Artifact Main Stat Priority Guide: How to Build Every Role</h1>
 <p class="lead">Wrong main stats waste perfect substats. Understanding stat priorities for each role type prevents stat-wasting builds.</p>
-<section class="body"><h2>Main Stat Priority Overview</h2>
+<section class="body"><div class="quick"><ul><li><strong>Which main stat goes in each slot?</strong> Flower is always HP and Plume is always ATK. Sands offers ATK%, HP%, EM% and ER%; the Goblet adds Elemental DMG Bonus and DEF%; the Circlet adds CRIT Rate, CRIT DMG, EM, ER and Healing Bonus.</li><li><strong>What Goblet should a DPS use?</strong> Elemental DMG Bonus. It multiplies the whole damage formula, while ATK% only feeds a pool your Substats have already diluted.</li><li><strong>CRIT Rate or CRIT DMG first?</strong> Keep the 1:2 ratio, and take CRIT Rate whenever it sits under 50% - a missed crit deals no bonus damage at all.</li><li><strong>Does every DPS want ATK% Sands?</strong> No. EM-scaling triggers (Kazuha, Kuki Shinobu) want EM Sands, Zhongli wants DEF%, and HP-scaling healers want HP%.</li><li><strong>What is the most common artifact mistake?</strong> Stacking CRIT on an off-field sub-DPS that cannot cast on cooldown. Fixing an Energy Recharge deficit is usually a bigger damage gain than 10% CRIT DMG.</li></ul></div>
+<h2>Main Stat Priority Overview</h2>
 
 <p>Each artifact slot has a fixed main stat pool:</p>
 
@@ -46,22 +47,22 @@
 <p><b>On-Field Main DPS (Hu Tao, Furina, Raiden, etc.)</b></p>
 <li>Sands: ATK% > ER</li>
 <li>Goblet: Elemental DMG Bonus > ATK%</li>
-<li>Calipsole: CRIT Rate/CRIT DMG (1:2 ratio)</li>
+<li>Circlet: CRIT Rate/CRIT DMG (1:2 ratio)</li>
 
 <p><b>Off-Field Sub-DPS (Xiangling, Xingqiu, Fischl, etc.)</b></p>
 <li>Sands: EM > ER > ATK%</li>
 <li>Goblet: Elemental DMG Bonus</li>
-<li>Calipsole: CRIT Rate/CRIT DMG (if available)</li>
+<li>Circlet: CRIT Rate/CRIT DMG (if available)</li>
 
 <p><b>Support/Viridescent Venerer (Kazuha, Sucrose, etc.)</b></p>
 <li>Sands: EM > ER</li>
 <li>Goblet: Elemental DMG Bonus</li>
-<li>Calipsole: EM > ER</li>
+<li>Circlet: EM > ER</li>
 
 <p><b>Survival/Tank (Zhongli, Kokomi, etc.)</b></p>
 <li>Sands: DEF% (Zhongli) or HP% (Kokomi)</li>
 <li>Goblet: DEF% (Zhongli) or HP%/Healing Bonus%</li>
-<li>Calipsole: Healing Bonus% > HP%</li>
+<li>Circlet: Healing Bonus% > HP%</li>
 
 <h2>Substat Priority</h2>
 
@@ -98,6 +99,7 @@
       <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "ATK Sands or ER Sands?", "acceptedAnswer": {"@type": "Answer", "text": "On-field DPS uses ATK Sands. Off-field with ER deficit uses ER Sands, otherwise ATK/EM."}}, {"@type": "Question", "name": "How to balance CRIT Rate and CRIT DMG?", "acceptedAnswer": {"@type": "Answer", "text": "Ideal ratio 1:2. If CRIT Rate is below 50%, prioritize CRIT Rate first."}}, {"@type": "Question", "name": "Is Elemental Mastery useful for main DPS?", "acceptedAnswer": {"@type": "Answer", "text": "Low value for amplify-reaction DPS. High value for transform-reaction triggers."}}]}
 </script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Artifact Main Stat Priority Guide: Every Slot and Role", "description": "Which main stat goes in each artifact slot, per-role priorities for on-field DPS, sub-DPS, support and tank, plus the four substat mistakes that waste builds.", "author": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-08-31", "dateModified": "2026-11-10", "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide", "logo": {"@type": "ImageObject", "url": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png"}}, "inLanguage": "en", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://genshin-guide-one-five.vercel.app/guides/stat-priority-guide-en.html"}}</script>
       <details><summary>ATK Sands or ER Sands?</summary><p>On-field DPS uses ATK Sands. Off-field with ER deficit uses ER Sands, otherwise ATK/EM.</p></details>
 <details><summary>How to balance CRIT Rate and CRIT DMG?</summary><p>Ideal ratio 1:2. If CRIT Rate is below 50%, prioritize CRIT Rate first.</p></details>
 <details><summary>Is Elemental Mastery useful for main DPS?</summary><p>Low value for amplify-reaction DPS. High value for transform-reaction triggers.</p></details>
@@ -208,6 +210,8 @@
   .sub-box button:hover{filter:brightness(1.08)}
   .msg{margin-top:12px; font-size:14px; min-height:18px}
   .msg.ok{color:var(--grass)} .msg.err{color:var(--fire)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
 </style></head>
 <body>
 <section class="sub-box" id="subscribe-box">
