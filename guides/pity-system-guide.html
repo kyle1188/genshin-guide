@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Genshin Impact Pity System Guide 2026 – Soft Pity, Hard Pity, 50/50 Math Explained</title>
-<meta name="description" content="Complete breakdown of Genshin's wish system: soft pity starts at 74, hard pity at 90, 50/50 mechanics, primogem costs, and how to plan your pulls strategically.">
+<title>原神保底机制详解：软保底 74、硬保底 90、50/50 概率</title>
+<meta name="description" content="原神抽卡保底完整拆解：五星基础 0.6%、软保底从第 74 抽起、硬保底 90 抽、50/50 与捕获明光、武器池定轨，附原石成本明细与抽卡策略。">
 <meta name="keywords" content="genshin impact pity system 2026, genshin soft pity hard pity explained, genshin 50/50 mechanics guide, how many primogems to guarantee genshin">
 <link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide.html">
-<meta property="og:title" content="Genshin Impact Pity System Guide 2026 – Soft Pity, Hard Pity, 50/50 Math Explained">
-<meta property="og:description" content="Complete breakdown of Genshin's wish system: soft pity starts at 74, hard pity at 90, 50/50 mechanics, primogem costs, and how to plan your pulls strategically.">
+<meta property="og:title" content="原神保底机制详解：软保底 74、硬保底 90、50/50 概率">
+<meta property="og:description" content="原神抽卡保底完整拆解：五星基础 0.6%、软保底从第 74 抽起、硬保底 90 抽、50/50 与捕获明光、武器池定轨，附原石成本明细与抽卡策略。">
 <meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
 <meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide.html">
 <meta property="og:locale" content="zh_CN" if lang=="zh" else "en_US">
 <meta property="og:site_name" content="Teyvat Starter Guide">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Genshin Impact Pity System Guide 2026 – Soft Pity, Hard Pity, 50/50 Math Explained">
-<meta name="twitter:description" content="Complete breakdown of Genshin's wish system: soft pity starts at 74, hard pity at 90, 50/50 mechanics, primogem costs, and how to plan your pulls strategically.">
+<meta name="twitter:title" content="原神保底机制详解：软保底 74、硬保底 90、50/50 概率">
+<meta name="twitter:description" content="原神抽卡保底完整拆解：五星基础 0.6%、软保底从第 74 抽起、硬保底 90 抽、50/50 与捕获明光、武器池定轨，附原石成本明细与抽卡策略。">
 <meta name="twitter:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
 <link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide.html">
 <link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide-en.html">
@@ -58,9 +58,12 @@ th{background:rgba(232,196,116,.12);color:var(--gold);font-weight:600}
 .pairbox a:hover{color:var(--txt);background:var(--panel-strong)}
 footer{margin-top:48px;padding:24px 0;border-top:1px solid var(--line);font-size:13px;color:var(--txt-mute);text-align:center}
 .hot-scarf{border-radius:var(--r);padding:14px 16px;margin:0 0 28px;font-size:14px}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
 </style>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Impact Pity System Guide 2026 – Soft Pity, Hard Pity, 50/50 Math Explained", "description": "Complete breakdown of Genshin's wish system: soft pity starts at 74, hard pity at 90, 50/50 mechanics, primogem costs, and how to plan your pulls strategically.", "author": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-08-21", "dateModified": "2026-08-21", "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide", "logo": {"@type": "ImageObject", "url": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png"}}, "inLanguage": "zh-CN"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神保底机制详解：软保底、硬保底与 50/50", "description": "原神抽卡保底完整拆解：五星基础 0.6%、软保底从第 74 抽起、硬保底 90 抽、50/50 与捕获明光、武器池定轨，附原石成本明细与抽卡策略。", "author": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-08-21", "dateModified": "2026-11-10", "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide", "logo": {"@type": "ImageObject", "url": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png"}}, "inLanguage": "zh-CN", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://genshin-guide-one-five.vercel.app/guides/pity-system-guide.html"}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "卡池结束时保底会重置吗？", "acceptedAnswer": {"@type": "Answer", "text": "不会。保底在同类卡池之间继承。限定角色池的抽数会带到下一个限定角色池，50/50 的保证也同样保留。"}}, {"@type": "Question", "name": "能连输两次 50/50 吗？", "acceptedAnswer": {"@type": "Answer", "text": "现在不行了。5.0 的捕获明光系统上线后，已经不可能连输三次 50/50——角色活动池的第三个五星最晚必定是 UP 角色。"}}, {"@type": "Question", "name": "单抽好还是十连好？", "acceptedAnswer": {"@type": "Answer", "text": "如果已经接近保底（85 抽以上），单抽更省原石，因为出五星就能立刻停手。抽数较低时单抽十连概率完全一样。"}}, {"@type": "Question", "name": "怎么查自己当前的保底数？", "acceptedAnswer": {"@type": "Answer", "text": "打开抽卡界面 → 历史记录，数一下距离上次五星抽了多少次。也可以用 paimon.moe 这类工具导入抽卡记录，自动统计。"}}, {"@type": "Question", "name": "在卡池早期抽还是末期抽更好？", "acceptedAnswer": {"@type": "Answer", "text": "从概率上完全一样——保底会继承，第 1 抽和第 70 抽的概率完全相同。实际差别只在于：等到后期你能攒下更多原石，更有把握覆盖最坏情况。"}}, {"@type": "Question", "name": "保一个限定角色到底要多少原石？", "acceptedAnswer": {"@type": "Answer", "text": "最坏情况 180 抽 = 28,800 原石（先在第 90 抽输掉 50/50，再吃满 90 抽硬保底）。实际多数人花 12,000–14,400 原石，因为软保底在第 74–80 抽就会触发。"}}, {"@type": "Question", "name": "什么是软保底？", "acceptedAnswer": {"@type": "Answer", "text": "软保底是角色池从第 74 抽左右开始的隐藏概率爬坡：五星率从 0.6% 跳到约 6.5%，之后每抽继续上升，直到第 90 抽硬保底。多数五星出现在第 74–85 抽之间。"}}, {"@type": "Question", "name": "保底会跨卡池类型继承吗？", "acceptedAnswer": {"@type": "Answer", "text": "不会。角色活动池、武器活动池、常驻池三套计数完全独立。角色活动池的计数拿到常驻池用不了，也不会互相影响。"}}, {"@type": "Question", "name": "捕获明光（定轨值）是什么？", "acceptedAnswer": {"@type": "Answer", "text": "5.0 版本加入的机制，让角色活动池不可能连输三次 50/50。输两次之后，第三个五星必定是 UP，长期 UP 率因此从 50% 提升到约 55%。"}}, {"@type": "Question", "name": "要不要抽武器池？", "acceptedAnswer": {"@type": "Answer", "text": "除非你是能接受定轨风险的付费玩家。武器池最坏 160 抽（25,600 原石），角色池最坏 180 抽（28,800 原石）——看着略便宜，但命定值机制对操作失误更不容忍。"}}]}</script>
 </head>
 <body>
 <header class="topbar"><div class="wrap">
@@ -68,99 +71,84 @@ footer{margin-top:48px;padding:24px 0;border-top:1px solid var(--line);font-size
   <a class="lang" href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide-en.html">EN</a>
   <a class="back" href="/">← ← 返回首页</a>
 </div></header>
-<div class="wrap"><nav class="crumb"><a href="/">提瓦特开荒攻略站</a> › Guides</nav><article><h1>Genshin Impact Pity System Guide 2026 – Soft Pity, Hard Pity, 50/50 Math Explained</h1><p class="lead">Genshin's wish system has three load-bearing mechanics that most players misunderstand: soft pity is a probability ramp (not a guarantee), the 50/50 carries between banners, and pity counts persist within banner types until you actually pull a 5★. Master these three and you'll never waste primogems again.</p><section class="hot-scarf" style="background:rgba(232,196,116,.08);border:1px solid rgba(232,196,116,.25);border-radius:var(--r);padding:14px 16px;margin:0 0 28px;font-size:14px;">
-  <b>🎰 Math Alert:</b> This guide uses community-datamined probability curves from KeQingMains and Paimon.moe. Numbers are approximate but tested against millions of real pulls.
-</section>
+<div class="wrap"><nav class="crumb"><a href="/">提瓦特开荒攻略站</a> › Guides</nav><article><h1>原神保底机制完全指南 2026：软保底、硬保底与 50/50 概率详解</h1>
+<p class="lead">原神的抽卡系统有三条最容易被误解的核心规则：软保底是概率爬坡，不是保证；50/50 的判定会跨卡池继承；保底计数只在同类卡池里累计，而且只有真的抽出五星才清零。把这三条搞清楚，原石就不会白扔。</p>
+<section class="hot-scarf" style="background:rgba(232,196,116,.08);border:1px solid rgba(232,196,116,.25);border-radius:var(--r);padding:14px 16px;margin:0 0 28px;font-size:14px;">
+    <b>🎰 数据说明：</b>本页概率曲线来自社区长期统计（KeQingMains、Paimon.moe），属于近似值，已用数百万次真实抽卡记录验证过。
+  </section>
 
-<h2>Pity System at a Glance</h2>
+<div class="quick"><ul><li><strong>五星基础概率是多少？</strong> 每抽 0.6%。从第 1 抽到第 73 抽都保持不变，之后每抽开始递增。</li><li><strong>软保底从第几抽开始？</strong> 角色活动池和常驻池是第 74 抽，概率跳到约 6.5%；武器活动池是第 63 抽。</li><li><strong>硬保底是多少？</strong> 角色池第 90 抽必定出五星，武器池第 80 抽。没有任何情况能超过这个上限。</li><li><strong>保底会跨卡池继承吗？</strong> 只在同类卡池内继承。角色活动池、武器活动池、常驻池各自独立计数，卡池结束也不会把计数清零。</li><li><strong>保一个定向五星实际要多少原石？</strong> 按软保底平均约 76 抽算，约 12,160 原石。最坏情况是输掉 50/50 之后再吃满硬保底，180 抽，28,800 原石。</li></ul></div>
+
+<h2>保底机制一览</h2>
 <table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;">
-<tr style="background:rgba(232,196,116,.12);"><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Banner Type</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Soft Pity</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Hard Pity</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Special</th></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Character Event</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~74</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">90</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">50/50 system</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Weapon Event</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~63</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">80</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Epitomized Path</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Standard (Wanderlust)</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~74</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">90</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">No guarantee</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Beginner's Wish</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Same as Standard</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Same as Standard</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">First 10-pull discounted</td></tr>
+<tr style="background:rgba(232,196,116,.12);"><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">卡池类型</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">软保底</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">硬保底</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">特殊规则</th></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">角色活动池</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">约 74 抽</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">90 抽</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">50/50 机制</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">武器活动池</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">约 63 抽</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">80 抽</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">定轨（命定值）</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">常驻池</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">约 74 抽</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">90 抽</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">无定向保证</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">新手池</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">同常驻</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">同常驻</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">首次十连打折</td></tr>
 </table>
-
-<h2>Soft Pity — The Most Misunderstood Mechanic</h2>
-<p>The base rate of pulling a 5★ is <b>0.6% per wish</b>. This stays flat from wish 1 to roughly wish 73. Then at wish 74, the rate jumps dramatically:</p>
+<h2>软保底：最容易被误解的机制</h2>
+<p>五星的基础概率是每抽 <strong>0.6%</strong>。这个数字从第 1 抽一直维持到大约第 73 抽不变。从第 74 抽开始，概率会突然跳升：</p>
 <table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;">
-<tr style="background:rgba(232,196,116,.12);"><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Wish #</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">★5 Drop Rate (Character Banner)</th></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">1–73</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">0.6% (base rate)</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">74</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~6.5%</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">75</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~12%</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">76</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~18%</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">77</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~24%</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">78</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~30%</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">79</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~36%</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">80+</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Climbs steeply each wish</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">89</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~96%</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">90</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">100% (guaranteed)</td></tr>
+<tr style="background:rgba(232,196,116,.12);"><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">抽数</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">五星概率（角色活动池）</th></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">1–73</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">0.6%（基础概率）</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">74</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">约 6.5%</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">75</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">约 12%</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">76</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">约 18%</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">77</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">约 24%</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">78</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">约 30%</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">79</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">约 36%</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">80 以后</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">每抽继续大幅递增</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">89</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">约 96%</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">90</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">100%（必定出）</td></tr>
 </table>
-<p><b>Practical implication:</b> ~60–70% of 5★ pulls happen between wishes 74–85. Only ~15–20% reach hard pity at 90. Don't assume you're unlucky if you hit 90 once or twice — it's rare but normal.</p>
-
-<h2>Hard Pity — The Guaranteed Floor</h2>
-<p>If you've made 89 wishes without a 5★, wish 90 is <b>100% guaranteed</b> to be a 5★. This is the absolute ceiling. On weapon banners, hard pity is wish 80.</p>
-<p><b>What hard pity does NOT guarantee:</b></p>
-<ul>
-  <li>The featured character (that's the 50/50 system — see below)</li>
-  <li>A specific weapon (that's Epitomized Path — weapon banner only)</li>
-  <li>Cross-banner persistence — Character Event pity, Weapon pity, and Standard pity are tracked separately</li>
-</ul>
-
-<h2>The 50/50 System (Character Event Banners Only)</h2>
-<p>When you pull a 5★ on a Character Event banner, there's a <b>50% chance</b> it's the featured limited character and a <b>50% chance</b> it's a random standard 5★ (Diluc, Jean, Mona, Qiqi, Keqing, Tighnari, or Dehya).</p>
-<p><b>If you lose the 50/50:</b> your next 5★ on that banner type is <b>guaranteed</b> to be the featured character. The guarantee persists across banner changes — if you lose on Xiangling's banner and switch to Hu Tao's banner, your next 5★ on Hu Tao's banner will still be guaranteed.</p>
-<p><b>Since Version 5.0 (Capturing Radiance):</b> it is now impossible to lose the 50/50 three consecutive times. The C-State system guarantees the featured character at C-State 3, effectively raising the long-term featured rate to ~55%.</p>
-
-<h2>Cost Breakdown</h2>
+<p><strong>实际意义：</strong>约 60–70% 的五星出现在第 74–85 抽之间，只有约 15–20% 会一直撑到第 90 抽。偶尔吃一次硬保底不算运气差，这很正常。</p>
+<h2>硬保底：绝对下限</h2>
+<p>如果连续 89 抽都没出五星，第 90 抽 <strong>100%</strong> 出五星，这是绝对上限。武器池的硬保底是第 80 抽。</p>
+<p><strong>硬保底不保证的事情：</strong></p>
+<ul><li>不保证是当期 UP 角色——那是 50/50 机制负责的部分</li><li>不保证是想要的那把武器——武器池要靠定轨</li><li>不跨卡池继承——角色活动池、武器活动池、常驻池分别独立计数</li></ul>
+<h2>50/50 机制（仅角色活动池）</h2>
+<p>在角色活动池抽到五星时，有 50% 概率是当期 UP 限定角色，另 50% 概率是常驻五星（迪卢克、琴、莫娜、七七、刻晴、提纳里、迪希雅）。</p>
+<p><strong>输掉 50/50 之后：</strong>同类卡池的下一个五星必定是当期 UP 角色。这个保证跨卡池有效——你在某个池子输了，换到下一个角色活动池，下一个五星依然必定是 UP。</p>
+<p><strong>5.0 版本起的捕获明光：</strong>已经不可能连输三次 50/50。第三次必定是 UP，长期 UP 率因此从 50% 提升到约 55%。</p>
+<h2>成本明细</h2>
 <table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;">
-<tr style="background:rgba(232,196,116,.12);"><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Goal</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Pulls</th><th style="padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;border-bottom:2px solid var(--gold);">Primogems</th></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">1 pull</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">1</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">160</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">10 pulls</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">10</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">1,600</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Soft pity guarantee (avg)</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~76</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">~12,160</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Hard pity (1×)</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">90</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">14,400</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Worst case (lose 50/50 + hard pity)</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">180</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">28,800</td></tr>
+<tr style="background:rgba(232,196,116,.12);"><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">目标</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">抽数</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">原石</th></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">单抽</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">1</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">160</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">十连</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">10</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">1,600</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">软保底平均命中</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">约 76</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">约 12,160</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">硬保底一次</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">90</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">14,400</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">最坏情况（输 50/50 且吃满硬保底）</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">180</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">28,800</td></tr>
 </table>
-<p><b>Realistic expectation:</b> most players get their featured character between 75–85 pulls (~12,000–13,600 Primogems). Only ~15% reach hard pity, and only ~7.5% lose the 50/50. Budgeting 14,400 Primogems (90 pulls) per character is a safe conservative target.</p>
-
-<h2>Weapon Banner — Epitomized Path</h2>
-<p>The Weapon Event banner has different rules:</p>
-<ul>
-  <li><b>Soft pity:</b> ~63 wishes (steeper probability ramp because hard pity is 80, not 90)</li>
-  <li><b>Hard pity:</b> 80 wishes</li>
-  <li><b>No 50/50</b> — but instead uses <b>Epitomized Path</b>: select one of the two featured weapons. Each time you pull the other weapon (or a standard 5★ weapon), you gain 1 Fate Point. At 2 Fate Points, your next 5★ weapon is guaranteed to be your chosen one.</li>
-  <li><b>Fate Points reset</b> when you claim your chosen weapon or when you change your selected weapon mid-pity.</li>
-</ul>
-<p><b>Worst case for weapon banner:</b> 160 pulls (25,600 Primogems) if you lose both Fate Point accumulations. This is significantly more punishing than character banners — only pull weapons if you're a spender willing to navigate this system.</p>
-
-<h2>Pity Persistence Rules</h2>
-<ul>
-  <li><b>Pity carries over</b> between banners of the same type. Your Character Event pity continues on the next Character Event banner. Your Weapon Event pity continues on the next Weapon Event banner.</li>
-  <li><b>Pity does NOT carry across banner types.</b> Character Event pity, Weapon Event pity, and Standard pity are all tracked separately.</li>
-  <li><b>Pity resets</b> only when you actually pull a 5★. It does not reset when a banner ends, when a patch drops, or when you switch between Character Event and Standard banners.</li>
-</ul>
-
-<h2>Smart Wishing Strategy</h2>
+<p><strong>现实预期：</strong>多数玩家在第 75–85 抽之间（约 12,000–13,600 原石）就能拿到 UP 角色。约 15% 的人会吃满硬保底；同时遇到「输 50/50」和「吃满硬保底」的概率只有约 7.5%。按 14,400 原石（90 抽）一个角色来做预算，是相对稳妥的。</p>
+<h2>武器池：定轨机制</h2>
+<p>武器活动池的规则不一样：</p>
+<ul><li><strong>软保底：</strong>约第 63 抽（因为硬保底是 80 而不是 90，概率爬坡更早）</li><li><strong>硬保底：</strong>第 80 抽</li><li><strong>没有 50/50</strong>，改成定轨：在当期两把 UP 武器里指定一把，每次抽到另一把（或常驻五星武器）累积 1 点命定值，满 2 点后下一个五星武器必定是定轨的那把</li><li>拿到定轨武器、或者中途更改定轨目标，命定值都会清零</li></ul>
+<p><strong>武器池最坏情况：</strong>160 抽（25,600 原石），前提是两次命定值累积全都歪掉。这比角色池苛刻得多——除非你本来就打算氪，否则不建议碰武器池。</p>
+<h2>保底继承规则</h2>
+<p>保底在同类型卡池之间继承：</p>
+<ul><li>角色活动池的抽数，会延续到下一个角色活动池</li><li>武器活动池的抽数，会延续到下一个武器活动池</li><li><strong>不同卡池类型之间不继承</strong>。角色活动池、武器活动池、常驻池三套计数完全独立</li><li>只有真的抽出五星才会清零。卡池结束、版本更新、在活动池和常驻池之间切换，都不会清零</li></ul>
+<h2>抽卡策略</h2>
 <table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;">
-<tr style="background:rgba(232,196,116,.12);"><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Rule</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">Why</th></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Never pull Standard Banner with Intertwined Fates</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Use Acquaint Fates (blue) only. Intertwined Fates are for Limited banners.</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Commit before pulling</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Identify your most-wanted character and save for them. FOMO pulling is the #1 way F2P players run dry.</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Check banner schedules early</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Plan spending across the full 6-week patch cycle. Don't surprise yourself with an unexpected banner.</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Avoid Weapon Banner unless you're a whale</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Epitomized Path worst case is 160 pulls (25,600 Primogems). Character banners are more forgiving.</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Finish Beginner's Wish first</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">Guaranteed Noelle at discounted cost. Best first-time value in the game.</td></tr>
+<tr style="background:rgba(232,196,116,.12);"><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">原则</th><th style="padding:10px 12px;text-align:left;border-bottom:2px solid var(--gold);">原因</th></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">别用纠缠之缘抽常驻池</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">常驻池只吃相遇之缘。纠缠之缘留给限定池。</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">下手前先定目标</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">先想清楚最想要哪个角色再攒。被 FOMO 推着抽，是零氪玩家原石见底的第一原因。</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">提前看卡池排期</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">按 6 周一个版本的整体周期规划花费，别被突然出现的卡池打个措手不及。</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">非氪佬别碰武器池</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">定轨最坏情况 160 抽（25,600 原石）。角色池宽容得多。</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid var(--line);">先把新手池抽完</td><td style="padding:9px 12px;border-bottom:1px solid var(--line);">必得诺艾尔，而且打折，是全游戏性价比最高的一次抽卡。</td></tr>
 </table>
-
-<h2>FAQ</h2>
-<h3>Does pity reset when a banner ends?</h3>
-<p>No. Pity carries over between banners of the same type. Your Limited Character Banner pull count continues on the next Limited Banner, and your 50/50 guarantee also persists.</p>
-<h3>Can I lose the 50/50 twice in a row?</h3>
-<p>Not anymore. Since Version 5.0's Capturing Radiance system, it's impossible to lose three consecutive 50/50s. You'll get the featured character by your third 5★ on Character Event banners at the latest.</p>
-<h3>Should I single-pull or 10-pull?</h3>
-<p>Single-pulling saves Primogems if you're close to pity (wish 85+). At lower counts, 10-pulling is fine — the odds per individual wish are identical. The only difference is timing: single-pulling lets you stop exactly when you hit your 5★.</p>
-<h3>How do I check my current pity count?</h3>
-<p>Open the Wish screen, tap History, and count how many pulls have occurred since your last 5★. Third-party tools like paimon.moe can import your wish history and track pity automatically.</p>
-<h3>Is it better to pull early or late in a banner?</h3>
-<p>Mathematically identical — pity carries over and odds are the same on pull 1 vs. pull 70. Practically, waiting lets you accumulate more Primogems and ensures you have enough for the full pity cost if needed.</p><section class="faq"><h2>快速问答</h2><div class="qa"><h3>How many Primogems do I need to guarantee a limited character?</h3><p>In the worst case: 180 pulls = 28,800 Primogems (lose 50/50 at 90 pulls, then hard pity again at 90 more). In practice, most players spend ~12,000–14,400 Primogems due to soft pity triggering around pull 74–80.</p></div><div class="qa"><h3>What is soft pity in Genshin Impact?</h3><p>Soft pity is the hidden probability ramp that starts around wish 74 on character banners. The 5★ drop rate jumps from 0.6% to ~6.5% and increases each subsequent wish until hard pity at 90. Most 5★ pulls happen between wishes 74–85.</p></div><div class="qa"><h3>Does pity carry across different banner types?</h3><p>No. Character Event pity, Weapon Event pity, and Standard Banner pity are all tracked separately. If you lose your Character Event pity and switch to Standard, your Character Event count resets and a new Standard count begins.</p></div><div class="qa"><h3>What is Capturing Radiance (C-State)?</h3><p>Added in Version 5.0, C-State makes it impossible to lose the 50/50 three consecutive times on Character Event banners. After two lost 50/50s, your third 5★ is guaranteed to be the featured character, effectively raising the long-term featured rate from 50% to ~55%.</p></div><div class="qa"><h3>Should I pull on the Weapon Event banner?</h3><p>Only if you're a spender comfortable with the Epitomized Path risk. Worst case is 160 pulls (25,600 Primogems) vs. 180 pulls (28,800) for characters — slightly better, but the Fate Point system is more punishing and less forgiving of misplays.</p></div></section><div class="pairbox"><h3 style="font-size:15px;color:var(--txt-mute);margin:24px 0 10px;width:100%">相关攻略</h3><a href="https://genshin-guide-one-five.vercel.app/guides/gacha-strategy-en.html">Gacha Strategy</a><a href="https://genshin-guide-one-five.vercel.app/guides/best-characters-guide-en.html">Character Tier List</a><a href="https://genshin-guide-one-five.vercel.app/guides/beginner-characters-en.html">Beginner Characters</a><a href="https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap-en.html">New Player Roadmap</a></div></article></div><h2>更多抽卡与货币攻略</h2>
+<h2>常见问题</h2>
+<div class="qa"><h3>卡池结束时保底会重置吗？</h3><p>不会。保底在同类卡池之间继承。限定角色池的抽数会带到下一个限定角色池，50/50 的保证也同样保留。</p></div>
+<div class="qa"><h3>能连输两次 50/50 吗？</h3><p>现在不行了。5.0 的捕获明光系统上线后，已经不可能连输三次 50/50——角色活动池的第三个五星最晚必定是 UP 角色。</p></div>
+<div class="qa"><h3>单抽好还是十连好？</h3><p>如果已经接近保底（85 抽以上），单抽更省原石，因为出五星就能立刻停手。抽数较低时单抽十连概率完全一样。</p></div>
+<div class="qa"><h3>怎么查自己当前的保底数？</h3><p>打开抽卡界面 → 历史记录，数一下距离上次五星抽了多少次。也可以用 paimon.moe 这类工具导入抽卡记录，自动统计。</p></div>
+<div class="qa"><h3>在卡池早期抽还是末期抽更好？</h3><p>从概率上完全一样——保底会继承，第 1 抽和第 70 抽的概率完全相同。实际差别只在于：等到后期你能攒下更多原石，更有把握覆盖最坏情况。</p></div>
+<div class="qa"><h3>保一个限定角色到底要多少原石？</h3><p>最坏情况 180 抽 = 28,800 原石（先在第 90 抽输掉 50/50，再吃满 90 抽硬保底）。实际多数人花 12,000–14,400 原石，因为软保底在第 74–80 抽就会触发。</p></div>
+<div class="qa"><h3>什么是软保底？</h3><p>软保底是角色池从第 74 抽左右开始的隐藏概率爬坡：五星率从 0.6% 跳到约 6.5%，之后每抽继续上升，直到第 90 抽硬保底。多数五星出现在第 74–85 抽之间。</p></div>
+<div class="qa"><h3>保底会跨卡池类型继承吗？</h3><p>不会。角色活动池、武器活动池、常驻池三套计数完全独立。角色活动池的计数拿到常驻池用不了，也不会互相影响。</p></div>
+<div class="qa"><h3>捕获明光（定轨值）是什么？</h3><p>5.0 版本加入的机制，让角色活动池不可能连输三次 50/50。输两次之后，第三个五星必定是 UP，长期 UP 率因此从 50% 提升到约 55%。</p></div>
+<div class="qa"><h3>要不要抽武器池？</h3><p>除非你是能接受定轨风险的付费玩家。武器池最坏 160 抽（25,600 原石），角色池最坏 180 抽（28,800 原石）——看着略便宜，但命定值机制对操作失误更不容忍。</p></div>
+<div class="pairbox"><h3 style="font-size:15px;color:var(--txt-mute);margin:24px 0 10px;width:100%">相关攻略</h3><a href="https://genshin-guide-one-five.vercel.app/guides/gacha-strategy.html">抽卡策略</a><a href="https://genshin-guide-one-five.vercel.app/guides/best-characters-guide.html">角色强度榜</a><a href="https://genshin-guide-one-five.vercel.app/guides/beginner-characters.html">新手角色推荐</a><a href="https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap.html">新玩家路线图</a></div></article></div><h2>更多抽卡与货币攻略</h2>
 <ul>
 <li><a href="https://genshin-guide-one-five.vercel.app/guides/chronicled-wish-guide.html">集录祈愿</a></li>
 <li><a href="https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide.html">武器池</a></li>
