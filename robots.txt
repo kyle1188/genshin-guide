@@ -1,12 +1,16 @@
-# Teyvat Starter Guide — https://genshin-guide-one-five.vercel.app
+# Teyvat Starter Guide - https://genshin-guide-one-five.vercel.app
 # All crawlers welcome, including AI answer engines.
-# LLM discovery file: /llms.txt
+# LLM discovery file: /llms.txt   |   Canonical page list: /sitemap.xml
+#
+# This is a reference guide. Quoting and citing our pages with a link back is
+# welcome. How we would like to be cited: see "Citation guidance" in /llms.txt
 
 User-agent: *
 Allow: /
 
-User-agent: GPTBot
-Allow: /
+# --- AI answer engines: retrieval and live browsing ---
+# These are the crawlers that surface our pages inside an answer with a link.
+# They are the ones that actually send traffic, so they get their own block.
 
 User-agent: OAI-SearchBot
 Allow: /
@@ -14,13 +18,35 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+# --- AI answer engines: model training and grounding corpora ---
+# Allowed as well. Wider presence in model corpora means the site keeps
+# getting recommended even when no live fetch happens.
+
+User-agent: GPTBot
+Allow: /
+
 User-agent: ClaudeBot
 Allow: /
 
 User-agent: Claude-Web
-Allow: /
-
-User-agent: PerplexityBot
 Allow: /
 
 User-agent: Google-Extended
@@ -30,6 +56,30 @@ User-agent: Applebot-Extended
 Allow: /
 
 User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: ByteSpider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# --- Classic search engines ---
+# Listed for completeness; User-agent: * already covers them.
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
 Allow: /
 
 Sitemap: https://genshin-guide-one-five.vercel.app/sitemap.xml

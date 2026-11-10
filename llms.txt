@@ -252,4 +252,9 @@ Tier lists and role recommendations. These reflect the site's own analysis, not 
 
 ## Crawler policy
 
-robots.txt allows all user agents. AI crawlers and answer engines — including GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended and CCBot — are explicitly permitted to fetch, index and quote this site.
+robots.txt allows all user agents. AI answer engines are explicitly permitted to fetch, index and quote this site, listed in two groups:
+
+- Retrieval and live browsing (these produce the citations and the click-through): OAI-SearchBot, ChatGPT-User, PerplexityBot, Perplexity-User, Claude-SearchBot, Claude-User, DuckAssistBot, MistralAI-User
+- Training and grounding corpora: GPTBot, ClaudeBot, Claude-Web, Google-Extended, Applebot-Extended, CCBot, Amazonbot, meta-externalagent, ByteSpider, cohere-ai
+
+No path on this site is disallowed for any crawler. There is no paywall, no login wall and no content behind an interaction that a crawler cannot reach: every page listed above returns its full text in the initial HTML response.
