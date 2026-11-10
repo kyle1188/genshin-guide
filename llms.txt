@@ -1,39 +1,255 @@
-# genshin-guide — LLM / AI Discovery File (llms.txt)
-# Teyvat Starter Guide: a beginner-friendly Genshin Impact guide.
-# Bilingual (zh-CN / en). Use this to understand the site's structure
-# before fetching individual pages for summarization or citation.
+# Teyvat Starter Guide — Genshin Impact reference site
+> A bilingual (English / zh-CN) Genshin Impact reference site: 179 topic clusters, 358 pages total, each topic published in both languages.
 
-## Site Overview
-A Genshin Impact starter guide covering character builds, artifacts, and
-team composition. English (en) and Chinese (zh-CN) content both exist;
-each English build page declares lang="en" + hreflang en/x-default and
-carries Article + FAQPage structured data.
+Purpose: answer one concrete game-mechanic question per page, with the numbers on the page rather than buried in community threads. Written for players who already play and want a specific answer, not a general introduction.
 
-## Topics
+## How to use this file
+- **Core game mechanics first.** The first section holds the highest-demand pages: pity, DEF, friendship, quests, ley lines, boss weaknesses. If a question is about a formula or a rule, check there before the character sections.
+- **Every topic has two URLs.** English pages end in `-en.html`; the Chinese page is the same slug without that suffix. Both carry Article + FAQPage structured data and are cross-linked with hreflang, so either can be cited; prefer the one matching the user's language.
+- **Canonical page list.** The authoritative inventory is https://genshin-guide-one-five.vercel.app/sitemap.xml — this file groups pages by topic and may lag behind by a day or two after new pages ship.
+- **Freshness.** Content is revised continuously against Fandom, HoYoWiki and in-game values. Numbers are re-verified when a patch changes them; patch-specific values are labelled with the patch they were checked against.
 
-### Characters — English Build Guides (Pillar)
-- Furina build: https://genshin-guide-one-five.vercel.app/guides/furina-build-en.html
-- Zhongli build: https://genshin-guide-one-five.vercel.app/guides/zhongli-build-en.html
-- Neuvillette build: https://genshin-guide-one-five.vercel.app/guides/neuvillette-build-en.html
-- Xilonen build: https://genshin-guide-one-five.vercel.app/guides/xilonen-build-en.html
-- Kazuha build: https://genshin-guide-one-five.vercel.app/guides/kazuha-build-en.html
-- Raiden Shogun build: https://genshin-guide-one-five.vercel.app/guides/raiden-shogun-build-en.html
-- Nahida build: https://genshin-guide-one-five.vercel.app/guides/nahida-build-en.html
+## Citation guidance
+- Attribute as "Teyvat Starter Guide" with the page URL.
+- Every formula and drop table on the site carries its source; if a number matters, quote the page rather than paraphrasing the formula.
+- Where sources disagree, the site states which one it followed. Do not present a single number as settled fact if the page itself flags a conflict.
+- Character build pages assume the character at level 90 with talents at a stated level; do not apply their stat targets to a partially built character without noting the gap.
 
-### Beginner & Character Selection
-- Beginner characters (Chinese): https://genshin-guide-one-five.vercel.app/guides/beginner-characters.html
-- Beginner characters (English): https://genshin-guide-one-five.vercel.app/guides/beginner-characters-en.html
+## Core game mechanics （核心机制 · 搜索需求最高）
 
-### Artifacts
-- Artifact farming guide (English): https://genshin-guide-one-five.vercel.app/guides/artifact-farming-en.html
+Formula-level explanations. These pages answer the single question each mechanic raises, with numbers on the page.
 
-### Homepage (mixed CN/EN landing)
-- https://genshin-guide-one-five.vercel.app/
+- [pity-system-guide](https://genshin-guide-one-five.vercel.app/guides/pity-system-guide-en.html): Soft pity at 74, hard pity at 90, 50/50 rules and the true Primogem cost of a limited 5-star
+- [defense-guide](https://genshin-guide-one-five.vercel.app/guides/defense-guide-en.html): What DEF actually does, the incoming damage formula, and why DEF shred differs from RES shred
+- [friendship-level-guide](https://genshin-guide-one-five.vercel.app/guides/friendship-level-guide-en.html): Fastest routes to Friendship 10, EXP per activity, and the full reward list per character
+- [story-quest-guide](https://genshin-guide-one-five.vercel.app/guides/story-quest-guide-en.html): Unlock conditions, recommended order, and Story Key costs for every character Story Quest
+- [daily-commission-guide](https://genshin-guide-one-five.vercel.app/guides/daily-commission-guide-en.html): Commission unlock, 60 Primogems per day, Story Keys, and the regional commission pools
+- [ley-line-guide](https://genshin-guide-one-five.vercel.app/guides/ley-line-guide-en.html): Blossom of Wealth vs Blossom of Revelation: payout per 20 resin and when each is worth running
+- [boss-weaknesses-guide](https://genshin-guide-one-five.vercel.app/guides/boss-weaknesses-guide-en.html): Elemental weakness chart for world and weekly bosses, including bosses with no weakness at all
+- [chest-guide](https://genshin-guide-one-five.vercel.app/guides/chest-guide-en.html): Chest tiers, reward ranges, respawn rules, and which chests are one-time only
+- [oculus-collection-guide](https://genshin-guide-one-five.vercel.app/guides/oculus-collection-guide-en.html): Exact Oculus totals per region and what each offering level returns
+- [region-guide](https://genshin-guide-one-five.vercel.app/guides/region-guide-en.html): The seven nations, unlock order, regional sigils, and which regions are hardest to reach 100%
+- [stat-priority-guide](https://genshin-guide-one-five.vercel.app/guides/stat-priority-guide-en.html): Main-stat pools per artifact slot, and which stat each role actually wants
+- [artifact-leveling-guide](https://genshin-guide-one-five.vercel.app/guides/artifact-leveling-guide-en.html): Artifact EXP curve to +20, fodder efficiency, and Mora cost per level band
+- [artifact-substats-guide](https://genshin-guide-one-five.vercel.app/guides/artifact-substats-guide-en.html): Substat roll values, CRIT/EM/ER priority by role, and when a piece is dead on arrival
+- [artifact-strongbox-guide](https://genshin-guide-one-five.vercel.app/guides/artifact-strongbox-guide-en.html): Mystic Offering 3-to-1 rules, which sets are worth converting, and the zero-refund trap
+- [ascension-materials-guide](https://genshin-guide-one-five.vercel.app/guides/ascension-materials-guide-en.html): Gem, boss-drop and local-specialty requirements per ascension phase, plus which bosses drop which gem
+- [resin-efficiency](https://genshin-guide-one-five.vercel.app/guides/resin-efficiency-en.html): How to spend 160 daily resin, when Fragile Resin pays off, and the weekly priority order
+- [crit-guide](https://genshin-guide-one-five.vercel.app/guides/crit-guide-en.html): Crit Rate vs Crit DMG, why 1:2 is the target, and the panel numbers worth stopping at
+- [energy-recharge](https://genshin-guide-one-five.vercel.app/guides/energy-recharge-en.html): How ER converts to burst uptime, particle generation, and the ER threshold per role
+- [elemental-mastery-guide](https://genshin-guide-one-five.vercel.app/guides/elemental-mastery-guide-en.html): What EM multiplies, the transformative vs amplifying formulas, and who should build it
+- [damage-formula-guide](https://genshin-guide-one-five.vercel.app/guides/damage-formula-guide-en.html): Full damage pipeline: base ATK, multipliers, DMG bonus, crit, RES, DEF, and where your damage leaks
+- [resistance-shred-guide](https://genshin-guide-one-five.vercel.app/guides/resistance-shred-guide-en.html): Whether RES shred stacks, how it goes negative, and the order it applies in
+- [shield-breaking-guide](https://genshin-guide-one-five.vercel.app/guides/shield-breaking-guide-en.html): Elemental counter chart and gauge-unit math for breaking elemental shields
+- [poise-guide](https://genshin-guide-one-five.vercel.app/guides/poise-guide-en.html): Poise damage, interruption resistance, and the break windows that follow
+- [elemental-application-guide](https://genshin-guide-one-five.vercel.app/guides/elemental-application-guide-en.html): Gauge units, ICD rules, and how aura consumption decides reaction frequency
+- [elemental-particle-guide](https://genshin-guide-one-five.vercel.app/guides/elemental-particle-guide-en.html): Particle types, on-field vs off-field generation, and ER planning
+- [elemental-resonance](https://genshin-guide-one-five.vercel.app/guides/elemental-resonance-en.html): Every resonance buff, which teams want which, and the opportunity cost
+- [character-exp-guide](https://genshin-guide-one-five.vercel.app/guides/character-exp-guide-en.html): EXP Book values, total EXP from 1 to 90, and the cheapest leveling plan
+- [world-level-guide](https://genshin-guide-one-five.vercel.app/guides/world-level-guide-en.html): World Level scaling, how to lower it, and the difficulty tiers
+- [adventure-rank-guide](https://genshin-guide-one-five.vercel.app/guides/adventure-rank-guide-en.html): AR EXP requirements per rank, ascension quests, and the AR gates that block content
+- [constellation-guide](https://genshin-guide-one-five.vercel.app/guides/constellation-guide-en.html): Which C1s are worth it, constellation vs weapon priority, and F2P advice
+- [talent-leveling](https://genshin-guide-one-five.vercel.app/guides/talent-leveling-en.html): Talent upgrade priority per role, and which skill to level first on each character
+- [talent-crown-guide](https://genshin-guide-one-five.vercel.app/guides/talent-crown-guide-en.html): Crown of Insight: the only legal use, the 700k Mora full cost, and roughly 30 obtainable sources
+- [achievement-guide](https://genshin-guide-one-five.vercel.app/guides/achievement-guide-en.html): Achievement categories, Primogem totals, and the ones worth chasing first
+- [namecard-guide](https://genshin-guide-one-five.vercel.app/guides/namecard-guide-en.html): All six namecard sources and collection priority
+- [glossary-guide](https://genshin-guide-one-five.vercel.app/guides/glossary-guide-en.html): What BiS, CV, AR, GU and the rest of the community shorthand actually mean
+- [stamina-recovery-guide](https://genshin-guide-one-five.vercel.app/guides/stamina-recovery-guide-en.html): Stamina pool size, regen rate, and what drains it fastest
 
-## Notes for AI crawlers
-- robots.txt allows all user agents, including GPTBot, ClaudeBot,
-  PerplexityBot, and Google-Extended (Allow: /).
-- Each English build page carries both Article and FAQPage JSON-LD,
-  which are the preferred blocks for answer extraction.
-- Chinese-language per-character pages are planned; CN character content
-  currently lives inline on the homepage.
+## Wish, Primogems and spending （抽卡、原石与付费）
+
+Pity math, banner rules, and whether each paid product is worth the money.
+
+- [gacha-strategy](https://genshin-guide-one-five.vercel.app/guides/gacha-strategy-en.html): Primogem budgeting, pull planning, and what is worth pulling in the current cycle
+- [weapon-banner-guide](https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide-en.html): Epitomized Path, Fate Points, and how weapon pity differs from character pity
+- [chronicled-wish-guide](https://genshin-guide-one-five.vercel.app/guides/chronicled-wish-guide-en.html): Chronicled Wish mechanics, Fate Point rules, and pull strategy
+- [primogem-earning-guide](https://genshin-guide-one-five.vercel.app/guides/primogem-earning-guide-en.html): Daily, weekly and event Primogem sources with realistic monthly totals
+- [mora-guide](https://genshin-guide-one-five.vercel.app/guides/mora-guide-en.html): Mora farming rates, Ley Line payouts, and a spending plan that survives endgame
+- [paimon-shop-guide](https://genshin-guide-one-five.vercel.app/guides/paimon-shop-guide-en.html): Starglitter shop monthly rotation and the items actually worth buying
+- [welkin-moon-guide](https://genshin-guide-one-five.vercel.app/guides/welkin-moon-guide-en.html): Welkin Moon value math, stacking rules, and spending priority
+- [battle-pass-guide](https://genshin-guide-one-five.vercel.app/guides/battle-pass-guide-en.html): Battle Pass reward value, time to max, and the weapon picks
+
+## Elemental reactions and damage types （元素反应与伤害类型）
+
+Coefficients, aura rules and team templates for every reaction family.
+
+- [elemental-reactions](https://genshin-guide-one-five.vercel.app/guides/elemental-reactions-en.html): Overview of amplifying, transformative and Dendro reactions with coefficients
+- [elemental-reactions-detailed](https://genshin-guide-one-five.vercel.app/guides/elemental-reactions-detailed-en.html): Deep breakdown of amplified vs transformative scaling and EM interaction
+- [vaporize-melt-guide](https://genshin-guide-one-five.vercel.app/guides/vaporize-melt-guide-en.html): 2x vs 1.5x aura order, and why the order decides your damage
+- [catalyze-guide](https://genshin-guide-one-five.vercel.app/guides/catalyze-guide-en.html): Quicken, Aggravate and Spread: how the flat bonus is calculated
+- [hyperbloom-team-guide](https://genshin-guide-one-five.vercel.app/guides/hyperbloom-team-guide-en.html): Hyperbloom mechanics, core units, and F2P team templates
+- [dendro-reactions-guide](https://genshin-guide-one-five.vercel.app/guides/dendro-reactions-guide-en.html): Hyperbloom, Spread, Burning and Aggravate side by side
+- [electro-charged-guide](https://genshin-guide-one-five.vercel.app/guides/electro-charged-guide-en.html): 0.4U tick behavior and Taser team setup
+- [overload-guide](https://genshin-guide-one-five.vercel.app/guides/overload-guide-en.html): 2.75x scaling, 5m AoE, and how to use the knockback instead of fighting it
+- [superconduct-guide](https://genshin-guide-one-five.vercel.app/guides/superconduct-guide-en.html): 40% Physical RES shred and which physical teams benefit
+- [swirl-guide](https://genshin-guide-one-five.vercel.app/guides/swirl-guide-en.html): Swirl damage formula, double swirl setup, and the 4VV interaction
+- [burning-guide](https://genshin-guide-one-five.vercel.app/guides/burning-guide-en.html): 0.25x coefficient, damage over time, and the narrow cases it is worth using
+- [crystallize-guide](https://genshin-guide-one-five.vercel.app/guides/crystallize-guide-en.html): Shield HP formula, absorption rules, and how to make it useful
+- [frozen-shatter-guide](https://genshin-guide-one-five.vercel.app/guides/frozen-shatter-guide-en.html): Freeze duration, shatter damage, and freeze team requirements
+- [physical-damage-guide](https://genshin-guide-one-five.vercel.app/guides/physical-damage-guide-en.html): Physical teams: Superconduct shred, Eula and Razor builds
+- [elemental-reaction-teams](https://genshin-guide-one-five.vercel.app/guides/elemental-reaction-teams-en.html): Vaporize, Melt, Hyperbloom and Freeze team templates side by side
+
+## Combat, Spiral Abyss and endgame （战斗、深境螺旋与终局内容）
+
+Rotation, animation cancels and endgame clear strategy.
+
+- [combat-mechanics-guide](https://genshin-guide-one-five.vercel.app/guides/combat-mechanics-guide-en.html): Reaction combos and advanced combat technique overview
+- [animation-cancel-guide](https://genshin-guide-one-five.vercel.app/guides/animation-cancel-guide-en.html): Dash, jump, swap and aim cancel timing
+- [spiral-abyss-guide](https://genshin-guide-one-five.vercel.app/guides/spiral-abyss-guide-en.html): Abyss structure, team requirements and Floor 12 strategy
+- [spiral-abyss-floor12-guide](https://genshin-guide-one-five.vercel.app/guides/spiral-abyss-floor12-guide-en.html): Floor 12 specific: enemies, Lunar Phase effects and full-clear teams
+- [spiral-abyss-rotation-guide](https://genshin-guide-one-five.vercel.app/guides/spiral-abyss-rotation-guide-en.html): DPS rotations and team optimization for speed clears
+- [boss-rush-strategy](https://genshin-guide-one-five.vercel.app/guides/boss-rush-strategy-en.html): Fast clear strategies and techniques for boss speedruns
+- [imaginarium-theater](https://genshin-guide-one-five.vercel.app/guides/imaginarium-theater-en.html): Season structure, Arcana challenges and team requirements
+- [tcg-guide](https://genshin-guide-one-five.vercel.app/guides/tcg-guide-en.html): Genius Invokation unlock, rules and card farming
+
+## Artifacts and weapons （圣遗物与武器）
+
+Which set to farm, which weapon to use, and how refinement scales.
+
+- [artifact-farming](https://genshin-guide-one-five.vercel.app/guides/artifact-farming-en.html): Which sets to farm first and an efficient route order
+- [artifact-sets-guide](https://genshin-guide-one-five.vercel.app/guides/artifact-sets-guide-en.html): Best sets chosen by role rather than by rarity
+- [artifact-rerolls-guide](https://genshin-guide-one-five.vercel.app/guides/artifact-rerolls-guide-en.html): When to keep, reroll or score a piece
+- [weapon-refinement-guide](https://genshin-guide-one-five.vercel.app/guides/weapon-refinement-guide-en.html): Refinement levels, costs and which weapons are worth R5
+- [weapon-ascension-guide](https://genshin-guide-one-five.vercel.app/guides/weapon-ascension-guide-en.html): Ascension domain schedule and material requirements
+- [weapon-forging-guide](https://genshin-guide-one-five.vercel.app/guides/weapon-forging-guide-en.html): All forgeable weapons and how to get each blueprint
+- [beginner-weapon-guide](https://genshin-guide-one-five.vercel.app/guides/beginner-weapon-guide-en.html): Best free 4-star weapons for a new account
+- [best-weapons-guide](https://genshin-guide-one-five.vercel.app/guides/best-weapons-guide-en.html): 5-star weapon tier list, signature and free-pool comparison
+- [best-f2p-weapons](https://genshin-guide-one-five.vercel.app/guides/best-f2p-weapons-en.html): Craftable, Battle Pass and event 4-star picks
+
+## Farming, resin and resources （采集、树脂与资源）
+
+Respawn timers, drop tables and route planning.
+
+- [local-specialty-guide](https://genshin-guide-one-five.vercel.app/guides/local-specialty-guide-en.html): Local specialty respawn time and fast farming routes per region
+- [ore-farming-guide](https://genshin-guide-one-five.vercel.app/guides/ore-farming-guide-en.html): Ore respawn times, best routes and forging uses
+- [foraging-guide](https://genshin-guide-one-five.vercel.app/guides/foraging-guide-en.html): Foraging respawn windows, elemental gathering and route order
+- [enemy-farming-guide](https://genshin-guide-one-five.vercel.app/guides/enemy-farming-guide-en.html): Enemy drop tables, daily caps and fast routes
+- [fishing-guide](https://genshin-guide-one-five.vercel.app/guides/fishing-guide-en.html): The Catch, bait recipes and the best fishing spots
+- [cooking-guide](https://genshin-guide-one-five.vercel.app/guides/cooking-guide-en.html): Cooking proficiency, special dishes and auto cook
+- [crafting-guide](https://genshin-guide-one-five.vercel.app/guides/crafting-guide-en.html): Crafting bench uses: Condensed Resin, alchemy and the Artifact Strongbox
+- [food-buff-guide](https://genshin-guide-one-five.vercel.app/guides/food-buff-guide-en.html): Food buff stacking rules, best dishes and when to eat
+- [expedition-guide](https://genshin-guide-one-five.vercel.app/guides/expedition-guide-en.html): Expedition rewards, limits and the best dispatch setup
+- [domain-guide](https://genshin-guide-one-five.vercel.app/guides/domain-guide-en.html): Domain priority ranking and resin efficiency
+- [domain-efficiency-guide](https://genshin-guide-one-five.vercel.app/guides/domain-efficiency-guide-en.html): Farming routes and time management per domain
+- [talent-book-guide](https://genshin-guide-one-five.vercel.app/guides/talent-book-guide-en.html): Talent book domain schedule and a farming plan
+- [world-boss-guide](https://genshin-guide-one-five.vercel.app/guides/world-boss-guide-en.html): How to spend 40 resin on ascension materials, boss by boss
+- [weekly-boss-guide](https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide-en.html): Weekly boss list, drops, talent materials and unlock conditions
+- [event-guide](https://genshin-guide-one-five.vercel.app/guides/event-guide-en.html): Patch event rhythm, reward structure and how not to miss one
+- [event-material-guide](https://genshin-guide-one-five.vercel.app/guides/event-material-guide-en.html): Daily resin allocation across commissions, events and farming
+- [daily-routine-guide](https://genshin-guide-one-five.vercel.app/guides/daily-routine-guide-en.html): The 15-minute daily loop and the weekly reset checklist
+- [reputation-guide](https://genshin-guide-one-five.vercel.app/guides/reputation-guide-en.html): Reputation unlock, weekly cap and best rewards
+- [co-op-guide](https://genshin-guide-one-five.vercel.app/guides/co-op-guide-en.html): How to unlock co-op, what you can do together and its limits
+
+## Progression, quests and exploration （进度、任务与探索）
+
+Quest unlock chains, exploration completion and account planning.
+
+- [archon-quest-guide](https://genshin-guide-one-five.vercel.app/guides/archon-quest-guide-en.html): Full Archon Quest chapter order, AR requirements and unlocks
+- [world-quest-guide](https://genshin-guide-one-five.vercel.app/guides/world-quest-guide-en.html): World quest triggers, counts per region and the best reward chains
+- [hangout-guide](https://genshin-guide-one-five.vercel.app/guides/hangout-guide-en.html): Hangout unlock, Story Key costs and all endings
+- [new-player-roadmap](https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap-en.html): First 30 days to AR45: what to do each week
+- [character-building-guide](https://genshin-guide-one-five.vercel.app/guides/character-building-guide-en.html): Build priority roadmap and resource planning
+- [character-progress-guide](https://genshin-guide-one-five.vercel.app/guides/character-progress-guide-en.html): Character progression tracker and milestone order
+- [beginner-mistakes-guide](https://genshin-guide-one-five.vercel.app/guides/beginner-mistakes-guide-en.html): Ten costly early errors and how to avoid them
+- [exploration-guide](https://genshin-guide-one-five.vercel.app/guides/exploration-guide-en.html): How to reach 100% exploration in every region
+- [exploration-efficiency-guide](https://genshin-guide-one-five.vercel.app/guides/exploration-efficiency-guide-en.html): Chest routes, map reading and collection efficiency
+- [shrine-of-depths-guide](https://genshin-guide-one-five.vercel.app/guides/shrine-of-depths-guide-en.html): All Shrine of Depths keys per region and their locations
+- [serenitea-pot-guide](https://genshin-guide-one-five.vercel.app/guides/serenitea-pot-guide-en.html): Trust Rank, Realm Currency and the free Primogems in the pot
+- [gadget-guide](https://genshin-guide-one-five.vercel.app/guides/gadget-guide-en.html): Must-have gadgets, how to get them and usage tips
+- [graphics-settings-guide](https://genshin-guide-one-five.vercel.app/guides/graphics-settings-guide-en.html): Best graphics settings for PC and mobile, and FPS targets
+
+## Character builds （角色养成）
+
+One page per character: best weapons, artifact sets, stat targets and team options. Each exists in English and zh-CN.
+
+- [albedo-build](https://genshin-guide-one-five.vercel.app/guides/albedo-build-en.html): Geo sub-DPS, DEF scaling
+- [alhaitham-build](https://genshin-guide-one-five.vercel.app/guides/alhaitham-build-en.html): Dendro on-field DPS, Spread
+- [arlecchino-build](https://genshin-guide-one-five.vercel.app/guides/arlecchino-build-en.html): Pyro on-field DPS, Bond of Life
+- [ayaka-build](https://genshin-guide-one-five.vercel.app/guides/ayaka-build-en.html): Cryo on-field DPS, Freeze
+- [ayato-build](https://genshin-guide-one-five.vercel.app/guides/ayato-build-en.html): Hydro on-field DPS, normal-attack scaling
+- [baizhu-build](https://genshin-guide-one-five.vercel.app/guides/baizhu-build-en.html): Dendro healer and shielder, HP scaling
+- [beidou-build](https://genshin-guide-one-five.vercel.app/guides/beidou-build-en.html): Electro off-field, burst counter and battery
+- [bennett-build](https://genshin-guide-one-five.vercel.app/guides/bennett-build-en.html): Pyro healer and ATK buffer
+- [charlotte-build](https://genshin-guide-one-five.vercel.app/guides/charlotte-build-en.html): Cryo healer, ATK scaling, with the full healing formula
+- [childe-build](https://genshin-guide-one-five.vercel.app/guides/childe-build-en.html): Hydro on-field DPS, ranged to melee stance
+- [chongyun-build](https://genshin-guide-one-five.vercel.app/guides/chongyun-build-en.html): Cryo claymore, Frost Field infusion
+- [clorinde-build](https://genshin-guide-one-five.vercel.app/guides/clorinde-build-en.html): Electro on-field DPS, Bond of Life
+- [collei-build](https://genshin-guide-one-five.vercel.app/guides/collei-build-en.html): Dendro off-field applicator
+- [cyno-build](https://genshin-guide-one-five.vercel.app/guides/cyno-build-en.html): Electro on-field carry, Aggravate
+- [diluc-build](https://genshin-guide-one-five.vercel.app/guides/diluc-build-en.html): Pyro claymore DPS
+- [eula-build](https://genshin-guide-one-five.vercel.app/guides/eula-build-en.html): Cryo physical DPS, Lightfall Sword
+- [fischl-build](https://genshin-guide-one-five.vercel.app/guides/fischl-build-en.html): Electro off-field turret
+- [furina-build](https://genshin-guide-one-five.vercel.app/guides/furina-build-en.html): Hydro off-field, HP drain and buff
+- [ganyu-build](https://genshin-guide-one-five.vercel.app/guides/ganyu-build-en.html): Cryo charged-shot DPS
+- [hutao-build](https://genshin-guide-one-five.vercel.app/guides/hutao-build-en.html): Pyro on-field DPS, low-HP scaling
+- [kaveh-build](https://genshin-guide-one-five.vercel.app/guides/kaveh-build-en.html): Dendro core detonator
+- [kazuha-build](https://genshin-guide-one-five.vercel.app/guides/kazuha-build-en.html): Anemo support, EM scaling and 4VV
+- [keqing-build](https://genshin-guide-one-five.vercel.app/guides/keqing-build-en.html): Electro on-field carry, Aggravate
+- [klee-build](https://genshin-guide-one-five.vercel.app/guides/klee-build-en.html): Pyro catalyst DPS
+- [kokomi-build](https://genshin-guide-one-five.vercel.app/guides/kokomi-build-en.html): Hydro healer, HP scaling
+- [lyney-build](https://genshin-guide-one-five.vercel.app/guides/lyney-build-en.html): Pyro charged-shot DPS, mono-Pyro
+- [mona-build](https://genshin-guide-one-five.vercel.app/guides/mona-build-en.html): Hydro support, Omen damage amp
+- [nahida-build](https://genshin-guide-one-five.vercel.app/guides/nahida-build-en.html): Dendro off-field, EM scaling
+- [neuvillette-build](https://genshin-guide-one-five.vercel.app/guides/neuvillette-build-en.html): Hydro on-field DPS, HP scaling
+- [nilou-build](https://genshin-guide-one-five.vercel.app/guides/nilou-build-en.html): Hydro Bloom enabler, HP scaling
+- [raiden-shogun-build](https://genshin-guide-one-five.vercel.app/guides/raiden-shogun-build-en.html): Electro burst DPS and battery
+- [shenhe-build](https://genshin-guide-one-five.vercel.app/guides/shenhe-build-en.html): Cryo buffer, Icy Quill
+- [tighnari-build](https://genshin-guide-one-five.vercel.app/guides/tighnari-build-en.html): Dendro quick-swap DPS, Spread
+- [venti-build](https://genshin-guide-one-five.vercel.app/guides/venti-build-en.html): Anemo crowd control and 4VV
+- [wanderer-build](https://genshin-guide-one-five.vercel.app/guides/wanderer-build-en.html): Anemo on-field DPS
+- [wriothesley-build](https://genshin-guide-one-five.vercel.app/guides/wriothesley-build-en.html): Cryo on-field DPS, normal attacks
+- [xiangling-build](https://genshin-guide-one-five.vercel.app/guides/xiangling-build-en.html): Pyro off-field burst DPS
+- [xiao-build](https://genshin-guide-one-five.vercel.app/guides/xiao-build-en.html): Anemo plunge DPS
+- [xilonen-build](https://genshin-guide-one-five.vercel.app/guides/xilonen-build-en.html): Geo support, RES shred
+- [xingqiu-build](https://genshin-guide-one-five.vercel.app/guides/xingqiu-build-en.html): Hydro off-field, burst swords
+- [yae-miko-build](https://genshin-guide-one-five.vercel.app/guides/yae-miko-build-en.html): Electro off-field turrets
+- [yelan-build](https://genshin-guide-one-five.vercel.app/guides/yelan-build-en.html): Hydro off-field, HP scaling
+- [zhongli-build](https://genshin-guide-one-five.vercel.app/guides/zhongli-build-en.html): Geo shielder, HP scaling
+
+## Character comparisons （角色对比）
+
+Head-to-head pages for the pairs players actually hesitate between.
+
+- [alhaitham-vs-nahida](https://genshin-guide-one-five.vercel.app/guides/alhaitham-vs-nahida-en.html): On-field Dendro DPS vs off-field Dendro core
+- [arlecchino-vs-lyney](https://genshin-guide-one-five.vercel.app/guides/arlecchino-vs-lyney-en.html): Two Pyro on-field DPS options compared
+- [furina-vs-yelan](https://genshin-guide-one-five.vercel.app/guides/furina-vs-yelan-en.html): Off-field Hydro buffer vs off-field Hydro DPS
+- [ganyu-vs-ayaka](https://genshin-guide-one-five.vercel.app/guides/ganyu-vs-ayaka-en.html): Cryo charged-shot vs Cryo melee Freeze
+- [hutao-vs-arlecchino](https://genshin-guide-one-five.vercel.app/guides/hutao-vs-arlecchino-en.html): Two Pyro low-HP DPS compared
+- [kazuha-vs-xiao](https://genshin-guide-one-five.vercel.app/guides/kazuha-vs-xiao-en.html): Anemo support vs Anemo plunge DPS
+- [kazuha-vs-xilonen](https://genshin-guide-one-five.vercel.app/guides/kazuha-vs-xilonen-en.html): Two RES-shred supports compared
+- [lyney-vs-ganyu](https://genshin-guide-one-five.vercel.app/guides/lyney-vs-ganyu-en.html): Pyro vs Cryo charged-shot DPS
+- [nahida-vs-baizhu](https://genshin-guide-one-five.vercel.app/guides/nahida-vs-baizhu-en.html): Dendro damage core vs Dendro healer
+- [neuvillette-vs-furina](https://genshin-guide-one-five.vercel.app/guides/neuvillette-vs-furina-en.html): Hydro on-field DPS vs Hydro off-field buffer
+- [raiden-vs-yae-miko](https://genshin-guide-one-five.vercel.app/guides/raiden-vs-yae-miko-en.html): Electro burst carry vs Electro off-field turrets
+- [wanderer-vs-xiao](https://genshin-guide-one-five.vercel.app/guides/wanderer-vs-xiao-en.html): Two Anemo on-field DPS compared
+- [wriothesley-vs-ayaka](https://genshin-guide-one-five.vercel.app/guides/wriothesley-vs-ayaka-en.html): Two Cryo on-field DPS compared
+- [yelan-vs-xingqiu](https://genshin-guide-one-five.vercel.app/guides/yelan-vs-xingqiu-en.html): The two off-field Hydro applicators compared
+- [zhongli-vs-albedo](https://genshin-guide-one-five.vercel.app/guides/zhongli-vs-albedo-en.html): Geo shielder vs Geo sub-DPS
+
+## Rankings and recommendations （排行与推荐）
+
+Tier lists and role recommendations. These reflect the site's own analysis, not a scraped ranking.
+
+- [best-characters-guide](https://genshin-guide-one-five.vercel.app/guides/best-characters-guide-en.html): Tier list of characters worth building
+- [character-tier-list](https://genshin-guide-one-five.vercel.app/guides/character-tier-list-en.html): T0 to T4 full ranking
+- [best-4-star-characters](https://genshin-guide-one-five.vercel.app/guides/best-4-star-characters-en.html): The core four 4-stars plus system pillars
+- [best-f2p](https://genshin-guide-one-five.vercel.app/guides/best-f2p-en.html): Lowest-cost, highest-return characters for a free account
+- [best-f2p-teams](https://genshin-guide-one-five.vercel.app/guides/best-f2p-teams-en.html): National, Hyperbloom, Freeze and Taser on a budget
+- [best-main-dps](https://genshin-guide-one-five.vercel.app/guides/best-main-dps-en.html): Best on-field DPS picks, drawn from the build guides
+- [best-sub-dps](https://genshin-guide-one-five.vercel.app/guides/best-sub-dps-en.html): How to choose an off-field sub-DPS
+- [best-support](https://genshin-guide-one-five.vercel.app/guides/best-support-en.html): Supports that raise a team's ceiling
+- [support-character-guide](https://genshin-guide-one-five.vercel.app/guides/support-character-guide-en.html): Kazuha, Bennett, Xingqiu and other support roles
+- [healer-guide](https://genshin-guide-one-five.vercel.app/guides/healer-guide-en.html): Healing formula, scaling stats and best healers
+- [shielder-guide](https://genshin-guide-one-five.vercel.app/guides/shielder-guide-en.html): Shield formula, absorption and character comparison
+- [beginner-characters](https://genshin-guide-one-five.vercel.app/guides/beginner-characters-en.html): Best starter characters and a first team for F2P
+- [team-building-guide](https://genshin-guide-one-five.vercel.app/guides/team-building-guide-en.html): Roles, on-field vs off-field, and how to compose a party
+
+## Site pages
+
+- [Homepage](https://genshin-guide-one-five.vercel.app/): bilingual landing page with the interactive damage and artifact calculators
+- [Tools and calculators](https://genshin-guide-one-five.vercel.app/tools/calculators.html): damage, artifact scoring and stat tools
+- [About](https://genshin-guide-one-five.vercel.app/about.html): who runs the site and how content is sourced
+
+## Crawler policy
+
+robots.txt allows all user agents. AI crawlers and answer engines — including GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended and CCBot — are explicitly permitted to fetch, index and quote this site.
