@@ -220,6 +220,8 @@
 <script>
 (function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='Enter a valid email';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='Subscribed — thank you!';f.reset();}else{m.className='msg err';m.textContent='Submission failed, try again';}}).catch(function(){m.className='msg err';m.textContent='Network error';});});})();
 </script>
+<h2>Related guides</h2>
+<ul><li><a href="https://genshin-guide-one-five.vercel.app/guides/ley-line-guide-en.html">How to Farm Ley Lines</a></li></ul>
 <footer>
   <div class="wrap">
     <p>Teyvat Starter Guide · Free-to-play Genshin Impact guides · <a href="/">Back to Home</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a></p>
