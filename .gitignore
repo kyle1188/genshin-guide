@@ -12,3 +12,4 @@ _c*.js
 
 # local env
 .env
+.workbuddy/
