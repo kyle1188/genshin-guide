@@ -1186,24 +1186,10 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://genshin-guide-one-five.vercel.app/guides/best-characters-guide.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/best-characters-guide.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/best-characters-guide-en.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/best-characters-guide-en.html" />
-    <lastmod>2026-08-19</lastmod>
-  </url>
-  <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/best-characters-guide-en.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/best-characters-guide.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/best-characters-guide-en.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/best-characters-guide-en.html" />
-    <lastmod>2026-08-19</lastmod>
-  </url>
-  <url>
-    <loc>https://genshin-guide-one-five.vercel.app/guides/best-weapons-guide.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/best-weapons-guide.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/best-weapons-guide-en.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/best-weapons-guide-en.html" />
     <lastmod>2026-08-19</lastmod>
   </url>
   <url>
@@ -1214,24 +1200,10 @@
     <lastmod>2026-08-19</lastmod>
   </url>
   <url>
-    <loc>https://genshin-guide-one-five.vercel.app/guides/weapon-forging-guide.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/weapon-forging-guide.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/weapon-forging-guide-en.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/weapon-forging-guide-en.html" />
-    <lastmod>2026-08-20</lastmod>
-  </url>
-  <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/weapon-forging-guide-en.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/weapon-forging-guide.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/weapon-forging-guide-en.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/weapon-forging-guide-en.html" />
-    <lastmod>2026-08-20</lastmod>
-  </url>
-  <url>
-    <loc>https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide-en.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide-en.html" />
     <lastmod>2026-08-20</lastmod>
   </url>
   <url>
@@ -1240,13 +1212,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide-en.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/weekly-boss-guide-en.html" />
     <lastmod>2026-08-20</lastmod>
-  </url>
-  <url>
-    <loc>https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap-en.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap-en.html" />
-    <lastmod>2026-08-21</lastmod>
   </url>
   <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/new-player-roadmap-en.html</loc>
