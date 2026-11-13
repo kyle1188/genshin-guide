@@ -2882,5 +2882,61 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/odette-build.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/odette-build.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/odette-build-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/odette-build-en.html"/>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/odette-build-en.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/odette-build.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/odette-build-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/odette-build-en.html"/>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/alyosha-build.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/alyosha-build.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/alyosha-build-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/alyosha-build-en.html"/>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/alyosha-build-en.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/alyosha-build.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/alyosha-build-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/alyosha-build-en.html"/>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/mavuika-build.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/mavuika-build.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/mavuika-build-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/mavuika-build-en.html"/>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/mavuika-build-en.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/mavuika-build.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/mavuika-build-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/mavuika-build-en.html"/>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/legend-key-guide.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/legend-key-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/legend-key-guide-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/legend-key-guide-en.html"/>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/legend-key-guide-en.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/legend-key-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/legend-key-guide-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/legend-key-guide-en.html"/>
+  </url>
 <!-- LONGTAIL -->
 </urlset>
