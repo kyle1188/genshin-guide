@@ -167,5 +167,17 @@ details p{margin:8px 0 0;color:var(--muted)}
 <script>
 document.querySelectorAll("[data-email-form]").forEach(function(f){f.addEventListener("submit",function(e){e.preventDefault();var em=f.querySelector("input").value;fetch("https://genshin-guide-one-five.vercel.app/api/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:em})}).then(function(r){return r.json()}).then(function(){alert("Subscribed!")}).catch(function(){alert("Subscription failed. Try again later.")});});});
 </script>
+
+<div class="rel-box" style="margin:30px auto 10px;max-width:820px;padding:20px;background:rgba(106,90,205,.08);border:1px solid rgba(106,90,205,.25);border-radius:12px;">
+  <div style="font-size:16px;color:#da70d6;margin-bottom:12px;font-weight:700;">📖 相关攻略</div>
+  <div style="display:flex;flex-wrap:wrap;gap:8px;">
+<a href="/guides/artifact-leveling-guide.html" style="padding:6px 12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:8px;color:#da70d6;text-decoration:none;font-size:14px;">Artifact Leveling Guide →</a>
+<a href="/guides/artifact-rerolls-guide.html" style="padding:6px 12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:8px;color:#da70d6;text-decoration:none;font-size:14px;">Artifact Rerolls Guide →</a>
+<a href="/guides/artifact-sets-guide.html" style="padding:6px 12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:8px;color:#da70d6;text-decoration:none;font-size:14px;">Artifact Sets Guide →</a>
+<a href="/guides/artifact-substats-guide.html" style="padding:6px 12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:8px;color:#da70d6;text-decoration:none;font-size:14px;">Artifact Substats Guide →</a>
+<a href="/guides/artifact-farming.html" style="padding:6px 12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:8px;color:#da70d6;text-decoration:none;font-size:14px;">Artifact Farming →</a>
+  </div>
+</div>
+
 </body>
 </html>
