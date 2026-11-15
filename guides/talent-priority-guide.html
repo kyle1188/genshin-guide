@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神天赋优先级详解：按角色定位点天赋决策树</title>
+<meta name="description" content="从主C到辅助的全面天赋升级决策指南，教你判断哪些天赋该点满、哪些停手，附角色案例与皇冠分配策略。">
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/talent-priority-guide.html"/>
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/talent-priority-guide.html"/>
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/talent-priority-guide-en.html"/>
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/talent-priority-guide-en.html"/>
+<meta property="og:title" content="原神天赋优先级详解：按角色定位点天赋决策树">
+<meta property="og:description" content="从主C到辅助的全面天赋升级决策指南，教你判断哪些天赋该点满、哪些停手，附角色案例与皇冠分配策略。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/talent-priority-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<style>:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}*{margin:0;padding:0;box-sizing:border-box}body{font-family:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.85}.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}h1{font-size:30px;margin:26px 0 8px;color:var(--accent)}h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}p{margin-bottom:14px}ul,ol{margin:0 0 16px 24px}li{margin-bottom:6px}strong{color:#ffd9a0}table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}th{background:#3b2f7e;color:#fff;font-weight:600}tr:last-child td{border-bottom:none}tr:hover{background:rgba(218,112,214,.07)}.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}.quick ul{margin:6px 0 0 20px}.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}.pairbox a:hover{background:var(--accent)}.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}a{color:#b9a8ff}.tip{background:rgba(106,90,205,.12);border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;border-radius:0 8px 8px 0;font-size:14px}.section{background:var(--card);border-radius:10px;padding:18px 22px;margin:16px 0;border:1px solid var(--border)}</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神天赋优先级详解：按角色定位点天赋决策树", "description": "从主C到辅助的全面天赋升级决策指南，教你判断哪些天赋该点满、哪些停手，附角色案例与皇冠分配策略。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-11-15", "dateModified": "2026-11-15", "inLanguage": "zh-CN", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/talent-priority-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "天赋升到几级最划算？", "acceptedAnswer": {"@type": "Answer", "text": "辅助/副C 6-8级性价比最高；主C关键天赋建议9-10级。单天赋1→6只需约12万摩拉，7级以上成本翻倍增长。"}}, {"@type": "Question", "name": "皇冠应该给谁？", "acceptedAnswer": {"@type": "Answer", "text": "只给长期主力角色。如果不确定谁会用很久，先把其他天赋升到9-10级再说。"}}, {"@type": "Question", "name": "天赋书什么时候刷？", "acceptedAnswer": {"@type": "Answer", "text": "每种天赋书每周固定几天开放，提前查好日程表规划树脂。低级书可以炼金合成高级书补缺口。"}}, {"@type": "Question", "name": "需要三个天赋都点满吗？", "acceptedAnswer": {"@type": "Answer", "text": "不需要。大多数角色两个关键天赋点到9-10级就完全够用，第三个停在中低等级反而更省资源。"}}]}</script>
+<div class="container">
+<h1>原神天赋优先级详解：按角色定位点天赋决策树</h1>
+<div class="quick"><h3>快速答案</h3><ul>
+<li><strong>天赋升级核心原则：</strong>主C优先点满爆发技能，辅助只点到关键等级即可。</li>
+<li><strong>性价比拐点：</strong>单天赋6级是收益最高点，之后成本陡增。</li>
+<li><strong>皇冠策略：</strong>不要三冠平摊，集中资源给1-2个主力角色。</li>
+</ul></div>
+
+<h2>天赋升级决策树</h2>
+<div class="section">
+<p>判断「该点哪个天赋」先看角色定位，再看技能贡献：</p>
+<table>
+<tr><th>角色类型</th><th>第一优先级</th><th>第二优先级</th><th>第三优先级</th></tr>
+<tr><td>站场主C</td><td>元素爆发</td><td>元素战技</td><td>普攻（仅依赖普攻角色）</td></tr>
+<tr><td>副C / 速切</td><td>元素爆发</td><td>元素战技到8级</td><td>不点普攻</td></tr>
+<tr><td>后台辅助</td><td>增益技能到6-8级</td><td>治疗/护盾技能</td><td>不点普攻</td></tr>
+<tr><td>纯奶妈</td><td>治疗技能</td><td>无</td><td>不点其他</td></tr>
+</table>
+</div>
+
+<h2>各角色升级建议</h2>
+<div class="section">
+<h3>必满级角色（优先级最高）</h3>
+<ul>
+<li><strong>班尼特：</strong>元素爆发（攻击力加成）→ 元素战技（治疗）→ 普攻不点</li>
+<li><strong>行秋：</strong>元素战技（雨帘剑）→ 元素爆发 → 普攻不点</li>
+<li><strong>香菱：</strong>元素爆发（锅巴）→ 元素战技 → 普攻不点</li>
+<li><strong>菲谢尔：</strong>元素爆发（奥兹）→ 元素战技 → 普攻不点</li>
+</ul>
+<h3>需根据玩法调整的角色</h3>
+<ul>
+<li><strong>胡桃：</strong>爆发 > 普攻 > 战技（重击流打法普攻也要高）</li>
+<li><strong>雷神：</strong>爆发 > 战技 > 普攻（大招期间普攻也受益）</li>
+<li><strong>纳西妲：</strong>战技（草种反应触发）≈ 爆发 > 普攻</li>
+</ul>
+</div>
+
+<h2>皇冠使用策略</h2>
+<div class="section">
+<p>皇冠极其稀缺，一个版本通常只有1-2个。分配原则：</p>
+<ol>
+<li><strong>只给真爱或永久主力</strong>：长期使用的角色才值得三冠投入。</li>
+<li><strong>先保证基础等级</strong>：被点满的3个天赋都至少到7级再考虑皇冠。</li>
+<li><strong>避免分散使用</strong>：一个角色两冠比三个角色各一冠强得多。</li>
+</ol>
+<div class="tip"><strong>黄金法则：</strong>皇冠 = 终极投入。先用普通升级把核心天赋点到9-10级，剩余树脂和摩拉再考虑皇冠冲刺。</div>
+</div>
+
+<h2>常见问题</h2>
+<details><summary>天赋升到几级最划算？</summary><p>辅助/副C 6-8级性价比最高；主C关键天赋建议9-10级。单天赋1→6只需约12万摩拉，7级以上成本翻倍增长。</p></details>
+<details><summary>皇冠应该给谁？</summary><p>只给长期主力角色。如果不确定谁会用很久，先把其他天赋升到9-10级再说。</p></details>
+<details><summary>天赋书什么时候刷？</summary><p>每种天赋书每周固定几天开放，提前查好日程表规划树脂。低级书可以炼金合成高级书补缺口。</p></details>
+<details><summary>需要三个天赋都点满吗？</summary><p>不需要。大多数角色两个关键天赋点到9-10级就完全够用，第三个停在中低等级反而更省资源。</p></details>
+
+<h2>相关攻略</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/talent-leveling.html">原神天赋升级优先级 2026</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/talent-crown-guide.html">智识之冕：天赋9→10皇冠获取</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/talent-book-guide.html">天赋书周本掉落查询</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/artifact-sets-guide.html">圣遗物套装选择指南</a></li>
+</ul>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/talent-priority-guide-en.html">English Version</a>
+<a href="/">返回首页</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/all-guides.html">全部攻略</a>
+</div>
+<footer class="footer"><p>&copy; 2026 Teyvat Starter Guide &middot; Genshin Impact fan site, not affiliated with HoYoverse.</p></footer>
+</div>
+</body>
+</html>
