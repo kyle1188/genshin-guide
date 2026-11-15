@@ -3016,6 +3016,60 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+<url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/night-soul-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/night-soul-guide.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/night-soul-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/night-soul-guide-en.html" />
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/night-soul-guide-en.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/night-soul-guide.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/night-soul-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/night-soul-guide-en.html" />
+  </url>
+<url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/lunar-reaction-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/lunar-reaction-guide.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/lunar-reaction-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/lunar-reaction-guide-en.html" />
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/lunar-reaction-guide-en.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/lunar-reaction-guide.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/lunar-reaction-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/lunar-reaction-guide-en.html" />
+  </url>
+<url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/stellar-conduct-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/stellar-conduct-guide.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/stellar-conduct-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/stellar-conduct-guide-en.html" />
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/stellar-conduct-guide-en.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/stellar-conduct-guide.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/stellar-conduct-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/stellar-conduct-guide-en.html" />
+  </url>
 </urlset>
 
 <url>

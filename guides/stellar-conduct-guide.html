@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神星超导详解：至冬雷冰共振与星能层机制</title>
+<meta name="description" content="至冬是《原神》7.0版本的冰之国，引入星超导（Stellar-Conduct）系统。本文详解星能层层叠机制、触发条件、与角色Build的关系及配队思路。">
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/stellar-conduct-guide.html"/>
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/stellar-conduct-guide.html"/>
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/stellar-conduct-guide-en.html"/>
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/stellar-conduct-guide-en.html"/>
+<meta property="og:title" content="原神星超导详解：至冬雷冰共振与星能层机制">
+<meta property="og:description" content="至冬是《原神》7.0版本的冰之国，引入星超导（Stellar-Conduct）系统。本文详解星能层层叠机制、触发条件、与角色Build的关系及配队思路。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/stellar-conduct-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<style>:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}*{margin:0;padding:0;box-sizing:border-box}body{font-family:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.85}.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}h1{font-size:30px;margin:26px 0 8px;color:var(--accent)}h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}p{margin-bottom:14px}ul,ol{margin:0 0 16px 24px}li{margin-bottom:6px}strong{color:#ffd9a0}table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}th{background:#3b2f7e;color:#fff;font-weight:600}tr:last-child td{border-bottom:none}tr:hover{background:rgba(218,112,214,.07)}.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}.quick ul{margin:6px 0 0 20px}.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}.pairbox a:hover{background:var(--accent)}.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}a{color:#b9a8ff}.tip{background:rgba(106,90,205,.12);border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;border-radius:0 8px 8px 0;font-size:14px}.section{background:var(--card);border-radius:10px;padding:18px 22px;margin:16px 0;border:1px solid var(--border)}</style>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神星超导详解：至冬雷冰共振与星能层机制", "description": "至冬是《原神》7.0版本的冰之国，引入星超导（Stellar-Conduct）系统。本文详解星能层层叠机制、触发条件、与角色Build的关系及配队思路。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-11-15", "dateModified": "2026-11-15", "inLanguage": "zh-CN", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/stellar-conduct-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "星超导和普通超导有什么区别？", "acceptedAnswer": {"@type": "Answer", "text": "普通超导只减少敌人物理抗性，星超导额外提供星能层层叠增益，效果更丰富。"}}, {"@type": "Question", "name": "星能层会消失吗？", "acceptedAnswer": {"@type": "Answer", "text": "会。星能层每秒衰减约0.5层，需要在战斗中持续触发雷冰反应来维持。"}}, {"@type": "Question", "name": "至冬角色必须同时上阵吗？", "acceptedAnswer": {"@type": "Answer", "text": "不强制，但至少有1个至冬共鸣角色在场才能激活星超导的完整机制。"}}, {"@type": "Question", "name": "星超导和夜魂系统能同时生效吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以。两者分属不同地区系统，组队时同时满足可获得双重增益。"}}]}</script>
+<div class="container">
+<h1>原神星超导详解：至冬雷冰共振与星能层机制</h1>
+<div class="quick"><h3>快速答案</h3><ul>
+<li><strong>星超导是什么：</strong>至冬（7.0）引入的独特元素共振机制，雷与冰结合产生特殊增益效果。</li>
+<li><strong>核心机制：</strong>当队伍中存在星超导共鸣角色时，雷冰反应不仅造成超导伤害，还会叠加「星能层」。</li>
+<li><strong>星能层效果：</strong>每层提供不同的元素精通、充能或伤害加成，最多叠加3层。</li>
+<li><strong>对Build的影响：</strong>Mitya/Valeriy等角色优先堆雷伤和元素爆发伤害；配队需兼顾冰系辅助。</li>
+</ul></div>
+
+<h2>星超导基础机制</h2>
+<div class="section">
+<p>星超导是至冬地区独有的战斗系统，从7.0版本开始实装。它在传统超导反应（雷+冰）的基础上增加了<strong>层叠式增益机制</strong>，使雷冰配对成为至冬地区的核心策略选择。</p>
+<h3>星能层的三层结构</h3>
+<ul>
+<li><strong>第1层：</strong>触发后提升全队元素精通+20点</li>
+<li><strong>第2层：</strong>连续触发后恢复15%元素能量</li>
+<li><strong>第3层：</strong>满层时下次元素爆发伤害+30%</li>
+</ul>
+<p>星能层会随时间衰减（每秒约0.5层），在持续战斗中需要保持雷/冰元素的交替附着。</p>
+</div>
+
+<h2>星超导触发条件</h2>
+<div class="section">
+<table>
+<tr><th>触发方式</th><th>所需元素</th><th>星能层增长</th></tr>
+<tr><td>元素战技附着</td><td>雷+冰</td><td>+1层</td></tr>
+<tr><td>元素爆发命中</td><td>雷或冰</td><td>+1~2层</td></tr>
+<tr><td>普攻触发超导</td><td>雷+冰接触</td><td>+0.5层</td></tr>
+<tr><td>场景互动机关</td><td>特定区域</td><td>随机+1~3层</td></tr>
+</table>
+<div class="tip"><strong>提示：</strong>使用双元素共振角色（如Mitya+Odette组合）可更快叠满星能层并维持层数稳定。</div>
+</div>
+
+<h2>星超导与角色Build</h2>
+<div class="section">
+<h3>Mitya Build 要点</h3>
+<ul>
+<li><strong>武器：</strong>最佳为雷电将军专武或通用雷伤法器</li>
+<li><strong>圣遗物：</strong>「雷电将军纪念套」4件套为主，追求雷伤加成+暴击率</li>
+<li><strong>属性优先级：</strong>雷伤加成 > 暴击率 > 元素精通 > 充能效率</li>
+</ul>
+<h3>Valeriy Build 要点</h3>
+<ul>
+<li><strong>定位：</strong>护盾辅助，主要职责是为Mitya提供生存空间以维持星能层</li>
+<li><strong>圣遗物：</strong>「绝缘套」或「乐团套」均可，侧重生命值和防御力</li>
+<li><strong>关键天赋：</strong>优先升级元素战技，保证护盾厚度和持续时间</li>
+</ul>
+<h3>奥德特 Build 建议</h3>
+<ul>
+<li><strong>作用：</strong>后台冰系附着，配合Mitya的前台雷系持续触发星超导</li>
+<li><strong>武器：</strong>天空之翼或 Favonius 大剑等泛用型四星武器即可</li>
+</ul>
+</div>
+
+<h2>常见误区澄清</h2>
+<ul>
+<li><strong>误区一：星超导和普通超导一样</strong> — 星超导额外提供层叠增益，普通超导仅减物抗</li>
+<li><strong>误区二：星能层可以无限叠加</strong> — 上限3层，且会随时间自然衰减</li>
+<li><strong>误区三：任何雷冰角色都能触发完整星超导</strong> — 必须有至冬共鸣角色在场才能激活全部效果</li>
+</ul>
+
+<h2>相关问题</h2>
+<details><summary>星超导和普通超导有什么区别？</summary><p>普通超导只减少敌人物理抗性，星超导额外提供星能层层叠增益，效果更丰富。</p></details>
+<details><summary>星能层会消失吗？</summary><p>会。星能层每秒衰减约0.5层，需要在战斗中持续触发雷冰反应来维持。</p></details>
+<details><summary>至冬角色必须同时上阵吗？</summary><p>不强制，但至少有1个至冬共鸣角色在场才能激活星超导的完整机制。</p></details>
+<details><summary>星超导和夜魂系统能同时生效吗？</summary><p>可以。两者分属不同地区系统，组队时同时满足可获得双重增益。</p></details>
+
+<h2>相关攻略</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/snezhnaya-guide.html">至冬地区全指南</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/mitya-build.html">米佳 Build 指南</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/valeriy-build.html">瓦列里 Build 指南</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/odette-build.html">奥德特 Build 指南</a></li>
+</ul>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/stellar-conduct-guide-en.html">English Version</a>
+<a href="/">返回首页</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/all-guides.html">全部攻略</a>
+</div>
+<footer class="footer"><p>&copy; 2026 Teyvat Starter Guide &middot; Genshin Impact fan site, not affiliated with HoYoverse.</p></footer>
+</div>
+</body>
+</html>
