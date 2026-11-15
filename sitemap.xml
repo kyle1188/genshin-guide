@@ -3088,6 +3088,96 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/talent-priority-guide-en.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/talent-priority-guide-en.html" />
   </url>
+<url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/zibai-build.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/zibai-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/zibai-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/zibai-build-en.html" />
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/zibai-build-en.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/zibai-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/zibai-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/zibai-build-en.html" />
+  </url>
+<url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/kachina-build.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/kachina-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/kachina-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/kachina-build-en.html" />
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/kachina-build-en.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/kachina-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/kachina-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/kachina-build-en.html" />
+  </url>
+<url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/flins-build.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/flins-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/flins-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/flins-build-en.html" />
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/flins-build-en.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/flins-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/flins-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/flins-build-en.html" />
+  </url>
+<url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/ineffa-build.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/ineffa-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/ineffa-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/ineffa-build-en.html" />
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/ineffa-build-en.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/ineffa-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/ineffa-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/ineffa-build-en.html" />
+  </url>
+<url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/iansan-build.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/iansan-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/iansan-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/iansan-build-en.html" />
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/iansan-build-en.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/iansan-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/iansan-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/iansan-build-en.html" />
+  </url>
 </urlset>
 
 <url>
