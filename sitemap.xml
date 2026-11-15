@@ -2933,5 +2933,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/legend-key-guide-en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/legend-key-guide-en.html"/>
   </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/snezhnaya-local-specialties.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/snezhnaya-local-specialties.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/snezhnaya-local-specialties-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/snezhnaya-local-specialties-en.html"/>
+  </url>
 <!-- LONGTAIL -->
 </urlset>
