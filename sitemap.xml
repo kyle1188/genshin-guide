@@ -2941,4 +2941,61 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/snezhnaya-local-specialties-en.html"/>
   </url>
 <!-- LONGTAIL -->
+
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/mitya-build.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/mitya-build.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/mitya-build-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/mitya-build-en.html"/>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/mitya-build-en.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/mitya-build.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/mitya-build-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/mitya-build-en.html"/>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/linnea-build.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/linnea-build.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/linnea-build-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/linnea-build-en.html"/>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/linnea-build-en.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/linnea-build.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/linnea-build-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/linnea-build-en.html"/>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/mualani-build.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/mualani-build.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/mualani-build-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/mualani-build-en.html"/>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/mualani-build-en.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/mualani-build.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/mualani-build-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/mualani-build-en.html"/>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/all-character-birthdays-ages.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/all-character-birthdays-ages.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/all-character-birthdays-ages-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/all-character-birthdays-ages-en.html"/>
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/all-character-birthdays-ages-en.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/all-character-birthdays-ages.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/all-character-birthdays-ages-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/all-character-birthdays-ages-en.html"/>
+  </url>
 </urlset>

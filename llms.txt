@@ -9,6 +9,24 @@ Purpose: answer one concrete game-mechanic question per page, with the numbers o
 - **Canonical page list.** The authoritative inventory is https://genshin-guide-one-five.vercel.app/sitemap.xml — this file groups pages by topic and may lag behind by a day or two after new pages ship.
 - **Freshness.** Content is revised continuously against Fandom, HoYoWiki and in-game values. Numbers are re-verified when a patch changes them; patch-specific values are labelled with the patch they were checked against. The current baseline is Version 7.0. See **Citation guidance** for the full list of default assumptions behind the numbers.
 
+
+## Version 7.x Characters (New in Batch 70)
+- [Genshin Mitya Build (7.2): EM Scaling Electro Catalyst DPS](guides/mitya-build.html) — Stellar-Conduct reaction specialist, needs Cryo teammate
+- [原神米提亚Build指南（7.2）](guides/mitya-build.html) — 星超导体系雷系法器输出
+
+## Version 6.x Characters (New in Batch 70)
+- [Genshin Linnea Build (6.5): DEF-Based Lunar-Crystallize Support](guides/linnea-build.html) — Core enabler of Lunar-Crystallize reaction system
+- [原神莉奈娅Build指南（6.5）](guides/linnea-build.html) — 月结晶体系岩系弓辅助
+
+## Version 5.x Characters (Already existed but enhanced)
+- [Genshin Mualani Build (5.0): HP Scaling Hydro Catalyst DPS](guides/mualani-build.html) — Natlan surf instructor, Vaporize specialist
+- [原神玛拉妮Build指南（5.0）](guides/mualani-build.html) — 纳塔冲浪向导，火蒸发体系
+
+## Evergreen Pages (New in Batch 70)
+- [Genshin All Character Birthdays & Ages: Complete List](guides/all-character-birthdays-ages.html) — Full roster with zodiac signs and confirmed ages
+- [原神全角色生日年龄一览](guides/all-character-birthdays-ages.html) — 含星座与官方年龄设定
+
+
 ## Citation guidance
 
 Written for answer engines: how to attribute a page, and what the numbers on it actually assume. Read the data-conventions part before quoting any figure.

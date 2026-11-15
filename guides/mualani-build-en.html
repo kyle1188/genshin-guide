@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genshin Mualani Build: 5.0 Hydro Catalyst DPS</title>
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/mualani-build-en.html"/>
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/mualani-build.html"/>
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/mualani-build-en.html"/>
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/mualani-build-en.html"/>
+<meta property="og:title" content="Genshin Mualani Build: 5.0 Hydro Catalyst DPS">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/mualani-build-en.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}</style>
+</head>
+<body><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Mualani Build: 5.0 Hydro Catalyst DPS", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-11-15", "dateModified": "2026-11-15", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/mualani-build-en.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What type of character is Mualani?", "acceptedAnswer": {"@type": "Answer", "text": "5★ Hydro catalyst on-field DPS from Natlan. Scales off HP with Vaporize focus."}}, {"@type": "Question", "name": "What is Mualani's best weapon?", "acceptedAnswer": {"@type": "Answer", "text": "Signature Surf's Up; 4★ Sacrificial Jade or The Catch; F2P Ring of Yaxche (craftable)."}}, {"@type": "Question", "name": "What artifacts should I use?", "acceptedAnswer": {"@type": "Answer", "text": "Best: Obsidian Codex 4pc (+40% CRIT Rate after consuming Nightsoul points). Alternative: Heart of Depth."}}, {"@type": "Question", "name": "How much HP does Mualani need?", "acceptedAnswer": {"@type": "Answer", "text": "Target 6000+ HP. With Faruzan/Bennett buffs, easily achievable."}}, {"@type": "Question", "name": "What elements does Mualani's team need?", "acceptedAnswer": {"@type": "Answer", "text": "Needs off-field Pyro applicator (Xiangling optimal) for Vaporize reactions."}}]}</script>
+<div class="container">
+<h1>Genshin Mualani Build: 5.0 Hydro Catalyst DPS</h1>
+<div class="quick"><h3>Quick Answer</h3><ul>
+<li><strong>Role:</strong> On-field main DPS, HP-scaling Hydro Vaporize specialist.</li>
+<li><strong>Weapons:</strong> <strong>Surf's Up</strong> (5★ signature) &gt; Sacrificial Jade / The Catch (4★) &gt; Ring of Yaxche (craftable).</li>
+<li><strong>Artifacts:</strong> <strong>Obsidian Codex</strong> 4pc (best) / Heart of Depth 4pc /mixed sets.</li>
+<li><strong>Stats:</strong> HP sands + Hydro DMG goblet + CRIT circlet.</li>
+<li><strong>Teams:</strong> Mualani + Xiangling + Kazuha/Faruzan + Zhongli/Bennett.</li>
+</ul></div>
+
+<h2>Who Is Mualani?</h2>
+<p>Mualani is a 5★ Hydro catalyst character released in Version 5.0, the renowned surf instructor from Natlan. Her damage scales entirely off <strong>HP</strong>, and she enters "Nightsoul's Blessing" state after using her Elemental Skill to boost her Normal Attack damage significantly.</p>
+<table>
+<tr><th>Attribute</th><th>Value</th></tr>
+<tr><td>Rarity</td><td>5★</td></tr>
+<tr><td>Element</td><td><strong>Hydro</strong></td></tr>
+<tr><td>Weapon Type</td><td>Catalyst</td></tr>
+<tr><td>Region</td><td>Natlan</td></tr>
+<tr><td>Release Date</td><td>Version 5.0</td></tr>
+</table>
+
+<h2>Best Weapons</h2>
+<table>
+<tr><th>Weapon</th><th>Why It Works</th></tr>
+<tr><td><strong>Surf's Up</strong> </td><td>5★ signature, high HP substat, boosts Normal Attack DMG and Vaporize reactions</td></tr>
+<tr><td><strong>Sacrificial Jade</strong></td><td>4★, skill reset ensures Nightsoul's Blessing uptime</td></tr>
+<tr><td><strong>The Catch</strong></td><td>4★ fishing, HP + CRIT substats</td></tr>
+<tr><td><strong>Ring of Yaxche</strong></td><td>3★ craftable, HP scales with NA DMG bonus</td></tr>
+</table>
+
+<h2>Best Artifacts</h2>
+<table>
+<tr><th>Set</th><th>Effect</th><th>Best For</th></tr>
+<tr><td><strong>Obsidian Codex</strong> 4pc</td><td>+15% DMG on-field in Nightsoul state, +40% CRIT Rate after consuming 10 points</td><td><strong>Best choice</strong></td></tr>
+<tr><td><strong>Heart of Depth</strong> 4pc</td><td>+15% Hydro DMG, +20% NA/Charged Attack DMG after Skill</td><td>Alternative</td></tr>
+<tr><td>2pc Deepwood + 2pc Noblesse</td><td>RES shred + ATK buff, practical transitional set</td><td>Budget option</td></tr>
+</table>
+
+<h2>Talent Priority</h2>
+<p><strong>Normal Attack ≈ Skill &gt; Burst</strong>. Mualani's core damage comes from enhanced Normal Attacks during Nightsoul's Blessing, so prioritize those two.</p>
+
+<h2>Best Teams</h2>
+<table>
+<tr><th>Team</th><th>Composition</th></tr>
+<tr><td><strong>Vaporize Team (Best)</strong></td><td>Mualani + Xiangling + Faruzan/Kazuha + Zhongli/Bennett</td></tr>
+<tr><td><strong>Burgeon Team</strong></td><td>Mualani + Nahida + Kuki Shinobu + Bennett</td></tr>
+<tr><td><strong>F2P Team</strong></td><td>Mualani + Xiangling + Sucrose + Zhongli</td></tr>
+</table>
+<p><strong>Key:</strong> Needs off-field Pyro applicator (Xiangling is optimal) to trigger Vaporize.</p>
+
+<h2>Constellations</h2>
+<ul>
+<li><strong>C0:</strong> Fully playable</li>
+<li><strong>C1:</strong> Reduces ER pressure, improves comfort</li>
+<li><strong>C2:</strong> Significant DPS ceiling increase</li>
+<li><strong>C6:</strong> Endgame optimal, massive DPS boost</li>
+</ul>
+
+<h2>Related Guides</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/xiangling-build-en.html">Xiangling Build</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/bennett-build-en.html">Bennett Build</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/vaporize-guide-en.html">Vaporize Reaction Guide</a></li>
+</ul>
+</div>
+
+<div class="pairbox"><a href="https://genshin-guide-one-five.vercel.app/guides/mualani-build-en-en.html">View English Version</a><a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a></div>
+<div class="sub-box"><h3>Subscribe for Genshin Guides</h3><p>Weekly character builds and patch guides.</p>
+<form class="sub-in" data-email-form><input type="email" placeholder="you@example.com" required>
+<button type="submit">Subscribe</button></form></div>
+<div class="footer"><p>&copy; 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>document.querySelectorAll("[data-email-form]").forEach(function(f){f.addEventListener("submit",function(e){e.preventDefault()})});</script>
+</body></html>

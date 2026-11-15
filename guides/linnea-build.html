@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神莉奈娅Build指南：6.5岩系弓辅助</title>
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/linnea-build.html"/>
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/linnea-build.html"/>
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/linnea-build-en.html"/>
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/linnea-build-en.html"/>
+<meta property="og:title" content="原神莉奈娅Build指南：6.5岩系弓辅助">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/linnea-build.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}</style>
+</head>
+<body><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神莉奈娅Build指南：6.5岩系弓辅助", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-11-15", "dateModified": "2026-11-15", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/PLACEHOLDER.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "莉奈娅是什么类型的角色？", "acceptedAnswer": {"@type": "Answer", "text": "5★岩系弓辅助，月结晶体系核心拐，提供减抗、精通和全队治疗。"}}, {"@type": "Question", "name": "莉奈娅的最佳武器是什么？", "acceptedAnswer": {"@type": "Answer", "text": "专武黄金霜缚誓弦最佳；4★首选西风猎弓或夹钩；F2P用弹弓。"}}, {"@type": "Question", "name": "莉奈娅用什么圣遗物？", "acceptedAnswer": {"@type": "Answer", "text": "首选晨月牧曲4件套（月结晶伤害最高+60%）；次选绸月夜曲（全队精通）。"}}, {"@type": "Question", "name": "莉奈娅需要多少防御力？", "acceptedAnswer": {"@type": "Answer", "text": "目标2000+防御吃满A4被动；双岩共鸣可降低充能压力。"}}, {"@type": "Question", "name": "莉奈娅配队需要什么元素？", "acceptedAnswer": {"@type": "Answer", "text": "必须有水系队友触发结晶反应，推荐科隆比娜、芙宁娜或行秋。"}}]}</script>
+<div class="container">
+<h1>原神莉奈娅Build指南：6.5岩系弓辅助</h1>
+<div class="quick"><h3>快速答案</h3><ul>
+<li><strong>定位：</strong>后台辅助/副C，月结晶体系核心拐。</li>
+<li><strong>武器：</strong><strong>黄金霜缚誓弦</strong>（5★专武）＞西风猎弓/夹钩（4★）＞弹弓（F2P）。</li>
+<li><strong>圣遗物：</strong><strong>晨月牧曲</strong> 4pc（首选）/ 绸月夜曲 4pc / 金厄梦醒之遗 4pc。</li>
+<li><strong>主词条：</strong>DEF沙漏 + DEF/岩伤杯 + 暴击头。</li>
+<li><strong>配队：</strong>Zibai + 莉奈娅 + 科隆比娜 + Illuga（顶配）。</li>
+</ul></div>
+
+<h2>莉奈娅是谁</h2>
+<p>莉奈娅是6.5版本推出的5★岩系弓角色，月结晶体系的核心辅助。她的伤害和治疗都依赖<strong>防御力</strong>，通过技能将普通结晶转化为月结晶，提供减抗、精通增益和全队治疗。</p>
+<table>
+<tr><th>属性</th><th>数值</th></tr>
+<tr><td>稀有度</td><td>5★</td></tr>
+<tr><td>元素</td><td><strong>岩元素</strong></td></tr>
+<tr><td>武器类型</td><td>弓</td></tr>
+<tr><td>地区</td><td>须弥（月之六区域）</td></tr>
+<tr><td>上线版本</td><td>6.5</td></tr>
+</table>
+
+<h2>最佳武器</h2>
+<table>
+<tr><th>武器</th><th>推荐理由</th></tr>
+<tr><td><strong>黄金霜缚誓弦</strong></td><td>5★专武，暴伤副属性，被动与月结晶体系高度契合</td></tr>
+<tr><td><strong>西风猎弓</strong></td><td>4★，充能副属性，单岩配置下保证循环</td></tr>
+<tr><td><strong>夹钩</strong></td><td>4★，位移辅助工具</td></tr>
+<tr><td><strong>弹弓</strong></td><td>3★ F2P，暴率副属性，性价比极高</td></tr>
+</table>
+
+<h2>最佳圣遗物</h2>
+<table>
+<tr><th>套装</th><th>效果</th><th>适用</th></tr>
+<tr><td><strong>晨月牧曲</strong> 4pc</td><td>后台月结晶伤害+20%，满月兆再+40%，合计最高+60%</td><td><strong>首选</strong></td></tr>
+<tr><td><strong>绸月夜曲</strong> 4pc</td><td>全队精通加成</td><td>次选</td></tr>
+<tr><td><strong>金厄梦醒之遗</strong> 4pc</td><td>DEF+岩伤双加成</td><td>兼顾输出</td></tr>
+</table>
+
+<h2>天赋升级顺序</h2>
+<p><strong>E技能优先 ＞ 大招 ＞ 普攻</strong>。普攻几乎用不到，可以永远停在1级。</p>
+
+<h2>最佳配队</h2>
+<table>
+<tr><th>队伍</th><th>成员</th></tr>
+<tr><td><strong>顶配月结晶</strong></td><td>Zibai + 莉奈娅 + 科隆比娜 + Illuga</td></tr>
+<tr><td><strong>Navia月结晶</strong></td><td>Navia + 莉奈娅 + 科隆比娜 + Furina</td></tr>
+<tr><td><strong>F2P岩队</strong></td><td>Noelle + 莉奈娅 + 科隆比娜 + Furina</td></tr>
+</table>
+<p><strong>关键：</strong>必须有水系队友触发结晶反应。</p>
+
+<h2>命座分析</h2>
+<ul>
+<li><strong>C0：</strong>完整可用</li>
+<li><strong>C2：</strong>给全队水岩角色+40%暴伤，质变命座</li>
+</ul>
+
+<h2>相关攻略</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/zibai-build.html">兹白Build</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/navia-build.html">娜维娅Build</a></li>
+</ul>
+</div>
+
+<div class="pairbox"><a href="https://genshin-guide-one-five.vercel.app/guides/linnea-build-en.html">View English Version</a><a href="https://genshin-guide-one-five.vercel.app/">返回首页</a></div>
+<div class="sub-box"><h3>订阅获取原神攻略更新</h3><p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form><input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button></form></div>
+<div class="footer"><p>&copy; 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>document.querySelectorAll("[data-email-form]").forEach(function(f){f.addEventListener("submit",function(e){e.preventDefault()})});</script>
+</body></html>
