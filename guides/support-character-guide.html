@@ -296,6 +296,17 @@
 <script>
 (function(){var f=document.getElementById('subForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var m=document.getElementById('subMsg');var v=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){m.className='msg err';m.textContent='请输入有效邮箱';return;}m.className='msg';m.textContent='…';fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:v})}).then(function(r){return r.json();}).then(function(d){if(d&&d.ok){m.className='msg ok';m.textContent='订阅成功，感谢支持！';f.reset();}else{m.className='msg err';m.textContent='提交失败，请稍后再试';}}).catch(function(){m.className='msg err';m.textContent='网络错误';});});})();
 </script>
+
+<div class="rel-box">
+  <div class="rel-hd"><span class="zh">相关攻略</span><span class="en" style="display:none">Related Guides</span></div>
+  <div class="rel-list">
+<a href="/guides/character-exp-guide.html">Character Exp Guide →</a>
+<a href="/guides/character-progress-guide.html">Character Progress Guide →</a>
+<a href="/guides/achievement-guide.html">Achievement Guide →</a>
+<a href="/guides/adventure-rank-guide.html">Adventure Rank Guide →</a>
+<a href="/guides/all-character-birthdays-ages.html">All Character Birthdays Ages →</a>
+  </div>
+</div>
 <footer><div class="wrap">提瓦特开荒攻略站 · 原神新手到进阶一站式攻略 · <a href="/">返回首页</a> · <a href="/about.html">关于本站</a> · <a href="/privacy.html">隐私政策</a> · <a href="/contact.html">联系投稿</a><br/>非 HoYoverse 官方站点，游戏内数据为准。</div></footer>
 </body>
 </html>
