@@ -132,6 +132,8 @@ Pity math, banner rules, and whether each paid product is worth the money.
 - [paimon-shop-guide](https://genshin-guide-one-five.vercel.app/guides/paimon-shop-guide-en.html): Starglitter shop monthly rotation and the items actually worth buying
 - [welkin-moon-guide](https://genshin-guide-one-five.vercel.app/guides/welkin-moon-guide-en.html): Welkin Moon value math, stacking rules, and spending priority
 - [battle-pass-guide](https://genshin-guide-one-five.vercel.app/guides/battle-pass-guide-en.html): Battle Pass reward value, time to max, and the weapon picks
+- [should-i-pull-mitya](https://genshin-guide-one-five.vercel.app/guides/should-i-pull-mitya-en.html): 7.2 banner verdict — is the new Electro Mitya worth pulling, are his constellations worth it, and the F2P zero-cost Stellar-Conduct team
+- [should-i-pull-furina](https://genshin-guide-one-five.vercel.app/guides/should-i-pull-furina-en.html): 7.2 rerun verdict — when the Furina off-field buffer is worth Primogems, her C0 completeness, and whether F2P should wait for the next rerun
 
 ## Elemental reactions and damage types （元素反应与伤害类型）
 
