@@ -52,6 +52,7 @@ a{color:#b9a8ff}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What type of character is Mitya?", "acceptedAnswer": {"@type": "Answer", "text": "5★ Electro catalyst from Version 7.2. Can play as on-field DPS or off-field support."}}, {"@type": "Question", "name": "What is Mitya's best weapon?", "acceptedAnswer": {"@type": "Answer", "text": "Signature Starsealed Edict; best 4★ is Winter's Heavy Heart; Wandering Evenstar for support."}}, {"@type": "Question", "name": "What artifacts should I use?", "acceptedAnswer": {"@type": "Answer", "text": "On-field: Disenchantment in Deep Shadow 4pc. Support: Heart of the Furnace or Tenacity."}}, {"@type": "Question", "name": "How much Energy Recharge does Mitya need?", "acceptedAnswer": {"@type": "Answer", "text": "On-field needs 120-140% ER. Test in domain before committing resources."}}, {"@type": "Question", "name": "What elements does Mitya's team need?", "acceptedAnswer": {"@type": "Answer", "text": "Must include a Cryo character for Stellar-Conduct. Pyro does not work."}}]}</script>
 <div class="container">
 <h1>Genshin Mitya Build: 7.2 Electro Catalyst DPS</h1>
+<p class="lead">Mitya (v7.2, Nov 4 2026) is a 5★ Electro catalyst main DPS built around the Stellar-Conduct reaction. Endgame targets: EM 500+, CRIT DMG 200%+, ER 140% (double-Electro) / 120% (triple-Electro after C1). BiS weapon Starsealed Edict (88.2% CRIT DMG) + Disenchantment in Deep Shadow 4pc. C0 is playable; C1 is the real step-up.</p>
 <div class="quick"><h3>Quick Answer</h3><ul>
 <li><strong>Role:</strong> On-field DPS or off-field support, built around <strong>Stellar-Conduct</strong> reaction.</li>
 <li><strong>Weapons:</strong> <strong>Starsealed Edict</strong> (5★ signature) &gt; Winter's Heavy Heart (4★) &gt; Wandering Evenstar.</li>
@@ -92,26 +93,37 @@ a{color:#b9a8ff}</style>
 
 <h2>Talent Priority</h2>
 <table>
-<tr><th>Role</th><th>Level Order</th></tr>
-<tr><td><strong>On-Field DPS</strong></td><td>Normal Attack &gt; Burst &gt; Skill</td></tr>
-<tr><td><strong>Off-Field Support</strong></td><td><strong>Skill first</strong> &gt; Burst &gt; Normal Attack</td></tr>
+<tr><th>Role</th><th>Level Order</th><th>Note</th></tr>
+<tr><td><strong>On-Field DPS</strong></td><td>Normal Attack &gt; Burst &gt; Skill</td><td>NA scales with Stellar-Conduct explosions</td></tr>
+<tr><td><strong>Off-Field Support</strong></td><td><strong>Skill first</strong> &gt; Burst &gt; Normal Attack</td><td>E applies Electro off-field; NA can stay level 1</td></tr>
 </table>
+<p><strong>Leveling budget:</strong> 90-level base costs roughly 5M Mora plus heavy XP books; get NA and Skill to level 9 first, Burst can wait.</p>
 
 <h2>Best Teams</h2>
 <table>
-<tr><th>Team</th><th>Composition</th></tr>
-<tr><td><strong>On-Field Hypercarry</strong></td><td>Mitya + Odette + Yae Miko + Valeriy</td></tr>
-<tr><td><strong>Off-Field Support</strong></td><td>Sandrone (main) + Mitya + Odette + Yae Miko</td></tr>
-<tr><td><strong>F2P Team</strong></td><td>Mitya + Cryo Traveler + Alyosha + Sucrose</td></tr>
+<tr><th>Team</th><th>Composition</th><th>Key Point</th></tr>
+<tr><td><strong>On-Field Hypercarry</strong></td><td>Mitya + Odette + Yae Miko + Valeriy</td><td>Double-Electro +15% Electro DMG; Odette applies Cryo to spawn beacons</td></tr>
+<tr><td><strong>Off-Field Support</strong></td><td>Sandrone (main) + Mitya + Odette + Yae Miko</td><td>Mitya E to apply Electro, then swap out; Heart of the Furnace 4pc</td></tr>
+<tr><td><strong>F2P Team</strong></td><td>Mitya + Cryo Traveler + Alyosha + Sucrose</td><td>Cryo Traveler = free Cryo applicator; Sucrose swirles for RES shred</td></tr>
 </table>
-<p><strong>Key rule:</strong> Every Stellar-Conduct team <strong>must include a Cryo character</strong>. Pyro does not work.</p>
+<p><strong>Key rule:</strong> Every Stellar-Conduct team <strong>must include a Cryo character</strong>. Pyro does not work. ER targets: 140% double-Electro / 120% triple-Electro; after C1, triple-Electro needs no ER.</p>
+
+<h2>Endgame Stats Reference (90-level C0)</h2>
+<table>
+<tr><th>Stat</th><th>Target</th><th>Why</th></tr>
+<tr><td>Elemental Mastery</td><td><strong>500+</strong></td><td>EM 500 caps the team-wide 14% buff</td></tr>
+<tr><td>Crit Damage</td><td><strong>200%+</strong></td><td>Balance CRIT Rate dynamically with set buffs</td></tr>
+<tr><td>Energy Recharge</td><td><strong>140% (2E) / 120% (3E)</strong></td><td>C1 makes triple-Electro rotation effortless</td></tr>
+<tr><td>Variant Beacons</td><td><strong>4 (C0) / 5 (C1)</strong></td><td>Each beacon lasts 10s; main DPS consumes via charged hits</td></tr>
+</table>
 
 <h2>Constellations</h2>
 <ul>
-<li><strong>C0:</strong> Fully playable</li>
-<li><strong>C2:</strong> Most worthwhile—significant DPS increase</li>
-<li><strong>C4:</strong> Big spike in long rotations</li>
-<li><strong>C6:</strong> Endgame optimal but C0 is solid</li>
+<li><strong>C0:</strong> Fully playable; on-field has a beacon dry-dps window, feels tight</li>
+<li><strong>C1:</strong> Beacons 4&rarr;5 + 40% on-field CRIT DMG — the step-up for main DPS</li>
+<li><strong>C2:</strong> Stellar field cuts Cryo/Electro RES a further 20% (40% total) — off-field comes online</li>
+<li><strong>C4:</strong> Extra multiplier in long rotations</li>
+<li><strong>C6:</strong> Full kit power-up, endgame investment</li>
 </ul>
 
 <h2>Related Guides</h2>
@@ -127,7 +139,6 @@ a{color:#b9a8ff}</style>
 <form class="sub-in" data-email-form><input type="email" placeholder="you@example.com" required>
 <button type="submit">Subscribe</button></form></div>
 <div class="footer"><p>&copy; 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
-</div>
 <script>document.querySelectorAll("[data-email-form]").forEach(function(f){f.addEventListener("submit",function(e){e.preventDefault()})});</script>
 
 <div class="rel-box" style="margin:30px auto 10px;max-width:820px;padding:20px;background:rgba(106,90,205,.08);border:1px solid rgba(106,90,205,.25);border-radius:12px;">
