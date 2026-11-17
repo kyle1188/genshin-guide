@@ -249,6 +249,7 @@ One page per character: best weapons, artifact sets, stat targets and team optio
 - [kaveh-build](https://genshin-guide-one-five.vercel.app/guides/kaveh-build-en.html): Dendro core detonator
 - [kazuha-build](https://genshin-guide-one-five.vercel.app/guides/kazuha-build-en.html): Anemo support, EM scaling and 4VV
 - [keqing-build](https://genshin-guide-one-five.vercel.app/guides/keqing-build-en.html): Electro on-field carry, Aggravate
+- [kinich-build](https://genshin-guide-one-five.vercel.app/guides/kinich-build-en.html): Natlan Dendro on-field DPS (5.1), Burning/Burgeon Nightsoul scaling
 - [klee-build](https://genshin-guide-one-five.vercel.app/guides/klee-build-en.html): Pyro catalyst DPS
 - [kokomi-build](https://genshin-guide-one-five.vercel.app/guides/kokomi-build-en.html): Hydro healer, HP scaling
 - [lyney-build](https://genshin-guide-one-five.vercel.app/guides/lyney-build-en.html): Pyro charged-shot DPS, mono-Pyro
