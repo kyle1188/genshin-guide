@@ -25,6 +25,10 @@ Purpose: answer one concrete game-mechanic question per page, with the numbers o
 ## Evergreen Pages (New in Batch 70)
 - [Genshin All Character Birthdays & Ages: Complete List](guides/all-character-birthdays-ages.html) — Full roster with zodiac signs and confirmed ages
 - [原神全角色生日年龄一览](guides/all-character-birthdays-ages.html) — 含星座与官方年龄设定
+- [Genshin Character Release Date: Every 5-Star by Version](guides/characters-by-release-date-en.html) — Limited 5-star timeline by patch (1.0 to 7.2), with release dates
+- [原神角色上线时间表：每个版本的五星角色](guides/characters-by-release-date.html) — 限定五星按版本排布，含发布日期
+- [Genshin Chest Guide: Chest Counts by Region](guides/chest-guide-en.html) — Open-world chest totals per region as an evergreen quick table
+- [原神宝箱攻略：各区域宝箱数量](guides/chest-guide.html) — 各区域开放世界宝箱总量速查表
 
 
 ## Citation guidance
