@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神专武值不值得抽：R1→R5 精炼收益、4★替代门槛与决策表</title>
+<meta name="description" content="原神专武值得抽吗？R1 是否已经 85-95% 收益？精炼到 R5 的 DPS 提升 8-18% 值多少武器池抽数？附 4★替代 85% 门槛表与「该不该抽专武」决策表，按 75/25 定轨口径算清。">
+<meta name="keywords" content="原神专武值得吗,武器池抽不抽,精炼R5值不值,4星替代专武,定轨,命之座武器,epitomized path genshin">
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/signature-weapon-worth.html" />
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/signature-weapon-worth.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/signature-weapon-worth-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/signature-weapon-worth-en.html" />
+<meta property="og:title" content="原神专武值不值得抽：R1→R5 精炼收益与 4★ 替代门槛">
+<meta property="og:description" content="原神专武值得抽吗？R1 是否已覆盖 85-95% 收益？精炼到 R5 值多少抽？附 4★ 替代门槛表与决策表。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/signature-weapon-worth.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神专武值不值得抽：R1→R5 精炼收益、4★替代门槛与决策表", "description": "原神专武值得抽吗？R1 是否已经覆盖 85-95% 收益？精炼到 R5 的 DPS 提升 8-18% 值多少武器池抽数？附 4★ 替代 85% 门槛表与决策表。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-11-18", "dateModified": "2026-11-18", "inLanguage": "zh-CN", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/signature-weapon-worth.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "原神专武值得抽吗？", "acceptedAnswer": {"@type": "Answer", "text": "值得抽 R1。R1 专武已覆盖该武器总价值的 85-95%，且白值+副词条高于任何 4★；R5 仅额外提升 8-18% DPS，等价 1-2 个五星角色的抽数，多数账号不值得。"}}, {"@type": "Question", "name": "R1 和 R5 差多少？", "acceptedAnswer": {"@type": "Answer", "text": "被动数值提升 15-25%，但实际 DPS 通常只升 8-18%（高被动成长型武器接近上限，数值堆砌型极低）。螭骨剑 R5 达狼末 92.8%、渔获 R5 可钓鱼白嫖满精，是仅有的两类 R5 质变武器。"}}, {"@type": "Question", "name": "抽不到专武用什么替代？", "acceptedAnswer": {"@type": "Answer", "text": "按 4★ 替代达专武 85% 为门槛：腐殖之剑/渔获（钓鱼免费 R5）、螭骨剑（纪行）、四风原典（锻造）按角色匹配。4★ R5 相对性能可达 R1 专武的 90-109%。"}}, {"@type": "Question", "name": "武器池保底多少抽？", "acceptedAnswer": {"@type": "Answer", "text": "武器池 80 抽硬保底，软保底约 62-65 抽起，75/25 定轨选武器；保底抽数跨武器池继承。最坏情况 160 抽（两次 80），定轨后首次歪仍保留 1 点命定值。"}}]}</script>
+</head>
+<body>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/signature-weapon-worth-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神专武值不值得抽：R1→R5 精炼收益、4★ 替代门槛与决策表</h1>
+<p class="lead">「专武到底值不值得抽」的答案分两层：<strong>值得 R1，不值得 R5</strong>。R1 专武已覆盖该武器总价值的 85-95%，白值+副词条碾压任何 4★；但 R1→R5 只多 8-18% 实际 DPS，代价却是 1-2 个五星角色等量的抽数。这篇把精炼收益曲线、4★ 替代 85% 门槛、武器池 75/25 定轨口径一次算清，给你一张「该不该抽」决策表。</p>
+<div class="quick"><ul>
+<li><strong>结论：</strong> 抽专武只到 R1 就停；R5 仅限两类特例（螭骨剑/渔获白嫖向）。</li>
+<li><strong>替代门槛：</strong> 4★ R5 相对性能 = R1 专武的 90-109%，按 85% 门槛够用。</li>
+<li><strong>成本口径：</strong> 武器池 80 抽硬保底，最坏 160 抽；软保底 ~62-65 抽起。</li>
+</ul></div>
+<h2>R1 → R5 精炼收益曲线</h2>
+<p>精炼只提升被动等级（R0×1 → R5×6），白值不动。被动占比决定精炼价值——高被动成长型武器吃满精炼红利，数值堆砌型（堆攻击/暴击的）几乎不吃：</p>
+<table>
+<tr><th>档位</th><th>武器</th><th>R1→R5 提升</th><th>判断</th></tr>
+<tr><td>S 级（R5 质变）</td><td>渔获（可钓鱼白嫖 R5）/ 螭骨剑（R5 达狼末 92.8%）</td><td>+15-25% 被动，渔获机会成本为零</td><td>唯一值得冲 R5 的两把</td></tr>
+<tr><td>A 级（R1 已够 90%）</td><td>护摩之杖 / 薙草之稻光 / 绝弦</td><td>R1 已达替代的 109%/+15%，R5 仅再 +8-12%</td><td>停在 R1，省下的抽数给新角色</td></tr>
+<tr><td>B/C 级（不冲 R5）</td><td>雾切之回光 / 天空系列 / 数值堆砌型</td><td>R1 已最优效率，R5 提升微小</td><td>永停 R1</td></tr>
+</table>
+<p>量化口径：R1→R5 被动数值 +15-25%，<strong>实际 DPS 通常只 +8-18%</strong>（取决于武器类型与队伍配置）。对比：同抽数换一个五星角色，新角色几乎总是更大的账号收益。</p>
+<h2>4★ 替代专武的 85% 门槛表</h2>
+<p>抽不到专武时，4★ R5 相对性能可达 R1 专武的 90-109%。按「≥85% 即合格」门槛匹配替代：</p>
+<table>
+<tr><th>专武（R1）</th><th>4★ 替代（R5）</th><th>相对性能</th><th>获取方式</th></tr>
+<tr><td>渔获</td><td>灰河渡手（枫丹钓鱼）</td><td>95-98%（免费 R5）</td><td>钓鱼白嫖</td></tr>
+<tr><td>狼的末路</td><td>螭骨剑（纪行）</td><td>92.8%</td><td>珍珠纪行 30 级宝匣</td></tr>
+<tr><td>护摩之杖</td><td>匣里灭辰（锻造）</td><td>约 85%（蒸发队更高）</td><td>锻造免费</td></tr>
+<tr><td>薙草之稻光</td><td>渔获 R5（免费）</td><td>约 88-90%（组队缩小差距）</td><td>钓鱼白嫖</td></tr>
+<tr><td>四风原典系（暴击向）</td><td>纪行自选 4★ 暴击武器</td><td>85%+</td><td>纪行 + 池内锻造</td></tr>
+</table>
+<p>注意：<strong>替代只算「够用」，不算「最优」</strong>。专武的白值+副词条仍占 10-15% 优势，所以「抽到 R1 就停、抽不到就用 4★ R5」比「硬抽满 R5」的期望收益更高。</p>
+<h2>武器池成本：75/25 定轨口径</h2>
+<p>武器池按 75% 定轨武器 / 25% 自选元素武器分配；<strong>80 抽硬保底、软保底约 62-65 抽起、保底抽数跨武器池继承</strong>。最坏情况（两次 80 抽）= 160 抽。武器池 5★ 概率 0.8%/抽，期望 125 抽出一把 5★（与角色池不同，抽数保底仍按 80 走）。抽 R5 意味着重复获取 4 次 5★——按期望 500 抽起，这已远超多数账号的武器预算。</p>
+<h2>决策表：该不该抽专武</h2>
+<table>
+<tr><th>你的情况</th><th>建议</th></tr>
+<tr><td>主C已毕业（圣遗物好）+ 账号缺专武</td><td>抽 1 次武器池，<strong>R1 即停</strong>；命定值留到下期</td></tr>
+<tr><td>主C还缺圣遗物 / 天赋没满</td><td>先角色和圣遗物，<strong>别抽武器</strong>（圣遗物收益 &gt; 精炼）</td></tr>
+<tr><td>目标武器是渔获/螭骨剑</td><td>可冲 R5（免费白嫖或纪行低成本）</td></tr>
+<tr><td>F2P 零氪</td><td>等武器池 80 抽前攒够 ~12,800 原石（按 80×160）再进池</td></tr>
+<tr><td>专武党要 R5</td><td>仅当三类条件全满足：新角色全有了、圣遗物毕业了、武器被动占 DPS 大头</td></tr>
+</table>
+<h2>抽武器前 3 问（自检）</h2>
+<ol>
+<li>这把武器的被动是否占你 DPS 贡献的大头且覆盖率高？（否则停 R1）</li>
+<li>你的圣遗物、天赋、配队是否已毕业？（没毕业先角色，精炼是最后一层优化）</li>
+<li>账号是否已拥有全部想要的角色？（没有的话，新角色 &gt; 武器精炼）</li>
+</ol>
+<p>三问全「是」才考虑 R5；任何一「否」，资源投给别处。</p>
+<h2>相关阅读</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide.html">原神武器池攻略：定轨、命定值与保底</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/weapon-refinement-guide.html">武器精炼完全指南（精炼成本与优先级）</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/best-f2p-weapons.html">平民四星武器推荐（替代门槛实测）</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/should-i-pull-mitya.html">米缇娅值得抽吗（7.2）</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide.html">原神保底规则完整版（角色池口径）</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/battle-pass-guide.html">珍珠纪行性价比（纪行武器宝匣）</a></li>
+</ul>
+<h2>小结</h2>
+<p>一句话：<strong>专武值得抽 R1，不值得冲 R5</strong>——R1 已覆盖 85-95% 价值，R5 只多 8-18% DPS 却要 4 倍抽数；只有渔获（钓鱼白嫖）和螭骨剑（纪行）例外。抽不到就用 4★ R5（90-109% 门槛内），把省下的抽数留给下一个五星角色。</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/signature-weapon-worth-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div>
+<div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('订阅成功！');
+    } catch(err) {
+      alert('订阅失败，请稍后再试。');
+    }
+  });
+});
+</script>
+</body>
+</html>

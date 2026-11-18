@@ -138,6 +138,8 @@ Pity math, banner rules, and whether each paid product is worth the money.
 - [battle-pass-guide](https://genshin-guide-one-five.vercel.app/guides/battle-pass-guide-en.html): Battle Pass reward value, time to max, and the weapon picks
 - [should-i-pull-mitya](https://genshin-guide-one-five.vercel.app/guides/should-i-pull-mitya-en.html): 7.2 banner verdict — is the new Electro Mitya worth pulling, are his constellations worth it, and the F2P zero-cost Stellar-Conduct team
 - [should-i-pull-furina](https://genshin-guide-one-five.vercel.app/guides/should-i-pull-furina-en.html): 7.2 rerun verdict — when the Furina off-field buffer is worth Primogems, her C0 completeness, and whether F2P should wait for the next rerun
+- [banner-rerun-guide](https://genshin-guide-one-five.vercel.app/guides/banner-rerun-guide-en.html): How often characters rerun (interval tiers), the Archon rotation order, recent banner history and a F2P Primogem saving schedule
+- [signature-weapon-worth](https://genshin-guide-one-five.vercel.app/guides/signature-weapon-worth-en.html): Is a signature weapon worth pulling — R1 to R5 refinement value, 4-star fallback thresholds and a pull decision table
 
 ## Elemental reactions and damage types （元素反应与伤害类型）
 
