@@ -140,6 +140,7 @@ Pity math, banner rules, and whether each paid product is worth the money.
 - [should-i-pull-furina](https://genshin-guide-one-five.vercel.app/guides/should-i-pull-furina-en.html): 7.2 rerun verdict — when the Furina off-field buffer is worth Primogems, her C0 completeness, and whether F2P should wait for the next rerun
 - [banner-rerun-guide](https://genshin-guide-one-five.vercel.app/guides/banner-rerun-guide-en.html): How often characters rerun (interval tiers), the Archon rotation order, recent banner history and a F2P Primogem saving schedule
 - [signature-weapon-worth](https://genshin-guide-one-five.vercel.app/guides/signature-weapon-worth-en.html): Is a signature weapon worth pulling — R1 to R5 refinement value, 4-star fallback thresholds and a pull decision table
+- [pull-cost-guide](https://genshin-guide-one-five.vercel.app/guides/pull-cost-guide-en.html): How much real money a constellation actually costs — full C0-to-C6 and R1-to-R5 Primogem/USD cost matrix, F2P-to-whale monthly payback schedules, and a "should you spend it" decision table (the spending cluster hub)
 
 ## Elemental reactions and damage types （元素反应与伤害类型）
 
