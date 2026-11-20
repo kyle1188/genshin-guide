@@ -3317,8 +3317,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/pull-cost-guide-en.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/pull-cost-guide-en.html" />
 </url>
-</urlset>
-
 <url>
     <loc>https://genshin-guide-one-five.vercel.app/guides/columbina-build.html</loc>
     <lastmod>2026-11-15</lastmod>
@@ -3427,3 +3425,4 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/nodkrai-guide-en.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/nodkrai-guide-en.html" />
 </url>
+</urlset>
