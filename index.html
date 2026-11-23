@@ -272,7 +272,7 @@
   }
 </style>
 <script>
-  (function(){try{var s=localStorage.getItem('genshin_lang'); if(s!=='zh'&&s!=='en') s='zh'; document.documentElement.setAttribute('data-lang', s);}catch(e){document.documentElement.setAttribute('data-lang','zh');}})();
+  (function(){try{var s=localStorage.getItem('genshin_lang'); if(s!=='zh'&&s!=='en'){s=(navigator.language||'').toLowerCase().indexOf('zh')===0?'zh':'en';} document.documentElement.setAttribute('data-lang', s);}catch(e){document.documentElement.setAttribute('data-lang','zh');}})();
 </script>
 <meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png" />
 <meta name="twitter:card" content="summary_large_image" />
