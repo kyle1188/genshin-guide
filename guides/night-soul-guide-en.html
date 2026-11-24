@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>原神夜魂系统详解：纳塔专属增益机制完整解析</title>
-<meta name="description" content="纳塔是《原神》5.0版本的火之国，引入夜魂（Nightsoul）系统。本文详解夜魂获取、衰减机制、与角色Build的关系及配队思路。">
+<title>Genshin Nightsoul System Explained: Natlan's Exclusive Buff</title>
+<meta name="description" content="Natlan is Genshin's 5.0 Pyro nation, introducing the Nightsoul system. This guide explains how to gain and maintain Nightsoul, its decay, and how it affects character builds and team comps.">
 <link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/night-soul-guide-en.html"/>
 <link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/night-soul-guide.html"/>
 <link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/night-soul-guide-en.html"/>
 <link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/night-soul-guide-en.html"/>
-<meta property="og:title" content="原神夜魂系统详解：纳塔专属增益机制完整解析">
-<meta property="og:description" content="纳塔是《原神》5.0版本的火之国，引入夜魂（Nightsoul）系统。本文详解夜魂获取、衰减机制、与角色Build的关系及配队思路。">
+<meta property="og:title" content="Genshin Nightsoul System Explained: Natlan's Exclusive Buff">
+<meta property="og:description" content="Natlan is Genshin's 5.0 Pyro nation, introducing the Nightsoul system. This guide explains how to gain and maintain Nightsoul, its decay, and how it affects character builds and team comps.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/night-soul-guide.html">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/night-soul-guide-en.html">
 <meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
@@ -20,79 +20,79 @@
 <style>:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}*{margin:0;padding:0;box-sizing:border-box}body{font-family:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.85}.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}h1{font-size:30px;margin:26px 0 8px;color:var(--accent)}h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}p{margin-bottom:14px}ul,ol{margin:0 0 16px 24px}li{margin-bottom:6px}strong{color:#ffd9a0}table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}th{background:#3b2f7e;color:#fff;font-weight:600}tr:last-child td{border-bottom:none}tr:hover{background:rgba(218,112,214,.07)}.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}.quick ul{margin:6px 0 0 20px}.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}.pairbox a:hover{background:var(--accent)}.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}a{color:#b9a8ff}.tip{background:rgba(106,90,205,.12);border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;border-radius:0 8px 8px 0;font-size:14px}.section{background:var(--card);border-radius:10px;padding:18px 22px;margin:16px 0;border:1px solid var(--border)}</style>
 </head>
 <body>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神夜魂系统详解：纳塔专属增益机制完整解析", "description": "纳塔是《原神》5.0版本的火之国，引入夜魂（Nightsoul）系统。本文详解夜魂获取、衰减机制、与角色Build的关系及配队思路。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-11-15", "dateModified": "2026-11-15", "inLanguage": "zh-CN", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/night-soul-guide.html"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "夜魂值怎么获得？", "acceptedAnswer": {"@type": "Answer", "text": "击败纳塔区域特殊敌人、完成场景互动机关、拾取地图上的夜魂结晶均可恢复夜魂值。"}}, {"@type": "Question", "name": "夜魂值会随时间衰减吗？", "acceptedAnswer": {"@type": "Answer", "text": "是的。夜魂值会持续衰减，战斗中使用技能会加速消耗，但在安全区会自然恢复一部分。"}}, {"@type": "Question", "name": "非纳塔角色受夜魂系统影响吗？", "acceptedAnswer": {"@type": "Answer", "text": "受影响。只要队伍中有至少一名纳塔角色在场，全队都能享受夜魂加成。"}}, {"@type": "Question", "name": "夜魂值和元素共鸣有什么关系？", "acceptedAnswer": {"@type": "Answer", "text": "两者独立。夜魂是纳塔专属系统，元素共鸣是全局系统。"}}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://genshin-guide-one-five.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://genshin-guide-one-five.vercel.app/all-guides.html"}, {"@type": "ListItem", "position": 3, "name": "原神夜魂系统详解：纳塔专属增益机制完整解析", "item": "https://genshin-guide-one-five.vercel.app/guides/night-soul-guide-en.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Nightsoul System Explained: Natlan's Exclusive Buff", "description": "Natlan is Genshin's 5.0 Pyro nation, introducing the Nightsoul system. This guide explains how to gain and maintain Nightsoul, its decay, and how it affects character builds and team comps.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-11-15", "dateModified": "2026-11-15", "inLanguage": "en-US", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/night-soul-guide-en.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I gain Nightsoul?", "acceptedAnswer": {"@type": "Answer", "text": "Defeating Nightsoul-crystal enemies, completing environment puzzles, and picking up Nightsoul Crystals all restore Nightsoul."}}, {"@type": "Question", "name": "Does Nightsoul decay over time?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Nightsoul continuously decays, using skills in combat accelerates the drain, but it naturally recovers a bit in safe zones."}}, {"@type": "Question", "name": "Are non-Natlan characters affected by the Nightsoul system?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. As long as at least one Natlan character is in the party, the whole team benefits from the Nightsoul bonus."}}, {"@type": "Question", "name": "How is Nightsoul related to Elemental Resonance?", "acceptedAnswer": {"@type": "Answer", "text": "They are independent. Nightsoul is a Natlan-exclusive system, while Elemental Resonance is a global system."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://genshin-guide-one-five.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://genshin-guide-one-five.vercel.app/all-guides.html"}, {"@type": "ListItem", "position": 3, "name": "Genshin Nightsoul System Explained: Natlan's Exclusive Buff", "item": "https://genshin-guide-one-five.vercel.app/guides/night-soul-guide-en.html"}]}</script>
 <div class="container">
-<h1>原神夜魂系统详解：纳塔专属增益机制完整解析</h1>
-<div class="quick"><h3>快速答案</h3><ul>
-<li><strong>夜魂系统是什么：</strong>纳塔（5.0）引入的专属生存+增益系统，所有纳塔角色都有「夜魂加持」被动。</li>
-<li><strong>核心机制：</strong>队伍中至少一名纳塔角色在场时，全队获得夜魂值，随时间衰减；夜魂值越高，元素战技/爆发冷却缩减越多。</li>
-<li><strong>获取方式：</strong>击败特定敌人、完成场景机关、拾取夜魂结晶可恢复夜魂值。</li>
-<li><strong>对Build的影响：</strong>纳塔主C优先堆充能保证技能循环；辅助靠夜魂值触发额外效果。</li>
+<h1>Genshin Nightsoul System Explained: Natlan's Exclusive Buff</h1>
+<div class="quick"><h3>Quick Answer</h3><ul>
+<li><strong>What is the Nightsoul system:</strong> A survival + buff system introduced in Natlan (5.0); every Natlan character has a "Nightsoul" passive.</li>
+<li><strong>Core mechanic:</strong> With at least one Natlan character on field, the whole party gains a Nightsoul value that decays over time; the higher the value, the more cooldown reduction on Elemental Skill / Burst.</li>
+<li><strong>How to gain it:</strong> Defeat specific enemies, complete environment puzzles, or pick up Nightsoul Crystals to restore Nightsoul.</li>
+<li><strong>Build impact:</strong> Natlan main DPS should prioritize ER to keep their skill loop; supports rely on Nightsoul to trigger extra effects.</li>
 </ul></div>
 
-<h2>夜魂系统基础机制</h2>
+<h2>Nightsoul Base Mechanics</h2>
 <div class="section">
-<p>夜魂系统是纳塔地区独有的战斗增益系统，从5.0版本开始实装。它与传统的元素反应不同，是一种<strong>队伍级的被动增益</strong>，不需要主动触发，而是随着时间自动维持。</p>
-<h3>夜魂值的核心特性</h3>
+<p>Nightsoul is a combat buff system unique to the Natlan region, implemented starting with version 5.0. Unlike traditional elemental reactions, it is a <strong>team-wide passive buff</strong> that does not need to be actively triggered — it is maintained automatically over time.</p>
+<h3>Core Properties of the Nightsoul Value</h3>
 <ul>
-<li><strong>存在形式：</strong>以数值形式存在于队伍中，最高100点</li>
-<li><strong>自然衰减：</strong>每秒约衰减0.5-1点（视战斗强度而定）</li>
-<li><strong>增益效果：</strong>夜魂值每达到20/40/60/80/100点阈值，提供不同的冷却缩减和伤害加成</li>
-<li><strong>持续时间：</strong>脱离纳塔区域后夜魂系统暂时失效，进入新区域后重新激活</li>
+<li><strong>Form:</strong> Exists as a value within the party, capped at 100 points</li>
+<li><strong>Natural decay:</strong> Decays about 0.5–1 points per second (varies with combat intensity)</li>
+<li><strong>Buff effect:</strong> At each threshold of 20/40/60/80/100 points, it grants different cooldown reduction and damage bonuses</li>
+<li><strong>Duration:</strong> Leaving the Natlan region temporarily disables the system; it reactivates upon entering a new area</li>
 </ul>
 </div>
 
-<h2>如何高效维持夜魂值</h2>
+<h2>How to Maintain Nightsoul Efficiently</h2>
 <div class="section">
 <table>
-<tr><th>获取方式</th><th>恢复量</th><th>推荐优先级</th></tr>
-<tr><td>击败夜魂结晶型敌人</td><td>+15~25点</td><td>高</td></tr>
-<tr><td>完成场景机关</td><td>+30~50点</td><td>高</td></tr>
-<tr><td>拾取地面夜魂结晶</td><td>+10~20点</td><td>中</td></tr>
-<tr><td>使用纳塔角色元素爆发</td><td>+5~10点</td><td>低（附带伤害）</td></tr>
+<tr><th>Method</th><th>Amount Restored</th><th>Priority</th></tr>
+<tr><td>Defeat Nightsoul-crystal enemies</td><td>+15–25 pts</td><td>High</td></tr>
+<tr><td>Complete environment puzzles</td><td>+30–50 pts</td><td>High</td></tr>
+<tr><td>Pick up ground Nightsoul Crystals</td><td>+10–20 pts</td><td>Medium</td></tr>
+<tr><td>Use a Natlan character's Elemental Burst</td><td>+5–10 pts</td><td>Low (also deals damage)</td></tr>
 </table>
-<div class="tip"><strong>提示：</strong>在长流程战斗中，建议每隔30-45秒主动寻找夜魂结晶或完成小机关，避免夜魂值跌破20点阈值导致增益大幅削弱。</div>
+<div class="tip"><strong>Tip:</strong> In long fights, try to find Nightsoul Crystals or complete small puzzles every 30–45 seconds, so the Nightsoul value doesn't drop below the 20-point threshold where buffs weaken sharply.</div>
 </div>
 
-<h2>夜魂系统与角色Build的关系</h2>
+<h2>How the Nightsoul System Affects Character Builds</h2>
 <div class="section">
-<p>夜魂值直接影响元素的战技和爆发冷却，因此不同角色的Build重点有所不同：</p>
-<h3>主C角色建议</h3>
+<p>The Nightsoul value directly affects skill and Burst cooldowns, so different characters focus on different build priorities:</p>
+<h3>For Main DPS</h3>
 <ul>
-<li><strong>充能效率：</strong>优先保证元素爆发循环，夜魂值高时冷却更快，但基础充能仍是根基</li>
-<li><strong>暴率/暴伤：</strong>夜魂增益不直接提高伤害倍率，正常追求输出属性即可</li>
-<li><strong>推荐武器：</strong>提供充能或元素爆发的五星武器</li>
+<li><strong>ER:</strong> Prioritize keeping the Elemental Burst loop; higher Nightsoul shortens cooldowns faster, but base ER is still the foundation</li>
+<li><strong>Crit:</strong> Nightsoul buffs don't raise damage multipliers directly, so pursue output stats as normal</li>
+<li><strong>Recommended weapon:</strong> A 5-star weapon that provides ER or boosts the Elemental Burst</li>
 </ul>
-<h3>辅助角色建议</h3>
+<h3>For Supports</h3>
 <ul>
-<li><strong>能量循环：</strong>确保能频繁释放元素战技触发夜魂相关效果</li>
-<li><strong>治疗/护盾：</strong>夜魂状态下队伍容错提升，但仍需基础生存保障</li>
+<li><strong>Energy loop:</strong> Make sure you can frequently cast the Elemental Skill to trigger Nightsoul-related effects</li>
+<li><strong>Healing / shield:</strong> Under Nightsoul the party is more forgiving, but basic survivability is still needed</li>
 </ul>
 </div>
 
-<h2>常见误区澄清</h2>
+<h2>Common Misconceptions</h2>
 <ul>
-<li><strong>误区一：夜魂值是独立资源条</strong> — 实际上它只是隐藏数值，不在UI显示，通过增益图标判断状态</li>
-<li><strong>误区二：所有角色都依赖夜魂</strong> — 非纳塔角色仅享受全局加成，不触发纳塔专属交互</li>
-<li><strong>误区三：夜魂值可以无限堆叠</strong> — 有100点上限，且战斗中使用技能会加速消耗</li>
+<li><strong>Misconception 1: Nightsoul is an independent resource bar</strong> — It is actually a hidden value, not shown in the UI; judge it via buff icons</li>
+<li><strong>Misconception 2: Every character depends on Nightsoul</strong> — Non-Natlan characters only get the global bonus, not the Natlan-exclusive interactions</li>
+<li><strong>Misconception 3: Nightsoul can stack infinitely</strong> — It is capped at 100 points, and using skills in combat drains it faster</li>
 </ul>
 
-<h2>相关问题</h2>
-<h3>夜魂值怎么获得？</h3><p>击败纳塔区域特殊敌人、完成场景互动机关、拾取地图上的夜魂结晶均可恢复夜魂值。</p>
-<h3>夜魂值会随时间衰减吗？</h3><p>是的。夜魂值会持续衰减，战斗中使用技能会加速消耗，但在安全区会自然恢复一部分。</p>
-<h3>非纳塔角色受夜魂系统影响吗？</h3><p>受影响。只要队伍中有至少一名纳塔角色在场，全队都能享受夜魂加成。</p>
-<h3>夜魂值和元素共鸣有什么关系？</h3><p>两者独立。夜魂是纳塔专属系统，元素共鸣是全局系统。</p>
+<h2>Related Questions</h2>
+<h3>How do I gain Nightsoul?</h3><p>Defeating special Natlan enemies, completing environment puzzles, and picking up Nightsoul Crystals all restore the Nightsoul value.</p>
+<h3>Does the Nightsoul value decay over time?</h3><p>Yes. It decays continuously; using skills in combat accelerates the drain, but it naturally recovers a bit in safe zones.</p>
+<h3>Are non-Natlan characters affected by the Nightsoul system?</h3><p>Yes. As long as at least one Natlan character is in the party, the whole team benefits from the Nightsoul bonus.</p>
+<h3>How is Nightsoul related to Elemental Resonance?</h3><p>They are independent. Nightsoul is a Natlan-exclusive system, while Elemental Resonance is a global system.</p>
 
-<h2>相关攻略</h2>
+<h2>Related Guides</h2>
 <ul>
-<li><a href="https://genshin-guide-one-five.vercel.app/guides/natlan-guide.html">纳塔地区全指南</a></li>
-<li><a href="https://genshin-guide-one-five.vercel.app/guides/chasca-build.html">恰斯卡 Build 指南</a></li>
-<li><a href="https://genshin-guide-one-five.vercel.app/guides/mavuika-build.html">玛薇卡 Build 指南</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/natlan-guide.html">Natlan Region Guide</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/chasca-build.html">Chasca Build Guide</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/mavuika-build.html">Mavuika Build Guide</a></li>
 </ul>
 <div class="pairbox">
-<a href="https://genshin-guide-one-five.vercel.app/guides/night-soul-guide.html">中文版本</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/night-soul-guide.html">Chinese Version</a>
 <a href="/">Back to Home</a>
 <a href="https://genshin-guide-one-five.vercel.app/guides/all-guides-en.html">All Guides</a>
 </div>

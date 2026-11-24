@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>原神星月反应详解：诺德凯亚月相系统与元素交互</title>
-<meta name="description" content="诺德凯亚是《原神》6.0版本的特殊区域，引入星月反应（Lunar Reactions）和月相系统。本文详解星月反应类型、月相流转及配队思路。">
+<title>Genshin Lunar Reactions Explained: Nodkrai Moon Phases &amp; Elemental Interactions</title>
+<meta name="description" content="Nodkrai is Genshin's 6.0 special region, introducing the Lunar Reactions and Moon Phase system. This guide explains the types of Lunar Reactions, how Moon Phases rotate, and team-building ideas.">
 <link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/lunar-reaction-guide-en.html"/>
 <link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/lunar-reaction-guide.html"/>
 <link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/lunar-reaction-guide-en.html"/>
 <link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/lunar-reaction-guide-en.html"/>
-<meta property="og:title" content="原神星月反应详解：诺德凯亚月相系统与元素交互">
-<meta property="og:description" content="诺德凯亚是《原神》6.0版本的特殊区域，引入星月反应（Lunar Reactions）和月相系统。本文详解星月反应类型、月相流转及配队思路。">
+<meta property="og:title" content="Genshin Lunar Reactions Explained: Nodkrai Moon Phases &amp; Elemental Interactions">
+<meta property="og:description" content="Nodkrai is Genshin's 6.0 special region, introducing the Lunar Reactions and Moon Phase system. This guide explains the types of Lunar Reactions, how Moon Phases rotate, and team-building ideas.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/lunar-reaction-guide.html">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/lunar-reaction-guide-en.html">
 <meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
@@ -20,79 +20,79 @@
 <style>:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}*{margin:0;padding:0;box-sizing:border-box}body{font-family:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.85}.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}h1{font-size:30px;margin:26px 0 8px;color:var(--accent)}h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}p{margin-bottom:14px}ul,ol{margin:0 0 16px 24px}li{margin-bottom:6px}strong{color:#ffd9a0}table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}th{background:#3b2f7e;color:#fff;font-weight:600}tr:last-child td{border-bottom:none}tr:hover{background:rgba(218,112,214,.07)}.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}.quick ul{margin:6px 0 0 20px}.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}.pairbox a:hover{background:var(--accent)}.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}a{color:#b9a8ff}.tip{background:rgba(106,90,205,.12);border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;border-radius:0 8px 8px 0;font-size:14px}.section{background:var(--card);border-radius:10px;padding:18px 22px;margin:16px 0;border:1px solid var(--border)}</style>
 </head>
 <body>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神星月反应详解：诺德凯亚月相系统与元素交互", "description": "诺德凯亚是《原神》6.0版本的特殊区域，引入星月反应（Lunar Reactions）和月相系统。本文详解星月反应类型、月相流转及配队思路。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-11-15", "dateModified": "2026-11-15", "inLanguage": "zh-CN", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/lunar-reaction-guide.html"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "星月反应怎么触发？", "acceptedAnswer": {"@type": "Answer", "text": "队伍中需要有星月共鸣角色（如哥伦比娅），并同时存在两种可搭配的元素（水+雷、冰+草等）才能触发。"}}, {"@type": "Question", "name": "月相会影响战斗吗？", "acceptedAnswer": {"@type": "Answer", "text": "会。不同月相提供不同增益，建议在匹配的角色技能循环期内进行高强度战斗。"}}, {"@type": "Question", "name": "哪些角色适合星月反应队？", "acceptedAnswer": {"@type": "Answer", "text": "哥伦比娅为核心，八重神子、纳西妲、行秋等为优秀副选。"}}, {"@type": "Question", "name": "星月反应和夜魂系统有关联吗？", "acceptedAnswer": {"@type": "Answer", "text": "有间接关联。两者都是地区专属系统，但触发条件和效果不同，可同时叠加增益。"}}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://genshin-guide-one-five.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://genshin-guide-one-five.vercel.app/all-guides.html"}, {"@type": "ListItem", "position": 3, "name": "原神星月反应详解：诺德凯亚月相系统与元素交互", "item": "https://genshin-guide-one-five.vercel.app/guides/lunar-reaction-guide-en.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Lunar Reactions Explained: Nodkrai Moon Phases &amp; Elemental Interactions", "description": "Nodkrai is Genshin's 6.0 special region, introducing the Lunar Reactions and Moon Phase system. This guide explains the types of Lunar Reactions, how Moon Phases rotate, and team-building ideas.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-11-15", "dateModified": "2026-11-15", "inLanguage": "en-US", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/lunar-reaction-guide-en.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How are Lunar Reactions triggered?", "acceptedAnswer": {"@type": "Answer", "text": "You need a Lunar-resonance character (such as Columbina) in the party, plus two complementary elements (Hydro+Electro, Cryo+Dendro, etc.) present at the same time."}}, {"@type": "Question", "name": "Do Moon Phases affect combat?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Each phase grants a different buff, so plan heavy combat within the skill-loop window that matches your team."}}, {"@type": "Question", "name": "Which characters suit Lunar Reaction teams?", "acceptedAnswer": {"@type": "Answer", "text": "Columbina is the core, with Yae Miko, Nahida, and Xingqiu as strong secondary picks."}}, {"@type": "Question", "name": "Is the Lunar Reaction related to the Nightsoul system?", "acceptedAnswer": {"@type": "Answer", "text": "Indirectly. Both are region-exclusive systems, but with different triggers and effects, and their buffs can stack."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://genshin-guide-one-five.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://genshin-guide-one-five.vercel.app/all-guides.html"}, {"@type": "ListItem", "position": 3, "name": "Genshin Lunar Reactions Explained: Nodkrai Moon Phases &amp; Elemental Interactions", "item": "https://genshin-guide-one-five.vercel.app/guides/lunar-reaction-guide-en.html"}]}</script>
 <div class="container">
-<h1>原神星月反应详解：诺德凯亚月相系统与元素交互</h1>
-<div class="quick"><h3>快速答案</h3><ul>
-<li><strong>星月反应是什么：</strong>诺德凯亚（6.0）引入的独特元素交互体系，水/冰与雷/草结合产生额外效果。</li>
-<li><strong>核心机制：</strong>哥伦比娅等角色在场时触发「月相」状态，增强全队输出并恢复夜魂值。</li>
-<li><strong>月相系统：</strong>根据时间变化呈现新月、上弦、满月、下弦四种形态，不同形态提供不同增益。</li>
-<li><strong>对Build的影响：</strong>星月反应核心角色优先堆精通；配队需兼顾水系和雷系角色触发条件。</li>
+<h1>Genshin Lunar Reactions Explained: Nodkrai Moon Phases &amp; Elemental Interactions</h1>
+<div class="quick"><h3>Quick Answer</h3><ul>
+<li><strong>What are Lunar Reactions:</strong> A unique elemental interaction system introduced in Nodkrai (6.0), where Hydro/Cryo combined with Electro/Dendro produce extra effects.</li>
+<li><strong>Core mechanic:</strong> With characters like Columbina on field, a "Moon Phase" state triggers, boosting team output and restoring Nightsoul.</li>
+<li><strong>Moon Phase system:</strong> Cycles through four forms — new moon, first quarter, full moon, last quarter — each granting a different buff.</li>
+<li><strong>Build impact:</strong> Core Lunar Reaction characters should prioritize EM; teams need to cover both Hydro and Electro to meet trigger conditions.</li>
 </ul></div>
 
-<h2>星月反应基础机制</h2>
+<h2>Lunar Reaction Base Mechanics</h2>
 <div class="section">
-<p>星月反应是诺德凯亚地区的独特元素交互体系，从6.0版本开始实装。它不同于传统的元素反应，是一种<strong>基于月相变化的复合系统</strong>，需要特定角色组合才能激活。</p>
-<h3>星月反应的类型</h3>
+<p>Lunar Reactions are a unique elemental interaction system of the Nodkrai region, implemented starting with version 6.0. Unlike traditional elemental reactions, it is a <strong>compound system driven by Moon Phases</strong>, and requires specific character combinations to activate.</p>
+<h3>Types of Lunar Reactions</h3>
 <ul>
-<li><strong>水+雷→月华涟漪：</strong>生成持续回复生命的水波区域</li>
-<li><strong>冰+草→结晶共生：</strong>产生护盾同时附加元素附着</li>
-<li><strong>雷+水→电流共鸣：</strong>强化元素爆发伤害并缩短CD</li>
-<li><strong>草+冰→月华绽放：</strong>群体治疗并清除负面状态</li>
+<li><strong>Hydro + Electro → Lunar Ripple:</strong> Generates a zone that continuously heals</li>
+<li><strong>Cryo + Dendro → Crystal Symbiosis:</strong> Produces a shield while applying elemental attachments</li>
+<li><strong>Electro + Hydro → Current Resonance:</strong> Amplifies Elemental Burst damage and shortens CD</li>
+<li><strong>Dendro + Cryo → Lunar Bloom:</strong> AoE heal and cleanse negative states</li>
 </ul>
 </div>
 
-<h2>月相系统详解</h2>
+<h2>Moon Phase System in Detail</h2>
 <div class="section">
-<p>月相是星月反应的核心驱动因素，随游戏内时间自动流转：</p>
+<p>The Moon Phase is the core driver of Lunar Reactions and rotates automatically with in-game time:</p>
 <table>
-<tr><th>月相</th><th>持续时间</th><th>主要增益</th><th>适用场景</th></tr>
-<tr><td>新月（朔）</td><td>约6小时</td><td>元素精通+30%</td><td>反应队主力期</td></tr>
-<tr><td>上弦</td><td>约6小时</td><td>充能效率+25%</td><td>技能循环期</td></tr>
-<tr><td>满月（望）</td><td>约6小时</td><td>暴击率+15%</td><td>主C爆发期</td></tr>
-<tr><td>下弦</td><td>约6小时</td><td>治疗量+40%</td><td>生存保障期</td></tr>
+<tr><th>Moon Phase</th><th>Duration</th><th>Main Buff</th><th>Best For</th></tr>
+<tr><td>New Moon</td><td>~6 hours</td><td>EM +30%</td><td>Reaction team DPS window</td></tr>
+<tr><td>First Quarter</td><td>~6 hours</td><td>ER +25%</td><td>Skill-loop window</td></tr>
+<tr><td>Full Moon</td><td>~6 hours</td><td>Crit Rate +15%</td><td>Main DPS burst window</td></tr>
+<tr><td>Last Quarter</td><td>~6 hours</td><td>Healing +40%</td><td>Survivability window</td></tr>
 </table>
-<div class="tip"><strong>提示：</strong>建议在主C技能循环与当前月相匹配时安排战斗，可最大化队伍整体输出。</div>
+<div class="tip"><strong>Tip:</strong> Plan combat when your main DPS's skill loop matches the current Moon Phase to maximize overall team output.</div>
 </div>
 
-<h2>星月反应与角色Build</h2>
+<h2>Lunar Reactions &amp; Character Builds</h2>
 <div class="section">
-<h3>哥伦比娅 Build 要点</h3>
+<h3>Columbina Build Essentials</h3>
 <ul>
-<li><strong>武器：</strong>最佳选择为水伤加成或元素充能类五星法器</li>
-<li><strong>圣遗物：</strong>「苍白的孤舟」4件套为主，追求精通+充能双属性</li>
-<li><strong>属性优先级：</strong>元素精通 > 充能效率 > 暴击率 > 生命值</li>
+<li><strong>Weapon:</strong> Best choice is a 5-star Hydro DMG or ER catalyst</li>
+<li><strong>Artifacts:</strong> Center on 4pc Pale Vessel, pursuing dual EM + ER stats</li>
+<li><strong>Stat priority:</strong> EM &gt; ER &gt; Crit Rate &gt; HP</li>
 </ul>
-<h3>配队思路</h3>
+<h3>Team-Building Ideas</h3>
 <ul>
-<li><strong>核心队形：</strong>哥伦比娅（水）+ 八重神子（雷）+ 纳西妲（草）+ 钟离（岩）</li>
-<li><strong>替代方案：</strong>用行秋或申鹤替换部分位置，保持水/雷/草三元素覆盖</li>
+<li><strong>Core lineup:</strong> Columbina (Hydro) + Yae Miko (Electro) + Nahida (Dendro) + Zhongli (Geo)</li>
+<li><strong>Alternative:</strong> Swap some slots with Xingqiu or Shenhe, keeping Hydro/Electro/Dendro coverage</li>
 </ul>
 </div>
 
-<h2>常见误区</h2>
+<h2>Common Misconceptions</h2>
 <ul>
-<li><strong>误区一：星月反应不需要特定角色</strong> — 必须有星月共鸣角色在场才能激活完整机制</li>
-<li><strong>误区二：月相可以手动切换</strong> — 月相完全由游戏内时间决定，无法人为操控</li>
-<li><strong>误区三：所有元素都能触发星月反应</strong> — 仅限水/冰与雷/草的四组配对</li>
+<li><strong>Misconception 1: Lunar Reactions need no specific characters</strong> — A Lunar-resonance character must be on field to activate the full mechanic</li>
+<li><strong>Misconception 2: Moon Phases can be switched manually</strong> — Moon Phases are determined entirely by in-game time and cannot be controlled</li>
+<li><strong>Misconception 3: Every element can trigger Lunar Reactions</strong> — Only the four Hydro/Cryo-with-Electro/Dendro pairings work</li>
 </ul>
 
-<h2>相关问题</h2>
-<h3>星月反应怎么触发？</h3><p>队伍中需要有星月共鸣角色（如哥伦比娅），并同时存在两种可搭配的元素（水+雷、冰+草等）才能触发。</p>
-<h3>月相会影响战斗吗？</h3><p>会。不同月相提供不同增益，建议在匹配的角色技能循环期内进行高强度战斗。</p>
-<h3>哪些角色适合星月反应队？</h3><p>哥伦比娅为核心，八重神子、纳西妲、行秋等为优秀副选。</p>
-<h3>星月反应和夜魂系统有关联吗？</h3><p>有间接关联。两者都是地区专属系统，但触发条件和效果不同，可同时叠加增益。</p>
+<h2>Related Questions</h2>
+<h3>How are Lunar Reactions triggered?</h3><p>Your team must include a Lunar-resonance character (such as Columbina) and have two complementary elements present (Hydro+Electro, Cryo+Dendro, etc.) for it to trigger.</p>
+<h3>Do Moon Phases affect combat?</h3><p>Yes. Different Moon Phases grant different buffs, so run high-intensity combat within the skill-loop window that matches your team.</p>
+<h3>Which characters suit Lunar Reaction teams?</h3><p>Columbina is the core, with Yae Miko, Nahida, and Xingqiu as strong secondary picks.</p>
+<h3>Is the Lunar Reaction related to the Nightsoul system?</h3><p>Indirectly. Both are region-exclusive systems, but with different triggers and effects, and their buffs can stack simultaneously.</p>
 
-<h2>相关攻略</h2>
+<h2>Related Guides</h2>
 <ul>
-<li><a href="https://genshin-guide-one-five.vercel.app/guides/nodkrai-guide.html">诺德凯亚地区全指南</a></li>
-<li><a href="https://genshin-guide-one-five.vercel.app/guides/columbina-build.html">哥伦比娅 Build 指南</a></li>
-<li><a href="https://genshin-guide-one-five.vercel.app/guides/natlan-guide.html">纳塔地区全指南</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/nodkrai-guide.html">Nodkrai Region Guide</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/columbina-build.html">Columbina Build Guide</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/natlan-guide.html">Natlan Region Guide</a></li>
 </ul>
 <div class="pairbox">
-<a href="https://genshin-guide-one-five.vercel.app/guides/lunar-reaction-guide.html">中文版本</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/lunar-reaction-guide.html">Chinese Version</a>
 <a href="/">Back to Home</a>
 <a href="https://genshin-guide-one-five.vercel.app/guides/all-guides-en.html">All Guides</a>
 </div>
