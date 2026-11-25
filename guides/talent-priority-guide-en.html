@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Genshin Talent Priority: How to Level Talents by Role (Decision Tree)</title>
+<title>Genshin Talent Priority: How to Level by Role</title>
 <meta name="description" content="A full talent-leveling decision guide from main DPS to support. Which talents to max, which to stop at, with character examples and Crown of Insight…">
 <link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/talent-priority-guide-en.html"/>
 <link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/talent-priority-guide.html"/>
 <link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/talent-priority-guide-en.html"/>
 <link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/talent-priority-guide-en.html"/>
-<meta property="og:title" content="Genshin Talent Priority: How to Level Talents by Role">
+<meta property="og:title" content="Genshin Talent Priority: How to Level by Role">
 <meta property="og:description" content="A full talent-leveling decision guide from main DPS to support. Which talents to max, which to stop at, with character examples and Crown of Insight…">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/talent-priority-guide-en.html">
@@ -17,7 +17,15 @@
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
-<style>:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}*{margin:0;padding:0;box-sizing:border-box}body{font-family:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.85}.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}h1{font-size:30px;margin:26px 0 8px;color:var(--accent)}h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}p{margin-bottom:14px}ul,ol{margin:0 0 16px 24px}li{margin-bottom:6px}strong{color:#ffd9a0}table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}th{background:#3b2f7e;color:#fff;font-weight:600}tr:last-child td{border-bottom:none}tr:hover{background:rgba(218,112,214,.07)}.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}.quick ul{margin:6px 0 0 20px}.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}.pairbox a:hover{background:var(--accent)}.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}a{color:#b9a8ff}.tip{background:rgba(106,90,205,.12);border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;border-radius:0 8px 8px 0;font-size:14px}.section{background:var(--card);border-radius:10px;padding:18px 22px;margin:16px 0;border:1px solid var(--border)}</style>
+<style>:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}*{margin:0;padding:0;box-sizing:border-box}body{font-family:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.85}.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}h1{font-size:30px;margin:26px 0 8px;color:var(--accent)}h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}p{margin-bottom:14px}ul,ol{margin:0 0 16px 24px}li{margin-bottom:6px}strong{color:#ffd9a0}table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}th{background:#3b2f7e;color:#fff;font-weight:600}tr:last-child td{border-bottom:none}tr:hover{background:rgba(218,112,214,.07)}.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}.quick ul{margin:6px 0 0 20px}.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}.pairbox a:hover{background:var(--accent)}.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}a{color:#b9a8ff}.tip{background:rgba(106,90,205,.12);border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;border-radius:0 8px 8px 0;font-size:14px}.section{background:var(--card);border-radius:10px;padding:18px 22px;margin:16px 0;border:1px solid var(--border)}.quick h2{font-size:17px;margin:20px 0 8px;color:var(--secondary);border-left:0;padding-left:0}
+</style>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="twitter:title" content="Genshin Talent Priority: How to Level by Role">
+<meta name="twitter:description" content="A full talent-leveling decision guide from main DPS to support. Which talents to max, which to stop at, with character examples and Crown of Insight…">
+<meta name="twitter:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="author" content="Teyvat Guide Team">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Teyvat Guide Team", "url": "https://genshin-guide-one-five.vercel.app/about.html"}</script>
 </head>
 <body>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Talent Priority: How to Level Talents by Role (Decision Tree)", "description": "A full talent-leveling decision guide from main DPS to support. Which talents to max, which to stop at, with character examples and Crown of Insight allocation strategy.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-11-15", "dateModified": "2026-11-15", "inLanguage": "en", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/talent-priority-guide-en.html"}</script>
@@ -25,7 +33,7 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://genshin-guide-one-five.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://genshin-guide-one-five.vercel.app/all-guides.html"}, {"@type": "ListItem", "position": 3, "name": "Genshin Talent Priority: How to Level Talents by Role", "item": "https://genshin-guide-one-five.vercel.app/guides/talent-priority-guide-en.html"}]}</script>
 <div class="container">
 <h1>Genshin Talent Priority: How to Level Talents by Role</h1>
-<div class="quick"><h3>Quick Answers</h3><ul>
+<div class="quick"><h2>Quick Answers</h2><ul>
 <li><strong>Core principle:</strong> a main DPS maxes its key burst; a support only reaches the level that matters.</li>
 <li><strong>Value inflection point:</strong> level 6 on one talent is the best cost-to-benefit level; cost climbs steeply after that.</li>
 <li><strong>Crown strategy:</strong> do not spread Crowns evenly; concentrate them on one or two core characters.</li>
