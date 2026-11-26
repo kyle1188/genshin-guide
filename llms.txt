@@ -129,7 +129,8 @@ Formula-level explanations. These pages answer the single question each mechanic
 Pity math, banner rules, and whether each paid product is worth the money.
 
 - [gacha-strategy](https://genshin-guide-one-five.vercel.app/guides/gacha-strategy-en.html): Primogem budgeting, pull planning, and what is worth pulling in the current cycle
-- [weapon-banner-guide](https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide-en.html): Epitomized Path, Fate Points, and how weapon pity differs from character pity
+- [weapon-banner-guide](https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide-en.html)
+- [gacha-odds-guide](https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide-en.html): Official 5-star consolidated rate (1.6%), the community soft-pity curve from pull 74, expected pulls to a specific UP, and weapon-banner 75/25 math: Epitomized Path, Fate Points, and how weapon pity differs from character pity
 - [chronicled-wish-guide](https://genshin-guide-one-five.vercel.app/guides/chronicled-wish-guide-en.html): Chronicled Wish mechanics, Fate Point rules, and pull strategy
 - [primogem-earning-guide](https://genshin-guide-one-five.vercel.app/guides/primogem-earning-guide-en.html): Daily, weekly and event Primogem sources with realistic monthly totals
 - [mora-guide](https://genshin-guide-one-five.vercel.app/guides/mora-guide-en.html): Mora farming rates, Ley Line payouts, and a spending plan that survives endgame

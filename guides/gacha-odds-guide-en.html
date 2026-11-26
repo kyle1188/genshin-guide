@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genshin Gacha Odds: Full Probability Table & Pull Math</title>
+<meta name="description" content="Genshin gacha odds: 5-star consolidated rate 1.6% (~62.5 pulls avg), 4-star pity every 10, soft pity from pull 74, expected ~91 pulls to a specific 5-star (worst 180). Full probability tables + three decision rules.">
+<meta name="keywords" content="genshin gacha odds,5 star rate,soft pity,1.6%,50/50,capturing radiance,gacha probability table">
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide-en.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide-en.html" />
+<meta property="og:title" content="Genshin Gacha Odds: Full Probability Table & Pull Math">
+<meta property="og:description" content="5-star consolidated 1.6%, soft pity from pull 74, ~91 pulls expected to the featured 5-star, 180 worst. Full tables and decision rules.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide-en.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Genshin Gacha Odds: Full Probability Table & Pull Math", "description": "Genshin gacha odds: 5-star consolidated rate 1.6% (~62.5 pulls avg), 4-star pity every 10, soft pity from pull 74, expected ~91 pulls to a specific 5-star (worst 180). Full tables plus decision rules.", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-11-26", "dateModified": "2026-11-26", "inLanguage": "en", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide-en.html", "isAbout": {"@type": "Thing", "name": "Genshin Impact wish probability"}, "mentions": [{"@type": "Thing", "name": "pity"}, {"@type": "Thing", "name": "50/50"}, {"@type": "Thing", "name": "Capturing Radiance"}, {"@type": "Thing", "name": "Epitomized Path"}, {"@type": "Thing", "name": "Lightrace Wish (6.7)"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the 5-star rate in Genshin Impact?", "acceptedAnswer": {"@type": "Answer", "text": "Official base rate is 0.6% per pull; the consolidated rate (pity included) is 1.6%, i.e. one 5-star every ~62.5 pulls on average. 4-star: 5.1% base / 13% consolidated, with at least one 4-star per 10 pulls."}}, {"@type": "Question", "name": "How many pulls to get a specific limited character?", "acceptedAnswer": {"@type": "Answer", "text": "Since Capturing Radiance (v5.0) the consolidated chance of the featured 5-star is 55%: about 91 pulls expected, 180 worst case (28,800 Primogems). Budget ~12,160 Primogems (76-pull soft-pity average) on this site."}}, {"@type": "Question", "name": "When does soft pity start?", "acceptedAnswer": {"@type": "Answer", "text": "Community measurement: the ramp starts at pull 74 (~6.6%) and climbs ~+6% per pull until 100% at pull 90. HoYoverse only publishes the 0.6% base and 1.6% consolidated figures."}}, {"@type": "Question", "name": "Do weapon banner odds match the character banner?", "acceptedAnswer": {"@type": "Answer", "text": "No. Weapon banner: 0.7% base / 1.85% consolidated, soft pity 63, hard pity 80, 75% of 5-stars are featured weapons. Epitomized Path guarantees your charted weapon within 160 pulls (25,600 Primogems worst case)."}}, {"@type": "Question", "name": "Can a 10-pull give two 5-stars?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. After a 5-star lands, the remaining pulls in the same 10-pull keep judging independently. The last 5-star in the batch sets the 50/50 state for the next 5-star."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://genshin-guide-one-five.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://genshin-guide-one-five.vercel.app/all-guides-en.html"}, {"@type": "ListItem", "position": 3, "name": "Genshin Gacha Odds: Full Probability Table & Pull Math", "item": "https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide-en.html"}]}</script>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="twitter:title" content="Genshin Gacha Odds: Full Probability Table & Pull Math">
+<meta name="twitter:description" content="5-star consolidated 1.6%, soft pity from pull 74, ~91 pulls expected to the featured 5-star, 180 worst. Full tables and decision rules.">
+<meta name="twitter:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+</head>
+<body>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide.html">中文</a>
+</div>
+<div class="container">
+<h1>Genshin Gacha Odds: Full Probability Table & Pull Math</h1>
+<p class="lead">"How many pulls until I get the character?" is the core arithmetic of every pull decision: the official consolidated 5-star rate is 1.6% (one 5-star every ~62.5 pulls on average), but the <strong>expected cost of a specific limited character is ~91 pulls, worst case 180</strong> (28,800 Primogems). This page lists the official rate tables, the community soft-pity curve, the weapon-banner 75/25 split, and the 6.7 Lightrace Wish in one place; the expected-pull and cost math is compiled by Teyvat Starter Guide and matches the site-wide pity-page figures (160 Primogems = 1 wish).</p>
+<div class="quick"><ul>
+<li><strong>Official consolidated rates:</strong> 5-star base 0.6% -> consolidated 1.6% (avg 62.5 pulls); 4-star base 5.1% -> 13%, with at least one 4-star per 10 pulls.</li>
+<li><strong>Soft pity:</strong> ramps from pull 74 (~6.6%), +6% per pull, 100% at pull 90 (community-measured; not officially published).</li>
+<li><strong>Specific UP:</strong> since Capturing Radiance (v5.0) the consolidated featured rate is 55%; expected ~91 pulls, worst 180 = 28,800 Primogems.</li>
+<li><strong>Weapon banner:</strong> consolidated 1.85%, 75/25 split, soft 63 / hard 80; Epitomized Path locks your weapon within 160 pulls (25,600 worst).</li>
+<li><strong>Lightrace Wish (new, 6.7):</strong> curated pool of returning 5-stars, shares pity with the Standard/Chronicled banner.</li>
+</ul></div>
+<h2>Official rate table: base vs consolidated</h2>
+<p>Numbers come straight from the in-game Wish details disclosure:</p>
+<table>
+<tr><th>Item</th><th>Base rate / pull</th><th>Consolidated / pull (official)</th><th>10-pull expectation</th><th>Pity</th></tr>
+<tr><td>5-star character (limited / standard / chronicled)</td><td>0.6%</td><td>1.6%</td><td>~15-16% chance of a 5-star</td><td>Guaranteed at 90</td></tr>
+<tr><td>5-star weapon (weapon banner)</td><td>0.7%</td><td>1.85%</td><td>~17-18% chance of a 5-star</td><td>Guaranteed at 80</td></tr>
+<tr><td>4-star item</td><td>5.1%</td><td>13.0%</td><td>At least one per 10 pulls</td><td>10-pull pity</td></tr>
+<tr><td>3-star weapon</td><td>94.3%</td><td>85.4%</td><td>-</td><td>-</td></tr>
+</table>
+<p>Two things people mix up: <strong>base rate is the per-pull hit chance with no pity involved</strong>; the consolidated rate is the long-run average after soft/hard pity. A 10-pull has roughly a 15-18% expected share of 5-stars, and after a 5-star lands the remaining pulls in that batch keep judging independently - so two 5-stars in one 10-pull is possible.</p>
+<h2>Soft pity curve: what each pull after 74 adds</h2>
+<p>HoYoverse publishes only the 0.6% base and 1.6% consolidated figures. The ramp below is the consensus from large-sample community measurement: start at pull 74, roughly +6% per pull:</p>
+<table>
+<tr><th>Pulls since last 5-star</th><th>Per-pull 5-star chance (community)</th></tr>
+<tr><td>Pulls 1-73</td><td>0.6% (flat)</td></tr>
+<tr><td>Pull 74</td><td>~6.6%</td></tr>
+<tr><td>Pulls 75-80</td><td>~12.6% -> 42.6% (+6% each)</td></tr>
+<tr><td>Pulls 81-89</td><td>~48.6% -> 96.6%</td></tr>
+<tr><td>Pull 90</td><td>100% (hard pity)</td></tr>
+</table>
+<p>Implication: the <strong>average 5-star lands around pull 62.5 (1 / 1.6%), but most players hit it between pulls 75-85</strong>, because the curve is flat before 74 and steep after. This site budgets a soft-pity average of ~76 pulls = 12,160 Primogems, consistent with that curve.</p>
+<h2>Getting the specific UP: ~91 pulls expected, 180 worst</h2>
+<p>A 5-star drop is not an UP. Before v5.0 it was a pure 50/50; since Capturing Radiance, HoYoverse states the <strong>consolidated featured rate is 55%</strong> (a hidden counter makes three consecutive losses impossible). At that 55% figure:</p>
+<table>
+<tr><th>Budget line</th><th>Pulls</th><th>Primogems (160/pull)</th></tr>
+<tr><td>Expected (55% math)</td><td>~91</td><td>~14,500</td></tr>
+<tr><td>Soft-pity average (site budgeting line)</td><td>~76</td><td>12,160</td></tr>
+<tr><td>One hard pity</td><td>90</td><td>14,400</td></tr>
+<tr><td>Worst case (lost 50/50 + two hard pities)</td><td>180</td><td>28,800</td></tr>
+</table>
+<p>USD conversion (same figures as the site spending pages: $2.00/pull without the first-time purchase double, $1.32/pull with it): expected cost ~<strong>$100-152</strong>, worst case 180 pulls = <strong>$360</strong> (no first-time double). Budgeting one hard pity (14,400 Primogems) is the safe line.</p>
+<h2>Weapon banner: 75/25 and Epitomized Path</h2>
+<table>
+<tr><th>Item</th><th>Value</th></tr>
+<tr><td>5-star base / consolidated</td><td>0.7% / 1.85%</td></tr>
+<tr><td>Soft pity / hard pity</td><td>63 / 80 pulls</td></tr>
+<tr><td>Featured weapon share</td><td>75% (remaining 25%: the other featured or off-banner)</td></tr>
+<tr><td>Epitomized Path (1 Fate Point since v5.0)</td><td>One miss -> next 5-star is your charted weapon</td></tr>
+<tr><td>Worst-case lock cost</td><td>160 pulls = 25,600 Primogems</td></tr>
+</table>
+<p>The 75/25 split is the most misread number in the game: it does not mean "one charted weapon every 4 pulls". See the R1-R5 value table in the <a href="%s/guides/signature-weapon-worth-en.html">signature weapon guide</a> for when the 75/25 math is actually worth your Primogems.</p>
+<h2>How the four banner types share pity (post-6.7)</h2>
+<table>
+<tr><th>Banner</th><th>Pity sharing</th><th>Note</th></tr>
+<tr><td>Character event (both phases)</td><td>One shared counter + 50/50 state</td><td>Main and sub UP on the same banner</td></tr>
+<tr><td>Standard (Wanderlust)</td><td>Independent counter</td><td>Standard-pool characters only</td></tr>
+<tr><td>Weapon event</td><td>Rolls between weapon banners; Fate Points reset each banner</td><td>75/25 + Epitomized Path</td></tr>
+<tr><td>Chronicled Wish (4.5+) / Lightrace Wish (6.7+)</td><td>Share with each other and with Standard</td><td>Designatable target, 1 Fate Point lock</td></tr>
+</table>
+<p>Practical takeaway: <strong>progress on a limited character banner rolls into the next one (never resets across versions)</strong>; Standard-banner progress only rolls into Chronicled/Standard. The 6.7 Lightrace Wish plugs returning-character pools into that system, so F2P players chasing an old character have options beyond waiting - check the <a href="%s/guides/banner-rerun-guide-en.html">rerun schedule</a> before banking.</p>
+<h2>Turning numbers into decisions: three rules</h2>
+<p>This decision layer is compiled by Teyvat Starter Guide; every rate cited above comes from official disclosures or the stated community measurement:</p>
+<table>
+<tr><th>Rule</th><th>Number behind it</th><th>How to use it</th></tr>
+<tr><td>1. Budget the soft-pity average, not "62.5 pulls"</td><td>76 pulls / 12,160 Primogems</td><td>62.5 is "any 5-star". The featured-UP budget is 76-90 pulls.</td></tr>
+<tr><td>2. Bank pity only on the limited character banner</td><td>Counter rolls across banners</td><td>Pulls you sink now pay off on the next limited banner; Standard/weapon banks do not transfer.</td></tr>
+<tr><td>3. No FOMO spending before pull 74</td><td>Flat 0.6% before the ramp</td><td>Per-Primogem expected value peaks inside the soft-pity window - hold saves until 74+.</td></tr>
+</table>
+<h2>Common misreads</h2>
+<ul>
+<li><strong>"1.6% means one 5-star per ~10-pull set"</strong> - 16% is an expected share, not a guarantee; most 10-pulls come back with zero 5-stars.</li>
+<li><strong>"Losing the 50/50 is pure loss"</strong> - a loss arms a guaranteed featured next 5-star; the worst case caps at 180 pulls and the expectation stays ~91.</li>
+<li><strong>"Soft pity is an official mechanic"</strong> - the 74-pull ramp is community consensus; the only published guarantees are the 90-pull 5-star pity and the 10-pull 4-star pity.</li>
+</ul>
+<h2>Related guides</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide-en.html">Full pity system (soft/hard pity and 50/50)</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/gacha-strategy-en.html">Gacha budgeting (where Primogems come from)</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/pull-cost-guide-en.html">Spending hub: full C0-C6 cost matrix</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/should-i-pull-mitya-en.html">Should you pull Mitya (v7.2, current)</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide-en.html">Weapon banner guide: Epitomized Path and 75/25</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/signature-weapon-worth-en.html">Is the signature weapon worth it: R1-R5 and 4-star fallbacks</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/chronicled-wish-guide-en.html">Chronicled Wish guide: designatable targets</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/primogem-roadmap-en.html">Primogem income roadmap (F2P banking)</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/banner-rerun-guide-en.html">Banner rerun schedule: wait or pull now</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/best-f2p-en.html">Best F2P picks: characters, weapons and teams</a></li>
+</ul>
+<h2>Bottom line</h2>
+<p>One line: <strong>consolidated 5-star 1.6% (~62.5 pulls average), soft pity ramps from 74, ~91 pulls expected / 180 worst to the specific UP (28,800 Primogems), weapon banner 75/25 with a 160-pull Epitomized Path cap.</strong> Budget 14,400 Primogems, no FOMO before pull 74, bank pity only on the limited character banner - the odds are arithmetic, not vibes.</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide.html">中文版</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>Get Genshin guide updates</h3>
+<p>Weekly character leveling and version guides. No spam.</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">Subscribe</button>
+</form>
+</div>
+<div class="geo-block" style="margin:34px 0 8px;padding:18px 22px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.12);border-radius:12px;font-size:14px;color:#9aa6b8"><h2 style="font-size:16px;margin:0 0 10px;color:#e8c474;border-left:4px solid #e8c474;padding-left:10px">Sources & citation</h2><p style="margin:0 0 8px">Official rates (0.6%/5.1% base, 1.6%/13% consolidated, 90/10 pity) from the in-game Wish details disclosure; the soft-pity ramp (from pull 74, ~+6%/pull) is a community large-sample measurement; the ~91-pull expectation is derived from the official 55% consolidated featured rate (Capturing Radiance, v5.0). Expected-pull tables and USD cost math on this page are compiled by Teyvat Starter Guide. Data as of <strong>Nov 2026 (version 7.2)</strong>.</p><ul style="margin:0 0 10px 20px"><li>Primary sources: HoYoverse official wish detail pages, Genshin Impact Fandom Wiki (Wishes), community statistical projects (paimon.moe figures)</li><li>Disclosure: this is a <strong>free unofficial fan site</strong> with no ads, no affiliate revenue, and no paid placement.</li><li>Corrections: email <a href="mailto:kevinxiao118@163.com">kevinxiao118@163.com</a>; verified fixes ship within 48h.</li></ul><p style="margin:0;font-size:13px">Cite this page: Teyvat Starter Guide, "Genshin Gacha Odds: Full Probability Table & Pull Math" — https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide-en.html (accessed 2026-11)</p></div>
+<div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('Subscribed!');
+    } catch(err) {
+      alert('Subscription failed, please try again.');
+    }
+ 
+</body>
+</html>

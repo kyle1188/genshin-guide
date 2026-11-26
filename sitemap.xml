@@ -3425,4 +3425,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/nodkrai-guide-en.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/nodkrai-guide-en.html" />
 </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide-en.html" />
+  </url>
 </urlset>

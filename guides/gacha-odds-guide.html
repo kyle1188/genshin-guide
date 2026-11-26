@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神抽卡概率：官方概率表、软保底曲线与期望抽数</title>
+<meta name="description" content="原神抽卡概率速查：5★综合 1.6%（约 62.5 抽一个）、4★ 十连保底、软保底 74 抽起跳、5.0 捕获明光后指定 UP 综合 55%，期望约 91 抽、最坏 180 抽。完整概率表+期望抽数表+三条决策规则。">
+<meta name="keywords" content="原神抽卡概率,五星概率,软保底,1.6%,50/50,捕获明光,gacha odds genshin">
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide.html" />
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide-en.html" />
+<meta property="og:title" content="原神抽卡概率：官方概率表、软保底曲线与期望抽数">
+<meta property="og:description" content="5★综合 1.6%、软保底 74 抽、期望约 91 抽拿 UP、最坏 180 抽。完整概率表+三条决策规则。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+:root{--primary:#6a5acd;--secondary:#9370db;--accent:#da70d6;--bg:#1a1a2e;--bg-light:#16213e;--card:#202042;--text:#e8e8e8;--muted:#a8a8b8;--border:#2e2e52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.85}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 40px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:rgba(22,33,62,.92);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:99;backdrop-filter:blur(6px)}
+.topbar a{color:var(--text);text-decoration:none;margin:0 10px;font-size:14px}
+.topbar a:hover{color:var(--accent)}
+h1{font-size:30px;margin:26px 0 8px;color:var(--accent);line-height:1.4}
+h2{font-size:22px;margin:30px 0 12px;color:#b9a8ff;border-left:4px solid var(--accent);padding-left:10px}
+h3{font-size:17px;margin:20px 0 8px;color:var(--secondary)}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 16px 24px}
+li{margin-bottom:6px}
+strong{color:#ffd9a0}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:#3b2f7e;color:#fff;font-weight:600}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(218,112,214,.07)}
+.quick{background:linear-gradient(135deg,rgba(106,90,205,.25),rgba(218,112,214,.15));border:1px solid #6a5acd66;border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.quick ul{margin:6px 0 0 20px}
+.pairbox{display:flex;gap:12px;margin:28px 0 0;flex-wrap:wrap}
+.pairbox a{flex:1;min-width:200px;padding:13px;text-align:center;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;font-weight:600;transition:.2s}
+.pairbox a:hover{background:var(--accent)}
+.sub-box{background:linear-gradient(135deg,var(--primary),var(--accent));padding:26px;border-radius:14px;margin:26px 0 0;text-align:center}
+.sub-box h3{color:#fff;margin-bottom:8px;font-size:18px}
+.sub-box p{color:rgba(255,255,255,.92);margin-bottom:14px;font-size:14px}
+.sub-in{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.sub-box input{padding:11px 14px;width:58%;min-width:200px;border:none;border-radius:8px;font-size:14px}
+.sub-box button{padding:11px 22px;background:#2a1e5e;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+.sub-box button:hover{background:#3b2f7e}
+.footer{text-align:center;padding:26px 10px 6px;color:var(--muted);font-size:12px}
+a{color:#b9a8ff}
+
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神抽卡概率：官方概率表、软保底曲线与期望抽数", "description": "原神抽卡概率速查：5★综合 1.6%（约 62.5 抽一个）、4★ 十连保底、软保底 74 抽起跳、5.0 捕获明光后指定 UP 综合 55%，期望约 91 抽、最坏 180 抽。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-11-26", "dateModified": "2026-11-26", "inLanguage": "zh-CN", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide.html", "isAbout": {"@type": "Thing", "name": "Genshin Impact wish probability (抽卡概率)"}, "mentions": [{"@type": "Thing", "name": "pity (保底)"}, {"@type": "Thing", "name": "50/50"}, {"@type": "Thing", "name": "Capturing Radiance (捕获明光)"}, {"@type": "Thing", "name": "Epitomized Path (命定之路)"}, {"@type": "Thing", "name": "Lightrace Wish (6.7)"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "原神五星基础概率是多少？", "acceptedAnswer": {"@type": "Answer", "text": "官方公布基础概率 0.6%/抽，综合概率（含保底）1.6%/抽，即平均约 62.5 抽出一个五星。4★ 基础 5.1%、综合 13%，且每 10 抽至少 1 个 4★。"}}, {"@type": "Question", "name": "抽到指定 UP 角色平均要几抽？", "acceptedAnswer": {"@type": "Answer", "text": "5.0 起「捕获明光」把拿 UP 的综合概率提到 55%：期望约 91 抽、最坏 180 抽（28,800 原石）。本站口径按软保底约 76 抽 ≈ 12,160 原石做预算。"}}, {"@type": "Question", "name": "软保底从第几抽开始？", "acceptedAnswer": {"@type": "Answer", "text": "社区统计第 74 抽起跳（约 6.6%），之后每抽 +6%，第 90 抽 100%。官方只公布 0.6% 与综合 1.6%，软保底曲线是社区实测口径。"}}, {"@type": "Question", "name": "武器池概率和角色池一样吗？", "acceptedAnswer": {"@type": "Answer", "text": "不一样。武器池 5★ 基础 0.7%/综合 1.85%，软保底 63、硬保底 80；每出 5★ 有 75% 是 UP 武器。命定之路保证 160 抽内锁定指定武器（最坏 25,600 原石）。"}}, {"@type": "Question", "name": "十连能出两个五星吗？", "acceptedAnswer": {"@type": "Answer", "text": "能。10 抽内每出 1 个 5★ 后剩余抽数继续独立判定；多个 5★ 按出现顺序结算，最后一个 5★ 决定下一个 5★ 是 50/50 还是必 UP。"}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://genshin-guide-one-five.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://genshin-guide-one-five.vercel.app/all-guides.html"}, {"@type": "ListItem", "position": 3, "name": "原神抽卡概率：官方概率表、软保底曲线与期望抽数", "item": "https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide.html"}]}</script>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="twitter:title" content="原神抽卡概率：官方概率表、软保底曲线与期望抽数">
+<meta name="twitter:description" content="5★综合 1.6%、软保底 74 抽、期望约 91 抽拿 UP、最坏 180 抽。完整概率表+三条决策规则。">
+<meta name="twitter:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+</head>
+<body>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神抽卡概率：官方概率表、软保底曲线与期望抽数</h1>
+<p class="lead">「到底几抽能出 UP」是抽卡决策的核心算术：官方公布 5★ 综合概率 1.6%（平均 62.5 抽出一个五星），但拿到<strong>指定 UP 角色</strong>的期望约 91 抽、最坏 180 抽（28,800 原石）。本页把官方概率表、社区软保底曲线、武器池 75/25 与 6.7 新增 Lightrace Wish 一次列全；期望抽数与成本折算为「Teyvat 入门攻略」独立整理计算，与站内保底页口径一致（160 原石 = 1 纠缠）。</p>
+<div class="quick"><ul>
+<li><strong>官方综合概率：</strong> 5★ 基础 0.6% → 综合 1.6%（平均 62.5 抽一个）；4★ 基础 5.1% → 综合 13%，每 10 抽至少 1 个 4★。</li>
+<li><strong>软保底：</strong> 第 74 抽起跳（约 6.6%），每抽 +6%，第 90 抽 100%（官方未公布软保底值，社区统计口径）。</li>
+<li><strong>指定 UP：</strong> 5.0「捕获明光」后综合 55%；期望约 91 抽、最坏 180 抽 = 28,800 原石。</li>
+<li><strong>武器池：</strong> 综合 1.85%，75/25，软 63 / 硬 80；命定之路 160 抽内锁定（最坏 25,600 原石）。</li>
+<li><strong>新池 Lightrace Wish：</strong> 6.7（2026-07）上线，老角色精选池，与常驻/集录池共享 pity。</li>
+</ul></div>
+<h2>官方概率表：基础 vs 综合（十连口径）</h2>
+<p>数字直接取自游戏内「祈愿详情」页的官方公示。综合概率 = 含保底机制后的实际期望概率：</p>
+<table>
+<tr><th>物品</th><th>基础概率/抽</th><th>综合概率/抽（官方）</th><th>10 连期望</th><th>保底</th></tr>
+<tr><td>5★ 角色（限定/常驻/集录）</td><td>0.6%</td><td>1.6%</td><td>≈15–16% 出一个 5★</td><td>90 抽必出</td></tr>
+<tr><td>5★ 武器（武器池）</td><td>0.7%</td><td>1.85%</td><td>≈17–18% 出一个 5★</td><td>80 抽必出</td></tr>
+<tr><td>4★ 物品</td><td>5.1%</td><td>13.0%</td><td>10 抽必出至少 1 个</td><td>10 抽保底</td></tr>
+<tr><td>3★ 武器</td><td>94.3%</td><td>85.4%</td><td>—</td><td>—</td></tr>
+</table>
+<p>两个易混点：<strong>「基础概率」只描述不触发保底时的单次命中</strong>；「综合概率」才是含软硬保底后的长期平均。十连出现 5★ 的期望概率按综合率线性估算（≈15–18%），十连内已出 5★ 后剩余抽数继续独立判定——所以十连可以出两个 5★。</p>
+<h2>软保底曲线：74 抽以后每抽加多少</h2>
+<p>官方只公布 0.6% 与综合 1.6% 两个数，软保底曲线是社区统计项目（大样本模拟+游戏内记录）的共识口径，起跳点 74 抽、斜率约 +6%/抽：</p>
+<table>
+<tr><th>当前抽数（距上次 5★）</th><th>单抽 5★ 概率（社区口径）</th></tr>
+<tr><td>第 1–73 抽</td><td>0.6%（恒定）</td></tr>
+<tr><td>第 74 抽</td><td>≈6.6%</td></tr>
+<tr><td>第 75–80 抽</td><td>≈12.6% → 42.6%（每抽 +6%）</td></tr>
+<tr><td>第 81–89 抽</td><td>≈48.6% → 96.6%</td></tr>
+<tr><td>第 90 抽</td><td>100%（硬保底）</td></tr>
+</table>
+<p>推论：<strong>平均 5★ 落在 62.5 抽（1 ÷ 1.6%），但「多数玩家 75–85 抽之间拿到」</strong>——因为 74 抽前概率被压低、74 抽后曲线陡峭。本站保底页按「软保底平均命中 ≈76 抽 ≈ 12,160 原石」做预算，与此曲线一致。</p>
+<h2>指定 UP 角色：期望 91 抽、最坏 180 抽</h2>
+<p>出 5★ ≠ 出 UP。5.0 前是纯 50/50（输一次下五星必 UP，最坏 180 抽）；5.0 加入「捕获明光」后官方公布<strong>综合 55%</strong> 拿到 UP（隐藏 C-State 计数器，连歪 3 次必触发转化）。按 55% 折算：</p>
+<table>
+<tr><th>口径</th><th>抽数</th><th>原石（160/抽）</th></tr>
+<tr><td>期望（55% 折算，~1.6 个 5★/UP）</td><td>约 91 抽</td><td>约 14,500</td></tr>
+<tr><td>软保底平均（本站预算口径）</td><td>约 76 抽</td><td>12,160</td></tr>
+<tr><td>硬保底一次</td><td>90 抽</td><td>14,400</td></tr>
+<tr><td>最坏（输 50/50 + 两个硬保底）</td><td>180 抽</td><td>28,800</td></tr>
+</table>
+<p>美元折算（沿用本站花钱页口径：无首充 $2.00/抽、含首充 2x $1.32/抽）：期望成本约 <strong>$100–152</strong>，最坏 180 抽 <strong>$360</strong>（无首充）。预算做在 14,400 原石（一个硬保底）是稳妥线。</p>
+<h2>武器池 75/25 与命定之路</h2>
+<table>
+<tr><th>项</th><th>数值</th></tr>
+<tr><td>5★ 基础 / 综合</td><td>0.7% / 1.85%</td></tr>
+<tr><td>软保底 / 硬保底</td><td>63 / 80 抽</td></tr>
+<tr><td>UP 武器占比</td><td>75%（其余 25% 出另一把 UP 或歪出 4★ 池武器）</td></tr>
+<tr><td>命定之路（5.0 起 1 点）</td><td>歪 1 次 → 下一 5★ 必为指定武器</td></tr>
+<tr><td>最坏锁定成本</td><td>160 抽 = 25,600 原石</td></tr>
+</table>
+<p>武器池 75/25 意味着<strong>「平均 4.3 抽一个 5★ 才拿到那把刀」</strong>的直觉是错的：正确口径是期望 8.1 个 5★（1 ÷ 0.124 按 75% 折算后约 4.2 个 5★/指定刀）——详见 <a href="%s/guides/signature-weapon-worth.html">专武值不值</a> 的 R1→R5 收益表。武器池 4★ 替代 85% 门槛与角色 4★ 不通用。</p>
+<h2>四种卡池的 pity 关系（6.7 后）</h2>
+<table>
+<tr><th>卡池</th><th>pity 共享</th><th>备注</th></tr>
+<tr><td>角色限定（上下两期）</td><td>两期共享同一 pity + 50/50</td><td>当期主 UP 与副 UP 同池</td></tr>
+<tr><td>常驻（Wanderlust）</td><td>独立计数</td><td>只出常驻池角色</td></tr>
+<tr><td>武器限定</td><td>跨武器池共享（Fate Point 每期清零）</td><td>75/25 + 命定之路</td></tr>
+<tr><td>集录 Wish（4.5+）/ Lightrace Wish（6.7+）</td><td>两者共享、与常驻共享</td><td>可指定目标，1 Fate Point 锁定</td></tr>
+</table>
+<p>实操含义：<strong>限定角色池垫的抽数会滚到下一期角色限定池</strong>（跨版本不清零）；常驻池垫的抽数只能滚给集录/常驻。6.7 的 Lightrace Wish 把「老角色精选池」接进集录体系，攒老角色的 F2P 不再干等复刻，直接看 <a href="%s/guides/banner-rerun-guide.html">复刻时间表</a> 判断该不该等。</p>
+<h2>把数字读成决策：三条规则</h2>
+<p>本节为「Teyvat 入门攻略」独立整理的决策层推导（概率数字全部来自官方公示+社区统计口径）：</p>
+<table>
+<tr><th>规则</th><th>数字依据</th><th>用法</th></tr>
+<tr><td>① 预算按「软保底平均」不按「期望 62.5」</td><td>76 抽 / 12,160 原石</td><td>62.5 抽是「出任意 5★」，不是「出 UP」；UP 预算按 76–90 抽</td></tr>
+<tr><td>② 垫池只在「限定角色池」做</td><td>pity 跨期共享</td><td>抽数滚给下期限定；常驻/武器池垫数各走各的，不混算</td></tr>
+<tr><td>③ 74 抽前不 FOMO 氪金</td><td>74 抽前单抽仅 0.6%</td><td>硬 74 抽前概率被压低，等软保底区间抽，单位原石的期望最高</td></tr>
+</table>
+<h2>常见误区</h2>
+<ul>
+<li><strong>「1.6% = 十连 16% 必出一个」：</strong> 16% 是期望占比不是命中保证；十连出 5★ 的实际概率约 15–18%，多数十连零 5★。</li>
+<li><strong>「50/50 输了就亏」：</strong> 输了 = 下一个 5★ 必 UP，最坏 180 抽封顶；期望 91 抽仍低于「两个硬保底」。</li>
+<li><strong>「软保底是官方机制」：</strong> 软保底曲线（74 起 +6%/抽）是社区统计共识，官方只保证 90 抽 100%；引用时注明口径。</li>
+</ul>
+<h2>相关阅读</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/pity-system-guide.html">保底机制完整版（软硬保底与 50/50）</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/gacha-strategy.html">抽卡预算规划（原石从哪来）</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/pull-cost-guide.html">花钱枢纽：C0→C6 全成本矩阵</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/should-i-pull-mitya.html">米缇娅值得抽吗（7.2 当期）</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/weapon-banner-guide.html">武器池攻略：命定之路与 75/25</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/signature-weapon-worth.html">专武值不值：R1→R5 与 4★ 替代门槛</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/chronicled-wish-guide.html">集录 Wish 攻略：指定目标锁定</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/primogem-roadmap.html">原石收入路线图（F2P 攒钻）</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/banner-rerun-guide.html">复刻时间表：等复刻还是当版抽</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/best-f2p.html">F2P 最优解：角色、武器与队伍</a></li>
+</ul>
+<h2>小结</h2>
+<p>一句话：<strong>官方综合 5★ 1.6%（平均 62.5 抽）、软保底 74 抽起跳、指定 UP 期望 91 抽 / 最坏 180 抽（28,800 原石），武器池 75/25 + 命定之路 160 抽封顶</strong>。预算做在 14,400 原石、74 抽前不 FOMO、垫池只做限定角色池——概率是算术不是玄学。</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div>
+<div class="geo-block" style="margin:34px 0 8px;padding:18px 22px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.12);border-radius:12px;font-size:14px;color:#9aa6b8"><h2 style="font-size:16px;margin:0 0 10px;color:#e8c474;border-left:4px solid #e8c474;padding-left:10px">数据来源与引用</h2><p style="margin:0 0 8px">官方概率（基础 0.6%/5.1%、综合 1.6%/13%、保底 90/10）取自游戏内「祈愿详情」公示页；软保底曲线（74 起 +6%/抽）为社区大样本统计共识；期望 91 抽按官方「捕获明光」综合 55% 折算。本页的期望抽数表与美元成本折算为「Teyvat 入门攻略」独立整理计算。数据截至 <strong>2026-11（版本 7.2）</strong>。</p><ul style="margin:0 0 10px 20px"><li>主要来源：米哈游官方祈愿详情页 · Genshin Impact Fandom Wiki（Wishes 条目）· 社区统计项目（paimon.moe 口径）</li><li>商业关系：本站为<strong>免费非官方粉丝站</strong>，无广告、无联盟佣金、不收钱换内容或排名。</li><li>纠错：数据有误请 <a href="mailto:kevinxiao118@163.com">kevinxiao118@163.com</a> 反馈，核实后 48h 内更新并注明。</li></ul><p style="margin:0;font-size:13px">引用本页：Teyvat Starter Guide, “原神抽卡概率：官方概率表、软保底曲线与期望抽数” — https://genshin-guide-one-five.vercel.app/guides/gacha-odds-guide.html (accessed 2026-11)</p></div>
+<div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('订阅成功！');
+    } catch(err) {
+      alert('订阅失败，请稍后再试。');
+    }
+ 
+</body>
+</html>
