@@ -121,7 +121,7 @@ Formula-level explanations. These pages answer the single question each mechanic
 - [talent-crown-guide](https://genshin-guide-one-five.vercel.app/guides/talent-crown-guide-en.html): Crown of Insight: the only legal use, the 700k Mora full cost, and roughly 30 obtainable sources
 - [achievement-guide](https://genshin-guide-one-five.vercel.app/guides/achievement-guide-en.html): Achievement categories, Primogem totals, and the ones worth chasing first
 - [namecard-guide](https://genshin-guide-one-five.vercel.app/guides/namecard-guide-en.html): All six namecard sources and collection priority
-- [glossary-guide](https://genshin-guide-one-five.vercel.app/guides/glossary-guide-en.html): What BiS, CV, AR, GU and the rest of the community shorthand actually mean
+- [glossary-guide](https://genshin-guide-one-five.vercel.app/guides/glossary-guide-en.html): What BiS, CV, AR, GU and the rest of the community shorthand actually mean; also the element-counter quick reference and the seven-nation unlock order
 - [stamina-recovery-guide](https://genshin-guide-one-five.vercel.app/guides/stamina-recovery-guide-en.html): Stamina pool size, regen rate, and what drains it fastest
 
 ## Wish, Primogems and spending （抽卡、原石与付费）
