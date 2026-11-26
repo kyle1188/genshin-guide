@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神炽烈的炎之魔女圣遗物：2/4 件效果、叠层机制与火系使用者</title>
+<meta name="description" content="原神「炽烈的炎之魔女」圣遗物套速查：2 件火伤 +15%、4 件超载/燃烧/绽放 +40% 且蒸发/融化 +15%，用元素战技叠 3 层放大 2 件套；最佳使用者 Diluc、Klee、Yanfei、Yoimiya、Xiangling、Hu Tao、Mavuika，掉落域璃月碧水原。">
+<meta name="keywords" content="炽烈的炎之魔女,crimson witch,原神圣遗物套装,火系圣遗物,4件套,crimson witch of flames genshin">
+<link rel="canonical" href="https://genshin-guide-one-five.vercel.app/guides/crimson-witch-guide.html" />
+<link rel="alternate" hreflang="zh" href="https://genshin-guide-one-five.vercel.app/guides/crimson-witch-guide.html" />
+<link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/crimson-witch-guide-en.html" />
+<link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/crimson-witch-guide-en.html" />
+<meta property="og:title" content="原神炽烈的炎之魔女圣遗物：2/4 件效果、叠层机制与火系使用者">
+<meta property="og:description" content="2 件火伤 +15%、4 件反应加成 40%、叠 3 层放大；最佳使用者与刷取秘境一次列全。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://genshin-guide-one-five.vercel.app/guides/crimson-witch-guide.html">
+<meta property="og:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+<meta name="google-site-verification" content="t29bkbqCvDTtmfzURdty0JUkleAxCjlziuu5_54Lg_A" />
+<meta name="twitter:card" content="summary_large_image">
+<style>
+
+  :root{
+    --bg:#0c0f16; --bg2:#121723; --panel:rgba(255,255,255,.04);
+    --panel-strong:rgba(255,255,255,.07); --line:rgba(255,255,255,.09);
+    --txt:#e7ecf3; --txt-dim:#9aa6b8; --txt-mute:#6b7689;
+    --gold:#e8c474; --gold-2:#d4a24a; --blue:#5aa9ff;
+    --fire:#ff6b4a; --water:#4aa8ff; --thunder:#b06bff; --grass:#7dd35f; --rock:#e0c068; --wind:#a8e6cf; --ice:#7fd4ff; --grass:#7dd35f;
+    --r:14px; --maxw:920px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--txt); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.8; -webkit-font-smoothing:antialiased;}
+  a{color:var(--blue); text-decoration:none}
+  ::selection{background:rgba(232,196,116,.3)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  header.topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(10,13,20,.72); border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex; align-items:center; gap:14px; height:58px}
+  .brand{display:flex; align-items:center; gap:9px; font-weight:700; letter-spacing:.5px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,var(--gold));box-shadow:0 0 12px var(--gold)}
+  .brand b{color:var(--gold)}
+  .lang{color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .lang:hover{color:var(--txt); background:var(--panel)}
+  .back{margin-left:auto; color:var(--txt-dim); font-size:14px; padding:7px 14px; border:1px solid var(--line); border-radius:999px; transition:.2s}
+  .back:hover{color:var(--txt); background:var(--panel)}
+  .crumb{font-size:13px; color:var(--txt-mute); margin:26px 0 4px}
+  .crumb a{color:var(--txt-dim)}
+  article{padding:8px 0 40px}
+  h1{font-size:clamp(26px,4.4vw,38px); line-height:1.25; margin:6px 0 14px; letter-spacing:.3px}
+  h1 .grad{background:linear-gradient(120deg,var(--gold),#fff 60%,var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .lead{color:#cdd6e4; font-size:16px; margin:0 0 26px}
+  h2{font-size:clamp(20px,3vw,26px); margin:38px 0 12px; padding-left:14px; border-left:4px solid var(--gold); scroll-margin-top:72px}
+  h3{font-size:18px; margin:22px 0 8px; color:#fff}
+  p{color:var(--txt-dim); margin:10px 0}
+  ul,ol{color:var(--txt-dim); padding-left:22px}
+  li{margin:6px 0}
+  .src-note{font-size:13px; color:var(--txt-mute); border-left:3px solid var(--line); padding:8px 14px; margin:18px 0; background:var(--panel); border-radius:0 8px 8px 0}
+  .grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; transition:.2s}
+  .card:hover{border-color:rgba(232,196,116,.4)}
+  .card h3{display:flex; align-items:center; gap:10px; margin-top:0}
+  .tag{font-size:12px; font-weight:700; color:#0c0f16; padding:3px 9px; border-radius:7px; white-space:nowrap}
+  .tag.fire{background:var(--fire)} .tag.water{background:var(--water)} .tag.thunder{background:var(--thunder)}
+  .tag.grass{background:var(--grass)} .tag.rock{background:var(--rock)} .tag.wind{background:var(--wind)} .tag.ice{background:var(--ice)}
+  .card .role{font-size:13px; color:var(--gold); font-weight:600; margin:2px 0 8px}
+  .card p{font-size:14px; margin:6px 0}
+  .mini{font-size:13px; color:var(--txt-mute); margin-top:8px; border-top:1px dashed var(--line); padding-top:8px}
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; background:var(--panel); border-radius:var(--r); overflow:hidden}
+  th,td{padding:11px 13px; text-align:left; border-bottom:1px solid var(--line); color:var(--txt-dim)}
+  th{background:rgba(232,196,116,.08); color:var(--gold); font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .callout{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:16px 18px; margin:18px 0}
+  .callout b{color:var(--gold)}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--txt-mute); font-size:13px; text-align:center}
+  footer a{color:var(--txt-dim)}
+  .pairbox{display:flex; flex-wrap:wrap; gap:12px; margin:30px 0 6px}
+  .pairbox a{padding:10px 16px; border:1px solid var(--line); border-radius:12px; color:var(--txt-dim); font-size:14px; font-weight:600; transition:.2s}
+  .pairbox a:hover{border-color:rgba(232,196,116,.4); color:var(--txt)}
+  .faq{margin:36px 0 10px; border-top:1px solid var(--line); padding-top:20px}
+  .faq .qa{border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin:12px 0; background:var(--panel-strong); transition:.2s}
+  .faq .qa:hover{border-color:rgba(232,196,116,.35)}
+  .faq .qa h3{margin:0 0 6px; font-size:16px; color:var(--txt)}
+  .faq .qa p{margin:0; color:var(--txt-dim); font-size:14.5px}
+  .sub-box{background:linear-gradient(135deg,rgba(232,196,116,.1),rgba(90,169,255,.06)); border:1px solid rgba(232,196,116,.3); border-radius:var(--r); padding:22px 20px; margin:34px 0; text-align:center}
+  .sub-box h3{margin:0 0 6px; color:#fff}
+  .sub-box p{font-size:14px; margin:0 0 14px}
+  .sub-box form{display:flex; gap:10px; justify-content:center; flex-wrap:wrap}
+  .sub-box input{flex:1; min-width:220px; max-width:340px; padding:11px 16px; border-radius:999px; border:1px solid var(--line); background:var(--bg); color:var(--txt); font-size:14px; outline:none}
+  .sub-box input:focus{border-color:var(--gold)}
+  .sub-box button{padding:11px 24px; border-radius:999px; border:none; background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#10141d; font-weight:700; cursor:pointer; font-size:14px}
+  .sub-box button:hover{filter:brightness(1.08)}
+  .msg{margin-top:12px; font-size:14px; min-height:18px}
+  .msg.ok{color:var(--grass)} .msg.err{color:var(--fire)}
+
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "原神炽烈的炎之魔女圣遗物：2/4 件效果、叠层机制与火系使用者", "description": "原神「炽烈的炎之魔女」圣遗物套速查：2 件火伤 +15%、4 件超载/燃烧/绽放 +40% 且蒸发/融化 +15%，用元素战技叠 3 层放大 2 件套；最佳使用者 Diluc、Klee、Yanfei、Yoimiya、Xiangling、Hu Tao、Mavuika，掉落域在璃月碧水原。", "image": "https://genshin-guide-one-five.vercel.app/assets/twitter-card.png", "author": {"@type": "Person", "name": "Teyvat Guide Team"}, "publisher": {"@type": "Organization", "name": "Teyvat Starter Guide"}, "datePublished": "2026-11-26", "dateModified": "2026-11-26", "inLanguage": "zh-CN", "mainEntityOfPage": "https://genshin-guide-one-five.vercel.app/guides/crimson-witch-guide.html", "isAbout": {"@type": "Thing", "name": "Crimson Witch of Flames (炽烈的炎之魔女)"}, "mentions": [{"@type": "Person", "name": "Diluc"}, {"@type": "Person", "name": "Klee"}, {"@type": "Person", "name": "Hu Tao"}, {"@type": "Person", "name": "Mavuika"}, {"@type": "Thing", "name": "Overloaded"}, {"@type": "Thing", "name": "Vaporize"}, {"@type": "Thing", "name": "Melt"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "炽烈的炎之魔女 4 件套效果是什么？", "acceptedAnswer": {"@type": "Answer", "text": "4 件套：超载、燃烧、绽放反应伤害 +40%；蒸发、融化反应伤害 +15%。配合 2 件套火伤 +15%，并用元素战技可叠 3 层把 2 件套效果再放大 50%（每层 10s）。"}}, {"@type": "Question", "name": "哪个角色最适合炽烈的炎之魔女？", "acceptedAnswer": {"@type": "Answer", "text": "首选 Diluc、Klee、Yanfei、Yoimiya、Hu Tao、Xiangling 与纳塔火主C Mavuika——都是能持续挂火并触发蒸发/融化/超载的火系输出。反应队 C 位优先吃 4 件。"}}, {"@type": "Question", "name": "炽烈的炎之魔女 2 件和 4 件怎么选？", "acceptedAnswer": {"@type": "Answer", "text": "能凑齐 4 件就走 4 件吃反应加成；只集到 2 件时优先 2+2（火伤 15% 仍生效）。纯站外不触发反应的 Pyro 角色用 2 件即可。"}}, {"@type": "Question", "name": "炽烈的炎之魔女在哪刷？", "acceptedAnswer": {"@type": "Answer", "text": "璃月「碧水原」的秘境「Hidden Palace of Zhou Formula（周之秘仪·隐宫）」，AR30 解锁、单次 20 树脂。同域还掉炽阳套与「Defender's Will」。"}}, {"@type": "Question", "name": "叠层机制怎么触发？", "acceptedAnswer": {"@type": "Answer", "text": "每次释放元素战技（E）后，2 件套加成提升 50%，持续 10s，最多叠 3 层。输出窗口前先用 E 叠满 3 层再打主力爆发。"}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://genshin-guide-one-five.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://genshin-guide-one-five.vercel.app/all-guides.html"}, {"@type": "ListItem", "position": 3, "name": "原神炽烈的炎之魔女圣遗物：2/4 件效果、叠层机制与火系使用者", "item": "https://genshin-guide-one-five.vercel.app/guides/crimson-witch-guide.html"}]}</script>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="twitter:title" content="原神炽烈的炎之魔女圣遗物：2/4 件效果、叠层机制与火系使用者">
+<meta name="twitter:description" content="2 件火伤 +15%、4 件反应加成 40%、叠 3 层放大；最佳使用者与刷取秘境一次列全。">
+<meta name="twitter:image" content="https://genshin-guide-one-five.vercel.app/assets/twitter-card.png">
+</head>
+<body>
+<div class="topbar">
+<a href="https://genshin-guide-one-five.vercel.app/">Home</a>
+<a href="https://genshin-guide-one-five.vercel.app/guides/crimson-witch-guide-en.html">English</a>
+</div>
+<div class="container">
+<h1>原神炽烈的炎之魔女圣遗物：2/4 件效果、叠层机制与火系使用者</h1>
+<p class="lead">「炽烈的炎之魔女」是火系输出的主力套：<strong>2 件火伤 +15%，4 件让超载/燃烧/绽放 +40%、蒸发/融化 +15%</strong>，还能用元素战技叠 3 层把 2 件套再放大 50%。本页把套装效果、叠层机制、最佳使用者分级、部位主词条和刷取秘境一次列全，帮你判断「我这套该给谁、刷几件」。掉落域等口径以 game8 与 Fandom 为准。</p>
+<div class="quick"><ul>
+<li><strong>2 件套：</strong> 火元素伤害 +15%（无附加条件，对任何火系都生效）。</li>
+<li><strong>4 件套：</strong> 超载/燃烧/绽放 +40%，蒸发/融化 +15%。</li>
+<li><strong>叠层机制：</strong> 每次用元素战技，2 件套效果 +50%，持续 10s，最多 3 层。</li>
+<li><strong>最佳使用者：</strong> Diluc、Klee、Yanfei、Yoimiya、Hu Tao、Xiangling、Mavuika。</li>
+<li><strong>刷取：</strong> 璃月·碧水原「Hidden Palace of Zhou Formula」，AR30、20 树脂。</li>
+</ul></div>
+<h2>套装效果：2 件与 4 件到底加什么</h2>
+<table>
+<tr><th>件数</th><th>加成</th><th>关键数字</th></tr>
+<tr><td>2 件套</td><td>火元素伤害加成</td><td>+15%（基础，无条件）</td></tr>
+<tr><td>4 件套</td><td>超载 / 燃烧 / 绽放 反应伤害</td><td>+40%</td></tr>
+<tr><td>4 件套</td><td>蒸发 / 融化 反应伤害</td><td>+15%</td></tr>
+<tr><td>4 件套叠层</td><td>用元素战技放大 2 件套</td><td>+50%，持续 10s，最多 3 层</td></tr>
+</table>
+<p>注意 40% 覆盖的是<strong>超载、燃烧、绽放</strong>三个反应，而蒸发/融化只有 15%——所以「融化队/蒸发队」吃 4 件的边际收益比「超载/绽放队」低。想算具体收益看 <a href="%s/guides/elemental-reactions-detailed.html">元素反应详解</a>。</p>
+<h2>叠层机制：什么时候开 E</h2>
+<p>叠层是这套最容易被浪费的部分：<strong>每次释放元素战技（E），2 件套的 15% 火伤加成临时提升 50%</strong>，即单件 22.5%，持续 10s，最多叠 3 层（3 层时每层 15%×1.5=22.5%，三者加算）。正确节奏是<strong>爆发窗口前先用 E 叠满 3 层，再打主力输出</strong>。10s 的持续时间是节奏约束，不是 buff 常驻。</p>
+<table>
+<tr><th>叠层数</th><th>2 件套火伤加成</th><th>说明</th></tr>
+<tr><td>0 层</td><td>+15%</td><td>基础 2 件套</td></tr>
+<tr><td>1 层</td><td>+22.5%</td><td>15%×1.5，10s</td></tr>
+<tr><td>3 层</td><td>+22.5%（每层 22.5% 加算）</td><td>叠满上限</td></tr>
+</table>
+<h2>最佳使用者：谁优先吃这套</h2>
+<p>给火系主C，且<strong>能持续触发反应</strong>的角色收益最大。分级（结合社区共识与 4 件反应加成）：</p>
+<table>
+<tr><th>优先级</th><th>角色</th><th>理由</th></tr>
+<tr><td>首选</td><td>Diluc、Klee、Yanfei、Yoimiya、Hu Tao</td><td>高频率触发蒸发/融化/超载，4 件反应加成直接吃满</td></tr>
+<tr><td>纳塔火C</td><td>Mavuika</td><td>火主C，站外反应队核心，契合 4 件</td></tr>
+<tr><td>强替代</td><td>Xiangling</td><td>火副C/挂火，2 件火伤收益高，4 件看队伍</td></tr>
+<tr><td>可用</td><td>Bennett、Amber</td><td>辅助/挂火位，优先 2 件而非 4 件</td></tr>
+</table>
+<p>角色 build 参考：<a href="%s/guides/diluc-build.html">Diluc</a> · <a href="%s/guides/klee-build.html">Klee</a> · <a href="%s/guides/xiangling-build.html">Xiangling</a> · <a href="%s/guides/mavuika-build.html">Mavuika</a>。判断「给谁刷」看各 build 页顶部的主圣遗物推荐。</p>
+<h2>部位主词条与副词条</h2>
+<table>
+<tr><th>部位</th><th>主词条</th><th>副词条优先级</th></tr>
+<tr><td>沙</td><td>火元素伤害 / 攻击力%</td><td>暴击伤害、暴击率、火伤</td></tr>
+<tr><td>杯</td><td>火元素伤害（固定）</td><td>暴击伤害、暴击率</td></tr>
+<tr><td>头</td><td>暴击率 / 暴击伤害</td><td>攻击力%、火伤</td></tr>
+</table>
+<p>主词条与套装是<strong>加算关系</strong>：杯子的火伤主词条直接叠在 2 件套 15% 之上，所以火系C几乎必选火伤杯。副词条先看双爆，再看火伤/攻击。刷取与换件思路见 <a href="%s/guides/artifact-farming.html">圣遗物刷取</a> 与 <a href="%s/guides/artifact-rerolls-guide.html">重roll 决策</a>。</p>
+<h2>什么时候 4 件、什么时候 2+2</h2>
+<table>
+<tr><th>情况</th><th>选择</th></tr>
+<tr><td>凑齐 4 件 + 角色高频触发反应</td><td>走 4 件，吃满反应加成</td></tr>
+<tr><td>只集到 2 件</td><td>2+2：火伤 15% 仍生效，比硬凑低质 4 件划算</td></tr>
+<tr><td>纯站外、不触发反应的火系</td><td>只用 2 件，4 件反应加成吃不到</td></tr>
+<tr><td>融化/蒸发队（加成仅 15%）</td><td>4 件边际收益低，可考虑炽阳或千岩等其他套</td></tr>
+</table>
+<h2>刷取秘境：璃月·碧水原</h2>
+<table>
+<tr><th>项</th><th>内容</th></tr>
+<tr><td>秘境</td><td>Hidden Palace of Zhou Formula（周之秘仪·隐宫）</td></tr>
+<tr><td>位置</td><td>璃月 · 碧水原</td></tr>
+<tr><td>解锁</td><td>冒险等级 30</td></tr>
+<tr><td>树脂</td><td>20 原始 / 浓缩树脂</td></tr>
+<tr><td>套装池</td><td>炽烈的炎之魔女、炽阳之炎、Defender&#39;s Will、Martial Artist</td></tr>
+</table>
+<p>5★ 圣遗物只在秘境最高级保证掉落。浓缩树脂（120 树脂/份）翻倍收益，是高效刷法。套装总览与全角色推荐见 <a href="%s/guides/artifact-sets-guide.html">圣遗物套装大全</a>。</p>
+<h2>相关阅读</h2>
+<ul>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/artifact-sets-guide.html">圣遗物套装大全（全角色推荐）</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/diluc-build.html">Diluc Build：火主C 首选套</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/klee-build.html">Klee Build：超载爆发吃 4 件</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/xiangling-build.html">Xiangling Build：火副C 挂火</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/mavuika-build.html">Mavuika Build：纳塔火C</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/elemental-reactions-detailed.html">元素反应详解（反应系数）</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/artifact-farming.html">圣遗物刷取规划</a></li>
+<li><a href="https://genshin-guide-one-five.vercel.app/guides/artifact-rerolls-guide.html">圣遗物重roll 决策</a></li>
+</ul>
+<h2>小结</h2>
+<p>一句话：<strong>炽烈的炎之魔女 = 2 件火伤 +15% + 4 件反应加成（超载/燃烧/绽放 +40%、蒸发/融化 +15%）+ E 技叠 3 层</strong>。首选给能高频触发反应的火系主C（Diluc、Klee、Yanfei、Yoimiya、Hu Tao、Mavuika），璃月碧水原秘境刷。融化/蒸发队 4 件边际低，优先炽阳或千岩。</p>
+<div class="pairbox">
+<a href="https://genshin-guide-one-five.vercel.app/guides/crimson-witch-guide-en.html">View English Version</a>
+<a href="https://genshin-guide-one-five.vercel.app/">Back to Home</a>
+</div>
+<div class="sub-box">
+<h3>订阅获取原神攻略更新</h3>
+<p>每周推送角色培养与版本攻略，绝不打扰。</p>
+<form class="sub-in" data-email-form>
+<input type="email" placeholder="you@example.com" required>
+<button type="submit">订阅</button>
+</form>
+</div>
+<div class="geo-block" style="margin:34px 0 8px;padding:18px 22px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.12);border-radius:12px;font-size:14px;color:#9aa6b8"><h2 style="font-size:16px;margin:0 0 10px;color:#e8c474;border-left:4px solid #e8c474;padding-left:10px">数据来源与引用</h2><p style="margin:0 0 8px">套装数值（2 件 15%、4 件 40%/15%、叠层 3×50%）取自米哈游游戏内公示 + Fandom/Genshin Wiki；秘境位置与解锁条件以 game8 为准。推荐使用者分级为「Teyvat 入门攻略」独立整理。数据截至 <strong>2026-11（版本 7.2）</strong>。</p><ul style="margin:0 0 10px 20px"><li>主要来源：米哈游官方公示 · Genshin Impact Fandom Wiki · game8.co（秘境/掉落）</li><li>商业关系：本站为<strong>免费非官方粉丝站</strong>，无广告、无联盟佣金、不收钱换内容或排名。</li><li>纠错：数据有误请 <a href="mailto:kevinxiao118@163.com">kevinxiao118@163.com</a> 反馈，核实后 48h 内更新并注明。</li></ul><p style="margin:0;font-size:13px">引用本页：Teyvat Starter Guide, "原神炽烈的炎之魔女圣遗物：2/4 件效果、叠层机制与火系使用者" — https://genshin-guide-one-five.vercel.app/guides/crimson-witch-guide.html (accessed 2026-11)</p></div>
+<div class="footer"><p>© 2026 Teyvat Starter Guide · Genshin Impact fan site, not affiliated with HoYoverse.</p></div>
+</div>
+<script>
+document.querySelectorAll('[data-email-form]').forEach(function(form){
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var em = form.querySelector('input').value;
+    try {
+      var r = await fetch('https://genshin-guide-one-five.vercel.app/api/subscribe', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em} )});
+      var j = await r.json();
+      alert('订阅成功！');
+    } catch(err) {
+      alert('订阅失败，请稍后再试。');
+    }
+ 
+</body>
+</html>

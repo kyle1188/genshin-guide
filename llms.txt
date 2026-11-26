@@ -181,7 +181,8 @@ Rotation, animation cancels and endgame clear strategy.
 Which set to farm, which weapon to use, and how refinement scales.
 
 - [artifact-farming](https://genshin-guide-one-five.vercel.app/guides/artifact-farming-en.html): Which sets to farm first and an efficient route order
-- [artifact-sets-guide](https://genshin-guide-one-five.vercel.app/guides/artifact-sets-guide-en.html): Best sets chosen by role rather than by rarity
+- [artifact-sets-guide](https://genshin-guide-one-five.vercel.app/guides/artifact-sets-guide-en.html)
+- [crimson-witch-guide](https://genshin-guide-one-five.vercel.app/guides/crimson-witch-guide-en.html): Crimson Witch of Flames 2/4-piece bonuses, the 3-stack E-skill amplifier, tiered best users, and the Bishui Plain farming domain: Best sets chosen by role rather than by rarity
 - [artifact-rerolls-guide](https://genshin-guide-one-five.vercel.app/guides/artifact-rerolls-guide-en.html): When to keep, reroll or score a piece
 - [weapon-refinement-guide](https://genshin-guide-one-five.vercel.app/guides/weapon-refinement-guide-en.html): Refinement levels, costs and which weapons are worth R5
 - [weapon-ascension-guide](https://genshin-guide-one-five.vercel.app/guides/weapon-ascension-guide-en.html): Ascension domain schedule and material requirements
