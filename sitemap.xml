@@ -3441,4 +3441,28 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/crimson-witch-guide-en.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/crimson-witch-guide-en.html" />
   </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/prune-build.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/prune-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/prune-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/prune-build-en.html" />
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/nefer-build.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/nefer-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/nefer-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/nefer-build-en.html" />
+  </url>
+  <url>
+    <loc>https://genshin-guide-one-five.vercel.app/guides/aino-build.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://genshin-guide-one-five.vercel.app/guides/aino-build.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://genshin-guide-one-five.vercel.app/guides/aino-build-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://genshin-guide-one-five.vercel.app/guides/aino-build-en.html" />
+  </url>
 </urlset>
