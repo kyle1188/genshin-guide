@@ -1,0 +1,374 @@
+[
+  {
+    "id": "q001",
+    "text": "How many pulls for a 5-star character in Genshin?",
+    "slug": "glossary-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q002",
+    "text": "What is the soft pity for Genshin Impact?",
+    "slug": "pity-system-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q003",
+    "text": "How much primogems do I need to guarantee a 5-star?",
+    "slug": "pull-cost-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q004",
+    "text": "Is it worth pulling on a new 5-star banner?",
+    "slug": "glossary-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q005",
+    "text": "What does C6 actually change for [character]?",
+    "slug": "all-character-birthdays-ages",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q006",
+    "text": "Is the signature weapon better than a 4-star? (e.g. Reliquary of Truth vs 4-star)",
+    "slug": "best-weapons-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q007",
+    "text": "How much does weapon refinement R1 to R5 improve damage?",
+    "slug": "best-weapons-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q008",
+    "text": "Do I need to spend on the Battle Pass / Welkin Moon?",
+    "slug": "battle-pass-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q009",
+    "text": "When will [character] rerun? Is the rerun schedule predictable?",
+    "slug": "banner-rerun-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q010",
+    "text": "How far ahead should I save primogems before a banner I want?",
+    "slug": "glossary-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q011",
+    "text": "What are the best artifact sets for [character]?",
+    "slug": "artifact-sets-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q012",
+    "text": "What stats should I focus on for [character] - crit, ATK, or EM?",
+    "slug": "all-character-birthdays-ages",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q013",
+    "text": "What is the best 4-star weapon for [5-star character]?",
+    "slug": "best-weapons-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q014",
+    "text": "What are the main substats to roll on artifacts?",
+    "slug": "artifact-sets-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q015",
+    "text": "Do I need a 5-star weapon or is a 4-star good enough?",
+    "slug": "best-weapons-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q016",
+    "text": "What is the best team to use with [character]?",
+    "slug": "team-building-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q017",
+    "text": "Can I run a team without a healer or shielder?",
+    "slug": "team-building-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q018",
+    "text": "What are the best free-to-play / standard 4-star teams?",
+    "slug": "team-building-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q019",
+    "text": "Which elements synergize for reactions (Melt, Vaporize, Aggravate)?",
+    "slug": "vaporize-melt-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q020",
+    "text": "What is the weakness of [boss]?",
+    "slug": "boss-weaknesses-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q021",
+    "text": "How do I beat [weekly boss]?",
+    "slug": "weekly-boss-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q022",
+    "text": "What does RES shred do and which team does it help?",
+    "slug": "team-building-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q023",
+    "text": "How does elemental resonance (Vaporize/Melt) damage calculation work?",
+    "slug": "resistance-shred-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q024",
+    "text": "What are the chest types and where do each appear?",
+    "slug": "chest-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q025",
+    "text": "What materials do I need to level up [character] to 90?",
+    "slug": "ascension-materials-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q026",
+    "text": "How do I level talents efficiently / what talent priority?",
+    "slug": "talent-priority-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q027",
+    "text": "Where do I farm [artifact type] or weekly boss drops?",
+    "slug": "artifact-sets-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q028",
+    "text": "What is the story so far - archon quest summary?",
+    "slug": "archon-quest-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q029",
+    "text": "When is the next version / new region coming?",
+    "slug": "characters-by-release-date",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q030",
+    "text": "What new characters are coming in the next patch?",
+    "slug": "best-4-star-characters",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q031",
+    "text": "What should new players do first / best beginner mistakes to avoid?",
+    "slug": "beginner-mistakes-guide",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q032",
+    "text": "Are there any free 5-star characters or ways to get one?",
+    "slug": "best-f2p",
+    "src": "模拟玩家"
+  },
+  {
+    "id": "q033",
+    "text": "what is electro weak to genshin",
+    "slug": "boss-weaknesses-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q034",
+    "text": "what does def do in genshin",
+    "slug": "defense-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q035",
+    "text": "how many oculi in each region",
+    "slug": "glossary-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q036",
+    "text": "how many achievements are in genshin",
+    "slug": "achievement-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q037",
+    "text": "what is def in genshin",
+    "slug": "defense-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q038",
+    "text": "does res shred stack genshin",
+    "slug": "resistance-shred-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q039",
+    "text": "what does defense do in genshin",
+    "slug": "defense-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q040",
+    "text": "what is def in genshin impact",
+    "slug": "defense-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q041",
+    "text": "what is bis in genshin",
+    "slug": "glossary-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q042",
+    "text": "how much adventure exp do you get from daily commissions",
+    "slug": "pull-cost-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q043",
+    "text": "how many oculus in each region",
+    "slug": "oculus-collection-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q044",
+    "text": "how many achievements are in genshin impact",
+    "slug": "achievement-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q045",
+    "text": "what is anemo weak to genshin",
+    "slug": "boss-weaknesses-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q046",
+    "text": "does world level affect chests genshin",
+    "slug": "chest-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q047",
+    "text": "what does cv mean in genshin",
+    "slug": "crit-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q048",
+    "text": "what does def mean in genshin",
+    "slug": "defense-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q049",
+    "text": "how to reach friendship 10 genshin fast",
+    "slug": "friendship-level-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q050",
+    "text": "how to get friendship level up genshin",
+    "slug": "friendship-level-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q051",
+    "text": "how to trigger superconduct genshin",
+    "slug": "superconduct-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q052",
+    "text": "how to lower world level genshin",
+    "slug": "world-level-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q053",
+    "text": "when do weekly bosses reset genshin",
+    "slug": "resistance-shred-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q054",
+    "text": "how much exp do chests give genshin",
+    "slug": "chest-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q055",
+    "text": "is genshin f2p friendly 2026",
+    "slug": "best-f2p",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q056",
+    "text": "what is def genshin",
+    "slug": "defense-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q057",
+    "text": "what does def do genshin",
+    "slug": "defense-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q058",
+    "text": "what is bis genshin",
+    "slug": "glossary-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q059",
+    "text": "how many achievements are there in genshin impact",
+    "slug": "achievement-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q060",
+    "text": "how to level up friendship in genshin",
+    "slug": "friendship-level-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q061",
+    "text": "how many achievements in genshin",
+    "slug": "achievement-guide",
+    "src": "GSC真实"
+  },
+  {
+    "id": "q062",
+    "text": "what is cv in genshin",
+    "slug": "crit-guide",
+    "src": "GSC真实"
+  }
+]
